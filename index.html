@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maple &amp; Pixel — Websites for Canadian cafes</title>
+<meta name="description" content="Maple & Pixel builds fast, mobile-first websites for independent cafes across Canada. Menu, hours, location and Google visibility — in one place you own.">
+<meta property="og:title" content="Maple & Pixel — Websites for Canadian cafes">
+<meta property="og:description" content="Fast, mobile-first websites for independent cafes across Canada. Free mockup, no obligation.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+@property --spin{syntax:'<angle>';inherits:false;initial-value:0deg}
+:root{
+  --obsidian:#05060a; --ink:#0a0c11; --stone:#12151b; --stone2:#0e1116; --line:#242a33;
+  --gold:#d4af37; --gold-hot:#ffe6a6; --amber:#e8b54b;
+  --electric:#46e6ff; --electric-dim:rgba(70,230,255,.4);
+  --txt:#f5f6f8; --dim:#89909c; --white-hot:#fdfff7;
+  --display:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--obsidian);color:var(--txt);overflow-x:hidden;font-family:var(--body);
+  -webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+
+/* ===== خلفية: عمق حجري ===== */
+.bg{position:fixed;inset:0;z-index:-5;
+  background:radial-gradient(130% 100% at 50% -10%, #171b22 0%, #0c0e13 42%, var(--obsidian) 78%)}
+.aura{position:fixed;inset:-30%;z-index:-4;pointer-events:none;filter:blur(70px);opacity:.5;
+  background:conic-gradient(from var(--spin) at 42% 40%, transparent 0deg, rgba(212,175,55,.5) 40deg,
+    transparent 120deg, rgba(70,230,255,.32) 210deg, transparent 300deg, rgba(212,175,55,.38) 360deg);
+  animation:spin 30s linear infinite}
+@keyframes spin{to{--spin:360deg}}
+.grain{position:fixed;inset:0;z-index:-3;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+.vig{position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 42%, transparent 55%, rgba(0,0,0,.5) 100%)}
+/* نقوش محفورة خافتة على أقسام مختارة */
+.glyphs{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><g fill='none' stroke='%23d4af37' stroke-opacity='0.05' stroke-width='1'><path d='M40 30v20M32 38h16'/><path d='M180 60l10-8M180 60l10 8'/><path d='M110 120h18M119 111v18'/><path d='M60 180l8-14 8 14'/><path d='M200 170v18M192 179h16'/><circle cx='150' cy='210' r='6'/><path d='M30 130l12 6M30 136l12-6'/></g></svg>")}
+
+/* ===== NAV ===== */
+nav{position:sticky;top:0;z-index:20;background:rgba(5,6,10,.6);
+  backdrop-filter:blur(16px);border-bottom:1px solid rgba(36,42,51,.7)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{height:30px;filter:drop-shadow(0 0 12px rgba(212,175,55,.3))}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{color:var(--dim);font-size:14.5px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a.cta{color:#0a0a0a;background:linear-gradient(180deg,var(--gold-hot),var(--gold));
+  padding:10px 19px;border-radius:999px;font-weight:700;box-shadow:0 0 22px rgba(212,175,55,.3);
+  font-family:var(--display)}
+@media(max-width:660px){.nav-links a:not(.cta){display:none}}
+
+/* ===== أدوات مشتركة ===== */
+.eyebrow{font-family:var(--display);color:var(--gold-hot);font-size:12px;letter-spacing:.22em;
+  text-transform:uppercase;font-weight:600;margin-bottom:14px}
+h2{font-family:var(--display);font-size:clamp(28px,4.4vw,44px);line-height:1.04;
+  letter-spacing:-.02em;font-weight:700;margin-bottom:16px}
+.section-sub{color:var(--dim);max-width:600px;font-size:16.5px;line-height:1.6}
+.seam{height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--electric),transparent);
+  opacity:.5;box-shadow:0 0 14px rgba(70,230,255,.35)}
+section{position:relative;padding:96px 0;border-top:1px solid rgba(36,42,51,.6)}
+.center{text-align:center;display:flex;flex-direction:column;align-items:center}
+
+/* شحن مع السكرول (native, progressive enhancement) */
+@supports (animation-timeline: view()){
+  .reveal{animation:reveal both;animation-timeline:view();animation-range:entry 0% entry 55%}
+  @keyframes reveal{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:calc(100vh - 70px);display:flex;align-items:center;overflow:hidden}
+.hero .wrap{position:relative;z-index:2;width:100%;padding:64px 26px}
+.artifact{position:absolute;z-index:1;right:-13%;top:50%;transform:translateY(-50%);
+  width:min(760px,86vw);aspect-ratio:1;pointer-events:none;opacity:.92;
+  filter:drop-shadow(0 0 42px rgba(212,175,55,.14));
+  animation:artcharge both;animation-timeline:scroll(root);animation-range:0 60vh}
+@keyframes artcharge{to{opacity:.28;filter:drop-shadow(0 0 60px rgba(70,230,255,.2))}}
+.artifact svg{width:100%;height:100%}
+.ring-rot{transform-box:fill-box;transform-origin:center;animation:ringspin 60s linear infinite}
+.ring-rot.rev{animation-duration:95s;animation-direction:reverse}
+@keyframes ringspin{to{transform:rotate(360deg)}}
+@media(max-width:860px){.artifact{right:-52%;top:56%;opacity:.42}}
+
+.hero-copy{position:relative;z-index:3;max-width:700px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);color:var(--gold-hot);
+  font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-bottom:26px;
+  border:1px solid var(--line);border-radius:999px;padding:9px 17px;background:rgba(10,12,17,.55)}
+.kicker .node{width:7px;height:7px;border-radius:50%;background:var(--electric);
+  box-shadow:0 0 12px var(--electric);animation:blink 2.6s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+h1{font-family:var(--display);font-size:clamp(44px,7.6vw,86px);line-height:.98;letter-spacing:-.035em;
+  font-weight:700;margin-bottom:26px}
+h1 .l1{color:var(--txt);display:block;text-shadow:0 1px 0 rgba(0,0,0,.5)}
+h1 .l2{display:block;
+  background:linear-gradient(96deg,#b9902a,var(--gold) 30%,var(--white-hot) 50%,var(--gold-hot) 66%,#b9902a);
+  background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 26px rgba(212,175,55,.5));animation:sheen 7s linear infinite}
+@keyframes sheen{to{background-position:220% center}}
+.lede{color:var(--dim);font-size:clamp(16px,1.7vw,19px);line-height:1.6;max-width:520px;margin-bottom:36px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:14px;
+  font-family:var(--display);font-weight:600;font-size:15.5px;
+  transition:transform .16s,box-shadow .28s,border-color .28s}
+.btn.solid{color:#0a0a0a;background:linear-gradient(180deg,var(--gold-hot),var(--gold));
+  box-shadow:0 6px 26px rgba(212,175,55,.26)}
+.btn.solid:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(212,175,55,.45)}
+.btn.ghost{border:1px solid var(--line);background:rgba(18,21,27,.55);color:var(--txt)}
+.btn.ghost:hover{transform:translateY(-2px);border-color:var(--electric-dim);box-shadow:0 0 26px rgba(70,230,255,.16)}
+.trust{margin-top:42px;display:flex;gap:14px 28px;flex-wrap:wrap;color:var(--dim);font-size:13.5px}
+.trust span{display:inline-flex;align-items:center;gap:9px}
+.trust b{color:var(--txt);font-weight:700}
+.trust .g{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 9px var(--gold)}
+
+/* ===== ألواح حجرية (كروت) ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:16px;margin-top:46px}
+.slab{position:relative;overflow:hidden;padding:28px 24px;border-radius:16px;
+  background:linear-gradient(180deg,#14171d,#0d1015);border:1px solid var(--line);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04),inset 0 -20px 40px rgba(0,0,0,.35),0 12px 30px rgba(0,0,0,.4);
+  transition:transform .2s,border-color .25s,box-shadow .3s}
+.slab::before{content:"";position:absolute;top:0;left:22px;right:22px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(212,175,55,.45),transparent)}
+.slab:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.42);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 18px 44px rgba(0,0,0,.5),0 0 30px rgba(212,175,55,.1)}
+.slab .ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  margin-bottom:18px;color:var(--gold-hot);background:radial-gradient(closest-side,rgba(212,175,55,.16),transparent);
+  border:1px solid rgba(212,175,55,.25)}
+.slab h3{font-family:var(--display);font-size:18px;font-weight:600;margin-bottom:8px}
+.slab p{color:var(--dim);font-size:14.5px;line-height:1.55}
+
+/* ===== WORK ===== */
+.work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:46px}
+.work{position:relative;display:block;overflow:hidden;border-radius:16px;
+  background:linear-gradient(180deg,#14171d,#0d1015);border:1px solid var(--line);
+  box-shadow:0 12px 30px rgba(0,0,0,.4);transition:transform .2s,border-color .25s,box-shadow .3s}
+.work:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.5);box-shadow:0 20px 46px rgba(0,0,0,.55),0 0 34px rgba(212,175,55,.12)}
+.work .strip{height:5px;background:linear-gradient(90deg,var(--gold),var(--electric))}
+.work .top{padding:22px 22px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.work h3{font-family:var(--display);font-size:19px;font-weight:600}
+.work .rate{flex:none;font-family:var(--display);background:rgba(212,175,55,.14);color:var(--gold-hot);
+  font-weight:700;font-size:13px;padding:4px 11px;border-radius:999px;border:1px solid rgba(212,175,55,.25)}
+.work .body{padding:12px 22px 22px}
+.work .loc{color:var(--dim);font-size:13.5px;margin-bottom:16px}
+.work .view{color:var(--gold-hot);font-size:14px;font-weight:600;display:inline-flex;gap:7px;align-items:center;font-family:var(--display)}
+.note{color:#6d727c;font-size:12.5px;margin-top:28px;max-width:640px;line-height:1.7}
+
+/* ===== PROCESS ===== */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:52px;position:relative}
+.step{position:relative;padding:30px 24px 26px;border-radius:16px;
+  background:linear-gradient(180deg,#13161c,#0d1015);border:1px solid var(--line);
+  box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.step .num{font-family:var(--display);position:absolute;top:-16px;left:24px;width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:#0a0a0a;
+  background:linear-gradient(180deg,var(--gold-hot),var(--gold));box-shadow:0 0 22px rgba(212,175,55,.4)}
+.step h3{font-family:var(--display);font-size:18px;font-weight:600;margin:12px 0 8px}
+.step p{color:var(--dim);font-size:14.5px;line-height:1.55}
+
+/* ===== CONTACT ===== */
+.contact{overflow:hidden}
+.contact .glowcore{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);width:600px;height:400px;
+  background:radial-gradient(closest-side,rgba(212,175,55,.16),transparent 70%);filter:blur(30px);pointer-events:none;z-index:0}
+.contact .wrap{position:relative;z-index:2}
+.contact .lede{color:var(--dim);font-size:17px;max-width:540px;margin:6px auto 30px}
+
+/* ===== FOOTER ===== */
+footer{position:relative;border-top:1px solid var(--line);padding:44px 0;color:var(--dim);font-size:13.5px}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .logo{height:24px;opacity:.9}
+footer a{color:var(--gold-hot)}
+.disclaim{border-top:1px solid var(--line);margin-top:24px;padding-top:18px;font-size:12px;color:#6d727c;line-height:1.7}
+</style>
+</head>
+<body>
+
+<div class="bg"></div><div class="aura"></div><div class="grain"></div><div class="vig"></div>
+
+<nav><div class="wrap">
+  <a href="#top"><img src="assets/wordmark.png" alt="Maple & Pixel" class="logo"></a>
+  <div class="nav-links">
+    <a href="#services">Services</a><a href="#work">Work</a><a href="#process">How it works</a>
+    <a href="#contact" class="cta">Get in touch</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="artifact" aria-hidden="true">
+    <svg viewBox="0 0 400 400" fill="none">
+      <defs>
+        <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+          <stop offset="55%" stop-color="transparent"/><stop offset="100%" stop-color="rgba(212,175,55,.08)"/>
+        </radialGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <circle cx="200" cy="200" r="196" fill="url(#rg)"/>
+      <g class="ring-rot" stroke="var(--gold)" stroke-opacity=".5" filter="url(#glow)">
+        <circle cx="200" cy="200" r="188" stroke-width="1"/>
+        <circle cx="200" cy="200" r="172" stroke-width=".6" stroke-opacity=".3"/>
+        <g stroke-width="1.4">
+          <line x1="200" y1="12" x2="200" y2="30"/><line x1="388" y1="200" x2="370" y2="200"/>
+          <line x1="200" y1="388" x2="200" y2="370"/><line x1="12" y1="200" x2="30" y2="200"/>
+          <line x1="333" y1="67" x2="322" y2="78"/><line x1="333" y1="333" x2="322" y2="322"/>
+          <line x1="67" y1="333" x2="78" y2="322"/><line x1="67" y1="67" x2="78" y2="78"/>
+        </g>
+      </g>
+      <g class="ring-rot rev" filter="url(#glow)">
+        <circle cx="200" cy="200" r="150" stroke="var(--electric)" stroke-opacity=".35" stroke-width="1"/>
+        <path d="M200 62 A138 138 0 0 1 297 103" stroke="var(--gold-hot)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M138 330 A138 138 0 0 1 70 250" stroke="var(--electric)" stroke-width="2" stroke-opacity=".7" stroke-linecap="round"/>
+        <g stroke="var(--gold)" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round">
+          <path d="M196 92 v26 M186 101 h20 M191 118 h10"/>
+          <path d="M300 194 h26 M309 184 v20 M300 205 v-8"/>
+          <path d="M194 300 l10 -16 l10 16 M198 300 h12"/>
+          <path d="M86 204 l16 -9 M86 195 l16 9 M92 186 v18"/>
+          <path d="M244 118 l8 -8 M244 118 l-8 -8"/>
+          <path d="M150 276 v-14 M143 269 h14"/>
+        </g>
+      </g>
+      <circle cx="200" cy="200" r="7" fill="var(--white-hot)" filter="url(#glow)"/>
+      <circle cx="200" cy="200" r="34" stroke="var(--gold-hot)" stroke-width="1" stroke-opacity=".5"/>
+    </svg>
+  </div>
+
+  <div class="wrap"><div class="hero-copy">
+    <span class="kicker"><span class="node"></span> For independent cafes across Canada</span>
+    <h1><span class="l1">A website your</span><span class="l2">cafe truly owns.</span></h1>
+    <p class="lede">Fast, mobile-first sites for independent cafes — your menu, hours and
+      location in one place, built to be found on Google.</p>
+    <div class="cta-row">
+      <a href="#contact" class="btn solid">Get a free mockup</a>
+      <a href="#work" class="btn ghost">See recent work</a>
+    </div>
+    <div class="trust">
+      <span><span class="g"></span> <b>Free</b> concept first</span>
+      <span><span class="g"></span> <b>No</b> monthly lock-in</span>
+      <span><span class="g"></span> Live in <b>days</b></span>
+    </div>
+  </div></div>
+</header>
+<div class="seam"></div>
+
+<!-- SERVICES -->
+<section id="services"><div class="glyphs"></div><div class="wrap" style="position:relative;z-index:1">
+  <div class="center reveal">
+    <div class="eyebrow">What you get</div>
+    <h2>Everything a cafe needs — nothing it doesn't</h2>
+    <p class="section-sub">No bloated builders, no monthly SaaS traps. A clean, fast site built
+      around how people actually find and choose a cafe.</p>
+  </div>
+  <div class="grid reveal">
+    <div class="slab">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
+      <h3>Mobile-first design</h3><p>People find cafes on their phone. Your site is built for that first — sharp on every screen.</p>
+    </div>
+    <div class="slab">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+      <h3>Found on Google</h3><p>Structured data for your name, hours, rating and location — so Google shows you in search and Maps.</p>
+    </div>
+    <div class="slab">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2 4 14h7l-1 8 10-12h-7z"/></svg></div>
+      <h3>Genuinely fast</h3><p>No heavy frameworks. Pages load in a blink, even on slow data — the way a site should.</p>
+    </div>
+    <div class="slab">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/></svg></div>
+      <h3>You own it</h3><p>Your site, your domain, your content. No renting your online presence from a delivery app.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- WORK -->
+<section id="work"><div class="wrap">
+  <div class="center reveal">
+    <div class="eyebrow">Recent work</div>
+    <h2>Concept sites for real Canadian cafes</h2>
+    <p class="section-sub">Live examples built for cafes that don't have a website yet.
+      Click any one to open the full working site.</p>
+  </div>
+  <div class="work-grid reveal">
+    <a class="work" href="work/haven-house.html" target="_blank" rel="noopener">
+      <div class="strip"></div>
+      <div class="top"><h3>Haven House Cafe</h3><span class="rate">★ 4.9</span></div>
+      <div class="body"><div class="loc">Calgary, AB · 392 Google reviews</div>
+        <span class="view">Open live site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
+    </a>
+    <a class="work" href="work/monacci.html" target="_blank" rel="noopener">
+      <div class="strip"></div>
+      <div class="top"><h3>Monacci Coffeehouse</h3><span class="rate">★ 4.8</span></div>
+      <div class="body"><div class="loc">Edmonton, AB · 190 Google reviews</div>
+        <span class="view">Open live site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
+    </a>
+    <a class="work" href="work/expresso.html" target="_blank" rel="noopener">
+      <div class="strip"></div>
+      <div class="top"><h3>eXpresso Café</h3><span class="rate">★ 3.9</span></div>
+      <div class="body"><div class="loc">Ottawa, ON · 47 Google reviews</div>
+        <span class="view">Open live site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
+    </a>
+  </div>
+  <p class="note reveal">These are unofficial concept designs, created to show what a website could look
+    like for each cafe. They are not affiliated with or endorsed by the businesses, and the menu
+    items shown are samples. Ratings and hours are drawn from each cafe's public Google listing.</p>
+</div></section>
+
+<!-- PROCESS -->
+<section id="process"><div class="glyphs"></div><div class="wrap" style="position:relative;z-index:1">
+  <div class="center reveal">
+    <div class="eyebrow">How it works</div>
+    <h2>From first message to live site</h2>
+    <p class="section-sub">Simple, low-risk, and you see the design before you commit to anything.</p>
+  </div>
+  <div class="steps reveal">
+    <div class="step"><div class="num">1</div><h3>Free mockup</h3>
+      <p>I build a real concept of your site first — your actual name, hours and details — and send it over. No cost, no obligation.</p></div>
+    <div class="step"><div class="num">2</div><h3>Your feedback</h3>
+      <p>You tell me what to change — colours, menu, photos, wording. We shape it together until it feels like your cafe.</p></div>
+    <div class="step"><div class="num">3</div><h3>Live in days</h3>
+      <p>Once you're happy, it goes live on your own domain, ready for Google, and easy for you to update.</p></div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact center"><div class="glowcore"></div>
+  <div class="wrap reveal">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's see what your cafe's site could look like</h2>
+    <p class="lede">Tell me your cafe's name and I'll put together a free mockup — no obligation,
+      no pressure. If it's not for you, no hard feelings.</p>
+    <a href="mailto:maplepixel@proton.me?subject=Free%20website%20mockup%20for%20my%20cafe" class="btn solid">Email me</a>
+  </div>
+</section>
+<div class="seam"></div>
+
+<footer><div class="wrap">
+  <div class="row">
+    <img src="assets/wordmark.png" alt="Maple & Pixel" class="logo">
+    <div>Websites for independent cafes across Canada · <a href="mailto:maplepixel@proton.me">maplepixel@proton.me</a></div>
+  </div>
+  <p class="disclaim">© Maple &amp; Pixel. Concept sites shown on this page are unofficial design
+    proposals, not affiliated with or endorsed by the businesses featured; menus shown are
+    illustrative. Business details are drawn from public Google Maps listings.</p>
+</div></footer>
+
+</body>
+</html>

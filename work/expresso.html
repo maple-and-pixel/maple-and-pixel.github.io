@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>eXpresso Café — patisserie, espresso &amp; specialty drinks on Preston St, Ottawa</title>
+<meta name="description" content="eXpresso Café on Preston Street, Ottawa — Nespresso-powered espresso, specialty iced drinks, and a French-style patisserie of cheesecakes, éclairs, tarts and trompe-l'œil desserts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"eXpresso Café",
+"address":{"@type":"PostalAddress","streetAddress":"439 Preston St","addressLocality":"Ottawa","addressRegion":"ON","addressCountry":"CA"},
+"geo":{"@type":"GeoCoordinates","latitude":"45.3992149","longitude":"-75.7085004"},
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"3.9","reviewCount":"47"},
+"servesCuisine":"Café · Patisserie",
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["https://schema.org/Monday","https://schema.org/Tuesday","https://schema.org/Wednesday","https://schema.org/Thursday","https://schema.org/Friday","https://schema.org/Saturday","https://schema.org/Sunday"],"opens":"09:00","closes":"21:00"}]}
+</script>
+<style>
+:root{
+  --ivory:#faf6ec; --paper:#fffdf8; --sand:#f2ebda;
+  --ink:#1d1a14; --soft:#4b453a; --dim:#8a8271;
+  --gold:#a2803c; --gold-l:#c4a25a; --gold-d:#7c5f22; --gold-soft:rgba(162,128,60,.14);
+  --char:#191510; --char2:#221d16;
+  --line:#e7ddc7; --line2:#dccfb2;
+  --disp:'Cormorant Garamond',Georgia,serif;
+  --body:'Inter',-apple-system,'Segoe UI',sans-serif;
+  --sh:0 24px 56px rgba(60,44,14,.14); --sh-sm:0 12px 30px rgba(60,44,14,.1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.disp{font-family:var(--disp)}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d)}
+
+.cap{height:3px;background:linear-gradient(90deg,var(--gold-d),var(--gold-l),var(--gold-d))}
+.notice{background:var(--char);color:#cbbf9f;font-size:12.5px;text-align:center;padding:9px 18px;letter-spacing:.01em}
+.notice b{color:#f0e6cf;font-weight:600}
+
+nav{position:sticky;top:0;z-index:40;background:linear-gradient(180deg,#231d15,#17130e);border-bottom:1px solid #0d0a07;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{font-family:var(--disp);font-weight:700;font-size:30px;letter-spacing:.01em;color:#f6efdc;line-height:1;display:flex;align-items:baseline;gap:10px}
+.brand .x{color:var(--gold-l)}
+.brand .cafe{font-style:italic;font-weight:500;font-size:20px;color:var(--gold-l)}
+.nav-r{display:flex;align-items:center;gap:28px}
+.nav-r a{color:#c9bd9c;font-weight:500;font-size:14px}.nav-r a:hover{color:#fff}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:500;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 14px;color:#eee4cc}
+.status .dot{width:8px;height:8px;border-radius:50%;background:#3a9c63;box-shadow:0 0 0 3px rgba(58,156,99,.16)}
+.status.shut .dot{background:#c0563e;box-shadow:0 0 0 3px rgba(192,86,62,.16)}
+@media(max-width:820px){.nav-r a{display:none}}
+
+/* HERO */
+.hero .grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:72px 0 64px}
+@media(max-width:900px){.hero .grid{grid-template-columns:1fr;gap:40px;padding:52px 0 44px}}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;margin-bottom:22px}
+.eyebrow::after{content:"";width:38px;height:1px;background:var(--gold)}
+.hero h1{font-family:var(--disp);font-weight:600;font-size:clamp(46px,6.2vw,76px);line-height:1.02;letter-spacing:-.01em;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--gold-d)}
+.hero .lead{font-size:18px;color:var(--soft);max-width:456px;margin-bottom:28px}
+.meta{display:flex;align-items:center;gap:14px;margin-bottom:30px;flex-wrap:wrap}
+.stars{font-family:var(--disp);font-weight:600;font-size:22px;display:flex;align-items:center;gap:8px}
+.stars b{color:var(--gold)}
+.meta .rev{color:var(--dim);font-size:14px}
+.meta .nes{font-size:12px;color:var(--gold-d);border:1px solid var(--line2);border-radius:999px;padding:5px 12px;letter-spacing:.04em}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:2px;font-weight:500;font-size:14.5px;letter-spacing:.02em;transition:transform .15s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--char);color:#f4ecd6}
+.btn.solid:hover{background:#000}
+.btn.line{background:transparent;border:1px solid var(--gold);color:var(--gold-d)}
+.btn.line:hover{background:var(--gold-soft)}
+
+.shot{position:relative;justify-self:center}
+.shot .ph{width:min(400px,84vw);aspect-ratio:4/3.4;overflow:hidden;padding:9px;background:var(--paper);box-shadow:0 0 0 7px #191510,0 0 0 8px var(--gold-d),var(--sh)}
+.shot .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.shot .tag{position:absolute;left:-16px;bottom:22px;background:var(--char);color:#f0e6cf;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding:9px 15px}
+.shot .tag b{color:var(--gold-l);font-weight:600}
+@media(max-width:900px){.shot .tag{left:6px}}
+
+/* thin gold double-rule divider */
+.rule{max-width:1140px;margin:0 auto;padding:0 28px}
+.rule i{display:block;height:1px;background:var(--gold);opacity:.5}
+.rule i+i{margin-top:3px;opacity:.28}
+
+section{padding:74px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 46px}
+.head h2{font-family:var(--disp);font-weight:600;font-size:clamp(32px,4.4vw,46px);line-height:1.05;margin:12px 0 10px}
+.head p{color:var(--dim);font-size:16px}
+
+/* SIGNATURE patisserie cards */
+.sig{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+@media(max-width:860px){.cards{grid-template-columns:repeat(2,1fr);gap:20px}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}}
+.card{text-align:center;padding:8px 6px}
+.card .no{font-family:var(--disp);font-style:italic;font-size:20px;color:var(--gold);margin-bottom:14px}
+.card .no::after{content:"";display:block;width:26px;height:1px;background:var(--gold);margin:12px auto 0;opacity:.6}
+.card h3{font-family:var(--disp);font-weight:600;font-size:23px;line-height:1.15;margin-bottom:8px}
+.card p{font-size:13.5px;color:var(--dim);line-height:1.6;margin-bottom:12px}
+.card .pr{font-family:var(--disp);font-weight:600;font-size:19px;color:var(--gold-d)}
+
+/* MENU */
+#menu{background:linear-gradient(rgba(28,24,16,.1),rgba(28,24,16,.17)),#e9e2d2 url("assets/marble.jpg") center/cover;padding:84px 0}
+.mboard{background:var(--paper);border-radius:5px;box-shadow:0 0 0 7px #191510,0 0 0 8px var(--gold-d),0 34px 72px rgba(20,12,4,.34);padding:48px 50px 34px}
+@media(max-width:600px){.mboard{padding:30px 22px 22px}}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px 64px}
+@media(max-width:800px){.mgrid{grid-template-columns:1fr;gap:6px 0}}
+.grp{padding-top:10px;break-inside:avoid}
+.grp.tall{grid-row:span 2}
+.gh{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.gh h3{font-family:var(--disp);font-weight:600;font-size:26px;white-space:nowrap}
+.gh::after{content:"";flex:1;height:1px;background:var(--line2)}
+.row{display:flex;align-items:baseline;gap:10px;padding:8px 0}
+.row .nm{font-size:15px;font-weight:500;color:var(--ink)}
+.row .ds{font-size:12.5px;color:var(--dim);font-weight:400}
+.row .fill{flex:1;border-bottom:1px dotted var(--line2);transform:translateY(-4px);min-width:14px}
+.row .p{font-family:var(--disp);font-weight:600;font-size:17px;color:var(--gold-d)}
+.note{margin-top:6px;font-size:12.5px;color:var(--dim);font-style:italic}
+
+/* VISIT */
+.visit{background:var(--paper);border-top:1px solid var(--line)}
+.visit .grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:52px;align-items:center}
+@media(max-width:820px){.visit .grid{grid-template-columns:1fr;gap:32px}}
+.hours .r{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--soft)}
+.hours .r:last-child{border-bottom:0}
+.hours .r.today{color:var(--ink);font-weight:600}
+.hours .r.today .d::after{content:"Today";margin-left:8px;font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#f4ecd6;background:var(--gold-d);padding:2px 7px;vertical-align:middle}
+.hours .d{color:var(--dim)}
+.addr{margin-top:24px}
+.addr p{color:var(--soft);margin:4px 0 16px}
+.map{overflow:hidden;padding:8px;background:var(--paper);box-shadow:0 0 0 6px #191510,0 0 0 7px var(--gold-d),var(--sh)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block;filter:saturate(.9)}
+
+footer{background:var(--char);color:#cabf9f;padding:60px 0 44px;border-top:3px solid var(--gold-d)}
+footer .top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+footer .brand{color:#fff;margin-bottom:12px}
+footer .brand .cafe{color:var(--gold-l)}
+footer .col b{color:#f0e6cf;display:block;margin-bottom:9px;font-family:var(--disp);font-size:18px;font-weight:600;letter-spacing:.02em}
+footer .col{font-size:14px;line-height:1.95}
+footer a:hover{color:#fff}
+.disclaim{border-top:1px solid rgba(240,230,207,.16);margin-top:34px;padding-top:20px;font-size:12px;color:#9c917a;line-height:1.7}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:50}
+.fab a{width:56px;height:56px;border-radius:50%;background:var(--char);color:var(--gold-l);display:flex;align-items:center;justify-content:center;box-shadow:var(--sh-sm);border:1px solid var(--gold-d)}
+</style>
+</head>
+<body>
+
+<div class="cap"></div>
+<div class="notice"><b>Concept mockup</b> — an unofficial design for eXpresso Café, not affiliated with the business. Prices are illustrative estimates.</div>
+
+<nav><div class="wrap">
+  <span class="brand">e<span class="x">X</span>presso <span class="cafe">Café</span></span>
+  <div class="nav-r">
+    <a href="#patisserie">Patisserie</a><a href="#menu">Menu</a><a href="#visit">Visit</a>
+    <span class="status" id="status"><span class="dot"></span><span id="statusText">Open today</span></span>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap"><div class="grid">
+  <div>
+    <span class="eyebrow lbl">Patisserie &amp; Espresso · Preston St</span>
+    <h1 class="disp">A little corner of <em>Paris</em> on Preston Street.</h1>
+    <p class="lead">Nespresso-powered espresso and specialty iced drinks, beside a glass case of house-made cheesecakes, éclairs, tarts and playful trompe-l'œil desserts.</p>
+    <div class="meta">
+      <span class="stars disp"><b>★ 3.9</b></span>
+      <span class="rev">47 Google reviews</span>
+      <span class="nes">Powered by Nespresso</span>
+    </div>
+    <div class="cta">
+      <a class="btn solid" href="#menu">View the menu</a>
+      <a class="btn line" href="https://www.google.com/maps/dir/?api=1&destination=45.3992149,-75.7085004" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </div>
+  <div class="shot">
+    <div class="ph"><img src="assets/expresso.jpg" alt="eXpresso Café storefront on Preston Street, Ottawa"></div>
+    <div class="tag"><b>439</b> Preston St · Ottawa</div>
+  </div>
+</div></div></header>
+
+<div class="rule"><i></i><i></i></div>
+
+<section class="sig" id="patisserie"><div class="wrap">
+  <div class="head">
+    <span class="lbl">The pastry case</span>
+    <h2 class="disp">Signature patisserie</h2>
+    <p>Made in-house daily — a few of the favourites regulars come back for.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="no disp">Nº 1</div>
+      <h3 class="disp">Raspberry Trompe-l'œil</h3>
+      <p>A playful mousse dessert shaped like a real raspberry — bright and tart.</p>
+      <div class="pr disp">$8.50</div>
+    </div>
+    <div class="card">
+      <div class="no disp">Nº 2</div>
+      <h3 class="disp">Mango Trompe-l'œil</h3>
+      <p>A lifelike mango, sculpted in mousse — the showpiece of the case.</p>
+      <div class="pr disp">$10.95</div>
+    </div>
+    <div class="card">
+      <div class="no disp">Nº 3</div>
+      <h3 class="disp">Pistachio Cheesecake</h3>
+      <p>Creamy pistachio cheesecake finished with crushed pistachios.</p>
+      <div class="pr disp">$8.95</div>
+    </div>
+    <div class="card">
+      <div class="no disp">Nº 4</div>
+      <h3 class="disp">Iced Tiramisu Latte</h3>
+      <p>The house iced signature — espresso, mascarpone cream and cocoa.</p>
+      <div class="pr disp">$8.95</div>
+    </div>
+  </div>
+</div></section>
+
+<section id="menu"><div class="wrap">
+  <div class="mboard">
+  <div class="head">
+    <span class="lbl">À la carte</span>
+    <h2 class="disp">The menu</h2>
+    <p>Espresso, specialty drinks and the full patisserie.</p>
+  </div>
+  <div class="mgrid">
+
+    <div class="grp">
+      <div class="gh"><h3 class="disp">Espresso &amp; coffee</h3></div>
+      <div class="row"><span class="nm">Espresso</span><span class="fill"></span><span class="p disp">4.50</span></div>
+      <div class="row"><span class="nm">Americano</span><span class="fill"></span><span class="p disp">4.50</span></div>
+      <div class="row"><span class="nm">Cappuccino</span><span class="fill"></span><span class="p disp">6.00</span></div>
+      <div class="row"><span class="nm">Latte</span><span class="fill"></span><span class="p disp">6.00</span></div>
+      <div class="row"><span class="nm">Flavoured Latte</span> <span class="ds">vanilla · caramel · hazelnut · pistachio · maple</span><span class="fill"></span><span class="p disp">6.75</span></div>
+      <div class="row"><span class="nm">Matcha Latte</span><span class="fill"></span><span class="p disp">6.75</span></div>
+      <div class="row"><span class="nm">Mochachino</span><span class="fill"></span><span class="p disp">7.00</span></div>
+      <div class="row"><span class="nm">Hot Chocolate</span><span class="fill"></span><span class="p disp">5.50</span></div>
+      <div class="row"><span class="nm">Tea</span> <span class="ds">Marrakesh mint · Earl Grey · masala chai · green</span><span class="fill"></span><span class="p disp">4.00</span></div>
+    </div>
+
+    <div class="grp">
+      <div class="gh"><h3 class="disp">Iced &amp; specialty</h3></div>
+      <div class="row"><span class="nm">Iced Coffee</span><span class="fill"></span><span class="p disp">6.25</span></div>
+      <div class="row"><span class="nm">Iced Latte · Cappuccino</span><span class="fill"></span><span class="p disp">8.95</span></div>
+      <div class="row"><span class="nm">Iced Tiramisu Latte</span><span class="fill"></span><span class="p disp">8.95</span></div>
+      <div class="row"><span class="nm">Iced Matcha</span> <span class="ds">caramel · pistachio · strawberry · vanilla</span><span class="fill"></span><span class="p disp">8.95</span></div>
+      <div class="row"><span class="nm">Smoothies</span> <span class="ds">mango · strawberry · banana · peach</span><span class="fill"></span><span class="p disp">8.95</span></div>
+      <div class="row"><span class="nm">Iced Tea</span> <span class="ds">mango · peach · strawberry</span><span class="fill"></span><span class="p disp">6.75</span></div>
+      <div class="row"><span class="nm">Italian Soda</span> <span class="ds">lemon · mango · peach · strawberry</span><span class="fill"></span><span class="p disp">5.75</span></div>
+    </div>
+
+    <div class="grp tall">
+      <div class="gh"><h3 class="disp">Patisserie</h3></div>
+      <div class="row"><span class="nm">Raspberry Trompe-l'œil</span><span class="fill"></span><span class="p disp">8.50</span></div>
+      <div class="row"><span class="nm">Mango Trompe-l'œil</span><span class="fill"></span><span class="p disp">10.95</span></div>
+      <div class="row"><span class="nm">Pistachio Cheesecake</span><span class="fill"></span><span class="p disp">8.95</span></div>
+      <div class="row"><span class="nm">Biscoff · Berries · Salted Caramel Cheesecake</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Tiramisu</span> <span class="ds">in a cup</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Crème Brûlée</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Chocolate · Classic Éclair</span><span class="fill"></span><span class="p disp">6.75</span></div>
+      <div class="row"><span class="nm">Cannoli</span><span class="fill"></span><span class="p disp">5.50</span></div>
+      <div class="row"><span class="nm">Mille-Feuille</span><span class="fill"></span><span class="p disp">5.50</span></div>
+      <div class="row"><span class="nm">Almond · Pistachio Croissant</span><span class="fill"></span><span class="p disp">5.50</span></div>
+      <div class="row"><span class="nm">Butter Croissant</span><span class="fill"></span><span class="p disp">3.95</span></div>
+    </div>
+
+    <div class="grp">
+      <div class="gh"><h3 class="disp">Cakes &amp; tarts</h3></div>
+      <div class="row"><span class="nm">Opera Cake</span> <span class="ds">gluten-free</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Ferrero Rocher Slice</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Carrot Cake</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Mocha Cake</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Fruit Tart</span><span class="fill"></span><span class="p disp">7.95</span></div>
+      <div class="row"><span class="nm">Lemon Meringue Tart</span><span class="fill"></span><span class="p disp">6.75</span></div>
+    </div>
+
+    <div class="grp">
+      <div class="gh"><h3 class="disp">From the kitchen</h3></div>
+      <div class="row"><span class="nm">Paninis</span> <span class="ds">caprese · chicken pesto · spicy tuna · veggie</span><span class="fill"></span><span class="p disp">13.50</span></div>
+      <div class="row"><span class="nm">Smoked Salmon Bagel</span><span class="fill"></span><span class="p disp">11.25</span></div>
+      <div class="row"><span class="nm">Turkey &amp; Brie Bagel</span><span class="fill"></span><span class="p disp">11.25</span></div>
+      <div class="row"><span class="nm">Bagel Omelette</span><span class="fill"></span><span class="p disp">11.25</span></div>
+      <div class="row"><span class="nm">Caprese Pasta Salad</span><span class="fill"></span><span class="p disp">5.95</span></div>
+      <div class="note">Prices are illustrative estimates based on the café's public delivery listing.</div>
+    </div>
+
+  </div>
+  </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap"><div class="grid">
+  <div>
+    <span class="lbl">Come by</span>
+    <h2 class="disp" style="font-size:clamp(30px,4vw,42px);margin:10px 0 22px">Find the café</h2>
+    <div class="hours" id="hours"></div>
+    <div class="addr">
+      <span class="lbl">Address</span>
+      <p>439 Preston St, Ottawa, ON</p>
+      <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&destination=45.3992149,-75.7085004" target="_blank" rel="noopener">Open in Maps</a>
+    </div>
+  </div>
+  <div class="map"><iframe loading="lazy" title="Map to eXpresso Café"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-75.7130,45.3960,-75.7040,45.4024&layer=mapnik&marker=45.3992149,-75.7085004"></iframe></div>
+</div></div></section>
+
+<footer><div class="wrap">
+  <div class="top">
+    <div>
+      <div class="brand disp" style="font-size:30px;display:flex;align-items:baseline;gap:10px">e<span style="color:var(--gold)">X</span>presso <span class="cafe" style="font-style:italic;font-size:20px">Café</span></div>
+      <div style="max-width:330px">Patisserie &amp; espresso on Preston Street — a little corner of Paris in Ottawa.</div>
+    </div>
+    <div class="col"><b>Visit</b>439 Preston St<br>Ottawa, ON<br>Powered by Nespresso</div>
+    <div class="col"><b>Hours</b>Open daily<br>9:00 am – 9:00 pm</div>
+  </div>
+  <p class="disclaim">Unofficial concept by Maple &amp; Pixel to show what a website could look like for eXpresso Café.
+    Not affiliated with or endorsed by the business. Menu items are taken from the café's public delivery
+    listing; prices shown are illustrative in-store estimates, not official. Name, rating, address and
+    storefront photo are drawn from the business's public listing.</p>
+</div></footer>
+
+<div class="fab"><a href="https://www.google.com/maps/dir/?api=1&destination=45.3992149,-75.7085004" target="_blank" rel="noopener" aria-label="Directions to eXpresso Café">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a></div>
+
+<script>
+const H={0:[9,21],1:[9,21],2:[9,21],3:[9,21],4:[9,21],5:[9,21],6:[9,21]};
+const DAY=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const order=[1,2,3,4,5,6,0];
+const fmt=h=>{const hr=Math.floor(h);let x=hr%12||12;return x+(hr<12?" am":" pm")};
+const now=new Date(),d=now.getDay(),cur=now.getHours()+now.getMinutes()/60;
+const box=document.getElementById('hours');
+order.forEach(i=>{const[o,c]=H[i];const t=(i===d)?' today':'';
+  box.insertAdjacentHTML('beforeend',`<div class="r${t}"><span class="d">${DAY[i]}</span><span>${fmt(o)} – ${fmt(c)}</span></div>`)});
+const[o,c]=H[d],open=cur>=o&&cur<c;
+const st=document.getElementById('status'),tx=document.getElementById('statusText');
+if(open){tx.textContent='Open now · until '+fmt(c)}else{st.classList.add('shut');tx.textContent='Closed · opens 9 am'}
+</script>
+</body>
+</html>
