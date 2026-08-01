@@ -212,7 +212,7 @@ footer a:hover{color:#fff}
       <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&destination=51.0984594,-114.0872865" target="_blank" rel="noopener">Open in Maps</a>
     </div>
   </div>
-  <div class="map"><iframe loading="lazy" title="Map to Haven House Cafe"
+  <div class="map"><iframe loading="lazy" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" title="Map to Haven House Cafe"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-114.0912,51.0964,-114.0832,51.1004&layer=mapnik&marker=51.0984594,-114.0872865"></iframe></div>
 </div></div></section>
 
@@ -238,13 +238,17 @@ const H={0:[9,15],1:[7.5,16.5],2:[7.5,16.5],3:[7.5,19],4:[7.5,15.5],5:[7.5,16.5]
 const DAY=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const order=[1,2,3,4,5,6,0];
 const fmt=h=>{const hr=Math.floor(h);let x=hr%12||12,m=(h%1)?":30":"";return x+m+(hr<12?"am":"pm")};
-const now=new Date(),d=now.getDay(),cur=now.getHours()+now.getMinutes()/60;
+const TZ='America/Edmonton';
+const _p=new Intl.DateTimeFormat('en-US',{timeZone:TZ,weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+const _g=t=>_p.find(x=>x.type===t).value;
+const d={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[_g('weekday')],cur=parseInt(_g('hour'),10)%24+parseInt(_g('minute'),10)/60;
 const box=document.getElementById('hours');
 order.forEach(i=>{const[o,c]=H[i];const t=(i===d)?' today':'';
   box.insertAdjacentHTML('beforeend',`<div class="r${t}"><span class="d">${DAY[i]}</span><span>${fmt(o)} – ${fmt(c)}</span></div>`)});
 const[o,c]=H[d],open=cur>=o&&cur<c;
 const st=document.getElementById('status'),tx=document.getElementById('statusText');
-if(open){tx.textContent='Open now · until '+fmt(c)}else{st.classList.add('shut');tx.textContent='Closed · opens '+fmt(H[order[(order.indexOf(d)+1)%7]][0])}
+const opensTxt=cur<o?fmt(o):fmt(H[order[(order.indexOf(d)+1)%7]][0]);
+if(open){tx.textContent='Open now · until '+fmt(c)}else{st.classList.add('shut');tx.textContent='Closed · opens '+opensTxt}
 </script>
 </body>
 </html>
