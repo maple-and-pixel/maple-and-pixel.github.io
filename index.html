@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-@property --spin{syntax:'<angle>';inherits:false;initial-value:0deg}
 :root{
   --obsidian:#05060a; --ink:#0a0c11; --stone:#12151b; --stone2:#0e1116; --line:#242a33;
   --gold:#d4af37; --gold-hot:#ffe6a6; --amber:#e8b54b;
@@ -34,11 +33,13 @@ img{max-width:100%;display:block}
 /* ===== خلفية: عمق حجري ===== */
 .bg{position:fixed;inset:0;z-index:-5;
   background:radial-gradient(130% 100% at 50% -10%, #171b22 0%, #0c0e13 42%, var(--obsidian) 78%)}
-.aura{position:fixed;inset:-30%;z-index:-4;pointer-events:none;filter:blur(70px);opacity:.5;
-  background:conic-gradient(from var(--spin) at 42% 40%, transparent 0deg, rgba(212,175,55,.5) 40deg,
+/* one big pre-blurred layer that only ROTATES (GPU-composited) — no per-frame gradient repaint */
+.aura{position:fixed;top:50%;left:50%;width:200vmax;height:200vmax;z-index:-4;pointer-events:none;
+  filter:blur(70px);opacity:.5;will-change:transform;transform:translate(-50%,-50%);
+  background:conic-gradient(from 0deg at 50% 50%, transparent 0deg, rgba(212,175,55,.5) 40deg,
     transparent 120deg, rgba(70,230,255,.32) 210deg, transparent 300deg, rgba(212,175,55,.38) 360deg);
-  animation:spin 30s linear infinite}
-@keyframes spin{to{--spin:360deg}}
+  animation:spin 60s linear infinite}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
 .grain{position:fixed;inset:0;z-index:-3;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 .vig{position:fixed;inset:0;z-index:-2;pointer-events:none;
@@ -143,8 +144,14 @@ h1 .l2{display:block;
   background:linear-gradient(180deg,#14171d,#0d1015);border:1px solid var(--line);
   box-shadow:0 12px 30px rgba(0,0,0,.4);transition:transform .2s,border-color .25s,box-shadow .3s}
 .work:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.5);box-shadow:0 20px 46px rgba(0,0,0,.55),0 0 34px rgba(212,175,55,.12)}
-.work .strip{height:5px;background:linear-gradient(90deg,var(--gold),var(--electric))}
-.work .top{padding:22px 22px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.work .strip{height:4px;background:linear-gradient(90deg,var(--gold),var(--electric))}
+.work .thumb{position:relative;height:176px;background-size:cover;background-position:center;background-color:#0d1015}
+.work .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,6,10,.04) 42%,rgba(5,6,10,.66))}
+.work .thumb .tag{position:absolute;left:12px;bottom:11px;z-index:2;font-family:var(--display);font-size:11.5px;
+  letter-spacing:.04em;font-weight:600;color:#f3ead0;background:rgba(5,6,10,.55);backdrop-filter:blur(6px);
+  padding:5px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.14)}
+.work .top{padding:16px 22px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.work .thumb .rate{position:absolute;top:12px;right:12px;z-index:2;background:rgba(5,6,10,.62);backdrop-filter:blur(6px)}
 .work h3{font-family:var(--display);font-size:19px;font-weight:600}
 .work .rate{flex:none;font-family:var(--display);background:rgba(212,175,55,.14);color:var(--gold-hot);
   font-weight:700;font-size:13px;padding:4px 11px;border-radius:999px;border:1px solid rgba(212,175,55,.25)}
@@ -177,6 +184,11 @@ footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;a
 footer .logo{height:24px;opacity:.9}
 footer a{color:var(--gold-hot)}
 .disclaim{border-top:1px solid var(--line);margin-top:24px;padding-top:18px;font-size:12px;color:#6d727c;line-height:1.7}
+
+@media(prefers-reduced-motion:reduce){
+  .aura,.artifact,.ring-rot,.kicker .node,h1 .l2{animation:none!important}
+  html{scroll-behavior:auto}
+}
 </style>
 </head>
 <body>
@@ -280,28 +292,75 @@ footer a{color:var(--gold-hot)}
 <section id="work"><div class="wrap">
   <div class="center reveal">
     <div class="eyebrow">Recent work</div>
-    <h2>Concept sites for real Canadian cafes</h2>
-    <p class="section-sub">Live examples built for cafes that don't have a website yet.
-      Click any one to open the full working site.</p>
+    <h2>Thirteen concept sites for real Canadian cafes</h2>
+    <p class="section-sub">Each one built from the cafe's own photos, real menu and Google details —
+      across seven cities. Tap any card to open the full working site.</p>
   </div>
   <div class="work-grid reveal">
+    <a class="work" href="work/keyf-cafe.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/keyf-cafe.jpg)"><span class="rate">★ 4.9</span><span class="tag">Turkish café</span></div>
+      <div class="top"><h3>Keyf Cafe</h3></div>
+      <div class="body"><div class="loc">Hamilton, ON</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/saigon-grind.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/saigon-grind.jpg)"><span class="rate">★ 4.9</span><span class="tag">Vietnamese · coffee &amp; tea</span></div>
+      <div class="top"><h3>Saigon Grind</h3></div>
+      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/the-9th-cloud.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/the-9th-cloud.jpg)"><span class="rate">★ 4.9</span><span class="tag">Vietnamese · desserts</span></div>
+      <div class="top"><h3>The 9th Cloud</h3></div>
+      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/the-1-way-coffee.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/the-1-way-coffee.jpg)"><span class="rate">★ 5.0</span><span class="tag">Vietnamese subs</span></div>
+      <div class="top"><h3>The 1 Way Coffee</h3></div>
+      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/tnt-cup-coffee.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/tnt-cup-coffee.jpg)"><span class="rate">★ 4.9</span><span class="tag">Specialty coffee</span></div>
+      <div class="top"><h3>TNT Cup Coffee</h3></div>
+      <div class="body"><div class="loc">Mississauga, ON</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/nero-cafe.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/nero-cafe.jpg)"><span class="rate">★ 4.8</span><span class="tag">Dessert café</span></div>
+      <div class="top"><h3>Nero Cafe</h3></div>
+      <div class="body"><div class="loc">Edmonton, AB</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/istanbul-cultural-house-caf.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/istanbul-cultural-house-caf.jpg)"><span class="rate">★ 4.9</span><span class="tag">Turkish desserts</span></div>
+      <div class="top"><h3>Istanbul Cultural House</h3></div>
+      <div class="body"><div class="loc">Ottawa, ON</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/coffee-brick-canada-inc-hamilton.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/coffee-brick-canada-inc-hamilton.jpg)"><span class="rate">★ 4.8</span><span class="tag">Korean brunch</span></div>
+      <div class="top"><h3>Coffee Brick</h3></div>
+      <div class="body"><div class="loc">Hamilton, ON</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/the-corner-store-cafe.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/the-corner-store-cafe.jpg)"><span class="rate">★ 4.9</span><span class="tag">Panini &amp; brunch</span></div>
+      <div class="top"><h3>The Corner Store Cafe</h3></div>
+      <div class="body"><div class="loc">Vancouver, BC</div><span class="view">Open live site ↗</span></div>
+    </a>
+    <a class="work" href="work/melville-caf.html" target="_blank" rel="noopener">
+      <div class="thumb" style="background-image:url(work/assets/melville-caf.jpg)"><span class="rate">★ 4.8</span><span class="tag">Sandwich café</span></div>
+      <div class="top"><h3>Melville Café</h3></div>
+      <div class="body"><div class="loc">Vancouver, BC</div><span class="view">Open live site ↗</span></div>
+    </a>
     <a class="work" href="work/haven-house.html" target="_blank" rel="noopener">
-      <div class="strip"></div>
-      <div class="top"><h3>Haven House Cafe</h3><span class="rate">★ 4.9</span></div>
-      <div class="body"><div class="loc">Calgary, AB · 392 Google reviews</div>
-        <span class="view">Open live site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
+      <div class="thumb" style="background-image:url(work/assets/haven.jpg)"><span class="rate">★ 4.9</span><span class="tag">Coffee &amp; community</span></div>
+      <div class="top"><h3>Haven House Cafe</h3></div>
+      <div class="body"><div class="loc">Calgary, AB</div><span class="view">Open live site ↗</span></div>
     </a>
     <a class="work" href="work/monacci.html" target="_blank" rel="noopener">
-      <div class="strip"></div>
-      <div class="top"><h3>Monacci Coffeehouse</h3><span class="rate">★ 4.8</span></div>
-      <div class="body"><div class="loc">Edmonton, AB · 190 Google reviews</div>
-        <span class="view">Open live site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
+      <div class="thumb" style="background-image:url(work/assets/monacci.jpg)"><span class="rate">★ 4.8</span><span class="tag">Specialty · frappés &amp; croffles</span></div>
+      <div class="top"><h3>Monacci Coffeehouse</h3></div>
+      <div class="body"><div class="loc">Edmonton, AB</div><span class="view">Open live site ↗</span></div>
     </a>
     <a class="work" href="work/expresso.html" target="_blank" rel="noopener">
-      <div class="strip"></div>
-      <div class="top"><h3>eXpresso Café</h3><span class="rate">★ 3.9</span></div>
-      <div class="body"><div class="loc">Ottawa, ON · 47 Google reviews</div>
-        <span class="view">Open live site <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
+      <div class="thumb" style="background-image:url(work/assets/expresso.jpg)"><span class="tag">Patisserie &amp; espresso</span></div>
+      <div class="top"><h3>eXpresso Café</h3></div>
+      <div class="body"><div class="loc">Ottawa, ON</div><span class="view">Open live site ↗</span></div>
     </a>
   </div>
   <p class="note reveal">These are unofficial concept designs, created to show what a website could look
