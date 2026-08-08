@@ -63,7 +63,7 @@
   }
 }
 </script>
-<style>:root{--bg:#f4e9db;--bg2:#efdcc6;--solid:#fffdf9;--glass:rgba(255,251,245,.66);--dark:#241608;--navbg:rgba(247,240,230,.85);--ink:#2a1c10;--dim:#7c6650;--faint:#a1917d;--accent:#b5732e;--accent-d:#905c24;--gold:#b7873a;--green:#2f7d5b;--line:rgba(120,80,40,.15);--glassline:rgba(255,255,255,.55);--radius:20px;--shadow:0 18px 46px rgba(90,55,25,.16);--shadow-s:0 8px 22px rgba(90,55,25,.12);--head:'Fraunces',Georgia,serif;--body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--herofill:linear-gradient(160deg,#7a3d18,#3a1e0c);--living:radial-gradient(40% 40% at 18% 22%,#f4c88a,transparent 62%),radial-gradient(44% 44% at 84% 14%,#e0894a,transparent 62%),radial-gradient(50% 50% at 72% 86%,#c9662f,transparent 62%),radial-gradient(42% 42% at 12% 88%,#f0b268,transparent 62%),linear-gradient(135deg,#f7e6cf,#efc290);}
+<style>:root{--bg:#f4e9db;--bg2:#efdcc6;--solid:#fffdf9;--glass:rgba(255,251,245,.66);--dark:#241608;--navbg:rgba(247,240,230,.85);--ink:#2a1c10;--dim:#7c6650;--faint:#a1917d;--accent:#75543c;--accent-d:#5d4330;--gold:#b7873a;--green:#2f7d5b;--line:rgba(120,80,40,.15);--glassline:rgba(255,255,255,.55);--radius:20px;--shadow:0 18px 46px rgba(90,55,25,.16);--shadow-s:0 8px 22px rgba(90,55,25,.12);--head:'Fraunces',Georgia,serif;--body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--herofill:linear-gradient(160deg,#7a3d18,#3a1e0c);--living:radial-gradient(40% 40% at 18% 22%,#f4c88a,transparent 62%),radial-gradient(44% 44% at 84% 14%,#e0894a,transparent 62%),radial-gradient(50% 50% at 72% 86%,#c9662f,transparent 62%),radial-gradient(42% 42% at 12% 88%,#f0b268,transparent 62%),linear-gradient(135deg,#f7e6cf,#efc290);}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -243,15 +243,16 @@ footer{position:relative;z-index:1;padding:70px 0 40px;margin-top:20px;border-to
 <div class="notice"><b>Concept mockup</b> by Maple &amp; Pixel — an unofficial design imagined for Birks Coffee. Not affiliated with the business; menu items are illustrative.</div>
 
 <nav id="nav"><div class="wrap">
-  <div class="brand">Birks Coffee</div>
+  <div class="brand"><img class="brandlogo" src="assets/birks-coffee-logo.png" alt="Birks Coffee logo"></div>
   <div class="links">
     <a href="#story">Story</a><a href="#menu">Menu</a><a href="#visit">Visit</a>
     <a class="navcta" href="https://www.google.com/maps/dir/?api=1&destination=49.8938879,-97.141781" target="_blank" rel="noopener">Directions</a>
   </div>
 </div></nav>
 
-<header class="hero no-photo">
-  <div class="hero__fill"></div><div class="hero__grain"></div>
+<header class="hero has-photo">
+  <div class="hero__media"><img src="assets/birks-coffee.jpg" alt="Birks Coffee storefront"></div>
+  <div class="hero__grade"></div><div class="hero__grain"></div>
   <div class="wrap hero__in">
     <div class="kicker">Coffee shop · Winnipeg, MB</div>
     <h1>Birks Coffee</h1>
@@ -283,13 +284,23 @@ footer{position:relative;z-index:1;padding:70px 0 40px;margin-top:20px;border-to
 <section id="menu" class="pad" style="padding-top:0"><div class="wrap">
   <div class="eyebrow2 reveal">On the board</div>
   <h2 class="reveal d1">What we pour &amp; bake</h2>
-  <p class="lead reveal d2">A taste of the layout — your real menu and prices would live here, updated whenever you like.</p>
+  <p class="lead reveal d2">Straight from Birks Coffee's current Google menu — we'd fine-tune the details with you.</p>
   <div class="tabs reveal d2" id="tabs"><button class="tab on" data-f="all">All</button><button class="tab" data-f="coffee">Coffee</button><button class="tab" data-f="food">Kitchen</button><button class="tab" data-f="sweet">Bakery</button></div>
-  <div class="menu"><div class="item glass reveal" data-c="coffee"><div><h3>Espresso</h3><p>Single origin, rich crema</p></div><div class="price">$3.25</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Cappuccino</h3><p>Classic, dusted with cocoa</p></div><div class="price">$4.50</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Caffè Latte</h3><p>Silky steamed milk</p></div><div class="price">$4.75</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Macchiato</h3><p>Espresso, a spoon of foam</p></div><div class="price">$3.75</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Americano</h3><p>Long black, house blend</p></div><div class="price">$3.50</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Affogato</h3><p>Espresso over vanilla gelato</p></div><div class="price">$6.00</div></div><div class="item glass reveal" data-c="food"><div><h3>Spaghetti Bolognese</h3><p>Slow-cooked meat sauce</p></div><div class="price">$14.00</div></div><div class="item glass reveal" data-c="food"><div><h3>Penne Rosé</h3><p>Tomato-cream, parmesan</p></div><div class="price">$14.50</div></div><div class="item glass reveal" data-c="food"><div><h3>Spinach Ravioli</h3><p>Ricotta, brown butter, sage</p></div><div class="price">$15.00</div></div><div class="item glass reveal" data-c="food"><div><h3>Seven-Cheese Tortellini</h3><p>House cream sauce</p></div><div class="price">$15.50</div></div><div class="item glass reveal" data-c="food"><div><h3>Chicken Panini</h3><p>Pesto, mozzarella, ciabatta</p></div><div class="price">$11.50</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Tiramisu</h3><p>Espresso-soaked, mascarpone</p></div><div class="price">$6.50</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Cannoli</h3><p>Two pieces, ricotta cream</p></div><div class="price">$6.00</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Lemon Sorbet</h3><p>Bright, house-made</p></div><div class="price">$5.00</div></div></div>
-  <p class="menu-note reveal">Sample items for layout only — the real board is yours to set.</p>
+  <div class="menu"><div class="item glass reveal" data-c="coffee"><div><h3>Latte</h3><p>Silky steamed milk · 12/16oz — most popular</p></div><div class="price">$5.25 / 6.00</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Matcha Latte</h3><p>Ceremonial matcha · 12/16oz — most popular</p></div><div class="price">$5.50 / 6.00</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Brewed Coffee</h3><p>Freshly brewed · 12/16oz — most popular</p></div><div class="price">$3.00 / 3.75</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Cappuccino</h3><p>Classic · 10/12oz</p></div><div class="price">$4.75 / 5.50</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Flat White</h3><p>Double ristretto, microfoam · 10oz</p></div><div class="price">$4.50</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Americano</h3><p>Long black · 12/16oz</p></div><div class="price">$4.00 / 4.75</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Mocha</h3><p>Espresso and chocolate · 12/16oz</p></div><div class="price">$5.50 / 6.00</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Chai Latte</h3><p>Spiced and steamed · 12/16oz</p></div><div class="price">$4.75 / 5.25</div></div><div class="item glass reveal" data-c="coffee"><div><h3>London Fog</h3><p>Earl Grey, vanilla, steamed milk · 12oz</p></div><div class="price">$4.50</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Tea</h3><p>Loose-leaf · 16oz</p></div><div class="price">$3.25</div></div><div class="item glass reveal" data-c="food"><div><h3>Grilled Cheese Combo</h3><p>Toasted grilled cheese, pairs with any coffee</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="food"><div><h3>Turkey &amp; Swiss Panini</h3><p>Pressed warm on ciabatta</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="sweet"><div><h3>House Cookies</h3><p>Baked fresh — chocolate chip and more</p></div><div class="price">—</div></div></div>
+  
 </div></section>
 
-<section class="band no-photo">
+<section class="sig pad" style="padding-top:0"><div class="wrap"><div class="sigwrap">
+  <div class="sig__media reveal"><span class="sig__tag">★ Lunch favourite</span><img src="assets/birks-coffee-sig.jpg" alt="The Warm Panini at Birks Coffee"></div>
+  <div class="sig__body">
+    <div class="eyebrow2 reveal">The one everyone orders</div>
+    <h2 class="sig__name reveal d1">The Warm Panini</h2>
+    <p class="sig__desc reveal d1">Turkey and Swiss pressed warm on ciabatta — the lunch that pairs with any of their most-popular lattes.</p>
+    
+  </div>
+</div></div></section>
+<section class="band has-photo">
+  <div class="band__media"><img src="assets/birks-coffee.jpg" alt="Inside Birks Coffee"></div>
   <div class="band__grade"></div>
   <div class="band__in">
     <p class="q reveal">"5.0 stars across 33 Google reviews — earned one cup at a time."</p>
@@ -318,7 +329,7 @@ footer{position:relative;z-index:1;padding:70px 0 40px;margin-top:20px;border-to
     <div><div class="brand">Birks Coffee</div><div class="sub">276 Portage Ave, Winnipeg, MB R3C 0B6, Canada</div></div>
     <div class="totop" id="totop">↑ Back to top</div>
   </div>
-  <p class="disclaim">Unofficial concept by Maple &amp; Pixel, made to show what a website could look like for Birks Coffee. Not affiliated with or endorsed by the business; the menu shown is illustrative. Business name, rating, reviews, hours, address, location are drawn from the cafe's public Google Maps listing.</p>
+  <p class="disclaim">Unofficial concept by Maple &amp; Pixel, made to show what a website could look like for Birks Coffee. Not affiliated with or endorsed by the business; the menu shown is illustrative. Business name, rating, reviews, hours, address, location and photo are drawn from the cafe's public Google Maps listing.</p>
 </div></footer>
 
 <div class="fab"></div>
