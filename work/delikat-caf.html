@@ -8,7 +8,7 @@
 <meta property="og:title" content="DeliKat Café — Cafe in Ottawa">
 <meta property="og:description" content="4.8★ on Google. Menu, hours and location, in one place.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -69,7 +69,7 @@
   }
 }
 </script>
-<style>:root{--bg:#12171c;--bg2:#0e1319;--solid:#1b232b;--glass:rgba(28,38,48,.55);--dark:#0b0f13;--navbg:rgba(16,21,26,.86);--ink:#eef3f6;--dim:#9fb0bb;--faint:#6f7f8a;--accent:#6ea6c8;--accent-d:#5884a0;--gold:#d59a5f;--green:#5fbf94;--line:rgba(160,190,205,.16);--glassline:rgba(255,255,255,.12);--radius:12px;--shadow:0 18px 44px rgba(0,0,0,.45);--shadow-s:0 8px 22px rgba(0,0,0,.4);--head:'Space Grotesk',sans-serif;--body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--herofill:linear-gradient(160deg,#1d2c34,#0b0f13);--living:radial-gradient(40% 40% at 18% 22%,#2c5b6e,transparent 62%),radial-gradient(44% 44% at 84% 14%,#3d7d8f,transparent 62%),radial-gradient(50% 50% at 72% 86%,#26414f,transparent 62%),radial-gradient(42% 42% at 12% 88%,#4a8fa3,transparent 62%),linear-gradient(135deg,#141b21,#1d2c34);}
+<style>:root{--bg:#f4e9db;--bg2:#efdcc6;--solid:#fffdf9;--glass:rgba(255,251,245,.66);--dark:#241608;--navbg:rgba(247,240,230,.85);--ink:#2a1c10;--dim:#7c6650;--faint:#a1917d;--accent:#b5533a;--accent-d:#90422e;--gold:#b7873a;--green:#2f7d5b;--line:rgba(120,80,40,.15);--glassline:rgba(255,255,255,.55);--radius:20px;--shadow:0 18px 46px rgba(90,55,25,.16);--shadow-s:0 8px 22px rgba(90,55,25,.12);--head:'Fraunces',Georgia,serif;--body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--herofill:linear-gradient(160deg,#7a3d18,#3a1e0c);--living:radial-gradient(40% 40% at 18% 22%,#f4c88a,transparent 62%),radial-gradient(44% 44% at 84% 14%,#e0894a,transparent 62%),radial-gradient(50% 50% at 72% 86%,#c9662f,transparent 62%),radial-gradient(42% 42% at 12% 88%,#f0b268,transparent 62%),linear-gradient(135deg,#f7e6cf,#efc290);}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -256,8 +256,9 @@ footer{position:relative;z-index:1;padding:70px 0 40px;margin-top:20px;border-to
   </div>
 </div></nav>
 
-<header class="hero no-photo">
-  <div class="hero__fill"></div><div class="hero__grain"></div>
+<header class="hero has-photo">
+  <div class="hero__media"><img src="assets/delikat-caf.jpg" alt="DeliKat Café storefront"></div>
+  <div class="hero__grade"></div><div class="hero__grain"></div>
   <div class="wrap hero__in">
     <div class="kicker">Cafe · Ottawa, ON</div>
     <h1>DeliKat Café</h1>
@@ -289,13 +290,23 @@ footer{position:relative;z-index:1;padding:70px 0 40px;margin-top:20px;border-to
 <section id="menu" class="pad" style="padding-top:0"><div class="wrap">
   <div class="eyebrow2 reveal">On the board</div>
   <h2 class="reveal d1">What we pour &amp; bake</h2>
-  <p class="lead reveal d2">A taste of the layout — your real menu and prices would live here, updated whenever you like.</p>
-  <div class="tabs reveal d2" id="tabs"><button class="tab on" data-f="all">All</button><button class="tab" data-f="coffee">Coffee</button><button class="tab" data-f="food">Kitchen</button><button class="tab" data-f="sweet">Bakery</button></div>
-  <div class="menu"><div class="item glass reveal" data-c="coffee"><div><h3>Signature Latte</h3><p>House espresso, silky microfoam</p></div><div class="price">$5.00</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Flat White</h3><p>Double ristretto, no foam cap</p></div><div class="price">$4.75</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Cappuccino</h3><p>Classic, dusted with cocoa</p></div><div class="price">$4.75</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Cortado</h3><p>Equal parts espresso and steamed milk</p></div><div class="price">$4.25</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Pour Over</h3><p>Single origin, ask about today&#x27;s roast</p></div><div class="price">$5.50</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Cold Brew</h3><p>18-hour steep, over ice</p></div><div class="price">$5.25</div></div><div class="item glass reveal" data-c="food"><div><h3>Avocado Toast</h3><p>Sourdough, chili, lemon, sea salt</p></div><div class="price">$11.00</div></div><div class="item glass reveal" data-c="food"><div><h3>Breakfast Bagel</h3><p>Egg, aged cheddar, choice of protein</p></div><div class="price">$9.50</div></div><div class="item glass reveal" data-c="food"><div><h3>Grilled Cheese</h3><p>Three cheeses, tomato, on sourdough</p></div><div class="price">$10.50</div></div><div class="item glass reveal" data-c="food"><div><h3>Soup of the Day</h3><p>House-made, with warm sourdough</p></div><div class="price">$8.50</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Butter Croissant</h3><p>Laminated and baked fresh each morning</p></div><div class="price">$4.00</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Banana Bread</h3><p>House recipe, lightly toasted</p></div><div class="price">$4.50</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Seasonal Galette</h3><p>Whatever&#x27;s ripe this week</p></div><div class="price">$6.00</div></div><div class="item glass reveal" data-c="sweet"><div><h3>Brown-Butter Cookie</h3><p>Crisp edge, soft centre</p></div><div class="price">$3.50</div></div></div>
-  <p class="menu-note reveal">Sample items for layout only — the real board is yours to set.</p>
+  <p class="lead reveal d2">Straight from DeliKat Café's current Google menu — we'd fine-tune the details with you.</p>
+  <div class="tabs reveal d2" id="tabs"><button class="tab on" data-f="all">All</button><button class="tab" data-f="coffee">Coffee</button><button class="tab" data-f="food">Kitchen</button></div>
+  <div class="menu"><div class="item glass reveal" data-c="food"><div><h3>Club Sandwich</h3><p>Triple-decker with chicken, bacon, lettuce and tomato</p></div><div class="price">$11.99</div></div><div class="item glass reveal" data-c="food"><div><h3>Caesar Chicken Salad</h3><p>Crisp romaine, grilled chicken, parmesan</p></div><div class="price">$12.99</div></div><div class="item glass reveal" data-c="food"><div><h3>Chicken Donair Wrap</h3><p>Seasoned chicken, garlic sauce, veg</p></div><div class="price">$6.49</div></div><div class="item glass reveal" data-c="food"><div><h3>Man&#x27;oushe Za&#x27;atar</h3><p>Lebanese flatbread baked with za&#x27;atar, olive oil and sesame</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="food"><div><h3>Lebanese Cheese Pie</h3><p>Warm, fresh-baked</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="food"><div><h3>Ham &amp; Cheese Sub</h3><p>Classic, on a fresh sub</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="food"><div><h3>Chicken Sub</h3><p>Lettuce, tomato, mayo</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="food"><div><h3>Breakfast Sandwich</h3><p>Egg, bacon and cheese on an English muffin</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Brewed Coffee</h3><p>Freshly brewed, all day</p></div><div class="price">—</div></div><div class="item glass reveal" data-c="coffee"><div><h3>Latte</h3><p>Espresso and steamed milk</p></div><div class="price">—</div></div></div>
+  
 </div></section>
 
-<section class="band no-photo">
+<section class="sig pad" style="padding-top:0"><div class="wrap"><div class="sigwrap">
+  <div class="sig__media reveal"><span class="sig__tag">★ Lebanese classic</span><img src="assets/delikat-caf-sig.jpg" alt="Man&#x27;oushe Za&#x27;atar at DeliKat Café"></div>
+  <div class="sig__body">
+    <div class="eyebrow2 reveal">The one everyone orders</div>
+    <h2 class="sig__name reveal d1">Man&#x27;oushe Za&#x27;atar</h2>
+    <p class="sig__desc reveal d1">Lebanese flatbread baked fresh with za&#x27;atar, olive oil and sesame — the taste of home, the way they&#x27;ve made it for 30 years.</p>
+    
+  </div>
+</div></div></section>
+<section class="band has-photo">
+  <div class="band__media"><img src="assets/delikat-caf.jpg" alt="Inside DeliKat Café"></div>
   <div class="band__grade"></div>
   <div class="band__in">
     <p class="q reveal">"4.8 stars across 48 Google reviews — earned one cup at a time."</p>
@@ -324,7 +335,7 @@ footer{position:relative;z-index:1;padding:70px 0 40px;margin-top:20px;border-to
     <div><div class="brand">DeliKat Café</div><div class="sub">277 Sparks St., Ottawa, ON K1R 7S8, Canada · +1 613-235-7232</div></div>
     <div class="totop" id="totop">↑ Back to top</div>
   </div>
-  <p class="disclaim">Unofficial concept by Maple &amp; Pixel, made to show what a website could look like for DeliKat Café. Not affiliated with or endorsed by the business; the menu shown is illustrative. Business name, rating, reviews, hours, address, location are drawn from the cafe's public Google Maps listing.</p>
+  <p class="disclaim">Unofficial concept by Maple &amp; Pixel, made to show what a website could look like for DeliKat Café. Not affiliated with or endorsed by the business; the menu shown is illustrative. Business name, rating, reviews, hours, address, location and photo are drawn from the cafe's public Google Maps listing.</p>
 </div></footer>
 
 <div class="fab"><a class="cl" href="tel:+16132357232" aria-label="Call"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.6 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg></a></div>
