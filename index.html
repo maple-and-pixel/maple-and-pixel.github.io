@@ -152,8 +152,9 @@ h1 .l2{display:block;
 .work{position:relative;display:block;overflow:hidden;border-radius:16px;
   background:linear-gradient(180deg,#14171d,#0d1015);border:1px solid var(--line);
   box-shadow:0 12px 30px rgba(0,0,0,.4);transition:transform .2s,border-color .25s,box-shadow .3s}
-.work:hover{transform:translateY(-5px);border-color:rgba(212,175,55,.5);box-shadow:0 20px 46px rgba(0,0,0,.55),0 0 34px rgba(212,175,55,.12)}
-.work .strip{height:4px;background:linear-gradient(90deg,var(--gold),var(--electric))}
+.work:hover{transform:translateY(-5px);border-color:var(--sc,rgba(212,175,55,.5));
+  box-shadow:0 20px 46px rgba(0,0,0,.55),0 0 42px -8px var(--sc,rgba(212,175,55,.4))}
+.work .strip{height:4px;background:linear-gradient(90deg,var(--sc,var(--gold)),transparent)}
 .work .thumb{position:relative;height:176px;background-size:cover;background-position:center;background-color:#0d1015}
 .work .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,6,10,.04) 42%,rgba(5,6,10,.66))}
 .work .thumb .tag{position:absolute;left:12px;bottom:11px;z-index:2;font-family:var(--display);font-size:11.5px;
@@ -166,7 +167,7 @@ h1 .l2{display:block;
   font-weight:700;font-size:13px;padding:4px 11px;border-radius:999px;border:1px solid rgba(212,175,55,.25)}
 .work .body{padding:12px 22px 22px}
 .work .loc{color:var(--dim);font-size:13.5px;margin-bottom:16px}
-.work .view{color:var(--gold-hot);font-size:14px;font-weight:600;display:inline-flex;gap:7px;align-items:center;font-family:var(--display)}
+.work .view{color:var(--sc,var(--gold-hot));font-size:14px;font-weight:600;display:inline-flex;gap:7px;align-items:center;font-family:var(--display)}
 .note{color:#6d727c;font-size:12.5px;margin-top:28px;max-width:640px;line-height:1.7}
 
 
@@ -427,36 +428,52 @@ footer a{color:var(--gold-hot)}
 
 <script>
 (function(){
+  // Each caf\u00e9 is matched to one of seven design souls; the card wears that soul's
+  // accent, so the gallery itself proves the pitch \u2014 matched, not templated.
   var SOULS={
-    warm:{label:'Warm & Premium', c:'#e8b54b'},
-    fresh:{label:'Fresh & Bright', c:'#5fd0b4'},
-    bold:{label:'Bold Modern',     c:'#46e6ff'}
+    dark:      {label:'Dark Premium',      c:'#d4af37'},
+    warm:      {label:'Warm & Premium',    c:'#e6a24c'},
+    fresh:     {label:'Fresh & Bright',    c:'#57cfb0'},
+    bold:      {label:'Bold Modern',       c:'#46e6ff'},
+    vibrant:   {label:'Vibrant Playful',   c:'#ff5fa2'},
+    editorial: {label:'Editorial Minimal', c:'#93a6bd'},
+    heritage:  {label:'Heritage Classic',  c:'#c56a4a'}
   };
+  // Ordered so no two neighbours share a soul \u2014 the wall reads as a spectrum,
+  // strongest concepts leading each pass through the seven souls.
   var WORK=[
-    {slug:'nero-cafe',             name:'Nero Cafe',             city:'Edmonton, AB',    rate:'4.8',tag:'Dubai desserts \u00b7 caf\u00e9',    soul:'dark'},
-    {slug:'mokha-coffee-house',    name:'Mokha Coffee House',    city:'Edmonton, AB',    rate:'4.7',tag:'Arabic coffee house',       soul:'warm'},
-    {slug:'the-9th-cloud',         name:'The 9th Cloud',         city:'Winnipeg, MB',    rate:'4.9',tag:'Vietnamese \u00b7 desserts',      soul:'vibrant'},
-    {slug:'the-corner-store-cafe', name:'The Corner Store Cafe', city:'Vancouver, BC',   rate:'4.9',tag:'Panini \u00b7 brunch',            soul:'editorial'},
-    {slug:'kawa-espresso-bar',     name:'Kawa Espresso Bar',     city:'Calgary, AB',     rate:'4.5',tag:'Espresso bar',              soul:'bold'},
-    {slug:'delikat-cafe',          name:'DeliKat Caf\u00e9',      city:'Ottawa, ON',      rate:'4.8',tag:'Deli \u00b7 Lebanese & Canadian', soul:'heritage'},
-    {slug:'halo-espresso-bar',     name:'Halo Espresso Bar',     city:'Mississauga, ON', rate:'4.5',tag:'Espresso bar \u00b7 roastery', soul:'warm'},
-    {slug:'caf-delicia',           name:'Caf\u00e9 Delicia',      city:'Edmonton, AB',    rate:'4.6',tag:'Filipino treats & coffee', soul:'fresh'}
+    {slug:'the-9th-cloud',            name:'The 9th Cloud',         city:'Winnipeg, MB',      rate:'4.9',tag:'Vietnamese \u00b7 desserts',       soul:'vibrant'},
+    {slug:'nero-cafe',                name:'Nero Cafe',             city:'Edmonton, AB',      rate:'4.8',tag:'Dubai desserts \u00b7 caf\u00e9',   soul:'dark'},
+    {slug:'the-corner-store-cafe',    name:'The Corner Store Cafe', city:'Vancouver, BC',     rate:'4.9',tag:'Panini \u00b7 brunch',             soul:'editorial'},
+    {slug:'phin-coffee-bar',          name:'Phin Coffee Bar',       city:'Hamilton, ON',      rate:'4.9',tag:'Vietnamese phin coffee',           soul:'warm'},
+    {slug:'kawa-espresso-bar',        name:'Kawa Espresso Bar',     city:'Calgary, AB',       rate:'4.5',tag:'Espresso bar',                     soul:'bold'},
+    {slug:'delikat-cafe',             name:'DeliKat Caf\u00e9',      city:'Ottawa, ON',        rate:'4.8',tag:'Deli \u00b7 Lebanese & Canadian',  soul:'heritage'},
+    {slug:'toast',                    name:'Toast',                 city:'Windsor, ON',       rate:'4.6',tag:'Breakfast \u00b7 brunch',          soul:'fresh'},
+    {slug:'majestea',                 name:'MajesTea',              city:'St. John\u2019s, NL',rate:'4.8',tag:'Bubble tea',                       soul:'vibrant'},
+    {slug:'the-parlour-gelato-coffee',name:'The Parlour',           city:'St. John\u2019s, NL',rate:'4.7',tag:'Gelato \u00b7 coffee',             soul:'dark'},
+    {slug:'comma-cafe',               name:'Comma Caf\u00e9',        city:'Hamilton, ON',      rate:'4.7',tag:'Brunch \u00b7 restaurant',         soul:'editorial'},
+    {slug:'mokha-coffee-house',       name:'Mokha Coffee House',    city:'Edmonton, AB',      rate:'4.7',tag:'Arabic coffee house',              soul:'warm'},
+    {slug:'museo-coffee-roasters',    name:'Museo Coffee Roasters', city:'Saskatoon, SK',     rate:'4.7',tag:'Coffee roastery',                  soul:'bold'},
+    {slug:'the-celtic-hearth',        name:'The Celtic Hearth',     city:'St. John\u2019s, NL',rate:'4.1',tag:'Irish pub \u00b7 kitchen',          soul:'heritage'},
+    {slug:'caf-delicia',              name:'Caf\u00e9 Delicia',      city:'Edmonton, AB',      rate:'4.6',tag:'Filipino treats & coffee',         soul:'fresh'},
+    {slug:'halo-espresso-bar',        name:'Halo Espresso Bar',     city:'Mississauga, ON',   rate:'4.5',tag:'Espresso bar \u00b7 roastery',     soul:'warm'}
   ];
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   var grid=document.getElementById('workGrid');
   if(!grid) return;
   grid.innerHTML=WORK.map(function(w){
-    return '<a class="work" data-soul="'+esc(w.soul)+'" href="work/'+esc(w.slug)+'.html" target="_blank" rel="noopener">'
+    var s=SOULS[w.soul]||{label:'',c:'var(--gold)'};
+    return '<a class="work" data-soul="'+esc(w.soul)+'" style="--sc:'+s.c+'" href="work/'+esc(w.slug)+'.html" target="_blank" rel="noopener">'
+      +'<span class="strip"></span>'
       +'<div class="thumb" style="background-image:url(work/assets/'+esc(w.slug)+'.jpg)">'
+      +'<span class="soul"><span class="d"></span>'+esc(s.label)+'</span>'
       +'<span class="rate">\u2605 '+esc(w.rate)+'</span>'
       +'<span class="tag">'+esc(w.tag)+'</span></div>'
       +'<div class="top"><h3>'+esc(w.name)+'</h3></div>'
       +'<div class="body"><div class="loc">'+esc(w.city)+'</div>'
       +'<span class="view">Open live site \u2197</span></div></a>';
   }).join('');
-  // Soul filter deferred until there are enough demos per soul.
-  // (WORK[].soul + SOULS map kept for when it returns.)
 })();
 </script>
 </body>
