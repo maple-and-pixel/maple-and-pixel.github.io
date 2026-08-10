@@ -3,11 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Maple &amp; Pixel — Websites for Canadian cafes</title>
-<meta name="description" content="Maple & Pixel builds fast, mobile-first websites for independent cafes across Canada. Menu, hours, location and Google visibility — in one place you own.">
-<meta property="og:title" content="Maple & Pixel — Websites for Canadian cafes">
-<meta property="og:description" content="Fast, mobile-first websites for independent cafes across Canada. Free mockup, no obligation.">
+<title>Maple &amp; Pixel — Websites for Canadian caf&eacute;s</title>
+<meta name="description" content="Maple & Pixel builds fast, mobile-first websites for independent caf&eacute;s across Canada. Menu, hours, location and Google visibility — in one place you own.">
+<meta property="og:title" content="Maple & Pixel — Websites for Canadian caf&eacute;s">
+<meta property="og:description" content="Fast, mobile-first websites for independent caf&eacute;s across Canada. Free mockup, no obligation.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://maple-and-pixel.github.io/">
+<meta property="og:image" content="https://maple-and-pixel.github.io/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Maple &amp; Pixel — websites for Canadian caf&eacute;s">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maple &amp; Pixel — Websites for Canadian caf&eacute;s">
+<meta name="twitter:description" content="Fast, mobile-first websites for independent caf&eacute;s across Canada. Free concept first.">
+<meta name="twitter:image" content="https://maple-and-pixel.github.io/assets/og-cover.png">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,6 +169,53 @@ h1 .l2{display:block;
 .work .view{color:var(--gold-hot);font-size:14px;font-weight:600;display:inline-flex;gap:7px;align-items:center;font-family:var(--display)}
 .note{color:#6d727c;font-size:12.5px;margin-top:28px;max-width:640px;line-height:1.7}
 
+
+/* ===== WORK — filters + soul badges ===== */
+.filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:36px}
+.chip{font-family:var(--display);font-size:13px;font-weight:600;letter-spacing:.01em;color:var(--dim);
+  background:rgba(18,21,27,.55);border:1px solid var(--line);padding:9px 16px;border-radius:999px;
+  cursor:pointer;transition:color .2s,border-color .2s,background .2s,box-shadow .3s;
+  display:inline-flex;align-items:center;gap:8px}
+.chip:hover{color:var(--txt);border-color:var(--electric-dim)}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--cc);transition:box-shadow .3s}
+.chip[aria-pressed="true"]{color:var(--txt);border-color:var(--cc);background:rgba(255,255,255,.045);
+  box-shadow:0 0 20px -5px var(--cc)}
+.chip[aria-pressed="true"] .dot{box-shadow:0 0 10px var(--cc)}
+.work-grid .work.hide{display:none}
+.work .soul{position:absolute;left:12px;top:12px;z-index:2;font-family:var(--display);font-size:11px;
+  font-weight:600;letter-spacing:.015em;color:var(--sc);background:rgba(5,6,10,.6);backdrop-filter:blur(6px);
+  padding:5px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.14);
+  display:inline-flex;align-items:center;gap:6px}
+.work .soul .d{width:7px;height:7px;border-radius:50%;background:var(--sc);box-shadow:0 0 8px var(--sc)}
+.work-empty{color:var(--dim);text-align:center;margin-top:30px;font-size:15px;display:none}
+
+/* ===== PHILOSOPHY — roots to canopy ===== */
+#philosophy{overflow:hidden}
+.phil{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;margin-top:8px}
+.phil-copy .section-sub{margin-bottom:26px}
+.roots{list-style:none;display:flex;flex-direction:column;gap:16px;margin-top:4px}
+.roots li{position:relative;padding-left:20px;color:var(--dim);font-size:15.5px;line-height:1.62;max-width:520px}
+.roots li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 10px rgba(212,175,55,.6)}
+.roots li:nth-child(2)::before{background:var(--electric);box-shadow:0 0 10px rgba(70,230,255,.6)}
+.roots li:nth-child(3)::before{background:var(--gold-hot);box-shadow:0 0 12px rgba(255,230,166,.7)}
+.roots .rk{font-family:var(--display);color:var(--txt);font-weight:600}
+.phil-sig{margin-top:30px;font-family:var(--display);font-size:13px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold-hot);opacity:.9}
+.phil-sig b{color:var(--electric);font-weight:600}
+.tree-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);
+  background:#05060a;box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 60px -12px rgba(212,175,55,.28)}
+.tree-frame::before{content:"";position:absolute;inset:-2px;z-index:0;border-radius:22px;pointer-events:none;
+  background:conic-gradient(from 0deg,rgba(212,175,55,.0),rgba(212,175,55,.35),rgba(70,230,255,.28),rgba(212,175,55,.0));
+  filter:blur(24px);opacity:.6;animation:spin 26s linear infinite}
+.tree-frame video{position:relative;z-index:1;display:block;width:100%;height:auto;border-radius:20px;
+  background:#05060a}
+.tree-frame .edge{position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:20px;
+  box-shadow:inset 0 0 60px rgba(5,6,10,.55),inset 0 0 1px rgba(255,255,255,.12)}
+@media(max-width:840px){.phil{grid-template-columns:1fr;gap:34px}
+  .phil-copy{order:1}.tree-frame{order:0}}
+@media(prefers-reduced-motion:reduce){.tree-frame::before{animation:none}}
+
 /* ===== PROCESS ===== */
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:52px;position:relative}
 .step{position:relative;padding:30px 24px 26px;border-radius:16px;
@@ -198,7 +254,7 @@ footer a{color:var(--gold-hot)}
 <nav><div class="wrap">
   <a href="#top"><img src="assets/wordmark.png" alt="Maple & Pixel" class="logo"></a>
   <div class="nav-links">
-    <a href="#services">Services</a><a href="#work">Work</a><a href="#process">How it works</a>
+    <a href="#services">Services</a><a href="#work">Work</a><a href="#philosophy">Philosophy</a><a href="#process">How it works</a>
     <a href="#contact" class="cta">Get in touch</a>
   </div>
 </div></nav>
@@ -243,9 +299,9 @@ footer a{color:var(--gold-hot)}
   </div>
 
   <div class="wrap"><div class="hero-copy">
-    <span class="kicker"><span class="node"></span> For independent cafes across Canada</span>
-    <h1><span class="l1">A website your</span><span class="l2">cafe truly owns.</span></h1>
-    <p class="lede">Fast, mobile-first sites for independent cafes — your menu, hours and
+    <span class="kicker"><span class="node"></span> For independent caf&eacute;s across Canada</span>
+    <h1><span class="l1">A website your</span><span class="l2">caf&eacute; truly owns.</span></h1>
+    <p class="lede">Fast, mobile-first sites for independent caf&eacute;s — your menu, hours and
       location in one place, built to be found on Google.</p>
     <div class="cta-row">
       <a href="#contact" class="btn solid">Get a free mockup</a>
@@ -264,14 +320,14 @@ footer a{color:var(--gold-hot)}
 <section id="services"><div class="glyphs"></div><div class="wrap" style="position:relative;z-index:1">
   <div class="center reveal">
     <div class="eyebrow">What you get</div>
-    <h2>Everything a cafe needs — nothing it doesn't</h2>
+    <h2>Everything a caf&eacute; needs — nothing it doesn't</h2>
     <p class="section-sub">No bloated builders, no monthly SaaS traps. A clean, fast site built
-      around how people actually find and choose a cafe.</p>
+      around how people actually find and choose a caf&eacute;.</p>
   </div>
   <div class="grid reveal">
     <div class="slab">
       <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div>
-      <h3>Mobile-first design</h3><p>People find cafes on their phone. Your site is built for that first — sharp on every screen.</p>
+      <h3>Mobile-first design</h3><p>People find caf&eacute;s on their phone. Your site is built for that first — sharp on every screen.</p>
     </div>
     <div class="slab">
       <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
@@ -292,105 +348,42 @@ footer a{color:var(--gold-hot)}
 <section id="work"><div class="wrap">
   <div class="center reveal">
     <div class="eyebrow">Recent work</div>
-    <h2>Eighteen concept sites for real Canadian cafes</h2>
-    <p class="section-sub">Each one built from the cafe's own photos, real menu and Google details —
-      across seven cities. Tap any card to open the full working site.</p>
+    <h2>Concept sites for real Canadian caf&eacute;s</h2>
+    <p class="section-sub">Each one built from the caf&eacute;&rsquo;s own photos, real menu and Google
+      details &mdash; across several cities. Tap any card to open the full working site.</p>
   </div>
-  <div class="work-grid reveal">
-    <a class="work" href="work/keyf-cafe.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/keyf-cafe.jpg)"><span class="rate">★ 4.9</span><span class="tag">Turkish café</span></div>
-      <div class="top"><h3>Keyf Cafe</h3></div>
-      <div class="body"><div class="loc">Hamilton, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/saigon-grind.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/saigon-grind.jpg)"><span class="rate">★ 4.9</span><span class="tag">Vietnamese · coffee &amp; tea</span></div>
-      <div class="top"><h3>Saigon Grind</h3></div>
-      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/the-9th-cloud.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/the-9th-cloud.jpg)"><span class="rate">★ 4.9</span><span class="tag">Vietnamese · desserts</span></div>
-      <div class="top"><h3>The 9th Cloud</h3></div>
-      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/the-1-way-coffee.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/the-1-way-coffee.jpg)"><span class="rate">★ 5.0</span><span class="tag">Vietnamese subs</span></div>
-      <div class="top"><h3>The 1 Way Coffee</h3></div>
-      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/tnt-cup-coffee.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/tnt-cup-coffee.jpg)"><span class="rate">★ 4.9</span><span class="tag">Specialty coffee</span></div>
-      <div class="top"><h3>TNT Cup Coffee</h3></div>
-      <div class="body"><div class="loc">Mississauga, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/nero-cafe.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/nero-cafe.jpg)"><span class="rate">★ 4.8</span><span class="tag">Dessert café</span></div>
-      <div class="top"><h3>Nero Cafe</h3></div>
-      <div class="body"><div class="loc">Edmonton, AB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/istanbul-cultural-house-caf.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/istanbul-cultural-house-caf.jpg)"><span class="rate">★ 4.9</span><span class="tag">Turkish desserts</span></div>
-      <div class="top"><h3>Istanbul Cultural House</h3></div>
-      <div class="body"><div class="loc">Ottawa, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/coffee-brick-canada-inc-hamilton.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/coffee-brick-canada-inc-hamilton.jpg)"><span class="rate">★ 4.8</span><span class="tag">Korean brunch</span></div>
-      <div class="top"><h3>Coffee Brick</h3></div>
-      <div class="body"><div class="loc">Hamilton, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/the-corner-store-cafe.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/the-corner-store-cafe.jpg)"><span class="rate">★ 4.9</span><span class="tag">Panini &amp; brunch</span></div>
-      <div class="top"><h3>The Corner Store Cafe</h3></div>
-      <div class="body"><div class="loc">Vancouver, BC</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/melville-caf.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/melville-caf.jpg)"><span class="rate">★ 4.8</span><span class="tag">Sandwich café</span></div>
-      <div class="top"><h3>Melville Café</h3></div>
-      <div class="body"><div class="loc">Vancouver, BC</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/haven-house.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/haven.jpg)"><span class="rate">★ 4.9</span><span class="tag">Coffee &amp; community</span></div>
-      <div class="top"><h3>Haven House Cafe</h3></div>
-      <div class="body"><div class="loc">Calgary, AB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/monacci.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/monacci.jpg)"><span class="rate">★ 4.8</span><span class="tag">Specialty · frappés &amp; croffles</span></div>
-      <div class="top"><h3>Monacci Coffeehouse</h3></div>
-      <div class="body"><div class="loc">Edmonton, AB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/expresso.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/expresso.jpg)"><span class="tag">Patisserie &amp; espresso</span></div>
-      <div class="top"><h3>eXpresso Café</h3></div>
-      <div class="body"><div class="loc">Ottawa, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/coffee-bunny-inc.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/coffee-bunny-inc.jpg)"><span class="rate">★ 4.8</span><span class="tag">Coffee &amp; bakery</span></div>
-      <div class="top"><h3>Coffee Bunny</h3></div>
-      <div class="body"><div class="loc">Hamilton, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/caf-18g.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/caf-18g.jpg)"><span class="rate">★ 5.0</span><span class="tag">Specialty coffee</span></div>
-      <div class="top"><h3>Café 18g</h3></div>
-      <div class="body"><div class="loc">Calgary, AB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/birks-coffee.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/birks-coffee.jpg)"><span class="rate">★ 5.0</span><span class="tag">Specialty coffee</span></div>
-      <div class="top"><h3>Birks Coffee</h3></div>
-      <div class="body"><div class="loc">Winnipeg, MB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/caf-delicia.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/caf-delicia.jpg)"><span class="rate">★ 4.6</span><span class="tag">Filipino treats &amp; coffee</span></div>
-      <div class="top"><h3>Café Delicia</h3></div>
-      <div class="body"><div class="loc">Edmonton, AB</div><span class="view">Open live site ↗</span></div>
-    </a>
-    <a class="work" href="work/delikat-caf.html" target="_blank" rel="noopener">
-      <div class="thumb" style="background-image:url(work/assets/delikat-caf.jpg)"><span class="rate">★ 4.8</span><span class="tag">Deli · Lebanese &amp; Canadian</span></div>
-      <div class="top"><h3>DeliKat Café</h3></div>
-      <div class="body"><div class="loc">Ottawa, ON</div><span class="view">Open live site ↗</span></div>
-    </a>
-  </div>
+  <div class="work-grid reveal" id="workGrid"></div>
   <p class="note reveal">These are unofficial concept designs, created to show what a website could look
-    like for each cafe. They are not affiliated with or endorsed by the businesses, and the menu
-    items shown are samples. Ratings and hours are drawn from each cafe's public Google listing.</p>
+    like for each caf&eacute;. They are not affiliated with or endorsed by the businesses, and the menu
+    items shown are samples. Ratings and hours are drawn from each caf&eacute;'s public Google listing.</p>
+</div></section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy"><div class="glyphs"></div><div class="wrap" style="position:relative;z-index:1">
+  <div class="phil">
+    <div class="phil-copy reveal">
+      <div class="eyebrow">Our philosophy</div>
+      <h2>From roots to canopy</h2>
+      <p class="section-sub">Every site we build grows the way a tree does &mdash; from what&rsquo;s
+        already real about your caf&eacute;, up into something people find.</p>
+      <ul class="roots">
+        <li><span class="rk">Roots.</span> Your caf&eacute;&rsquo;s real story &mdash; the menu, the hours, the
+          reviews, the room people already love. Nothing invented.</li>
+        <li><span class="rk">Trunk.</span> Our craft &mdash; clean structure, real speed, and a design
+          soul chosen to match your character, not a template.</li>
+        <li><span class="rk">Canopy.</span> The living site people actually find &mdash; fast on a phone,
+          ready for Google, and unmistakably yours.</li>
+      </ul>
+      <div class="phil-sig">Structure <b>&times;</b> Soul</div>
+    </div>
+    <div class="tree-frame reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/tree.png"
+             aria-label="An illustration of a tree of code growing from roots to canopy">
+        <source src="assets/tree.mp4" type="video/mp4">
+      </video>
+      <div class="edge"></div>
+    </div>
+  </div>
 </div></section>
 
 <!-- PROCESS -->
@@ -404,7 +397,7 @@ footer a{color:var(--gold-hot)}
     <div class="step"><div class="num">1</div><h3>Free mockup</h3>
       <p>I build a real concept of your site first — your actual name, hours and details — and send it over. No cost, no obligation.</p></div>
     <div class="step"><div class="num">2</div><h3>Your feedback</h3>
-      <p>You tell me what to change — colours, menu, photos, wording. We shape it together until it feels like your cafe.</p></div>
+      <p>You tell me what to change — colours, menu, photos, wording. We shape it together until it feels like your caf&eacute;.</p></div>
     <div class="step"><div class="num">3</div><h3>Live in days</h3>
       <p>Once you're happy, it goes live on your own domain, ready for Google, and easy for you to update.</p></div>
   </div>
@@ -414,10 +407,10 @@ footer a{color:var(--gold-hot)}
 <section id="contact" class="contact center"><div class="glowcore"></div>
   <div class="wrap reveal">
     <div class="eyebrow">Get in touch</div>
-    <h2>Let's see what your cafe's site could look like</h2>
-    <p class="lede">Tell me your cafe's name and I'll put together a free mockup — no obligation,
+    <h2>Let's see what your caf&eacute;'s site could look like</h2>
+    <p class="lede">Tell me your caf&eacute;'s name and I'll put together a free mockup — no obligation,
       no pressure. If it's not for you, no hard feelings.</p>
-    <a href="mailto:maplepixel@proton.me?subject=Free%20website%20mockup%20for%20my%20cafe" class="btn solid">Email me</a>
+    <a href="mailto:maplepixel@proton.me?subject=Free%20website%20mockup%20for%20my%20caf%C3%A9" class="btn solid">Email me</a>
   </div>
 </section>
 <div class="seam"></div>
@@ -425,12 +418,42 @@ footer a{color:var(--gold-hot)}
 <footer><div class="wrap">
   <div class="row">
     <img src="assets/wordmark.png" alt="Maple & Pixel" class="logo">
-    <div>Websites for independent cafes across Canada · <a href="mailto:maplepixel@proton.me">maplepixel@proton.me</a></div>
+    <div>Websites for independent caf&eacute;s across Canada · <a href="mailto:maplepixel@proton.me">maplepixel@proton.me</a></div>
   </div>
   <p class="disclaim">© Maple &amp; Pixel. Concept sites shown on this page are unofficial design
     proposals, not affiliated with or endorsed by the businesses featured; menus shown are
     illustrative. Business details are drawn from public Google Maps listings.</p>
 </div></footer>
 
+<script>
+(function(){
+  var SOULS={
+    warm:{label:'Warm & Premium', c:'#e8b54b'},
+    fresh:{label:'Fresh & Bright', c:'#5fd0b4'},
+    bold:{label:'Bold Modern',     c:'#46e6ff'}
+  };
+  var WORK=[
+    {slug:'mokha-coffee-house',name:'Mokha Coffee House',city:'Edmonton, AB',   rate:'4.7',tag:'Arabic coffee house',      soul:'warm'},
+    {slug:'halo-espresso-bar', name:'Halo Espresso Bar', city:'Mississauga, ON',rate:'4.5',tag:'Espresso bar \u00b7 roastery',soul:'warm'},
+    {slug:'kawa-espresso-bar', name:'Kawa Espresso Bar', city:'Calgary, AB',    rate:'4.5',tag:'Espresso bar',             soul:'bold'},
+    {slug:'caf-delicia',       name:'Caf\u00e9 Delicia',  city:'Edmonton, AB',   rate:'4.6',tag:'Filipino treats & coffee', soul:'fresh'}
+  ];
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  var grid=document.getElementById('workGrid');
+  if(!grid) return;
+  grid.innerHTML=WORK.map(function(w){
+    return '<a class="work" data-soul="'+esc(w.soul)+'" href="work/'+esc(w.slug)+'.html" target="_blank" rel="noopener">'
+      +'<div class="thumb" style="background-image:url(work/assets/'+esc(w.slug)+'.jpg)">'
+      +'<span class="rate">\u2605 '+esc(w.rate)+'</span>'
+      +'<span class="tag">'+esc(w.tag)+'</span></div>'
+      +'<div class="top"><h3>'+esc(w.name)+'</h3></div>'
+      +'<div class="body"><div class="loc">'+esc(w.city)+'</div>'
+      +'<span class="view">Open live site \u2197</span></div></a>';
+  }).join('');
+  // Soul filter deferred until there are enough demos per soul.
+  // (WORK[].soul + SOULS map kept for when it returns.)
+})();
+</script>
 </body>
 </html>
