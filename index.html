@@ -457,7 +457,7 @@ footer a{color:var(--gold-hot)}
     {slug:'majestea',                 name:'MajesTea',              city:'St. John\u2019s, NL',rate:'4.8',tag:'Bubble tea \u00b7 majesty',        soul:'dark'},
     {slug:'museo-coffee-roasters',    name:'Museo Coffee Roasters', city:'Saskatoon, SK',     rate:'4.7',tag:'Coffee roastery',                  soul:'editorial'},
     {slug:'halo-espresso-bar',        name:'Halo Espresso Bar',     city:'Mississauga, ON',   rate:'4.5',tag:'Espresso bar \u00b7 roastery',     soul:'warm'},
-    {slug:'grandad-s-coffee-and-donuts',name:'Grandad\u2019s Donuts', city:'Hamilton, ON',      rate:'4.6',tag:'Donuts \u00b7 coffee',             soul:'heritage'}
+    {slug:'grandad-s-coffee-and-donuts',name:'Grandad\u2019s Donuts', city:'Hamilton, ON',      rate:'4.6',tag:'Donuts \u00b7 coffee \u00b7 24/7',      soul:'heritage', link:'work/grandads-donuts/'}
   ];
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -465,7 +465,7 @@ footer a{color:var(--gold-hot)}
   if(!grid) return;
   grid.innerHTML=WORK.map(function(w){
     var s=SOULS[w.soul]||{label:'',c:'var(--gold)'};
-    return '<a class="work" data-soul="'+esc(w.soul)+'" style="--sc:'+s.c+'" href="work/'+esc(w.slug)+'.html" target="_blank" rel="noopener">'
+    return '<a class="work" data-soul="'+esc(w.soul)+'" style="--sc:'+s.c+'" href="'+(w.link?esc(w.link):'work/'+esc(w.slug)+'.html')+'" target="_blank" rel="noopener">'
       +'<span class="strip"></span>'
       +'<div class="thumb" style="background-image:url(work/assets/'+esc(w.slug)+'.jpg)">'
       +'<span class="soul"><span class="d"></span>'+esc(s.label)+'</span>'
