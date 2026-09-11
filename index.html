@@ -444,6 +444,7 @@ footer a{color:var(--gold-hot)}
   // The showroom features ONLY fortress-quality Next.js demos (the grandad's bar). Each card wears its
   // caf\u00e9's own accent (c) \u2014 the wall itself proves "matched to the place, not templated". Grows per caf\u00e9.
   var WORK=[
+    {slug:'coco-van',                   name:'Coco-Van',              city:'Vancouver, BC',  tag:'Coconut ice cream rolls · vegan · mobile', soul:'vibrant', c:'#2e8599', link:'work/coco-van/'},
     {slug:'wicked-cafe-bakery',         name:'Wicked Cafe & Bakery',  city:'Vancouver, BC',  rate:'4.3',tag:'Cheesecakes · bakery · coffee', soul:'warm',    c:'#b0791e', link:'work/wicked-cafe-bakery/'},
     {slug:'joie-french-cafe',           name:'JOIE French Café',  city:'Victoria, BC',       rate:'4.7',tag:'Crêpes · coffee · brunch',  soul:'editorial',c:'#b23a5a', link:'work/joie-french-cafe/'},
     {slug:'bohemia',                    name:'Bohemia',               city:'Barrie, ON',         rate:'4.6',tag:'Coffee \u00b7 brunch \u00b7 bakery',    soul:'warm',    c:'#46915a', link:'work/bohemia/'},
@@ -460,7 +461,7 @@ footer a{color:var(--gold-hot)}
       +'<span class="strip"></span>'
       +'<div class="thumb" style="background-image:url(work/assets/'+esc(w.slug)+'.jpg)">'
       +'<span class="soul"><span class="d"></span>'+esc(s.label)+'</span>'
-      +'<span class="rate">\u2605 '+esc(w.rate)+'</span>'
+      +(w.rate?'<span class="rate">\u2605 '+esc(w.rate)+'</span>':'')
       +'<span class="tag">'+esc(w.tag)+'</span></div>'
       +'<div class="top"><h3>'+esc(w.name)+'</h3></div>'
       +'<div class="body"><div class="loc">'+esc(w.city)+'</div>'
