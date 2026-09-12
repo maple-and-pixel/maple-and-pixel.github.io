@@ -148,8 +148,8 @@
   .vc-disc{ position:absolute; top:5%; bottom:5%; right:3%; height:90%; aspect-ratio:1; border-radius:50%; transition:transform .55s cubic-bezier(.2,.8,.2,1); z-index:1; }
   .vc-face{ position:absolute; inset:0; border-radius:50%; background:radial-gradient(circle, #1c1c1f 0 16%, #0a0a0b 17% 19%, #141416 20%, #050506 62%, #1a1a1d 100%); box-shadow:0 12px 30px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.06); animation:spin 3.2s linear infinite; animation-play-state:paused; }
   .vc-face::before{ content:""; position:absolute; inset:0; border-radius:50%; background:repeating-radial-gradient(circle, transparent 0 2.5px, rgba(255,255,255,.04) 3px 3.5px); }
-  .vc-face .lab{ position:absolute; inset:34%; border-radius:50%; background:var(--c) center/cover no-repeat; box-shadow:inset 0 0 12px rgba(0,0,0,.6), 0 0 14px var(--g); }
-  .vc-face .lab::after{ content:""; position:absolute; inset:42%; border-radius:50%; background:#050506; }
+  .vc-face .vc-lab{ position:absolute; inset:34%; border-radius:50%; background:var(--c) center/cover no-repeat; box-shadow:inset 0 0 12px rgba(0,0,0,.6), 0 0 14px var(--g); }
+  .vc-face .vc-lab::after{ content:""; position:absolute; inset:42%; border-radius:50%; background:#050506; }
   .vc:hover .vc-disc, .vc.is-active .vc-disc{ transform:translateX(44%) rotate(0.001deg); }
   .vc.is-playing .vc-face{ animation-play-state:running; }
   .vc-sleeve{ position:absolute; inset:0; border-radius:10px; overflow:hidden; z-index:2; background:var(--raised); border:1px solid rgba(255,255,255,.14); box-shadow:0 14px 34px rgba(0,0,0,.8); transition:border-color .3s, box-shadow .3s, transform .4s cubic-bezier(.2,.8,.2,1); }
@@ -783,7 +783,7 @@
       const cover = Assets.url(i,'cover') || '';
       return `<article class="vc ${size}${size==='lg'?' glass':''}" data-i="${i}" style="--c:${t.accent};--c2:${t.accent2};--g:${t.glow}" role="button" tabindex="0" aria-label="${t.title} — ${t.edition}">
         <div class="vc-stack">
-          <div class="vc-disc"><div class="vc-face"><div class="lab" data-cover-bg="${i}" style="background-image:url('${cover}')"></div></div></div>
+          <div class="vc-disc"><div class="vc-face"><div class="vc-lab" data-cover-bg="${i}" style="background-image:url('${cover}')"></div></div></div>
           <div class="vc-sleeve">
             <img class="vc-cover" data-cover-img="${i}" src="${cover}" alt="">
             <div class="vc-plate"><span class="vp-brand">Lofi Mozart</span><span class="vp-title">${t.title}</span><span class="vp-ed">${t.edition}</span></div>
