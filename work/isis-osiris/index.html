@@ -163,7 +163,7 @@ h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clam
       <div class="reading" id="pRead"></div>
     </div>
   </section>
-  <audio id="narr" preload="auto" src="narration.mp3?v=8"></audio>
+  <audio id="narr" preload="auto" src="narration.mp3?v=9"></audio>
 </main>
 
 <!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
@@ -249,8 +249,9 @@ scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnviron
 const camera = new THREE.PerspectiveCamera(30, 1, .1, 200);
 const controls = new OrbitControls(camera, canvas);
 // a turntable: drag sideways to walk round the statues, a little tilt, pinch to come closer
-Object.assign(controls, { enableDamping: true, dampingFactor: .1, rotateSpeed: .7, zoomSpeed: 1, enablePan: false,
-  minDistance: 6, maxDistance: 23, minPolarAngle: 1.2, maxPolarAngle: 1.52 });
+Object.assign(controls, { enableDamping: true, dampingFactor: .1, rotateSpeed: .7, zoomSpeed: 1, enablePan: true, panSpeed: .8,
+  screenSpacePanning: true, zoomToCursor: true, minDistance: 3, maxDistance: 23, minPolarAngle: 1.2, maxPolarAngle: 1.52 });
+let bounds = null;   // the point the camera turns about stays on the statues, however far you zoom or pan
 let dirty = true;
 controls.addEventListener('change', () => { dirty = true });
 
@@ -364,7 +365,8 @@ const focusSpot = new THREE.SpotLight(0xfff0d6, 0, 0, .16, .7, 1); scene.add(foc
 const loader = new GLTFLoader();   // plain GLBs: no decoder worker or WebAssembly, so every phone can open them
 const statues = {}, group = new THREE.Group(); scene.add(group);
 function isisStone(hasAO) {   // Osiris' measured stone tone, with pale dust settled in the carving
-  const mtl = new THREE.MeshStandardMaterial({ color: 0x1c1c1b, roughness: .42, metalness: 0, envMapIntensity: 1, vertexColors: hasAO });
+  const mtl = new THREE.MeshPhysicalMaterial({ color: 0x1b1e1b, roughness: .45, metalness: 0, envMapIntensity: 1,
+    clearcoat: .45, clearcoatRoughness: .28, vertexColors: hasAO });
   if (hasAO) mtl.onBeforeCompile = (sh) => {
     sh.fragmentShader = sh.fragmentShader.replace('#include <color_fragment>',
       `diffuseColor.rgb = mix(vec3(.075,.072,.066), diffuseColor.rgb, smoothstep(.3, .8, vColor.r));`);
@@ -376,11 +378,16 @@ function prepare(name, gltf) {
     if (!o.isMesh) return;
     o.castShadow = o.receiveShadow = true;
     if (name === 'isis') o.material = isisStone(!!o.geometry.attributes.color);
-    else Object.assign(o.material, { roughness: .38, metalness: 0, envMapIntensity: 1.15 });
+    else {   // keep Tripo's stone texture, add the same polish and a faint green to the black
+      const old = o.material;
+      o.material = new THREE.MeshPhysicalMaterial({ map: old.map, color: 0xeef7ee, roughness: .42, metalness: 0, envMapIntensity: 1.05,
+        clearcoat: .45, clearcoatRoughness: .28 });
+      old.dispose();
+    }
   });
   group.add(gltf.scene); statues[name] = { root: gltf.scene };
 }
-const MODELS = /*__MODELS__*/{}, VERSION = 8;
+const MODELS = /*__MODELS__*/{}, VERSION = 9;
 const load = (n) => new Promise((ok, no) => {
   const done = g => { prepare(n, g); ok() };
   if (!MODELS[n]) return loader.load(`${n}.glb?v=${VERSION}`, done, undefined, no);   // ?v= so phones don't keep an old copy
@@ -393,11 +400,13 @@ Promise.all([load('osiris'), load('isis')]).then(() => {
   const ob = new THREE.Box3().setFromObject(statues.osiris.root);
   group.scale.setScalar(7.95 / (ob.max.y - ob.min.y)); group.updateMatrixWorld(true);
   group.position.y -= new THREE.Box3().setFromObject(group).min.y - PLINTH; group.updateMatrixWorld(true);
-  const plinthMat = chamberParts.plinth = new THREE.MeshStandardMaterial({ color: 0xd9d1c3, roughness: .85 });
-  for (const n of ['osiris', 'isis']) {
-    const b = new THREE.Box3().setFromObject(statues[n].root), c = b.getCenter(new THREE.Vector3()), z = b.getSize(new THREE.Vector3());
-    const plinth = new THREE.Mesh(new THREE.BoxGeometry(z.x + .35, PLINTH, z.z + .35), plinthMat);   // a low white museum plinth
-    plinth.position.set(c.x, PLINTH / 2, c.z); plinth.castShadow = plinth.receiveShadow = true; scene.add(plinth);
+  // one stepped limestone dais that the pair share, like a temple platform
+  const plinthMat = chamberParts.plinth = new THREE.MeshStandardMaterial({ color: 0xcfc5b4, roughness: .8 });
+  const pair = new THREE.Box3().setFromObject(group), pc = pair.getCenter(new THREE.Vector3()), ps = pair.getSize(new THREE.Vector3());
+  const STEP = PLINTH * .3;
+  for (const [w, d, y0, y1] of [[ps.x + 1.9, ps.z + 1.9, 0, STEP], [ps.x + 1.0, ps.z + 1.0, STEP, PLINTH]]) {
+    const tier = new THREE.Mesh(new THREE.BoxGeometry(w, y1 - y0, d), plinthMat);
+    tier.position.set(pc.x, (y0 + y1) / 2, pc.z); tier.castShadow = tier.receiveShadow = true; scene.add(tier);
   }
   for (const n of ['osiris', 'isis']) {
     const b = new THREE.Box3().setFromObject(statues[n].root);
@@ -409,6 +418,7 @@ Promise.all([load('osiris'), load('isis')]).then(() => {
   views.both.box.min.y -= PLINTH * .6;   // keep a little of the plinths in the frame
   views.osiris = { box: statues.osiris.box, dir: new THREE.Vector3(-.3, .08, 1) };
   views.isis = { box: statues.isis.box, dir: new THREE.Vector3(.3, .08, 1) };
+  bounds = views.both.box.clone().expandByScalar(.4);
   const v = frame(views.both); camera.position.copy(v.pos); controls.target.copy(v.target);
   document.getElementById('loading').hidden = true; renderer.shadowMap.needsUpdate = true; dirty = true;
   perf.ready = performance.now() - perf.t0;
@@ -582,7 +592,7 @@ renderer.setAnimationLoop((now) => {
     chamberParts.wall.emissiveIntensity = .9 * dim; chamberParts.wall.color.setScalar(1 - .88 * dim);
     chamberParts.floor.color.setScalar(1 - .8 * dim);
   }
-  if (chamberParts.plinth) chamberParts.plinth.color.setHex(0xd9d1c3).multiplyScalar(1 - .7 * dim);
+  if (chamberParts.plinth) chamberParts.plinth.color.setHex(0xcfc5b4).multiplyScalar(1 - .7 * dim);
   for (const n of ['osiris', 'isis']) {
     const b = beams[n], want = dim * (focus === 'both' ? 1 : focus === n ? 1.25 : .45);
     b.level += (want - b.level) * Math.min(1, dt * 2);
@@ -595,6 +605,10 @@ renderer.setAnimationLoop((now) => {
   }
 
   if (controls.update()) dirty = true;
+  if (bounds && !tween && !show && !bounds.containsPoint(controls.target)) {
+    const t = controls.target.clone().clamp(bounds.min, bounds.max), d = t.sub(controls.target);
+    controls.target.add(d); camera.position.add(d); dirty = true;
+  }
   if (!dirty) return;
   dirty = false;
   renderer.render(scene, camera);
