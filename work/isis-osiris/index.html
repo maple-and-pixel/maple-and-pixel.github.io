@@ -11,7 +11,11 @@
    controls float over it; the parts tour opens as a bottom sheet. Single dark world. */
 :root {
   color-scheme: dark;
-  --night: #0b0907;        /* chamber shadow, warm */
+  --night: #0b0907;        /* the dark sheet and the story mode */
+  --gallery: #d3c8b6;      /* pale limestone gallery */
+  --ink: #2a2016;
+  --ink-2: #5b4e3e;
+  --bronze: #8a5d1c;
   --stone: #1a1612;
   --line: #3a3128;
   --papyrus: #efe7d6;
@@ -29,9 +33,9 @@ body { background: var(--night); color: var(--papyrus); font-family: var(--f-bod
 button { font: inherit; color: inherit }
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
 
-.stage { position: relative; height: 100%; min-height: 480px; overflow: hidden; background: var(--night) }
+.stage { position: relative; height: 100%; min-height: 480px; overflow: hidden; background: var(--gallery) }
 canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
-.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 45%, transparent 45%, #0b0907cc 100%) }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 95% at 50% 45%, transparent 50%, #2a201659 100%) }
 
 .top {
   position: absolute; inset-inline: 0; top: 0; padding: 16px; display: flex; flex-wrap: wrap;
@@ -40,14 +44,17 @@ canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: blo
 .stage.show .top { opacity: .2 }
 .stage.touring .top { opacity: 0; pointer-events: none }
 .stage.touring .top * { pointer-events: none }
-h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1.15; text-shadow: 0 2px 16px #000 }
-.sub { margin: .2rem 0 0; color: var(--muted); font-size: .9rem; text-shadow: 0 1px 8px #000 }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1.15; color: var(--ink); text-shadow: 0 1px 12px #fff8ec }
+.sub { margin: .2rem 0 0; color: var(--ink-2); font-size: .9rem; max-width: 22rem; text-shadow: 0 1px 8px #fff8ec }
+.stage.show h1 { color: var(--papyrus); text-shadow: none }
 .views { display: flex; gap: 6px; pointer-events: auto }
 .chip {
-  border: 1px solid var(--line); background: color-mix(in srgb, var(--night) 72%, transparent);
+  border: 1px solid #2a201633; background: #fffaf0a6; color: var(--ink);
   padding: .25rem .85rem; border-radius: 999px; font-size: .9rem; cursor: pointer; line-height: 1.7; white-space: nowrap;
 }
-.chip[aria-pressed="true"] { border-color: var(--gold); color: var(--gold) }
+.chip[aria-pressed="true"] { border-color: var(--bronze); color: var(--bronze); background: #fffaf0e0 }
+.sheet .chip { border-color: var(--line); background: none; color: var(--papyrus) }
+.sheet .chip[aria-pressed="true"] { border-color: var(--gold); color: var(--gold) }
 
 .bottom {
   position: absolute; inset-inline: 0; bottom: 0; padding: 16px 16px calc(18px + env(safe-area-inset-bottom, 0px));
@@ -63,6 +70,7 @@ h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clam
 .stage.show .bottom .chip { opacity: 0; pointer-events: none }
 
 .loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading { color: var(--ink) }
 .loading span { font-family: var(--f-glyph); font-size: 2.4rem; color: var(--gold); animation: breathe 1.6s ease-in-out infinite }
 @keyframes breathe { 50% { opacity: .3 } }
 .caption {
@@ -123,7 +131,7 @@ h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clam
   <div class="top">
     <div>
       <h1>إيزيس وأوزوريس</h1>
-      <p class="sub">أقدم حكاية عن الوفاء والبعث، يرويها المصريون منذ أكثر من ٤٠٠٠ عام</p>
+      <p class="sub">حكاية الوفاء والبعث، منذ أكثر من ٤٠٠٠&nbsp;عام</p>
     </div>
     <div class="views" role="group" aria-label="اختر التمثال">
       <button class="chip" data-view="both" aria-pressed="true">الاثنان</button>
@@ -155,7 +163,7 @@ h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clam
       <div class="reading" id="pRead"></div>
     </div>
   </section>
-  <audio id="narr" preload="auto" src="narration.mp3?v=7"></audio>
+  <audio id="narr" preload="auto" src="narration.mp3?v=8"></audio>
 </main>
 
 <!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
@@ -230,32 +238,43 @@ const phone = matchMedia('(pointer: coarse)').matches;
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
 renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
-renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.1;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1;
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.autoUpdate = false;   // statues and lamp never move: draw the shadows once, not every frame
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x0b0907);
-scene.fog = new THREE.Fog(0x0b0907, 30, 60);
+const GALLERY = new THREE.Color(0xd3c8b6), NIGHT = new THREE.Color(0x0b0907);
+scene.background = GALLERY.clone();
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), .04).texture;
 
 const camera = new THREE.PerspectiveCamera(30, 1, .1, 200);
 const controls = new OrbitControls(camera, canvas);
 // a turntable: drag sideways to walk round the statues, a little tilt, pinch to come closer
 Object.assign(controls, { enableDamping: true, dampingFactor: .1, rotateSpeed: .7, zoomSpeed: 1, enablePan: false,
-  minDistance: 6, maxDistance: 21, minPolarAngle: 1.2, maxPolarAngle: 1.52 });
+  minDistance: 6, maxDistance: 23, minPolarAngle: 1.2, maxPolarAngle: 1.52 });
 let dirty = true;
 controls.addEventListener('change', () => { dirty = true });
 
-// an oil-lamp warm key, a cool rim, a soft fill
-const hemi = new THREE.HemisphereLight(0xffe9cc, 0x1a120a, .5); scene.add(hemi);
-const key = new THREE.DirectionalLight(0xffdcae, 2.6); key.position.set(-7, 12, 11); key.castShadow = true;
-key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048);
-Object.assign(key.shadow.camera, { left: -11, right: 11, top: 13, bottom: -2, near: 1, far: 45 });
-key.shadow.bias = -.0004; key.shadow.normalBias = .02; scene.add(key);
-const rim = new THREE.DirectionalLight(0xc9dcff, 1.3); rim.position.set(6, 9, -3); scene.add(rim);
-const fill = new THREE.DirectionalLight(0xffe7c8, .4); fill.position.set(9, 4, 9); scene.add(fill);
-const back = new THREE.DirectionalLight(0xffd9a8, 1.5); back.position.set(-4, 10, -12); scene.add(back);   // so the backs read too
-const BASE = { hemi: hemi.intensity, key: key.intensity, rim: rim.intensity, fill: fill.intensity, back: back.intensity };
+// museum lighting, per statue: a warm key spot from high front-left that models the face and casts a soft
+// shadow, a cool back spot that draws the silhouette off the pale wall, a warm pool washed on the wall
+// behind; plus a low ambient so no shadow goes dead black. Placed once the statues are measured (light()).
+const hemi = new THREE.HemisphereLight(0xfff4e6, 0x7d6f5c, .6); scene.add(hemi);
+const fill = new THREE.DirectionalLight(0xfff1e0, .45); fill.position.set(8, 5, 12); scene.add(fill);
+const museum = [];
+function spot(color, angle, penumbra, decay, power, shadow) {
+  const l = new THREE.SpotLight(color, power, 0, angle, penumbra, decay); l.userData.power = power;
+  if (shadow) { l.castShadow = true; l.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048); l.shadow.bias = -.0002; l.shadow.normalBias = .03; l.shadow.radius = 5 }
+  scene.add(l, l.target); museum.push(l); return l;
+}
+function light(s) {
+  const c = s.center, top = s.box.max.y, h = s.size.y;
+  const key = spot(0xfff0dc, .3, .75, 1.5, 520, true);
+  key.position.set(c.x - 4.5, top + 6, c.z + 9); key.target.position.set(c.x, s.box.min.y + h * .62, c.z); key.userData.role = 'key';
+  const rim = spot(0xe2ebff, .32, .8, 1.5, 300, false);
+  rim.position.set(c.x + 3.5, top + 4, c.z - 7); rim.target.position.set(c.x, s.box.min.y + h * .55, c.z); rim.userData.role = 'rim';
+  const wash = spot(0xffe2b8, .2, 1, 1, 900, false);
+  wash.position.set(c.x, top + 7, c.z + 5); wash.target.position.set(c.x * 3, top * .8, -23.5); wash.userData.role = 'wash';
+}
+const BASE = { hemi: hemi.intensity, fill: fill.intensity };
 
 /* ---------------- the chamber: carved wall and stone floor, drawn once into canvases ---------------- */
 function noise(ctx, w, h, amount) {
@@ -265,22 +284,22 @@ function noise(ctx, w, h, amount) {
 }
 async function chamber() {
   try { await document.fonts.load('96px "Noto Sans Egyptian Hieroglyphs"', '𓋹𓊽𓌀𓎟') } catch (e) {}
-  // wall: dark sandstone with sunken columns of the "all life, stability and dominion" frieze 𓋹𓊽𓌀𓎟
+  // wall: pale limestone with sunken columns of the "all life, stability and dominion" frieze 𓋹𓊽𓌀𓎟
   const W = 2048, H = 1024;
   const col = document.createElement('canvas'); col.width = W; col.height = H; const c = col.getContext('2d');
   const mask = document.createElement('canvas'); mask.width = W; mask.height = H; const m = mask.getContext('2d');
-  c.fillStyle = '#33291f'; c.fillRect(0, 0, W, H); noise(c, W, H, 18);
+  c.fillStyle = '#d6cab5'; c.fillRect(0, 0, W, H); noise(c, W, H, 14);
   m.fillStyle = '#000'; m.fillRect(0, 0, W, H);
   const signs = ['𓋹', '𓊽', '𓌀', '𓎟'], step = 104, size = 62;
   c.font = m.font = `${size}px "Noto Sans Egyptian Hieroglyphs", "Segoe UI Historic", serif`;
   c.textAlign = m.textAlign = 'center'; c.textBaseline = m.textBaseline = 'middle';
   for (let x = step / 2, k = 0; x < W; x += step, k++) {
     // column dividers, then the signs, top to bottom
-    c.fillStyle = '#251d16'; c.fillRect(x - step / 2, 0, 2, H);
+    c.fillStyle = '#c7b9a1'; c.fillRect(x - step / 2, 0, 2, H);
     for (let y = size * .9, i = 0; y < H; y += size * 1.12, i++) {
       const s = signs[i % 4];
-      c.fillStyle = '#4a3d30'; c.fillText(s, x + 1.5, y + 1.5);    // lit lower edge of the cut
-      c.fillStyle = '#1a140f'; c.fillText(s, x, y);            // the cut itself
+      c.fillStyle = '#eee6d8'; c.fillText(s, x + 1.5, y + 1.5);    // lit lower edge of the cut
+      c.fillStyle = '#b8a991'; c.fillText(s, x, y);            // the cut itself
       m.fillStyle = '#fff'; m.fillText(s, x, y);
     }
   }
@@ -303,14 +322,14 @@ async function chamber() {
 
   // floor: big limestone slabs
   const fc = document.createElement('canvas'); fc.width = fc.height = 1024; const f = fc.getContext('2d');
-  f.fillStyle = '#231d17'; f.fillRect(0, 0, 1024, 1024); noise(f, 1024, 1024, 16);
-  f.strokeStyle = '#120e0b'; f.lineWidth = 4;
+  f.fillStyle = '#9a8e7d'; f.fillRect(0, 0, 1024, 1024); noise(f, 1024, 1024, 12);
+  f.strokeStyle = '#857a6a'; f.lineWidth = 3;
   for (let i = 0; i <= 1024; i += 256) { f.beginPath(); f.moveTo(i, 0); f.lineTo(i, 1024); f.stroke() }
   for (let j = 0; j <= 1024; j += 256) { f.beginPath(); f.moveTo(0, j); f.lineTo(1024, j); f.stroke() }
   const floorTex = new THREE.CanvasTexture(fc); floorTex.colorSpace = THREE.SRGBColorSpace;
   floorTex.wrapS = floorTex.wrapT = THREE.RepeatWrapping; floorTex.repeat.set(6, 6); floorTex.anisotropy = 4;
-  const floor = new THREE.Mesh(new THREE.CircleGeometry(24, 96), new THREE.MeshStandardMaterial({ map: floorTex, roughness: .85 }));
-  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(24, 96), new THREE.MeshStandardMaterial({ map: floorTex, roughness: .7 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor); chamberParts.floor = floor.material;
   renderer.shadowMap.needsUpdate = true; dirty = true;
 }
 const sweepU = { value: -1 }, chamberParts = {};
@@ -333,7 +352,7 @@ function makeBeam(name) {
 }
 makeBeam('osiris'); makeBeam('isis');
 function placeBeam(b, s) {
-  const top = new THREE.Vector3(s.center.x, s.size.y * 1.75, s.center.z + 1.2), aim = new THREE.Vector3(s.center.x, s.size.y * .45, s.center.z);
+  const top = new THREE.Vector3(s.center.x, s.box.max.y + s.size.y * .75, s.center.z + 1.2), aim = new THREE.Vector3(s.center.x, s.box.min.y + s.size.y * .45, s.center.z);
   b.spot.position.copy(top); b.spot.target.position.copy(aim);
   const len = top.distanceTo(new THREE.Vector3(aim.x, 0, aim.z));
   b.cone.geometry = new THREE.ConeGeometry(Math.tan(b.spot.angle) * len * .9, len, 40, 1, true).translate(0, -len / 2, 0);
@@ -345,7 +364,7 @@ const focusSpot = new THREE.SpotLight(0xfff0d6, 0, 0, .16, .7, 1); scene.add(foc
 const loader = new GLTFLoader();   // plain GLBs: no decoder worker or WebAssembly, so every phone can open them
 const statues = {}, group = new THREE.Group(); scene.add(group);
 function isisStone(hasAO) {   // Osiris' measured stone tone, with pale dust settled in the carving
-  const mtl = new THREE.MeshStandardMaterial({ color: 0x242423, roughness: .5, metalness: 0, envMapIntensity: .85, vertexColors: hasAO });
+  const mtl = new THREE.MeshStandardMaterial({ color: 0x1c1c1b, roughness: .42, metalness: 0, envMapIntensity: 1, vertexColors: hasAO });
   if (hasAO) mtl.onBeforeCompile = (sh) => {
     sh.fragmentShader = sh.fragmentShader.replace('#include <color_fragment>',
       `diffuseColor.rgb = mix(vec3(.075,.072,.066), diffuseColor.rgb, smoothstep(.3, .8, vColor.r));`);
@@ -357,30 +376,37 @@ function prepare(name, gltf) {
     if (!o.isMesh) return;
     o.castShadow = o.receiveShadow = true;
     if (name === 'isis') o.material = isisStone(!!o.geometry.attributes.color);
-    else Object.assign(o.material, { roughness: .5, metalness: 0, envMapIntensity: .85 });
+    else Object.assign(o.material, { roughness: .38, metalness: 0, envMapIntensity: 1.15 });
   });
   group.add(gltf.scene); statues[name] = { root: gltf.scene };
 }
-const MODELS = /*__MODELS__*/{}, VERSION = 7;
+const MODELS = /*__MODELS__*/{}, VERSION = 8;
 const load = (n) => new Promise((ok, no) => {
   const done = g => { prepare(n, g); ok() };
   if (!MODELS[n]) return loader.load(`${n}.glb?v=${VERSION}`, done, undefined, no);   // ?v= so phones don't keep an old copy
   loader.parse(Uint8Array.from(atob(MODELS[n]), c => c.charCodeAt(0)).buffer, '', done, no);
 });
 
-const views = {}, perf = { t0: performance.now() };
+const views = {}, perf = { t0: performance.now() }, PLINTH = 1.5;
 Promise.all([load('osiris'), load('isis')]).then(() => {
   group.updateMatrixWorld(true);
   const ob = new THREE.Box3().setFromObject(statues.osiris.root);
   group.scale.setScalar(7.95 / (ob.max.y - ob.min.y)); group.updateMatrixWorld(true);
-  group.position.y -= new THREE.Box3().setFromObject(group).min.y; group.updateMatrixWorld(true);
+  group.position.y -= new THREE.Box3().setFromObject(group).min.y - PLINTH; group.updateMatrixWorld(true);
+  const plinthMat = chamberParts.plinth = new THREE.MeshStandardMaterial({ color: 0xd9d1c3, roughness: .85 });
+  for (const n of ['osiris', 'isis']) {
+    const b = new THREE.Box3().setFromObject(statues[n].root), c = b.getCenter(new THREE.Vector3()), z = b.getSize(new THREE.Vector3());
+    const plinth = new THREE.Mesh(new THREE.BoxGeometry(z.x + .35, PLINTH, z.z + .35), plinthMat);   // a low white museum plinth
+    plinth.position.set(c.x, PLINTH / 2, c.z); plinth.castShadow = plinth.receiveShadow = true; scene.add(plinth);
+  }
   for (const n of ['osiris', 'isis']) {
     const b = new THREE.Box3().setFromObject(statues[n].root);
     Object.assign(statues[n], { box: b, center: b.getCenter(new THREE.Vector3()), size: b.getSize(new THREE.Vector3()) });
     statues[n].meshes = []; statues[n].root.traverse(o => o.isMesh && statues[n].meshes.push(o));
-    placeBeam(beams[n], statues[n]);
+    placeBeam(beams[n], statues[n]); light(statues[n]);
   }
   views.both = { box: statues.osiris.box.clone().union(statues.isis.box), dir: new THREE.Vector3(.16, .08, 1) };
+  views.both.box.min.y -= PLINTH * .6;   // keep a little of the plinths in the frame
   views.osiris = { box: statues.osiris.box, dir: new THREE.Vector3(-.3, .08, 1) };
   views.isis = { box: statues.isis.box, dir: new THREE.Vector3(.3, .08, 1) };
   const v = frame(views.both); camera.position.copy(v.pos); controls.target.copy(v.target);
@@ -545,10 +571,18 @@ renderer.setAnimationLoop((now) => {
   dim += (goal - dim) * Math.min(1, dt * 1.6);
   focusLv += ((partsOpen && !show ? 1 : 0) - focusLv) * Math.min(1, dt * 2.5);
   if (Math.abs(dim + focusLv - prev) > 1e-4) dirty = true;
-  const lower = Math.max(.88 * dim, .5 * focusLv);
-  hemi.intensity = BASE.hemi * (1 - lower); key.intensity = BASE.key * (1 - Math.max(.92 * dim, .45 * focusLv));
-  rim.intensity = BASE.rim * (1 - .6 * dim); fill.intensity = BASE.fill * (1 - lower); back.intensity = BASE.back * (1 - lower);
-  if (chamberParts.wall) chamberParts.wall.emissiveIntensity = 1.4 * dim;
+  const lower = Math.max(.9 * dim, .45 * focusLv);
+  hemi.intensity = BASE.hemi * (1 - lower); fill.intensity = BASE.fill * (1 - lower);
+  for (const l of museum) {
+    const r = l.userData.role, cut = r === 'wash' ? Math.max(.95 * dim, .5 * focusLv) : r === 'key' ? Math.max(.65 * dim, .35 * focusLv) : .3 * dim;
+    l.intensity = l.userData.power * (1 - cut);
+  }
+  scene.background.copy(GALLERY).lerp(NIGHT, dim);
+  if (chamberParts.wall) {   // for the story the room itself goes dark, so only the statues and the gold frieze stay lit
+    chamberParts.wall.emissiveIntensity = .9 * dim; chamberParts.wall.color.setScalar(1 - .88 * dim);
+    chamberParts.floor.color.setScalar(1 - .8 * dim);
+  }
+  if (chamberParts.plinth) chamberParts.plinth.color.setHex(0xd9d1c3).multiplyScalar(1 - .7 * dim);
   for (const n of ['osiris', 'isis']) {
     const b = beams[n], want = dim * (focus === 'both' ? 1 : focus === n ? 1.25 : .45);
     b.level += (want - b.level) * Math.min(1, dt * 2);
