@@ -1,0 +1,468 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عازف الهارب</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Sans+Egyptian+Hieroglyphs&family=Noto+Serif:ital@1&display=swap">
+<style>
+/* One screen. The plaque sits in the upper part; the story is a deck of papyrus cards you swipe
+   along the bottom. Reading a card fills that column's carved signs with gold, top to bottom. */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --papyrus: #f4ead8;
+  --papyrus-2: #e9dcc3;
+  --ink: #2b1d14;
+  --ink-2: #6a5444;
+  --red: #9b4a32;          /* the quartzite */
+  --gold: #c99a45;
+  --f-display: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+  --f-glyph: "Noto Sans Egyptian Hieroglyphs", "Segoe UI Historic", serif;
+  --f-tl: "Noto Serif", "Times New Roman", serif;
+  --deck-h: min(46vh, 330px);
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button, input { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 35%, transparent 55%, #0d162055 100%) }
+
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; pointer-events: none }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.1; color: #fbf7f0; text-shadow: 0 1px 14px #0005 }
+.sub { margin: .25rem 0 0; color: #f1ebe2; font-size: .88rem; text-shadow: 0 1px 10px #0006 }
+.sun {
+  pointer-events: auto; display: flex; align-items: center; gap: .45rem; padding: .3rem .7rem; border-radius: 999px;
+  background: #0d1620a6; color: #f4ead8; font-size: .85rem; flex: none; margin-top: .3rem;
+}
+.sun input { width: 96px; accent-color: var(--gold) }
+
+/* the deck */
+.deckwrap {
+  position: absolute; inset-inline: 0; bottom: 0; padding-bottom: env(safe-area-inset-bottom, 0px);
+  transition: transform .45s cubic-bezier(.2,.8,.2,1);
+}
+.stage.min .deckwrap { transform: translateY(calc(var(--deck-h) - 8px)) }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 16px 8px }
+.dots { display: flex; gap: 5px; flex-wrap: wrap; justify-content: center }
+.dot { width: 7px; height: 7px; border-radius: 50%; border: 0; padding: 0; background: #ffffff66; cursor: pointer; transition: width .3s }
+.dot[aria-current="true"] { background: var(--papyrus); width: 20px; border-radius: 4px }
+.play {
+  display: inline-flex; align-items: center; gap: .5rem; border: 0; cursor: pointer; border-radius: 999px; flex: none;
+  background: var(--red); color: #fbf3e6; padding: .45rem 1.05rem .45rem .85rem; font-family: var(--f-display); font-size: 1rem;
+  box-shadow: 0 6px 22px #3a120855;
+}
+.play svg { width: .9rem; height: .9rem }
+.fold { border: 0; background: #0d1620a6; color: #f4ead8; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; flex: none; transition: transform .3s }
+.stage.min .fold { transform: rotate(180deg) }
+.deck {
+  height: var(--deck-h); display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 0 16px 16px; scrollbar-width: none; overscroll-behavior-x: contain;
+}
+.deck::-webkit-scrollbar { display: none }
+.card {
+  flex: 0 0 min(86vw, 440px); scroll-snap-align: center; height: 100%; overflow: auto; scrollbar-width: none;
+  background: linear-gradient(170deg, var(--papyrus), var(--papyrus-2)); border-radius: 22px; padding: 16px 18px 18px;
+  box-shadow: 0 14px 40px #10192a55, inset 0 0 0 1px #ffffff80;
+}
+.card::-webkit-scrollbar { display: none }
+.kicker { font-family: var(--f-display); color: var(--red); font-size: .82rem }
+.card h2 { margin: .1rem 0 .45rem; font-family: var(--f-display); font-weight: 700; font-size: 1.35rem; line-height: 1.35 }
+.card p { margin: 0; font-size: 1.02rem; line-height: 1.9; color: var(--ink) }
+/* a line of the song: the signs stand in a column, like on the stone */
+.verse { display: flex; gap: 14px; align-items: flex-start; margin-bottom: .55rem }
+.col {
+  flex: none; width: 46px; border-radius: 12px; background: #2b1d140f; text-align: center;
+  padding: 8px 0; font-family: var(--f-glyph); font-size: 1.7rem; line-height: 1.2; color: var(--red);
+}
+.col span { display: block }
+.say { min-width: 0 }
+.say .ar { font-family: var(--f-display); font-size: 1.28rem; line-height: 1.6; color: var(--ink) }
+.say .tl { font-family: var(--f-tl); font-style: italic; color: var(--ink-2); font-size: .95rem; direction: ltr; unicode-bidi: isolate; display: block; margin-top: .2rem }
+.song { font-family: var(--f-display); font-size: 1.15rem; line-height: 1.9; margin: 0; padding: 0; list-style: none }
+.song li { padding-inline-start: .9rem; border-inline-start: 3px solid var(--gold); margin-bottom: .35rem }
+.src { display: block; margin-top: .6rem; font-size: .78rem; color: var(--ink-2) }
+.src a { color: var(--red) }
+
+.caption {
+  position: absolute; inset-inline: 16px; bottom: calc(var(--deck-h) + 64px); text-align: center; pointer-events: none;
+  font-family: var(--f-display); font-size: clamp(1.05rem, 4.2vw, 1.4rem); line-height: 1.7; color: #fffaf0;
+  text-shadow: 0 2px 14px #000c, 0 0 3px #000; opacity: 0; transition: opacity .5s; text-wrap: balance;
+}
+.caption.on { opacity: 1 }
+.stage.min .caption { bottom: 74px }
+
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading span { font-family: var(--f-glyph); font-size: 2.4rem; color: var(--papyrus); animation: breathe 1.6s ease-in-out infinite }
+.loading p { font-family: var(--f-display); color: #fbf7f0; text-align: center; padding: 0 24px }
+@keyframes breathe { 50% { opacity: .3 } }
+
+@media (min-width: 900px) {
+  :root { --deck-h: 300px }
+  .deck { padding-inline: max(16px, calc(50vw - 460px)) }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<main class="stage" id="stage" dir="rtl" lang="ar" aria-label="عازف الهارب: عرض ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="loading" id="loading"><span aria-hidden="true">𓋹</span></div>
+
+  <div class="top">
+    <div>
+      <h1>عازف الهارب</h1>
+      <p class="sub">المقصورة الحمراء · حتشبسوت · الكرنك</p>
+    </div>
+    <label class="sun"><span aria-hidden="true">☀</span>
+      <input type="range" id="sun" min="-160" max="160" value="-55" aria-label="اتجاه الضوء">
+    </label>
+  </div>
+
+  <div class="caption" id="caption" aria-live="polite"></div>
+
+  <div class="deckwrap">
+    <div class="bar">
+      <button class="play" id="play" aria-pressed="false">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path id="ico" fill="currentColor" d="M4 2.5v11l9.5-5.5z"/></svg>
+        <span id="playLabel">اسمع الأغنية</span>
+      </button>
+      <div class="dots" id="dots" aria-label="البطاقات"></div>
+      <button class="fold" id="fold" aria-label="إخفاء البطاقات" aria-expanded="true">⌄</button>
+    </div>
+    <div class="deck" id="deck"></div>
+  </div>
+  <audio id="narr" preload="none"></audio>
+</main>
+
+<!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+/* ---------------- the text on the stone ----------------
+   Regions are [u0, v0, u1, v1] on the plaque (u across from the left, v up from the bottom).
+   The song's five columns, read from right to left. Transliteration: Karnak Project (CNRS), KIU 1282.  */
+const R = {
+  c1: [.788, .079, .956, .842], c2: [.638, .119, .779, .851], c3: [.338, .614, .463, .851],
+  c4: [.196, .505, .329, .851], c5: [.046, .119, .171, .881], harpist: [.13, .07, .61, .58],
+};
+const SONG = [R.c1, R.c2, R.c3, R.c4, R.c5];
+const CARDS = [
+  { kicker: 'الحكاية', title: 'موكب العيد', view: { r: 1.05 }, glow: [],
+    html: '<p>مرة كل عام، في عيد الأوبت، كان تمثال آمون يخرج من معبد الكرنك في قارب مقدّس على أكتاف الكهنة، ويمضي إلى معبد الأقصر. وخلفه يمشي المغنّون والعازفون والراقصون. هذا الحجر من المقصورة الحمراء التي بنتها الملكة حتشبسوت ليستريح فيها قارب الإله، وعليه واحد من عازفي ذلك الموكب.</p>' },
+  { kicker: 'الحكاية', title: 'العازف', view: { u: .38, v: .36, r: .75 }, glow: [R.harpist],
+    html: '<p>راكع على ركبتيه، يحتضن هاربًا أطول منه ويشدّ أوتاره بأصابعه. وكل ما نُقش حوله ليس وصفًا له، بل كلمات الأغنية التي كان يغنّيها لآمون في أثناء الموكب.</p>' },
+  { kicker: 'الأغنية · ١ من ٥', title: 'جئتُ إليك', view: { u: .87, v: .46, r: .95 }, glow: [R.c1],
+    glyph: '𓆓𓂧𓌃', tl: 'ḏd-mdw jw.n.j ḫr.k nṯr ṯꜣy', ar: 'كلامٌ يُقال: جئتُ إليك أيها الإله القوي',
+    html: '<p>بهذه العبارة «ذِد مِدو» تبدأ النصوص المقدّسة، وكأنها تقول: اسمعوا، هذا كلام يُتلى. وكلمة «ثاي» حرفيًا «الذَّكَر»، صفةٌ لقوة آمون وخصبه.</p>' },
+  { kicker: 'الأغنية · ٢ من ٥', title: 'أقدم الآلهة', view: { u: .71, v: .48, r: .95 }, glow: [R.c2],
+    glyph: '𓊹', tl: 'nṯr pꜣwty tꜣwy ḏsr ꜥ', ar: 'الإلهُ الأوّلُ في الأرضين، المقدّسُ الذراع',
+    html: '<p>الأرضان هما مصر العليا ومصر السفلى. والعازف يمدح آمون بأنه أول الآلهة، كان قبل أن يكون أي شيء.</p>' },
+  { kicker: 'الأغنية · ٣ من ٥', title: 'آمون', view: { u: .4, v: .73, r: .5 }, glow: [R.c3],
+    glyph: '𓇋𓏠𓈖𓎟', tl: 'jmn nb', ar: 'آمونُ، سيّدُ…',
+    html: '<p>هنا اسم الإله نفسه: ريشة القصب، ثم لوح اللعب بخاناته، ثم خط الماء. تُقرأ «إمِن»، ومعناها «الخفيّ». وتحتها السلّة «نِب»: سيّد.</p>' },
+  { kicker: 'الأغنية · ٤ من ٥', title: 'صاحب الريشتين', view: { u: .26, v: .68, r: .5 }, glow: [R.c4],
+    glyph: '𓅨', tl: 'šwty wrty', ar: '…الريشتين العظيمتين',
+    html: '<p>تاج آمون ريشتان طويلتان، فيناديه العازف بهما. تراهما واقفتين في أعلى العمود، وتحتهما طائر السنونو «ور» بمعنى: عظيم.</p>' },
+  { kicker: 'الأغنية · ٥ من ٥', title: 'احفظ الملكة', view: { u: .13, v: .5, r: .95 }, glow: [R.c5],
+    glyph: '𓇓𓏏𓆤𓏏𓍹𓇳𓁦𓂓𓍺', tl: 'ḫw.k nswt-bjty mꜣꜥt-kꜣ-rꜥ mj rꜥ', ar: 'احفظ ملكَ مصر العليا والسفلى «ماعت كا رع»، مثلَ رع',
+    html: '<p>تنتهي الأغنية بدعاء لحتشبسوت. داخل الخرطوشة اسمها: قرص الشمس، ثم ماعت جالسة، ثم ذراعا الكا. «ماعت كا رع» أي: الحقّ روحُ رع. وفوق الخرطوشة نبات الجنوب ونحلة الشمال، لقب الملك. فقد حكمت حتشبسوت ملكًا كاملًا، لا زوجةَ ملك.</p>' },
+  { kicker: 'الأغنية كاملة', title: 'ما غنّاه العازف', view: { r: 1.05 }, glow: SONG,
+    html: '<ol class="song"><li>جئتُ إليك أيها الإله القوي،</li><li>الإلهُ الأوّلُ في الأرضين، المقدّسُ الذراع،</li><li>آمونُ، سيّدُ الريشتين العظيمتين.</li><li>احفظ ملكَ مصر العليا والسفلى «ماعت كا رع»، مثلَ رع.</li></ol>' +
+      '<span class="src">قراءة النص: <a href="https://sith.huma-num.fr/karnak/1282" target="_blank" rel="noopener">مشروع الكرنك، CNRS</a></span>' },
+  { kicker: 'الحجر', title: 'منقوش ليبقى', view: { az: -.95, r: 1.25 }, glow: [], sweep: true,
+    html: '<p>النقش غائر: حفر الفنان الرسم داخل الحجر، فيسقط الظل في الحفر ويُظهر الخطوط حتى تحت شمس الأقصر. والحجر كوارتزيت أحمر شديد الصلابة. وبعد عصر حتشبسوت فُكّت المقصورة ودُفنت أحجارها داخل بناء آخر في الكرنك، حتى عُثر عليها في القرن العشرين وأُعيد تركيبها في المتحف المفتوح.</p>' },
+];
+// the story, told by the harpist; each line opens a card. CUES are filled in once a recording exists.
+const NARRATION = [
+  ['أنا عازفُ الهارب في موكب عيد الأوبت.', 0],
+  ['كل عام يخرج آمون من الكرنك في قاربه المقدّس، ونمشي خلفه بالغناء.', 0],
+  ['أركع، وأشدّ أوتاري، وأغنّي له:', 1],
+  ['جئتُ إليك أيها الإله القوي،', 2],
+  ['أولَ الآلهة في الأرضين، المقدّسَ الذراع،', 3],
+  ['آمون…', 4],
+  ['…سيّدَ الريشتين العظيمتين.', 5],
+  ['احفظ مليكتنا ماعت كا رع، مثلَ رع.', 6],
+  ['نُقشت أغنيتي في الحجر الأحمر قبل أكثر من ثلاثة آلاف وأربعمئة عام…', 8],
+  ['وما زالت تُغنّى، كلما قرأها أحد.', 7],
+];
+const AUDIO = 'narration.mp3?v=1';   // ElevenLabs "David", the harpist's voice, 43.8 s
+const CUES = [0.1, 4.05, 11.15, 15.5, 19.25, 24.05, 25.35, 28.35, 33.5, 40.15];   // line starts (s), measured from the pauses
+
+/* ---------------- renderer: draws only when something changes ---------------- */
+const stage = document.getElementById('stage'), canvas = document.getElementById('c');
+const phone = matchMedia('(pointer: coarse)').matches;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+const BG = 0x748ba1, FLOOR = 0x5c7287, DAIS = 0x7488a0;
+scene.background = new THREE.Color(BG);
+const camera = new THREE.PerspectiveCamera(34, 1, .05, 200);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08;
+controls.minAzimuthAngle = -1.25; controls.maxAzimuthAngle = 1.25;   // it is a plaque: keep to the front
+controls.minPolarAngle = .55; controls.maxPolarAngle = 1.75;
+controls.minDistance = .5; controls.maxDistance = 12;
+controls.zoomToCursor = true;
+
+// plaque size in scene units: 3 wide ≈ 30 cm (no measurement yet), so 1 mm = .01
+const W = 3, H = W * 1010 / 1200, MM = W / 300;
+const H_MIN = -3.15, H_MAX = 5.0;              // the heightmap's range in mm (from rectify.py): sunk carving, frame 5 mm proud
+const LIFT = .35;                              // plaque bottom above the dais top
+
+const hemi = new THREE.HemisphereLight(0xfff4e6, FLOOR, .75); scene.add(hemi);
+const key = new THREE.DirectionalLight(0xfff3e2, 2.6); key.castShadow = true;
+key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048);
+Object.assign(key.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3, near: .5, far: 30 }); key.shadow.bias = -.0004; key.shadow.normalBias = .01;
+scene.add(key, key.target);
+const fill = new THREE.DirectionalLight(0xe8f0ff, .35); fill.position.set(4, 3, 9); scene.add(fill);
+
+const plaque = new THREE.Group(); scene.add(plaque);
+const center = new THREE.Vector3(0, LIFT + H / 2, 0);
+let dirty = true;
+
+// the light sweeps around the plaque at a low angle, so it rakes across the carving
+function setSun(deg) {
+  const a = THREE.MathUtils.degToRad(deg), elev = .55;
+  const dir = new THREE.Vector3(Math.sin(a) * Math.cos(elev), Math.cos(a) * Math.cos(elev) * .55 + .35, Math.cos(elev) * .9 + .25);
+  key.position.copy(center).addScaledVector(dir.normalize(), 10); key.target.position.copy(center);
+  renderer.shadowMap.needsUpdate = true; dirty = true;
+}
+
+/* ---------------- gold in the carving: up to 5 regions, filled top-down by `prog` ---------------- */
+const glow = {
+  regions: { value: Array.from({ length: 5 }, () => new THREE.Vector4(0, 0, 0, 0)) },
+  count: { value: 0 }, prog: { value: 0 }, cut: { value: null },
+};
+function goldify(mat) {
+  mat.onBeforeCompile = sh => {
+    Object.assign(sh.uniforms, { uRegions: glow.regions, uCount: glow.count, uProg: glow.prog, uCut: glow.cut });
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform vec4 uRegions[5]; uniform int uCount; uniform float uProg; uniform sampler2D uCut;')
+      .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
+      {
+        float g = 0.0;
+        for (int i = 0; i < 5; i++) {
+          if (i >= uCount) break;
+          vec4 r = uRegions[i];
+          // fill each column from its top, one after the other when several are lit
+          float t = clamp(uProg * float(uCount) - float(i), 0.0, 1.0);
+          float edge = r.w - t * (r.w - r.y + .04);
+          float inX = smoothstep(r.x - .006, r.x + .006, vMapUv.x) * (1.0 - smoothstep(r.z - .006, r.z + .006, vMapUv.x));
+          float inY = smoothstep(edge - .02, edge, vMapUv.y) * (1.0 - smoothstep(r.w, r.w + .01, vMapUv.y)) * step(r.y - .01, vMapUv.y);
+          g = max(g, inX * inY);
+        }
+        float c = texture2D(uCut, vMapUv).r;
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(.86, .62, .25), c * g * .85);
+        totalEmissiveRadiance += vec3(.55, .36, .1) * c * g;
+      }`);
+  };
+}
+
+/* ---------------- build ---------------- */
+async function build() {
+  const tl = new THREE.TextureLoader();
+  const [albedo, height, normal, cut] = await Promise.all(['albedo.jpg', 'height.png', 'normal.jpg', 'cut.png'].map(u => tl.loadAsync(u)));
+  albedo.colorSpace = THREE.SRGBColorSpace;
+  for (const t of [albedo, height, normal]) t.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  glow.cut.value = cut;
+  const seg = phone ? [400, 337] : [600, 505];
+  const mat = new THREE.MeshStandardMaterial({
+    map: albedo, normalMap: normal, normalScale: new THREE.Vector2(.9, .9),
+    displacementMap: height, displacementScale: (H_MAX - H_MIN) * MM, displacementBias: H_MIN * MM, roughness: .88,
+  });
+  goldify(mat);
+  const face = new THREE.Mesh(new THREE.PlaneGeometry(W, H, ...seg), mat);
+  face.castShadow = face.receiveShadow = true;
+  const T = .14, wood = new THREE.MeshStandardMaterial({ color: 0x4f463f, roughness: .8 });
+  const body = new THREE.Mesh(new THREE.BoxGeometry(W, H, T), wood);
+  body.position.z = H_MIN * MM - T / 2 - .001; body.castShadow = body.receiveShadow = true;
+  plaque.add(face, body);
+  // the outer edge of the frame, from the back box up to the frame's face
+  const rimD = (H_MAX - H_MIN) * MM + .002, rimZ = (H_MAX + H_MIN) / 2 * MM;
+  for (const [w, h, x, y] of [[W, .004, 0, H / 2], [W, .004, 0, -H / 2], [.004, H, W / 2, 0], [.004, H, -W / 2, 0]]) {
+    const e = new THREE.Mesh(new THREE.BoxGeometry(w, h, rimD), wood); e.position.set(x, y, rimZ); plaque.add(e);
+  }
+  plaque.position.copy(center);
+  plaque.rotation.x = -.06;                                  // leans back a little, like on a stand
+  const dais = new THREE.Mesh(new THREE.BoxGeometry(W + .9, LIFT - .02, 1.3), new THREE.MeshStandardMaterial({ color: DAIS, roughness: .85 }));
+  dais.position.set(0, (LIFT - .02) / 2, -.1); dais.castShadow = dais.receiveShadow = true;
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(40, 64), new THREE.MeshStandardMaterial({ color: FLOOR, roughness: .95 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true;
+  scene.add(dais, floor);
+  scene.fog = new THREE.Fog(BG, 14, 34);
+}
+
+/* ---------------- camera: frames a spot in the part of the screen the deck leaves free ---------------- */
+const $ = id => document.getElementById(id);
+const deck = $('deck'), dots = $('dots');
+function covered() {   // fraction of the screen height under the deck (and its bar)
+  return stage.classList.contains('min') ? .1 : Math.min(.62, (deck.offsetHeight + 60) / stage.clientHeight);
+}
+function fitDist(r) {
+  const vf = THREE.MathUtils.degToRad(camera.fov) / 2, hf = Math.atan(Math.tan(vf) * camera.aspect);
+  const avail = 1 - covered() - .1;                            // the title takes a little at the top
+  return r * Math.max((H / 2 + .2) / (Math.tan(vf) * avail), (W / 2 + .25) / Math.tan(hf));
+}
+function surface(u, v) { return plaque.localToWorld(new THREE.Vector3((u - .5) * W, (v - .5) * H, 0)) }
+function pose({ u = .5, v = .5, r = 1, az = -.22, el = .06 }) {
+  const t = surface(u, v), d = fitDist(r);
+  // aim below the spot so it sits in the middle of the free band above the deck
+  t.y -= (covered() - .1) * d * Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  const p = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(d).add(t);
+  return { p, t };
+}
+let fly = null;
+function flyTo(target, ms = 1100) { fly = { p0: camera.position.clone(), t0: controls.target.clone(), ...target, start: performance.now(), ms } }
+
+/* ---------------- deck ---------------- */
+CARDS.forEach((c, i) => {
+  const a = document.createElement('article'); a.className = 'card'; a.dataset.i = i;
+  a.setAttribute('aria-label', c.title);
+  a.innerHTML = `<div class="kicker"></div><h2></h2>` +
+    (c.glyph ? `<div class="verse"><div class="col" aria-hidden="true"></div><div class="say"><div class="ar"></div><span class="tl"></span></div></div>` : '');
+  a.querySelector('.kicker').textContent = c.kicker; a.querySelector('h2').textContent = c.title;
+  if (c.glyph) {
+    // the signs stacked in a column, as on the stone; a cartouche stays together as one block
+    const col = a.querySelector('.col');
+    for (const part of c.glyph.match(/𓍹[^𓍺]*𓍺|./gu)) {
+      const s = document.createElement('span'); s.textContent = part.length > 2 ? [...part].join('\n') : part;
+      if (part.length > 2) s.style.whiteSpace = 'pre-line', s.style.border = '1.5px solid currentColor', s.style.borderRadius = '18px', s.style.margin = '4px 6px';
+      col.append(s);
+    }
+    a.querySelector('.ar').textContent = c.ar; a.querySelector('.tl').textContent = c.tl;
+  }
+  a.insertAdjacentHTML('beforeend', c.html);   // static content written in this file
+  deck.append(a);
+  const d = document.createElement('button'); d.className = 'dot'; d.setAttribute('aria-label', c.title);
+  d.onclick = () => goTo(i); dots.append(d);
+});
+let active = -1, filling = null, sweeping = null;
+let glide = null;
+function goTo(i) {   // glide only the deck (scrollIntoView also shifts the page; smooth scrollBy fights scroll-snap)
+  const c = deck.children[i].getBoundingClientRect(), d = deck.getBoundingClientRect();
+  const from = deck.scrollLeft, by = (c.left + c.width / 2) - (d.left + d.width / 2), t0 = performance.now();
+  cancelAnimationFrame(glide); deck.style.scrollSnapType = 'none';
+  const step = now => {
+    const k = Math.min(1, (now - t0) / 450);
+    deck.scrollLeft = from + by * (1 - Math.pow(1 - k, 3));
+    if (k < 1) glide = requestAnimationFrame(step); else deck.style.scrollSnapType = '';
+  };
+  glide = requestAnimationFrame(step);
+  activate(i);
+}
+function activate(i) {
+  if (i === active) return; active = i; const c = CARDS[i];
+  [...dots.children].forEach((d, j) => d.setAttribute('aria-current', String(i === j)));
+  glow.count.value = c.glow.length; c.glow.forEach((r, j) => glow.regions.value[j].set(...r));
+  glow.prog.value = 0; filling = { start: performance.now(), ms: 900 + 500 * c.glow.length };
+  flyTo(pose(c.view));
+  if (c.sweep) sweep(-150, 150, 3200);
+  dirty = true;
+}
+const io = new IntersectionObserver(es => {
+  const best = es.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+  if (best) activate(+best.target.dataset.i);
+}, { root: deck, threshold: [.6, .9] });
+[...deck.children].forEach(c => io.observe(c));
+
+$('fold').onclick = () => {
+  const min = stage.classList.toggle('min');
+  $('fold').setAttribute('aria-expanded', String(!min)); $('fold').setAttribute('aria-label', min ? 'إظهار البطاقات' : 'إخفاء البطاقات');
+  flyTo(pose(CARDS[Math.max(0, active)].view));
+};
+
+/* ---------------- listen: the harpist tells it; captions follow the recording, or a reading pace ---------------- */
+const play = $('play'), caption = $('caption'), audio = $('narr');
+let show = null;
+function lineAt(t) {
+  if (CUES.length) { let i = 0; while (i + 1 < CUES.length && t >= CUES[i + 1]) i++; return i }
+  let s = 0;
+  for (let i = 0; i < NARRATION.length; i++) { s += 1.4 + NARRATION[i][0].length * .085; if (t < s) return i }
+  return -1;
+}
+function startShow() {
+  show = { start: performance.now(), line: -2 };
+  play.setAttribute('aria-pressed', 'true'); $('playLabel').textContent = 'إيقاف';
+  $('ico').setAttribute('d', 'M4 3h3v10H4zM9 3h3v10H9z');
+  if (AUDIO) { audio.src = AUDIO; audio.currentTime = 0; audio.play().catch(() => {}) }
+}
+function endShow() {
+  show = null; caption.classList.remove('on'); audio.pause();
+  play.setAttribute('aria-pressed', 'false'); $('playLabel').textContent = 'اسمع الأغنية';
+  $('ico').setAttribute('d', 'M4 2.5v11l9.5-5.5z');
+}
+play.onclick = () => show ? endShow() : startShow();
+audio.onended = endShow;
+audio.ontimeupdate = () => { if (show) runShow(performance.now()) };   // captions keep pace even if frames are throttled
+function runShow(now) {
+  const t = AUDIO ? audio.currentTime : (now - show.start) / 1000;
+  const i = lineAt(t);
+  if (i === -1) return endShow();
+  if (i !== show.line) {
+    show.line = i; caption.classList.remove('on');
+    setTimeout(() => { if (show) { caption.textContent = NARRATION[i][0]; caption.classList.add('on') } }, 220);
+    if (NARRATION[i][1] !== active) goTo(NARRATION[i][1]);
+  }
+}
+
+/* ---------------- light dial + sweep ---------------- */
+const sun = $('sun');
+sun.oninput = () => { sweeping = null; setSun(+sun.value) };
+function sweep(a, b, ms) { sweeping = { a, b, ms, start: performance.now(), back: +sun.value } }
+
+/* ---------------- loop ---------------- */
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); dirty = true;
+}
+addEventListener('resize', () => { resize(); if (active >= 0) flyTo(pose(CARDS[active].view), 300) });
+controls.addEventListener('change', () => dirty = true);
+const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+function tick(now) {
+  requestAnimationFrame(tick);
+  if (show) runShow(now);
+  if (fly) {
+    const k = Math.min(1, (now - fly.start) / fly.ms), e = ease(k);
+    camera.position.lerpVectors(fly.p0, fly.p, e); controls.target.lerpVectors(fly.t0, fly.t, e);
+    if (k === 1) fly = null; dirty = true;
+  }
+  if (filling) {
+    const k = Math.min(1, (now - filling.start) / filling.ms);
+    glow.prog.value = k; if (k === 1) filling = null; dirty = true;
+  }
+  if (sweeping) {
+    const k = Math.min(1, (now - sweeping.start) / sweeping.ms);
+    const deg = k < .85 ? THREE.MathUtils.lerp(sweeping.a, sweeping.b, ease(k / .85))
+                        : THREE.MathUtils.lerp(sweeping.b, sweeping.back, ease((k - .85) / .15));
+    setSun(deg); if (k === 1) { setSun(sweeping.back); sweeping = null }
+  }
+  if (controls.update()) dirty = true;
+  if (!dirty) return;
+  renderer.render(scene, camera); dirty = false;
+}
+
+resize(); setSun(+sun.value);
+const failMsg = () => { $('loading').innerHTML = '<p>تعذّر تحميل اللوح. أعد تحميل الصفحة.</p>' };
+const fail = setTimeout(failMsg, 45000);
+build().then(() => {
+  clearTimeout(fail); $('loading').hidden = true;
+  const h = pose(CARDS[0].view); camera.position.copy(h.p); controls.target.copy(h.t);
+  activate(0); fly = null;
+  requestAnimationFrame(tick);
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) sweep(-150, 140, 3600);
+}).catch(e => { console.error(e); clearTimeout(fail); failMsg() });
+</script>
