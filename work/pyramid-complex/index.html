@@ -1,0 +1,449 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>المجموعة الهرمية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+/* One screen. The whole model sits on its dais. Along the bottom runs "the path": the five stops a
+   funeral procession passed, from the water's edge up to the pyramid. Tap a stop and a small lamp walks
+   the causeway to it while the camera follows; a card tells what the place was. */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --sheet: #f3ecdf;
+  --sheet-2: #e8dcc6;
+  --ink: #2a2117;
+  --ink-2: #6b5a46;
+  --sand: #c9a86a;
+  --lamp: #ffb547;
+  --f-display: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 40%, transparent 55%, #0d162055 100%) }
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; pointer-events: none }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.1; color: #fbf7f0; text-shadow: 0 1px 14px #0005 }
+.sub { margin: .25rem 0 0; color: #f1ebe2; font-size: .88rem; text-shadow: 0 1px 10px #0006 }
+
+/* the path: five stops on a line, like the causeway itself */
+.bottom { position: absolute; inset-inline: 0; bottom: 0; padding: 0 12px calc(12px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; align-items: center; gap: 10px; pointer-events: none }
+.card {
+  pointer-events: auto; width: min(100%, 520px); max-height: min(42vh, 300px); overflow: auto; position: relative;
+  background: linear-gradient(170deg, var(--sheet), var(--sheet-2)); border-radius: 20px; padding: 14px 18px 16px;
+  box-shadow: 0 14px 40px #10192a66, inset 0 0 0 1px #ffffffaa; scrollbar-width: thin;
+}
+.card.fade { animation: fade .45s ease }
+@keyframes fade { from { opacity: 0; transform: translateY(8px) } }
+.kicker { font-family: var(--f-display); color: #9a6b22; font-size: .82rem }
+.card h2 { margin: .1rem 0 .4rem; font-family: var(--f-display); font-weight: 700; font-size: 1.3rem; line-height: 1.35; padding-inline-end: 40px }
+.card p { margin: 0; font-size: 1.02rem; line-height: 1.9 }
+.close { position: absolute; top: 10px; inset-inline-end: 10px; width: 32px; height: 32px; border-radius: 50%; border: 0; background: #2a21170f; cursor: pointer; font-size: 1rem }
+.path {
+  pointer-events: auto; position: relative; width: min(100%, 520px); display: flex; justify-content: space-between; align-items: flex-start;
+  padding: 10px 10px 8px; border-radius: 22px; background: #0d1620b8; box-shadow: 0 10px 30px #0d162055;
+}
+.path::before { content: ""; position: absolute; top: 25px; inset-inline: 34px; height: 2px; background: repeating-linear-gradient(90deg, #f4ead899 0 6px, transparent 6px 11px) }
+.stop { position: relative; flex: 1; min-width: 0; border: 0; background: none; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 0 2px; color: #f4ead8 }
+.stop i { width: 16px; height: 16px; border-radius: 50%; background: #2a3440; border: 2px solid #f4ead8aa; transition: background .3s, transform .3s, box-shadow .3s }
+.stop span { font-family: var(--f-display); font-size: .74rem; line-height: 1.25; text-align: center; opacity: .8 }
+.stop[aria-current="true"] i { background: var(--lamp); border-color: #fff; transform: scale(1.25); box-shadow: 0 0 14px var(--lamp) }
+.stop[aria-current="true"] span { opacity: 1 }
+.home { position: absolute; top: 14px; inset-inline-end: 16px; border: 0; cursor: pointer; border-radius: 999px; padding: .4rem .8rem; background: #0d1620b3; color: #f4ead8; font-family: var(--f-display); font-size: .85rem }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading p { font-family: var(--f-display); color: #fbf7f0; animation: breathe 1.6s ease-in-out infinite }
+@keyframes breathe { 50% { opacity: .35 } }
+@media (min-width: 900px) { .stop span { font-size: .85rem } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<main class="stage" id="stage" dir="rtl" lang="ar" aria-label="المجموعة الهرمية: ماكيت ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="loading" id="loading"><p>يُبنى الماكيت…</p></div>
+  <div class="top">
+    <h1>المجموعة الهرمية</h1>
+    <p class="sub">من حافة الماء إلى قبر الملك</p>
+  </div>
+  <button class="home" id="home" hidden>⌂ الماكيت كله</button>
+  <div class="bottom">
+    <article class="card" id="card" hidden aria-live="polite">
+      <button class="close" id="close" aria-label="إخفاء">✕</button>
+      <div class="kicker" id="kicker"></div><h2 id="title"></h2><div id="text"></div>
+    </article>
+    <nav class="path" id="path" aria-label="مسار الموكب"></nav>
+  </div>
+</main>
+
+<!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+/* ---------------- the model's plan ----------------
+   Measured on the top-down photo (src/top_down.webp, 1500×2000 px): X to the right, Y down.
+   The top of the photo (the valley temple) is the east, toward the Nile; the pyramid is to the west.
+   Heights are in the same pixel units. */
+const S = .0022, CX = 670, CY = 970;
+const BASE = [240, 60, 1100, 1880];
+const VT = [430, 195, 800, 525];                      // valley temple platform
+const MT = [420, 1245, 690, 1412];                    // mortuary temple platform
+const PYR = { x: 525, y: 1655, side: 510, h: 330, courses: 26 };
+const QUEENS = [[962, 1420, 165], [962, 1595, 170], [962, 1772, 170]];   // [x, y, side]
+// the procession's way: quay → valley temple → causeway (with its jog) → mortuary temple → pyramid
+const WAY = [[622, 120, 4], [622, 300, 12], [615, 520, 12], [613, 905, 10], [565, 905, 10], [565, 1250, 10], [560, 1310, 12], [525, 1395, 14]];
+
+const STOPS = [
+  { name: 'معبد الوادي', kicker: 'المحطة الأولى', title: 'معبد الوادي', way: 1,
+    look: [615, 360, 10], az: 2.55, el: .62, d: 1.25,
+    html: '<p>على حافة الوادي، قرب الماء، يبدأ كل شيء. إلى هنا كان يصل جثمان الملك بالقارب، وتُقام له أولى الطقوس، ويُرجَّح أنها طقوس التطهير. والسلّم الصغير أمامه من جهة الماء هو المرسى. وفي داخله قاعة يأخذ شكلها شكل حرف T مقلوب.</p>' },
+  { name: 'الطريق الصاعد', kicker: 'المحطة الثانية', title: 'الطريق الصاعد', way: 4,
+    look: [590, 880, 8], az: 1.45, el: .55, d: 1.9,
+    html: '<p>ممر طويل يصعد من الوادي إلى الهضبة، ويصل معبد الوادي بالمعبد الجنائزي. كان في أغلب المجموعات مسقوفًا تحيط به الجدران، فلا يرى أحد من الخارج ما يمرّ فيه. وفي هذا الماكيت ينكسر الطريق مرة واحدة قبل أن يصل إلى المعبد.</p>' },
+  { name: 'المعبد الجنائزي', kicker: 'المحطة الثالثة', title: 'المعبد الجنائزي', way: 6,
+    look: [555, 1325, 10], az: 2.4, el: .7, d: 1.15,
+    html: '<p>ملاصق للهرم من جهة الشرق. فيه فناء مفتوح، ووراءه صف من الحجرات الصغيرة. هنا كان الكهنة يقدّمون القرابين للملك كل يوم بعد موته، ليبقى اسمه حيًّا وتبقى روحه تجد طعامها.</p>' },
+  { name: 'الهرم', kicker: 'المحطة الرابعة', title: 'الهرم', way: 7,
+    look: [525, 1640, 120], az: 2.75, el: .42, d: 2.3,
+    html: '<p>قبر الملك، وآخر الطريق. حجرة الدفن داخله أو تحته في الصخر. ومدخل أهرامات الجيزة الحقيقي ليس من جهة المعبد، بل في الوجه الشمالي، يُخفى بعد الدفن.</p>' },
+  { name: 'أهرامات الملكات', kicker: 'المحطة الخامسة', title: 'الأهرامات الصغيرة', way: 7,
+    look: [940, 1595, 40], az: 1.25, el: .45, d: 1.5,
+    html: '<p>ثلاثة أهرامات صغيرة في صف واحد إلى جانب الهرم الكبير. يُرجَّح أنها بُنيت لزوجات الملك، وربما كان بعضها لطقوس أخرى.</p>' },
+];
+const OVERVIEW = { look: [670, 1000, 0], az: 2.35, el: .78, d: 5.4 };
+// on a tall screen, look up the model's length from the valley end: the way climbs toward the pyramid
+const ov = () => camera.aspect < .8 ? { ...OVERVIEW, look: [720, 1050, 0], az: 2.9, el: .82, d: 4.3 } : OVERVIEW;
+
+/* ---------------- renderer: draws only when something changes ---------------- */
+const stage = document.getElementById('stage'), canvas = document.getElementById('c');
+const phone = matchMedia('(pointer: coarse)').matches;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+const BG = 0x748ba1, FLOOR = 0x5c7287, DAIS = 0x7488a0;
+scene.background = new THREE.Color(BG);
+scene.fog = new THREE.Fog(BG, 16, 40);
+const camera = new THREE.PerspectiveCamera(34, 1, .02, 200);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08;
+controls.maxPolarAngle = 1.45; controls.minDistance = .35; controls.maxDistance = 14;
+controls.zoomToCursor = true;
+
+const hemi = new THREE.HemisphereLight(0xfff4e6, FLOOR, .8); scene.add(hemi);
+const sun = new THREE.DirectionalLight(0xfff1dc, 2.6); sun.castShadow = true;
+sun.shadow.mapSize.set(phone ? 1536 : 2048, phone ? 1536 : 2048);
+Object.assign(sun.shadow.camera, { left: -3.2, right: 3.2, top: 3.2, bottom: -3.2, near: .5, far: 30 });
+sun.shadow.bias = -.0004; sun.shadow.normalBias = .015;
+sun.position.set(-4, 7, -3.5); scene.add(sun, sun.target);       // afternoon sun from the west-southwest, long shadows down the causeway
+const fill = new THREE.DirectionalLight(0xe8f0ff, .35); fill.position.set(5, 4, 6); scene.add(fill);
+let dirty = true;
+
+const LIFT = .45;                                   // model top above the floor
+const model = new THREE.Group(); model.position.y = LIFT; scene.add(model);
+const P = (X, Y, Hh = 0) => new THREE.Vector3((X - CX) * S, Hh * S, (Y - CY) * S);
+
+/* ---------------- textures, drawn here ---------------- */
+function canvasTex(w, h, draw, srgb) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; draw(c.getContext('2d'), w, h);
+  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  if (srgb) t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+// ---- the trowelled plaster ground, as a real height field over the plan (px) ----
+const [BX0, BY0, BX1, BY1] = BASE;
+const TW = 512, TH = Math.round(TW * (BY1 - BY0) / (BX1 - BX0));
+const terrainCanvas = (() => {
+  const c = document.createElement('canvas'); c.width = TW; c.height = TH; const g = c.getContext('2d');
+  g.fillStyle = 'rgb(150,150,150)'; g.fillRect(0, 0, TW, TH); g.lineCap = 'round';
+  // a trowel sweep leaves a bundle of parallel ridges along a curving path; sweeps cross and overlap
+  for (let i = 0; i < 1500; i++) {
+    const big = i < 520;   // deep, wide sweeps first, then fine combing over them
+    const x0 = rnd() * TW, y0 = rnd() * TH, ang = rnd() * 6.3, L = (big ? 70 : 30) + rnd() * (big ? 170 : 90), bend = (rnd() - .5) * 3.2;
+    const x2 = x0 + Math.cos(ang) * L, y2 = y0 + Math.sin(ang) * L;
+    const cx1 = (x0 + x2) / 2 + Math.cos(ang + 1.57) * L * bend * .5, cy1 = (y0 + y2) / 2 + Math.sin(ang + 1.57) * L * bend * .5;
+    const n = big ? 4 + (rnd() * 6 | 0) : 3 + (rnd() * 6 | 0), gap = big ? 4 + rnd() * 3.5 : 1.6 + rnd() * 1.4, w = big ? 2.4 + rnd() * 2 : .9 + rnd(), a1 = big ? .2 + rnd() * .2 : .08 + rnd() * .12;
+    for (let k = 0; k < n; k++) {
+      g.lineWidth = w; g.strokeStyle = k % 2 ? `rgba(0,0,0,${a1})` : `rgba(255,255,255,${a1 + .06})`;
+      g.beginPath();
+      for (let t = 0; t <= 1.001; t += .05) {   // walk the curve, offset along its normal
+        const mx = (1 - t) * (1 - t) * x0 + 2 * (1 - t) * t * cx1 + t * t * x2, my = (1 - t) * (1 - t) * y0 + 2 * (1 - t) * t * cy1 + t * t * y2;
+        const dx = 2 * (1 - t) * (cx1 - x0) + 2 * t * (x2 - cx1), dy = 2 * (1 - t) * (cy1 - y0) + 2 * t * (y2 - cy1), dl = Math.hypot(dx, dy) || 1;
+        const o = (k - n / 2) * gap * Math.sin(Math.PI * Math.min(1, t * 1.2 + .1));   // the bundle narrows at its ends
+        const px = mx - dy / dl * o, py = my + dx / dl * o;
+        t === 0 ? g.moveTo(px, py) : g.lineTo(px, py);
+      }
+      g.stroke();
+    }
+  }
+  // lumps and pits
+  for (let i = 0; i < 300; i++) {
+    const x = rnd() * TW, y = rnd() * TH, r = 2 + rnd() * 8, gr = g.createRadialGradient(x, y, 0, x, y, r), c3 = rnd() < .6 ? '255,255,255' : '0,0,0';
+    gr.addColorStop(0, `rgba(${c3},.55)`); gr.addColorStop(1, `rgba(${c3},0)`); g.fillStyle = gr; g.fillRect(x - r, y - r, 2 * r, 2 * r);
+  }
+  const b = document.createElement('canvas'); b.width = TW; b.height = TH; const gb = b.getContext('2d');
+  gb.filter = 'blur(1.1px)'; gb.drawImage(c, 0, 0); return b;
+})();
+const tdata = terrainCanvas.getContext('2d').getImageData(0, 0, TW, TH).data;
+function terrainAt(X, Y) {   // -1..1
+  const u = Math.min(TW - 1, Math.max(0, (X - BX0) / (BX1 - BX0) * TW)) | 0, v = Math.min(TH - 1, Math.max(0, (Y - BY0) / (BY1 - BY0) * TH)) | 0;
+  return (tdata[(v * TW + u) * 4] - 150) / 105;
+}
+// where the buildings stand, the plaster was smoothed flat
+const FOOT = [VT, [585, 112, 662, 206], [590, 520, 637, 912], [540, 886, 637, 1255], MT,
+  [PYR.x - PYR.side / 2, PYR.y - PYR.side / 2, PYR.x + PYR.side / 2, PYR.y + PYR.side / 2],
+  ...QUEENS.map(([x, y, s]) => [x - s / 2, y - s / 2, x + s / 2, y + s / 2])];
+function flatness(X, Y) {   // 0 on a footprint, 1 well away from it
+  let d = 1e9;
+  for (const [x0, y0, x1, y1] of FOOT) {
+    const dx = Math.max(x0 - X, 0, X - x1), dy = Math.max(y0 - Y, 0, Y - y1); d = Math.min(d, Math.hypot(dx, dy));
+  }
+  return Math.min(1, d / 22);
+}
+const groundMap = (() => {
+  const c = document.createElement('canvas'); c.width = TW; c.height = TH; const g = c.getContext('2d');
+  g.fillStyle = '#dbc49a'; g.fillRect(0, 0, TW, TH);
+  g.globalCompositeOperation = 'overlay'; g.globalAlpha = .45; g.drawImage(terrainCanvas, 0, 0);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+})();
+const groundBump = new THREE.CanvasTexture(terrainCanvas); groundBump.anisotropy = 8;
+
+// dressed stone: staggered courses of blocks (walls, causeway)
+const masonry = canvasTex(256, 256, (g, w, h) => {
+  g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h);
+  for (let r = 0; r < 8; r++) {
+    g.fillStyle = '#b1a38a'; g.fillRect(0, r * 32 + 30, w, 2);
+    for (let x = (r % 2) * 32; x < w; x += 64) g.fillRect(x, r * 32, 2, 32);
+  }
+  for (let i = 0; i < 500; i++) { g.fillStyle = `rgba(0,0,0,${rnd() * .08})`; g.fillRect(rnd() * w, rnd() * h, 1 + rnd() * 5, 1 + rnd() * 3) }
+}, true);
+// one course of blocks: four blocks, a joint line under them
+const course = canvasTex(256, 64, (g, w, h) => {
+  g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h);
+  g.fillStyle = '#6d6455'; g.fillRect(0, h - 5, w, 5);
+  for (let i = 0; i < 4; i++) g.fillRect(i * 64 + (i % 2) * 4, 0, 4, h);
+  for (let i = 0; i < 300; i++) { g.fillStyle = `rgba(0,0,0,${rnd() * .07})`; g.fillRect(rnd() * w, rnd() * h, 2 + rnd() * 6, 1 + rnd() * 3) }
+}, true);
+// fine scratch lines on the small pyramids' faces
+const hatch = canvasTex(128, 128, (g, w, h) => {
+  g.fillStyle = '#ffffff'; g.fillRect(0, 0, w, h);
+  for (let y = 0; y < h; y += 3 + rnd() * 3) { g.fillStyle = `rgba(80,66,44,${.15 + rnd() * .2})`; g.fillRect(0, y, w, 1) }
+}, true);
+
+const SAND = 0xd8c39a;
+const smooth = new THREE.MeshStandardMaterial({ color: 0xe0cda6, roughness: .85 });
+const shade = new THREE.MeshStandardMaterial({ color: 0x8a7756, roughness: .95 });
+
+/* ---------------- build ---------------- */
+function slab(x0, y0, x1, y1, h, base = 0, mat = smooth) {
+  const a = P(x0, y0), b = P(x1, y1);
+  const m = new THREE.Mesh(new THREE.BoxGeometry(Math.abs(b.x - a.x), h * S, Math.abs(b.z - a.z)), mat);
+  m.position.set((a.x + b.x) / 2, (base + h / 2) * S, (a.z + b.z) / 2);
+  m.castShadow = m.receiveShadow = true; model.add(m); return m;
+}
+function stoneMat(len, h) {   // masonry scaled so a course is ~8 px tall and a block ~16 px long
+  const t = masonry.clone(); t.needsUpdate = true; t.repeat.set(Math.max(1, len / 64), Math.max(.25, h / 64));
+  return new THREE.MeshStandardMaterial({ color: 0xe3d0a8, roughness: .86, map: t, bumpMap: t, bumpScale: .5 });
+}
+function wall(xa, ya, xb, yb, t, h, base) {      // axis-aligned wall centred on the line
+  const len = Math.hypot(xb - xa, yb - ya) + t, mat = stoneMat(len, h);
+  if (ya === yb) return slab(Math.min(xa, xb) - t / 2, ya - t / 2, Math.max(xa, xb) + t / 2, ya + t / 2, h, base, mat);
+  return slab(xa - t / 2, Math.min(ya, yb) - t / 2, xa + t / 2, Math.max(ya, yb) + t / 2, h, base, mat);
+}
+function poly(pts, t, h, base) { for (let i = 0; i + 1 < pts.length; i++) wall(...pts[i], ...pts[i + 1], t, h, base) }
+
+function build() {
+  // the plaster bed and its trowelled top
+  const W = (BX1 - BX0) * S, L = (BY1 - BY0) * S;
+  const bed = new THREE.Mesh(new THREE.BoxGeometry(W, .09, L), new THREE.MeshStandardMaterial({ color: 0xcdb68c, roughness: .95 }));
+  bed.position.set(((BX0 + BX1) / 2 - CX) * S, -.045 - .004, ((BY0 + BY1) / 2 - CY) * S); bed.receiveShadow = bed.castShadow = true; model.add(bed);
+  const g = new THREE.PlaneGeometry(W, L, phone ? 220 : 340, phone ? 460 : 720); g.rotateX(-Math.PI / 2);
+  const pos = g.attributes.position, cx = ((BX0 + BX1) / 2 - CX) * S, cz = ((BY0 + BY1) / 2 - CY) * S;
+  for (let i = 0; i < pos.count; i++) {
+    const X = (pos.getX(i) + cx) / S + CX, Y = (pos.getZ(i) + cz) / S + CY;
+    const rim = Math.min(X - BX0, BX1 - X, Y - BY0, BY1 - Y) < 6 ? 0 : 1;
+    const f = flatness(X, Y);
+    const wave = Math.sin(X * .011 + Math.sin(Y * .004) * 2) * Math.cos(Y * .009 + Math.sin(X * .006)) * 4;   // slow swells
+    pos.setY(i, ((terrainAt(X, Y) * 10 + wave + 6) * f + 1) * S * rim);
+  }
+  g.computeVertexNormals();
+  const ground = new THREE.Mesh(g, new THREE.MeshStandardMaterial({ color: 0xffffff, map: groundMap, bumpMap: groundBump, bumpScale: 1.2, roughness: .95 }));
+  ground.position.set(cx, 0, cz); ground.castShadow = ground.receiveShadow = true; model.add(ground);
+
+  // valley temple: a raised platform, outer walls, and the inner hall drawn by its walls
+  slab(...VT, 12, -2, stoneMat(370, 12));
+  poly([[440, 205], [790, 205], [790, 515], [440, 515], [440, 205]], 22, 20, 10);
+  poly([[575, 205], [575, 352], [705, 352], [705, 272], [790, 272]], 20, 20, 10);
+  // the quay stairs, rising from the water's edge to the temple, between two low walls
+  for (let i = 0; i < 12; i++) slab(592, 116 + i * 7.5, 653, 206, 1.5 + i * 1.05, -1, smooth);
+  wall(588, 116, 588, 205, 8, 16, 0); wall(657, 116, 657, 205, 8, 16, 0);
+
+  // the causeway: a walled corridor; its floor is a flight of real steps
+  const causeway = (x0, y0, x1, y1) => {
+    slab(x0, y0, x1, y1, 5, 0, smooth);
+    for (let y = y0 + 4; y < y1 - 3; y += 10) slab(x0 + 3, y, x1 - 3, y + 5, 2.5, 5, smooth);
+    wall(x0, y0, x0, y1, 8, 19, 0); wall(x1, y0, x1, y1, 8, 19, 0);
+  };
+  causeway(597, 525, 630, 905);
+  causeway(547, 905, 583, 1250);
+  slab(547, 893, 630, 917, 6, 0, smooth); wall(583, 917, 597, 917, 8, 19, 0); wall(547, 893, 597, 893, 8, 19, 0); wall(630, 893, 630, 917, 8, 19, 0);
+
+  // mortuary temple: platform, open court, a row of four chambers against the pyramid
+  slab(...MT, 10, -2, stoneMat(270, 10));
+  poly([[430, 1255], [547, 1255]], 18, 21, 8); poly([[583, 1255], [680, 1255], [680, 1402], [430, 1402], [430, 1255]], 18, 21, 8);
+  wall(430, 1350, 680, 1350, 16, 21, 8);
+  for (const x of [492, 555, 618]) wall(x, 1350, x, 1402, 14, 21, 8);
+  for (const [x0, x1] of [[439, 485], [499, 548], [562, 611], [625, 671]]) slab(x0, 1358, x1, 1394, 4, 8, shade);   // shadowed chamber floors
+
+  // the pyramid: courses of blocks, each a little smaller; a broad first course; a recess cut into the face toward the temple
+  const { x, y, side, h, courses } = PYR, ch = h / courses, NW = 84, ND = 30, NIC = [1, 5];   // recess width, depth, courses
+  const courseMat = (s, i) => {
+    const tx = course.clone(); tx.needsUpdate = true; tx.repeat.set(Math.max(1, s / 90), 1);
+    const tone = .94 + rnd() * .1;
+    return new THREE.MeshStandardMaterial({ color: new THREE.Color(0xe2cfa6).multiplyScalar(tone), roughness: .88, map: tx, bumpMap: tx, bumpScale: 1.6 });
+  };
+  const block = (x0, y0, x1, y1, i, mat) => slab(x0, y0, x1, y1, ch, ch * i, mat);
+  slab(x - side / 2 - 10, y - side / 2 - 10, x + side / 2 + 10, y + side / 2 + 10, ch * .8, -ch * .3, courseMat(side + 20, 0));   // plinth
+  for (let i = 0; i < courses; i++) {
+    const s = side * (1 - i / courses) - 4, m = courseMat(s, i), x0 = x - s / 2, x1 = x + s / 2, y0 = y - s / 2, y1 = y + s / 2;
+    if (i >= NIC[0] && i < NIC[1]) {   // cut the recess: the course in three blocks
+      block(x0, y0 + ND, x1, y1, i, m);
+      block(x0, y0, x - NW / 2, y0 + ND, i, m); block(x + NW / 2, y0, x1, y0 + ND, i, m);
+    } else block(x0, y0, x1, y1, i, m);
+  }
+  const s1 = side * (1 - NIC[0] / courses) - 4;
+  slab(x - NW / 2, y - s1 / 2 + ND - 2, x + NW / 2, y - s1 / 2 + ND, ch * (NIC[1] - NIC[0]), ch * NIC[0], shade);   // the recess's dark back
+  const cap = new THREE.Mesh(new THREE.ConeGeometry(side / courses * .75 * S, ch * 1.4 * S, 4), smooth);
+  cap.rotation.y = Math.PI / 4; cap.position.copy(P(x, y, h + ch * .5)); cap.castShadow = true; model.add(cap);
+
+  // the three small pyramids: smooth faces scored with fine lines, a little rubble at their feet
+  for (const [qx, qy, qs] of QUEENS) {
+    const t = hatch.clone(); t.needsUpdate = true; t.repeat.set(4, 3);
+    const q = new THREE.Mesh(new THREE.ConeGeometry(qs * .707 * S, qs * .62 * S, 4, 1),
+      new THREE.MeshStandardMaterial({ color: 0xdcc8a0, roughness: .9, flatShading: true, map: t, bumpMap: t, bumpScale: .6 }));
+    q.rotation.y = Math.PI / 4; q.position.copy(P(qx, qy, qs * .31)); q.castShadow = q.receiveShadow = true; model.add(q);
+    for (let k = 0; k < 7; k++) {
+      const r = (3 + rnd() * 6) * S, lump = new THREE.Mesh(new THREE.DodecahedronGeometry(r, 0), smooth);
+      const a = rnd() * 6.3, d = qs * .5 + rnd() * 14;
+      lump.position.copy(P(qx + Math.cos(a) * d, qy + Math.sin(a) * d, 2)); lump.rotation.set(rnd() * 3, rnd() * 3, 0); lump.castShadow = true; model.add(lump);
+    }
+  }
+
+  // dais + floor
+  const dais = new THREE.Mesh(new THREE.BoxGeometry(W + .5, LIFT - .1, L + .5), new THREE.MeshStandardMaterial({ color: DAIS, roughness: .85 }));
+  dais.position.set(cx, (LIFT - .1) / 2 - LIFT, cz); dais.receiveShadow = dais.castShadow = true;
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(40, 64), new THREE.MeshStandardMaterial({ color: FLOOR, roughness: .95 }));
+  floor.rotation.x = -Math.PI / 2; floor.position.y = -LIFT; floor.receiveShadow = true;
+  model.add(dais, floor);
+}
+
+/* ---------------- the lamp that walks the way ---------------- */
+const lamp = new THREE.Group();
+const flame = new THREE.Mesh(new THREE.SphereGeometry(.018, 16, 12), new THREE.MeshBasicMaterial({ color: 0xffc46b }));
+const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: canvasTex(64, 64, (g) => { const r = g.createRadialGradient(32, 32, 0, 32, 32, 32); r.addColorStop(0, 'rgba(255,190,90,.9)'); r.addColorStop(1, 'rgba(255,170,60,0)'); g.fillStyle = r; g.fillRect(0, 0, 64, 64) }), depthWrite: false, transparent: true }));
+halo.scale.set(.16, .16, 1);
+const glowLight = new THREE.PointLight(0xffb04a, 0, .9, 1.6);
+lamp.add(flame, halo, glowLight); lamp.visible = false; model.add(lamp);
+const wayPts = WAY.map(([X, Y, Hh]) => P(X, Y, Hh + 14));
+const segLen = wayPts.slice(1).map((p, i) => p.distanceTo(wayPts[i]));
+const wayAt = f => {   // f: fractional index along WAY
+  const i = Math.min(wayPts.length - 2, Math.floor(f)), k = f - i;
+  return wayPts[i].clone().lerp(wayPts[i + 1], Math.min(1, Math.max(0, k)));
+};
+let walk = null, lampAt = 0;
+
+/* ---------------- camera ---------------- */
+function covered() { const c = $('card'); return (c.hidden ? 0 : c.offsetHeight + 10) + $('path').offsetHeight + 24 }
+function pose({ look, az, el, d }) {
+  const t = P(...look).add(model.position);
+  const free = 1 - covered() / stage.clientHeight;
+  const dd = d * Math.max(1, .75 / camera.aspect) / Math.max(.45, free);
+  // shift the aim down so the spot sits in the free band above the panel
+  t.y -= (1 - free) * .5 * dd * Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2) * .9;
+  const p = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(dd).add(t);
+  return { p, t };
+}
+let fly = null;
+function flyTo(target, ms = 1300) { fly = { p0: camera.position.clone(), t0: controls.target.clone(), ...target, start: performance.now(), ms } }
+
+/* ---------------- the path UI ---------------- */
+const $ = id => document.getElementById(id);
+let active = -1;
+STOPS.forEach((s, i) => {
+  const b = document.createElement('button'); b.className = 'stop';
+  b.innerHTML = '<i></i><span></span>'; b.querySelector('span').textContent = s.name;
+  b.onclick = () => go(i); $('path').append(b);
+});
+function go(i) {
+  active = i; const s = STOPS[i];
+  [...$('path').children].forEach((b, j) => b.setAttribute('aria-current', String(i === j)));
+  const card = $('card'); card.hidden = false; card.classList.remove('fade'); void card.offsetWidth; card.classList.add('fade'); card.scrollTop = 0;
+  $('kicker').textContent = s.kicker; $('title').textContent = s.title; $('text').innerHTML = s.html;   // static content written in this file
+  $('home').hidden = false;
+  // the lamp walks from where it is to this stop, along the way
+  lamp.visible = true; glowLight.intensity = 1.2;
+  const from = lampAt, to = s.way, dist = Math.abs(to - from);
+  walk = { from, to, start: performance.now(), ms: Math.max(500, 700 * dist) };
+  flyTo(pose(s), Math.max(1200, walk.ms * .9));
+  dirty = true;
+}
+function overview() {
+  active = -1; [...$('path').children].forEach(b => b.setAttribute('aria-current', 'false'));
+  $('card').hidden = true; $('home').hidden = true; lamp.visible = false; glowLight.intensity = 0; lampAt = 0;
+  flyTo(pose(ov())); dirty = true;
+}
+$('home').onclick = overview;
+$('close').onclick = () => { $('card').hidden = true; if (active >= 0) flyTo(pose(STOPS[active]), 600) };
+
+/* ---------------- loop ---------------- */
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); dirty = true;
+}
+addEventListener('resize', () => { resize(); flyTo(pose(active >= 0 ? STOPS[active] : OVERVIEW), 300) });
+controls.addEventListener('change', () => dirty = true);
+const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+function tick(now) {
+  requestAnimationFrame(tick);
+  if (fly) {
+    const k = Math.min(1, (now - fly.start) / fly.ms), e = ease(k);
+    camera.position.lerpVectors(fly.p0, fly.p, e); controls.target.lerpVectors(fly.t0, fly.t, e);
+    if (k === 1) fly = null; dirty = true;
+  }
+  if (walk) {
+    const k = Math.min(1, (now - walk.start) / walk.ms);
+    lampAt = THREE.MathUtils.lerp(walk.from, walk.to, ease(k));
+    if (k === 1) walk = null; dirty = true;
+  }
+  if (lamp.visible) {
+    lamp.position.copy(wayAt(lampAt));
+    const f = 1 + Math.sin(now / 90) * .06 + Math.sin(now / 37) * .04;   // the flame breathes
+    halo.scale.setScalar(.16 * f); glowLight.intensity = 1.2 * f; dirty = true;
+  }
+  if (controls.update()) dirty = true;
+  if (!dirty) return;
+  renderer.render(scene, camera); dirty = false;
+}
+
+resize();
+try {
+  build();
+  $('loading').hidden = true;
+  const h = pose(ov()); camera.position.copy(h.p); controls.target.copy(h.t);
+  requestAnimationFrame(tick);
+} catch (e) { console.error(e); $('loading').innerHTML = '<p>تعذّر بناء الماكيت. أعد تحميل الصفحة.</p>' }
+</script>
