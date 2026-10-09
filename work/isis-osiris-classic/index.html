@@ -47,8 +47,6 @@ canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: blo
 h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1.15; color: var(--ink); text-shadow: 0 1px 12px #fff8ec }
 .sub { margin: .2rem 0 0; color: var(--ink-2); font-size: .9rem; max-width: 22rem; text-shadow: 0 1px 8px #fff8ec }
 .stage.show h1 { color: var(--papyrus); text-shadow: none }
-.stage.plain h1 { color: #fbf7f0; text-shadow: 0 1px 14px #0005 }
-.stage.plain .sub { color: #f1ebe2; text-shadow: 0 1px 10px #0006 }
 .views { display: flex; gap: 6px; pointer-events: auto }
 .chip {
   border: 1px solid #2a201633; background: #fffaf0a6; color: var(--ink);
@@ -165,7 +163,7 @@ h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clam
       <div class="reading" id="pRead"></div>
     </div>
   </section>
-  <audio id="narr" preload="auto" src="narration.mp3?v=10"></audio>
+  <audio id="narr" preload="auto" src="narration.mp3?v=9"></audio>
 </main>
 
 <!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
@@ -222,17 +220,17 @@ const PARTS = {
   ],
 };
 // the narration, line by line, and which statue the light favours on each line
-const NARRATION = [   // told by Osiris himself
-  ['أنا أوزوريس. كنتُ ملكًا على مصر، أُعلّم الناسَ الزرعَ والعدل.', 'osiris'],
-  ['لكنّ أخي ست ملأت الغيرةُ قلبَه، فقتلني، ومزّق جسدي، وبعثره في أرجاء البلاد.', 'osiris'],
-  ['وجاءت إيزيس، زوجتي الوفيّة. جابت مصرَ كلَّها تبحث عني، قطعةً قطعة، حتى جمعتني من جديد.', 'isis'],
-  ['وبسحرها وحبّها، عادت إليّ الروح.', 'isis'],
-  ['وُلد لنا حورس، فكبر وانتصر على ست، واستعاد عرشي.', 'both'],
-  ['أما أنا، فصرتُ ملكًا على العالم الآخر، أستقبل كلَّ من رحل.', 'osiris'],
-  ['فإن رأيتم إيزيس إلى جواري، فاعلموا أن الوفاء لا يموت، وأن الموت ليس النهاية.', 'both'],
+const NARRATION = [
+  ['كان أوزوريس ملكًا طيبًا على مصر، يحبه الناس.', 'osiris'],
+  ['لكن أخاه ست امتلأ قلبه بالغيرة، فقتله، ومزّق جسده، وبعثره في أرجاء البلاد.', 'osiris'],
+  ['لم تستسلم إيزيس. جابت مصر كلها تبحث عن زوجها، حتى جمعته من جديد.', 'isis'],
+  ['وبسحرها وحبها، عادت إليه الروح.', 'isis'],
+  ['وُلد لهما حورس، فكبر وانتصر على ست، واستعاد عرش أبيه.', 'both'],
+  ['أما أوزوريس، فصار ملكًا على العالم الآخر، ينتظر كل من رحل.', 'osiris'],
+  ['ومنذ ذلك اليوم، صارت إيزيس رمزًا للوفاء، وأوزوريس وعدًا بأن الموت ليس النهاية.', 'both'],
 ];
 // when each line starts in narration.mp3 (s), measured from the pauses in the recording
-const CUES = [0, 6.3, 15.2, 24.55, 28.85, 34.35, 40.2];
+const CUES = [0, 4.88, 13.63, 20.75, 25.1, 31.23, 37.33];
 
 /* ---------------- renderer: light enough for phones, draws only when something changes ---------------- */
 const stage = document.getElementById('stage'), canvas = document.getElementById('c');
@@ -244,16 +242,7 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.shadowMap.autoUpdate = false;   // statues and lamp never move: draw the shadows once, not every frame
 const scene = new THREE.Scene();
-const LOOKS = {   // bg: the backdrop, floor: the ground under it, dais: the platform
-  gallery: { bg: 0xd3c8b6, dais: 0xcfc5b4 },
-  blue: { bg: 0x748ba1, floor: 0x5c7287, dais: 0x7488a0 },
-  mauve: { bg: 0x9a8698, floor: 0x7d6b7b, dais: 0x968395 },
-};
-// the plain blue studio is the main look; ?look=gallery or ?look=mauve show the others
-let LOOK = 'blue'; try { const q = new URLSearchParams(location.search).get('look'); if (LOOKS[q]) LOOK = q } catch (e) {}
-const PLAIN = LOOK !== 'gallery';
-const GALLERY = new THREE.Color(LOOKS[LOOK].bg), NIGHT = new THREE.Color(0x0b0907);
-if (PLAIN) { stage.classList.add('plain'); stage.style.background = '#' + GALLERY.getHexString() }
+const GALLERY = new THREE.Color(0xd3c8b6), NIGHT = new THREE.Color(0x0b0907);
 scene.background = GALLERY.clone();
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), .04).texture;
 
@@ -276,16 +265,6 @@ function spot(color, angle, penumbra, decay, power, shadow) {
   const l = new THREE.SpotLight(color, power, 0, angle, penumbra, decay); l.userData.power = power;
   if (shadow) { l.castShadow = true; l.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048); l.shadow.bias = -.0002; l.shadow.normalBias = .03; l.shadow.radius = 5 }
   scene.add(l, l.target); museum.push(l); return l;
-}
-function plainLights(box) {
-  const c = box.getCenter(new THREE.Vector3());
-  const key = new THREE.DirectionalLight(0xfff6ea, 2.3); key.position.set(c.x - 6, 13, c.z + 10); key.target.position.copy(c);
-  key.castShadow = true; key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048); key.shadow.radius = 6;
-  Object.assign(key.shadow.camera, { left: -7, right: 7, top: 12, bottom: -3, near: 1, far: 40 }); key.shadow.bias = -.0003; key.shadow.normalBias = .03;
-  const rimL = new THREE.DirectionalLight(0xeef3ff, 1.1); rimL.position.set(c.x + 5, 9, c.z - 10); rimL.target.position.copy(c);
-  key.userData = { power: key.intensity, role: 'key' }; rimL.userData = { power: rimL.intensity, role: 'rim' };
-  scene.add(key, key.target, rimL, rimL.target); museum.push(key, rimL);
-  hemi.intensity = BASE.hemi = .9; hemi.groundColor.setHex(LOOKS[LOOK].floor);   // bounce light takes the backdrop colour
 }
 function light(s) {
   const c = s.center, top = s.box.max.y, h = s.size.y;
@@ -355,11 +334,7 @@ async function chamber() {
   renderer.shadowMap.needsUpdate = true; dirty = true;
 }
 const sweepU = { value: -1 }, chamberParts = {};
-if (PLAIN) {
-  const ground = new THREE.Mesh(new THREE.CircleGeometry(70, 96), new THREE.MeshStandardMaterial({ color: LOOKS[LOOK].floor, roughness: .95 }));
-  ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground); chamberParts.floor = ground.material;
-  scene.fog = new THREE.Fog(GALLERY.clone(), 26, 60);   // the floor fades into the backdrop: no horizon line
-} else chamber();
+chamber();
 
 /* ---------------- light beams for the story, and a narrow light for the parts tour ---------------- */
 const beams = {};
@@ -412,7 +387,7 @@ function prepare(name, gltf) {
   });
   group.add(gltf.scene); statues[name] = { root: gltf.scene };
 }
-const MODELS = /*__MODELS__*/{}, VERSION = 10;
+const MODELS = /*__MODELS__*/{}, VERSION = 9;
 const load = (n) => new Promise((ok, no) => {
   const done = g => { prepare(n, g); ok() };
   if (!MODELS[n]) return loader.load(`${n}.glb?v=${VERSION}`, done, undefined, no);   // ?v= so phones don't keep an old copy
@@ -426,7 +401,7 @@ Promise.all([load('osiris'), load('isis')]).then(() => {
   group.scale.setScalar(7.95 / (ob.max.y - ob.min.y)); group.updateMatrixWorld(true);
   group.position.y -= new THREE.Box3().setFromObject(group).min.y - PLINTH; group.updateMatrixWorld(true);
   // one stepped limestone dais that the pair share, like a temple platform
-  const plinthMat = chamberParts.plinth = new THREE.MeshStandardMaterial({ color: LOOKS[LOOK].dais, roughness: .8 });
+  const plinthMat = chamberParts.plinth = new THREE.MeshStandardMaterial({ color: 0xcfc5b4, roughness: .8 });
   const pair = new THREE.Box3().setFromObject(group), pc = pair.getCenter(new THREE.Vector3()), ps = pair.getSize(new THREE.Vector3());
   const STEP = PLINTH * .3;
   for (const [w, d, y0, y1] of [[ps.x + 1.9, ps.z + 1.9, 0, STEP], [ps.x + 1.0, ps.z + 1.0, STEP, PLINTH]]) {
@@ -437,14 +412,13 @@ Promise.all([load('osiris'), load('isis')]).then(() => {
     const b = new THREE.Box3().setFromObject(statues[n].root);
     Object.assign(statues[n], { box: b, center: b.getCenter(new THREE.Vector3()), size: b.getSize(new THREE.Vector3()) });
     statues[n].meshes = []; statues[n].root.traverse(o => o.isMesh && statues[n].meshes.push(o));
-    placeBeam(beams[n], statues[n]); if (!PLAIN) light(statues[n]);
+    placeBeam(beams[n], statues[n]); light(statues[n]);
   }
   views.both = { box: statues.osiris.box.clone().union(statues.isis.box), dir: new THREE.Vector3(.16, .08, 1) };
   views.both.box.min.y -= PLINTH * .6;   // keep a little of the plinths in the frame
   views.osiris = { box: statues.osiris.box, dir: new THREE.Vector3(-.3, .08, 1) };
   views.isis = { box: statues.isis.box, dir: new THREE.Vector3(.3, .08, 1) };
   bounds = views.both.box.clone().expandByScalar(.4);
-  if (PLAIN) plainLights(views.both.box);
   const v = frame(views.both); camera.position.copy(v.pos); controls.target.copy(v.target);
   document.getElementById('loading').hidden = true; renderer.shadowMap.needsUpdate = true; dirty = true;
   perf.ready = performance.now() - perf.t0;
@@ -531,7 +505,7 @@ document.querySelectorAll('[data-who]').forEach(b => b.addEventListener('click',
 /* ---------------- the story: hall goes dark, beams on the statues, the carved wall glows ---------------- */
 const audio = document.getElementById('narr');
 let hasAudio = false;
-const RECORDING = 47.96;   // s, used until the phone has loaded the file
+const RECORDING = 46.1;   // s, used until the phone has loaded the file
 audio.addEventListener('loadedmetadata', () => { hasAudio = isFinite(audio.duration) && audio.duration > 0 });
 audio.addEventListener('playing', () => { hasAudio = true; if (show) show.dur = (isFinite(audio.duration) ? audio.duration : RECORDING) * 1000 });
 const listen = document.getElementById('listen'), caption = document.getElementById('caption'), ico = document.getElementById('ico');
@@ -614,13 +588,11 @@ renderer.setAnimationLoop((now) => {
     l.intensity = l.userData.power * (1 - cut);
   }
   scene.background.copy(GALLERY).lerp(NIGHT, dim);
-  if (scene.fog) scene.fog.color.copy(scene.background);
   if (chamberParts.wall) {   // for the story the room itself goes dark, so only the statues and the gold frieze stay lit
     chamberParts.wall.emissiveIntensity = .9 * dim; chamberParts.wall.color.setScalar(1 - .88 * dim);
+    chamberParts.floor.color.setScalar(1 - .8 * dim);
   }
-  if (chamberParts.floor) chamberParts.floor.color.setHex(PLAIN ? LOOKS[LOOK].floor : 0xffffff).multiplyScalar(1 - .8 * dim);
-  if (chamberParts.plinth) chamberParts.plinth.color.setHex(LOOKS[LOOK].dais).multiplyScalar(1 - .7 * dim);
-  if (PLAIN) stage.style.background = '#' + scene.background.getHexString();
+  if (chamberParts.plinth) chamberParts.plinth.color.setHex(0xcfc5b4).multiplyScalar(1 - .7 * dim);
   for (const n of ['osiris', 'isis']) {
     const b = beams[n], want = dim * (focus === 'both' ? 1 : focus === n ? 1.25 : .45);
     b.level += (want - b.level) * Math.min(1, dt * 2);
