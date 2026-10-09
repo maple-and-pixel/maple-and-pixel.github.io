@@ -1,0 +1,504 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>صلاية نعرمر</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+/* One screen. The palette stands on its dais; a small map of the palette (its own outline, cut into
+   the scenes) sits at the side. Tap a scene, or step through them: the rest of the stone falls into
+   shadow and the camera walks to it. The palette turns over to show its other face. */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --slate: #2e3436;
+  --sheet: #eef0ec;
+  --sheet-2: #dde2df;
+  --ink: #1d2427;
+  --ink-2: #56615f;
+  --accent: #b0552f;       /* kohl-pot ochre */
+  --f-display: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+  --panel-h: min(40vh, 300px);
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 35%, transparent 55%, #0d162055 100%) }
+
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; pointer-events: none }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.6rem, 6vw, 2.3rem); line-height: 1.1; color: #fbf7f0; text-shadow: 0 1px 14px #0005 }
+.sub { margin: .25rem 0 0; color: #f1ebe2; font-size: .88rem; text-shadow: 0 1px 10px #0006 }
+
+/* the map: the palette's outline, the scenes as tappable bands */
+.map {
+  position: absolute; top: 14px; inset-inline-end: 12px; width: 50px; display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.map svg { width: 50px; height: auto; display: block; filter: drop-shadow(0 6px 14px #0d162066) }
+.map .stone { fill: #3a4244; stroke: #ffffff55; stroke-width: 1.2 }
+.map .scene { fill: #ffffff14; stroke: #ffffff40; stroke-width: .8; cursor: pointer; transition: fill .3s }
+.map .scene:hover { fill: #ffffff33 }
+.map .scene.on { fill: var(--accent); stroke: #fff }
+.map .face { font-family: var(--f-display); font-size: .66rem; width: 64px; color: #f4f1ea; text-align: center; line-height: 1.3; text-shadow: 0 1px 8px #0008 }
+.flip {
+  border: 0; cursor: pointer; border-radius: 999px; padding: .35rem .7rem; font-family: var(--f-display); font-size: .82rem;
+  background: #1d24270f; color: var(--ink); display: inline-flex; height: 40px; align-items: center; gap: .3rem; white-space: nowrap;
+}
+.flip svg { width: 14px; height: 14px }
+
+/* the reading panel */
+.panel {
+  position: absolute; inset-inline: 0; bottom: 0; padding: 0 12px calc(12px + env(safe-area-inset-bottom, 0px));
+  display: flex; justify-content: center; pointer-events: none;
+}
+.sheet {
+  pointer-events: auto; width: min(100%, 560px); height: var(--panel-h); display: flex; flex-direction: column;
+  background: linear-gradient(170deg, var(--sheet), var(--sheet-2)); border-radius: 22px;
+  box-shadow: 0 14px 40px #10192a66, inset 0 0 0 1px #ffffffaa;
+}
+.body { flex: 1; overflow: auto; padding: 16px 18px 6px; scrollbar-width: thin }
+.kicker { font-family: var(--f-display); color: var(--accent); font-size: .82rem }
+.sheet h2 { margin: .1rem 0 .45rem; font-family: var(--f-display); font-weight: 700; font-size: 1.35rem; line-height: 1.35 }
+.sheet p { margin: 0; font-size: 1.02rem; line-height: 1.9 }
+.ask { margin-top: .7rem !important; padding: .55rem .8rem; border-radius: 12px; background: #b0552f14; border-inline-start: 3px solid var(--accent) }
+.ask b { font-family: var(--f-display); color: var(--accent); font-weight: 500 }
+.src { display: block; margin-top: .6rem; font-size: .78rem; color: var(--ink-2) }
+.src a { color: var(--accent) }
+.nav { display: flex; align-items: center; gap: 8px; padding: 8px 12px 12px }
+.nav button {
+  border: 0; cursor: pointer; border-radius: 999px; height: 40px; min-width: 40px; padding: 0 14px;
+  background: #1d24270f; font-family: var(--f-display); font-size: .95rem;
+}
+.nav .next { background: var(--slate); color: #f4f1ea; margin-inline-start: auto }
+.nav .count { font-family: var(--f-display); color: var(--ink-2); font-size: .85rem }
+.body.fade { animation: fade .45s ease }
+.fold {
+  position: absolute; top: 10px; inset-inline-end: 10px; width: 34px; height: 34px; border-radius: 50%; border: 0; cursor: pointer;
+  background: #1d24270f; font-size: 1.1rem; line-height: 1;
+}
+.sheet { position: relative }
+.body { padding-inline-end: 48px }
+/* folded: only a small bar stays, the stone has the whole screen */
+.dock { pointer-events: auto; display: none; gap: 6px; align-items: center; padding: 6px; border-radius: 999px; background: #0d1620b3; box-shadow: 0 10px 30px #0d162055 }
+.dock button {
+  border: 0; cursor: pointer; border-radius: 999px; height: 42px; padding: 0 14px; font-family: var(--f-display); font-size: .95rem;
+  background: transparent; color: #f4f1ea; display: inline-flex; align-items: center; gap: .4rem; white-space: nowrap;
+}
+.dock .listen { background: var(--accent); color: #fff8f0 }
+.dock svg { width: 14px; height: 14px }
+.stage.min .sheet { display: none }
+.stage.min .dock { display: flex }
+.stage.min .panel { justify-content: center }
+.caption {
+  position: absolute; inset-inline: 16px; bottom: calc(var(--panel-h) + 28px); text-align: center; pointer-events: none;
+  font-family: var(--f-display); font-size: clamp(1.05rem, 4.2vw, 1.45rem); line-height: 1.7; color: #fffaf0;
+  text-shadow: 0 2px 14px #000c, 0 0 3px #000; opacity: 0; transition: opacity .5s; text-wrap: balance;
+}
+.caption.on { opacity: 1 }
+.stage.min .caption { bottom: 86px }
+@keyframes fade { from { opacity: 0; transform: translateY(6px) } }
+
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading p { font-family: var(--f-display); color: #fbf7f0; text-align: center; padding: 0 24px; animation: breathe 1.6s ease-in-out infinite }
+@keyframes breathe { 50% { opacity: .35 } }
+@media (min-width: 900px) {
+  .map { width: 84px; top: 20px; inset-inline-end: 28px } .map svg { width: 84px } .map .face { width: 96px; font-size: .78rem }
+  .panel { justify-content: flex-start; padding-inline-start: 28px }
+  :root { --panel-h: min(46vh, 340px) }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<main class="stage min" id="stage" dir="rtl" lang="ar" aria-label="صلاية نعرمر: عرض ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="loading" id="loading"><p>يُحضَر الحجر…</p></div>
+
+  <div class="top">
+    <h1>صلاية نعرمر</h1>
+    <p class="sub">نخن · نحو ٣١٠٠ قبل الميلاد</p>
+  </div>
+
+  <nav class="map" aria-label="مشاهد الصلاية">
+    <svg id="mapSvg" viewBox="0 0 64 100" role="group"></svg>
+    <div class="face" id="faceName"></div>
+  </nav>
+
+  <div class="panel">
+    <div class="dock" id="dock">
+      <button id="open" aria-expanded="false">▴ الحكاية</button>
+      <button class="listen" id="play" aria-pressed="false">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path id="ico" fill="currentColor" d="M4 2.5v11l9.5-5.5z"/></svg>
+        <span id="playLabel">اسمع نعرمر</span>
+      </button>
+      <button id="flip2" aria-label="اقلب الصلاية">⟲ اقلبها</button>
+    </div>
+    <section class="sheet" id="sheet" aria-live="polite">
+      <button class="fold" id="fold" aria-label="إخفاء الحكاية">⌄</button>
+      <div class="body" id="body"><div class="kicker" id="kicker"></div><h2 id="title"></h2><div id="text"></div></div>
+      <div class="nav">
+        <button class="prev" id="prev" aria-label="السابق">→</button>
+        <span class="count" id="count"></span>
+        <button class="flip" id="flip">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M2.5 6.5a5.5 5.5 0 0 1 10-1.5M13.5 9.5a5.5 5.5 0 0 1-10 1.5M12.5 2v3h-3M3.5 14v-3h3"/></svg>
+          اقلبها
+        </button>
+        <button class="next" id="next">التالي ←</button>
+      </div>
+    </section>
+  </div>
+  <div class="caption" id="caption" aria-live="polite"></div>
+  <audio id="narr" preload="none"></audio>
+</main>
+
+<!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+/* ---------------- the two faces and their scenes ----------------
+   Face B = the red-crown face (the one at the college), shown first. Face A = the white-crown face.
+   Regions are [u0, v0, u1, v1] on each face's own photo (u from its left, v up from the bottom). */
+const FACES = { B: 'وجه التاج الأحمر', A: 'وجه التاج الأبيض' };
+const CARDS = [
+  { face: 'B', kicker: 'الحجر', title: 'صلاية نعرمر', view: { r: 1 }, region: null,
+    html: '<p>لوح من حجر رمادي داكن، طوله نحو أربعة وستين سنتيمترًا، نُحت قبل أكثر من خمسة آلاف عام. شكله شكل الصلاية التي كان المصريون يسحقون عليها الكحل، لكنه أكبر وأثقل من أن يُستعمل كل يوم: صُنع ليُهدى إلى المعبد. وعلى وجهيه حكاية ملك اسمه نعرمر.</p>' },
+  { face: 'B', kicker: 'في الأعلى', title: 'اسم الملك', view: { v: .9, r: .69 }, region: [.02, .84, .98, 1],
+    html: '<p>رأسا بقرة بوجه امرأة وقرنين ملتفّين، يُرجَّح أنهما للإلهة بات. وبينهما واجهة قصر صغيرة كُتب داخلها اسم الملك بعلامتين: سمكة القرموط «نعر» والإزميل «مر». هكذا يُقرأ: نعرمر. والمشهد نفسه يتكرر في أعلى الوجه الآخر.</p>' },
+  { face: 'B', kicker: 'الصف الأول', title: 'الملك بالتاج الأحمر', view: { u: .38, v: .72, r: .75 }, region: [.04, .6, .62, .85],
+    html: '<p>يمشي نعرمر وعلى رأسه تاج الشمال الأحمر، وفي يديه دبّوس وسوط، وهو أطول من كل من حوله. خلفه رجل صغير يحمل نعليه، وأمامه رجل بشعر طويل، ثم أربعة رجال يرفعون أعلامًا تعلوها رموز.</p>' },
+  { face: 'B', kicker: 'الصف الأول', title: 'عشرة أعداء', view: { u: .8, v: .72, r: .62 }, region: [.64, .6, .99, .85],
+    html: '<p>أمام الموكب عشرة رجال ممدَّدون، أيديهم مقيّدة، ورأس كل واحد منهم مقطوع وموضوع بين قدميه. وفوقهم قارب وعلامات لم يتفق العلماء على قراءتها.</p>' },
+  { face: 'B', kicker: 'في الوسط', title: 'الرقبتان الملتفّتان', view: { v: .42, r: .88 }, region: [.03, .24, .97, .6],
+    html: '<p>حيوانان كالأسود، رقبتاهما طويلتان كالأفاعي، تلتفّان معًا فتصنعان دائرة. هذه الدائرة هي موضع سحق الكحل في الصلاية. ويمسك كلَّ حيوان رجلٌ بحبل، كأنه يكبح قوة جامحة. ويرى فيها بعض العلماء صورة لضبط الفوضى.</p>' },
+  { face: 'B', kicker: 'في الأسفل', title: 'الثور', view: { v: .13, r: .69 }, region: [.08, 0, .92, .24],
+    html: '<p>ثور هائج يهدم بقرنيه سور مدينة محصّنة، ويدوس رجلًا سقط تحته. الثور هنا هو الملك نفسه: قوته قوة الثور.</p>' },
+  { face: 'A', kicker: 'الوجه الآخر', title: 'التاج الأبيض', view: { r: 1 }, region: null, turn: true,
+    html: '<p>على الوجه الآخر يظهر نعرمر نفسه، لكن بتاج مختلف. ويعلو الوجهَ اسمُه بين رأسي البقرة كما في الوجه الأول.</p>' },
+  { face: 'A', kicker: 'المشهد الكبير', title: 'الملك يضرب عدوّه', view: { u: .48, v: .55, r: .98 }, region: [.28, .24, .86, .86],
+    html: '<p>يلبس نعرمر هنا تاج الجنوب الأبيض. يرفع دبّوسه ويمسك من شعره عدوًّا راكعًا أمامه. وهذه الوقفة بقيت على جدران المعابد ثلاثة آلاف عام بعده: الملك يضرب أعداءه.</p>' },
+  { face: 'A', kicker: 'المشهد الكبير', title: 'الصقر', view: { u: .78, v: .74, r: .56 }, region: [.6, .64, .97, .86],
+    html: '<p>فوق الأسير صقر، رمز الإله حورس والملك معًا. يقف على أرض ينبت منها البردي، ويمسك بحبل رأسَ رجل يخرج من تلك الأرض. والبردي نبات الدلتا في الشمال.</p>' },
+  { face: 'A', kicker: 'المشهد الكبير', title: 'حامل النعلين', view: { u: .2, v: .6, r: .62 }, region: [.06, .4, .32, .8],
+    html: '<p>خلف الملك يقف الرجل الصغير نفسه الذي رأيناه على الوجه الآخر، يحمل نعلي الملك وإناءً صغيرًا. فالملك يقف حافيًا، ويُرجَّح أن ذلك لأن المشهد طقس مقدّس.</p>' },
+  { face: 'A', kicker: 'في الأسفل', title: 'الهاربون', view: { v: .13, r: .69 }, region: [.1, 0, .9, .24],
+    html: '<p>رجلان عاريان يسقطان أو يهربان، وبجانب كل منهما علامة قد تكون اسم بلده.</p>' },
+  { face: 'A', kicker: 'الحكاية', title: 'حدث أم رمز؟', view: { r: 1, az: -.5 }, region: null,
+    html: '<p>عُثر على الصلاية عام ١٨٩٧–١٨٩٨ في معبد حورس بمدينة نخن جنوب مصر، وهي اليوم في المتحف المصري بالقاهرة. كثيرًا ما تُقرأ حكايةً لتوحيد الجنوب والشمال على يد نعرمر: تاج الجنوب على وجه، وتاج الشمال على الآخر. لكن علماء كثيرين يرون أنها لا تسجّل معركة بعينها، بل تُعلن صورة الملك: هو من ينتصر على الفوضى ويحفظ النظام.</p>' +
+      '<p class="ask"><b>سؤال لك:</b> أيّ الوجهين هو الأمام؟ المتحف المصري يعدّ وجه التاج الأبيض واجهة الصلاية، وآخرون يعدّون وجه التاج الأحمر هو الواجهة لأن فيه دائرة سحق الكحل. وأنت، بأيّ وجه كنت ستبدأ الحكاية؟</p>' +
+      '<span class="src">المتحف المصري بالقاهرة، JE 32169 · <a href="https://en.wikipedia.org/wiki/Narmer_Palette" target="_blank" rel="noopener">المصادر</a></span>' },
+];
+
+// the story, told by Narmer; each line opens a card. CUES are filled in once a recording exists (narration_script.md).
+const NARRATION = [
+  ['أنا نعرمر.', 0],
+  ['قبل أكثر من خمسة آلاف عام، نُحتت حكايتي على هذا الحجر، وأُهديَت إلى معبد حورس في نخن.', 0],
+  ['انظروا إلى أعلاه… هذا اسمي: سمكةُ القرموط، والإزميل. نَعر… مَر.', 1],
+  ['هنا أمشي بتاج الشمال الأحمر. أمامي الأعلام، وخلفي حاملُ نعليّ.', 2],
+  ['وهؤلاء أعدائي… عشرةٌ، رؤوسُهم بين أقدامهم.', 3],
+  ['وفي قلب الحجر وحشان التفّت رقبتاهما، يشدّهما رجالي بالحبال… فلا تفلت الفوضى.', 4],
+  ['وفي الأسفل أنا الثور. أهدم السور، وأدوس من وقف في طريقي.', 5],
+  ['والآن… اقلبوا الحجر.', 6],
+  ['على هذا الوجه ألبس تاج الجنوب الأبيض، وأرفع دبّوسي على عدوّي.', 7],
+  ['وفوقه حورس، الصقر، يقود إليّ أرضَ البردي بحبل.', 8],
+  ['وخلفي حاملُ نعليّ مرةً أخرى… لا يفارقني.', 9],
+  ['وأعدائي في الأسفل… يهربون.', 10],
+  ['تاجُ الجنوب على وجه، وتاجُ الشمال على الآخر.', 11],
+  ['أكانت معركة؟ أم رسالةً تركتُها لمن يأتي بعدي؟… الحجرُ ما زال يتكلّم.', 11],
+];
+const AUDIO = 'narration.mp3?v=1';   // ElevenLabs "David - Deep", Narmer's voice, 82.6 s
+const CUES = [0.1, 2.1, 11.25, 19.35, 26.15, 31.35, 39.85, 46.8, 50.25, 56.3, 61.85, 66.8, 70.8, 75.55];   // line starts (s), measured from the pauses
+
+/* ---------------- renderer: draws only when something changes ---------------- */
+const stage = document.getElementById('stage'), canvas = document.getElementById('c');
+const phone = matchMedia('(pointer: coarse)').matches;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+const BG = 0x748ba1, FLOOR = 0x5c7287, DAIS = 0x7488a0;
+scene.background = new THREE.Color(BG);
+const camera = new THREE.PerspectiveCamera(34, 1, .05, 200);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08;
+controls.minAzimuthAngle = -1.2; controls.maxAzimuthAngle = 1.2;   // the face you read is always to the front; "flip" turns the stone
+controls.minPolarAngle = .5; controls.maxPolarAngle = 1.75;
+controls.minDistance = .5; controls.maxDistance = 14;
+controls.zoomToCursor = true;
+
+// 3 units = 64 cm tall (JE 32169), so 1 mm = 3/640
+const H = 3, W = H * .64, MM = H / 640;
+const RELIEF = 3.0;            // mm, from tex.py
+const T = 20 * MM;             // thickness: estimate
+const LIFT = .45;              // palette tip above the dais top
+
+const hemi = new THREE.HemisphereLight(0xfff4e6, FLOOR, .8); scene.add(hemi);
+const key = new THREE.DirectionalLight(0xfff3e2, 2.5); key.castShadow = true;
+key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048);
+Object.assign(key.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3, near: .5, far: 30 }); key.shadow.bias = -.0004; key.shadow.normalBias = .01;
+scene.add(key, key.target);
+const fill = new THREE.DirectionalLight(0xe8f0ff, .4); fill.position.set(4, 3, 9); scene.add(fill);
+
+const pal = new THREE.Group(); scene.add(pal);
+const center = new THREE.Vector3(0, LIFT + H / 2, 0);
+let dirty = true;
+
+// a low, raking key light from the upper left: the carving reads by its shadows
+function setSun(deg) {
+  const a = THREE.MathUtils.degToRad(deg), elev = .5;
+  const dir = new THREE.Vector3(Math.sin(a) * Math.cos(elev), Math.cos(a) * Math.cos(elev) * .55 + .4, Math.cos(elev) * .9 + .25);
+  key.position.copy(center).addScaledVector(dir.normalize(), 10); key.target.position.copy(center);
+  renderer.shadowMap.needsUpdate = true; dirty = true;
+}
+
+/* ---------------- the torch: everything outside the scene falls into shadow ---------------- */
+const torch = { A: { r: new THREE.Vector4(), on: { value: 0 } }, B: { r: new THREE.Vector4(), on: { value: 0 } } };
+function torchify(mat, t) {
+  mat.onBeforeCompile = sh => {
+    sh.uniforms.uR = { value: t.r }; sh.uniforms.uOn = t.on;
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform vec4 uR; uniform float uOn;')
+      .replace('#include <map_fragment>', `#include <map_fragment>
+      {
+        float s = .025;
+        float inX = smoothstep(uR.x - s, uR.x + s, vMapUv.x) * (1.0 - smoothstep(uR.z - s, uR.z + s, vMapUv.x));
+        float inY = smoothstep(uR.y - s, uR.y + s, vMapUv.y) * (1.0 - smoothstep(uR.w - s, uR.w + s, vMapUv.y));
+        diffuseColor.rgb *= mix(1.0, .34 + .66 * inX * inY, uOn);
+      }`);
+  };
+}
+
+/* ---------------- build ---------------- */
+let OUTLINE = [];
+async function build() {
+  const tl = new THREE.TextureLoader();
+  const names = f => [`${f}_albedo.jpg`, `${f}_height.png`, `${f}_normal.jpg`, `${f}_alpha.png`];
+  const [tex, outline] = await Promise.all([
+    Promise.all([...names('A'), ...names('B')].map(u => tl.loadAsync(u))),
+    fetch('outline.json').then(r => r.json()),
+  ]);
+  OUTLINE = outline;
+  const seg = phone ? [256, 400] : [384, 600];
+  const stoneMat = new THREE.MeshStandardMaterial({ color: 0x5f6464, roughness: .62 });
+  ['A', 'B'].forEach((f, i) => {
+    const [albedo, height, normal, alpha] = tex.slice(i * 4, i * 4 + 4);
+    albedo.colorSpace = THREE.SRGBColorSpace;
+    for (const t of [albedo, normal]) t.anisotropy = renderer.capabilities.getMaxAnisotropy();
+    const mat = new THREE.MeshStandardMaterial({
+      map: albedo, normalMap: normal, normalScale: new THREE.Vector2(1.1, 1.1),
+      displacementMap: height, displacementScale: RELIEF * MM, alphaMap: alpha, alphaTest: .5, roughness: .58, metalness: 0,
+    });
+    torchify(mat, torch[f]);
+    const face = new THREE.Mesh(new THREE.PlaneGeometry(W, H, ...seg), mat);
+    face.castShadow = face.receiveShadow = true;
+    if (f === 'B') { face.rotation.y = Math.PI; face.position.z = -T / 2 } else face.position.z = T / 2;
+    pal.add(face);
+  });
+  // the stone between the faces: face A's outline, extruded, with a softly rounded edge
+  const shape = new THREE.Shape(outline.map(([u, v]) => new THREE.Vector2((u - .5) * W, (v - .5) * H)));
+  const bev = .01, depth = T - 2 * bev - .004;
+  const body = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: true, bevelThickness: bev, bevelSize: .007, bevelSegments: 3, curveSegments: 1 }), stoneMat);
+  body.geometry.translate(0, 0, -depth / 2); body.castShadow = body.receiveShadow = true;
+  pal.add(body);
+  pal.position.copy(center);
+  pal.rotation.y = Math.PI;                                    // the red-crown face first
+  // dais and a low iron cradle under the tip
+  const dais = new THREE.Mesh(new THREE.BoxGeometry(W + 1.1, LIFT - .1, 1.2), new THREE.MeshStandardMaterial({ color: DAIS, roughness: .85 }));
+  dais.position.set(0, (LIFT - .1) / 2, 0); dais.castShadow = dais.receiveShadow = true;
+  const iron = new THREE.MeshStandardMaterial({ color: 0x23282b, roughness: .5, metalness: .6 });
+  const post = new THREE.Mesh(new THREE.BoxGeometry(.06, .14, .06), iron); post.position.set(0, LIFT - .05 + .02, 0);
+  const cradle = new THREE.Mesh(new THREE.BoxGeometry(.5, .025, T + .06), iron); cradle.position.set(0, LIFT + .02, 0);
+  for (const m of [post, cradle]) m.castShadow = true;
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(40, 64), new THREE.MeshStandardMaterial({ color: FLOOR, roughness: .95 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true;
+  scene.add(dais, post, cradle, floor);
+  scene.fog = new THREE.Fog(BG, 14, 34);
+}
+
+/* ---------------- camera: frames a spot in the part of the screen the panel leaves free ---------------- */
+const $ = id => document.getElementById(id);
+function covered() { return stage.classList.contains('min') ? .1 : Math.min(.6, ($('sheet').offsetHeight + 24) / stage.clientHeight) }
+function fitDist(r) {
+  const vf = THREE.MathUtils.degToRad(camera.fov) / 2, hf = Math.atan(Math.tan(vf) * camera.aspect);
+  const avail = 1 - covered() - .1;
+  return r * Math.max((H / 2 + .15) / (Math.tan(vf) * avail), (W / 2 + .2) / Math.tan(hf));
+}
+// a point on a face, in world space, with the palette turned so that face looks at us
+function surface(f, u, v) {
+  const x = (u - .5) * W, y = (v - .5) * H;
+  return new THREE.Vector3(x, y, 0).add(center);      // the shown face is always toward +z once turned
+}
+function pose(f, { u = .5, v = .5, r = 1, az = -.22, el = .08 }) {
+  const t = surface(f, u, v), d = fitDist(r);
+  t.y -= (covered() - .1) * d * Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  const p = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(d).add(t);
+  return { p, t };
+}
+let fly = null, turn = null, dim = null;
+function flyTo(target, ms = 1100) { fly = { p0: camera.position.clone(), t0: controls.target.clone(), ...target, start: performance.now(), ms } }
+
+/* ---------------- the map ---------------- */
+const svgNS = 'http://www.w3.org/2000/svg';
+let shown = 'B', active = -1;
+function drawMap() {
+  const svg = $('mapSvg'); svg.innerHTML = '';
+  // face B is seen from behind face A's outline: mirror it
+  const mx = shown === 'B' ? u => 1 - u : u => u;
+  const pts = OUTLINE.map(([u, v]) => `${(mx(u) * 64).toFixed(1)},${((1 - v) * 100).toFixed(1)}`).join(' ');
+  const clip = document.createElementNS(svgNS, 'clipPath'); clip.id = 'pc';
+  const poly = document.createElementNS(svgNS, 'polygon'); poly.setAttribute('points', pts); clip.append(poly);
+  const stone = document.createElementNS(svgNS, 'polygon'); stone.setAttribute('points', pts); stone.setAttribute('class', 'stone');
+  const g = document.createElementNS(svgNS, 'g'); g.setAttribute('clip-path', 'url(#pc)');
+  svg.append(clip, stone, g);
+  CARDS.forEach((c, i) => {
+    if (c.face !== shown || !c.region) return;
+    const [u0, v0, u1, v1] = c.region;
+    const r = document.createElementNS(svgNS, 'rect');
+    Object.entries({ x: u0 * 64 + .6, y: (1 - v1) * 100 + .6, width: (u1 - u0) * 64 - 1.2, height: (v1 - v0) * 100 - 1.2, rx: 2 })
+      .forEach(([k, v]) => r.setAttribute(k, v));
+    r.setAttribute('class', 'scene' + (i === active ? ' on' : '')); r.setAttribute('tabindex', '0'); r.setAttribute('role', 'button');
+    r.setAttribute('aria-label', c.title);
+    const go = () => { if (stage.classList.contains('min')) setOpen(true); show(i) };
+    r.onclick = go; r.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go() } };
+    g.append(r);
+  });
+  $('faceName').textContent = FACES[shown];
+}
+
+/* ---------------- show a card ---------------- */
+function turnTo(f, ms = 1400) {
+  if (f === shown && !turn) return 0;
+  shown = f; drawMap();
+  turn = { a0: pal.rotation.y, a1: f === 'B' ? Math.PI : (pal.rotation.y > Math.PI ? Math.PI * 2 : 0), start: performance.now(), ms };
+  return ms;
+}
+function show(i) {
+  i = Math.max(0, Math.min(CARDS.length - 1, i));
+  if (i === active) return;
+  active = i; const c = CARDS[i];
+  const body = $('body'); body.classList.remove('fade'); void body.offsetWidth; body.classList.add('fade'); body.scrollTop = 0;
+  $('kicker').textContent = c.kicker; $('title').textContent = c.title; $('text').innerHTML = c.html;   // static content written in this file
+  $('count').textContent = `${(i + 1).toLocaleString('ar-EG')} / ${CARDS.length.toLocaleString('ar-EG')}`;
+  $('prev').disabled = i === 0; $('next').textContent = i === CARDS.length - 1 ? 'من البداية ↺' : 'التالي ←';
+  const wait = turnTo(c.face);
+  // torch on the scene (both faces off first)
+  for (const f of ['A', 'B']) if (f !== c.face) torch[f].on.value = 0;
+  if (c.region) torch[c.face].r.set(...c.region);
+  dim = { f: c.face, from: torch[c.face].on.value, to: c.region && reading() ? 1 : 0, start: performance.now() + wait * .6, ms: 700 };
+  flyTo(pose(c.face, c.view), wait ? Math.max(1100, wait) : 1100);
+  drawMap(); dirty = true;
+}
+$('prev').onclick = () => show(active - 1);
+$('next').onclick = () => show(active === CARDS.length - 1 ? 0 : active + 1);
+$('flip').onclick = $('flip2').onclick = () => show(CARDS.findIndex(c => c.face !== shown));
+// the scene torch is lit only while reading the story or listening to it
+const reading = () => !stage.classList.contains('min') || !!showing;
+function setOpen(open) {
+  stage.classList.toggle('min', !open);
+  $('open').setAttribute('aria-expanded', String(open));
+  const c = CARDS[active];
+  dim = { f: c.face, from: torch[c.face].on.value, to: c.region && reading() ? 1 : 0, start: performance.now(), ms: 500 };
+  flyTo(pose(c.face, c.view), 800);
+  (open ? $('fold') : $('open')).focus({ preventScroll: true });
+}
+$('open').onclick = () => setOpen(true);
+$('fold').onclick = () => setOpen(false);
+
+/* ---------------- listen: Narmer tells it; captions follow the recording, or a reading pace ---------------- */
+const play = $('play'), caption = $('caption'), audio = $('narr');
+let showing = null;
+function lineAt(t) {
+  if (CUES.length) { let i = 0; while (i + 1 < CUES.length && t >= CUES[i + 1]) i++; return i }
+  let s = 0;
+  for (let i = 0; i < NARRATION.length; i++) { s += 1.6 + NARRATION[i][0].length * .085; if (t < s) return i }
+  return -1;
+}
+function startShow() {
+  showing = { start: performance.now(), line: -2 };
+  play.setAttribute('aria-pressed', 'true'); $('playLabel').textContent = 'إيقاف';
+  $('ico').setAttribute('d', 'M4 3h3v10H4zM9 3h3v10H9z');
+  if (AUDIO) { audio.src = AUDIO; audio.currentTime = 0; audio.play().catch(() => {}) }
+}
+function endShow(done) {
+  showing = null; caption.classList.remove('on'); audio.pause();
+  play.setAttribute('aria-pressed', 'false'); $('playLabel').textContent = 'اسمع نعرمر';
+  $('ico').setAttribute('d', 'M4 2.5v11l9.5-5.5z');
+  if (done === true) return show(0);   // the story is over: back to the opening view
+  const c = CARDS[active]; if (c && !reading()) dim = { f: c.face, from: torch[c.face].on.value, to: 0, start: performance.now(), ms: 500 };
+}
+play.onclick = () => showing ? endShow() : startShow();
+audio.onended = () => endShow(true);
+audio.ontimeupdate = () => { if (showing) runShow(performance.now()) };   // captions keep pace even if frames are throttled
+function runShow(now) {
+  const t = AUDIO ? audio.currentTime : (now - showing.start) / 1000;
+  const i = lineAt(t);
+  if (i === -1) return endShow(true);
+  if (i !== showing.line) {
+    showing.line = i; caption.classList.remove('on');
+    setTimeout(() => { if (showing) { caption.textContent = NARRATION[i][0]; caption.classList.add('on') } }, 220);
+    const card = NARRATION[i][1];
+    if (card !== active) show(card);
+    else if (i === 0) { active = -1; show(card) }   // replay from the top: re-frame the whole stone
+  }
+}
+addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft') show(active + 1);      // RTL: left is forward
+  if (e.key === 'ArrowRight') show(active - 1);
+});
+
+/* ---------------- loop ---------------- */
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); dirty = true;
+}
+addEventListener('resize', () => { resize(); if (active >= 0) flyTo(pose(CARDS[active].face, CARDS[active].view), 300) });
+controls.addEventListener('change', () => dirty = true);
+const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+function tick(now) {
+  requestAnimationFrame(tick);
+  if (showing) runShow(now);
+  if (fly) {
+    const k = Math.min(1, (now - fly.start) / fly.ms), e = ease(k);
+    camera.position.lerpVectors(fly.p0, fly.p, e); controls.target.lerpVectors(fly.t0, fly.t, e);
+    if (k === 1) fly = null; dirty = true;
+  }
+  if (turn) {
+    const k = Math.min(1, (now - turn.start) / turn.ms), e = ease(k);
+    pal.rotation.y = THREE.MathUtils.lerp(turn.a0, turn.a1, e);
+    pal.position.y = center.y + Math.sin(Math.PI * k) * .12;    // lifted a little while it turns
+    renderer.shadowMap.needsUpdate = true;
+    if (k === 1) { pal.rotation.y = turn.a1 % (Math.PI * 2); turn = null } dirty = true;
+  }
+  if (dim && now >= dim.start) {
+    const k = Math.min(1, (now - dim.start) / dim.ms);
+    torch[dim.f].on.value = THREE.MathUtils.lerp(dim.from, dim.to, ease(k));
+    if (k === 1) dim = null; dirty = true;
+  } else if (dim) dirty = true;
+  if (controls.update()) dirty = true;
+  if (!dirty) return;
+  renderer.render(scene, camera); dirty = false;
+}
+
+resize(); setSun(-50);
+const failMsg = () => { $('loading').innerHTML = '<p>تعذّر تحميل الحجر. أعد تحميل الصفحة.</p>' };
+const fail = setTimeout(failMsg, 45000);
+build().then(() => {
+  clearTimeout(fail); $('loading').hidden = true;
+  drawMap();
+  const h = pose('B', CARDS[0].view); camera.position.copy(h.p); controls.target.copy(h.t);
+  show(0); fly = null;
+  requestAnimationFrame(tick);
+}).catch(e => { console.error(e); clearTimeout(fail); failMsg() });
+</script>
