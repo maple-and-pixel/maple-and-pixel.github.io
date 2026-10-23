@@ -1,0 +1,395 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><title>المُعرِب</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@400;700&display=swap">
+<style>
+:root{
+  --desk:#EFE9DD; --paper:#FFFDF6; --ink:#1E3A7A; --muted:#6B7591; --rule:#C9D8EE; --margin:#E8A6A0;
+  --red:#B0291F; --chip:#E4ECF8; --ok:#2B7650; --fix:#B5590C; --focus:#1E3A7A; --shade:rgba(30,40,70,.08);
+  --f-hand:"Kalam","Segoe Print","Comic Sans MS",cursive;
+  --f-ar:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;
+  --f-head:"Aref Ruqaa","Amiri",serif;
+  --f-tr:"Gentium Book Plus","Gentium Plus","Charis SIL","Noto Serif",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --desk:#12161F; --paper:#1A202C; --ink:#B9CCF5; --muted:#8C97B0; --rule:#2B3548; --margin:#7A3B38;
+  --red:#FF8F84; --chip:#243049; --ok:#6FCB98; --fix:#F0A55E; --focus:#B9CCF5; --shade:rgba(0,0,0,.35); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --desk:#12161F; --paper:#1A202C; --ink:#B9CCF5; --muted:#8C97B0; --rule:#2B3548; --margin:#7A3B38;
+  --red:#FF8F84; --chip:#243049; --ok:#6FCB98; --fix:#F0A55E; --focus:#B9CCF5; --shade:rgba(0,0,0,.35); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--desk);color:var(--ink);font-family:var(--f-ar);font-size:17px;line-height:1.7;margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{max-width:900px;margin:0 auto;padding-block:18px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.tr{font-family:var(--f-tr);font-style:italic;unicode-bidi:isolate}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-bottom:12px}
+h1{font-family:var(--f-head);font-weight:700;font-size:1.9rem;line-height:1.3;margin:0;color:var(--red)}
+.grow{flex:1}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--paper)}
+.seg button{border:0;background:none;padding:3px 14px;font-size:.9rem}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.picker{display:grid;gap:6px;margin:6px 0 14px}
+.story{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.story b{font-family:var(--f-head);font-weight:400;font-size:1.05rem;min-width:7em;color:var(--muted)}
+.pill{background:var(--paper);border:1px solid var(--rule);border-radius:999px;padding:1px 12px;font-size:.88rem}
+.pill[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.where{font-family:var(--f-head);font-weight:400;font-size:1.35rem;margin:8px 0 2px}
+.muted{color:var(--muted);font-size:.85rem}
+.list{display:grid;gap:18px;margin-top:12px}
+/* the notebook sheet */
+.nb-s{background:var(--paper);border-radius:4px;box-shadow:0 1px 0 var(--shade),0 6px 18px var(--shade);
+  padding:10px 18px 14px;border-inline-start:3px double var(--margin);min-width:0;overflow-wrap:anywhere}
+.nb-s[dir="ltr"] .nb-l,.nb-s[dir="ltr"] .nb-h{font-family:var(--f-hand)}
+.nb-row{border-bottom:1px solid var(--rule);min-height:2.1em;padding:.15em 0;line-height:1.75}
+.nb-tr{color:var(--red);font-size:1.12rem;display:flex;flex-wrap:wrap;gap:0 6px;align-items:baseline}
+.nb-num{font-family:var(--f-hand);font-style:normal}
+.nb-ref{margin-inline-start:auto;font-size:.78rem;color:var(--muted);font-style:normal}
+.nb-gl{color:var(--ink);text-align:start}
+.nb-h{color:var(--red)}
+.nb-w{font-weight:700}
+.nb-l1{padding-inline-start:1.8em}
+.nb-l2{padding-inline-start:3.6em}
+.nb-rt{float:inline-end;margin-inline-start:12px;color:var(--ink)}
+.nb-x{text-decoration:underline wavy var(--red);text-decoration-thickness:1px;text-underline-offset:4px}
+.nb-gold{display:inline-block;margin-inline-start:10px;font-family:var(--f-ar);font-size:.8rem;color:var(--red);border:1px solid var(--red);border-radius:999px;padding:0 8px;line-height:1.6}
+.nb-u .nb-w{text-decoration:underline dotted var(--muted);text-underline-offset:4px}
+.nb-u::after{content:" ؟";color:var(--muted)}
+.nb-note{font-size:.82rem;color:var(--muted);font-family:var(--f-ar)}
+@media (max-width:560px){body{font-size:16px}.nb-s{padding:8px 12px 12px}.nb-rt{float:none;display:block}.story b{min-width:0;width:100%}h1{font-size:1.6rem}}
+
+.desk{background:var(--paper);border-radius:4px;box-shadow:0 1px 0 var(--shade),0 6px 18px var(--shade);padding:14px 16px;display:grid;gap:10px;border-inline-start:3px double var(--margin)}
+textarea{font-family:var(--f-tr);font-style:italic;font-size:1.25rem;line-height:1.7;color:var(--red);width:100%;min-height:4.2em;border:1px solid var(--rule);border-radius:6px;padding:8px 12px;background:var(--desk);resize:vertical}
+.keys{display:flex;flex-wrap:wrap;gap:4px}
+.keys button{font-family:var(--f-tr);font-size:1.1rem;min-width:2.2em;height:2.1em;border:1px solid var(--rule);border-radius:6px;background:var(--paper);color:var(--ink)}
+.keys button:hover{background:var(--chip)}
+.ex{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ex button{font-family:var(--f-tr);font-style:italic;font-size:.9rem;border:1px dashed var(--rule);border-radius:999px;background:none;padding:0 12px;color:var(--ink)}
+.go{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{background:var(--red);color:var(--paper);border:0;border-radius:999px;padding:4px 26px;font-family:var(--f-head);font-size:1.2rem}
+.btn:disabled{opacity:.5;cursor:default}
+.status{font-size:.88rem;color:var(--muted)}
+.status.err{color:var(--fix)}
+.spin{display:inline-block;width:.9em;height:.9em;border:2px solid var(--rule);border-top-color:var(--red);border-radius:50%;animation:sp 0.9s linear infinite;vertical-align:-2px;margin-inline-end:6px}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.spin{animation:none}}
+</style>
+
+<div class="wrap" dir="rtl" lang="ar">
+  <header class="top">
+    <h1>المُعرِب</h1>
+    <span class="grow"></span>
+    <div class="seg" role="group" aria-label="لغة الإعراب">
+      <button type="button" id="l-en" aria-pressed="true">English</button>
+      <button type="button" id="l-ar" aria-pressed="false">عربي</button>
+    </div>
+  </header>
+
+  <section class="desk">
+    <textarea id="in" dir="ltr" spellcheck="false" aria-label="الجملة" placeholder="hꜣb.sn dpt r njwt"></textarea>
+    <div class="keys" id="keys" dir="ltr" aria-label="حروف"></div>
+    <div class="ex" id="ex"><span class="muted">أمثلة:</span></div>
+    <div class="go">
+      <button class="btn" type="button" id="run" disabled>أعرب</button>
+      <span class="status" id="st" role="status"></span>
+    </div>
+  </section>
+
+  <div class="list" id="out" style="margin-top:20px"></div>
+</div>
+
+<script>
+// Notebook-style parsing (the layout of the course notebooks): red transliteration line, gloss line,
+// "*parsing: (sentence type)", then one line per word with suffixes indented under their word and
+// "/ stem: verb" or "/ r: simple preposition" at the line's end. EN and AR are both generated from the
+// same tags; the review page can show the gold's own Arabic wording instead (mode "gold").
+// A token here is {t, up, tag, fk, gloss, arPos, arFn, arForm, note, mark}.
+const NB = (() => {
+  const P = {
+    j: ["1st person, singular", "متكلم، مفرد"], k: ["2nd person, singular, masculine", "مخاطَب، مفرد، مذكر"],
+    "ṯ": ["2nd person, singular, feminine", "مخاطَبة، مفرد، مؤنث"], f: ["3rd person, singular, masculine", "غائب، مفرد، مذكر"],
+    s: ["3rd person, singular, feminine", "غائبة، مفرد، مؤنث"], n: ["1st person, plural", "متكلم، جمع"],
+    tn: ["2nd person, plural", "مخاطَب، جمع"], sn: ["3rd person, plural, common", "غائب، جمع"],
+    ny: ["1st person, dual", "متكلم، مثنى"], sny: ["3rd person, dual", "غائب، مثنى"],
+    "2f": ["2nd person, feminine singular / plural", "مخاطَب، مفردة مؤنثة / جمع"],
+    "3c": ["3rd person, feminine / common", "غائب، مؤنث / عام"],
+  };
+  const SUF = {j: "j", k: "k", "ṯ": "ṯ", f: "f", s: "s", sj: "s", sy: "s", n: "n", tn: "tn", "ṯn": "tn", sn: "sn", ny: "ny", sny: "sny"};
+  const DEP = {wj: "j", tw: "k", "ṯw": "k", "ṯn": "2f", tn: "2f", sw: "f", sj: "s", st: "3c", n: "n", sn: "sn"};
+  const IND = {jnk: "j", ntk: "k", "ntṯ": "ṯ", ntf: "f", nts: "s", jnn: "n", nttn: "tn", ntsn: "sn"};
+  const DEM = {pn: "ms", tn: "fs", nn: "pl", pf: "ms", tf: "fs", nf: "pl", pw: "ms", tw: "fs", nw: "pl", "pꜣ": "ms", "tꜣ": "fs", "nꜣ": "pl", jpn: "pl", jptn: "pl"};
+  const DEMG = {ms: ["singular, masculine", "مفرد، مذكر"], fs: ["singular, feminine", "مفرد، مؤنث"], pl: ["plural", "جمع"]};
+  const NEG = new Set(["nj", "nn", "n", "tm", "jmj"]);
+  const FORMS = {
+    sdmf: ["sḏm.f (form) in present", "صيغة sḏm.f (مضارع)"], sdmnf: ["sḏm.n.f (form) in past", "صيغة sḏm.n.f (ماضي)"],
+    sdmjnf: ["sḏm.jn.f (form)", "صيغة sḏm.jn.f"], stat: ["old perfective (stative)", "الفعل التام القديم"],
+    inf: ["infinitive", "مصدر"], ninf: ["narrative infinitive", "مصدر سردي"], part: ["participle", "اسم فاعل"],
+    ppart: ["passive participle", "اسم مفعول"], rel: ["relative form", "صيغة صلة"], reln: ["relative form sḏm.n.f", "صيغة صلة sḏm.n.f"],
+    imp: ["imperative", "فعل أمر"], aux: ["auxiliary ꜥḥꜥ.n", "ꜥḥꜥ.n فعل مساعد"],
+  };
+  const FN = {
+    OBJ: ["object", "مفعول به"], ATTR: ["attribute", "نعت"], GEN: ["direct genitive", "مضاف إليه"],
+    GEN_PART: ["genitival adjective (indirect genitive)", "أداة الإضافة غير المباشرة"], APPOS: ["apposition", "بدل"],
+    ADVERBIAL: ["adverbial", "ظرف"], POBJ: ["noun after preposition", "اسم مجرور"], CIRC: ["circumstantial clause", "جملة حالية"],
+    SPEC: ["specification", "تمييز"], DATE: ["date", "تاريخ"], PARTICLE: ["particle", "أداة"], VERB_HEAD: ["verb", "فعل"],
+  };
+
+  const clean = (t) => (t || "").replace(/[\[\]⸢⸣()〈〉{}<>?!]/g, "");
+  const parts = (t) => clean(t).split(".");
+
+  function fkey(s) {
+    s = s || "";
+    if (s.includes("صلة")) return s.includes("sḏm.n.f") ? "reln" : "rel";
+    if (s.includes("sḏm.n.f")) return "sdmnf";
+    if (s.includes("sḏm.jn.f")) return "sdmjnf";
+    if (s.includes("sḏm.f")) return "sdmf";
+    if (s.includes("التام")) return "stat";
+    if (s.includes("مصدر سردي")) return "ninf";
+    if (s.includes("مصدر")) return "inf";
+    if (s.includes("اسم مفعول")) return "ppart";
+    if (s.includes("اسم فاعل")) return "part";
+    if (s.includes("أمر")) return "imp";
+    if (s.includes("ꜥḥꜥ.n")) return "aux";
+    return "";
+  }
+  function upFromAr(p) {
+    p = (p || "").split("+")[0];
+    if (/ضمير|اسم إشارة|اسم موصول/.test(p)) return "PRON";
+    if (/حرف جر/.test(p)) return "ADP";
+    if (/أداة/.test(p)) return "PART";
+    if (/اسم فاعل|اسم مفعول|فعل|مصدر/.test(p)) return "VERB";
+    if (/صفة/.test(p)) return "ADJ";
+    if (/عدد/.test(p)) return "NUM";
+    if (/ظرف/.test(p)) return "ADV";
+    if (/علم|مكان|لقب|عرش/.test(p)) return "PROPN";
+    return "NOUN";
+  }
+
+  function kind(toks) {
+    const has = (f) => toks.some(f);
+    if (has(k => k.tag === "VERB_HEAD" && k.fk === "ninf")) return ["narrative infinitive", "مصدر سردي"];
+    if (has(k => k.tag === "VERB_HEAD")) return ["verbal sentence", "جملة فعلية"];
+    if (has(k => parts(k.t)[0] === "pw")) return ["nominal sentence with pw", "جملة اسمية بـpw"];
+    const pr = toks.find(k => k.tag === "PRED");
+    if (pr) {
+      if (pr.up === "ADP" || pr.up === "ADV") return ["adverbial sentence", "جملة ظرفية"];
+      if (pr.up === "ADJ") return ["adjectival sentence", "جملة وصفية"];
+      if (pr.fk === "stat") return ["sentence with old perfective", "جملة بالفعل التام القديم"];
+      return ["nominal sentence", "جملة اسمية"];
+    }
+    if (has(k => k.tag === "SUBJ") && has(k => k.tag === "ADVERBIAL")) return ["adverbial sentence", "جملة ظرفية"];
+    if (toks.length && NEG.has(parts(toks[0].t)[0])) return ["negative sentence", "جملة منفية"];
+    return ["phrase", "تركيب"];
+  }
+
+  function pronCat(k, L) {
+    const st = parts(k.t)[0];
+    if (IND[st]) return (L ? "ضمير مستقل، " : "independent pronoun, ") + P[IND[st]][L];
+    if (DEM[st] && (k.tag === "ATTR" || st === "pw" || !DEP[st])) return (L ? "اسم إشارة، " : "demonstrative pronoun, ") + DEMG[DEM[st]][L];
+    if (DEP[st]) return (L ? "ضمير متعلق، " : "dependent pronoun, ") + P[DEP[st]][L];
+    return L ? "ضمير" : "pronoun";
+  }
+
+  function fnText(k, L, verbal) {
+    if (k.tag === "SUBJ") return L ? (verbal ? "فاعل" : "مبتدأ") : "subject";
+    if (k.tag === "PRED") {
+      if (k.up === "ADJ") return L ? "خبر وصفي" : "adjectival predicate";
+      if (k.up === "ADP" || k.up === "ADV") return L ? "خبر ظرفي" : "adverbial predicate";
+      return L ? "خبر" : (verbal || k.fk ? "predicate" : "nominal predicate");
+    }
+    return FN[k.tag] ? FN[k.tag][L] : "";
+  }
+
+  function desc(k, L, verbal) {
+    const fn = fnText(k, L, verbal);
+    const as = (cat, f) => !f ? cat : (L ? cat + "، " + f : cat + ", as " + f);
+    if (k.tag === "VERB_HEAD") return FORMS[k.fk] ? FORMS[k.fk][L] : (L ? "فعل" : "verb");
+    if (k.tag === "DATE") return fn;
+    if (k.up === "PRON") return as(pronCat(k, L), k.tag === "ATTR" ? "" : fn);
+    if (FORMS[k.fk]) return as(FORMS[k.fk][L], fn);
+    if (k.up === "ADJ") return k.tag === "ATTR" ? (L ? "صفة، نعت" : "adjective (epithet)") : as(L ? "صفة" : "adjective", fn);
+    if (k.up === "PART" || k.tag === "PARTICLE") {
+      const neg = NEG.has(parts(k.t)[0]);
+      return neg ? (L ? "أداة نفي" : "negative particle") : (L ? "أداة" : "particle");
+    }
+    if (k.up === "NUM") return as(L ? "عدد" : "number", fn);
+    if (k.up === "PROPN") return as(L ? "اسم علم" : "proper noun", fn);
+    if (k.up === "ADV") return as(L ? "ظرف" : "adverb", fn === FN.ADVERBIAL[L] ? "" : fn);
+    if (k.up === "INTJ") return L ? "أداة نداء" : "interjection";
+    return fn || (L ? "؟" : "?");
+  }
+
+  // the indented lines under a word: .n / .jn of the verb form, stative endings, suffix pronouns
+  function subs(k, L) {
+    const ps = parts(k.t), out = [];
+    let rest = ps.slice(1);
+    if ((k.fk === "sdmnf" || k.fk === "reln") && rest[0] === "n") {
+      out.push(["." + rest.shift(), L ? "علامة الماضي" : "particle of past"]);
+    } else if (k.fk === "sdmjnf" && rest[0] === "jn") {
+      out.push(["." + rest.shift(), L ? "الأداة jn" : "particle jn"]);
+    }
+    if (k.fk === "stat" && rest.length) {
+      out.push(["." + rest.join("."), L ? "نهاية الفعل التام القديم" : "ending of the old perfective"]);
+      return out;
+    }
+    rest.forEach(s => {
+      const p = SUF[s];
+      if (!p) return;
+      let role;
+      if (k.up === "ADP") role = L ? "مجرور بحرف الجر" : "object of the preposition";
+      else if (k.up === "PART" || k.tag === "PARTICLE") role = L ? "مبتدأ" : "as subject";
+      else if (k.fk === "inf" || k.fk === "ninf") role = L ? "متصل بالمصدر" : "attached to the infinitive";
+      else if (k.tag === "VERB_HEAD" || (FORMS[k.fk] && k.fk !== "part" && k.fk !== "ppart")) role = L ? "فاعل" : "as subject";
+      else role = L ? "مضاف إليه" : "to express possession (genitive)";
+      out.push(["." + s, (L ? "ضمير متصل، " : "suffix pronoun, ") + P[p][L] + (L ? "، " : ", ") + role]);
+    });
+    return out;
+  }
+
+  // rows: {lvl, w, text, right, mark, note}
+  function rows(toks, L, mode) {
+    const verbal = toks.some(k => k.tag === "VERB_HEAD");
+    const R = [];
+    const gold = mode === "gold" && L === 1;
+    const goldText = (k) => {
+      let s = k.arPos ? k.arPos + "، " + k.arFn : k.arFn;
+      if (k.arForm && !(k.arPos || "").includes(k.arForm) && !(k.arFn || "").includes(k.arForm)) s += " (" + k.arForm + ")";
+      return s;
+    };
+    const push = (k, lvl, text, right) => R.push({lvl, w: clean(k.t), text, right, mark: k.mark, note: k.note, unsure: k.unsure});
+    const pushSubs = (k, lvl) => { if (!gold) subs(k, L).forEach(([w, t]) => R.push({lvl, w, text: t})); };
+    for (let i = 0; i < toks.length; i++) {
+      const k = toks[i];
+      const st = parts(k.t)[0];
+      if (k.up === "ADP" && k.tag !== "GEN_PART") {
+        let j = i + 1;
+        while (j < toks.length && toks[j].tag === "POBJ") j++;
+        const words = toks.slice(i, j).map(x => clean(x.t)).join(" ");
+        const comp = /-/.test(st) || /مركب/.test(k.arPos || "");
+        const head = gold ? goldText(k) : (k.tag === "PRED" ? (L ? "خبر ظرفي (شبه جملة)" : "adverbial predicate")
+          : k.tag === "POBJ" ? desc(k, L, verbal) : (L ? "شبه جملة ظرفية" : "adverbial phrase"));
+        const right = gold ? "" : st + ": " + (L ? (comp ? "حرف جر مركب" : "حرف جر بسيط") : (comp ? "compound preposition" : "simple preposition"));
+        R.push({lvl: 0, w: words, text: head, right, mark: k.mark, note: k.note, unsure: k.unsure});
+        pushSubs(k, 1);
+        for (let m = i + 1; m < j; m++) {
+          const o = toks[m];
+          let t;
+          if (gold) t = goldText(o);
+          else {
+            const cat = o.up === "PRON" ? pronCat(o, L) : FORMS[o.fk] ? FORMS[o.fk][L] : "";
+            t = cat ? (L ? cat + " مجرور" : cat + " after preposition") : FN.POBJ[L];
+          }
+          push(o, 1, t);
+          pushSubs(o, 2);
+        }
+        i = j - 1;
+        continue;
+      }
+      const lvl = k.tag === "POBJ" ? 1 : 0;
+      const right = !gold && k.tag === "VERB_HEAD" ? st + ": " + (L ? "فعل" : "verb") : "";
+      push(k, lvl, gold ? goldText(k) : desc(k, L, verbal), right);
+      pushSubs(k, lvl + 1);
+    }
+    return R;
+  }
+
+  const el = (t, c, txt) => { const e = document.createElement(t); if (c) e.className = c; if (txt != null) e.textContent = txt; return e; };
+  const bdi = (c, s) => { const b = el("bdi", c, s); b.dir = "ltr"; return b; };
+
+  // one notebook sentence. opts: {n, lang 0|1, mode, ref, typeAr, compare}
+  function sheet(toks, opts) {
+    const L = opts.lang;
+    const box = el("article", "nb-s");
+    box.dir = L ? "rtl" : "ltr";
+    const top = el("div", "nb-row nb-tr");
+    top.append(el("span", "nb-num", opts.n + "- "), bdi("tr", toks.map(k => clean(k.t)).join(" ")));
+    if (opts.ref) { const r = el("span", "nb-ref"); r.append(bdi("", opts.ref)); top.append(r); }
+    box.append(top);
+    const gl = toks.map(k => k.gloss).filter(Boolean).join(" ");
+    if (gl) { const g = el("div", "nb-row nb-gl"); g.dir = opts.glossDir || "rtl"; g.textContent = "← " + gl; box.append(g); }
+    const ty = opts.mode === "gold" && L === 1 && opts.typeAr ? opts.typeAr : kind(toks)[L];
+    box.append(el("div", "nb-row nb-h", (L ? "*الإعراب: (" : "*parsing: (") + ty + ")"));
+    rows(toks, L, opts.mode).forEach(r => {
+      const row = el("div", "nb-row nb-l nb-l" + r.lvl + (r.mark && opts.compare ? " nb-x" : "") + (r.unsure ? " nb-u" : ""));
+      if (r.right) { const rt = el("span", "nb-rt", "/ "); rt.append(bdi("tr", r.right.split(":")[0])); rt.append(":" + r.right.split(":").slice(1).join(":")); row.append(rt); }
+      row.append(bdi("tr nb-w", r.w), document.createTextNode(": " + r.text + (L ? "" : ".")));
+      if (r.mark && opts.compare) row.append(el("span", "nb-gold", r.mark));
+      box.append(row);
+      if (r.note && opts.mode === "gold" && L === 1) box.append(el("div", "nb-row nb-note nb-l" + Math.min(r.lvl + 1, 2), r.note));
+    });
+    return box;
+  }
+
+  return {sheet, fkey, upFromAr, kind};
+})();
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/pyodide@0.26.4/pyodide.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const el = (t, c, txt) => { const e = document.createElement(t); if (c) e.className = c; if (txt != null) e.textContent = txt; return e; };
+  const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+  const KEYS = ["ꜣ", "j", "ꜥ", "w", "ḥ", "ḫ", "ẖ", "š", "ḳ", "ṯ", "ḏ", "."];
+  const EXAMPLES = ["hꜣb.sn dpt r njwt ḏꜣ.f tw jm.s", "s pw wn ḫw-n-jnpw rn.f", "jw.f m pr.f", "gm.n.j sw ḥr wꜣt", "jnk snt.k"];
+  let lang = store("live-lang") === "ar" ? 1 : 0, last = null, parse = null;
+
+  const status = (msg, busy, err) => { const s = $("st"); s.replaceChildren(); s.className = "status" + (err ? " err" : "");
+    if (busy) s.append(el("span", "spin")); s.append(document.createTextNode(msg)); };
+
+  function show() {
+    $("l-en").setAttribute("aria-pressed", String(!lang)); $("l-ar").setAttribute("aria-pressed", String(!!lang));
+    const out = $("out"); out.replaceChildren();
+    if (!last) return;
+    last.forEach((s, i) => out.append(NB.sheet(s.tokens.map(k => ({t: k.t, up: k.upos, tag: k.fn, fk: NB.fkey(k.form),
+      gloss: k.sense, unsure: k.unsure})), {n: i + 1, lang, glossDir: "ltr"})));
+  }
+
+  function run() {
+    const txt = $("in").value.trim();
+    if (!txt || !parse) return;
+    store("live-text", txt);
+    try { last = parse(txt); status(""); show(); }
+    catch (e) { status("الجملة دي ما اتعربتش، راجع الكتابة", false, true); }
+  }
+
+  KEYS.forEach(k => { const b = el("button", null, k); b.type = "button"; b.setAttribute("aria-label", k);
+    b.addEventListener("click", () => { const t = $("in"), a = t.selectionStart, z = t.selectionEnd;
+      t.setRangeText(k, a, z, "end"); t.focus(); }); $("keys").append(b); });
+  EXAMPLES.forEach(x => { const b = el("button", null, x); b.type = "button"; b.dir = "ltr";
+    b.addEventListener("click", () => { $("in").value = x; run(); }); $("ex").append(b); });
+  $("run").addEventListener("click", run);
+  $("in").addEventListener("keydown", e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); run(); } });
+  $("l-en").addEventListener("click", () => { lang = 0; store("live-lang", "en"); show(); });
+  $("l-ar").addEventListener("click", () => { lang = 1; store("live-lang", "ar"); show(); });
+  $("in").value = store("live-text") || EXAMPLES[0];
+
+  // the engine is the same Python code as the project's, run in the page by Pyodide
+  (async function boot() {
+    status("بيجهّز المُعرِب…", true);
+    let step = "1 pyodide.js";
+    status("بيجهّز المُعرِب… (1/4)", true);
+    const late = setTimeout(() => { if (!parse) status("المُعرِب واقف عند خطوة " + step, false, true); }, 90000);
+    try {
+      if (typeof loadPyodide !== "function") throw new Error("loadPyodide missing");
+      step = "2 python"; status("بيجهّز المُعرِب… (2/4)", true);
+      const py = await loadPyodide({indexURL: "https://cdn.jsdelivr.net/npm/pyodide@0.26.4/"});
+      step = "3 files"; status("بيجهّز المُعرِب… (3/4)", true);
+      const get = (f) => fetch(f).then(r => { if (!r.ok) throw new Error(f + " " + r.status); return r; });
+      const [bundle, lex] = await Promise.all([get("engine_bundle.json").then(r => r.json()), get("tla_lexicon.json").then(r => r.text())]);
+      step = "4 engine"; status("بيجهّز المُعرِب… (4/4)", true);
+      py.FS.mkdirTree("/egy/irab"); py.FS.mkdirTree("/egy/data/lexicon");
+      for (const [p, src] of Object.entries(bundle)) py.FS.writeFile("/egy/" + p, src);
+      py.FS.writeFile("/egy/data/lexicon/tla_lexicon.json", lex);
+      await py.runPythonAsync("import sys, json\nsys.path.insert(0, '/egy')\nfrom irab.live import Live\nLIVE = Live()");
+      parse = (txt) => { py.globals.set("TXT", txt); return JSON.parse(py.runPython("json.dumps(LIVE.parse(TXT), ensure_ascii=False)")); };
+      clearTimeout(late); $("run").disabled = false; status("");
+      run();
+    } catch (e) {
+      status("المُعرِب ما اشتغلش في المتصفح ده (" + step + ": " + String(e && e.message || e).slice(0, 160) + ")", false, true);
+    }
+  })();
+})();
+</script>
+</body></html>
