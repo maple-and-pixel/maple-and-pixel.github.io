@@ -117,11 +117,11 @@ const ROWS = [
     note: 'العينان من الزجاج، مكحّلتان بخط أسود يمتد نحو الصدغ. على الأصل الخشبي المذهّب كان هذا الزجاج يلمع فيبدو الوجه حيًا.',
     at: [.04, .77, .12], view: { az: .12, el: .05, r: .09 } },
   { k: 'اليد اليمنى', v: 'حربة', spear: true,
-    note: 'الذراع مرفوعة والقبضة مثقوبة؛ من هذا الثقب كانت تمر الحربة، ورأسها إلى الأمام نحو الماء. الملك في لحظة الرمي، قبل أن تنطلق.',
+    note: 'الذراع مرفوعة والقبضة مثقوبة؛ من هذا الثقب كانت تمر الحربة، وهي من البرونز المذهّب. الملك في لحظة الرمي، قبل أن تنطلق.',
     at: [-.118, .885, .05], view: { az: -.75, el: .1, r: .3 } },
   { k: 'اليد اليسرى', v: 'شريط من البرونز ملفوف، ولعله الحبل', spear: true,
-    note: 'كتب كارتر «الحبل؟» بعلامة استفهام. والأرجح أنه الحبل الذي يُربط بالحربة، فإذا أصابت الصيد لم يفلت.',
-    at: [.098, .52, .32], view: { az: 1.05, el: .1, r: .17 } },
+    note: 'كتب كارتر «الحبل؟» بعلامة استفهام. والأرجح أنه الحبل الذي يُربط بالحربة، فإذا أصابت الصيد لم يفلت. وهو الجزء الوحيد من البرونز الذي لم يُذهَّب.',
+    at: [.1, .54, .284], view: { az: 1.05, el: .1, r: .17 } },
   { k: 'الزينة', v: 'قلادة من الخرز يتدلى منها المِنخت، ونقبة الشنديت',
     note: 'القلادة العريضة تغطي الكتفين، ويتدلى من خلفها على الظهر ثقل صغير يسمى المِنخت يوازنها. والنقبة هي الشنديت، نقبة الملوك ذات الثنيات الدقيقة.',
     at: [.04, .62, .04], view: { az: 2.6, el: .2, r: .2 } },
@@ -176,6 +176,7 @@ const at = a => new THREE.Vector3(...a);
 
 /* the missing javelin and cord, as a gold ghost: the javelin passes through the pierced fist, head forward and down toward the water */
 const ghostMat = new THREE.MeshStandardMaterial({ color: 0xf3d27a, emissive: 0xd9a441, emissiveIntensity: .35, metalness: .3, roughness: .4, transparent: true, opacity: 0, depthWrite: false });
+const cordMat = ghostMat.clone(); cordMat.color.set(0xb5834f); cordMat.emissive.set(0x7a4a22);
 const ghost = new THREE.Group(); king.add(ghost);
 {
   const fist = at([-.118, .885, .05]), dir = new THREE.Vector3(.05, -.55, 1).normalize();
@@ -185,10 +186,11 @@ const ghost = new THREE.Group(); king.add(ghost);
   shaft.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
   const head = new THREE.Mesh(new THREE.ConeGeometry(.011, .05, 10), ghostMat);
   head.position.copy(fist).addScaledVector(dir, ahead + .025); head.quaternion.copy(shaft.quaternion);
-  // the cord: a loose coil hanging from the left hand
-  const hand = at([.098, .52, .32]), pts = [];
-  for (let i = 0; i <= 120; i++) { const t = i / 120, a = t * Math.PI * 2 * 4; pts.push(new THREE.Vector3(hand.x + Math.cos(a) * .022, hand.y - .015 - t * .06, hand.z + Math.sin(a) * .022)) }
-  const cord = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 240, .0022, 6), ghostMat);
+  // the cord (Carter: "a twisted ribbon of bronze", the one part NOT gilt): it runs through the grip of the left hand
+  // (palm measured on the model: x .085–.115, y .532–.576, z .24–.32) and hangs in loops right under it
+  const palm = at([.1, .556, .284]), R = .016, top = .53, pts = [palm.clone(), new THREE.Vector3(palm.x + R, top + .008, palm.z)];
+  for (let i = 0; i <= 120; i++) { const t = i / 120, a = t * Math.PI * 2 * 3; pts.push(new THREE.Vector3(palm.x + Math.cos(a) * R, top - t * .045, palm.z + Math.sin(a) * R)) }
+  const cord = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 260, .0024, 6), cordMat);
   ghost.add(shaft, head, cord);
 }
 let ghostOn = false, ghostA = 0;
@@ -332,7 +334,7 @@ renderer.setAnimationLoop(now => {
   }
   const s = 1 - Math.exp(-dt * 7);
   if (Math.abs(shift.x - shiftGoal.x) > .3 || Math.abs(shift.y - shiftGoal.y) > .3) { shift.x += (shiftGoal.x - shift.x) * s; shift.y += (shiftGoal.y - shift.y) * s; applyShift() }
-  ghostA += ((ghostOn ? .62 : 0) - ghostA) * (1 - Math.exp(-dt * 5)); ghostMat.opacity = ghostA; ghost.visible = ghostA > .01;
+  ghostA += ((ghostOn ? .62 : 0) - ghostA) * (1 - Math.exp(-dt * 5)); ghostMat.opacity = cordMat.opacity = ghostA; ghost.visible = ghostA > .01;
   tickTale(now);
   controls.update();
   if (active > 0) {
