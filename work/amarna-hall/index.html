@@ -1,0 +1,686 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تحت أشعة آتون</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+/* One screen. Both casts hang on one wall in the blue studio. Two ideas of its own:
+   the SKY (corner): drag the sun along its arc and the light rakes across the carving;
+   the RAYS: tap a spot and a ray of light travels from the Aten disk down to it, then its card opens. */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --ink: #241d14;
+  --ink-2: #6a5b47;
+  --sheet: #f5efe3;
+  --sheet-2: #e9dfcc;
+  --gold: #d9a441;         /* Aten gold */
+  --gold-deep: #a8731c;
+  --night: #16202b;
+  --f-display: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+  --panel-h: min(38vh, 290px);
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 35%, transparent 55%, #0d162055 100%) }
+
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; pointer-events: none; padding-inline-end: 120px }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.5rem, 6vw, 2.2rem); line-height: 1.15; color: #fbf7f0; text-shadow: 0 1px 14px #0005 }
+.sub { margin: .25rem 0 0; color: #f1ebe2; font-size: .88rem; text-shadow: 0 1px 10px #0006 }
+/* the two pieces of the hall */
+.pieces { display: inline-flex; gap: 4px; margin-top: .6rem; padding: 4px; border-radius: 999px; background: #0d1620a6; pointer-events: auto }
+.pieces button { border: 0; cursor: pointer; border-radius: 999px; height: 36px; padding: 0 16px; font-family: var(--f-display); font-size: .92rem; background: transparent; color: #f4f1ea }
+.pieces button[aria-selected="true"] { background: var(--gold); color: #2a1d08 }
+.go { margin-top: .8rem; border: 0; cursor: pointer; border-radius: 999px; height: 42px; padding: 0 18px; font-family: var(--f-display); font-size: .95rem; background: var(--gold); color: #2a1d08 }
+
+/* the sky: a half-dial; the sun rides it and the light follows */
+.sky { position: absolute; top: 12px; inset-inline-end: 10px; width: 108px; text-align: center; touch-action: none; user-select: none }
+.sky svg { width: 108px; height: 62px; display: block; overflow: visible; cursor: grab }
+.sky .arc { fill: none; stroke: #ffffff55; stroke-width: 1.4; stroke-dasharray: 2 4 }
+.sky .ground { stroke: #ffffff40; stroke-width: 1 }
+.sky .sun { fill: var(--gold); stroke: #fff6dd; stroke-width: 1.5; filter: drop-shadow(0 0 6px #ffd27a) }
+.sky .beam { stroke: #ffe3a1; stroke-width: 1; opacity: .7 }
+.sky .lbl { font-family: var(--f-display); font-size: .7rem; color: #f4f1ea; text-shadow: 0 1px 8px #0008; margin-top: 2px }
+.sky.hint .sun { animation: nudge 2.4s ease-in-out 3 }
+@keyframes nudge { 50% { transform: translateX(-10px) } }
+
+/* hotspots: small suns on the stone, only while the rays are shown */
+.spots { position: absolute; inset: 0; pointer-events: none }
+.spot {
+  position: absolute; width: 30px; height: 30px; margin: -15px 0 0 -15px; border-radius: 50%; border: 0; padding: 0; cursor: pointer; pointer-events: auto;
+  background: radial-gradient(circle, #fff3cf 0 22%, #d9a441cc 24% 46%, transparent 48%); transition: transform .25s, opacity .3s;
+}
+.spot::after { content: ""; position: absolute; inset: 3px; border-radius: 50%; border: 1.5px solid #ffe3a1aa; animation: ping 2.4s ease-out infinite }
+.spot.on { transform: scale(1.35) }
+.spot.on::after { border-color: #fff }
+.spot.away { opacity: 0; pointer-events: none }
+@keyframes ping { from { transform: scale(.6); opacity: 1 } to { transform: scale(1.5); opacity: 0 } }
+
+/* the card */
+.panel { position: absolute; inset-inline: 0; bottom: 0; padding: 0 12px calc(12px + env(safe-area-inset-bottom, 0px)); display: flex; justify-content: center; pointer-events: none }
+.sheet {
+  position: relative; pointer-events: auto; width: min(100%, 540px); height: var(--panel-h); display: flex; flex-direction: column;
+  background: linear-gradient(170deg, var(--sheet), var(--sheet-2)); border-radius: 22px;
+  box-shadow: 0 14px 40px #10192a66, inset 0 0 0 1px #ffffffaa;
+}
+.sheet::before { content: ""; position: absolute; top: 0; inset-inline: 22px; height: 3px; border-radius: 0 0 3px 3px; background: linear-gradient(90deg, transparent, var(--gold), transparent) }
+.body { flex: 1; overflow: auto; padding: 16px 18px 6px; padding-inline-end: 48px; scrollbar-width: thin }
+.kicker { font-family: var(--f-display); color: var(--gold-deep); font-size: .82rem }
+.sheet h2 { margin: .1rem 0 .45rem; font-family: var(--f-display); font-weight: 700; font-size: 1.3rem; line-height: 1.35 }
+.sheet p { margin: 0; font-size: 1.02rem; line-height: 1.9 }
+.src { display: block; margin-top: .6rem; font-size: .78rem; color: var(--ink-2) }
+.nav { display: flex; align-items: center; gap: 8px; padding: 8px 12px 12px }
+.nav button { border: 0; cursor: pointer; border-radius: 999px; height: 40px; min-width: 40px; padding: 0 14px; background: #241d140f; font-family: var(--f-display); font-size: .95rem }
+.nav .next { background: var(--night); color: #f4f1ea; margin-inline-start: auto }
+.nav .count { font-family: var(--f-display); color: var(--ink-2); font-size: .85rem }
+.body.fade { animation: fade .45s ease }
+@keyframes fade { from { opacity: 0; transform: translateY(6px) } }
+.fold { position: absolute; top: 10px; inset-inline-end: 10px; width: 34px; height: 34px; border-radius: 50%; border: 0; cursor: pointer; background: #241d140f; font-size: 1.1rem; line-height: 1 }
+
+/* folded: only the dock stays */
+.dock { pointer-events: auto; display: none; gap: 6px; align-items: center; padding: 6px; border-radius: 999px; background: #0d1620b3; box-shadow: 0 10px 30px #0d162055 }
+.dock button { border: 0; cursor: pointer; border-radius: 999px; height: 42px; padding: 0 16px; font-family: var(--f-display); font-size: .95rem; background: transparent; color: #f4f1ea; white-space: nowrap }
+.dock .rays { background: var(--gold); color: #2a1d08 }
+.dock .rays[aria-pressed="true"] { background: #fff1cc }
+.stage.min .sheet { display: none }
+.stage.min .dock { display: flex }
+
+/* the story: the king tells it, a day passes from dawn at his face to dusk on both */
+.dock .tell { background: #fbf7f0; color: #2a1d08 }
+.chapters { display: none; gap: 4px; margin-top: .6rem; padding: 4px; border-radius: 999px; background: #0d1620a6; pointer-events: auto; align-items: center }
+.chapters span { height: 34px; padding: 0 14px; display: grid; place-items: center; border-radius: 999px; font-family: var(--f-display); font-size: .9rem; color: #f4f1ea80; transition: background .6s, color .6s }
+.chapters span.done { color: #f4f1ea }
+.chapters span.on { background: var(--gold); color: #2a1d08 }
+.chapters button { border: 0; cursor: pointer; width: 34px; height: 34px; border-radius: 50%; background: #ffffff1a; color: #f4f1ea; font-size: .85rem }
+.stage.telling .pieces { display: none }
+.stage.telling .chapters { display: inline-flex }
+.stage.telling .panel { display: none }
+.subs { position: absolute; inset-inline: 0; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); display: none; justify-content: center; padding: 0 16px; pointer-events: none }
+.stage.telling .subs { display: flex }
+.subs p { margin: 0; max-width: 760px; text-align: center; font-size: clamp(1.05rem, 4.4vw, 1.45rem); line-height: 1.8; color: #fbf7f0; background: #0d1620b8; padding: 10px 20px; border-radius: 16px; box-shadow: 0 10px 30px #0d162055 }
+.subs p.fade { animation: fade .6s ease }
+.inset { position: absolute; left: 16px; top: 130px; width: 210px; height: 270px; border-radius: 18px; box-shadow: inset 0 0 0 2px var(--gold), 0 12px 34px #0d162077; pointer-events: none; opacity: 0; transition: opacity .8s }
+.inset.on { opacity: 1 }
+.inset span { position: absolute; inset-inline: 0; bottom: -32px; text-align: center; font-family: var(--f-display); font-size: .85rem; color: #fbf7f0; text-shadow: 0 1px 8px #000a }
+@media (max-width: 899px) { .inset { left: 12px; top: 128px; width: 128px; height: 168px } }
+
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading p { font-family: var(--f-display); color: #fbf7f0; text-align: center; padding: 0 24px; animation: breathe 1.6s ease-in-out infinite }
+@keyframes breathe { 50% { opacity: .35 } }
+@media (min-width: 900px) {
+  .sky { inset-inline-end: 28px; top: 20px; width: 150px } .sky svg { width: 150px; height: 86px }
+  .panel { justify-content: flex-end; padding-inline-end: 28px; bottom: 24px }   /* rtl: the card sits at the left, the sun stays clear */
+  .stage.min .panel { justify-content: center }
+  :root { --panel-h: min(46vh, 340px) }
+  .inset { left: 28px; top: 170px; width: 230px; height: 300px }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<main class="stage min" id="stage" dir="rtl" lang="ar" aria-label="تحت أشعة آتون: عرض ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="spots" id="spots" hidden></div>
+  <div class="loading" id="loading"><p>تشرق الشمس على الحجر…</p></div>
+
+  <div class="top">
+    <h1>تحت أشعة آتون</h1>
+    <p class="sub">العمارنة · نحو ١٣٤٥ قبل الميلاد</p>
+    <div class="pieces" role="tablist" aria-label="القطع"><button role="tab" data-p="both" aria-selected="true">الاتنين</button><button role="tab" data-p="face" aria-selected="false">الوش</button><button role="tab" data-p="slab" aria-selected="false">اللوح</button></div>
+    <div class="chapters" id="chapters"><span>الإنسان</span><span>الإله</span><span>اللقاء</span><button id="tellPause" aria-label="إيقاف مؤقت">❚❚</button><button id="tellStop" aria-label="إنهاء الحكاية">✕</button></div>
+  </div>
+  <div class="inset" id="inset"><span>الوجه نفسه… من الجنب</span></div>
+  <div class="subs"><p id="line"></p></div>
+
+  <div class="sky hint" id="sky">
+    <svg viewBox="-54 -50 108 62" aria-label="حرّك الشمس ليتغيّر الضوء على النقش" role="slider" tabindex="0" id="skySvg">
+      <line class="ground" x1="-52" y1="0" x2="52" y2="0"/>
+      <path class="arc" d="M-46 0 A46 46 0 0 1 46 0"/>
+      <g id="sunG"><line class="beam" id="beam" x1="0" y1="0" x2="0" y2="0"/><circle class="sun" r="7"/></g>
+    </svg>
+    <div class="lbl" id="skyLbl">حرّك الشمس</div>
+  </div>
+
+  <div class="panel">
+    <div class="dock" id="dock">
+      <button class="tell" id="tellBtn">▶ الحكاية</button>
+      <button class="rays" id="rays" aria-pressed="false">☀ <span id="raysLabel">الشمس على الوش</span></button>
+    </div>
+    <section class="sheet" id="sheet" aria-live="polite">
+      <button class="fold" id="fold" aria-label="إخفاء">⌄</button>
+      <div class="body" id="body"><div class="kicker" id="kicker"></div><h2 id="title"></h2><div id="text"></div></div>
+      <div class="nav">
+        <button id="prev" aria-label="السابق">→</button>
+        <span class="count" id="count"></span>
+        <button class="next" id="next">التالي ←</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+/* ---------------- what the rays touch ----------------
+   at: [u, v] on the stone (u from its left, v up from the bottom). view: camera framing (r = share of the whole slab).
+   ⚠ Identity of the original is NOT confirmed yet (HANDOFF.md): the copy stays descriptive and cautious. */
+const DISK = [.77, .94];
+const SLAB_CARDS = [
+  { kicker: 'المصدر', title: 'قرص آتون', at: DISK, view: { u: .68, v: .8, r: .55 },
+    html: '<p>في أعلى الحجر قرص الشمس: آتون، الإله الذي جعله إخناتون فوق كل الآلهة. لا يظهر في هيئة إنسان ولا حيوان، بل قرص تخرج منه أشعة طويلة، وفي آخر كل شعاع يد صغيرة.</p>' },
+  { kicker: 'بجوار القرص', title: 'خرطوشان', at: [.91, .9], view: { u: .74, v: .8, r: .55 },
+    html: '<p>إلى جانب القرص خرطوشان متجاوران. في فن العمارنة كان اسم آتون نفسه يُكتب داخل خرطوشين، كما يُكتب اسم الملك. ويُرجَّح أن هذين يحملان اسمه.</p>' },
+  { kicker: 'في المقدمة', title: 'الملك', at: [.66, .66], view: { u: .58, v: .62, r: .62 },
+    html: '<p>أطول الهيئات في المشهد هو الملك. يقف في المقدمة قريبًا من القرص، ويرفع ذراعيه بالقرابين نحوه. وعلى رأسه تاج طويل مائل إلى الخلف، يُرجَّح أنه التاج الأبيض.</p>' },
+  { kicker: 'نهاية الأشعة', title: 'الأيادي', at: [.76, .55], view: { u: .74, v: .58, r: .5 },
+    html: '<p>تأمّل نهايات الأشعة: كل شعاع ينتهي بكف مفتوحة. تمتد هذه الأيادي نحو الملك ونحو القرابين، كأن الشمس نفسها تمد يدها لتأخذ وتعطي.</p>' },
+  { kicker: 'خلف الملك', title: 'الأسرة', at: [.26, .4], view: { u: .26, v: .38, r: .62 },
+    html: '<p>خلف الملك هيئات أصغر من أسرته. ترفع إحداهن آلتين صغيرتين: صلاصل، تُهزّ في الطقوس فيرنّ معدنها. وفي فن العمارنة تظهر الأسرة الملكية مع الملك في العبادة، وهذا من أكثر ما يميّزه.</p>' },
+  { kicker: 'أمام الملك', title: 'موائد القرابين', at: [.84, .3], view: { u: .82, v: .3, r: .5 },
+    html: '<p>أمام الملك مائدتان عاليتان، تعلو كلًّا منهما باقة من الزهور. والأشعة تنزل عليهما مباشرة: القرابين للشمس.</p>' },
+  { kicker: 'شكل الحجر', title: 'الحافة المائلة', at: [.22, .8], view: { u: .3, v: .75, r: .6 },
+    html: '<p>الحافة المائلة في أعلى الحجر ليست كسرًا. في معابد العمارنة وقصورها كانت المنحدرات تُحاط بحواجز منخفضة، حافتها العليا مائلة لأنها تتبع ميل المنحدر، وكثيرًا ما زُيّنت بهذا المشهد نفسه: الأسرة الملكية تقدّم القرابين لآتون.</p>' +
+      '<span class="src">Ian Shaw, Journal of Egyptian Archaeology 80 (1994)</span>' },
+];
+// the face: each card swings the sun (sun: dial position) to the light that shows its feature best
+const FACE_CARDS = [
+  { kicker: 'الوجه', title: 'ملك من العمارنة', at: [.5, .55], view: { r: 1, az: .3 }, sun: .55,
+    html: '<p>وجه من الجص لملك من عصر العمارنة. وجه طويل، وعينان ضيقتان، وشفتان ممتلئتان، وذقن ممدود: ملامح عُرف بها إخناتون في فن عصره، ويُرجَّح أنه هو.</p>' },
+  { kicker: 'على الجبهة', title: 'الصل', at: [.5, .9], view: { v: .88, r: .72, az: .45 }, sun: .9,
+    html: '<p>فوق الجبهة تنتصب الكوبرا الملكية: الصل. كانت تحمي الملك وتنفث النار في وجه أعدائه، ولا يلبسها إلا الملك والملكة.</p>' },
+  { kicker: 'غطاء الرأس', title: 'العصابة', at: [.24, .6], view: { v: .62, r: .78, az: -.4 }, sun: -.6,
+    html: '<p>يحيط بالجبهة شريط عريض، ثم يرتفع غطاء الرأس الملكي فوقه. والصل مثبّت في مقدّمته.</p>' },
+  { kicker: 'النظرة', title: 'العينان', at: [.33, .5], view: { v: .5, r: .7, az: -.3, el: .1 }, sun: -.85,
+    html: '<p>عينان طويلتان ضيقتان، أجفانهما ثقيلة، تنظران إلى أسفل قليلًا. ضوء من الجانب يُظهر كيف حفر النحات تحت الجفن ليصنع الظل.</p>' },
+  { kicker: 'الفم', title: 'الشفتان والذقن', at: [.5, .22], view: { u: .42, v: .3, r: .85, az: .5, el: -.05 }, sun: .95,
+    html: '<p>شفتان ممتلئتان، عند طرفيهما خطان ينحدران إلى الذقن، والذقن نفسه طويل يمتد إلى الأمام. أدِر الوجه إلى جانبه لترى بروزه.</p>' },
+  { kicker: 'ورش النحاتين', title: 'وجوه من الجص', at: [.72, .4], view: { r: .9, az: -.6 }, sun: -.4,
+    html: '<p>في ورشة النحات تحتمس بالعمارنة عُثر عام ١٩١٢ على أكثر من عشرين وجهًا من الجص، منها وجوه لأفراد من الأسرة المالكة. كان النحاتون يستعملون الجص في دراسة الملامح قبل نحتها في الحجر.</p>' },
+  { kicker: 'إلى اللوح', title: 'الملك نفسه تحت آتون', at: [.5, .38], view: { r: 1, az: .15 }, sun: .45,
+    html: '<p>هذا الوجه نفسه تجده في اللوح المجاور: الملك واقفًا تحت قرص آتون، يرفع قرابينه والأشعة تمد إليه أيديها.</p><button class="go" data-go="slab">إلى الملك في اللوح ←</button>' },
+];
+
+/* ---------------- renderer: draws only when something changes ---------------- */
+const stage = document.getElementById('stage'), canvas = document.getElementById('c');
+const $ = id => document.getElementById(id);
+const phone = matchMedia('(pointer: coarse)').matches;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+const BG = 0x748ba1, FLOOR = 0x5c7287;
+scene.background = new THREE.Color(BG);
+const camera = new THREE.PerspectiveCamera(34, 1, .05, 200);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08;
+controls.minAzimuthAngle = -1.3; controls.maxAzimuthAngle = 1.3;   // about 75° each way: the full profile, never the back against the wall
+controls.minPolarAngle = .5; controls.maxPolarAngle = 1.75;
+controls.minDistance = .4; controls.maxDistance = 24;
+controls.zoomToCursor = true;
+
+// scale: 1 mm = 3/600 units (the slab is about 60 cm tall: an estimate)
+const MM = 3 / 600;
+const RELIEF = 4.0;            // mm, from tex.py
+const T = 60 * MM;             // slab thickness: estimate
+const LIFT = .95;
+const FACE_X = -3.4;           // the face hangs on the same wall as the slab, to its left
+
+const hemi = new THREE.HemisphereLight(0xfff4e6, FLOOR, .75); scene.add(hemi);
+const key = new THREE.DirectionalLight(0xfff0d6, 2.6); key.castShadow = true;
+key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048);
+Object.assign(key.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3, near: .5, far: 30 }); key.shadow.bias = -.0004; key.shadow.normalBias = .01;
+scene.add(key, key.target);
+const fill = new THREE.DirectionalLight(0xe8f0ff, .35); scene.add(fill, fill.target);
+
+// each piece: its cards, its centre, its size, and where a (u, v) on it sits in the world
+const PIECES = {
+  slab: { cards: SLAB_CARDS, label: 'ما تلمسه الأشعة', W: 3 * .618, H: 3, center: new THREE.Vector3(0, LIFT + 1.5, 0), front: T / 2, z: () => 0, parts: [] },
+  face: { cards: FACE_CARDS, label: 'الشمس على الوش', W: 1, H: 2.25, center: new THREE.Vector3(FACE_X, 2.55, 0), front: 0, z: () => 0 },
+  both: { cards: [], label: '', W: 8, H: 3.7, center: new THREE.Vector3(-2.8, 1.85, 0), front: 0, z: () => 0 },   // the hall: both pieces in one shot (sized in build)
+};
+let P = PIECES.both, dirty = true;
+
+// the sun's place on the sky dial: s in [-1, 1] (-1 = far left, 1 = far right)
+let sunS = .45, sunAnim = null, tell = null;
+const WARM = new THREE.Color(0xffad66);
+function setSun(s) {
+  sunS = Math.max(-1, Math.min(1, s));
+  const a = sunS * 1.25, elev = .45 + (1 - Math.abs(sunS)) * .35;          // low at the ends: raking light
+  const dir = new THREE.Vector3(Math.sin(a) * Math.cos(elev), Math.sin(elev) * .9 + .15, Math.cos(a) * Math.cos(elev) * .8 + .2);
+  const sb = P === PIECES.both ? 5 : 3; Object.assign(key.shadow.camera, { left: -sb, right: sb, top: sb, bottom: -sb }); key.shadow.camera.updateProjectionMatrix();
+  key.position.copy(P.center).addScaledVector(dir.normalize(), 10); key.target.position.copy(P.center);
+  // in the story the light also warms toward dawn and dusk; outside it stays the studio's
+  const w = tell ? Math.abs(sunS) ** 2 : 0;
+  key.color.set(0xfff0d6).lerp(WARM, w * .75); key.intensity = 2.6 - w * .5; hemi.intensity = .75 - w * .2;
+  if (tell) $('skyLbl').textContent = sunS < -.6 ? 'الفجر' : sunS < -.2 ? 'الضحى' : sunS < .35 ? 'الظهر' : sunS < .75 ? 'العصر' : 'الغروب';
+  fill.position.copy(P.center).add(new THREE.Vector3(-4, 3, 9)); fill.target.position.copy(P.center);
+  const sx = sunS * 46, sy = -Math.sqrt(46 * 46 - sx * sx);
+  $('sunG').setAttribute('transform', `translate(${sx.toFixed(1)} ${sy.toFixed(1)})`);
+  $('beam').setAttribute('x2', (-sx * .35).toFixed(1)); $('beam').setAttribute('y2', (-sy * .35).toFixed(1));
+  $('skySvg').setAttribute('aria-valuenow', Math.round(sunS * 100));
+  renderer.shadowMap.needsUpdate = true; dirty = true;
+}
+function swingSun(to, ms = 1200) { sunAnim = { from: sunS, to, start: performance.now(), ms } }
+
+/* ---------------- the ray (slab only): a beam of light from the disk to the touched spot ---------------- */
+const ray = { tgt: new THREE.Vector2(...DISK), reach: { value: 0 }, on: { value: 0 } };
+function rayify(mat, asp) {
+  mat.onBeforeCompile = sh => {
+    Object.assign(sh.uniforms, { uSun: { value: new THREE.Vector2(...DISK) }, uTgt: { value: ray.tgt }, uReach: ray.reach, uOn: ray.on, uAsp: { value: asp } });
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform vec2 uSun, uTgt; uniform float uReach, uOn, uAsp;')
+      .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
+      {
+        vec2 p = vec2(vMapUv.x * uAsp, vMapUv.y), a = vec2(uSun.x * uAsp, uSun.y), b = vec2(uTgt.x * uAsp, uTgt.y);
+        vec2 ab = b - a; float L = max(length(ab), 1e-4);
+        float t = clamp(dot(p - a, ab) / (L * L), 0.0, 1.0);
+        float d = length(p - (a + ab * t));
+        float on = step(t, uReach);
+        float lit = on * (exp(-d * d / .0012) + .35 * exp(-d * d / .009));   // a bright core + a wide soft halo, travelling from the disk
+        float tip = smoothstep(.95, 1.0, uReach) * exp(-dot(p - b, p - b) / .006); // the touched spot glows when it arrives
+        float disk = exp(-dot(p - a, p - a) / .006);
+        float g = uOn * clamp(lit + tip * 1.2 + disk * .5, 0.0, 1.6);
+        diffuseColor.rgb *= mix(1.0, .48, uOn * (1.0 - clamp(lit + tip * 2.0 + disk, 0.0, 1.0)));
+        totalEmissiveRadiance += vec3(1.0, .8, .45) * g * .5;
+      }`);
+  };
+}
+
+/* ---------------- build ---------------- */
+async function build() {
+  const tl = new THREE.TextureLoader();
+  const [tex, info, gltf] = await Promise.all([
+    Promise.all(['albedo.jpg', 'height.png', 'normal.jpg', 'alpha.png'].map(u => tl.loadAsync(u))),
+    fetch('outline.json').then(r => r.json()),
+    new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('face.glb'),     // Tripo model of the college cast, lightened + retinted (HANDOFF.md)
+  ]);
+  const aniso = renderer.capabilities.getMaxAnisotropy();
+
+  // --- the slab, hung on the wall
+  const S = PIECES.slab; S.W = S.H * info.aspect;
+  const [albedo, height, normal, alpha] = tex;
+  albedo.colorSpace = THREE.SRGBColorSpace; albedo.anisotropy = normal.anisotropy = aniso;
+  const seg = phone ? [240, 390] : [360, 580];
+  const mat = new THREE.MeshStandardMaterial({
+    map: albedo, normalMap: normal, normalScale: new THREE.Vector2(2, 2),
+    displacementMap: height, displacementScale: RELIEF * MM, alphaMap: alpha, alphaTest: .5, roughness: .7, metalness: 0,
+  });
+  rayify(mat, S.W / S.H);
+  const slab = new THREE.Group(); scene.add(slab);
+  const face = new THREE.Mesh(new THREE.PlaneGeometry(S.W, S.H, ...seg), mat);
+  face.position.z = T / 2; face.castShadow = face.receiveShadow = true;
+  slab.add(face);
+  const shape = new THREE.Shape(info.outline.map(([u, v]) => new THREE.Vector2((u - .5) * S.W, (v - .5) * S.H)));
+  const bev = .012, depth = T - 2 * bev - .004;
+  const body = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: true, bevelThickness: bev, bevelSize: .008, bevelSegments: 3, curveSegments: 1 }),
+    new THREE.MeshStandardMaterial({ color: 0xcdbb98, roughness: .85 }));
+  body.geometry.translate(0, 0, -depth / 2); body.castShadow = body.receiveShadow = true;
+  slab.add(body);
+  slab.position.copy(S.center);
+  S.parts.push(slab);
+
+  // --- the face, hung on its own wall: the model's back rests on the wall, scaled to the cast's height
+  const F = PIECES.face, fobj = gltf.scene;
+  const box0 = new THREE.Box3().setFromObject(fobj), size0 = box0.getSize(new THREE.Vector3());
+  const k = F.H / size0.y; fobj.scale.setScalar(k);
+  F.W = size0.x * k;
+  fobj.position.set(FACE_X - (box0.min.x + size0.x / 2) * k, F.center.y - F.H / 2 - box0.min.y * k, -T / 2 - box0.min.z * k + .004);   // back on the wall, which runs behind the slab's back face
+  fobj.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; o.material.metalness = 0; o.material.envMapIntensity = 0 } });
+  scene.add(fobj);
+  // where a (u, v) on the face's front meets the surface: cast a ray from in front, toward the wall
+  const rc = new THREE.Raycaster(), hits = new Map();
+  fobj.updateMatrixWorld(true);
+  F.z = (u, v) => {
+    const key = u.toFixed(3) + ',' + v.toFixed(3);
+    if (!hits.has(key)) {
+      rc.set(new THREE.Vector3(FACE_X + (u - .5) * F.W, F.center.y + (v - .5) * F.H, 5), new THREE.Vector3(0, 0, -1));
+      const h = rc.intersectObject(fobj, true)[0];
+      hits.set(key, h ? h.point.z : .05);
+    }
+    return hits.get(key);
+  };
+  const wx0 = FACE_X - F.W / 2 - 3.5, wx1 = S.W / 2 + 3.5;
+  const wall = new THREE.Mesh(new THREE.BoxGeometry(wx1 - wx0, 5.4, .4), new THREE.MeshStandardMaterial({ color: 0x7f93a8, roughness: .9 }));
+  wall.position.set((wx0 + wx1) / 2, 2.7, -T / 2 - .2); wall.castShadow = wall.receiveShadow = true;
+  scene.add(wall); F.wall = wall;
+  const B = PIECES.both, x0 = FACE_X - F.W / 2, x1 = S.W / 2;
+  B.W = x1 - x0; B.H = Math.max(LIFT + S.H, F.center.y + F.H / 2); B.center.set((x0 + x1) / 2, B.H / 2, 0);
+
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(40, 64), new THREE.MeshStandardMaterial({ color: FLOOR, roughness: .95 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true;
+  scene.add(floor);
+  scene.fog = new THREE.Fog(BG, 22, 44);
+}
+
+/* ---------------- camera: frames a spot in the part of the screen the card leaves free ---------------- */
+const wide = () => stage.clientWidth >= 900;
+function covered() { if (tell) return wide() ? .14 : .22; return stage.classList.contains('min') || wide() ? .1 : Math.min(.6, ($('sheet').offsetHeight + 24) / stage.clientHeight) }
+function coveredSide() { return !tell && !stage.classList.contains('min') && wide() ? ($('sheet').offsetWidth + 40) / stage.clientWidth : 0 }
+function fitDist(r) {
+  const vf = THREE.MathUtils.degToRad(camera.fov) / 2, hf = Math.atan(Math.tan(vf) * camera.aspect);
+  const avail = 1 - covered() - .1, availW = 1 - coveredSide();
+  return r * Math.max((P.H / 2 + .15) / (Math.tan(vf) * avail), (P.W / 2 + .2) / (Math.tan(hf) * availW));
+}
+const surface = (u, v, p = P) => new THREE.Vector3((u - .5) * p.W, (v - .5) * p.H, p.front + p.z(u, v)).add(p.center);
+// both pieces in one shot, from the front (they share the wall)
+function bothPose(up = 0, extraH = 0) {
+  const B = PIECES.both, tv = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2), th = tv * camera.aspect;
+  const az = camera.aspect < 1 ? -.3 : .12;
+  const d = Math.min(22, Math.max((B.W / 2 + .4) / th, (B.H + extraH) / 2 / (tv * (1 - covered() - .22))));
+  const t = B.center.clone(); t.y += up + .12 * d * tv - (covered() - .1) * d * tv;   // leave the top for the title
+  return { p: new THREE.Vector3(Math.sin(az), .12, Math.cos(az)).multiplyScalar(d).add(t), t };
+}
+function pose({ u = .5, v = .5, r = 1, az = .18, el = .06 }) {
+  if (P === PIECES.both) return bothPose();
+  const t = surface(u, v), d = fitDist(r);
+  t.z = P === PIECES.face ? t.z * .7 : P.center.z;      // the face stands far off its wall: aim at its surface, not the wall
+  const tv = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2);
+  t.y -= (covered() - .1) * d * tv;
+  t.x -= coveredSide() * d * tv * camera.aspect;          // the card is on the left: the spot sits in the free right part
+  const p = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(d).add(t);
+  return { p, t };
+}
+let fly = null, beam = null;
+// mid (optional): the camera bends through it, so a walk between the pieces steps back into the hall
+function flyTo(target, ms = 1100, mid = null) { fly = { p0: camera.position.clone(), t0: controls.target.clone(), ...target, mid, start: performance.now(), ms } }
+
+/* ---------------- spots ---------------- */
+let active = -1, raysOn = false, spots = [];
+function makeSpots() {
+  $('spots').innerHTML = '';
+  spots = P.cards.map((c, i) => {
+    const b = document.createElement('button');
+    b.className = 'spot'; b.setAttribute('aria-label', c.title);
+    b.onclick = () => show(i);
+    $('spots').append(b); return b;
+  });
+}
+const v3 = new THREE.Vector3();
+function placeSpots() {
+  if (!raysOn) return;
+  const w = stage.clientWidth, h = stage.clientHeight, view = camera.position.clone().sub(controls.target).normalize();
+  P.cards.forEach((c, i) => {
+    v3.copy(surface(...c.at)).project(camera);
+    const behind = view.z < .05 || v3.z > 1;
+    spots[i].style.left = `${(v3.x + 1) / 2 * w}px`; spots[i].style.top = `${(1 - v3.y) / 2 * h}px`;
+    spots[i].classList.toggle('away', behind);
+  });
+}
+function setRays(on) {
+  raysOn = on; $('spots').hidden = !on; $('rays').setAttribute('aria-pressed', on);
+  if (on) placeSpots(); else { ray.on.value = 0; dirty = true }
+}
+
+/* ---------------- the card ---------------- */
+function show(i) {
+  active = (i + P.cards.length) % P.cards.length;
+  const c = P.cards[active];
+  $('kicker').textContent = c.kicker; $('title').textContent = c.title; $('text').innerHTML = c.html;
+  $('count').textContent = `${active + 1} / ${P.cards.length}`;
+  const b = $('body'); b.classList.remove('fade'); void b.offsetWidth; b.classList.add('fade'); b.scrollTop = 0;
+  spots.forEach((s, k) => s.classList.toggle('on', k === active));
+  setOpen(true); if (!raysOn) setRays(true);
+  if (P === PIECES.slab) { ray.tgt.set(...c.at); beam = { start: performance.now(), ms: active === 0 ? 500 : 900 } }
+  else if (c.sun !== undefined) swingSun(c.sun);
+  flyTo(pose(c.view));
+}
+function setOpen(open) {
+  stage.classList.toggle('min', !open);
+  if (!open) { active = -1; spots.forEach(s => s.classList.remove('on')); ray.on.value = 0; beam = null; flyTo(pose({})); }
+  resize();
+}
+// walk to the other piece; optionally open one of its cards on arrival
+function goTo(name, card) {
+  P = PIECES[name];
+  document.querySelectorAll('.pieces button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === name));
+  $('raysLabel').textContent = P.label; $('rays').hidden = !P.cards.length;
+  ray.on.value = 0; beam = null; sunAnim = null; makeSpots(); setSun(name === 'slab' ? .45 : .55);
+  if (card === undefined) { setRays(false); setOpen(false); fly.ms = 1600 }
+  else { setRays(true); show(card); fly.ms = 1600 }
+}
+$('prev').onclick = () => show(active - 1);
+$('next').onclick = () => show(active + 1);
+$('fold').onclick = () => setOpen(false);
+$('rays').onclick = () => raysOn ? setRays(false) : show(0);
+document.querySelectorAll('.pieces button').forEach(b => b.onclick = () => { if (PIECES[b.dataset.p] !== P) goTo(b.dataset.p) });
+$('text').addEventListener('click', e => { const g = e.target.closest('[data-go]'); if (g) goTo(g.dataset.go, 2) });
+
+/* ---------------- the story: the king tells it, and one day passes over both pieces ----------------
+   one step per recorded line (narration_script.md). ch: chapter (الإنسان · الإله · اللقاء); sun climbs from dawn to dusk.
+   narration.mp3 (ElevenLabs "David - Deep", 95.1 s) drives it: CUES = line starts (s), measured from the pauses.
+   If the audio cannot play, each line lasts by its length (lineMs). */
+const STORY = [
+  { ch: 0, p: 'both', view: {}, sun: -.95, say: 'أنا إخناتون.' },
+  { p: 'face', view: { r: .92, az: .15 }, sun: -.9, say: 'هذا وجهي… صنعه نحّات من الجص، في مدينتي، أفق آتون.' },
+  { card: 1, sun: -.85, say: 'على جبهتي الصِّل، الكوبرا الملكية… تحرسني.' },
+  { card: 2, sun: -.8, say: 'ويحيط برأسي شريط عريض، يعلوه غطاء المُلك.' },
+  { card: 3, sun: -.72, say: 'انظروا إلى عينيّ… طويلتان، ضيقتان، تنظران إلى أسفل.' },
+  { card: 4, sun: -.62, say: 'وشفتاي ممتلئتان، وذقني طويل يمتد إلى الأمام.' },
+  { card: 5, sun: -.5, say: 'في ورشة النحات تحتمس… وُجدت وجوه كثيرة من الجص، بعدي بأكثر من ثلاثة آلاف عام.' },
+  { ch: 1, p: 'slab', walk: true, view: {}, sun: -.15, say: 'والآن… تعالوا إلى اللوح. هناك سترونني مرة أخرى.' },
+  { card: 0, sun: 0, say: 'في أعلاه آتون، قرص الشمس… لا وجه له ولا جسد… نور فقط.' },
+  { card: 1, sun: .1, say: 'وبجواره خرطوشان… فيهما يُكتب اسمه، كما يُكتب اسم الملك.' },
+  { card: 2, at: [.57, .65], view: { u: .56, v: .66, r: .5 }, inset: true, sun: .2, say: 'وهذا أنا… أقف تحته، وأرفع إليه قرابيني.' },
+  { card: 3, sun: .3, say: 'انظروا إلى أطراف الأشعة… كل شعاع ينتهي بيد صغيرة، تمتد إليّ.' },
+  { card: 4, sun: .4, say: 'وخلفي أسرتي… ترفع الصلاصل فترنّ.' },
+  { card: 5, sun: .5, say: 'وأمامي مائدتان عاليتان، عليهما الزهور… قربان للشمس.' },
+  { card: 6, sun: .6, say: 'وهذه الحافة المائلة ليست كسرًا… ففي معابدي وقصوري، كانت المنحدرات تُحاط بحواجز، حافتها مائلة.' },
+  { ch: 2, p: 'both', finale: true, sun: -.2, say: 'وجهي هنا… وصورتي هناك.' },
+  { finale: true, sun: 0, say: 'والشمس… ما زالت تشرق.' },
+];
+{ let ch = 0, p = 'face'; for (const s of STORY) { s.ch ??= ch; s.p ??= p; ch = s.ch; p = s.p } }
+const lineMs = s => 1600 + s.say.length * 85;
+const CUES = [0.1, 2.07, 8.57, 13.23, 18.22, 24.35, 29.82, 38.73, 44.22, 51.2, 57.32, 62.68, 69.1, 73.09, 79.13, 88.97, 92.25];
+const audio = new Audio('narration.mp3'); audio.preload = 'auto';
+function cueAt(t) { let i = 0; while (i + 1 < CUES.length && t >= CUES[i + 1]) i++; return i }
+// follows the voice; also from timeupdate, so it keeps up when animation frames are throttled
+function syncTell(now) {
+  if (!tell || tell.paused) return;
+  if (tell.audio) { const i = cueAt(audio.currentTime); if (i !== tell.i) tellStep(i) }
+  else if (now >= tell.until) tellStep(tell.i + 1);
+}
+audio.ontimeupdate = () => syncTell(performance.now());
+audio.onended = () => { const t = tell; setTimeout(() => { if (tell && tell === t) endTell() }, 1800) };
+
+// the closing: Aten rises over the hall, and its rays, each ending in a small hand, reach down to the face and to the king on the stone
+function spriteTex(draw, n = 128) { const c = document.createElement('canvas'); c.width = c.height = n; draw(c.getContext('2d'), n); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t }
+const glowTex = spriteTex((g, n) => { const r = g.createRadialGradient(n / 2, n / 2, 0, n / 2, n / 2, n / 2); r.addColorStop(0, '#fff6d8'); r.addColorStop(.22, '#ffd27acc'); r.addColorStop(1, '#ffb04a00'); g.fillStyle = r; g.fillRect(0, 0, n, n) });
+const diskTex = spriteTex((g, n) => { const r = g.createRadialGradient(n * .45, n * .42, n * .05, n / 2, n / 2, n * .5); r.addColorStop(0, '#fff3c9'); r.addColorStop(.8, '#f0b44a'); r.addColorStop(.97, '#d9952c'); r.addColorStop(1, '#d9952c00'); g.fillStyle = r; g.beginPath(); g.arc(n / 2, n / 2, n / 2, 0, 7); g.fill() });
+const handTex = spriteTex((g, n) => {          // an open hand, fingers pointing down the ray
+  g.fillStyle = g.strokeStyle = '#ffe6ad'; g.lineCap = 'round';
+  g.beginPath(); g.ellipse(n / 2, n * .36, n * .16, n * .19, 0, 0, 7); g.fill();
+  g.lineWidth = n * .075; [-.11, -.035, .04, .115].forEach((dx, i) => { g.beginPath(); g.moveTo(n / 2 + dx * n, n * .46); g.lineTo(n / 2 + dx * n * 1.2, n * (.8 - Math.abs(i - 1.5) * .05)); g.stroke() });
+  g.beginPath(); g.moveTo(n * .36, n * .4); g.lineTo(n * .22, n * .56); g.stroke();
+});
+const spriteMat = map => new THREE.SpriteMaterial({ map, transparent: true, depthWrite: false, fog: false, toneMapped: false, opacity: 0 });
+const aten = new THREE.Group(); aten.visible = false; scene.add(aten);
+const glow = new THREE.Sprite(spriteMat(glowTex)); glow.material.blending = THREE.AdditiveBlending; glow.scale.setScalar(3.4);
+const disk = new THREE.Sprite(spriteMat(diskTex)); disk.scale.setScalar(.95); disk.renderOrder = 2;
+aten.add(glow, disk);
+const rayMat = [.6, .2].map((o, i) => new THREE.MeshBasicMaterial({ color: i ? 0xffc56a : 0xfff1c8, transparent: true, opacity: 0, blending: THREE.AdditiveBlending, depthWrite: false, fog: false }));
+const rayGeo = [.011, .045].map(r => new THREE.CylinderGeometry(r, r, 1, 10, 1, true).translate(0, .5, 0));
+const touch = new THREE.PointLight(0xffc27a, 0, 3.2, 1.6); scene.add(touch);
+let atenRays = null, atenAnim = null, atenK = 0;
+const sunAt = () => PIECES.both.center.clone().add(new THREE.Vector3(0, 3.1, 1.4));
+function rigAten() {
+  const s = sunAt();
+  const ends = [surface(.5, .4, PIECES.face).add(new THREE.Vector3(0, 0, .03)), surface(.57, .65, PIECES.slab).add(new THREE.Vector3(0, 0, .03))];
+  for (let i = 0; i < 9; i++) { const a = -1.05 + i * 2.1 / 8; ends.push(s.clone().add(new THREE.Vector3(Math.sin(a) * 2.3, -Math.cos(a) * 2.3, .25))) }   // the free rays end in the air, as on the stone
+  atenRays = ends.map(e => {
+    const g = new THREE.Group(); rayGeo.forEach((geo, i) => g.add(new THREE.Mesh(geo, rayMat[i])));
+    const hand = new THREE.Sprite(spriteMat(handTex)); hand.scale.setScalar(.28);
+    aten.add(g, hand); return { end: e, g, hand };
+  });
+}
+const v2a = new THREE.Vector3(), v2b = new THREE.Vector3();
+function orientHands() {      // turn each hand so its fingers follow its ray on screen
+  for (const r of atenRays || []) {
+    v2a.copy(disk.position).project(camera); v2b.copy(r.hand.position).project(camera);
+    r.hand.material.rotation = Math.atan2(v2b.y - v2a.y, (v2b.x - v2a.x) * camera.aspect) + Math.PI / 2;
+  }
+}
+function setAten(k) {             // k: 0..1 over the whole closing (the disk rises, then the rays reach out)
+  if (!atenRays) rigAten();
+  atenK = k; aten.visible = k > 0;
+  const rise = ease(Math.min(1, k / .4)), reach = ease(THREE.MathUtils.clamp((k - .32) / .68, 0, 1)), s = sunAt();
+  s.y -= 1.6 * (1 - rise);
+  disk.position.copy(s); glow.position.copy(s);
+  disk.material.opacity = rise; glow.material.opacity = rise * .9;
+  rayMat[0].opacity = Math.min(1, reach * 5) * .55; rayMat[1].opacity = Math.min(1, reach * 5) * .2;
+  for (const r of atenRays) {
+    const d = r.end.clone().sub(s), L = d.length();
+    r.g.position.copy(s); r.g.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), d.normalize());
+    r.g.scale.set(1, Math.max(.001, (L - .1) * reach), 1); r.g.visible = reach > 0;
+    r.hand.position.copy(s).addScaledVector(d, (L - .02) * reach); r.hand.material.opacity = THREE.MathUtils.smoothstep(reach, .8, 1);
+  }
+  orientHands();
+  touch.position.copy(atenRays[0].end).add(new THREE.Vector3(0, .1, .8)); touch.intensity = THREE.MathUtils.smoothstep(reach, .85, 1) * 4;
+  dirty = true;
+}
+
+// the same face, turned to its profile, beside the king on the stone
+const insetCam = new THREE.PerspectiveCamera(26, 1, .05, 60), insetAnim = { on: false, start: 0 };
+function poseInset(now) {
+  const F = PIECES.face, k = Math.min(1, (now - insetAnim.start) / 2600), az = .3 + (-1.3 - .3) * ease(k);
+  const t = new THREE.Vector3(FACE_X, F.center.y, F.z(.5, .5) * .55);
+  insetCam.position.set(Math.sin(az), .08, Math.cos(az)).multiplyScalar(5.6).add(t); insetCam.lookAt(t);
+  return k < 1;
+}
+function setInset(on) { if (on !== insetAnim.on) { insetAnim.on = on; insetAnim.start = performance.now(); $('inset').classList.toggle('on', on); dirty = true } }
+
+function chapters(ch) { [...$('chapters').querySelectorAll('span')].forEach((s, i) => { s.classList.toggle('on', i === ch); s.classList.toggle('done', i < ch) }) }
+function tellStep(i) {
+  if (i >= STORY.length) return endTell();
+  const s = STORY[i], now = performance.now();
+  tell.i = i; tell.until = now + lineMs(s);
+  const l = $('line'); l.textContent = s.say; l.classList.remove('fade'); void l.offsetWidth; l.classList.add('fade');
+  chapters(s.ch); setInset(!!s.inset);
+  if (PIECES[s.p] !== P) { P = PIECES[s.p]; makeSpots() }
+  if (s.finale) {
+    swingSun(s.sun, 2600);
+    if (!atenAnim) {
+      ray.tgt.set(...DISK); ray.on.value = .5; ray.reach.value = 0;          // the disk on the stone lights first
+      flyTo(bothPose(.9, 2.2), 2800);
+      atenAnim = { start: now + 900, ms: 5200 };
+    }
+    return;
+  }
+  const c = s.card !== undefined ? P.cards[s.card] : null;
+  if (P === PIECES.slab && c) { ray.tgt.set(...(s.at || c.at)); beam = { start: now, ms: 900 } } else { ray.on.value = 0; beam = null }
+  swingSun(s.sun, s.walk ? 3200 : 1800);
+  const target = pose(s.view || c.view);
+  if (s.walk) flyTo(target, 3600, new THREE.Vector3(0, .6, 4.5)); else flyTo(target, 1700);
+}
+function startTell() {
+  setRays(false); setOpen(false); fly = null;
+  tell = { i: 0, until: 0, paused: false, left: 0, audio: true };
+  audio.currentTime = 0;
+  audio.play().catch(() => { if (tell) { tell.audio = false; tell.until = performance.now() + lineMs(STORY[tell.i]) } });
+  stage.classList.add('telling'); $('sky').classList.remove('hint'); resize();
+  $('tellPause').textContent = '❚❚';
+  tellStep(0);
+}
+function endTell() {
+  audio.pause(); tell = null; atenAnim = null; setAten(0); setInset(false); ray.on.value = 0; beam = null;
+  stage.classList.remove('telling'); $('skyLbl').textContent = 'حرّك الشمس';
+  P = PIECES.both; makeSpots(); $('raysLabel').textContent = P.label; $('rays').hidden = true;
+  document.querySelectorAll('.pieces button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === 'both'));
+  resize(); swingSun(.55, 2000); flyTo(pose({ az: .3 }), 2600);
+}
+$('tellBtn').onclick = startTell;
+$('tellStop').onclick = endTell;
+$('tellPause').onclick = () => {
+  if (!tell) return;
+  tell.paused = !tell.paused;
+  if (tell.audio) tell.paused ? audio.pause() : audio.play();
+  else if (tell.paused) tell.left = tell.until - performance.now(); else tell.until = performance.now() + tell.left;
+  $('tellPause').textContent = tell.paused ? '▶' : '❚❚';
+};
+
+/* ---------------- the sky dial ---------------- */
+const sky = $('skySvg');
+function skyFrom(e) {
+  const r = sky.getBoundingClientRect();
+  sunAnim = null; setSun(((e.clientX - r.left) / r.width - .5) * 2 / (92 / 108));
+}
+sky.addEventListener('pointerdown', e => { sky.setPointerCapture(e.pointerId); $('sky').classList.remove('hint'); skyFrom(e) });
+sky.addEventListener('pointermove', e => { if (sky.hasPointerCapture(e.pointerId)) skyFrom(e) });
+sky.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft') setSun(sunS - .1); else if (e.key === 'ArrowRight') setSun(sunS + .1); else return;
+  e.preventDefault();
+});
+
+/* ---------------- loop ---------------- */
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  if (!w || !h) return;                    // a hidden tab has no size yet; the next resize sets it
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); dirty = true;
+  if (!Number.isFinite(camera.position.x)) { const p = pose({ az: .3 }); camera.position.copy(p.p); controls.target.copy(p.t) }
+}
+const ease = t => t < .5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+controls.addEventListener('change', () => dirty = true);
+function tick(now) {
+  if (fly) {
+    const k = Math.min(1, (now - fly.start) / fly.ms), e = ease(k);
+    camera.position.lerpVectors(fly.p0, fly.p, e); controls.target.lerpVectors(fly.t0, fly.t, e);
+    if (fly.mid) camera.position.addScaledVector(fly.mid, 4 * e * (1 - e));
+    if (k >= 1) fly = null; dirty = true;
+  }
+  if (beam) {
+    const k = Math.min(1, (now - beam.start) / beam.ms);
+    ray.on.value = Math.min(1, k * 3); ray.reach.value = ease(k);
+    if (k >= 1) beam = null; dirty = true;
+  }
+  if (sunAnim) {
+    const k = Math.min(1, (now - sunAnim.start) / sunAnim.ms);
+    setSun(sunAnim.from + (sunAnim.to - sunAnim.from) * ease(k));
+    if (k >= 1) sunAnim = null;
+  }
+  syncTell(now);
+  if (atenAnim && now >= atenAnim.start) {
+    const k = Math.min(1, (now - atenAnim.start) / atenAnim.ms);
+    setAten(k); if (k >= 1) atenAnim = { start: Infinity };
+  } else if (atenK > 0 && dirty) orientHands();
+  let insetMoving = false;
+  if (insetAnim.on) insetMoving = poseInset(now);
+  if (controls.update()) dirty = true;
+  if (dirty || insetMoving) {
+    renderer.render(scene, camera); placeSpots(); dirty = false;
+    if (insetAnim.on) {
+      const r = $('inset').getBoundingClientRect(), s = stage.getBoundingClientRect(), y = s.bottom - r.bottom;
+      insetCam.aspect = r.width / r.height; insetCam.updateProjectionMatrix();
+      PIECES.slab.parts.forEach(o => o.visible = false); aten.visible = PIECES.face.wall.visible = false;
+      renderer.setScissorTest(true); renderer.setViewport(r.left - s.left, y, r.width, r.height); renderer.setScissor(r.left - s.left, y, r.width, r.height);
+      renderer.render(scene, insetCam);
+      renderer.setScissorTest(false); renderer.setViewport(0, 0, stage.clientWidth, stage.clientHeight);
+      PIECES.slab.parts.forEach(o => o.visible = true); PIECES.face.wall.visible = true; aten.visible = atenK > 0;
+    }
+  }
+  requestAnimationFrame(tick);
+}
+addEventListener('resize', resize);
+build().then(() => {
+  makeSpots(); resize(); setSun(.55); $('rays').hidden = true;
+  const p = pose({ az: .3 }); camera.position.copy(p.p); controls.target.copy(p.t);
+  $('loading').hidden = true; requestAnimationFrame(tick);
+}).catch(err => { $('loading').querySelector('p').textContent = 'تعذّر التحميل. أعد تحميل الصفحة.'; console.error(err) });
+</script>
