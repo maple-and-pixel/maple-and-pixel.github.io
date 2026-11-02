@@ -1,0 +1,463 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تحيّة الشمس</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+/* One screen: the baboon alone in the blue studio. Its own idea: THE MOON (Thoth reckons the month).
+   A row of moons from new to full: each phase is a card. Drag along the row and the statue turns between them,
+   while the light swings from a raking side light (crescent) to a full front light (full moon). */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --ink: #1f2228;
+  --ink-2: #5d6470;
+  --sheet: #f3f1ec;
+  --sheet-2: #e4e3de;
+  --moon: #f2efe4;          /* moonlight */
+  --silver: #c9d3de;
+  --night: #141b24;
+  --f-display: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+  --panel-h: min(36vh, 280px);
+  --dock-h: 86px;
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--moon); outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 35%, transparent 55%, #0d162055 100%) }
+.shade { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(85% 70% at 50% 42%, transparent 45%, #05080dcc 100%); opacity: 0; transition: opacity 2.5s }
+.stage.telling .shade { opacity: 1 }
+
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; pointer-events: none }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.5rem, 6vw, 2.2rem); line-height: 1.15; color: #fbf9f4; text-shadow: 0 1px 14px #0005 }
+.sub { margin: .25rem 0 0; color: #eef0f2; font-size: .88rem; text-shadow: 0 1px 10px #0006 }
+
+/* the moons: new → full along a shallow arc, like the moon's own path */
+.moons { position: absolute; inset-inline: 0; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); height: var(--dock-h); display: flex; flex-direction: column; align-items: center; pointer-events: none }
+.moons .row { position: relative; width: min(92vw, 380px); height: 58px; pointer-events: auto; touch-action: none; user-select: none; cursor: grab; border-radius: 999px; background: #0d1620a6; box-shadow: 0 10px 30px #0d162055 }
+.moons .row.drag { cursor: grabbing }
+.moon { position: absolute; top: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; padding: 0; border: 0; background: none; cursor: pointer; transition: transform .35s }
+.moon svg { width: 100%; height: 100%; display: block; overflow: visible }
+.moon .disc { fill: #2a3542; stroke: #ffffff30; stroke-width: 1 }
+.moon .lit { fill: var(--moon) }
+.moon.on { transform: scale(1.32) }
+.moon.on .disc { stroke: #fff; stroke-width: 1.4 }
+.moon.on svg { filter: drop-shadow(0 0 7px #f2efe4aa) }
+.moons .lbl { margin-top: 6px; font-family: var(--f-display); font-size: .85rem; color: #f4f5f2; text-shadow: 0 1px 8px #000a; min-height: 1.2em }
+.moons.hint .moon:first-child { animation: glow 2.2s ease-in-out 3 }
+@keyframes glow { 50% { transform: scale(1.25) } }
+
+/* the card, above the moons */
+.panel { position: absolute; inset-inline: 0; bottom: calc(var(--dock-h) + 16px + env(safe-area-inset-bottom, 0px)); padding: 0 12px; display: flex; justify-content: center; pointer-events: none }
+.sheet {
+  position: relative; pointer-events: auto; width: min(100%, 520px); height: var(--panel-h); display: flex; flex-direction: column;
+  background: linear-gradient(170deg, var(--sheet), var(--sheet-2)); border-radius: 22px;
+  box-shadow: 0 14px 40px #10192a66, inset 0 0 0 1px #ffffffaa;
+}
+.sheet::before { content: ""; position: absolute; top: 0; inset-inline: 22px; height: 3px; border-radius: 0 0 3px 3px; background: linear-gradient(90deg, transparent, var(--silver), transparent) }
+.body { flex: 1; overflow: auto; padding: 16px 18px 6px; padding-inline-end: 48px; scrollbar-width: thin }
+.kicker { font-family: var(--f-display); color: var(--ink-2); font-size: .82rem }
+.sheet h2 { margin: .1rem 0 .45rem; font-family: var(--f-display); font-weight: 700; font-size: 1.3rem; line-height: 1.35 }
+.sheet p { margin: 0 0 .5rem; font-size: 1.02rem; line-height: 1.9 }
+.src { display: block; margin-top: .3rem; font-size: .8rem; line-height: 1.7; color: var(--ink-2) }
+.go { display: inline-block; margin-top: .3rem; border-radius: 999px; padding: 9px 18px; font-family: var(--f-display); font-size: .95rem; background: var(--night); color: #f4f5f2; text-decoration: none }
+.nav { display: flex; align-items: center; gap: 8px; padding: 6px 12px 12px }
+.nav button { border: 0; cursor: pointer; border-radius: 999px; height: 40px; min-width: 40px; padding: 0 14px; background: #1f22280f; font-family: var(--f-display); font-size: .95rem }
+.nav .next { background: var(--night); color: #f4f5f2; margin-inline-start: auto }
+.body.fade { animation: fade .45s ease }
+@keyframes fade { from { opacity: 0; transform: translateY(6px) } }
+.fold { position: absolute; top: 10px; inset-inline-end: 10px; width: 34px; height: 34px; border-radius: 50%; border: 0; cursor: pointer; background: #1f22280f; font-size: 1.1rem; line-height: 1 }
+.stage.min .panel { display: none }
+
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading p { font-family: var(--f-display); color: #fbf9f4; text-align: center; padding: 0 24px; animation: breathe 1.6s ease-in-out infinite }
+@keyframes breathe { 50% { opacity: .35 } }
+/* the story: Djehuty tells it; the moon fills from new to full as he speaks */
+.tell { margin-top: .6rem; border: 0; cursor: pointer; border-radius: 999px; height: 40px; padding: 0 18px; font-family: var(--f-display); font-size: .95rem; background: var(--moon); color: var(--night); pointer-events: auto; box-shadow: 0 8px 24px #0d162044 }
+.chapters { display: none; gap: 4px; margin-top: .6rem; padding: 4px; border-radius: 999px; background: #0d1620a6; pointer-events: auto; align-items: center }
+.chapters span { height: 34px; padding: 0 12px; display: grid; place-items: center; border-radius: 999px; font-family: var(--f-display); font-size: .88rem; color: #f4f5f280; transition: background .6s, color .6s }
+.chapters span.done { color: #f4f5f2 }
+.chapters span.on { background: var(--moon); color: var(--night) }
+.chapters button { border: 0; cursor: pointer; width: 34px; height: 34px; border-radius: 50%; background: #ffffff1a; color: #f4f5f2; font-size: .85rem }
+.stage.telling .tell { display: none }
+.stage.telling .chapters { display: inline-flex }
+.stage.telling .panel { display: none }
+.stage.telling .moons .row { cursor: default }
+.subs { position: absolute; inset-inline: 0; bottom: calc(var(--dock-h) + 18px + env(safe-area-inset-bottom, 0px)); display: none; justify-content: center; padding: 0 16px; pointer-events: none }
+.stage.telling .subs { display: flex }
+.subs p { margin: 0; max-width: 760px; text-align: center; font-size: clamp(1.05rem, 4.4vw, 1.4rem); line-height: 1.8; color: #fbf9f4; background: #0d1620b8; padding: 10px 20px; border-radius: 16px; box-shadow: 0 10px 30px #0d162055 }
+.subs p.fade { animation: fade .6s ease }
+@media (min-width: 900px) {
+  :root { --panel-h: min(52vh, 360px) }
+  .panel { justify-content: flex-end; padding-inline-end: 28px; bottom: calc(var(--dock-h) + 28px) }   /* rtl: the card sits at the left */
+  .moons .row { width: 440px }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<main class="stage min" id="stage" dir="rtl" lang="ar" aria-label="تحيّة الشمس: عرض ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="shade"></div>
+  <div class="loading" id="loading"><p>يطلع الفجر…</p></div>
+
+  <div class="top">
+    <h1>تحيّة الشمس</h1>
+    <p class="sub">الإله جحوتي في هيئة البابون</p>
+    <button class="tell" id="tellBtn">▶ اسمع جحوتي</button>
+    <div class="chapters" id="chapters"><span>جحوتي</span><span>الفجر</span><span>القمر</span><span>الكلمة</span><button id="tellPause" aria-label="إيقاف مؤقت">❚❚</button><button id="tellStop" aria-label="إنهاء الحكاية">✕</button></div>
+  </div>
+  <div class="subs"><p id="line"></p></div>
+
+  <div class="panel">
+    <section class="sheet" id="sheet" aria-live="polite">
+      <button class="fold" id="fold" aria-label="إخفاء">⌄</button>
+      <div class="body" id="body"><div class="kicker" id="kicker"></div><h2 id="title"></h2><div id="text"></div></div>
+      <div class="nav">
+        <button id="prev" aria-label="السابق">→</button>
+        <button class="next" id="next">التالي ←</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="moons hint" id="moons">
+    <div class="row" id="row" role="group" aria-label="أوجه القمر"></div>
+    <div class="lbl" id="lbl"></div>
+  </div>
+</main>
+
+<!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+/* ---------------- the month: one card per phase, new moon → full moon ----------------
+   view: v = height on the statue (0 feet, 1 top of the head), r = share of the whole statue in frame, az = around it (0 = front), el = up/down.
+   ⚠ Which original this cast copies is NOT confirmed (HANDOFF.md): the copy speaks of the type, never names an original. */
+const CARDS = [
+  { kicker: 'التمثال', title: 'جحوتي في هيئة البابون', view: { v: .39, r: 1.25, az: .35 },
+    html: '<p>الإله جحوتي في هيئة ذكر بابون، يقف على قدميه الخلفيتين فوق قاعدة مستطيلة، ويرفع كفّيه أمام صدره.</p><p>عرف المصريون القرد إلهًا منذ أقدم عصورهم، باسم «حج ور»: الأبيض العظيم. ثم صار البابون هيئةً من هيئات جحوتي.</p>' },
+  { kicker: 'اليدان', title: 'هيئة التعبّد', view: { v: .62, r: .48, az: .12, el: .02 },
+    html: '<p>الكفّان مرفوعتان، باطنهما إلى الأمام، والأصابع ممدودة متلاصقة. هي الإشارة نفسها التي يرفع بها المصري يديه للإله في النقوش.</p><p>وبرسم رجل يرفع يديه هكذا تُختم في الهيروغليفية كلمة «دوا»: سبّح وتعبّد.</p>' },
+  { kicker: 'عند الأفق', title: 'تحيّة الشمس', view: { v: .55, r: .82, az: -.25, el: -.12 },
+    html: '<p>يصحو البابون مع الفجر، فيتّجه نحو الشرق يتدفّأ، وتعلو أصواته. رأى المصريون في ذلك تحيّةً للشمس الطالعة.</p><p>ولذلك تقف القرود في رسوم كتاب الموتى عند الأفق، رافعة أيديها لقرص الشمس وهو يشرق.</p>' },
+  { kicker: 'الكتفان والظهر', title: 'العباءة', view: { v: .66, r: .62, az: 2.5, el: .12 },
+    html: '<p>على الكتفين والصدر شعر طويل كثيف، ينزل على الظهر حتى الوسط كالعباءة. هذا ما يميّز الذكر البالغ من البابون المقدّس.</p><p>نحته الفنان خصلًا متراكبة، طرف كل خصلة فوق التي تليها، كالريش.</p>' },
+  { kicker: 'الرأس', title: 'الوجه', view: { v: .87, r: .32, az: .3, el: .05 },
+    html: '<p>خطم طويل، وحاجب بارز يظلّل عينين صغيرتين غائرتين، وفم مطبق.</p><p>وحول الوجه شعر منحوت خطوطًا متوازية، يحيط به من الجانبين كالإطار.</p>' },
+  { kicker: 'الإله', title: 'ربّ القمر والكتابة', view: { v: .55, r: .9, az: -.95, el: .05 },
+    html: '<p>جحوتي هو القمر الذي يضيء الليل، وبه تُحسب الأيام والشهور. ولذلك كان ربّ الحساب والكتابة، «ربّ الكلام الإلهي»، وكاتب الآلهة الذي يسجّل الحكم حين يوزن قلب الميت.</p><p>وفي النصوص المصرية أنّ الإله ست جرح عين حورس في صراعهما، فجمعها جحوتي وشفاها حتى عادت سليمة: «الوجات». ورأى المصريون القمر تلك العين: ينقص كأنها جُرحت، ثم يمتلئ كل شهر، فكان يوم البدر عندهم يوم امتلاء العين.</p><p>وفي هيئة البابون يحمل على رأسه قرص القمر داخل هلال. ومركز عبادته «خمنو»، الأشمونين، وفيها تماثيل ضخمة لقرود من الكوارتزيت من عهد أمنحتب الثالث.</p><span class="src">باسمه سُمّي أول شهور السنة المصرية: توت. و«تحوت» هو الاسم الذي نقله عنه الإغريق.</span>' },
+  { kicker: 'في المعابد', title: 'على قاعدة المسلّة', view: { v: .39, r: 1.25, az: 0 },
+    html: '<p>الوقفة نفسها على قاعدة مسلّة رمسيس الثاني أمام معبد الأقصر: قرود واقفة ترفع أيديها لشمس الصباح، وجزء منها اليوم في متحف اللوفر. وفي أعلى واجهة معبد أبو سمبل صفّ طويل من القرود يستقبل الشمس كل فجر.</p><p>وفي العمارنة رفع الملك يديه إلى قرص الشمس بالإشارة نفسها.</p><a class="go" href="../amarna-hall/">إلى قاعة آتون ←</a>' },
+];
+const N = CARDS.length;
+
+/* ---------------- renderer: draws only when something changes ---------------- */
+const stage = document.getElementById('stage'), canvas = document.getElementById('c');
+const $ = id => document.getElementById(id);
+const phone = matchMedia('(pointer: coarse)').matches;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+const scene = new THREE.Scene();
+const BG = 0x748ba1, FLOOR = 0x5c7287;
+scene.background = new THREE.Color(BG);
+scene.fog = new THREE.Fog(BG, 14, 30);
+const camera = new THREE.PerspectiveCamera(34, 1, .05, 100);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08;
+controls.minPolarAngle = .3; controls.maxPolarAngle = 1.72;
+controls.minDistance = 1; controls.maxDistance = 12;
+controls.zoomToCursor = true;
+
+const H = 2;                       // the statue's height in world units (its real size is not measured)
+let W = .65, D = .84;              // set from the model in build()
+const PED = .45;                   // a plain display plinth under the statue
+
+const hemi = new THREE.HemisphereLight(0xf4f6ff, FLOOR, .9); scene.add(hemi);
+const key = new THREE.DirectionalLight(0xfffaf0, 2.7); key.castShadow = true;
+key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048);
+Object.assign(key.shadow.camera, { left: -2.2, right: 2.2, top: 1.6, bottom: -2.2, near: .5, far: 20 }); key.shadow.bias = -.0004; key.shadow.normalBias = .01;
+const rim = new THREE.DirectionalLight(0xdde8ff, 1.1);      // from behind: keeps the black stone's outline clear of the blue
+scene.add(key, key.target, rim, rim.target);
+// the story only: the hall goes dark, a spotlight falls on him from above, moonlight rims him from behind
+const spot = new THREE.SpotLight(0xfff4e4, 0, 0, .33, .75, 0); spot.castShadow = true;
+spot.shadow.mapSize.set(1024, 1024); spot.shadow.bias = -.0005;
+scene.add(spot, spot.target);
+const DARK = new THREE.Color(0x090d12), GOLD = new THREE.Color(0xffc46b), SILVER = new THREE.Color(0xcfe0ff), RIM0 = new THREE.Color(0xdde8ff);
+let floorMat = null, look = { cine: 0, warm: 0 }, lookGoal = { ...look }, lookAnim = null;
+function applyLook() {
+  const { cine, warm } = look;
+  scene.background.set(BG).lerp(DARK, cine); scene.fog.color.copy(scene.background);
+  hemi.intensity = .9 - cine * .82;                   // the floor keeps its colour: only the spot's pool stays lit
+  key.intensity = 2.7 - cine * 2.05 + warm * 2.4; key.color.set(0xfffaf0).lerp(GOLD, warm);
+  spot.intensity = cine * 7;
+  rim.intensity = 1.1 + cine * (1 + 2.6 * light.m) * (1 - warm * .6); rim.color.copy(RIM0).lerp(SILVER, cine);
+  renderer.shadowMap.needsUpdate = true; dirty = true;
+}
+function lookTo(to, ms) { Object.assign(lookGoal, to); lookAnim = { from: { ...look }, to: { ...lookGoal }, start: performance.now(), ms } }   // goals add up, so a warm change never cancels the dark
+let dirty = true;
+
+/* the moon sets the light: m in [0, 1] (0 new, 1 full) and the azimuth of the view it belongs to.
+   Crescent → the light rakes in from the side (the carving stands out); full → it comes from the front. */
+let moonT = 0, light = { m: .6, az: .3 }, lightAnim = null;
+function lightTo(m, az, ms) { lightAnim = { from: { ...light }, to: { m, az }, start: performance.now(), ms } }
+function setLight(m, az) {
+  light.m = m; light.az = az;
+  const la = az + THREE.MathUtils.lerp(1.35, .25, m), el = THREE.MathUtils.lerp(.38, .75, m);
+  key.position.set(Math.sin(la) * Math.cos(el), Math.sin(el), Math.cos(la) * Math.cos(el)).multiplyScalar(8).add(new THREE.Vector3(0, PED + H * .5, 0));
+  key.target.position.set(0, PED + H * .5, 0);
+  rim.position.set(-Math.sin(az) * 6, PED + H * 1.2, -Math.cos(az) * 6); rim.target.position.set(0, PED + H * .6, 0);
+  renderer.shadowMap.needsUpdate = true; dirty = true;
+}
+
+/* ---------------- build ---------------- */
+async function build() {
+  const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('model.glb');   // Tripo model of the college cast, slimmed (tripo_pieces/HANDOFF.md)
+  const obj = gltf.scene, box = new THREE.Box3().setFromObject(obj), size = box.getSize(new THREE.Vector3());
+  const k = H / size.y; obj.scale.setScalar(k);
+  obj.position.set(-(box.min.x + size.x / 2) * k, PED - box.min.y * k, -(box.min.z + size.z / 2) * k);
+  W = size.x * k; D = size.z * k;
+  obj.traverse(o => { if (o.isMesh) { o.castShadow = o.receiveShadow = true; o.material.envMapIntensity = 0 } });
+  scene.add(obj);
+  const ped = new THREE.Mesh(new THREE.BoxGeometry(W + .3, PED, D + .3), new THREE.MeshStandardMaterial({ color: 0xd3d5d4, roughness: .9 }));
+  ped.position.y = PED / 2; ped.castShadow = ped.receiveShadow = true;
+  scene.add(ped);
+  floorMat = new THREE.MeshStandardMaterial({ color: FLOOR, roughness: .95 });
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(30, 64), floorMat);
+  spot.position.set(.35, PED + H + 3.2, 1.7); spot.target.position.set(0, PED + H * .45, 0);
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true;
+  scene.add(floor);
+}
+
+/* ---------------- camera: frames a view in the part of the screen the card and the moons leave free ---------------- */
+const wide = () => stage.clientWidth >= 900;
+const open = () => !stage.classList.contains('min');
+function coveredBottom() { const h = stage.clientHeight; return ($('moons').offsetHeight + 16 + (tell ? $('line').offsetHeight + 12 : 0) + (open() && !wide() ? $('sheet').offsetHeight + 16 : 0)) / h }
+function coveredSide() { return open() && wide() ? ($('sheet').offsetWidth + 40) / stage.clientWidth : 0 }
+const TOP = .14;                   // the title
+function pose({ v = .5, r = 1, az = 0, el = .06 }) {
+  const vf = THREE.MathUtils.degToRad(camera.fov) / 2, tv = Math.tan(vf), th = tv * camera.aspect;
+  const cb = coveredBottom(), cs = coveredSide(), availH = 1 - cb - TOP, availW = 1 - cs;
+  const d = Math.max(1.15, r * Math.max((H / 2 + .12) / (tv * availH), (Math.max(W, D) / 2 + .15) / (th * availW)));
+  const t = new THREE.Vector3(0, PED + v * H, 0);
+  // shift the aim so the view sits in the free part: up by the moons/card, right by a desktop card (camera's right axis)
+  t.y -= (cb - TOP) * d * tv;
+  const right = new THREE.Vector3(Math.cos(az), 0, -Math.sin(az));
+  t.addScaledVector(right, -cs * d * th);
+  const p = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(d).add(t);
+  return { p, t };
+}
+const VIEW0 = { v: .39, r: 1.25, az: .3 };             // the opening view: the statue alone on its plinth
+const full = c => ({ v: .5, r: 1, az: 0, el: .06, ...c.view });
+function viewAt(t) {                                    // between two phases: blend their views
+  const i = Math.min(N - 2, Math.floor(t)), k = t - i, a = full(CARDS[i]), b = full(CARDS[i + 1]);
+  let daz = b.az - a.az; if (daz > Math.PI) daz -= 2 * Math.PI; if (daz < -Math.PI) daz += 2 * Math.PI;
+  const e = k * k * (3 - 2 * k);
+  return { v: a.v + (b.v - a.v) * e, r: a.r + (b.r - a.r) * e, az: a.az + daz * e, el: a.el + (b.el - a.el) * e };
+}
+let fly = null;
+function flyTo(target, ms = 1100) { fly = { p0: camera.position.clone(), t0: controls.target.clone(), ...target, start: performance.now(), ms } }
+
+/* ---------------- the moons ---------------- */
+// waxing: lit from the right; the terminator is an ellipse whose width follows how full the moon is
+function moonPath(f, R = 17) {
+  const rx = Math.abs(1 - 2 * f) * R;
+  return `M0 ${-R} A${R} ${R} 0 0 1 0 ${R} A${rx.toFixed(2)} ${R} 0 0 ${f < .5 ? 0 : 1} 0 ${-R}Z`;
+}
+const moonX = i => 8 + (N - 1 - i) / (N - 1) * 84;     // % across the row; rtl: the month runs right → left
+const moonY = i => -Math.sin(i / (N - 1) * Math.PI) * 7; // a shallow arc
+const moons = CARDS.map((c, i) => {
+  const b = document.createElement('button'), f = i / (N - 1);
+  b.className = 'moon'; b.setAttribute('aria-label', c.title);
+  b.onclick = e => { if (e.detail === 0) show(i) };     // keyboard; taps and drags go through the row's pointer events
+  b.style.left = moonX(i) + '%'; b.style.top = `calc(50% + ${moonY(i)}px)`;
+  b.innerHTML = `<svg viewBox="-20 -20 40 40"><circle class="disc" r="17"/>${f > 0 ? `<path class="lit" d="${moonPath(f)}"/>` : ''}</svg>`;
+  $('row').append(b); return b;
+});
+function markMoon(i, lbl = i >= 0 ? CARDS[i].title : '') { moons.forEach((m, k) => m.classList.toggle('on', k === i)); $('lbl').textContent = lbl }
+
+/* ---------------- the card ---------------- */
+let active = -1;
+function fill(i) {
+  const c = CARDS[i];
+  $('kicker').textContent = c.kicker; $('title').textContent = c.title; $('text').innerHTML = c.html;
+  const b = $('body'); b.classList.remove('fade'); void b.offsetWidth; b.classList.add('fade'); b.scrollTop = 0;
+  $('prev').disabled = i === 0; $('next').textContent = i === N - 1 ? 'من البداية ←' : 'التالي ←';
+}
+function show(i, flyMs = 1200) {
+  active = (i + N) % N; moonT = active;
+  fill(active); markMoon(active);
+  stage.classList.remove('min'); $('moons').classList.remove('hint'); resize();
+  const v = full(CARDS[active]); lightTo(active / (N - 1), v.az, flyMs || 600);
+  if (flyMs) flyTo(pose(v), flyMs);
+}
+function fold() {
+  stage.classList.add('min'); active = -1; markMoon(-1); resize();
+  lightTo(.6, VIEW0.az, 1100); flyTo(pose(VIEW0));
+}
+$('prev').onclick = () => show(active - 1);
+$('next').onclick = () => show(active + 1);
+$('fold').onclick = fold;
+
+/* drag along the row: the statue turns through the phases in between; let go and it settles on the nearest one */
+let drag = null;
+function tFrom(e) {
+  const r = $('row').getBoundingClientRect(), x = (e.clientX - r.left) / r.width * 100;
+  return Math.max(0, Math.min(N - 1, (N - 1) * (92 - x) / 84));
+}
+$('row').addEventListener('pointerdown', e => {
+  if (tell) endTell();                                  // touching the moons takes the visitor back from the story
+  drag ={ x: e.clientX, moved: false }; $('row').setPointerCapture(e.pointerId); $('row').classList.add('drag');
+});
+$('row').addEventListener('pointermove', e => {
+  if (!drag) return;
+  if (!drag.moved && Math.abs(e.clientX - drag.x) < 6) return;
+  if (!drag.moved) { drag.moved = true; if (!open()) { stage.classList.remove('min'); resize() } }
+  const t = tFrom(e), i = Math.round(t); moonT = t; fly = null;
+  if (i !== active) { active = i; fill(i); markMoon(i) }
+  const v = viewAt(t), p = pose(v);
+  camera.position.copy(p.p); controls.target.copy(p.t); lightAnim = null; setLight(t / (N - 1), v.az);
+});
+const endDrag = e => {
+  if (!drag) return;
+  const t = tFrom(e); $('row').classList.remove('drag');
+  show(Math.round(t), drag.moved ? 500 : 1200); drag = null;
+};
+$('row').addEventListener('pointerup', endDrag);
+$('row').addEventListener('pointercancel', endDrag);
+$('row').addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft') show(Math.min(N - 1, active + 1)); else if (e.key === 'ArrowRight') show(Math.max(0, active - 1));
+});
+
+/* ---------------- the story: Djehuty tells it, and the moon fills from new to full ----------------
+   one step per recorded sentence (narration_script.md). ch: chapter (جحوتي · الفجر · القمر · الكلمة); card: whose view (view overrides it).
+   narration.mp3 (ElevenLabs "Dávid", 101.4 s) drives it: CUES = sentence starts (s), fitted from its pauses by cues.py.
+   If the audio cannot play, each sentence lasts by its length (lineMs). */
+const STORY = [
+  { ch: 0, card: 0, say: 'أنا جحوتي.' },
+  { view: { v: .62, r: .85, az: .12 }, say: 'سيّد الأشمونين… مدينة الثمانية.' },
+  { view: { v: .72, r: .6, az: -.2 }, say: 'ربّ الكلام الإلهي… وكاتب الآلهة.' },
+  { card: 4, say: 'لي هيئتان: طائر أبي منجل… وهذه التي ترونني فيها الآن: البابون.' },
+  { card: 3, say: 'وعلى كتفيّ عباءة من الشعر، تنزل على ظهري… هكذا يكتمل البابون إذا بلغ أشدّه.' },
+  { ch: 1, card: 1, say: 'انظروا إلى كفّيّ… مرفوعتين، مفتوحتين للنور.' },
+  { card: 2, warm: .2, say: 'قبل أن يطلع الفجر، أقف عند الأفق الشرقي… وأنتظر.' },
+  { view: { v: .62, r: .62, az: .05, el: -.15 }, warm: 1, say: 'فإذا أشرق رع… رفعت يديّ، وعلا صوتي بالتسبيح.' },
+  { view: { v: .62, r: .42, az: -.25 }, warm: .45, say: 'وصارت هذه الإشارة في الكتابة علامة: رجل يرفع يديه… ومعناها: سبِّح.' },
+  { ch: 2, card: 5, say: 'فإذا غابت الشمس… كان الليل لي.' },
+  { view: { v: .75, r: .55, az: -1.3 }, say: 'أنا القمر. بي تُعدّ الأيام… وتُحسب الشهور والسنون.' },
+  { view: { v: .86, r: .3, az: -.35 }, say: 'ولمّا جرح ست عين حورس، جمعتها وشفيتها… فعادت كاملة.' },
+  { view: { v: .5, r: .95, az: .6 }, say: 'ولهذا يمتلئ القمر كل شهر… كما امتلأت العين.' },
+  { ch: 3, view: { v: .55, r: .8, az: -.5 }, say: 'وأنا الكاتب. حين يوزن قلب الميت أمام أوزير… أقف عند الميزان، وأكتب الحكم.' },
+  { card: 6, say: 'وفي معابدكم أقاموني على قواعد المسلّات وواجهات المعابد… أستقبل الشمس كل صباح.' },
+  { view: { v: .6, r: .7, az: .4, el: .2 }, say: 'في الأقصر… وفي أبي سمبل… ما زلت واقفًا هناك، رافعًا يديّ.' },
+  { view: { v: .39, r: 1.25, az: 0, el: .1 }, ms: 6000, say: 'أنا جحوتي… الذي سمّاني الإغريق تحوت. وما دامت الكتابة… فكلمتي باقية.' },
+];
+{ let ch = 0; for (const s of STORY) { s.ch ??= ch; ch = s.ch } }
+const lineMs = s => 1600 + s.say.length * 85;
+const CUES = [0.0, 1.82, 5.77, 10.6, 18.02, 26.26, 31.46, 37.12, 42.33, 49.99, 54.04, 59.62, 65.53, 70.65, 79.15, 87.14, 93.48];
+const audio = new Audio('narration.mp3'); audio.preload = 'auto';
+let tell = null;
+function cueAt(t) { let i = 0; while (i + 1 < CUES.length && t >= CUES[i + 1]) i++; return i }
+// follows the voice; also from timeupdate, so it keeps up when animation frames are throttled
+function syncTell(now) {
+  if (!tell || tell.paused) return;
+  if (tell.audio) { const i = cueAt(audio.currentTime); if (i !== tell.i) tellStep(i) }
+  else if (now >= tell.until) tellStep(tell.i + 1);
+}
+audio.ontimeupdate = () => syncTell(performance.now());
+audio.onended = () => { const t = tell; setTimeout(() => { if (tell && tell === t) endTell() }, 1800) };
+function chapters(ch) { [...$('chapters').querySelectorAll('span')].forEach((s, i) => { s.classList.toggle('on', i === ch); s.classList.toggle('done', i < ch) }) }
+function tellStep(i) {
+  if (i >= STORY.length) return endTell();
+  const s = STORY[i], m = i / (STORY.length - 1);
+  tell.i = i; tell.until = performance.now() + lineMs(s);
+  const l = $('line'); l.textContent = s.say; l.classList.remove('fade'); void l.offsetWidth; l.classList.add('fade');
+  chapters(s.ch); markMoon(Math.round(m * (N - 1)), '');
+  const v = { ...full(s.card !== undefined ? CARDS[s.card] : {}), ...(s.view || {}) };
+  if (s.card === undefined && !s.view) Object.assign(v, full(CARDS[0]));
+  lightTo(m, v.az, 1800); lookTo({ warm: s.warm || 0 }, s.warm ? 1600 : 2600);
+  flyTo(pose(v), s.ms || 1900);
+}
+function startTell() {
+  if (drag) return;
+  stage.classList.add('min'); active = -1; fly = null;
+  tell = { i: 0, until: 0, paused: false, left: 0, audio: true };
+  audio.currentTime = 0;
+  const seek = +(location.hash.match(/t=([\d.]+)/)?.[1] || 0);   // #t=<s> starts mid-story (for checking)
+  audio.play().then(() => { if (seek) audio.currentTime = seek }).catch(() => { if (tell) { tell.audio = false; tell.until = performance.now() + lineMs(STORY[tell.i]) } });
+  stage.classList.add('telling'); $('moons').classList.remove('hint'); $('tellPause').textContent = '❚❚';
+  lookTo({ cine: 1, warm: 0 }, 2600);
+  resize(); tellStep(0);
+}
+function endTell() {
+  audio.pause(); tell = null;
+  stage.classList.remove('telling'); markMoon(-1); resize();
+  lightTo(.6, VIEW0.az, 2000); flyTo(pose(VIEW0), 2400); lookTo({ cine: 0, warm: 0 }, 2600);
+}
+$('tellBtn').onclick = startTell;
+$('tellStop').onclick = endTell;
+$('tellPause').onclick = () => {
+  if (!tell) return;
+  tell.paused = !tell.paused;
+  if (tell.audio) tell.paused ? audio.pause() : audio.play();
+  else if (tell.paused) tell.left = tell.until - performance.now(); else tell.until = performance.now() + tell.left;
+  $('tellPause').textContent = tell.paused ? '▶' : '❚❚';
+};
+
+/* ---------------- loop ---------------- */
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); dirty = true;
+}
+const ease = k => k < .5 ? 4 * k * k * k : 1 - (-2 * k + 2) ** 3 / 2;
+controls.addEventListener('change', () => dirty = true);
+controls.addEventListener('start', () => fly = null);
+function tick(now) {
+  if (fly) {
+    const k = Math.min(1, (now - fly.start) / fly.ms), e = ease(k);
+    camera.position.lerpVectors(fly.p0, fly.p, e); controls.target.lerpVectors(fly.t0, fly.t, e);
+    if (k >= 1) fly = null; dirty = true;
+  }
+  if (lightAnim) {
+    const k = Math.min(1, (now - lightAnim.start) / lightAnim.ms), e = ease(k), a = lightAnim.from, b = lightAnim.to;
+    let daz = b.az - a.az; if (daz > Math.PI) daz -= 2 * Math.PI; if (daz < -Math.PI) daz += 2 * Math.PI;
+    setLight(a.m + (b.m - a.m) * e, a.az + daz * e);
+    if (k >= 1) lightAnim = null;
+  }
+  if (lookAnim) {
+    const k = Math.min(1, (now - lookAnim.start) / lookAnim.ms), e = ease(k), a = lookAnim.from, b = lookAnim.to;
+    look.cine = a.cine + (b.cine - a.cine) * e; look.warm = a.warm + (b.warm - a.warm) * e;
+    applyLook(); if (k >= 1) lookAnim = null;
+  }
+  else if (look.cine > 0) applyLook();          // the moon rim follows the moon while he speaks
+  syncTell(now);
+  if (controls.update()) dirty = true;
+  if (dirty) { renderer.render(scene, camera); dirty = false }
+  requestAnimationFrame(tick);
+}
+addEventListener('resize', () => { resize(); if (!drag) { const p = pose(active >= 0 ? full(CARDS[active]) : VIEW0); camera.position.copy(p.p); controls.target.copy(p.t) } });
+
+resize();
+await build();
+setLight(.6, VIEW0.az);
+const p0 = pose(VIEW0); camera.position.copy(p0.p); controls.target.copy(p0.t);
+$('loading').remove();
+requestAnimationFrame(tick);
+</script>
