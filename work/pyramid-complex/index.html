@@ -447,3 +447,7 @@ try {
   requestAnimationFrame(tick);
 } catch (e) { console.error(e); $('loading').innerHTML = '<p>تعذّر بناء الماكيت. أعد تحميل الصفحة.</p>' }
 </script>
+
+<!-- back to the hall: a small link above the page's title -->
+<style>.to-hall { display: inline-flex; align-items: center; margin-bottom: .4rem; padding: 3px 11px; border-radius: 999px; background: #0d1620a6; color: #f4f1ea; font: 500 .8rem "Reem Kufi", "Noto Naskh Arabic", sans-serif; text-decoration: none; pointer-events: auto; width: max-content } .to-hall:hover { background: #d9a441; color: #2a1d08 }</style>
+<script>{ const h = document.querySelector('h1'); if (h) { const a = document.createElement('a'); a.href = '../hall/'; a.className = 'to-hall'; a.textContent = '→ قاعة العرض'; h.before(a) } }</script>
