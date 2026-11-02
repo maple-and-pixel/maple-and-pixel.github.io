@@ -1,0 +1,336 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>في حماية حورس</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap">
+<style>
+/* The king sits in the blue studio and the page opens on his majesty. Its own idea: HIS VOICE LEADS. While he speaks the hall
+   goes dark, one spot holds him, and the camera flies straight from shot to shot (his face, then round behind to Horus…). */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --ink: #241d14;
+  --ink-2: #6a5b47;
+  --sheet: #f5efe3;
+  --sheet-2: #e9dfcc;
+  --gold: #d9a441;
+  --gold-deep: #a8731c;
+  --night: #16202b;
+  --f-display: "Reem Kufi", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 35%, transparent 55%, #0d162055 100%) }
+/* while the king speaks the hall goes dark around him */
+.vignette::after { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 60% at 50% 40%, transparent 35%, #05090ecc 100%); opacity: 0; transition: opacity 1.6s ease }
+.stage.cine .vignette::after { opacity: 1 }
+
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; pointer-events: none }
+h1 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(1.5rem, 6vw, 2.2rem); line-height: 1.15; color: #fbf7f0; text-shadow: 0 1px 14px #0005 }
+.sub { margin: .25rem 0 0; color: #f1ebe2; font-size: .88rem; text-shadow: 0 1px 10px #0006 }
+
+/* the card */
+.panel { position: absolute; inset-inline: 0; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); padding: 0 12px; display: flex; justify-content: center; pointer-events: none }
+.sheet {
+  position: relative; pointer-events: auto; width: min(100%, 520px); max-height: 34vh; display: flex; flex-direction: column;
+  background: linear-gradient(170deg, var(--sheet), var(--sheet-2)); border-radius: 20px;
+  box-shadow: 0 14px 40px #10192a66, inset 0 0 0 1px #ffffffaa;
+}
+.sheet::before { content: ""; position: absolute; top: 0; inset-inline: 22px; height: 3px; border-radius: 0 0 3px 3px; background: linear-gradient(90deg, transparent, var(--gold), transparent) }
+.body { overflow: auto; padding: 14px 18px 14px; padding-inline-end: 46px; scrollbar-width: thin }
+.kicker { font-family: var(--f-display); color: var(--gold-deep); font-size: .82rem }
+.sheet h2 { margin: .1rem 0 .4rem; font-family: var(--f-display); font-weight: 700; font-size: 1.25rem; line-height: 1.35 }
+.sheet p { margin: 0; font-size: 1rem; line-height: 1.85 }
+.src { display: block; margin-top: .5rem; font-size: .76rem; color: var(--ink-2) }
+.body.fade { animation: fade .45s ease }
+@keyframes fade { from { opacity: 0; transform: translateY(6px) } }
+.fold { position: absolute; top: 10px; inset-inline-end: 10px; width: 32px; height: 32px; border-radius: 50%; border: 0; cursor: pointer; background: #241d140f; font-size: 1rem; line-height: 1 }
+
+/* the king's voice: a button under the title; while he speaks, his words run at the bottom and the card stays shut */
+.listen { margin-top: .6rem; border: 0; cursor: pointer; border-radius: 999px; height: 38px; padding: 0 16px; pointer-events: auto;
+  font-family: var(--f-display); font-size: .92rem; background: #0d1620b3; color: #f4f1ea; box-shadow: 0 8px 24px #0d162044 }
+.listen[aria-pressed="true"] { background: var(--gold); color: #2a1d08 }
+.about { margin-inline-start: 6px; background: #f4f1eae6; color: #2a1d08 }
+.words { position: absolute; inset-inline: 0; bottom: calc(22px + env(safe-area-inset-bottom, 0px)); display: flex; justify-content: center; padding: 0 16px; pointer-events: none }
+.words p { margin: 0; max-width: min(680px, 100%); overflow-wrap: break-word; text-align: center; font-size: clamp(1.05rem, 4.3vw, 1.4rem); line-height: 1.8; color: #fbf7f0; background: #0d1620b8; padding: 10px 20px; border-radius: 16px }
+.words p.fade { animation: fade .6s ease }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading p { font-family: var(--f-display); color: #fbf7f0; animation: breathe 1.6s ease-in-out infinite }
+@keyframes breathe { 50% { opacity: .35 } }
+@media (min-width: 900px) {
+  .panel { justify-content: flex-end; padding-inline-end: 28px; bottom: 50%; transform: translateY(50%) }   /* rtl: the card sits at the left */
+  .sheet { max-height: 60vh }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<main class="stage" id="stage" dir="rtl" lang="ar" aria-label="في حماية حورس: عرض ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="loading" id="loading"><p>الملك على عرشه…</p></div>
+
+  <div class="top">
+    <h1>في حماية حورس</h1>
+    <p class="sub">الجيزة · الأسرة الرابعة</p>
+    <button class="listen" id="listen" aria-pressed="false">▶ اسمع خفرع</button><button class="listen about" id="about">عن التمثال</button>
+  </div>
+  <div class="words" id="words" hidden><p id="line"></p></div>
+
+  <div class="panel"><section class="sheet" id="sheet" aria-live="polite" hidden>
+    <button class="fold" id="fold" aria-label="إخفاء">⌄</button>
+    <div class="body" id="body"><div class="kicker" id="kicker"></div><h2 id="title"></h2><div id="text"></div></div>
+  </section></div>
+
+</main>
+
+<!-- older iPhones (Safari < 16.4) do not read import maps: this shim adds them -->
+<script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+/* ---------------- the shots ----------------
+   The page opens on shot 0, IN FRONT OF THE KING seen from below; Horus behind him is the reveal.
+   az: camera angle around the statue (0 = in front, π = behind); at: the point looked at (statue units, 0.98 tall);
+   d: distance; el: height of the eye (below 0 = looking up at him). ⚠ Identity not confirmed by the doctor yet: the copy says «يُرجَّح». */
+const STOPS = [
+  { az: .06, at: [0, .6, .02], d: 1.6, el: -.1, wide: .3, kicker: 'الجيزة · الأسرة الرابعة', title: 'الملك على عرشه',
+    html: '<p>ملك جالس على عرشه في سكون تام، يداه على ركبتيه ونظره إلى الأمام. ويُرجَّح أنه خفرع، صاحب الهرم الثاني بالجيزة، ويُنسب إليه تمثال أبي الهول.</p>' +
+      '<p>نُحت من حجر النايس، وهو حجر شديد الصلابة داكن اللون. عثر عليه أوجست مارييت عام ١٨٦٠ في معبد الوادي لخفرع، قرب أبي الهول. وارتفاعه نحو ١٦٨ سم.</p>' +
+      '<span class="src">ARCE · Khafre Enthroned</span>' },
+  { az: .16, at: [0, .85, .08], d: .55, el: .02, kicker: 'الوجه', title: 'النظرة',
+    html: '<p>وجه هادئ ثابت النظر إلى الأمام، لا يلتفت ولا يبتسم، وتحت الذقن لحية ملكية مستعارة.</p>' },
+  { az: .35, at: [.12, .07, .19], d: .42, el: .35, kicker: 'على القاعدة', title: 'الاسم',
+    html: '<p>بجوار القدمين نُقش اسم الملك داخل خرطوش، ومعه ألقابه. وأول علامة في الخرطوش قرص الشمس، رع: يُكتب في المقدمة تعظيمًا للإله، وإن جاء في آخر الاسم عند النطق: خع-إف-رع.</p>' },
+  { az: .9, at: [.11, .43, .1], d: .55, el: .15, kicker: 'قوائم العرش', title: 'الأسد',
+    html: '<p>قوائم العرش على هيئة أرجل أسد، وفي مقدمته عند الركبتين رأسا أسدين. والأسد من رموز القوة والملكية في مصر القديمة.</p>' },
+  { az: 1.2, at: [0, .86, .03], d: .55, el: .08, kicker: 'غطاء الرأس', title: 'النمس',
+    html: '<p>غطاء رأس ملكي من القماش المخطط، يغطي الجبهة وينسدل طرفاه على الكتفين والصدر. وفوق الجبهة الكوبرا الملكية.</p>' },
+  { az: 1.6, at: [.15, .29, -.11], d: .8, el: .12, kicker: 'جانب العرش', title: 'توحيد الأرضين',
+    html: '<p>على جانب العرش نبات البردي، نبات الشمال، ونبات اللوتس، نبات الجنوب، مربوطان حول علامة «سما» التي تعني الاتحاد. الملك يجلس فوق أرضين صارتا واحدة.</p>' },
+  { az: 1.95, at: [0, .86, -.03], d: .6, el: .06, kicker: 'خلف الرأس', title: 'جناحان',
+    html: '<p>من الأمام لا يظهر إلا القليل فوق رأس الملك. أما من الخلف فيظهر جناحان مفرودان حول ظهر غطاء الرأس، يحتضنان رأس الملك.</p>' },
+  { az: 2.45, at: [0, .86, -.05], d: .8, el: .3, kicker: 'على ظهر العرش', title: 'حورس',
+    html: '<p>صاحب الجناحين صقر: حورس، إله السماء. وكان كل ملك في مصر يُعدّ حورس على الأرض، يحكم باسمه وتحت جناحه. الملك في المقدمة، والإله خلفه يحميه.</p>' },
+];
+
+/* ---------------- renderer: draws only when something changes ---------------- */
+const stage = document.getElementById('stage'), canvas = document.getElementById('c');
+const $ = id => document.getElementById(id);
+const phone = matchMedia('(pointer: coarse)').matches;
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: !phone, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, phone ? 1.5 : 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.localClippingEnabled = true;
+const scene = new THREE.Scene();
+const BG = 0x748ba1, FLOOR = 0x5c7287;
+scene.background = new THREE.Color(BG);
+const camera = new THREE.PerspectiveCamera(32, 1, .01, 40);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08; controls.enablePan = false;
+controls.minDistance = .25; controls.maxDistance = 4; controls.maxPolarAngle = 1.62;
+
+const hemi = new THREE.HemisphereLight(0xf4f2ee, FLOOR, 1.1); scene.add(hemi);
+const key = new THREE.DirectionalLight(0xfff6ea, 3); key.position.set(1.4, 2.6, 2.2); key.castShadow = true;
+key.shadow.mapSize.set(phone ? 1024 : 2048, phone ? 1024 : 2048);
+Object.assign(key.shadow.camera, { left: -.8, right: .8, top: 1.2, bottom: -.2, near: .5, far: 8 }); key.shadow.bias = -.0005; key.shadow.normalBias = .004;
+scene.add(key);
+const fill = new THREE.DirectionalLight(0xe8f0ff, .6); fill.position.set(-2, 1.2, 1.5); scene.add(fill);
+// Horus's light: a warm glow from behind the head, strong at the start of the way, gone in front of the king
+const halo = new THREE.PointLight(0xffc56a, 0, 1.4, 1.5); halo.position.set(0, 1.05, -.38); scene.add(halo);
+const rim = new THREE.DirectionalLight(0xffcf86, 0); rim.position.set(.4, 1.6, -2.5); scene.add(rim);
+// the story's light: the studio dims and one spot from high in front holds the king (cine 0 = studio, 1 = story)
+const spot = new THREE.SpotLight(0xfff1dc, 0, 0, .3, .55, 0); spot.position.set(.7, 2.8, 2.1); spot.target.position.set(0, .55, 0);
+spot.castShadow = true; spot.shadow.mapSize.set(1024, 1024); spot.shadow.bias = -.0005; scene.add(spot, spot.target);
+const NIGHT = new THREE.Color(0x141c25), STUDIO = new THREE.Color(BG);
+let cine = 0, cineAnim = null;
+function setCine(k) {
+  cine = k;
+  hemi.intensity = lerp(1.1, .12, k); fill.intensity = lerp(.6, .05, k); key.intensity = lerp(3, .35, k); spot.intensity = 7 * k;
+  scene.background.copy(STUDIO).lerp(NIGHT, k); scene.fog.color.copy(scene.background);
+  dirty = true;
+}
+function fadeCine(to, ms = 1600) { cineAnim = { from: cine, to, start: performance.now(), ms }; stage.classList.toggle('cine', to > 0) }
+
+/* ---------------- build ---------------- */
+// the falcon is its own model, fitted onto the king (fit: ../compose.html). It sits a little large and far back, so it swallows
+// the shapeless blocks Tripo invented behind the head; its front strip (a sliver of headdress from the photo) is cut off and lidded.
+const FIT = { s: .25, pos: [0, .745, -.06], frontCut: .28 };
+const SEMA = { x: .163, y: .275, z: -.12, w: .27, h: .205 };     // the throne's flat sides (probe_side.mjs): x ±.16, y .15-.41, z -.27-.03
+function hull2(P) {            // convex hull (monotone chain) of [a, b] points
+  P = P.slice().sort((p, q) => p[0] - q[0] || p[1] - q[1]);
+  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]), lo = [], up = [];
+  for (const p of P) { while (lo.length > 1 && cross(lo.at(-2), lo.at(-1), p) <= 0) lo.pop(); lo.push(p) }
+  for (const p of P.reverse()) { while (up.length > 1 && cross(up.at(-2), up.at(-1), p) <= 0) up.pop(); up.push(p) }
+  return lo.slice(0, -1).concat(up.slice(0, -1));
+}
+async function build() {
+  const L = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+  const [king, falcon] = await Promise.all(['model.glb', 'falcon.glb'].map(u => L.loadAsync(u).then(g => g.scene)));
+  const fz = FIT.pos[2] + FIT.frontCut * FIT.s;
+  const prep = (o, planes) => o.traverse(m => {
+    if (!m.isMesh) return;
+    m.castShadow = m.receiveShadow = true;
+    Object.assign(m.material, { clippingPlanes: planes, clipShadows: true, side: THREE.DoubleSide, metalness: 0, envMapIntensity: 0 });
+  });
+  prep(king, []);
+  falcon.scale.setScalar(FIT.s); falcon.rotation.y = Math.PI / 2; falcon.position.set(...FIT.pos);
+  prep(falcon, [new THREE.Plane(new THREE.Vector3(0, 0, -1), fz)]);
+  scene.add(king, falcon);
+  // the falcon model is hollow: close its cut with a lid, the outline of the cut
+  falcon.updateMatrixWorld(true);
+  const pts = []; falcon.traverse(m => {
+    if (!m.isMesh) return; const a = m.geometry.attributes.position, v = new THREE.Vector3();
+    for (let i = 0; i < a.count; i++) { v.fromBufferAttribute(a, i).applyMatrix4(m.matrixWorld); if (Math.abs(v.z - fz) < .004) pts.push([v.x, v.y]) }
+  });
+  const hull = hull2(pts);
+  if (hull.length > 2) {
+    const lid = new THREE.Mesh(new THREE.ShapeGeometry(new THREE.Shape(hull.map(([a, b]) => new THREE.Vector2(a, b)))), new THREE.MeshStandardMaterial({ color: 0x3a4440, roughness: .8, side: THREE.DoubleSide }));
+    lid.position.z = fz; lid.castShadow = true; scene.add(lid);
+  }
+  // the sema-tawy on both throne sides: Tripo flattened it, so it is laid back on from the cast photo (../sema.py)
+  const tl = new THREE.TextureLoader(), [sa, sn, sal] = await Promise.all(['sema_albedo.jpg', 'sema_normal.jpg', 'sema_alpha.png'].map(u => tl.loadAsync(u)));
+  sa.colorSpace = THREE.SRGBColorSpace;
+  const semaMat = new THREE.MeshStandardMaterial({ map: sa, normalMap: sn, normalScale: new THREE.Vector2(1.6, 1.6), alphaMap: sal, transparent: true,
+    roughness: .75, polygonOffset: true, polygonOffsetFactor: -2 });
+  for (const side of [1, -1]) {
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(SEMA.w, SEMA.h), semaMat);
+    p.position.set(side * SEMA.x, SEMA.y, SEMA.z); p.rotation.y = side * Math.PI / 2; p.receiveShadow = true;
+    scene.add(p);
+  }
+  const floor = new THREE.Mesh(new THREE.CircleGeometry(12, 64), new THREE.MeshStandardMaterial({ color: FLOOR, roughness: .95 }));
+  floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+  scene.fog = new THREE.Fog(BG, 5, 14);
+}
+
+/* ---------------- the camera: one shot at a time ----------------
+   a shot = { az, at, d, el, wide }. The camera flies straight from where it is to the next shot, round the statue,
+   never stopping on the way; a long move swings out a little. */
+const wide = () => stage.clientWidth >= 900;
+const lerp = THREE.MathUtils.lerp;
+let shot = { ...STOPS[0] }, fly = null, here = 0, dirty = true;
+function poseOf(s) {
+  const at = new THREE.Vector3(...s.at);
+  // the shots are framed for a wide screen: a narrow one steps back to keep the width (a tall view like the whole king needs less: wide < 1)
+  const d = s.d * (1 + (Math.max(1, .95 / camera.aspect) - 1) * (s.wide ?? 1));
+  const p = new THREE.Vector3(Math.sin(s.az) * Math.cos(s.el), Math.sin(s.el), Math.cos(s.az) * Math.cos(s.el)).multiplyScalar(d).add(at);
+  // keep the point clear of the card: on a phone the card is low, so lift the view; on a wide screen it is left, so shift right
+  const tv = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2), open = !$('sheet').hidden || !$('words').hidden;
+  const shiftUp = wide() ? 0 : d * tv * (open ? .3 : .12);
+  const right = new THREE.Vector3(Math.cos(s.az), 0, -Math.sin(s.az)), shiftR = wide() && !$('sheet').hidden ? d * tv * camera.aspect * .3 : 0;
+  at.y -= shiftUp; p.y -= shiftUp;
+  at.addScaledVector(right, -shiftR); p.addScaledVector(right, -shiftR);
+  return { p, t: at };
+}
+function setShot(s) {
+  shot = s; const { p, t } = poseOf(s); camera.position.copy(p); controls.target.copy(t);
+  const glow = THREE.MathUtils.smoothstep(Math.abs(s.az), 1.7, 2.4);     // Horus's light grows as the camera comes round behind the king
+  halo.intensity = glow * .45; rim.intensity = glow * .9; dirty = true;
+}
+// after the viewer has turned the statue by hand, the next flight starts from where the camera really is
+let handled = false;
+controls.addEventListener('start', () => { handled = true; fly = null });
+function shotFromCamera() {
+  const t = controls.target, o = camera.position.clone().sub(t), d = o.length();
+  return { az: Math.atan2(o.x, o.z), el: Math.asin(o.y / d), d, at: t.toArray(), wide: 0 };
+}
+function flyTo(i, ms) {
+  const a = handled ? shotFromCamera() : { ...shot }, b = STOPS[i]; handled = false; here = i;
+  const turn = Math.abs(b.az - a.az);
+  fly = { a, b, swing: Math.min(.45, turn * .18), start: performance.now(), ms: ms ?? (turn > 1 ? 3200 : 1700) };
+}
+function flyStep(k) {
+  const { a, b, swing } = fly, e = ease(k);
+  setShot({ az: lerp(a.az, b.az, e), el: lerp(a.el, b.el, e), d: lerp(a.d, b.d, e) + Math.sin(Math.PI * e) * swing,
+    at: a.at.map((v, j) => lerp(v, b.at[j], e)), wide: lerp(a.wide ?? 1, b.wide ?? 1, e) });
+}
+
+/* ---------------- the card ---------------- */
+function show(i) {
+  const s = STOPS[i];
+  $('kicker').textContent = s.kicker; $('title').textContent = s.title; $('text').innerHTML = s.html;
+  const b = $('body'); b.classList.remove('fade'); void b.offsetWidth; b.classList.add('fade'); b.scrollTop = 0;
+  $('sheet').hidden = false;
+}
+function hide() { $('sheet').hidden = true; flyTo(here, 700) }
+$('fold').onclick = hide;
+$('about').onclick = () => { stopVoice(); show(0); flyTo(0, 1200) };
+
+/* ---------------- the king's voice ----------------
+   narration.mp3 (ElevenLabs "David - Deep", 89.9 s, from ../narration_script.md). CUES = line starts (s), measured from the pauses;
+   the first number = the shot each line flies to: his name in front, then straight round behind to Horus, and back to stand before him. */
+const LINES = [
+  [0, 'أنا خفرع.'], [7, 'خلف رأسي يقف حورس، الصقر، إله السماء.'], [7, 'كل ملك في مصر هو حورس على الأرض… وأنا حكمت تحت جناحه.'],
+  [6, 'انظروا… يفرد جناحيه حول رأسي من الخلف، كأنه يحتضنني.'], [6, 'من يقف أمامي لا يكاد يراه… لكنه هناك، يحميني.'],
+  [5, 'وعلى جانب عرشي نباتان… البردي للشمال، واللوتس للجنوب.'], [5, 'مربوطان حول علامة الاتحاد… أرضان صارتا واحدة، وأنا أجلس فوقهما.'],
+  [4, 'على رأسي النمس، غطاء المُلك المخطط… وعلى جبهتي الكوبرا الملكية.'], [3, 'وقوائم عرشي أرجل أسد، وفي مقدمته رأسا أسدين.'],
+  [1, 'والآن… قفوا أمامي.'], [1, 'وجهي لا يلتفت، ولا يبتسم… ينظر إلى الأمام، إلى الأبد.'], [1, 'أنا صاحب الهرم الثاني بالجيزة.'],
+  [2, 'وعند قدميّ اسمي في خرطوش… قرص الشمس يُكتب في أوله، تعظيمًا لرع… ويُنطق في آخره: خع إف رع.'],
+  [0, 'نحتوني من حجر صلب داكن، ووضعوني في معبد الوادي، قرب أبي الهول.'], [0, 'وبعد آلاف السنين… وجدني رجل اسمه مارييت.'],
+  [0, 'وما زلت جالسًا هنا… وحورس خلفي.'],
+];
+const CUES = [0.1, 1.97, 6.97, 13.3, 19.36, 24.62, 30.45, 37.76, 44.61, 51.58, 54.41, 60.81, 64.06, 74.05, 81.01, 85.79];
+const voice = new Audio('narration.mp3'); voice.preload = 'auto';
+let spoken = -1;
+function cueAt(t) { let i = 0; while (i + 1 < CUES.length && t >= CUES[i + 1]) i++; return i }
+function sayLine(i) {
+  spoken = i; const [stop, text] = LINES[i], l = $('line');
+  l.textContent = text; l.classList.remove('fade'); void l.offsetWidth; l.classList.add('fade');
+  if (stop !== here) flyTo(stop);
+}
+// follows the voice; also from timeupdate, so it keeps up when animation frames are throttled
+function syncVoice() { if (!voice.paused) { const i = cueAt(voice.currentTime); if (i !== spoken) sayLine(i) } }
+voice.ontimeupdate = syncVoice;
+voice.onended = () => setTimeout(() => { if (voice.paused) stopVoice(true) }, 1500);
+function startVoice() {
+  $('sheet').hidden = true;
+  $('words').hidden = false; $('listen').setAttribute('aria-pressed', true); $('listen').textContent = '❚❚ إيقاف';
+  voice.currentTime = 0; spoken = -1; fadeCine(1); voice.play().catch(() => stopVoice());
+}
+function stopVoice(toStart) {
+  if ($('words').hidden) return;
+  voice.pause(); $('words').hidden = true; spoken = -1; fadeCine(0);
+  $('listen').setAttribute('aria-pressed', false); $('listen').textContent = '▶ اسمع خفرع';
+  if (toStart) flyTo(0, 2600);
+}
+$('listen').onclick = () => $('words').hidden ? startVoice() : stopVoice();
+
+/* ---------------- loop ---------------- */
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  if (!w || !h) return;                    // a hidden tab has no size yet; the next resize sets it
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+  if (!fly) setShot(shot); dirty = true;
+}
+const ease = t => t < .5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+controls.addEventListener('change', () => dirty = true);
+function tick(now) {
+  syncVoice();
+  if (cineAnim) { const k = Math.min(1, (now - cineAnim.start) / cineAnim.ms); setCine(lerp(cineAnim.from, cineAnim.to, ease(k))); if (k >= 1) cineAnim = null }
+  if (fly) { const k = Math.min(1, (now - fly.start) / fly.ms); flyStep(k); if (k >= 1) fly = null }
+  if (controls.update()) dirty = true;
+  if (dirty) { renderer.render(scene, camera); dirty = false }
+  requestAnimationFrame(tick);
+}
+addEventListener('resize', resize);
+build().then(() => {
+  resize(); setShot({ ...STOPS[0] });
+  $('loading').hidden = true; requestAnimationFrame(tick);
+}).catch(err => { $('loading').querySelector('p').textContent = 'تعذّر التحميل. أعد تحميل الصفحة.'; console.error(err) });
+</script>
