@@ -193,7 +193,7 @@ const ghost = new THREE.Group(); king.add(ghost);
   const cord = new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts), 260, .0024, 6), cordMat);
   ghost.add(shaft, head, cord);
 }
-let ghostOn = false, ghostA = 0;
+let ghostOn = false, ghostA = 0, spearByHand = false;   // spearByHand: the viewer switched it on, so the lines leave it on
 function setSpear(on) { ghostOn = on; $('spear').setAttribute('aria-pressed', on) }
 
 /* ---------------- camera: the card covers part of the screen, the view offset keeps the piece in the free part ---------------- */
@@ -240,7 +240,7 @@ function pick(i) {
   [...rowsEl.children].forEach((b, j) => b.setAttribute('aria-expanded', j === i));
   if (i < 0) { $('mark').classList.remove('on'); return }
   const r = ROWS[i];
-  if (r.spear) setSpear(true);
+  setSpear(!!r.spear || spearByHand);
   requestAnimationFrame(() => {
     rowsEl.children[i].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     updateShift(); flyTo(poseOf(r.view, at(r.at)));
@@ -253,7 +253,7 @@ function openCard(on, first = true) {
 }
 $('openCard').onclick = () => { stopTale(); openCard(!$('card').classList.contains('open')) };
 $('close').onclick = () => { stopTale(); openCard(false) };
-$('spear').onclick = () => setSpear(!ghostOn);
+$('spear').onclick = () => { spearByHand = !ghostOn; setSpear(spearByHand) };
 addEventListener('keydown', e => { if (e.key === 'Escape') { stopTale(); openCard(false) } });
 controls.addEventListener('start', () => { fly = null });
 
@@ -291,11 +291,11 @@ function taleLine(i) {
   if (last) setSpear(true);
 }
 function startTale() {
-  stopTale(); setSpear(false);
-  tale = { i: -1, t0: performance.now(), audio: null, timed: true };
+  stopTale(); spearByHand = false; setSpear(false);
+  // the lines wait on the first line while the mp3 loads (slow phones); only if it can't play do they fall back to lineMs
+  const a = new Audio('narration.mp3'), me = tale = { i: -1, t0: 0, audio: a, timed: false };
   $('tell').setAttribute('aria-pressed', true); $('tell').textContent = '■ إيقاف';
-  const a = new Audio('narration.mp3');
-  a.play().then(() => { if (tale && CUES) { tale.audio = a; tale.timed = false } else a.pause() }).catch(() => {});
+  a.play().then(() => { if (tale !== me) a.pause() }).catch(() => { if (tale === me) { me.audio = null; me.timed = true; me.t0 = performance.now() } });
   taleLine(0);
 }
 function stopTale() {
@@ -308,6 +308,7 @@ function endTale() { stopTale(); setTimeout(() => { if (!tale) { setSpear(false)
 function tickTale(now) {
   if (!tale) return;
   if (!tale.timed) {
+    if (!tale.audio) return;
     const t = tale.audio.currentTime;
     let i = 0; while (i + 1 < CUES.length && t >= CUES[i + 1]) i++;
     taleLine(i);
