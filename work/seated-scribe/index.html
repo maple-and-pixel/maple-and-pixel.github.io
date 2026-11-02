@@ -1,0 +1,574 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الكاتب</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap">
+<style>
+/* One screen: the scribe alone in the blue studio. His own way of telling:
+   a PAPYRUS unrolls (on his lap in 3D, and on the screen), and each line is written in ink, word by word,
+   red for the heading as the scribes did, black for the rest. Ink drops on the statue open their line. */
+:root {
+  color-scheme: light;
+  --bg: #748ba1;
+  --ink: #1d1813;
+  --ink-2: #5e5040;
+  --red: #a8321f;          /* the scribes' red ochre */
+  --papyrus: #e4cf9c;
+  --papyrus-2: #d2b77c;
+  --night: #121b25;
+  --f-hand: "Aref Ruqaa", "Noto Naskh Arabic", serif;
+  --f-body: "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+  --f-glyph: "Noto Sans Egyptian Hieroglyphs", serif;
+  --scroll-h: min(44vh, 330px);
+}
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html, body { margin: 0; height: 100% }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); -webkit-tap-highlight-color: transparent; overflow: hidden }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid #fff3d6; outline-offset: 2px }
+
+.stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; background: var(--bg) }
+canvas#c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none }
+.vignette { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(130% 90% at 50% 38%, transparent 55%, #0d162050 100%) }
+
+.top { position: absolute; inset-inline: 0; top: 0; padding: 14px 16px; pointer-events: none }
+h1 { margin: 0; font-family: var(--f-hand); font-weight: 700; font-size: clamp(2rem, 8vw, 2.8rem); line-height: 1.1; color: #fbf7f0; text-shadow: 0 1px 14px #0005; display: flex; align-items: baseline; gap: .35em }
+h1 .glyph { font-family: var(--f-glyph); font-weight: 400; font-size: .7em; opacity: .9 }
+.sub { margin: .2rem 0 0; color: #f1ebe2; font-size: .9rem; text-shadow: 0 1px 10px #0006 }
+
+/* ink drops on the statue: papyrus disc, black ink in the middle */
+.spots { position: absolute; inset: 0; pointer-events: none }
+.spot {
+  position: absolute; width: 30px; height: 30px; margin: -15px 0 0 -15px; border: 0; padding: 0; border-radius: 50%; cursor: pointer; pointer-events: auto;
+  background: radial-gradient(circle, var(--ink) 0 26%, var(--papyrus) 29% 50%, transparent 53%); transition: transform .25s, opacity .3s;
+}
+.spot::after { content: ""; position: absolute; inset: 4px; border-radius: 50%; border: 1.5px solid #f3e2b8; animation: ping 2.6s ease-out infinite }
+.spot.on { transform: scale(1.35); background: radial-gradient(circle, var(--red) 0 26%, var(--papyrus) 29% 50%, transparent 53%) }
+.spot.away { opacity: 0; pointer-events: none }
+@keyframes ping { from { transform: scale(.6); opacity: 1 } to { transform: scale(1.55); opacity: 0 } }
+.stage.closed .spots, .stage.closing .spots { display: none }
+
+/* the papyrus on the screen: unrolls right to left, the way the scribe wrote */
+.scroll { position: absolute; inset-inline: 10px; bottom: calc(10px + env(safe-area-inset-bottom, 0px)); height: var(--scroll-h); pointer-events: none }
+.sheet {
+  position: absolute; inset: 0 12px; pointer-events: auto; display: flex; flex-direction: column;
+  background-color: var(--papyrus); background-size: 512px 256px; border-radius: 3px;
+  box-shadow: 0 16px 40px #10192a66, inset 0 0 26px #8a6a3355;
+  clip-path: inset(0 0 0 calc(var(--u, 0) * 100%));
+}
+.roll {
+  position: absolute; top: -6px; bottom: -6px; width: 22px; border-radius: 11px; pointer-events: none;
+  background: linear-gradient(90deg, #8f7244, #e8d4a2 35%, #f3e3b9 50%, #b8955c 75%, #7d6038);
+  box-shadow: 0 8px 18px #10192a55;
+}
+.roll.fixed { right: 0 }
+.roll.moving { left: calc(var(--u, 0) * (100% - 46px) + 12px) }
+.text { flex: 1; overflow: auto; padding: 16px 30px 4px; scrollbar-width: thin; position: relative; cursor: text }
+.kicker { font-family: var(--f-hand); color: var(--red); font-size: .95rem; opacity: .85 }
+.text h2 { margin: 0 0 .3rem; font-family: var(--f-hand); font-weight: 700; font-size: 1.65rem; line-height: 1.3; color: var(--red) }
+.text p { margin: 0; font-size: 1.04rem; line-height: 1.95 }
+.text .glyph { font-family: var(--f-glyph); font-size: 1.3em; line-height: 1 }
+/* the wet edge of the ink: --p (0..1) is how much of the word is written, from its right end */
+.w {
+  display: inline-block;
+  -webkit-mask-image: linear-gradient(to left, #000 calc(var(--p, 0) * 135% - 35%), transparent calc(var(--p, 0) * 135%));
+  mask-image: linear-gradient(to left, #000 calc(var(--p, 0) * 135% - 35%), transparent calc(var(--p, 0) * 135%));
+}
+.w.in { -webkit-mask-image: none; mask-image: none }
+.pen { position: absolute; left: 0; top: 0; width: 34px; height: 34px; pointer-events: none; opacity: 0; transition: opacity .35s }
+.pen.on { opacity: 1 }
+.foot { display: flex; align-items: center; gap: 8px; padding: 6px 30px 12px }
+.foot button { border: 0; cursor: pointer; border-radius: 999px; height: 40px; min-width: 40px; padding: 0 14px; background: #3b2a1414; font-size: .95rem; font-family: var(--f-body) }
+.foot .next { background: var(--ink); color: #f6ead0; margin-inline-start: auto }
+.foot .count { font-family: var(--f-hand); color: var(--ink-2); font-size: 1rem }
+.foot .close { font-size: 1.15rem; line-height: 1 }
+
+.dock { position: absolute; inset-inline: 0; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); display: flex; justify-content: center; pointer-events: none }
+.dock button {
+  pointer-events: auto; border: 0; cursor: pointer; height: 50px; padding: 0 24px; border-radius: 4px; font-family: var(--f-hand); font-size: 1.25rem; color: var(--ink);
+  background: var(--papyrus); box-shadow: 0 10px 28px #0d162055, inset 0 0 14px #8a6a3355; display: flex; align-items: center; gap: 10px;
+}
+.dock button span { color: var(--red) }
+.dock { gap: 10px }
+@media (max-width: 420px) { .dock button { padding: 0 14px; font-size: 1.1rem; gap: 7px } }
+.dock .listen { background: var(--ink); color: #f6ead0; box-shadow: 0 10px 28px #0d162055 }
+.dock .listen span { color: #e9a08f }
+.stage.closed .scroll, .stage.open .dock { display: none }
+
+/* listening: the scribe speaks and his words are written as he says them */
+.foot .pause { display: none; background: var(--ink); color: #f6ead0; min-width: 44px }
+.stage.telling .foot .pause { display: inline-block }
+.stage.telling .foot .prev, .stage.telling .foot .next, .stage.telling .spots { display: none }
+.stage.telling .foot .count { margin-inline-start: auto }
+.text .coda { font-family: var(--f-hand); font-size: 1.7rem; line-height: 2; text-align: center; margin-top: 18% }
+.text .said { margin-bottom: .2rem }
+
+.loading { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none }
+.loading p { font-family: var(--f-hand); font-size: 1.3rem; color: #fbf7f0; animation: breathe 1.6s ease-in-out infinite }
+@keyframes breathe { 50% { opacity: .35 } }
+@media (min-width: 900px) {
+  .top { padding: 22px 28px }
+  .scroll { inset-inline: auto 28px; bottom: 28px; top: 120px; height: auto; width: 460px }   /* rtl: the papyrus sits at the left */
+  .text { padding: 26px 36px 6px } .foot { padding: 8px 36px 16px }
+  .text h2 { font-size: 2rem } .text p { font-size: 1.1rem; line-height: 2.05 }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } .w { -webkit-mask-image: none; mask-image: none } }
+</style>
+
+<main class="stage closed" id="stage" dir="rtl" lang="ar" aria-label="الكاتب: عرض ثلاثي الأبعاد">
+  <canvas id="c"></canvas>
+  <div class="vignette"></div>
+  <div class="spots" id="spots"></div>
+  <div class="loading" id="loading"><p>يبري الكاتب قلمه…</p></div>
+
+  <div class="top">
+    <h1>الكاتب <span class="glyph" aria-hidden="true">𓏞</span></h1>
+    <p class="sub">قاعد متربّعًا على قاعدته</p>
+  </div>
+
+  <div class="scroll" id="scroll">
+    <div class="sheet" id="sheet">
+      <div class="text" id="text" aria-live="polite"></div>
+      <div class="foot">
+        <button class="close" id="close" aria-label="لُفّ البردية">✕</button>
+        <button class="pause" id="pause" aria-label="إيقاف مؤقت">❚❚</button>
+        <button class="prev" id="prev">→ السابق</button>
+        <span class="count" id="count"></span>
+        <button class="next" id="next">التالي ←</button>
+      </div>
+      <svg class="pen" id="pen" viewBox="0 0 34 34" aria-hidden="true"><path d="M30 2 L9 27 L6 32 L11 29 L32 5 Z" fill="#b99a62" stroke="#5a4426" stroke-width="1"/><path d="M6 32 L9 27 L11 29 Z" fill="#1d1813"/></svg>
+    </div>
+    <div class="roll fixed"></div>
+    <div class="roll moving"></div>
+  </div>
+
+  <div class="dock"><button id="open"><span>✒</span> افرد البردية</button><button class="listen" id="listen"><span>▶</span> اسمع الكاتب</button></div>
+  <audio id="voice" src="narration.mp3" preload="auto"></audio>
+</main>
+
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
+
+const $ = id => document.getElementById(id);
+const stage = $('stage'), sheetEl = $('sheet'), textEl = $('text'), pen = $('pen');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const wide = () => innerWidth >= 900;
+
+// The lines of the papyrus. at = where the ink drop sits: [x, y, from] in statue units (height 1, front = +z);
+// from 'f' front / 'b' back / 's' side. view = camera around that point: az (0 = front), el, r.
+const LINES = [
+  { kicker: 'أول السطور', title: 'الكاتب', view: { az: .35, el: .12, r: 0 },
+    html: '<p>رجل يجلس على الأرض متربّعًا، وهي الجلسة التي نُحت عليها الكتبة في مصر القديمة. لم يكن الكاتب ناسخًا فقط: كان يسجّل المحاصيل ويحسب الضرائب ويكتب الرسائل وأوامر الدولة، ولذلك كان يحب أن يبقى في هيئة من يكتب.</p>' },
+  { kicker: 'السطر الثاني', title: 'الجلسة', at: [.3, .12, 'f'], view: { az: .55, el: .25, r: 2.1 },
+    html: '<p>الساقان متقاطعتان أمامه، والقدمان تظهران من تحت الركبتين، والركبتان مفرودتان على الأرض. من أقدم تماثيل الكتبة في هذه الجلسة تماثيل الدولة القديمة من سقارة، ومنها «الكاتب الجالس» المحفوظ في متحف اللوفر.</p>' },
+  { kicker: 'السطر الثالث', title: 'الحِجر', lap: true, view: { az: .15, el: .7, r: 1.8 },
+    html: '<p>النُّقبة مشدودة بين الركبتين حتى صارت سطحًا مستويًا. هذا السطح هو مكتب الكاتب: عليه يفرد البردية، ويمسك طرفها الملفوف بيد، ويكتب بالأخرى.</p>' },
+  { kicker: 'السطر الرابع', title: 'اليدان', at: [-.23, .38, 'f'], view: { az: -.35, el: .2, r: 1.8 },
+    html: '<p>اليدان مقبوضتان ومستريحتان فوق الركبتين. في تماثيل كتبة أخرى تمسك اليد اليسرى البردية واليمنى القلم، أما هنا فالكاتب ساكن، كأنه ينتظر من يُملي عليه.</p>' },
+  { kicker: 'السطر الخامس', title: 'الجسد', at: [0, .6, 'f'], view: { az: .2, el: .1, r: 1.8 },
+    html: '<p>كتفان عريضتان، وصدر مشدود، وسُرّة واضحة. بعض تماثيل الكتبة تُظهر طيّات في البطن علامةً على الرخاء وحياة المكتب، أما هذا فجسمه جسم شاب.</p>' },
+  { kicker: 'السطر السادس', title: 'الوجه', at: [.07, .77, 'f'], view: { az: .25, el: .05, r: 1.3 },
+    html: '<p>وجه مستدير هادئ، وعلى الشفتين ابتسامة خفيفة. لم يقصد النحّات صورة دقيقة لملامح رجل بعينه بقدر ما قصد الرجل في أحسن أحواله، كما يحب أن يبقى إلى الأبد.</p>' },
+  { kicker: 'السطر السابع', title: 'الباروكة', at: [-.1, .77, 'b'], view: { az: 2.75, el: .3, r: 1.15 },
+    html: '<p>باروكة تنزل حتى الكتفين وتغطي الأذنين، وخصلاتها خطوط محفورة متوازية تظهر بوضوح من الخلف. كان رجال الطبقة العليا يحلقون رؤوسهم ويلبسون الباروكات.</p>' },
+  { kicker: 'آخر السطور', title: 'الحبر الأسود والأحمر', view: { az: -.3, el: .3, r: 0 },
+    html: '<p>كان الكاتب يكتب بقلم من البوص يغمسه في الحبر الأسود، ويكتب العناوين وبدايات الفقرات بالأحمر. وكتابته على البردي هي الهيراطيقية، الخط السريع المأخوذ من الهيروغليفية. وعلامة «الكاتب» نفسها أدواته: اللوحة والدواة وغمد الأقلام <span class="glyph">𓏞</span>.</p>' },
+];
+
+// ---------- the 3D studio ----------
+const canvas = $('c');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x748ba1);
+scene.add(new THREE.HemisphereLight(0xfff4e6, 0x5c7287, 1.1));
+const key = new THREE.DirectionalLight(0xffffff, 2.4); key.position.set(2, 3, 4); scene.add(key);
+const rim = new THREE.DirectionalLight(0xdfe9ff, 1.3); rim.position.set(-2.5, 2, -3); scene.add(rim);
+const camera = new THREE.PerspectiveCamera(30, 1, .01, 50);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = .08; controls.enablePan = false;
+controls.minDistance = .5; controls.maxDistance = 5; controls.maxPolarAngle = Math.PI * .56;
+
+// soft shadow under the base
+{
+  const c = document.createElement('canvas'); c.width = c.height = 128; const g = c.getContext('2d');
+  const grd = g.createRadialGradient(64, 64, 8, 64, 64, 64); grd.addColorStop(0, '#000a'); grd.addColorStop(1, '#0000');
+  g.fillStyle = grd; g.fillRect(0, 0, 128, 128);
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 1), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false }));
+  m.rotation.x = -Math.PI / 2; m.position.y = .001; scene.add(m);
+}
+
+// papyrus fibres: two layers of strips, laid across each other
+function papyrusCanvas(w, h) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+  g.fillStyle = '#e4cf9c'; g.fillRect(0, 0, w, h);
+  let rnd = 7; const r = () => (rnd = (rnd * 16807) % 2147483647) / 2147483647;
+  for (let y = 0; y < h;) { const s = 3 + r() * 9; g.fillStyle = `rgba(${150 + r() * 60},${115 + r() * 50},${60 + r() * 30},${.06 + r() * .12})`; g.fillRect(0, y, w, s); y += s }
+  for (let x = 0; x < w;) { const s = 4 + r() * 14; g.fillStyle = `rgba(${140 + r() * 60},${105 + r() * 50},${55 + r() * 30},${.04 + r() * .08})`; g.fillRect(x, 0, s, h); x += s }
+  for (let i = 0; i < 260; i++) { g.fillStyle = `rgba(110,80,40,${r() * .18})`; g.fillRect(r() * w, r() * h, 1 + r() * 3, 1) }
+  return c;
+}
+sheetEl.style.backgroundImage = `url(${papyrusCanvas(512, 256).toDataURL('image/jpeg', .85)})`;
+
+let statue, H = 1, lapPt = null;
+const ray = new THREE.Raycaster();
+function hit(x, y, from) {
+  const o = from === 'f' ? new THREE.Vector3(x, y, 3) : from === 'b' ? new THREE.Vector3(x, y, -3) : from === 't' ? new THREE.Vector3(x, 3, y) : new THREE.Vector3(x > 0 ? 3 : -3, y, 0);
+  const d = from === 'f' ? [0, 0, -1] : from === 'b' ? [0, 0, 1] : from === 't' ? [0, -1, 0] : [x > 0 ? -1 : 1, 0, 0];
+  ray.set(o, new THREE.Vector3(...d));
+  const h = ray.intersectObject(statue, true)[0];
+  return h ? { p: h.point, n: h.face.normal.clone().transformDirection(h.object.matrixWorld) } : null;
+}
+
+// the papyrus on his lap: it lies ON the stretched kilt (each point of the sheet is lifted to the stone under it),
+// unrolls from his left hand by a clipping edge, and ink lines grow on it as the screen papyrus is written
+const lapCanvas = papyrusCanvas(512, 200), lapBase = lapCanvas.getContext('2d').getImageData(0, 0, 512, 200);
+const lapTex = new THREE.CanvasTexture(lapCanvas); lapTex.colorSpace = THREE.SRGBColorSpace;
+const lap = new THREE.Group(), lapClip = new THREE.Plane(new THREE.Vector3(1, 0, 0), 0);
+const LW = .33, LD = .1, SEG = 34, LIFT = .008;
+let lapSheet, lapRoll, colY = [];
+renderer.localClippingEnabled = true;
+function buildLap(at) {
+  lap.position.set(at.x + LW / 2, 0, at.z);
+  const g = new THREE.PlaneGeometry(LW, LD, SEG, 6); g.translate(-LW / 2, 0, 0); g.rotateX(-Math.PI / 2);
+  const pos = g.attributes.position, cols = SEG + 1, rows = pos.count / cols, Y = new Float32Array(pos.count);
+  for (let i = 0; i < pos.count; i++) {      // drop a ray from just above the lap (not from the sky: the belly overhangs the back edge)
+    ray.set(new THREE.Vector3(lap.position.x + pos.getX(i), at.y + .08, lap.position.z + pos.getZ(i)), new THREE.Vector3(0, -1, 0));
+    const h = ray.intersectObject(statue, true)[0];
+    Y[i] = h ? Math.min(h.point.y, at.y + .05) : at.y;
+  }
+  for (let pass = 0; pass < 3; pass++)        // soften: papyrus bends, it doesn't follow every chisel mark
+    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+      const i = r * cols + c, n = [i - 1, i + 1, i - cols, i + cols].filter((j, k) => j >= 0 && j < pos.count && (k > 1 || Math.floor(j / cols) === r));
+      Y[i] = Math.max(Y[i], n.reduce((s, j) => s + Y[j], 0) / n.length);
+    }
+  colY = Array.from({ length: cols }, (_, c) => { let m = -1; for (let r = 0; r < rows; r++) m = Math.max(m, Y[r * cols + c]); return m + LIFT });
+  for (let i = 0; i < pos.count; i++) pos.setY(i, Y[i] + LIFT);
+  g.computeVertexNormals();
+  lapSheet = new THREE.Mesh(g, new THREE.MeshStandardMaterial({ map: lapTex, roughness: .9, side: THREE.DoubleSide, clippingPlanes: [lapClip] }));
+  const rollMat = new THREE.MeshStandardMaterial({ color: 0xcbb07a, roughness: .8 });
+  const fixed = new THREE.Mesh(new THREE.CylinderGeometry(.014, .014, LD * 1.06, 20), rollMat); fixed.rotation.x = Math.PI / 2; fixed.position.y = colY[SEG] + .012;
+  lapRoll = fixed.clone(); lapRoll.scale.setScalar(.8);
+  lap.add(lapSheet, fixed, lapRoll);
+  scene.add(lap); setLap(0);
+}
+function setLap(u) {
+  if (!lapSheet) return;
+  lap.visible = u > .01;
+  lapClip.constant = -(lap.position.x - LW * u);        // keeps x >= the unrolled edge
+  const c = (1 - u) * SEG, c0 = Math.floor(c), c1 = Math.min(SEG, c0 + 1), y = colY[c0] + (colY[c1] - colY[c0]) * (c - c0);
+  lapRoll.position.set(-LW * u, y + .01, 0);
+}
+let inkDrawn = -1;
+function drawLapInk(p, idx) {      // p 0..1 of the current line's writing
+  const step = Math.round(p * 60);
+  if (step === inkDrawn) return; inkDrawn = step;
+  const g = lapCanvas.getContext('2d'); g.putImageData(lapBase, 0, 0);
+  let rnd = 11 + idx * 97; const r = () => (rnd = (rnd * 16807) % 2147483647) / 2147483647;
+  const rows = 5, total = rows * 440, upto = p * total; let done = 0;
+  for (let row = 0; row < rows && done < upto; row++) {
+    const y = 34 + row * 30; let x = 480;               // right to left, like the scribe
+    while (x > 40 && done < upto) {
+      const len = 10 + r() * 34, gap = 6 + r() * 10, n = Math.min(len, upto - done);
+      g.strokeStyle = row === 0 && x > 400 ? '#a8321f' : '#1d1813'; g.lineWidth = 3 + r() * 2.5; g.lineCap = 'round';
+      g.beginPath(); g.moveTo(x, y + (r() - .5) * 5); g.lineTo(x - n, y + (r() - .5) * 5); g.stroke();
+      x -= len + gap; done += len + gap;
+    }
+  }
+  lapTex.needsUpdate = true;
+}
+
+new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).load('model.glb', gltf => {
+  statue = gltf.scene;
+  const b = new THREE.Box3().setFromObject(statue), sz = b.getSize(new THREE.Vector3()), c = b.getCenter(new THREE.Vector3());
+  const s = H / sz.y; statue.scale.setScalar(s);
+  statue.position.set(-c.x * s, -b.min.y * s, -c.z * s);
+  scene.add(statue); statue.updateMatrixWorld(true);
+  // the lap: the middle of the stretched kilt (measured in the mesh: flat at y ≈ .33 from z .05, under the belly, to z .22 where it
+  // drops to the shins). The ray starts below the chest, which leans forward over the back of the lap.
+  ray.set(new THREE.Vector3(-.015, .42, .135), new THREE.Vector3(0, -1, 0));
+  lapPt = ray.intersectObject(statue, true)[0]?.point ?? new THREE.Vector3(-.015, .335, .135);
+  buildLap(lapPt);
+  placeSpots();
+  frame(0, true);
+  $('loading').remove();
+});
+
+// ---------- ink drops ----------
+const spots = [];
+function placeSpots() {
+  LINES.forEach((L, i) => {
+    let at = null;
+    if (L.at) at = hit(...L.at); else if (L.lap) at = { p: lapPt.clone(), n: new THREE.Vector3(0, 1, 0) };
+    L.pt = at ? at.p : new THREE.Vector3(0, .5, 0);
+    if (!at) return;
+    const b = document.createElement('button'); b.className = 'spot'; b.setAttribute('aria-label', L.title);
+    b.onclick = () => show(i); $('spots').append(b);
+    spots.push({ i, b, p: at.p, n: at.n });
+  });
+}
+const v = new THREE.Vector3(), toCam = new THREE.Vector3();
+function updateSpots() {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  for (const s of spots) {
+    v.copy(s.p).project(camera);
+    toCam.copy(camera.position).sub(s.p).normalize();
+    const facing = s.n.dot(toCam) > .15;
+    s.b.style.left = (v.x + 1) / 2 * w + 'px'; s.b.style.top = (1 - v.y) / 2 * h + 'px';   // the view offset is already in the projection
+    s.b.classList.toggle('away', !facing || v.z > 1);
+    s.b.classList.toggle('on', s.i === cur);
+  }
+}
+
+// ---------- camera ----------
+// The papyrus covers part of the screen: the view slides so the statue sits in what is left.
+let offX = 0, offY = 0, offXT = 0, offYT = 0;
+// x, y = how far the view slides; fw, fh = the free part of the screen (phones: between the title and the papyrus)
+function covered() {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  if (!uT) return { x: 0, y: 0, fw: w, fh: h };
+  const r = $('scroll').getBoundingClientRect(), TOP = 70;
+  return wide() ? { x: (r.width + 40) / 2, y: 0, fw: w - r.width - 40, fh: h }
+                : { x: 0, y: (r.height + 14 - TOP) / 2, fw: w, fh: h - r.height - 14 - TOP };
+}
+function fitDist() {              // whole statue in the free part of the screen
+  const cv = covered(), t = Math.tan(THREE.MathUtils.degToRad(15));
+  const fh = cv.fh / canvas.clientHeight, fw = cv.fw / canvas.clientWidth;
+  return Math.max(.62 / (t * fh), .55 / (t * camera.aspect * fw)) * 1.3;
+}
+function pose(i) {
+  const L = LINES[i], V = L.view, target = L.at || L.lap ? L.pt.clone() : new THREE.Vector3(0, .5, 0);
+  if (L.lap) target.y += .03;
+  if (L.at) target.x *= .5;          // aim between the feature and the statue's middle, so a side feature doesn't push him off the screen
+  const cv = covered(), freeAspect = cv.fw / cv.fh;          // a narrow free area needs the camera further back
+  const r = V.r ? V.r * (canvas.clientHeight / cv.fh) * Math.max(1, .9 / freeAspect) : fitDist();   // V.r frames the feature in a full-height view
+  const pos = target.clone().add(new THREE.Vector3(Math.sin(V.az) * Math.cos(V.el), Math.sin(V.el), Math.cos(V.az) * Math.cos(V.el)).multiplyScalar(r));
+  return { pos, target };
+}
+let fly = null;
+function flyTo(p, ms = 1200) { fly = { p0: camera.position.clone(), t0: controls.target.clone(), ...p, start: performance.now(), ms: reduce ? 1 : ms } }
+
+// ---------- the papyrus ----------
+let cur = -1, u = 0, uT = 0, writing = null;
+function show(i) {
+  cur = (i + LINES.length) % LINES.length;
+  stage.classList.remove('closed', 'closing'); stage.classList.add('open');
+  const L = LINES[cur];
+  textEl.innerHTML = `<div class="kicker">${L.kicker}</div><h2>${L.title}</h2>${L.html}`;
+  textEl.scrollTop = 0;
+  $('count').textContent = `${(cur + 1).toLocaleString('ar-EG')} / ${LINES.length.toLocaleString('ar-EG')}`;
+  wrapWords(textEl);
+  uT = 1; inkDrawn = -1;
+  requestAnimationFrame(() => { offXT = covered().x; offYT = covered().y; flyTo(pose(cur)) });
+  write();
+}
+function wrapWords(root) {           // every word becomes a span the pen can ink; Arabic letters stay joined inside a word
+  const walk = n => {
+    for (const c of [...n.childNodes]) {
+      if (c.nodeType === 3) {
+        const f = document.createDocumentFragment();
+        c.textContent.split(/(\s+)/).forEach(t => { if (!t) return; if (/^\s+$/.test(t)) f.append(t); else { const s = document.createElement('span'); s.className = 'w'; s.textContent = t; f.append(s) } });
+        c.replaceWith(f);
+      } else if (c.classList?.contains('glyph')) c.classList.add('w');
+      else walk(c);
+    }
+  };
+  walk(root);
+}
+// The ink flows: a run of words is revealed letter by letter, right to left, by a soft-edged mask (--p per word),
+// counted in characters so long words take longer. The pen glides after the wet edge.
+function inkRun(words) {
+  const len = words.map(w => Math.max(2, w.textContent.length)), start = [];
+  len.reduce((s, l, k) => (start[k] = s, s + l + 1), 0);
+  return { words, len, start, total: start.at(-1) + len.at(-1), k: 0 };
+}
+function inkTo(R, c) {            // returns the word being written and how far into it, or null
+  while (R.k < R.words.length) {
+    const w = R.words[R.k], p = (c - R.start[R.k]) / R.len[R.k];
+    if (p >= 1) { w.classList.add('in'); w.style.removeProperty('--p'); R.k++; continue }
+    if (p <= 0) return null;
+    w.style.setProperty('--p', p.toFixed(3));
+    return { w, p };
+  }
+  return null;
+}
+let penX = 0, penY = 0, penOn = false;
+function penTo(at) {
+  if (!at) return;
+  const a = at.w.getBoundingClientRect(), s = sheetEl.getBoundingClientRect();
+  const x = a.right - at.p * a.width - s.left, y = a.bottom - s.top;
+  if (!penOn || Math.abs(y - penY) > 4) { penX = x; penY = y }     // a new line: the pen is lifted, not dragged across
+  penOn = true; pen.dataset.x = x; pen.dataset.y = y; pen.classList.add('on');
+  if (a.bottom > textEl.getBoundingClientRect().bottom - 4) textEl.scrollBy({ top: a.height + 10, behavior: 'smooth' });
+}
+function penStep(dt) {
+  if (!penOn) return;
+  const k = Math.min(1, dt * 16);
+  penX += (+pen.dataset.x - penX) * k; penY += (+pen.dataset.y - penY) * k;
+  pen.style.transform = `translate(${penX - 6}px, ${penY - 26}px)`;
+}
+function penOff() { penOn = false; pen.classList.remove('on') }
+const CPS = 24;                    // reading pace when no one is speaking (characters a second)
+function write() {
+  writing = { R: inkRun([...textEl.querySelectorAll('.w')]), t0: performance.now() + (u < .9 ? 650 : 120), line: cur };
+  if (reduce) finish();
+}
+function finish() {
+  if (!writing) return;
+  inkTo(writing.R, Infinity); drawLapInk(1, cur); writing = null; penOff();
+}
+function stepWriting(now) {
+  if (!writing || now < writing.t0) return;
+  const W = writing, c = (now - W.t0) / 1000 * CPS;
+  const at = inkTo(W.R, c);
+  if (W.R.k >= W.R.words.length) { writing = null; penOff(); drawLapInk(1, W.line); return }
+  penTo(at);
+  drawLapInk(c / W.R.total, W.line);
+}
+function close() {
+  if (story) { voice.pause(); story = null; stage.classList.remove('telling') }
+  finish(); stage.classList.add('closing'); uT = 0; cur = -1; offXT = offYT = 0;   // the papyrus rolls up first, then leaves
+  flyTo(pose(0));
+}
+
+// ---------- listening: the scribe's voice, his words written as he says them ----------
+// SAY = narration_script.md without the vowel marks; CUES = start of each line in narration.mp3 (silencedetect + line-length fit);
+// PAGE = which papyrus line each one belongs to (8 = the closing page, no heading).
+const SAY = [
+  'أنا الكاتب.',
+  'أحصي الحصاد، وأحسب الضرائب، وأكتب رسائل الملك وأوامره.',
+  'ولذلك اخترت أن أبقى هكذا… جالسًا كما أجلس للكتابة.',
+  'أجلس على الأرض متربّعًا، ساقاي متقاطعتان أمامي.',
+  'هكذا جلس الكتبة في تماثيلهم، منذ أيام بناة الأهرام.',
+  'والنقبة مشدودة بين ركبتيّ… هذا مكتبي.',
+  'عليه أفرد البردية، وأمسك طرفها الملفوف بيد، وأكتب بالأخرى.',
+  'أما الآن فيداي مستريحتان على ركبتيّ… أنتظر من يملي عليّ.',
+  'كتفاي عريضتان، وصدري مشدود… جسد شاب لم يتعبه العمل الشاق.',
+  'وهذا وجهي… هادئ، وعلى شفتيّ ابتسامة خفيفة.',
+  'لم ينحتني النحات كما كنت في يوم ما… بل كما أحب أن أبقى إلى الأبد.',
+  'وعلى رأسي باروكة تنزل إلى كتفيّ، خصلها خطوط محفورة.',
+  'كنا نحلق رؤوسنا، ونلبس الباروكات.',
+  'وهذه أدواتي: قلم من البوص، ولوح فيه حبران… أسود وأحمر.',
+  'بالأسود أكتب الكلام… وبالأحمر أبدأ الفقرات والعناوين.',
+  'وخطي على البردي هو الهيراطيقية… كتابة سريعة، من اليمين إلى اليسار.',
+  'في نص قديم، يأخذ أب ابنه إلى مدرسة الكتابة، ويقول له…',
+  '«سأجعلك تحب الكتب أكثر من أمك».',
+  'مرت آلاف السنين…',
+  'وما زلت أنتظر… أن أكتب.',
+];
+const CUES = [0.14, 2.13, 8.04, 13.15, 18.08, 23.4, 27.56, 33.18, 38.73, 45.14, 50.11, 55.86, 61.39, 65.2, 71.43, 76.29, 82.68, 88.48, 92.17, 94.86];
+const SPEECH_END = 97.53;
+const PAGE = [0, 0, 0, 1, 1, 2, 2, 3, 4, 5, 5, 6, 6, 7, 7, 7, 7, 7, 8, 8];
+const CODA = 8, CODA_VIEW = { az: -.25, el: .14, r: 0 };
+const voice = $('voice');
+let story = null;     // { page, line, said: [[spans]] , t0 }
+function listen() {
+  finish(); writing = null;
+  story = { page: -1, line: -1, said: [], timed: false, t0: performance.now() };
+  stage.classList.remove('closed', 'closing'); stage.classList.add('open', 'telling');
+  uT = 1; $('pause').textContent = '❚❚';
+  voice.currentTime = 0;
+  voice.play().catch(() => { story.timed = true });     // no audio: the lines still run on the clock
+}
+function storyTime() { return story.timed ? (performance.now() - story.t0) / 1000 : voice.currentTime }
+function setPage(p) {
+  story.page = p; cur = p === CODA ? -1 : p; inkDrawn = -1; story.said = [];
+  if (p === CODA) textEl.innerHTML = '<p class="coda"></p>';
+  else { const L = LINES[p]; textEl.innerHTML = `<div class="kicker">${L.kicker}</div><h2>${L.title}</h2><p class="said"></p>` }
+  textEl.querySelectorAll('.kicker, h2').forEach(wrapWords);
+  story.head = inkRun([...textEl.querySelectorAll('.w')]); story.headT = storyTime();
+  textEl.scrollTop = 0;
+  $('count').textContent = p === CODA ? '' : `${(p + 1).toLocaleString('ar-EG')} / ${LINES.length.toLocaleString('ar-EG')}`;
+  requestAnimationFrame(() => {
+    offXT = covered().x; offYT = covered().y;
+    if (p === CODA) { const keep = LINES[0].view; LINES[0].view = CODA_VIEW; flyTo(pose(0), 2200); LINES[0].view = keep }
+    else flyTo(pose(p), 1500);
+  });
+}
+function addLine(i) {
+  const p = textEl.querySelector('.said, .coda'), s = document.createElement('span');
+  s.textContent = SAY[i] + ' ';
+  if (p.classList.contains('coda') && p.childNodes.length) p.append(document.createElement('br'));
+  p.append(s); wrapWords(s);
+  story.said.push({ i, R: inkRun([...s.querySelectorAll('.w')]) });
+}
+function tickStory() {
+  const t = storyTime();
+  // the last words stay on the papyrus a moment, then it rolls up
+  const over = story.timed ? t >= SPEECH_END + 1.8 : voice.ended && performance.now() - (story.endAt ??= performance.now()) > 1600;
+  if (over) { close(); return }
+  let i = -1; while (i + 1 < CUES.length && CUES[i + 1] <= t) i++;
+  if (i < 0) return;
+  if (PAGE[i] !== story.page) setPage(PAGE[i]);
+  while (story.line < i) { story.line++; if (PAGE[story.line] === story.page) addLine(story.line) }
+  if (u < .85) return;
+  // the heading is inked quickly in red as the page opens; each spoken line flows onto the papyrus over the time it is spoken
+  let at = inkTo(story.head, (t - story.headT) * 40);
+  for (const S of story.said) {
+    const end = (CUES[S.i + 1] ?? SPEECH_END) - .35, f = Math.min(1, (t - CUES[S.i]) / Math.max(.5, end - CUES[S.i]));
+    at = inkTo(S.R, f * S.R.total) || at;
+  }
+  if (at) penTo(at); else penOff();
+  // the ink on his lap grows with the page
+  const first = PAGE.indexOf(story.page), lastI = PAGE.lastIndexOf(story.page);
+  const p0 = CUES[first], p1 = (CUES[lastI + 1] ?? SPEECH_END);
+  drawLapInk(Math.min(1, (t - p0) / (p1 - p0)), story.page);
+}
+$('listen').onclick = listen;
+$('pause').onclick = () => {
+  if (!story) return;
+  if (story.timed) return;
+  if (voice.paused) { voice.play(); $('pause').textContent = '❚❚' } else { voice.pause(); $('pause').textContent = '▶' }
+};
+$('open').onclick = () => show(0);
+$('next').onclick = () => show(cur + 1);
+$('prev').onclick = () => show(cur - 1);
+$('close').onclick = close;
+textEl.onclick = finish;
+addEventListener('keydown', e => {
+  if (cur < 0 && !story) return;
+  if (story) { if (e.key === 'Escape') close(); return }
+  if (e.key === 'ArrowLeft') show(cur + 1); else if (e.key === 'ArrowRight') show(cur - 1); else if (e.key === 'Escape') close();
+});
+
+// ---------- loop ----------
+function resize() {
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+const ease = t => t < .5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+let last = 0;
+function frame(now, first) {
+  if (canvas.width !== Math.round(canvas.clientWidth * renderer.getPixelRatio())) resize();
+  if (first) { const p = pose(0); camera.position.copy(p.pos); controls.target.copy(p.target) }
+  const dt = Math.min((now - last) / 1000, .05); last = now;
+  if (fly) {
+    const t = Math.min((now - fly.start) / fly.ms, 1), e = ease(t);
+    camera.position.lerpVectors(fly.p0, fly.pos, e); controls.target.lerpVectors(fly.t0, fly.target, e);
+    if (t >= 1) fly = null;
+  }
+  // unroll / roll up: the screen papyrus and the one on his lap move together
+  const du = uT - u; u += Math.sign(du) * Math.min(Math.abs(du), dt * (reduce ? 99 : 1.25));
+  stage.style.setProperty('--u', (1 - ease(Math.max(0, Math.min(1, u)))).toFixed(4));
+  setLap(ease(Math.max(0, Math.min(1, u))));
+  if (!uT && u <= 0 && stage.classList.contains('closing')) { stage.classList.remove('open', 'closing'); stage.classList.add('closed') }
+  offX += (offXT - offX) * Math.min(1, dt * 5); offY += (offYT - offY) * Math.min(1, dt * 5);
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  if (Math.abs(offX) + Math.abs(offY) > .5) camera.setViewOffset(w, h, -offX, offY, w, h); else camera.clearViewOffset();
+  if (story) tickStory(); else if (u > .85) stepWriting(now);
+  penStep(dt);
+  controls.update();
+  if (statue) updateSpots();
+  renderer.render(scene, camera);
+  requestAnimationFrame(frame);
+}
+addEventListener('resize', () => { offXT = covered().x; offYT = covered().y });
+</script>
