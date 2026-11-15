@@ -1,0 +1,61 @@
+/* «مِدو نِتِر» design tokens v1 — «فجر النيل» (the one look; night palette kept off)
+   Each app keeps its OWN COPY of this file (dev separate, display merged). Change it here first,
+   bump the version, then copy it into each app. Prefix --mn- so it never clashes with an app's own names.
+   Apps set their pigment with a class on <html>: mn-see · mn-write · mn-read (hub: none). */
+:root{
+  --mn-version:"1.1";
+  --mn-f-display:"Amiri",serif;
+  --mn-f-ui:"IBM Plex Sans Arabic",system-ui,sans-serif;
+  --mn-f-tr:"Gentium Book Plus",serif;
+  --mn-f-hg:"Noto Sans Egyptian Hieroglyphs",serif;
+  --mn-r-s:8px; --mn-r-m:14px; --mn-r-l:22px;
+  --mn-ease:cubic-bezier(.2,.7,.2,1);
+
+  /* day: فجر النيل */
+  --mn-bg:#F7EFE4; --mn-surface:#FFFBF5; --mn-glass:rgba(255,251,245,.62); --mn-sunk:rgba(80,55,30,.07);
+  --mn-ink:#231A14; --mn-ink-2:#4D3F33; --mn-mute:#8A7764; --mn-line:rgba(80,55,30,.14); --mn-line-2:rgba(80,55,30,.24);
+  --mn-see:#C08A1E; --mn-write:#C0432A; --mn-read:#2453A6; --mn-on:#FFFFFF;
+  --mn-papyrus:#F2E3BF; --mn-papyrus-2:#E8D3A2; --mn-stone:#F4EEE4; --mn-linen:#ECEAE3;
+  --mn-glow-1:#F7C9A3; --mn-glow-2:#C9D6F2; --mn-glow-3:#F3D9A0;
+  --mn-title:linear-gradient(90deg,var(--mn-read),var(--mn-write) 55%,var(--mn-see));
+  --mn-shadow:0 1px 0 rgba(35,26,20,.04),0 10px 30px -12px rgba(35,26,20,.22);
+  --mn-p:var(--mn-ink);
+}
+/* «فجر النيل» is the look on every device (user's pick, 2026-11-11). The night palette stays here, OFF:
+   it applies only if a page sets data-theme="night" on <html> on purpose. */
+/* night: لازورد وذهب — same three pigments, lifted for a dark ground */
+:root[data-theme="night"]{
+  --mn-bg:#0E1630; --mn-surface:#141E3C; --mn-glass:rgba(20,30,62,.55); --mn-sunk:rgba(255,255,255,.06);
+  --mn-ink:#F3EAD6; --mn-ink-2:#CFC3A9; --mn-mute:#9B9278; --mn-line:rgba(230,200,130,.18); --mn-line-2:rgba(230,200,130,.3);
+  --mn-see:#E8B84A; --mn-write:#E8694B; --mn-read:#6FA8E8; --mn-on:#0E1630;
+  --mn-papyrus:#E9D8AE; --mn-papyrus-2:#D9C38E; --mn-stone:#1A2546; --mn-linen:#1B2340;
+  --mn-glow-1:#2B4BA0; --mn-glow-2:#7A3B6E; --mn-glow-3:#1E6E86;
+  --mn-title:linear-gradient(90deg,#F6D98A,#E8B84A 50%,#F3EAD6);
+  --mn-shadow:0 1px 0 rgba(0,0,0,.3),0 14px 34px -14px rgba(0,0,0,.7);
+}
+.mn-see{--mn-p:var(--mn-see)} .mn-write{--mn-p:var(--mn-write)} .mn-read{--mn-p:var(--mn-read)}
+
+/* ── shared pieces: the living ground, the mark, the app bar ── */
+.mn-ground{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:var(--mn-bg)}
+.mn-ground::before,.mn-ground::after{content:"";position:absolute;inset:-20%;filter:blur(48px);opacity:.85}
+.mn-ground::before{background:radial-gradient(40% 35% at 20% 12%,var(--mn-glow-1),transparent 70%),radial-gradient(35% 30% at 88% 28%,var(--mn-glow-2),transparent 70%);animation:mn-drift 22s ease-in-out infinite alternate}
+.mn-ground::after{background:radial-gradient(45% 35% at 60% 100%,var(--mn-glow-3),transparent 70%);animation:mn-drift 28s ease-in-out infinite alternate-reverse}
+@keyframes mn-drift{to{transform:translate(4%,3%) scale(1.08)}}
+
+.mn-mark{display:inline-flex;align-items:center;gap:.2em;padding:.2em .45em;border-radius:999px;border:1.5px solid currentColor;line-height:1;color:var(--mn-ink);text-decoration:none}
+.mn-mark .hg{font-family:var(--mn-f-hg);line-height:1;opacity:.3}
+.mn-mark .s{color:var(--mn-see)} .mn-mark .w{color:var(--mn-write)} .mn-mark .u{color:var(--mn-read)}
+.mn-mark.all .hg,.mn-see .mn-mark .s,.mn-write .mn-mark .w,.mn-read .mn-mark .u{opacity:1}
+
+.mn-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid var(--mn-line);background:var(--mn-glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);font-family:var(--mn-f-ui);position:relative;z-index:5}
+.mn-bar::after{content:"";position:absolute;inset-inline:0;bottom:-1px;height:2px;background:var(--mn-p)}
+.mn-bar .mn-mark{font-size:17px}
+.mn-bar .mn-name{font:700 18px var(--mn-f-display);color:var(--mn-ink);white-space:nowrap}
+.mn-sw{margin-inline-start:auto;display:flex;gap:3px;padding:3px;border-radius:999px;background:var(--mn-sunk)}
+.mn-sw a{display:flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;font:500 12.5px var(--mn-f-ui);color:var(--mn-ink-2);text-decoration:none;white-space:nowrap}
+.mn-sw a i{width:7px;height:7px;border-radius:50%}
+.mn-sw .s i{background:var(--mn-see)} .mn-sw .w i{background:var(--mn-write)} .mn-sw .u i{background:var(--mn-read)}
+.mn-sw a[aria-current="page"]{background:var(--mn-surface);color:var(--mn-ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.mn-sw a.soon{opacity:.45;pointer-events:none}
+@media (max-width:560px){.mn-sw a span{display:none}.mn-sw a{padding:6px 8px}.mn-bar .mn-name{font-size:16px}}
+@media (prefers-reduced-motion:reduce){.mn-ground::before,.mn-ground::after{animation:none}}

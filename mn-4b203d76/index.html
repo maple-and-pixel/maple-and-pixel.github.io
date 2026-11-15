@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مِدو نِتِر</title>
+<meta name="description" content="تشوف · تكتب · تعرب — كاتب الهيراطيقي والمُعرِب">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Gentium+Book+Plus:ital,wght@0,400;1,400&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap">
+<link rel="stylesheet" href="design/tokens.css?v=1.1">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--mn-bg)}
+body{color:var(--mn-ink);font:400 15px/1.6 var(--mn-f-ui);min-height:100vh;display:flex;flex-direction:column}
+.hg{font-family:var(--mn-f-hg);line-height:1}
+.tr{font-family:var(--mn-f-tr);font-style:italic;direction:ltr;unicode-bidi:isolate}
+main{flex:1;width:100%;max-width:1120px;margin:0 auto;padding:0 16px 40px}
+
+.hero{text-align:center;padding:64px 0 40px}
+.hero .mn-mark{font-size:48px;border-width:2px;padding:.22em .5em;background:var(--mn-glass);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:var(--mn-shadow)}
+.hero .mn-mark .hg{opacity:1}
+.hero h1{font:700 76px/1.05 var(--mn-f-display);margin-top:22px;background:var(--mn-title);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lat{font:italic 400 22px var(--mn-f-tr);color:var(--mn-mute);margin-top:6px;letter-spacing:.04em}
+.verbs{display:flex;justify-content:center;gap:22px;margin-top:18px;font:600 15px var(--mn-f-ui);color:var(--mn-ink-2)}
+.verbs span{display:flex;align-items:center;gap:8px}
+.verbs i{width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 12px var(--c)}
+
+.faces{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.face{--c:var(--k);display:flex;flex-direction:column;gap:14px;padding:16px;border-radius:var(--mn-r-l);background:var(--mn-glass);border:1px solid var(--mn-line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:inherit;text-decoration:none;position:relative;overflow:hidden;transition:transform .35s var(--mn-ease),box-shadow .35s}
+a.face:hover,a.face:focus-visible{transform:translateY(-4px);box-shadow:0 16px 36px -16px var(--c)}
+a.face:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+.face::before{content:"";position:absolute;inset-inline:16px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--c)}
+.face.s{--k:var(--mn-see)} .face.w{--k:var(--mn-write)} .face.u{--k:var(--mn-read)}
+.face .verb{font:700 34px/1 var(--mn-f-display);color:var(--c)}
+.face .app{font:600 15px var(--mn-f-ui)}
+.face .sub{font-size:13px;color:var(--mn-mute)}
+.face .go{align-self:flex-start;margin-top:auto;font:600 13px var(--mn-f-ui);padding:6px 16px;border-radius:999px;background:var(--c);color:var(--mn-on)}
+.face .soon{align-self:flex-start;margin-top:auto;font:600 12px var(--mn-f-ui);padding:5px 14px;border-radius:999px;border:1px solid var(--c);color:var(--c)}
+.face.off{opacity:.78}
+
+.mini{height:120px;border-radius:14px;position:relative;overflow:hidden;border:1px solid var(--mn-line)}
+.pap{background:linear-gradient(180deg,var(--mn-papyrus),var(--mn-papyrus-2))}
+.mini .row{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:8px}
+.mini img{object-fit:contain;mix-blend-mode:multiply}
+.m-see img{height:40px;max-width:28%}
+.m-see .box{position:absolute;top:30px;right:calc(50% - 74px);width:56px;height:60px;border:2px solid var(--mn-see);border-radius:6px}
+.m-see .box b{position:absolute;top:-22px;right:-2px;font:600 10.5px var(--mn-f-ui);background:var(--mn-see);color:var(--mn-on);padding:1px 6px;border-radius:5px;white-space:nowrap}
+.m-see .scan{position:absolute;inset-inline:0;height:36px;background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--mn-see) 35%,transparent),transparent);animation:scan 3.4s ease-in-out infinite}
+@keyframes scan{from{top:-36px}to{top:120px}}
+.m-write img{height:32px;max-width:13%}
+.m-write .gap{width:10px}
+.m-write .pen{position:absolute;bottom:14px;left:22px;width:40%;height:2px;background:linear-gradient(90deg,transparent,var(--mn-write));transform-origin:right;animation:pen 2.8s var(--mn-ease) infinite}
+@keyframes pen{0%{transform:scaleX(0)}60%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+.m-read{background:var(--mn-stone);display:flex;flex-direction:column;justify-content:center;gap:6px;padding:10px}
+.m-read .w2{display:flex;justify-content:center;gap:18px}
+.m-read .w2>span{display:flex;flex-direction:column;align-items:center;gap:3px}
+.m-read .w2 .hg{font-size:22px;color:var(--mn-read)}
+.m-read .w2 .tr{font-size:12.5px;color:var(--mn-ink-2)}
+.m-read .ar{text-align:center;font:700 19px var(--mn-f-display)}
+.m-read .chips{display:flex;justify-content:center;gap:6px}
+.chip{font:600 10.5px var(--mn-f-ui);padding:2px 8px;border-radius:999px}
+.chip.a{background:color-mix(in srgb,var(--mn-write) 16%,transparent);color:var(--mn-write)}
+.chip.b{background:color-mix(in srgb,var(--mn-read) 16%,transparent);color:var(--mn-read)}
+
+.bridge{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px auto 0;padding:10px 18px;width:max-content;max-width:100%;border-radius:999px;border:1px dashed var(--mn-line-2);font:500 13px var(--mn-f-ui);color:var(--mn-ink-2);background:var(--mn-glass)}
+.bridge b{padding:2px 12px;border-radius:999px;font-weight:600}
+.bridge .a{background:color-mix(in srgb,var(--mn-write) 16%,transparent);color:var(--mn-write)}
+.bridge .b{background:color-mix(in srgb,var(--mn-read) 16%,transparent);color:var(--mn-read)}
+
+footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 18px;border-top:1px solid var(--mn-line);font-size:12px;color:var(--mn-mute);background:var(--mn-glass)}
+@media (max-width:900px){.faces{grid-template-columns:minmax(0,1fr)}.hero{padding:44px 0 30px}.hero h1{font-size:56px}.hero .mn-mark{font-size:38px}}
+@media (prefers-reduced-motion:reduce){.m-see .scan,.m-write .pen{animation:none}.face{transition:none}}
+</style>
+</head>
+<body>
+<div class="mn-ground" aria-hidden="true"></div>
+<header class="mn-bar">
+  <a class="mn-mark all" href="./" aria-label="مِدو نِتِر"><span class="hg s">𓁹</span><span class="hg w">𓏞</span><span class="hg u">𓏛</span></a>
+  <span class="mn-name">مِدو نِتِر</span>
+  <nav class="mn-sw" aria-label="البرامج">
+    <a class="s soon" aria-disabled="true"><i></i><span>اللاقط</span></a>
+    <a class="w" href="apps/writer/"><i></i><span>الكاتب</span></a>
+    <a class="u" href="apps/irab/"><i></i><span>المُعرِب</span></a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="mn-mark all"><span class="hg s">𓁹</span><span class="hg w">𓏞</span><span class="hg u">𓏛</span></span>
+    <h1>مِدو نِتِر</h1>
+    <div class="lat">Medu Netjer</div>
+    <div class="verbs"><span style="--c:var(--mn-see)"><i></i>تشوف</span><span style="--c:var(--mn-write)"><i></i>تكتب</span><span style="--c:var(--mn-read)"><i></i>تعرب</span></div>
+  </section>
+
+  <section class="faces" aria-label="البرامج">
+    <div class="face s off">
+      <div class="verb">تشوف</div>
+      <div class="mini pap m-see" aria-hidden="true"><div class="row"><img src="design/img/G17.webp" alt=""><img src="design/img/D21.webp" alt=""><img src="design/img/F35.webp" alt=""></div><div class="box"><b>G17</b></div><div class="scan"></div></div>
+      <div><div class="app">لاقط الهيراطيقي</div><div class="sub">صورة ← علامات</div></div>
+      <span class="soon">قريبًا</span>
+    </div>
+    <a class="face w" href="apps/writer/">
+      <div class="verb">تكتب</div>
+      <div class="mini pap m-write" aria-hidden="true"><div class="row"><img src="design/img/F35.webp" alt=""><img src="design/img/I9.webp" alt=""><img src="design/img/D21.webp" alt=""><span class="gap"></span><img src="design/img/R4.webp" alt=""><img src="design/img/X1.webp" alt=""><img src="design/img/Q3.webp" alt=""></div><div class="pen"></div></div>
+      <div><div class="app">كاتب الهيراطيقي</div><div class="sub">هيروغليفي ← هيراطيقي</div></div>
+      <span class="go">افتح</span>
+    </a>
+    <a class="face u" href="apps/irab/">
+      <div class="verb">تعرب</div>
+      <div class="mini m-read" aria-hidden="true"><div class="w2"><span><span class="hg">𓄤𓆑𓂋</span><span class="tr">nfr</span></span><span><span class="hg">𓊵𓏏𓊪</span><span class="tr">ḥtp</span></span></div><div class="ar">السلام جميل</div><div class="chips"><span class="chip a">خبر</span><span class="chip b">مبتدأ</span></div></div>
+      <div><div class="app">المُعرِب</div><div class="sub">نطق · إعراب · ترجمة</div></div>
+      <span class="go">افتح</span>
+    </a>
+  </section>
+
+  <div class="bridge"><b class="a">اكتب</b><span aria-hidden="true">⇄</span><b class="b">أعرب</b></div>
+</main>
+
+<footer><span>© 2026 Medhat Elgwaely</span><span>Möller · Gardiner · Nour el-Din · TLA (CC BY-SA 4.0)</span></footer>
+</body>
+</html>

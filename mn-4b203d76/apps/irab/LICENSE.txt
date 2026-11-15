@@ -1,0 +1,31 @@
+المُعرِب — Middle Egyptian parser, reader and translator
+Copyright © 2026 Medhat Elgwaely. All rights reserved, except as stated in Part 2.
+
+PART 1 — Medhat Elgwaely's own work: all rights reserved
+  The program code (irab/, js/, tools/, the pages and their templates), the parsing and translation rules,
+  the page design, the hand-written grammar analyses, the reference translations and the measurement method.
+  No copying, modification, redistribution or reuse, in whole or in part, without written permission
+  from the copyright holder. Viewing and using the published pages in a browser is permitted.
+
+PART 2 — Data adapted from the Thesaurus Linguae Aegyptiae: CC BY-SA 4.0
+  The lexical data files lexicon_slim.json, context_slim.json, spelling_index.json, word_info.json and en.json,
+  and the lexical tables embedded in the pages, are adapted from:
+    Thesaurus Linguae Aegyptiae, Original Earlier Egyptian sentences, corpus v18, premium (2023), and
+    TLA Lemmata in Wikidata 2024; ed. by the Berlin-Brandenburgische Akademie der Wissenschaften and the
+    Sächsische Akademie der Wissenschaften zu Leipzig — https://thesaurus-linguae-aegyptiae.de
+  Licence: Creative Commons Attribution-ShareAlike 4.0 International,
+    https://creativecommons.org/licenses/by-sa/4.0/
+  As that licence requires, these adapted data files — including the meanings added to them — are shared under
+  the same licence. Changes made: entries reduced and re-indexed, part-of-speech counts, word-context counts,
+  Arabic and English meanings added.
+
+  Hieroglyph sign values follow the Unicode Character Database (Unicode License v3).
+
+Contact for permissions: Medhat Elgwaely
+
+----------------------------------------------------------------------------------------------------
+بالعربي، باختصار:
+  ١. الكود والقواعد وتصميم الصفحات والتحليل والترجمات المرجعية شغل مدحت الجويلي: جميع الحقوق محفوظة،
+     وممنوع النسخ أو التعديل أو إعادة الاستخدام من غير إذن مكتوب. استخدام الصفحة المنشورة في المتصفح مسموح.
+  ٢. ملفات البيانات المعجمية مأخوذة ومعدّلة من Thesaurus Linguae Aegyptiae، ورخصتها CC BY-SA 4.0:
+     أي حد ياخدها لازم يذكر المصدر وينشرها بنفس الرخصة، وده بيشمل المعاني اللي اتضافت عليها.

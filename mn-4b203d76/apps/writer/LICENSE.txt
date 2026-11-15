@@ -1,0 +1,31 @@
+Copyright (c) 2026 Medhat Elgwaely. All rights reserved.
+حقوق النشر (c) 2026 Medhat Elgwaely. جميع الحقوق محفوظة.
+
+Hieratic Writer (كاتب الهيراطيقي) — software, sign database, form images,
+classifications, arrangement, interface design and documentation.
+
+No part of this work may be copied, reproduced, redistributed, modified,
+scraped, used to train software or models, or used to build a derivative
+or competing product, in whole or in part, without prior written
+permission from the author.
+
+Viewing the published pages for personal study does not grant any of the
+rights above.
+
+Third-party material is NOT covered by this notice and stays under its
+own terms:
+- G. Möller, Hieratische Paläographie I–III (Leipzig 1909–1912): public
+  domain.
+- Page images from the Hieratische Paläographie DB (Univ. Tsukuba /
+  Univ. Tokyo), https://moeller.jinsha.tsukuba.ac.jp/, licensed CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/). The form images in this
+  work were cut, cleaned and repaired from those pages; the original
+  images remain available from that database under CC BY 4.0.
+- Fonts: IBM Plex Sans Arabic, Reem Kufi, Noto Serif, Noto Sans Egyptian
+  Hieroglyphs, all under the SIL Open Font License 1.1.
+
+This notice covers the author's own work: code, interface design,
+database structure, selection, classification, arrangement, review
+verdicts, repairs, trained detection models, tools and documentation.
+
+Contact: elgwaelymedhat@gmail.com
