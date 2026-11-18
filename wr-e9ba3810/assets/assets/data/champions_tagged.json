@@ -1,0 +1,4050 @@
+[
+  {
+    "id": "aatrox",
+    "name": "Aatrox",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DEATHBRINGER STANCE",
+        "description": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health."
+      },
+      {
+        "slot": "1",
+        "name": "THE DARKIN BLADE",
+        "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect."
+      },
+      {
+        "slot": "2",
+        "name": "INFERNAL CHAINS",
+        "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again."
+      },
+      {
+        "slot": "3",
+        "name": "UMBRAL DASH",
+        "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction."
+      },
+      {
+        "slot": "ultimate",
+        "name": "WORLD ENDER",
+        "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/dbb1d55dfccc9e9ddb8fa1a7915e3a544332958f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "healer",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "ahri",
+    "name": "Ahri",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Essence Theft",
+        "description": "Whenever Ahri hits a target with a spell, she gains a stack of Essence Theft. When she has enough stacks, her next spell that hits an enemy also heals her."
+      },
+      {
+        "slot": "1",
+        "name": "Orb of Deception",
+        "description": "Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back."
+      },
+      {
+        "slot": "2",
+        "name": "Fox-Fire",
+        "description": "Ahri gains a brief burst of movement speed and releases three fox-fires, that lock onto and attack nearby enemies."
+      },
+      {
+        "slot": "3",
+        "name": "Charm",
+        "description": "Ahri blows a kiss that damages and charms an enemy it encounters, instantly stopping movement abilities and causing them to walk harmlessly towards her. The target temporarily takes increased damage from Ahri."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Spirit Rush",
+        "description": "Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush can be cast up to three times before going on cooldown."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3a7ecf6f50c441a1bfe93f2a835b070c6c0ac639-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
+    "id": "akali",
+    "name": "Akali",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ASSASSIN'S MARK",
+        "description": "Dealing spell damage to a champion creates a ring of energy around them. Exiting that ring empowers Akali's next autoattack with bonus range and damage."
+      },
+      {
+        "slot": "1",
+        "name": "FIVE POINT STRIKE",
+        "description": "Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing at maximum range."
+      },
+      {
+        "slot": "2",
+        "name": "TWILIGHT SHROUD",
+        "description": "Akali drops a cover of smoke and briefly gains Movement Speed and restores Energy. While inside the shroud, Akali becomes invisible. Attacking or using abilities will briefly reveal her."
+      },
+      {
+        "slot": "3",
+        "name": "SHURIKEN FLIP",
+        "description": "Akali flips backward and fires a shuriken forward, dealing magic damage. The first enemy or smoke cloud hit is marked. Re-casting dashes to the marked target, dealing additional damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PERFECT EXECUTION",
+        "description": "Akali leaps in a direction, damaging enemies she strikes. Re-casting dashes in a direction, executing all enemies she strikes."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/80443e3cfae7d2425d05d6e9fec5debf0c8a4f08-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile",
+      "stealth"
+    ]
+  },
+  {
+    "id": "akshan",
+    "name": "Akshan",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DIRTY FIGHTING",
+        "description": "Every third attack or ability hit deals bonus physical damages. Against champions, also gains damage shield for brief moment."
+      },
+      {
+        "slot": "1",
+        "name": "AVENGERANG",
+        "description": "Like a typical boomerang spell, can hit each enemy twice (once on way out and in). Boomerang will reach some units beyond the last target hit, if it hits a different target during this it’s range will extend (theoretically range is infinite)"
+      },
+      {
+        "slot": "2",
+        "name": "GOING ROGUE",
+        "description": "Passive: Enemies that kill Akshan’s allies become Scoundrels for few brief seconds. Killing a Scoundrel grants Akshan bonus golds and reduces the fallen ally’s death timer. Active: Gain camouflage for a few seconds. Duration is refreshed when Akshan is near a wall or in brush. Gains movement speed when moving toward Scoundrels."
+      },
+      {
+        "slot": "3",
+        "name": "HEROIC SWING",
+        "description": "Akshan fires a rope that attaches to a wall for a few seconds to allow him to swing in a circle. While swinging, Akshan shoots an enemy he has recently damaged."
+      },
+      {
+        "slot": "ultimate",
+        "name": "COMEUPPANCE",
+        "description": "Locks onto an enemy champion and begins overcharging Mist shots over a few seconds."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/aec46f6adf185797577a47809893ad6e6089a24e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "mobile",
+      "stealth",
+      "poke"
+    ]
+  },
+  {
+    "id": "ambessa",
+    "name": "Ambessa",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DRAKEHOUND'S STEP",
+        "description": "Entering an attack or movement command while casting an ability will cause Ambessa to dash a short distance once the ability is cast, granting her next attack bonus range, damage, and attack speed, and refunding energy."
+      },
+      {
+        "slot": "1",
+        "name": "CUNNING SWEEP / SUNDERING SLAM",
+        "description": "Ambessa sweeps her twin drakehounds in a semicircle in front of her, dealing bonus damage to enemies hit by the blades. Striking an enemy will transform the next cast of this ability for a short period of time, causing her to slam her twin drakehounds down in a line in front of her, dealing bonus damage to the first enemy hit."
+      },
+      {
+        "slot": "2",
+        "name": "REPUDIATION",
+        "description": "Ambessa gains a shield, briefly braces herself, and then slams the ground to damage nearby enemies. If she blocked any non-minion damage while bracing herself, this ability will deal increased damage."
+      },
+      {
+        "slot": "3",
+        "name": "LACERATE",
+        "description": "Ambessa whips her twin drakehounds around herself, damaging and slowing nearby enemies. Initiating Drakehound's Step from this ability causes her to strike a second time at the end of its dash."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PUBLIC EXECUTION",
+        "description": "Ambessa blinks to the farthest enemy champion in a line of her choosing and suppresses them upon her arrival. She then slams the enemy into the ground where they take damage and are stunned."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/141dbd483d6e489961620962386a034417879430-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "mobile",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "amumu",
+    "name": "Amumu",
+    "roles": [
+      "JUNGLE",
+      "SUPPORT",
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Cursed Touch",
+        "description": "Amumu's basic attacks Curse his enemies, causing them to take bonus true damage from incoming magic damage."
+      },
+      {
+        "slot": "1",
+        "name": "Bandage Toss",
+        "description": "Amumu tosses a sticky bandage at a target, stunning and damaging the target while he pulls himself to them."
+      },
+      {
+        "slot": "2",
+        "name": "Despair",
+        "description": "Overcome by anguish, nearby enemies lose a percentage of their maximum Health each second and have their Curses refreshed."
+      },
+      {
+        "slot": "3",
+        "name": "Tantrum",
+        "description": "Permanently reduces the physical damage Amumu would take. Amumu can unleash his rage, dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on Tantrum is reduced by 0.5 seconds."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Curse of the Sad Mummy",
+        "description": "Amumu entangles surrounding enemy units in bandages, applying his Curse, damaging them and rendering them unable to attack or move."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/25044199d797ae84edbf5809966fd33b5a9df8d9-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "annie",
+    "name": "Annie",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Pyromania",
+        "description": "After casting 4 spells, Annie's next offensive spell will stun the target."
+      },
+      {
+        "slot": "1",
+        "name": "Disintegrate",
+        "description": "Annie hurls a Mana infused fireball, dealing damage in a small area and refunding the Mana cost and half its cooldown if it destroys the target."
+      },
+      {
+        "slot": "2",
+        "name": "Incinerate",
+        "description": "Annie casts a blazing cone of fire, dealing damage to all enemies in the area."
+      },
+      {
+        "slot": "3",
+        "name": "Molten Shield",
+        "description": "Annie casts a shield over herself and Tibbers and gains move speed."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Summon: Tibbers",
+        "description": "Annie summons Tibbers, dealing damage in the area. Tibbers enrages after pouncing on an enemy or when Annie dies, gaining move and attack speed. Recast: Annie orders Tibbers to pounce on a target. He deals damage and knocks up the target when he lands."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/761e0840a97e1dbbf620579dce12b8ad3aef85fd-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "aurelion-sol",
+    "name": "Aurelion Sol",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "COSMIC CREATOR",
+        "description": "Aurelion Sol's damaging abilities break down enemies into permanent stacks of Stardust, which improve each of his abilities."
+      },
+      {
+        "slot": "1",
+        "name": "BREATH OF LIGHT",
+        "description": "Aurelion Sol channels his dragon breath to exhale a beam of starfire, revealing and damaging the first enemy hit and splashing reduced damage onto nearby enemies. Each second the breath is channeled directly at an enemy will deal bonus damage, which is improved by the amount of Stardust that's been collected. This ability collects Stardust if the target is a champion. Aurelion Sol can move while channeling Breath of Light."
+      },
+      {
+        "slot": "2",
+        "name": "ASTRAL FLIGHT",
+        "description": "Aurelion Sol flies over terrain in a targeted direction. While in this state, he can cast other abilities. Breath of Light no longer has a cooldown or maximum channel duration and deals increased damage while flying. Astral Flight's remaining cooldown is reduced whenever an enemy champion dies after being recently damaged by Aurelion Sol. Stardust increases Astral Flight's maximum range."
+      },
+      {
+        "slot": "3",
+        "name": "SINGULARITY",
+        "description": "Aurelion Sol summons a black hole, damaging enemies and slowly pulling them toward its center. This ability grants Stardust each time an enemy dies within the black hole and for each second an enemy champion is caught inside it. The center of the black hole executes enemies who are below a certain percentage of their maximum health. Stardust increases Singularity's area as well as the execution threshold."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FALLING STAR / THE SKIES DESCEND",
+        "description": "Falling Star: Aurelion Sol calls down a star. The impact deals magic damage and stuns enemies hit while also granting Stardust for each enemy champion hit. Gathering enough Stardust transforms Aurelion Sol's next ult cast into The Skies Descend.\nThe Skies Descend: Aurelion Sol calls a giant star down from the heavens with an increased impact zone and increased damage, knocking up enemies rather than stunning them. A shockwave then spreads from the edge of the impact zone, which damages and slows the enemies it hits."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/d1ccccc13d3ac4b911e9879c3dedc088c4729210-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SPIRIT ABJURATION",
+        "description": "Aurora's spells and attacks exorcise spirits from the enemies she damages. Exorcised spirits follow Aurora around and heal her."
+      },
+      {
+        "slot": "1",
+        "name": "TWOFOLD HEX",
+        "description": "Aurora sends out a missile that curses any enemies it hits. She can then recast the ability to draw active curses back toward herself, damaging foes who are hit along the way."
+      },
+      {
+        "slot": "2",
+        "name": "ACROSS THE VEIL",
+        "description": "Aurora leaps in a direction of her choosing, entering the spirit realm upon landing, becoming invisible, and gaining Move Speed for a short duration of time. Taking down an enemy champion resets this ability's cooldown."
+      },
+      {
+        "slot": "3",
+        "name": "THE WEIRDING",
+        "description": "Aurora converges the realms, sending out a blast of spirit magic that damages and slows enemies before Aurora hops backward to safety."
+      },
+      {
+        "slot": "ultimate",
+        "name": "BETWEEN WORLDS",
+        "description": "Aurora leaps in a direction of her choosing, releasing a shockwave that damages and slows any enemies it hits. Afterward, she creates an area that slows enemies within it and allows Aurora to teleport from one side of the area to the other."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d15f85326d86dc268de2ffc2f0a0f4ecd7ba37ba-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile",
+      "stealth",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "brand",
+    "name": "Brand",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "BLAZE",
+        "description": "Brand's spells light his targets ablaze, dealing damage over 1 seconds, stacking up to 2 times. If Brand kills an enemy while it is ablaze he regains mana. When Blaze reaches max stacks on a Champion or large monster, it becomes unstable. It detonates in 3 seconds, applying spell effects and dealing massive damage in an area around the victim."
+      },
+      {
+        "slot": "1",
+        "name": "SEAR",
+        "description": "Launches a projectile that stops on the first enemy hit, dealing damage and applying a stack of Brand’s passive. If the target was previously afflicted by Brand’s passive they are also briefly stunned."
+      },
+      {
+        "slot": "2",
+        "name": "PILLAR OF FLAME",
+        "description": "After a short delay, Brand creates a Pillar of Flame at a target area, dealing magic damage to enemy units within the area."
+      },
+      {
+        "slot": "3",
+        "name": "CONFLAGRATION",
+        "description": "Brand conjures a powerful blast at his target that spreads to nearby enemies, dealing magic damage. If the target is ablaze, Conflagration's spread is doubled."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PYROCLASM",
+        "description": "Launches a projectile that travels to the target, dealing damage and applying a stack of Brand’s passive. The projectile will then bounce to a nearby target. Does not damage Brand."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/bb7ad76655cc1190dd0dd9a457486f7360e533a3-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "poke"
+    ]
+  },
+  {
+    "id": "camille",
+    "name": "Camille",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Adaptive Defenses",
+        "description": "Basic attacks on champions grant a shield equal to 20% of Camille's maximum health against their damage type (Physical or Magic) for a brief duration."
+      },
+      {
+        "slot": "1",
+        "name": "Precision Protocol",
+        "description": "Camille's next attack deals bonus damage and grants bonus movement speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks."
+      },
+      {
+        "slot": "2",
+        "name": "Tactical Sweep",
+        "description": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille."
+      },
+      {
+        "slot": "3",
+        "name": "Hookshot",
+        "description": "Camille pulls herself to a wall, leaping off and knocking up enemy champions upon landing."
+      },
+      {
+        "slot": "ultimate",
+        "name": "The Hextech Ultimatum",
+        "description": "Camille dashes to target champion, anchoring them to the area, and knocking away other enemies."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/18946b90e4865c3581fa2f0fd54c8d664828f875-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "true_damage",
+      "shielder",
+      "mobile",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "corki",
+    "name": "Corki",
+    "roles": [
+      "DRAGON",
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "HEXTECH MUNITIONS",
+        "description": "A percentage of Corki's basic attack damage is converted into magic damage. Corki can occasionally retrieve The Package inside his base, granting him movement speed and an empowered cast of Valkyrie."
+      },
+      {
+        "slot": "1",
+        "name": "PHOSPHORUS BOMB",
+        "description": "Corki fires a flash bomb at a target location, dealing magic damage to enemies in the area. This attack additionally reveals units in the area for a duration."
+      },
+      {
+        "slot": "2",
+        "name": "VALKYRIE",
+        "description": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.\n\nSpecial Delivery: If Corki has The Package, the flight is longer, enemies are knocked aside and the zone slows and deals damage."
+      },
+      {
+        "slot": "3",
+        "name": "GATLING GUN",
+        "description": "Corki's gatling gun rapidly fires in a cone towards his current target, dealing damage and reducing enemy Armor and Magic Resist."
+      },
+      {
+        "slot": "ultimate",
+        "name": "MISSILE BARRAGE",
+        "description": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every third missile fired will be a Big One, dealing extra damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/faf41847d99731c5853a08f417bbb9fd87edc4ce-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "dmg_ad",
+      "true_damage",
+      "poke"
+    ]
+  },
+  {
+    "id": "darius",
+    "name": "Darius",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "HEMORRHAGE",
+        "description": "Darius's attacks and damaging abilities cause enemies to bleed for physical damage over time, stacking up to a cap. Upon reaching full stacks, Darius gains Noxian Might for a few seconds, gaining Attack Damage and applying full stacks of Hemorrhage instead of 1."
+      },
+      {
+        "slot": "1",
+        "name": "DECIMATE",
+        "description": "Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions hit by the blade, and applies Hemorrhage."
+      },
+      {
+        "slot": "2",
+        "name": "CRIPPLING STRIKE",
+        "description": "Darius empowers his next attack to deal additional damage with a large slow."
+      },
+      {
+        "slot": "3",
+        "name": "APPREHEND",
+        "description": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him."
+      },
+      {
+        "slot": "ultimate",
+        "name": "NOXIAN GUILLOTINE",
+        "description": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed, granting Noxian Might and causing nearby minions and monsters to flee."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/64d4b577a35cf68bbd13841bb603de28fe14473b-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "true_damage",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "diana",
+    "name": "Diana",
+    "roles": [
+      "MID",
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MOONSILVER BLADE",
+        "description": "Every third strike cleaves nearby enemies for an additional magic damage. After using an ability, Diana gains attack speed for her next 3 attacks."
+      },
+      {
+        "slot": "1",
+        "name": "CRESCENT STRIKE",
+        "description": "Unleashes a bolt of lunar energy in an arc dealing magic damage, and applying Moonlight."
+      },
+      {
+        "slot": "2",
+        "name": "PALE CASCADE",
+        "description": "Diana creates three orbiting spheres that detonate on contact with enemies to deal damage in an area. She also gains a temporary shield that absorbs damage. If her third sphere detonates, the shield gains additional strength."
+      },
+      {
+        "slot": "3",
+        "name": "LUNAR RUSH",
+        "description": "Diana dashes to an enemy and deals magic damage. Lunar Rush has no cooldown when used to dash to an enemy afflicted with Moonlight, removing Moonlight in an area."
+      },
+      {
+        "slot": "ultimate",
+        "name": "MOONFALL",
+        "description": "Diana summons the moon in an area, slowing enemies nearby and applying Moonlight in a growing area. Releasing the button slams the moon down, spiraling enemies toward her and dealing damage scaling with the charge time."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/925b9cb2ee9c84e26cc4aa55287ca03cb3175c28-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "shielder"
+    ]
+  },
+  {
+    "id": "dr-mundo",
+    "name": "Dr. Mundo",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "GOES WHERE HE PLEASES",
+        "description": "Dr. Mundo resists the first Immobilizing effect that hits him, instead losing Health and dropping a chemical cannister nearby. Dr. Mundo can pick it up by walking over it, restoring Health and reducing this Ability's Cooldown. Dr. Mundo also has significantly increased Health regeneration."
+      },
+      {
+        "slot": "1",
+        "name": "INFECTED BONESAW",
+        "description": "Dr. Mundo throws an infected bonesaw, dealing damage to the first enemy hit based on their current health and slowing them."
+      },
+      {
+        "slot": "2",
+        "name": "HEART ZAPPER",
+        "description": "Dr. Mundo electrocutes himself, dealing persistent damage to nearby enemies and storing a portion of damage he takes. At the end of the duration or on Recast, Dr. Mundo deals a burst of damage to nearby enemies. If the burst hit an enemy, he heals a percentage of the stored damage."
+      },
+      {
+        "slot": "3",
+        "name": "BLUNT FORCE TRAUMA",
+        "description": "Passive - Dr. Mundo gains bonus Attack Damage, increasing based on his missing Health. Active - Dr. Mundo slams his “medical” bag into an enemy, dealing additional damage based on his missing Health. If the enemy dies they are swatted away, dealing damage to enemies they pass through."
+      },
+      {
+        "slot": "ultimate",
+        "name": "MAXIMUM DOSAGE",
+        "description": "Dr. Mundo pumps himself with chemicals, instantly healing a percent of his missing Health. He then gains bonus Attack Damage and Move Speed, and regenerates a portion of his maximum Health over a long duration."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/65dd94a5af9279fdd97563d5a0cf86f332fe2afb-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "ekko",
+    "name": "Ekko",
+    "roles": [
+      "MID",
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Z-DRIVE RESONANCE",
+        "description": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion."
+      },
+      {
+        "slot": "1",
+        "name": "TIMEWINDER",
+        "description": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return."
+      },
+      {
+        "slot": "2",
+        "name": "PARALLEL CONVERGENCE",
+        "description": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time."
+      },
+      {
+        "slot": "3",
+        "name": "PHASE DIVE",
+        "description": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target."
+      },
+      {
+        "slot": "ultimate",
+        "name": "CHRONOBREAK",
+        "description": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/d4c506aac1c10418d3f40334ebb0bf747fd150f1-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile",
+      "shielder",
+      "healer"
+    ]
+  },
+  {
+    "id": "evelynn",
+    "name": "Evelynn",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DEMON SHADE",
+        "description": "When out of combat, Evelynn enters Demon Shade. Demon Shade heals Evelynn when she is low on health and grants Camouflage after level 5."
+      },
+      {
+        "slot": "1",
+        "name": "HATE SPIKE",
+        "description": "Evelynn strikes out with her lasher twice, dealing damage to the first unit hit. Then, Evelynn can re-cast to shoot another line of spikes at nearby foes."
+      },
+      {
+        "slot": "2",
+        "name": "ALLURE",
+        "description": "Evelynn curses her target, causing her next attack or spell after a delay to slow or charm her target, based on time cursed, and reduce their magic resist."
+      },
+      {
+        "slot": "3",
+        "name": "WHIPLASH",
+        "description": "Evelynn whips her target with her Lasher, dealing damage. She then gains movement speed for a short duration. When exiting Demon Shade, Whiplash pulls Evelynn to her target."
+      },
+      {
+        "slot": "ultimate",
+        "name": "LAST CARESS",
+        "description": "Evelynn briefly goes untargetable and decimates the area in front of her before warping backwards a long distance."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/52a3a7705f18a74c1ae56f6224e9742705e5404e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "stealth",
+      "burst"
+    ]
+  },
+  {
+    "id": "fiddlesticks",
+    "name": "Fiddlesticks",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "A HARMLESS SCARECROW",
+        "description": "When participating in a takedown Fiddlesticks leaves behind a movable scarecrow. The scarecrow will move toward the nearest enemy champion and explode when killed or after several seconds, causing fear."
+      },
+      {
+        "slot": "1",
+        "name": "TERRIFY",
+        "description": "Passive: When Fiddlesticks is out of combat for a longer time period and is invisible to enemy units, or has been stationary for a short period, its next skill will fear the target.\n\nFiddlesticks launches a raven at a target, dealing magic damage and fear. The raven deals bonus damage if the unit has been terrified recently."
+      },
+      {
+        "slot": "2",
+        "name": "BOUNTIFUL HARVEST",
+        "description": "Fiddlesticks drains health from nearby enemies, dealing bonus execute damage at the end of the duration. During channeling, Fiddlestick is slowed and cannot cast any other abilities."
+      },
+      {
+        "slot": "3",
+        "name": "REAP",
+        "description": "Fiddlesticks slashes an area with its scythe, slowing all enemies hit and silencing enemies hit in the center of the slash."
+      },
+      {
+        "slot": "ultimate",
+        "name": "CROWSTORM",
+        "description": "A murder of crows flock wildly around Fiddlesticks, dealing damage per second to all enemy units in the area."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/106cd3a8f9da82ca3533b908d68bf3f303373c14-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "cc_heavy",
+      "healer",
+      "stealth",
+      "burst"
+    ]
+  },
+  {
+    "id": "fizz",
+    "name": "Fizz",
+    "roles": [
+      "MID",
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SEASTONE TRIDENT",
+        "description": "Fizz's attacks deal additional damage over time."
+      },
+      {
+        "slot": "1",
+        "name": "Urchin Strike",
+        "description": "Fizz dashes through his target, dealing magic damage and applying on hit effects."
+      },
+      {
+        "slot": "2",
+        "name": "RENDING WAVE",
+        "description": "Empowers Fizz' next attack to deal bonus damage, and killing a unit resets Rending Wave's cooldown. Additional attacks deal more damage."
+      },
+      {
+        "slot": "3",
+        "name": "Playful / Trickster",
+        "description": "Fizz hops into the air, landing gracefully upon his spear and becoming untargetable. From this position, Fizz can either slam the ground or choose to jump again before smashing back down."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Chum the Waters",
+        "description": "Fizz tosses a fish in a direction that attaches to any champion that touches it, slowing the target. After a short delay, a shark erupts from the ground, knocking up the target and knocking any nearby enemies aside. All enemies hit are dealt magic damage and slowed."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/9127f3d8365daf1b686d540feee14606304db886-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
+    "id": "galio",
+    "name": "Galio",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "COLOSSAL SMASH",
+        "description": "Every few seconds, Galio's next basic attack deals bonus magic damage in an area. Galio gains attack speed when Colossal Smash is up. When an ability hits an epic monster or enemy champion, it reduces the cooldown of Colossal Smash by 3 seconds. This effect can only be triggered once per cast."
+      },
+      {
+        "slot": "1",
+        "name": "WINDS OF WAR",
+        "description": "Galio fires two windblasts that converge into a large tornado that deals damage over time."
+      },
+      {
+        "slot": "2",
+        "name": "SHIELD OF DURAND",
+        "description": "Galio charges a defensive stance, moving slowly. Upon releasing the charge, Galio will taunt and damage nearby enemy champions."
+      },
+      {
+        "slot": "3",
+        "name": "JUSTICE PUNCH",
+        "description": "Galio will briefly step back and charge, damaging and knocking up the first enemy champion he encounters."
+      },
+      {
+        "slot": "ultimate",
+        "name": "HERO'S ENTRANCE",
+        "description": "Galio designates an ally's position as his landing spot, granting all allies in the area a magic shield. After a delay Galio smashes down location, knocking up nearby enemies."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3ce641181c33067ab130026356bb66b9c72a7de7-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "gragas",
+    "name": "Gragas",
+    "roles": [
+      "JUNGLE",
+      "BARON",
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Happy Hour",
+        "description": "Gragas periodically heals upon using an ability."
+      },
+      {
+        "slot": "1",
+        "name": "Barrel Roll",
+        "description": "Gragas rolls his cask to a location, which can be activated to explode or will explode on its own after 3 seconds. Enemies struck by the blast have their Movement Speed slowed."
+      },
+      {
+        "slot": "2",
+        "name": "Drunken Rage",
+        "description": "Gragas guzzles down brew from his cask for 1 second. After finishing, he becomes drunkenly empowered, dealing magic damage to all nearby enemies on his next basic attack and reducing damage received."
+      },
+      {
+        "slot": "3",
+        "name": "Body Slam",
+        "description": "Gragas charges to a location and collides with the first enemy unit he comes across, dealing damage to all nearby enemy units and stunning them."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Explosive Cask",
+        "description": "Gragas hurls his cask to a location, dealing damage and knocking back enemies caught in the blast radius."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/91eb41547dbcb8e4765559984b8765d8b93cf9c5-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "cc_heavy",
+      "healer"
+    ]
+  },
+  {
+    "id": "graves",
+    "name": "Graves",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "New Destiny",
+        "description": "Graves' shotgun has some unique properties. He must reload when he runs out of ammo. Attacks fire 4 bullets, which cannot pass through units. Non-champions struck by multiple bullets are knocked back."
+      },
+      {
+        "slot": "1",
+        "name": "End of the Line",
+        "description": "Graves fires an explosive shell that detonates after 1.5 seconds, or 0.25 seconds if it strikes terrain."
+      },
+      {
+        "slot": "2",
+        "name": "Smoke Screen",
+        "description": "Graves fires a smoke canister at the target area creating a cloud of smoke that reduces sight range. Enemies caught in the initial impact are dealt magic damage and have their movement speed reduced briefly."
+      },
+      {
+        "slot": "3",
+        "name": "Quickdraw",
+        "description": "Graves dashes forward gaining an Armor boost for several seconds. If Graves dashes towards an enemy champion, gain two stacks of True Grit instead. Hitting enemies with basic attacks lowers the cooldown of this skill and refreshes the resistance boost."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Collateral Damage",
+        "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits, and pushing Graves back from recoil. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1a9925c47327dd6899c2a180335ca28abb52431e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "gwen",
+    "name": "Gwen",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "THOUSAND CUTS",
+        "description": "Gwen's attacks deal bonus magic damage based on the target's health. She heals for a portion of the damage dealt to champions by this effect."
+      },
+      {
+        "slot": "1",
+        "name": "SNIP SNIP!",
+        "description": "Gwen snips her scissors in a cone up to 6 times dealing magic damage. Gwen deals true damage to units in the center and applies her passive to them on each snip."
+      },
+      {
+        "slot": "2",
+        "name": "HALLOWED MIST",
+        "description": "Gwen summons mist that protects her from enemies outside of it. She can only be targeted by enemies who enter the mist."
+      },
+      {
+        "slot": "3",
+        "name": "SKIP 'N SLASH",
+        "description": "Gwen dashes a short distance then gains Attack Speed, attack range, and magic damage on-hit for a few seconds. If she hits an enemy during that time, this ability's cooldown is partially refunded."
+      },
+      {
+        "slot": "ultimate",
+        "name": "NEEDLEWORK",
+        "description": "Gwen hurls a needle that slows enemies hit, deals magic damage, and applies A Thousand Cuts to champions hit. This ability can be cast up to two more times, with each cast throwing additional needles and dealing more damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/791a08cd7a00bd8875c9aee470289697d55792a6-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "true_damage",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "hecarim",
+    "name": "Hecarim",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "WARPATH",
+        "description": "Hecarim gains Attack Damage equal to a percentage of his bonus Move Speed."
+      },
+      {
+        "slot": "1",
+        "name": "RAMPAGE",
+        "description": "Hecarim cleaves nearby enemies dealing physical damage. If Hecarim damages at least one enemy, he increases the damage and lowers the cooldown of subsequent Rampages."
+      },
+      {
+        "slot": "2",
+        "name": "SPIRIT OF DREAD",
+        "description": "Hecarim gains Armor and Magic Resist. Hecarim deals magic damage to nearby enemies, and gains Health equal to a percentage of any damage those enemies suffer."
+      },
+      {
+        "slot": "3",
+        "name": "DEVASTATING CHARGE",
+        "description": "Hecarim gains increasing Move Speed and can move through units for a short duration. His next attack knocks the target back and deals additional physical damage based on the distance he has traveled since activating the ability."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ONSLAUGHT OF SHADOWS",
+        "description": "Hecarim summons spectral riders and charges forward, dealing magic damage in a line. Hecarim creates a shockwave when he finishes his charge, causing nearby enemies to flee in terror."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/33f7d1c081f03ea787f203f15e0819ba0ef2db3a-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "mobile",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "heimerdinger",
+    "name": "Heimerdinger",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "HEXTECH AFFINITY",
+        "description": "Gain Move Speed while near allied towers and turrets deployed by Heimerdinger."
+      },
+      {
+        "slot": "1",
+        "name": "H-28 G EVOLUTION TURRET",
+        "description": "Heimerdinger lays down a rapid-fire cannon turret equipped with a secondary pass-through beam attack (turrets deal half damage to towers)."
+      },
+      {
+        "slot": "2",
+        "name": "HEXTECH MICRO-ROCKETS",
+        "description": "Heimerdinger fires long-range rockets that converge on his cursor."
+      },
+      {
+        "slot": "3",
+        "name": "CH-2 ELECTRON STORM GRENADE",
+        "description": "Heimerdinger fires long-range rockets that converge on his cursor."
+      },
+      {
+        "slot": "ultimate",
+        "name": "UPGRADE!!!",
+        "description": "Heimerdinger invents an upgrade, causing his next spell to have increased effects."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/05d7e6408668133c58b09564f97f40b9af70ec8c-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke"
+    ]
+  },
+  {
+    "id": "hwei",
+    "name": "Hwei",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SIGNATURE OF THE VISIONARY",
+        "description": "Hwei damages enemy champions, priming them for his signature finisher. The second hit completes his signature, which detonates after a delay, dealing magic damage to enemies in range."
+      },
+      {
+        "slot": "1",
+        "name": "SUBJECT: DISASTER",
+        "description": "Hwei replaces his abilities with damaging powers:\n\nDevastating Fire – fires a flaming projectile.\nSevering Bolt – casts a long range lightning strike.\nMolten Fissure – shoot a fiery path that keeps erupting."
+      },
+      {
+        "slot": "2",
+        "name": "SUBJECT: SERENITY",
+        "description": "Hwei replaces abilities with utility buffs:\n\nFleeting Current – increases move speed.\nPool of Reflection – creates water shields.\nStirring Lights – restores mana and inflicts bonus damage."
+      },
+      {
+        "slot": "3",
+        "name": "SUBJECT: TORMENT",
+        "description": "Hwei replaces abilities with crowd control powers:\n\nGrim Visage – fears and slows.\nGaze of the Abyss – sends homing missile eye with True Sight.\nCrushing Maw – draws in foes to damage and slow."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SPIRALING DESPAIR",
+        "description": "Hwei captures enemy champions in an expanding field that slows and damages, exploding upon reaching maximum size, or the champion’s demise."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/95ec8d04793e6ae018566656751b74dcc2e71e4f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "irelia",
+    "name": "Irelia",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "IONIAN FERVOR",
+        "description": "When Irelia strikes enemies with spells she gains stacking bonus Attack Speed. At maximum stacks she also gains bonus damage on hit."
+      },
+      {
+        "slot": "1",
+        "name": "BLADESURGE",
+        "description": "Irelia dashes forward to strike her target, healing herself. If the target is Marked or dies to Bladesurge, its cooldown refreshes."
+      },
+      {
+        "slot": "2",
+        "name": "DEFIANT DANCE",
+        "description": "Irelia charges a strike that deals more damage as she charges. She takes reduced physical damage during the charge."
+      },
+      {
+        "slot": "3",
+        "name": "FLAWLESS DUET",
+        "description": "Irelia sends out two blades which converge on each other. Enemies caught in between are damaged, stunned and Marked."
+      },
+      {
+        "slot": "ultimate",
+        "name": "VANGUARD'S EDGE",
+        "description": "Irelia fires a massive number of blades that explode outward upon hitting an enemy champion. Enemies hit by the blades are damaged and Marked. Afterwards the blades form a wall that will damage and slow enemies that walk through it."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c80c9488be046cd2a0bde8e4791aaf0bc6d2996e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "mobile",
+      "sustained_dps",
+      "healer"
+    ]
+  },
+  {
+    "id": "jarvan-iv",
+    "name": "Jarvan IV",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Martial Cadence",
+        "description": "Jarvan's first basic attack on an enemy deals bonus physical damage based on their current Health. This effect cannot occur again on the same enemy for a few seconds."
+      },
+      {
+        "slot": "1",
+        "name": "Dragon Strike",
+        "description": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path."
+      },
+      {
+        "slot": "2",
+        "name": "Golden Aegis",
+        "description": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies."
+      },
+      {
+        "slot": "3",
+        "name": "Demacian Standard",
+        "description": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions. Cast again to automatically cast Dragon Strike to the flag."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Cataclysm",
+        "description": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/486df69cef429e122f31d04852a607e622de1184-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "cc_heavy",
+      "shielder",
+      "mobile"
+    ]
+  },
+  {
+    "id": "jax",
+    "name": "Jax",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Relentless Assault",
+        "description": "Jax's consecutive basic attacks continuously increase his Attack Speed."
+      },
+      {
+        "slot": "1",
+        "name": "Leap Strike",
+        "description": "Jax leaps toward a unit. If they are an enemy, he strikes them with his weapon."
+      },
+      {
+        "slot": "2",
+        "name": "Empower",
+        "description": "Jax charges his weapon with energy, causing his next attack to deal additional damage."
+      },
+      {
+        "slot": "3",
+        "name": "Counter Strike",
+        "description": "Jax's combat prowess allows him to dodge all incoming attacks for a short duration and then quickly counterattack, stunning all surrounding enemies."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Grandmaster's Might",
+        "description": "Every third consecutive attack deals additional Magic Damage. Additionally, Jax can activate this ability to strengthen his resolve, increasing his Armor and Magic Resist for a short duration."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/fd521c42d56ebd2d3a043e01040fca2fb91cc5b0-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "dmg_ap",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "jayce",
+    "name": "Jayce",
+    "roles": [
+      "BARON",
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "HEXTECH CAPACITOR",
+        "description": "When Jayce swaps weapons he gains movement speed for a short duration."
+      },
+      {
+        "slot": "1",
+        "name": "TO THE SKIES! / SHOCK BLAST",
+        "description": "Hammer Stance: Leaps to an enemy dealing physical damage and slowing enemies. Cannon Stance: Fires an orb of electricity that detonates upon hitting an enemy (or reaching the end of its path) dealing physical damage to all enemies hit."
+      },
+      {
+        "slot": "2",
+        "name": "LIGHTNING FIELD / HYPER CHARGE",
+        "description": "Hammer Stance: Passive: Restores Mana per strike. Active: Creates a field of lightning damaging nearby enemies for several seconds. Cannon Stance: Gains a burst of energy, increasing Attack Speed to maximum for several attacks."
+      },
+      {
+        "slot": "3",
+        "name": "THUNDERING BLOW / ACCELERATION GATE",
+        "description": "Hammer Stance: Deals magic damage to an enemy and knocks them back a short distance. Cannon Stance: Deploys an Acceleration Gate increasing the Movement Speed of all allied champions who pass through it. If Shock Blast is fired through the gate the missile speed, range, and damage will increase."
+      },
+      {
+        "slot": "ultimate",
+        "name": "MERCURY CANNON / MERCURY HAMMER",
+        "description": "Hammer Stance: Transforms the Mercury Hammer into the Mercury Cannon gaining new abilities and increased range. The first attack in this form reduces the target's Armor and Magic Resist. Cannon Stance: Transforms the Mercury Cannon into the Mercury Hammer gaining new abilities and increasing Armor and Magic Resist. The first attack in this form deals additional magic damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/12b847ec19834e8653a7e297618b2ed41047708c-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "poke",
+      "burst"
+    ]
+  },
+  {
+    "id": "karma",
+    "name": "Karma",
+    "roles": [
+      "SUPPORT",
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MANTRA",
+        "description": "After using 3 abilities, Karma's next ability will be enhanced."
+      },
+      {
+        "slot": "1",
+        "name": "INNER FLAME",
+        "description": "Karma sends forth a ball of spirit energy that explodes and deals damage upon hitting an enemy unit. Mantra Bonus: In addition to the explosion, Mantra increases the destructive power of her Inner Flame, creating a cataclysm which deals damage after a short delay."
+      },
+      {
+        "slot": "2",
+        "name": "FOCUSED RESOLVE",
+        "description": "Karma creates a tether between herself and up to two targeted enemies dealing damage and revealing them. If the tethers are not broken, the enemies will be rooted and damaged again. Mantra Bonus: Karma creates an additional tether between the targets, dealing extra damage and extending the root duration. If only a single enemy is within range, a tether will spread from them to the next nearest enemy."
+      },
+      {
+        "slot": "3",
+        "name": "INSPIRE",
+        "description": "Karma summons a protective shield that absorbs incoming damage and increases the Move Speed of the protected ally. Mantra Bonus: Energy radiates out from her target, strengthening the initial shield and applying Inspire to nearby allied champions."
+      },
+      {
+        "slot": "ultimate",
+        "name": "TRANSCENDENT EMBRACE",
+        "description": "Karma forms a ring of spirit energy at a target location. After a brief delay, it detonates, dealing magic damage to all enemies inside and slowing them for a few seconds. If enemies are hit at the edge of the ring, they will be pulled in toward the center. Karma immediately enters the Mantra state."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e3926a6c4a4f6d5bb224005ef6cbc3a29d5fd952-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "shielder",
+      "poke"
+    ]
+  },
+  {
+    "id": "kassadin",
+    "name": "Kassadin",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "VOID STONE",
+        "description": "When Kassadin casts a spell near a visible enemy champion, he gains a magic shield."
+      },
+      {
+        "slot": "1",
+        "name": "NULL SPHERE",
+        "description": "Fires an orb that deals magic damage and silences the first enemy hit."
+      },
+      {
+        "slot": "2",
+        "name": "NETHER BLADE",
+        "description": "Empowers his next basic attack within to gain range and deal bonus magic damage and restore a percentage of missing mana on hit.\n\nIf Nether Blade kills the target its remaining cooldown is reduced."
+      },
+      {
+        "slot": "3",
+        "name": "FORCE PULSE",
+        "description": "Deals magic damage to enemies in a cone and slows them.\n\nForce Pulse becomes enhanced after other spells are cast nearby, dealing increased magic damage and slowing instead."
+      },
+      {
+        "slot": "ultimate",
+        "name": "RIFTWALK",
+        "description": "Blinks to target location and deals magic damage to nearby enemies. Casting Riftwalk causes the next Riftwalk within a certain amount of time to deal more damage and cost double the mana. (Up to 3 times)"
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/92644f2ada40c4b6a699d621bab44d7f0cd157af-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile",
+      "shielder"
+    ]
+  },
+  {
+    "id": "katarina",
+    "name": "Katarina",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "VORACITY",
+        "description": "Whenever an enemy champion dies that Katarina has damaged recently, her remaining ability cooldowns are dramatically reduced. If Katarina picks up a Dagger, she uses it to slash through all nearby enemies, dealing magic damage."
+      },
+      {
+        "slot": "1",
+        "name": "BOUNCING BLADE",
+        "description": "Katarina throws a Dagger at the target that then bounces to nearby enemies before ricocheting onto the ground."
+      },
+      {
+        "slot": "2",
+        "name": "PREPARATION",
+        "description": "Katarina gains a burst of movement speed, tossing a Dagger into the air directly above herself."
+      },
+      {
+        "slot": "3",
+        "name": "SHUNPO",
+        "description": "Katarina blinks to a location near a Dagger or unit, dealing damage to the nearest enemy. Picking up a Dagger reduces Shunpo's cooldown."
+      },
+      {
+        "slot": "ultimate",
+        "name": "DEATH LOTUS",
+        "description": "Katarina becomes a flurry of blades, dealing damage over time and applying healing reduction. Katarina is able to slowly reposition for a short time."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ef0534c53287ade5eb971270788d0928a704cdc5-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
+    "id": "kayle",
+    "name": "Kayle",
+    "roles": [
+      "BARON",
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DIVINE ASCENT",
+        "description": "Kayle's attacks are empowered by the heavens as she levels up and spends skill points. Her wings are lit aflame as she progressively gains Attack Speed, Movement Speed, Attack Range, and waves of fire on her attacks."
+      },
+      {
+        "slot": "1",
+        "name": "RADIANT BLAST",
+        "description": "Kayle conjures a portal, summoning a celestial sword that pierces through enemies, slowing, damaging, and reducing the resistances of all hit."
+      },
+      {
+        "slot": "2",
+        "name": "CELESTIAL BLESSING",
+        "description": "Blessed by the divine, Kayle heals and grants movement speed to herself and the nearest ally."
+      },
+      {
+        "slot": "3",
+        "name": "STARFIRE SPELLBLADE",
+        "description": "Passive: Kayle's celestial sword, Virtue, deals bonus magic damage to enemies she attacks. Active: Kayle's next attack smites her target with celestial fire, dealing bonus damage proportionate to their missing health."
+      },
+      {
+        "slot": "ultimate",
+        "name": "DIVINE JUDGMENT",
+        "description": "Kayle makes an ally invulnerable and calls upon former Aspects of Justice to purify the area around her target with a holy rain of swords."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/62d46f0ab099e7f96521a905db1283fa626dc99a-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ap",
+      "dmg_ad",
+      "sustained_dps",
+      "healer"
+    ]
+  },
+  {
+    "id": "kayn",
+    "name": "Kayn",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "THE DARKIN SCYTHE",
+        "description": "Kayn wields an ancient weapon and fights Rhaast, the darkin within it, for control. Either the Darkin will triumph, or Kayn will master Rhaast and become the Shadow Assassin. Darkin: Heal for a percentage of spell damage dealt to champions. Shadow Assassin: For the first few seconds in combat with enemy champions, deal bonus damage."
+      },
+      {
+        "slot": "1",
+        "name": "REAPING SLASH",
+        "description": "Kayn dashes, then slashes. Both deal damage."
+      },
+      {
+        "slot": "2",
+        "name": "BLADE'S REACH",
+        "description": "Kayn damages and slows targets in a line."
+      },
+      {
+        "slot": "3",
+        "name": "SHADOW STEP",
+        "description": "Kayn can walk through terrain."
+      },
+      {
+        "slot": "ultimate",
+        "name": "UMBRAL TRESPASS",
+        "description": "Kayn hides in an enemy's body, dealing massive damage when he bursts out."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/711546f158fc71185f8a6dc701c0dbe3aa9d866e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "mobile",
+      "healer"
+    ]
+  },
+  {
+    "id": "kennen",
+    "name": "Kennen",
+    "roles": [
+      "BARON",
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MARK OF THE STORM",
+        "description": "Kennen stuns enemies he hits 3 times with his abilities."
+      },
+      {
+        "slot": "1",
+        "name": "THUNDERING SHURIKEN",
+        "description": "Throws a shuriken, dealing magic damage to the first enemy hit."
+      },
+      {
+        "slot": "2",
+        "name": "ELECTRICAL SURGE",
+        "description": "Kennen passively deals extra damage and adds a Mark of the Storm to his target every few attacks, and he can activate this ability to damage and add another Mark of the Storm to targets who are already marked."
+      },
+      {
+        "slot": "3",
+        "name": "LIGHTNING RUSH",
+        "description": "Kennen morphs into a lightning form, becoming unable to attack. Kennen gains movement speed when entering this form, and attack speed when leaving it."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SLICING MAELSTROM",
+        "description": "Kennen summons a storm that strikes at nearby enemy champions for magical damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/a60e3051d8b0a87287a149fefd565794c3604441-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "khazix",
+    "name": "Kha'Zix",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "UNSEEN THREAT",
+        "description": "When the enemy team loses sight of Kha'Zix its next attack against enemy champions deals bonus magic damage and slows them briefly."
+      },
+      {
+        "slot": "1",
+        "name": "TASTE THEIR FEAR",
+        "description": "Kha'Zix causes physical damage by slashes with its claws dealing additional damage if the target is isolated. Evolved Reaper Claws: basic attacks and Taste Their Fear have increased range and if a target is isolated, meaning that they have no teammates or turrets nearby, then a significant portion of Taste Their Fear's cooldown is refunded."
+      },
+      {
+        "slot": "2",
+        "name": "VOID SPIKE",
+        "description": "Kha'Zix fires spikes to deal physical damage while also partially healing itself if it is within the explosion. Evolved Spike Racks: fires additional spikes revealing and slowing enemies for a short duration."
+      },
+      {
+        "slot": "3",
+        "name": "LEAP",
+        "description": "Kha'Zix leaps to a targeted area and deals physical damage. Evolved Wings: Leap gains significant range and the cooldown is refunded on champion takedowns."
+      },
+      {
+        "slot": "ultimate",
+        "name": "VOID ASSAULT",
+        "description": "Passive: each upgrade to Void Assault allows for Kha'Zix to evolve one of his abilities. Active: Kha'Zix becomes invisible and gains movement speed briefly. Evolved Adaptive Cloaking: invisibility duration lasts longer and can be cast multiple times."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/23399fc627a7f13e21d57cc7e618c859e1203980-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "stealth",
+      "mobile"
+    ]
+  },
+  {
+    "id": "kindred",
+    "name": "Kindred",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MARK OF THE KINDRED",
+        "description": "Kindred can mark targets to Hunt. Successfully completing a Hunt permanently empowers Kindred's basic abilities. Every 4 hunts completed also increases Kindred's basic attack range."
+      },
+      {
+        "slot": "1",
+        "name": "DANCE OF ARROWS",
+        "description": "Kindred tumbles and shoots up to three arrows at nearby targets."
+      },
+      {
+        "slot": "2",
+        "name": "WOLF'S FRENZY",
+        "description": "Wolf enrages and attacks enemies around him. Lamb passively gains stacks by moving and attacking. When fully charged, Lamb's next attack restores health."
+      },
+      {
+        "slot": "3",
+        "name": "MOUNTING DREAD",
+        "description": "Lamb fires a carefully placed shot, slowing the target. If Lamb attacks the target two more times, her third attack instead directs Wolf to pounce on the enemy, savaging them for massive damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "LAMB'S RESPITE",
+        "description": "Lamb grants all living things inside a zone a respite from death. Until the effect ends, nothing can die. At the end, units are healed."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/61da72c43e45e119868f3616293c0ea4c950e44d-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "sustained_dps",
+      "mobile",
+      "healer"
+    ]
+  },
+  {
+    "id": "lee-sin",
+    "name": "Lee Sin",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Flurry",
+        "description": "After Lee Sin uses an ability, his next 2 basic attacks gain Attack Speed and return Energy."
+      },
+      {
+        "slot": "1",
+        "name": "Sonic Wave / Resonating Strike",
+        "description": "Sonic Wave: Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds. Resonating Strike: Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage based on the target's missing Health."
+      },
+      {
+        "slot": "2",
+        "name": "Safeguard / Iron Will",
+        "description": "Lee Sin rushes to target position, shielding himself from damage if an enemy champion or monster is near the landing point. After using Safeguard, Lee Sin can cast Iron Will for the next few seconds. Iron Will: Lee Sin's next attack deals bonus magic damage and has omnivamp."
+      },
+      {
+        "slot": "3",
+        "name": "Tempest / Cripple",
+        "description": "Tempest: Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple for the next 3 seconds. Cripple: Lee Sin cripples nearby enemies damaged by Tempest, reducing their Movement Speed for 4 seconds. Movement Speed recovers gradually over the duration."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Dragon's Rage",
+        "description": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c9f11b9fbdeec59ed58ead8fb232f41bb17d9ac3-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "mobile",
+      "burst",
+      "shielder",
+      "healer"
+    ]
+  },
+  {
+    "id": "lillia",
+    "name": "Lillia",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DREAM-LADEN BOUGH",
+        "description": "Hitting a champion or monster with a skill will deal additional max Health damage over time."
+      },
+      {
+        "slot": "1",
+        "name": "BLOOMING BLOWS",
+        "description": "Passively, Lillia gains stacking Move Speed when hitting enemies with spells. She can activate this to deal magic damage to nearby enemies, dealing extra true damage on the edge."
+      },
+      {
+        "slot": "2",
+        "name": "WATCH OUT! EEP!",
+        "description": "Lillia deals damage in a nearby area, dealing heavy damage in the center."
+      },
+      {
+        "slot": "3",
+        "name": "SWIRLSEED",
+        "description": "Lillia hurls a seed that damages and slows those it lands on. If it doesn't hit anything, it will continue rolling until it hits a wall or target."
+      },
+      {
+        "slot": "ultimate",
+        "name": "LILTING LULLABY",
+        "description": "Lillia causes all enemies with Dream Dust on them to become Drowsy before falling asleep. Those enemies will take extra damage on being forcibly woken up."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2c2411d61886497c29b3874d81ddd1a844a35d79-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "true_damage",
+      "healer",
+      "mobile",
+      "cc_heavy",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "lissandra",
+    "name": "Lissandra",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ICEBORN SUBJUGATION",
+        "description": "When an enemy champion dies near Lissandra they become a Frozen Thrall. Frozen Thralls slow nearby enemies and then, after a delay, shatter from the intense cold, dealing magic damage to nearby targets."
+      },
+      {
+        "slot": "1",
+        "name": "ICE SHARD",
+        "description": "Throws a spear of ice that shatters when it hits an enemy, dealing magic damage and slowing Move Speed. Shards pass through the target, dealing the same damage to other enemies hit."
+      },
+      {
+        "slot": "2",
+        "name": "RING OF FROST",
+        "description": "Freezes nearby enemies in ice, dealing magic damage and rooting them."
+      },
+      {
+        "slot": "3",
+        "name": "GLACIAL PATH",
+        "description": "Lissandra creates an ice claw that deals magic damage. Reactivating this ability transports Lissandra to the claw's current location."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FROZEN TOMB",
+        "description": "If cast on an enemy champion, the target is frozen solid, stunning it. If cast on Lissandra, she encases herself in dark ice, healing herself while becoming untargetable and invulnerable. Dark ice then emanates from the target dealing magic damage to enemies and slowing Move Speed."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/345aaf7c4860326ca2df1d76e1d66337cb4de472-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "cc_heavy",
+      "poke",
+      "burst"
+    ]
+  },
+  {
+    "id": "lucian",
+    "name": "Lucian",
+    "roles": [
+      "DRAGON",
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "LIGHTSLINGER",
+        "description": "Whenever Lucian uses an ability, his next attack becomes a double-shot."
+      },
+      {
+        "slot": "1",
+        "name": "PIERCING LIGHT",
+        "description": "Lucian shoots a bolt of piercing light through a target."
+      },
+      {
+        "slot": "2",
+        "name": "ARDENT BLAZE",
+        "description": "Lucian shoots a missile that explodes in a star shape, marking and briefly revealing enemies. Lucian gains Movement Speed for attacking marked enemies."
+      },
+      {
+        "slot": "3",
+        "name": "RELENTLESS PURSUIT",
+        "description": "Lucian quickly dashes a short distance. Lightslinger attacks reduce Relentless Pursuit's cooldown."
+      },
+      {
+        "slot": "ultimate",
+        "name": "THE CULLING",
+        "description": "Lucian unleashes a torrent of shots from his weapons."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ffac1a7d5718cf25d9f57d2cdc099be1951d606a-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "mobile"
+    ]
+  },
+  {
+    "id": "lux",
+    "name": "Lux",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Illumination",
+        "description": "Lux's damaging spells charge the target with energy for 5 seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target."
+      },
+      {
+        "slot": "1",
+        "name": "Light Binding",
+        "description": "Lux releases a sphere of light that binds and deals damage to up to two enemy units."
+      },
+      {
+        "slot": "2",
+        "name": "Prismatic Barrier",
+        "description": "Lux throws her wand and bends the light around any friendly target it touches, protecting them from enemy damage."
+      },
+      {
+        "slot": "3",
+        "name": "Lucent Singularity",
+        "description": "Fires an anomaly of twisted light to an area, which slows nearby enemies. Lux can detonate it to damage enemies in the area of effect."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Final Spark",
+        "description": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e22157610b3f8a197cbc45d28d1a0d0ff7cb7378-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "burst",
+      "shielder"
+    ]
+  },
+  {
+    "id": "malphite",
+    "name": "Malphite",
+    "roles": [
+      "SUPPORT",
+      "BARON",
+      "MID"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Granite Shield",
+        "description": "Malphite is shielded by a layer of rock which absorbs damage up to 10% of his maximum Health. If Malphite has not been hit for 8 seconds, this effect recharges."
+      },
+      {
+        "slot": "1",
+        "name": "Seismic Shard",
+        "description": "Using his primal elemental magic, Malphite sends a shard of the earth through the ground at his foe, dealing damage upon impact and stealing Movement Speed for 3 seconds."
+      },
+      {
+        "slot": "2",
+        "name": "Thunderclap",
+        "description": "Malphite passively gains armor. When Malphite activates Thunderclap, he attacks with such force that it creates a sonic boom. For the next few seconds, his attacks create aftershocks in front of him."
+      },
+      {
+        "slot": "3",
+        "name": "Ground Slam",
+        "description": "Malphite slams the ground, sending out a shockwave that deals magic damage based on his Armor as damage and reduces the Attack Speed of enemies for a short duration."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Unstoppable Force",
+        "description": "Malphite ferociously charges to a location, damaging enemies and knocking them into the air."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4ccb2b985e326ea4d8793f8647797f97739fe22b-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "maokai",
+    "name": "Maokai",
+    "roles": [
+      "JUNGLE",
+      "BARON",
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SAP MAGIC",
+        "description": "Maokai's basic attack also heals him and deals additional damage on a moderate cooldown. Each time Maokai casts a spell or is struck by an enemy's spell, this cooldown is reduced."
+      },
+      {
+        "slot": "1",
+        "name": "BRAMBLE SMASH",
+        "description": "Maokai knocks back nearby enemies with a shockwave, dealing magic damage and slowing them."
+      },
+      {
+        "slot": "2",
+        "name": "TWISTED ADVANCE",
+        "description": "Maokai contorts into a mass of moving roots, becoming untargetable and dashing to the target. Upon arrival, he roots the target."
+      },
+      {
+        "slot": "3",
+        "name": "SAPLING TOSS",
+        "description": "Maokai flings a sapling to the target area to stand guard. More effective in brush."
+      },
+      {
+        "slot": "ultimate",
+        "name": "NATURE'S GRASP",
+        "description": "Maokai summons a colossal wall of brambles and thorns that slowly advances forwards, damaging and rooting any enemies in the path."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1163376dc1c8bfe91f5b3658b0837e6487a34a0a-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "healer"
+    ]
+  },
+  {
+    "id": "master-yi",
+    "name": "Master Yi",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Double Strike",
+        "description": "Every few consecutive basic attacks, Master Yi strikes twice."
+      },
+      {
+        "slot": "1",
+        "name": "Alpha Strike",
+        "description": "Master Yi teleports across the battlefield with blinding speed, dealing physical damage to multiple units in his path, while simultaneously becoming untargetable. Alpha Strike can critically strike and deals bonus physical damage to monsters. Basic attacks reduce Alpha Strike's cooldown."
+      },
+      {
+        "slot": "2",
+        "name": "Meditate",
+        "description": "Master Yi rejuvenates his body by focus of mind, restoring Health and taking reduced damage for a short time."
+      },
+      {
+        "slot": "3",
+        "name": "Wuju Style",
+        "description": "Grants bonus true damage on basic attacks."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Highlander",
+        "description": "Master Yi moves with unparalleled agility, temporarily increasing his Movement and Attack Speeds as well as making him immune to all slowing effects. While active, Champion kills or assists extend Highlander's duration. Passively reduces cooldown for his other abilities on a kill or assist."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8e0e462641e47b86e9e10e8f27f08dbb87dffaf8-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "sustained_dps",
+      "healer",
+      "true_damage",
+      "mobile"
+    ]
+  },
+  {
+    "id": "mel",
+    "name": "Mel",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SEARING BRILLIANCE",
+        "description": "Whenever Mel uses an ability, she gains three bonus projectiles (up to nine maximum) on her next attack. When Mel deals damage through an ability or attack, she applies Overwhelm, which can stack infinitely. If the enemy is hit by Mel with enough Overwhelm damage, the stacks are consumed to execute the target."
+      },
+      {
+        "slot": "1",
+        "name": "RADIANT VOLLEY",
+        "description": "Mel fires a barrage of projectiles that explode around a target location, dealing damage repeatedly to enemies within the area."
+      },
+      {
+        "slot": "2",
+        "name": "REBUTTAL",
+        "description": "Mel forms a barrier around herself that reflects enemy projectiles back at the attacker, prevents her from taking damage, and grants her movement speed."
+      },
+      {
+        "slot": "3",
+        "name": "SOLAR SNARE",
+        "description": "Mel fires a radiant orb forward, dealing damage and slowing enemies within range, while rooting those at its center."
+      },
+      {
+        "slot": "ultimate",
+        "name": "GOLDEN ECLIPSE",
+        "description": "Mel strikes all enemies marked with Overwhelm regardless of their distance from her, dealing additional damage for each stack of Overwhelm. Ranks of Golden Eclipse increase Overwhelm's damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/759c5501dda9a39525061225e0024b3742a0f382-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "burst"
+    ]
+  },
+  {
+    "id": "mordekaiser",
+    "name": "Mordekaiser",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DARKNESS RISE",
+        "description": "Mordekaiser gains a powerful damage aura and Move Speed after landing 3 attacks or spells against champions or monsters."
+      },
+      {
+        "slot": "1",
+        "name": "OBLITERATE",
+        "description": "Mordekaiser smashes the ground with his mace dealing damage to each enemy struck. Damage is increased when hitting a single enemy."
+      },
+      {
+        "slot": "2",
+        "name": "INDESTRUCTIBLE",
+        "description": "Mordekaiser stores damage he deals and takes to create a shield. He may consume the shield to heal."
+      },
+      {
+        "slot": "3",
+        "name": "DEATH'S GRASP",
+        "description": "Mordekaiser pulls all enemies in an area."
+      },
+      {
+        "slot": "ultimate",
+        "name": "REALM OF DEATH",
+        "description": "Mordekaiser drags his victim to a different dimension with him and steals a portion of their stats. If he kills them, he keeps the stats until the victim respawns."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8515e3f6f0955eeab611bb8434556a031a970644-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "shielder",
+      "healer",
+      "cc_heavy",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "morgana",
+    "name": "Morgana",
+    "roles": [
+      "SUPPORT",
+      "MID",
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SOUL SIPHON",
+        "description": "Morgana drains spirit from her enemies, healing as she deals damage to champions, large minions, and medium and larger jungler monsters."
+      },
+      {
+        "slot": "1",
+        "name": "DARK BINDING",
+        "description": "Morgana binds an enemy in place with dark magic, forcing them to feel the pain they've caused and dealing magic damage."
+      },
+      {
+        "slot": "2",
+        "name": "TORMENTED SHADOW",
+        "description": "Morgana casts a cursed shadow on an area, damaging enemies who dare stand in her dark circle. They receive magic damage over time, which increases the lower health they are."
+      },
+      {
+        "slot": "3",
+        "name": "BLACK SHIELD",
+        "description": "Morgana anoints an ally with a protective barrier of starfire, which absorbs magical damage and disabling effects until it is broken."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SOUL SHACKLES",
+        "description": "Morgana unleashes the full force of her Celestial power as she unbinds her wings and hovers above the ground. She lashes chains of dark pain onto nearby enemy champions, gaining Move Speed towards them. The chains slow and deal initial damage and, after a delay, stun those who are unable to break them."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/eccecc05caf593d9125e54cec2af8418eb891d07-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "cc_heavy",
+      "shielder",
+      "healer",
+      "poke"
+    ]
+  },
+  {
+    "id": "nautilus",
+    "name": "Nautilus",
+    "roles": [
+      "SUPPORT",
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "STAGGERING BLOW",
+        "description": "Nautilus' first Attack against a target deals increased physical damage and roots them briefly."
+      },
+      {
+        "slot": "1",
+        "name": "DREDGE LINE",
+        "description": "Nautilus hurls his anchor forward. Colliding with an enemy pulls them and Nautilus together, dealing magic damage. Colliding with terrain pulls Nautilus towards it."
+      },
+      {
+        "slot": "2",
+        "name": "TITAN'S WRATH",
+        "description": "Nautilus gains a temporary Shield. While it persists, his Attacks deal damage over time to his target and surrounding enemies."
+      },
+      {
+        "slot": "3",
+        "name": "RIPTIDE",
+        "description": "Nautilus creates three exploding waves around himself. Each explosion damages and slows enemies."
+      },
+      {
+        "slot": "ultimate",
+        "name": "DEPTH CHARGE",
+        "description": "Nautilus fires a shockwave into the earth that chases an opponent. This shockwave rips up the earth above it, knocking enemies into the air. When it reaches the opponent, the shockwave erupts, knocking his target into the air and stunning them."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/b8ba22659d0bcd44b659c63eed609852ce334693-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "nidalee",
+    "name": "Nidalee",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "PROWL",
+        "description": "Moving through brush increases Nidalee's Move Speed, increasing when moving towards an enemy. Hitting champions or monsters with Javelin Toss or Bushwhack triggers a Hunt, granting brief True Sight of them. During this time, Nidalee gains Move Speed (increased when moving towards the Hunted target) and her Takedown and Pounce are enhanced against them."
+      },
+      {
+        "slot": "1",
+        "name": "JAVELIN TOSS / TAKEDOWN",
+        "description": "In human form, Nidalee throws a javelin at her target dealing Magic Damage, that gains damage as it flies.\nIn cougar form, her next attack will wound her target, dealing more damage the lower their health is."
+      },
+      {
+        "slot": "2",
+        "name": "BUSHWHACK / POUNCE",
+        "description": "In human form, Nidalee lays a stealthed trap, dealing Magic Damage and revealing its target when sprung.\nIn cougar form, she leaps in a target location, dealing Magic Damage to nearby enemies."
+      },
+      {
+        "slot": "3",
+        "name": "PRIMAL SURGE / SWIPE",
+        "description": "In human form, Nidalee heals the target and imbues Attack Speed for a short duration.\nIn cougar form, she claws in a target direction, dealing Magic Damage to enemies hit."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ASPECT OF THE COUGAR",
+        "description": "Passive: While in Human Form, marking enemies as hunted will reset Aspect of the Cougar’s cooldown.\nActive: Nidalee transforms between cougar and human, gaining new abilities."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/55aff8863fe623be889c1754518fa21bf5a2ec33-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "burst",
+      "mobile",
+      "healer"
+    ]
+  },
+  {
+    "id": "nocturne",
+    "name": "Nocturne",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "UMBRA BLADES",
+        "description": "Every few seconds, Nocturne's next attack strikes surrounding enemies for bonus physical damage and heals himself. Nocturne's basic attacks reduce this cooldown."
+      },
+      {
+        "slot": "1",
+        "name": "DUSKBRINGER",
+        "description": "Nocturne throws a shadow blade that deals damage, leaves a Dusk Trail, and causes champions to leave a Dusk Trail. While on the trail, Nocturne can move through units and has increased Move Speed and Attack Damage."
+      },
+      {
+        "slot": "2",
+        "name": "SHROUD OF DARKNESS",
+        "description": "Nocturne empowers his blades, passively gaining Attack Speed. Activating Shroud of Darkness allows Nocturne to fade into the shadows, creating a magical barrier which blocks a single enemy ability and doubles his passive Attack Speed if successful."
+      },
+      {
+        "slot": "3",
+        "name": "UNSPEAKABLE HORROR",
+        "description": "Nocturne plants a nightmare into his target's mind, dealing damage each second and applying fear to the target if they do not get out of range by the end of the duration."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PARANOIA",
+        "description": "Nocturne reduces the sight radius of all enemy champions and removes their ally vision in the process. He can then launch himself at a nearby enemy champion."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/401c6039075be773174cc07a447fe37ede3f6edb-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "burst",
+      "sustained_dps",
+      "healer",
+      "shielder",
+      "mobile"
+    ]
+  },
+  {
+    "id": "norra",
+    "name": "Norra",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "BELOVED TRINKETS",
+        "description": "Norra’s next ability leaves Trinkets on the battlefield. When an enemy touches a Trinket, it activates and fires a projectile at the triggering enemy. When Norra’s abilities hit enemy champions, the ability’s cooldown is reduced."
+      },
+      {
+        "slot": "1",
+        "name": "MEMORY SURGE",
+        "description": "Norra charges and fires a bolt of magical energy in target direction. She’s slowed while charging. The energy bolt stops upon hitting the first enemy champion, dealing magic damage to the target and nearby enemies. Enemies marked with Thread Sigils take bonus magic damage.\nAt full charge, all Trinkets within the area are activated and the hit target is treated as Trinket-activated."
+      },
+      {
+        "slot": "2",
+        "name": "JOURNEY TO NOWHERE",
+        "description": "Norra reveals a mystical portal in a target circular area, dealing magic damage to all enemy champions within the area and banishing them to an alternate realm. Banished enemies are untargetable, slowed, and can’t cast."
+      },
+      {
+        "slot": "3",
+        "name": "THREADS OF HOMECOMING",
+        "description": "Passive: Damage dealing Trinkets apply a Thread Sigil to their targets.\nNorra summons portals on both sides of a target area. The portals fire magical threads between each other, dealing magic damage to all enemies in the area and applying Thread Sigils. Thread Sigils slow their targets and increase their collision size."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PORTALPALOOZA!",
+        "description": "Norra conjures a huge portal enveloping all units within the area. Magical projectiles will fire four times, dealing magic damage to all enemies along their path. The projectile direction is determined by swiping. The last projectile deals bonus damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6a1ba2f0d1178b81cf869741e94e9453ffd3e69f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke"
+    ]
+  },
+  {
+    "id": "nunu-and-willump",
+    "name": "Nunu & Willump",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "CALL OF THE FRELJORD",
+        "description": "Nunu increases the attack speed and movement speed of Willump and a nearby ally, and causes Willump's basic attacks to damage enemies around the target."
+      },
+      {
+        "slot": "1",
+        "name": "CONSUME",
+        "description": "Willump takes a bite out of a minion, monster, or enemy champion, dealing damage and healing himself."
+      },
+      {
+        "slot": "2",
+        "name": "BIGGEST SNOWBALL EVER!",
+        "description": "Willump creates a snowball that grows in size and speed as he rolls it. The snowball damages and knocks up enemies."
+      },
+      {
+        "slot": "3",
+        "name": "SNOWBALL BARRAGE",
+        "description": "Nunu throws multiple snowballs that damage enemies. When he's finished, Willump roots any champions or large monsters that were hit by a snowball."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ABSOLUTE ZERO",
+        "description": "Nunu & Willump create a powerful blizzard in an area that slows enemies and deals massive damage at the end."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/b62121686dbb3602f85a5184f2793e643a764fbb-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "healer"
+    ]
+  },
+  {
+    "id": "olaf",
+    "name": "Olaf",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Berserker Rage",
+        "description": "Olaf's Attack Speed is increased by 1% for each 1% of his Health he is missing."
+      },
+      {
+        "slot": "1",
+        "name": "Undertow",
+        "description": "Olaf throws an axe into the ground at a target location, dealing damage to enemies it passes through and slowing their Movement Speed. If Olaf picks up the axe, the ability's cooldown is reduced by 4.5 seconds."
+      },
+      {
+        "slot": "2",
+        "name": "Vicious Strikes",
+        "description": "Olaf's Attack Speed is increased, he gains Physical Vamp and has increased healing from all sources based on how much Health he is missing."
+      },
+      {
+        "slot": "3",
+        "name": "Reckless Swing",
+        "description": "Olaf dashes to an enemy and attacks with such force that it deals true damage to his target. If the target does not die, Olaf takes true damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Ragnarok",
+        "description": "Olaf temporarily becomes immune to disables."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c7218ca3fa28cd4b2d8cbafb7f712c44b2c342a3-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "true_damage",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "orianna",
+    "name": "Orianna",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Clockwork Windup",
+        "description": "Orianna's Attacks deal additional magic damage. This damage increases the more Orianna Attacks the same target."
+      },
+      {
+        "slot": "1",
+        "name": "Command: Attack",
+        "description": "Orianna commands her Ball to fire toward a target location, dealing magic damage to targets along the way (deals less damage to subsequent targets). Her Ball remains at the target location after."
+      },
+      {
+        "slot": "2",
+        "name": "Command: Dissonance",
+        "description": "Orianna commands her Ball to release a pulse of energy, dealing magic damage around it. This leaves a field behind that speeds up allies and slows enemies."
+      },
+      {
+        "slot": "3",
+        "name": "Command: Protect",
+        "description": "Orianna commands her Ball to attach to an allied champion, Shielding them and dealing magic damage to any enemies it passes through on the way. Additionally, the Ball grants additional Armor and Magic Resist to the champion it is attached to."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Command: Shockwave",
+        "description": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1f897c1d72ffd15041c1a014bf4ed244bede5dbe-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "shielder"
+    ]
+  },
+  {
+    "id": "pantheon",
+    "name": "Pantheon",
+    "roles": [
+      "BARON",
+      "JUNGLE",
+      "MID"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MORTAL WILL",
+        "description": "Every few spells or attacks, Pantheon's next spell is empowered."
+      },
+      {
+        "slot": "1",
+        "name": "COMET SPEAR",
+        "description": "Pantheon either thrusts his spear or throws his spear in the chosen direction. Low health enemies are critically hit. Mortal Will: Deals additional damage."
+      },
+      {
+        "slot": "2",
+        "name": "SHIELD VAULT",
+        "description": "Pantheon dashes to a target, damaging and stunning them. Mortal Will: Follows up with an additional attack that strikes 3 times."
+      },
+      {
+        "slot": "3",
+        "name": "AEGIS ASSAULT",
+        "description": "Pantheon sets his shield, becoming invulnerable to damage from the front and striking repeatedly with his spear. Mortal Will: Pantheon gains movement speed."
+      },
+      {
+        "slot": "ultimate",
+        "name": "GRAND STARFALL",
+        "description": "Pantheon composes himself and then leaps into the air, landing at a chosen location as a comet, slowing and dealing damage in a line pointing to where he lands."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/269fda31aef7eb1c73466c4690cc08f9e4c04e37-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
+    "id": "poppy",
+    "name": "Poppy",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "IRON AMBASSADOR",
+        "description": "Poppy throws her buckler that bounces off the target. Poppy can pick it up to gain a temporary shield."
+      },
+      {
+        "slot": "1",
+        "name": "HAMMER SHOCK",
+        "description": "Poppy swings her hammer, dealing damage and creating a zone that will slow enemies and explode after a delay."
+      },
+      {
+        "slot": "2",
+        "name": "STEADFAST PRESENCE",
+        "description": "Poppy passively gains Armor and Magic Resist. This bonus increases when she is low on Health. Poppy can activate Steadfast Presence to gain Move Speed and stop enemy dashes around her. If a dash is stopped, the enemy is slowed and grounded."
+      },
+      {
+        "slot": "3",
+        "name": "HEROIC CHARGE",
+        "description": "Poppy dashes to the target and pushes it back. If the target is pushed into a wall, it is stunned."
+      },
+      {
+        "slot": "ultimate",
+        "name": "KEEPER'S VERDICT",
+        "description": "Poppy channels a hammer strike that knocks enemies very far away."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f7d42547737f5b3df01743ae5e99f6f37193a45b-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "rammus",
+    "name": "Rammus",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ROLLING ARMORDILLO",
+        "description": "Rammus starts rolling while out of combat, gaining movement speed. Entering battle will temporarily disable this effect."
+      },
+      {
+        "slot": "1",
+        "name": "POWERBALL",
+        "description": "Rammus accelerates in a ball towards his enemies, dealing damage and slowing targets affected by the impact."
+      },
+      {
+        "slot": "2",
+        "name": "DEFENSIVE BALL CURL",
+        "description": "Rammus goes into a defensive formation, vastly increasing his Armor and Magic Resistance, amplifying Spiked Shells' damage, and returning damage to enemies that basic attack him, but he is also slowed during this time."
+      },
+      {
+        "slot": "3",
+        "name": "FRENZYING TAUNT",
+        "description": "Rammus taunts an enemy champion or monster into a reckless assault against him. Additionally, he gains increased Attack Speed for a short time."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SOARING SLAM",
+        "description": "Rammus hops into the air and slams down, dealing damage and creating aftershocks. Aftershocks slow enemies. The hopping distance increases based upon Powerball's current speed."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2ac50d528c0505db1a35ab5663bb1783c977c72d-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "rengar",
+    "name": "Rengar",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "UNSEEN PREDATOR",
+        "description": "Rengar leaps to his target when attacking if he is in the brush. Unique enemy champion takedowns grant him bonus Attack Damage. Casting basic abilities grants Rengar Ferocity which empowers his basic abilities. Casting empowered abilities briefly grants him bonus Movement Speed."
+      },
+      {
+        "slot": "1",
+        "name": "SAVAGERY",
+        "description": "Rengar's next couple of attacks gain Attack Speed. The first attack deals additional physical damage and Critically Strikes, with Critical Strike Chance further increasing the damage. Ferocity: Rengar gains even more Attack Speed and the first attack deals even more physical damage."
+      },
+      {
+        "slot": "2",
+        "name": "BATTLE ROAR",
+        "description": "Rengar damages nearby enemies and heals himself for some of the recent damage he has taken. Ferocity: Rengar deals more damage and removes all crowd control effects from himself."
+      },
+      {
+        "slot": "3",
+        "name": "BOLA STRIKE",
+        "description": "Rengar throws a bola, dealing physical damage and slowing the target struck. The bola also reveals the target and grants vision of the surrounding area. Ferocity: Rengar deals more damage and roots the target."
+      },
+      {
+        "slot": "ultimate",
+        "name": "THRILL OF THE HUNT",
+        "description": "Rengar gains movement speed and reveals the nearest enemy champion for a period of time. Shortly after casting Rengar becomes camoflauged with his next attack shredding the target's armor for a period of time."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ab6887e69775c18bac138dbad45bc427ca111f6e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "stealth",
+      "mobile"
+    ]
+  },
+  {
+    "id": "riven",
+    "name": "Riven",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "RUNIC BLADE",
+        "description": "Riven's abilities charge her blade, and her basic attacks expend charges to deal an additional damage."
+      },
+      {
+        "slot": "1",
+        "name": "BROKEN WINGS",
+        "description": "Riven lashes out in a series of strikes. This ability can be reactivated three times in a short time frame with the third hit knocking back nearby enemies."
+      },
+      {
+        "slot": "2",
+        "name": "KI BURST",
+        "description": "Riven emits a Ki Burst, damaging and stunning nearby enemies."
+      },
+      {
+        "slot": "3",
+        "name": "VALOR",
+        "description": "Riven steps forward a short distance and blocks incoming damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "BLADE OF THE EXILE",
+        "description": "Riven empowers her keepsake weapon with energy, and gains Attack Damage and Range. During this time, she also gains the ability to use Wind Slash, a powerful ranged attack, once. Taking down a target with her will extend the ability time and grant a re-cast of Wind Slash."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/155ccc38a8bae3bbe20e50878b7c8c038d468b80-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "burst",
+      "mobile",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "ryze",
+    "name": "Ryze",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ARCANE MASTERY",
+        "description": "Ryze's spells deal extra damage based on his Bonus Mana, and he gains a percentage increase to his maximum Mana based on his Ability Power."
+      },
+      {
+        "slot": "1",
+        "name": "OVERLOAD",
+        "description": "Passively, Ryze's other basic abilities reset the cooldown of Overload and charge a rune. When Ryze casts Overload with 2 runes charged, he gains a brief burst of Move Speed. On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If the target has Flux on it, Overload deals extra damage and bounces to nearby enemies with Flux."
+      },
+      {
+        "slot": "2",
+        "name": "RUNE PRISON",
+        "description": "Ryze traps a target in a cage of runes, damaging them and slowing their movement. If the target has Flux on it, they are instead rooted."
+      },
+      {
+        "slot": "3",
+        "name": "SPELL FLUX",
+        "description": "Ryze releases an orb of pure magical power that damages an enemy and debuffs all nearby enemies. Ryze's spells have additional effects against the debuffed enemy."
+      },
+      {
+        "slot": "ultimate",
+        "name": "REALM WARP",
+        "description": "Passively, Overload deals even more damage against targets with Flux. On cast, Ryze creates a portal to a nearby location. After a few seconds, allies standing near the portal are teleported to the target location."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/db6eed107ed96045dd1b7f83087493806b93c349-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": "seraphine",
+    "name": "Seraphine",
+    "roles": [
+      "SUPPORT",
+      "MID"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "STAGE PRESENCE",
+        "description": "Every third ability cast will Echo, casting it again. Casting Seraphine's abilities grants a Note to nearby allies. For each Note, Seraphine's next basic attack gains Attack Range and bonus damage."
+      },
+      {
+        "slot": "1",
+        "name": "HIGH NOTE",
+        "description": "Seraphine deals damage in an area, increased by enemies' missing Health."
+      },
+      {
+        "slot": "2",
+        "name": "SURROUND SOUND",
+        "description": "Seraphine shields all nearly ally champions and grants them Movement Speed. If Seraphine is already shielded, nearby allies are healed, increasing for each ally."
+      },
+      {
+        "slot": "3",
+        "name": "BEAT DROP",
+        "description": "Seraphine deals damage and slows enemies. If the enemy is already slowed, they are rooted instead. If they are already rooted, they are stunned instead."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ENCORE",
+        "description": "Seraphine deals damage in a line, charming and slowing enemies. Encore extends if it touches an ally or enemy champion."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/115574cabea3c98bffd4fc47378c8cd4edbb3340-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "healer",
+      "shielder",
+      "cc_heavy",
+      "poke"
+    ]
+  },
+  {
+    "id": "shen",
+    "name": "Shen",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "KI BARRIER",
+        "description": "After casting a spell, Shen gets a shield. Affecting other champions reduces the cooldown of this effect."
+      },
+      {
+        "slot": "1",
+        "name": "TWILIGHT ASSAULT",
+        "description": "Shen recalls his spirit blade to attack with it, dealing damage based on the target's max health. The attacks are greatly empowered if it collides with an enemy champion, and all collided enemies are slowed while running away from Shen."
+      },
+      {
+        "slot": "2",
+        "name": "SPIRIT'S REFUGE",
+        "description": "Shen sends his spirit blade to an ally, creating a zone that blocks enemy attacks."
+      },
+      {
+        "slot": "3",
+        "name": "SHADOW DASH",
+        "description": "Shen dashes in a direction, taunting enemies in his path"
+      },
+      {
+        "slot": "ultimate",
+        "name": "STAND UNITED",
+        "description": "Shen shields target allied champion from incoming damage, and soon after teleports to their location."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/71e3d7ca7d26158874a567f8a2d9d8bb5c11b1db-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ad",
+      "tanky",
+      "shielder",
+      "mobile"
+    ]
+  },
+  {
+    "id": "shyvana",
+    "name": "Shyvana",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Fury of the Dragonborn",
+        "description": "Shyvana gains stacks when slaying large and epic monsters, as well as champions. Dragons grant extra stacks. Every 100 stack enhances one of Shyvana's abilities."
+      },
+      {
+        "slot": "1",
+        "name": "Twin Bite",
+        "description": "Shyvana strikes twice on her next attack. Basic attacks reduce the cooldown of Twin Bite. Dragon Form: Twin Bite cleaves all units in front of Shyvana. Slaying Mountain Drake causes Twin Bite to slow enemies while in Dragon Form."
+      },
+      {
+        "slot": "2",
+        "name": "Burnout",
+        "description": "Shyvana surrounds herself in fire, dealing magic damage per second to nearby enemies and moving faster for 3 seconds. The Movement Speed reduces over the duration of the spell. Basic attacks extend the duration of Burnout. Dragon Form: Burnout grows in size. Slaying Cloud Drake gives Shyvana 25% extra Movement Speed while in Dragon Form."
+      },
+      {
+        "slot": "3",
+        "name": "Flame Breath",
+        "description": "Shyvana unleashes a fireball that deals damage to all enemies it encounters and leaves cinders on the target, marking them for 5 seconds. Shyvana's basic attacks on marked targets deal a percentage of their maximum Health as damage on-hit. Dragon Form: Flame Breath explodes on impact or at target location, dealing bonus damage and scorching the earth for a short duration. Slaying Infernal Drake converts damage dealt to marked enemies to true damage while in Dragon Form."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Dragon's Descent",
+        "description": "Shyvana transforms into a dragon and takes flight to a target location. Enemies along her path take damage and are knocked toward her target location. Shyvana passively gains Fury per second and gains 2 Fury on basic attack."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2da9174190af1472ce49266702e17d113ce7697a-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "dmg_ap",
+      "sustained_dps",
+      "mobile"
+    ]
+  },
+  {
+    "id": "sion",
+    "name": "Sion",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "GLORY IN DEATH",
+        "description": "After being killed, Sion will temporarily reanimate with rapidly decaying Health. His attacks become very rapid, heal him, and deal bonus damage based on his target's maximum Health."
+      },
+      {
+        "slot": "1",
+        "name": "DECIMATING SMASH",
+        "description": "Sion charges a powerful swing in an area in front of himself that will deal damage to enemies when released. If he charges for enough time, enemies hit by the swing will also be knocked up and stunned."
+      },
+      {
+        "slot": "2",
+        "name": "SOUL FURNACE",
+        "description": "Sion shields himself and can reactivate after 3 seconds to deal Magic Damage to enemies nearby. When Sion kills enemies, he passively gains maximum Health."
+      },
+      {
+        "slot": "3",
+        "name": "ROAR OF THE SLAYER",
+        "description": "Sion fires a short range shockwave that damages and slows and reduces the Armor of the first enemy hit. If the shockwave hits a minion or monster, it will be knocked back, damaging, slowing, and reducing the Armor of all enemies that it passes through."
+      },
+      {
+        "slot": "ultimate",
+        "name": "UNSTOPPABLE ONSLAUGHT",
+        "description": "Sion charges in a direction, ramping up speed over time. He can steer his charge slightly with the mouse cursor location. When he collides with an enemy he deals damage and knocks them up based on the distance he has charged."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4307bbb9f9bc476daf3fc9452a929f5200cc9174-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "skarner",
+    "name": "Skarner",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "THREADS OF VIBRATION",
+        "description": "Skarner's Attacks, Shattered Earth, Upheaval, and Impale, apply Quaking. At max stacks of Quaking, enemies take max Health magic damage over its duration."
+      },
+      {
+        "slot": "1",
+        "name": "SHATTERED EARTH/UPHEAVAL",
+        "description": "Skarner rips a boulder from the earth that empowers his attacks and can be thrown as a powerful projectile."
+      },
+      {
+        "slot": "2",
+        "name": "SEISMIC BASTION",
+        "description": "Skarner gains a shield and creates an earthquake whose shockwave damages and slows foes."
+      },
+      {
+        "slot": "3",
+        "name": "IXTAL'S IMPACT",
+        "description": "Skarner charges forward and passes through terrain. If he collides with a champion or large monster, he'll slam them into the next wall he hits to damage and stun them."
+      },
+      {
+        "slot": "ultimate",
+        "name": "IMPALE",
+        "description": "Skarner's tails lash forward to damage and suppress enemy champions. Suppressed victims will be dragged along by Skarner as he moves around. If Skarner hits at least one champion, he gains Move Speed. If Shattered Earth is active, Skarner will first cast Upheaval."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7829853403818fecfe447864e5359624a379c26d-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "swain",
+    "name": "Swain",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Ravenous Flock",
+        "description": "Swain's ravens collect Soul Fragments that heal him and permanently increase his maximum health and scaling with Ability Power."
+      },
+      {
+        "slot": "1",
+        "name": "Death's Hand",
+        "description": "Swain unleashes several bolts of eldritch power that pierce through enemies. Enemies hit take more damage for each bolt they are struck by."
+      },
+      {
+        "slot": "2",
+        "name": "Vision of Empire",
+        "description": "Swain opens a demon eye that deals damage and slows enemies. Champions hit are revealed and also grant Swain a Soul Fragment."
+      },
+      {
+        "slot": "3",
+        "name": "Nevermove",
+        "description": "Swain launches a wave of demonic power forward. It then returns to Swain and roots enemies it hits. Swain can then choose to pull all rooted champions closer."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Demonic Ascension",
+        "description": "Swain transforms into a demon and drains health from nearby enemy champions, minions, and neutral monsters. Swain can cast Demonflare to decimate multiple times and slow nearby enemies with a nova of soulfire. This form is indefinite as long as Swain drains enemy champions."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/343896be8966bbdfbaef4bb71fb9a956ea7e813a-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "healer",
+      "sustained_dps",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "sylas",
+    "name": "Sylas",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "PETRICITE BURST",
+        "description": "After using an ability, Sylas stores a charge, stacking up to three. Sylas’ basic attacks expend a charge, whirling his chains and dealing bonus magic damage to enemies hit. If Sylas has at least one charge, he gains attack speed."
+      },
+      {
+        "slot": "1",
+        "name": "CHAIN LASH",
+        "description": "Sylas lashes out with his chains, dealing damage and slowing enemies. After a delay, energy explodes from the chains’ intersection point, dealing magic damage."
+      },
+      {
+        "slot": "2",
+        "name": "KINGSLAYER",
+        "description": "Sylas lunges at an enemy with magical force, dealing magic damage and healing himself against enemy champions."
+      },
+      {
+        "slot": "3",
+        "name": "ABSCOND/ABDUCT",
+        "description": "Sylas dashes to a location and prepares a recast. He can recast the ability, throwing his chains out, pulling himself to the first enemy hit, and dealing damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "HIJACK",
+        "description": "Sylas hijacks an enemy champion, stealing their ultimate ability to use freely."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5b7ed4d20c87a5f975e189ac397bc54e6c93f6d7-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "mobile",
+      "healer"
+    ]
+  },
+  {
+    "id": "syndra",
+    "name": "Syndra",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "TRANSCENDENT",
+        "description": "Syndra collects Splinters of Wrath by dealing ability damage to enemies and every time she levels up an ability. Splinters of Wrath can be used to upgrade her abilities and increase ability power."
+      },
+      {
+        "slot": "1",
+        "name": "DARK SPHERE",
+        "description": "Syndra conjures a Dark Sphere that deals magic damage where it appears. The sphere remains and can be manipulated by her other powers. Upgrade: Syndra gains an additional charge of Dark Sphere."
+      },
+      {
+        "slot": "2",
+        "name": "FORCE OF WILL",
+        "description": "Syndra hurls the nearest Dark Sphere at a target location, dealing magic damage and slowing the Move Speed of enemies within the area. Upgrade: Syndra deals bonus true damage."
+      },
+      {
+        "slot": "3",
+        "name": "SCATTER THE WEAK",
+        "description": "Syndra sends out a wave of force, dealing magic damage and knocking back enemies and Dark Spheres. Enemies hit by Dark Spheres are stunned and take additional damage. Upgrade: Syndra increases the range of the wave of force."
+      },
+      {
+        "slot": "ultimate",
+        "name": "UNLEASHED POWER",
+        "description": "Syndra launches the Dark Spheres orbiting her and any nearby at an enemy champion, dealing magic damage for each Sphere. Upgrade: The Dark Spheres execute enemies with low Health. When killing an enemy, the Spheres will explode on the spot and deal damage to nearby enemy champions."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/afe2af12bc4093a1339e42253c60bb0abf54d5f3-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "poke"
+    ]
+  },
+  {
+    "id": "taliyah",
+    "name": "Taliyah",
+    "roles": [
+      "JUNGLE",
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ROCK SURFING",
+        "description": "When not in combat, Taliyah gains Move Speed near walls."
+      },
+      {
+        "slot": "1",
+        "name": "THREADED VOLLEY",
+        "description": "Taliyah throws a volley of rocks in a target direction, each rock dealing magic damage to the first enemy hit and creating a quarry in the area around them.\nIf Taliyah casts Threaded Volley in a quarry, she consumes the ground to throw a stronger boulder that damages and slows enemies."
+      },
+      {
+        "slot": "2",
+        "name": "SEISMIC SHOVE",
+        "description": "Taliyah causes an area of ground to erupt and throws enemies within it in a direction of her choosing."
+      },
+      {
+        "slot": "3",
+        "name": "UNRAVELED EARTH",
+        "description": "Taliyah creates a slowing minefield. If enemies dash through it or are knocked through it, the mines explode, damaging and slowing them."
+      },
+      {
+        "slot": "ultimate",
+        "name": "WEAVER'S WALL",
+        "description": "Taliyah summons a massive wall. If she immediately casts it again, she steps on and surfs along it.\nThe wall knocks back enemies. Once it’s fully formed, Taliyah can cast again to destroy it early."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/18126e948c466734781770a100bbaecba8526702-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "cc_heavy",
+      "mobile"
+    ]
+  },
+  {
+    "id": "talon",
+    "name": "Talon",
+    "roles": [
+      "MID",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "BLADE'S END",
+        "description": "Talon's spells Wound champions and large monsters, stacking up to 3 times. When Talon attacks a champion with 3 stacks of Wound, they bleed for heavy damage over time."
+      },
+      {
+        "slot": "1",
+        "name": "NOXIAN DIPLOMACY",
+        "description": "Talon stabs the target unit. If they are within melee range, this attack deals critical damage. If they are outside melee range, Talon will leap at his target before stabbing them. Talon refunds some health and cooldown if this ability kills the target."
+      },
+      {
+        "slot": "2",
+        "name": "RAKE",
+        "description": "Talon sends out a volley of daggers that then return back to him, dealing physical damage every time it passes through an enemy. The returning blades deal bonus damage and slow units hit."
+      },
+      {
+        "slot": "3",
+        "name": "ASSASSIN'S PATH",
+        "description": "Talon vaults over any terrain or structure, up to a max distance. This ability has a low cooldown, but puts the used terrain on a long cooldown."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SHADOW ASSAULT",
+        "description": "Talon disperses a ring of blades and becomes Invisible while gaining additional Move Speed. When Talon emerges from Invisibility, the blades converge on his location. Each time the blades move, Shadow Assault deals physical damage to enemies hit by at least one blade."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e35b396a540cd65db0b5f1a86d81662c74be4ddf-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "mobile",
+      "stealth"
+    ]
+  },
+  {
+    "id": "teemo",
+    "name": "Teemo",
+    "roles": [
+      "BARON",
+      "MID"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "TOXIC SHOT",
+        "description": "Teemo's attacks deal bonus magic damage over time."
+      },
+      {
+        "slot": "1",
+        "name": "BLINDING DART",
+        "description": "Teemo fires a dart that blinds its target, causing its attacks to deal no damage for a brief period."
+      },
+      {
+        "slot": "2",
+        "name": "MOVE QUICK",
+        "description": "Teemo scampers around, passively increasing his Movement Speed until he is struck by an enemy champion or turret. Activating Move Quick causes Teemo to roll forward a short distance, sprinting for a few seconds. During this time, Move Quick's passive speed is doubled, and cannot be removed by damage."
+      },
+      {
+        "slot": "3",
+        "name": "GUERILLA WARFARE",
+        "description": "After a delay, Teemo becomes camouflaged, unable to be seen unless near an enemy champion or turret. After exiting camouflage, Teemo gains Attack Speed."
+      },
+      {
+        "slot": "ultimate",
+        "name": "NOXIOUS TRAP",
+        "description": "Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous puddle, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another mushroom it will bounce, gaining additional range."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1a32e31a330157f441f3b007a28eea49036a7dd3-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "stealth"
+    ]
+  },
+  {
+    "id": "tryndamere",
+    "name": "Tryndamere",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Battle Fury",
+        "description": "Tryndamere gains Fury for each attack, critical strike, and killing blow he makes. Fury passively increases his Critical Strike Chance and can be consumed with his Bloodlust spell."
+      },
+      {
+        "slot": "1",
+        "name": "Bloodlust",
+        "description": "Tryndamere thrives on the thrills of combat, increasing his Attack Damage as he is more and more wounded. He can cast Bloodlust to consume his Fury and heal himself."
+      },
+      {
+        "slot": "2",
+        "name": "Mocking Shout",
+        "description": "Tryndamere lets out an insulting cry, decreasing surrounding champions' Attack Damage. Enemies with their backs turned to Tryndamere also have their Movement Speed reduced."
+      },
+      {
+        "slot": "3",
+        "name": "Spinning Slash",
+        "description": "Tryndamere slices toward a target unit, dealing damage to enemies in his path."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Undying Rage",
+        "description": "Tryndamere's lust for battle becomes so strong that he is unable to die, no matter how wounded he becomes."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/24c0c376e074f21b43184372f0aae7fa04defd63-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "healer",
+      "mobile"
+    ]
+  },
+  {
+    "id": "twisted-fate",
+    "name": "Twisted Fate",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Loaded Dice",
+        "description": "Upon killing a unit, Twisted Fate rolls his 'lucky' dice receiving bonus gold."
+      },
+      {
+        "slot": "1",
+        "name": "Wild Cards",
+        "description": "Twisted Fate throws three cards, dealing damage to each enemy unit they pass through."
+      },
+      {
+        "slot": "2",
+        "name": "Pick a Card",
+        "description": "Twisted Fate chooses a magic card from his deck, and uses that for his next attack, causing bonus effects. Red Cards deal damage in an area and slow, Blue Cards deal damage and restore mana, and Gold Cards deal damage and stun."
+      },
+      {
+        "slot": "3",
+        "name": "Stacked Deck",
+        "description": "Every 4 attacks, Twisted Fate deals bonus damage. Activating this skill increases his Attack Speed, and attacking enemy champions rolls his Loaded Dice."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Destiny",
+        "description": "Twisted Fate predicts the fortunes of his foes, revealing all enemy champions and enabling the use of Gate, which teleports Twisted Fate to any target location in 1.5 seconds."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/fc7e88a5c33bcc95df95189b80f32a644bb08208-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke"
+    ]
+  },
+  {
+    "id": "twitch",
+    "name": "Twitch",
+    "roles": [
+      "DRAGON",
+      "JUNGLE"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DEADLY VENOM",
+        "description": "Twitch's basic attacks infect the target, dealing true damage each second."
+      },
+      {
+        "slot": "1",
+        "name": "AMBUSH",
+        "description": "Twitch becomes Camouflaged for a short duration and gains Move Speed. When leaving Camouflage, Twitch gains Attack Speed for a short duration. When an enemy champion with Deadly Venom dies, Ambush's cooldown is reset."
+      },
+      {
+        "slot": "2",
+        "name": "VENOM CASK",
+        "description": "Twitch hurls a cask of venom that explodes in an area, slowing targets and applying deadly venom to the target."
+      },
+      {
+        "slot": "3",
+        "name": "CONTAMINATE",
+        "description": "Twitch wreaks further havoc on poisoned enemies with a blast of his vile diseases."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SPRAY AND PRAY",
+        "description": "Twitch unleashes the full power of his crossbow, shooting bolts over a great distance that pierce all enemies caught in their path."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4657f1ab80489515a2534b9fbe87b93e1a755533-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "sustained_dps",
+      "stealth",
+      "true_damage"
+    ]
+  },
+  {
+    "id": "veigar",
+    "name": "Veigar",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "PHENOMENAL EVIL POWER",
+        "description": "Veigar now gains passive stacks by hitting enemy champions once again."
+      },
+      {
+        "slot": "1",
+        "name": "BALEFUL STRIKE",
+        "description": "Veigar unleashes a bolt of dark energy that deals magic damage to the first two enemies hit. Units killed by this bolt grant Veigar some ability power permanently."
+      },
+      {
+        "slot": "2",
+        "name": "DARK MATTER",
+        "description": "Veigar calls a great mass of dark matter to fall from the sky to the target location, dealing magic damage when it lands. Stacks of Phenomenal Evil reduce Dark Matter's cooldown."
+      },
+      {
+        "slot": "3",
+        "name": "EVENT HORIZON",
+        "description": "Veigar twists the edges of space, creating a cage that Stuns enemies that pass through."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PRIMORDIAL BURST",
+        "description": "Blasts target enemy champion, dealing a large amount of magic damage, increasing based on the target's missing health."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a4070b89b69159d6aef2b2bbc517c7f87ac4e5b7-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "poke"
+    ]
+  },
+  {
+    "id": "velkoz",
+    "name": "Vel'Koz",
+    "roles": [
+      "MID",
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ORGANIC DECONSTRUCTION",
+        "description": "Vel'Koz's abilities apply Organic Deconstruction to enemies on hit. If 3 stacks are accumulated, the enemy will take a burst of true damage."
+      },
+      {
+        "slot": "1",
+        "name": "PLASMA FISSION",
+        "description": "Vel'Koz shoots a bolt of plasma that splits in two on reactivation or upon hitting an enemy. The bolt slows and damages on hit."
+      },
+      {
+        "slot": "2",
+        "name": "VOID RIFT",
+        "description": "Vel'Koz opens a rift to the void that deals an initial burst of damage, then explodes for a second burst of damage after a delay."
+      },
+      {
+        "slot": "3",
+        "name": "TECTONIC DISRUPTION",
+        "description": "Vel'Koz causes an explosive anomaly at target location, knocking up enemies and knocking close enemies slightly away. The closer the anomaly is to Vel’Koz the stronger the knockback effect."
+      },
+      {
+        "slot": "ultimate",
+        "name": "LIFE FORM DISINTEGRATION RAY",
+        "description": "Passive: Apply 3 Deconstruction stacks to an enemy champion marking them as Researched for 7 seconds.\nActive: Vel'Koz unleashes a channelled beam that he can steer in a target direction to deal magic damage and slow enemies hit. Researched enemy champions take true damage instead."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7883ed4bc84dadddf1208b55e3c1327870f22e5e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "true_damage"
+    ]
+  },
+  {
+    "id": "vex",
+    "name": "Vex",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DOOM 'N GLOOM",
+        "description": "Vex periodically becomes empowered, causing her next basic Ability to fear enemies and interrupt dashes. Whenever a nearby enemy dashes, Vex applies a mark that can be consumed for bonus damage that also reduces the cooldown of her empowered state."
+      },
+      {
+        "slot": "1",
+        "name": "MISTRAL BOLT",
+        "description": "Launch a damaging missile that accelerates mid-flight."
+      },
+      {
+        "slot": "2",
+        "name": "PERSONAL SPACE",
+        "description": "Gain a shield and damage nearby enemies."
+      },
+      {
+        "slot": "3",
+        "name": "LOOMING DARKNESS",
+        "description": "Summon a damaging and slowing zone that applies Gloom to enemies."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SHADOW SURGE",
+        "description": "Fire a missile that marks an enemy champion. Recast to dash to them and deal damage."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/dd071cb9c5d0c57224fe26cd7d303bbb5342e5bb-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "shielder",
+      "mobile"
+    ]
+  },
+  {
+    "id": "vi",
+    "name": "Vi",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DENTING BLOWS",
+        "description": "Every third attack on the same enemy deals a percentage of their maximum Health, reduces their Armor, and grants Vi Attack Speed."
+      },
+      {
+        "slot": "1",
+        "name": "Vault Breaker",
+        "description": "Vi charges her gauntlets and unleashes a vault shattering punch, carrying her forward. Enemies she hits are knocked back and receive a stack of Denting Blows."
+      },
+      {
+        "slot": "2",
+        "name": "BLAST SHIELD",
+        "description": "Vi gains stacks of Blast Shield when hitting an enemy with an attack or ability. Activating Blast Shield generates a shield that absorbs damage. At maximum stacks, Vi also gains Movement Speed."
+      },
+      {
+        "slot": "3",
+        "name": "Relentless Force",
+        "description": "Vi's next attack blasts through her target, dealing damage to enemies behind it."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Cease and Desist",
+        "description": "Vi runs down an enemy, knocking aside anyone in the way. When she reaches her target she knocks it into the air, jumps after it, and slams it back into the ground."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/a78c07fec8238af98971b5de942e77cb1c600922-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "cc_heavy",
+      "mobile",
+      "shielder"
+    ]
+  },
+  {
+    "id": "viego",
+    "name": "Viego",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SOVEREIGN'S DOMINATION",
+        "description": "Enemies who fall before Viego become wraiths. By attacking a wraith, Viego temporarily seizes control of the dead enemy's body, healing for a percentage of his target's max health and gaining access to their basic abilities and items. He replaces their Ultimate with a free cast of his own."
+      },
+      {
+        "slot": "1",
+        "name": "BLADE OF THE RUINED KING",
+        "description": "Viego's spectral blade passively deals bonus percent current Health damage On-Hit and strikes twice vs. enemies he recently hit with an Ability, stealing Health. Viego can activate this Ability to thrust his zweihander forward, impaling enemies in front of him."
+      },
+      {
+        "slot": "2",
+        "name": "SPECTRAL MAW",
+        "description": "Viego charges up before dashing forward, releasing a ball of concentrated Black Mist that stuns the first enemy hit."
+      },
+      {
+        "slot": "3",
+        "name": "HARROWED PATH",
+        "description": "Viego commands the Black Mist to haunt and surround a piece of terrain. Viego can hide in the Mist as a wraith, gaining camouflage, Move Speed, and Attack Speed."
+      },
+      {
+        "slot": "ultimate",
+        "name": "HEARTBREAKER",
+        "description": "Viego teleports to a nearby location and executes an enemy champion on arrival, piercing their heart and causing a destructive shockwave around them that knocks away their allies."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/9d87fe0b943dabe1c3a5d0b42fa1b38961d5395b-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "mobile",
+      "stealth",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "viktor",
+    "name": "Viktor",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "GLORIOUS EVOLUTION",
+        "description": "Viktor can augment his basic abilities when he gets kills on enemies."
+      },
+      {
+        "slot": "1",
+        "name": "SIPHON POWER",
+        "description": "Viktor blasts an enemy unit dealing magic damage, gaining a shield and empowering his next basic attack. Augment: Siphon Power's shield is increased by 60% and Viktor gains bonus Move Speed after casting."
+      },
+      {
+        "slot": "2",
+        "name": "GRAVITY FIELD",
+        "description": "Viktor conjures a heavy gravitational field that slows enemies in its radius. Enemies who stay within the device for too long are stunned. Augment: Viktor's non-periodic spells apply a slow to enemies."
+      },
+      {
+        "slot": "3",
+        "name": "HEXTECH RAY",
+        "description": "Viktor uses his robotic arm to fire a chaos beam that cuts across the field in a line, dealing damage to all enemies in its path. Augment: An explosion follows the Death Ray's wake, dealing magic damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ARCANE STORM",
+        "description": "Viktor conjures a singularity on the field which deals magic damage and interrupts enemy channels. The singularity then periodically does magic damage to all nearby enemies."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a181fcb11c7f7c423b3156f0482398ea7ef24379-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke",
+      "shielder"
+    ]
+  },
+  {
+    "id": "vladimir",
+    "name": "Vladimir",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "CRIMSON PACT",
+        "description": "Every 30 points of bonus Health gives Vladimir 1 Ability Power and every 1 point of Ability Power gives Vladimir 1.6 bonus Health (does not stack with itself)."
+      },
+      {
+        "slot": "1",
+        "name": "TRANSFUSION",
+        "description": "Vladimir steals life from the target enemy. When Vladimir's resource is full, Transfusion will benefit from massively increased damage and healing for a brief time."
+      },
+      {
+        "slot": "2",
+        "name": "SANGUINE POOL",
+        "description": "Vladimir sinks into a pool of blood, becoming untargetable for 2 seconds. Additionally, enemies on the pool are slowed and Vladimir siphons life from them."
+      },
+      {
+        "slot": "3",
+        "name": "TIDES OF BLOOD",
+        "description": "Vladimir pays his own health to charge up a reservoir of blood which, when released, deals damage in the area around him but can be blocked by enemy units."
+      },
+      {
+        "slot": "ultimate",
+        "name": "HEMOPLAGUE",
+        "description": "Vladimir infects an area with a virulent plague. Affected enemies take increased damage for the duration. After a few seconds, Hemoplague deals magic damage to infected enemies and heals Vladimir for each enemy Champion hit."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5b947e2d2b2c618c669a6d87ac1248d4611c67f2-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "healer",
+      "sustained_dps",
+      "burst"
+    ]
+  },
+  {
+    "id": "volibear",
+    "name": "Volibear",
+    "roles": [
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "THE RELENTLESS STORM",
+        "description": "Volibear's Attacks and abilities grant Attack Speed, and eventually cause his Attacks to deal bonus magic damage to nearby enemies."
+      },
+      {
+        "slot": "1",
+        "name": "THUNDERING SMASH",
+        "description": "Volibear gains speed towards enemies, Stunning and damaging the first one he Attacks."
+      },
+      {
+        "slot": "2",
+        "name": "FRENZIED MAUL",
+        "description": "Volibear damages an enemy, applying on-hit effects and gaining a mark. Casting this ability again on the same target consumes the mark to deal bonus damage and heal Volibear."
+      },
+      {
+        "slot": "3",
+        "name": "SKY SPLITTER",
+        "description": "Volibear summons a lightning bolt at a location, dealing damage and Slowing enemies while granting Volibear a shield if he's inside the blast radius."
+      },
+      {
+        "slot": "ultimate",
+        "name": "STORMBRINGER",
+        "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health. Enemy towers near his landing location become temporarily disabled."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/717020ebeb667da0a0061c55015d175d0d5a88d5-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "warwick",
+    "name": "Warwick",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ETERNAL HUNGER",
+        "description": "Warwick's basic attacks deal bonus magic damage. If Warwick is below 50% health, he heals for the same amount."
+      },
+      {
+        "slot": "1",
+        "name": "JAWS OF THE BEAST",
+        "description": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt."
+      },
+      {
+        "slot": "2",
+        "name": "BLOODHUNT",
+        "description": "Warwick senses enemies below 50% health, gaining Move Speed toward and Attack Speed against them. When they fall below 20% health, he frenzies and these bonuses triple."
+      },
+      {
+        "slot": "3",
+        "name": "PRIMAL HOWL",
+        "description": "Warwick gains damage reduction for 2.5 seconds. At the end, or if re-activated, he howls, causing nearby enemies to flee for 1 second."
+      },
+      {
+        "slot": "ultimate",
+        "name": "INFINITE DURESS",
+        "description": "Warwick leaps in a direction (scaling with his bonus Move Speed), suppressing the first champion he collides with for 1.5 seconds."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3877115ff2db8522cc9e9c87ed554c02dcd774c6-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "dmg_ap",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "wukong",
+    "name": "Wukong",
+    "roles": [
+      "JUNGLE",
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "CRUSHING BLOWS",
+        "description": "Wukong and his clones' attacks and abilities apply stacks of Crushing Blows. For each stack, Wukong and his clones deal increased damage to the target."
+      },
+      {
+        "slot": "1",
+        "name": "GOLDEN STAFF",
+        "description": "Passively gives Wukong's next attack bonus range after casting an ability. Wukong's next attack deals additional damage and heals him."
+      },
+      {
+        "slot": "2",
+        "name": "WARRIOR TRICKSTER",
+        "description": "Wukong becomes Invisible and dashes in a direction, leaving behind a clone that will attack enemies for reduced damage, mimicking Golden Staff and Cyclone."
+      },
+      {
+        "slot": "3",
+        "name": "NIMBUS STRIKE",
+        "description": "Wukong dashes to a targeted enemy and sends out images to attack enemies near his target, dealing damage to each enemy struck, and grants Wukong a temporary Attack Speed increase."
+      },
+      {
+        "slot": "ultimate",
+        "name": "CYCLONE",
+        "description": "Wukong extends his staff and spins it around repeatedly, gaining Movement Speed. Enemies struck take damage and are knocked up. Cyclone can be recast within a short time window."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/10d97ab0a3d1852eca0803ebb8ad063fb923c76b-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "stealth",
+      "mobile",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "xin-zhao",
+    "name": "Xin Zhao",
+    "roles": [
+      "JUNGLE"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Determination",
+        "description": "Every third attack deals bonus damage and heals Xin Zhao."
+      },
+      {
+        "slot": "1",
+        "name": "Three Talon Strike",
+        "description": "Xin Zhao's next 3 standard attacks deal increased damage with the third attack knocking an opponent into the air."
+      },
+      {
+        "slot": "2",
+        "name": "Wind Becomes Lightning",
+        "description": "Xin Zhao slashes in front of himself with his spear, then thrusts it forward, slowing affected enemies."
+      },
+      {
+        "slot": "3",
+        "name": "Audacious Charge",
+        "description": "Xin Zhao charges to an enemy, dealing damage to all enemies in the area and slowing them briefly."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Crescent Guard",
+        "description": "Xin Zhao deals damage to nearby enemies based on their current Health and knocks non-challenged targets back. Xin Zhao is impervious to damage dealt by champions outside of the circle created."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5335eb9ededf36af430339ae00d178508f163e3c-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "cc_heavy",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "yasuo",
+    "name": "Yasuo",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Way of the Wanderer",
+        "description": "Yasuo's Critical Strike Chance is doubled. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster."
+      },
+      {
+        "slot": "1",
+        "name": "Steel Tempest",
+        "description": "Thrusts forward, damaging all enemies in a line. On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Steel Tempest fires a whirlwind that knocks Airborne. Steel Tempest is treated as a basic attack and scales with all the same things."
+      },
+      {
+        "slot": "2",
+        "name": "Wind Wall",
+        "description": "Creates a moving wall that blocks all enemy projectiles for 4 seconds."
+      },
+      {
+        "slot": "3",
+        "name": "Sweeping Blade",
+        "description": "Dashes through target enemy, dealing magic damage. Each cast increases your next dash's base Damage, up to a max amount. Cannot be re-cast on the same enemy for a few seconds. If Steel Tempest is cast while dashing, it will strike as a circle."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Last Breath",
+        "description": "Blinks to an Airborne enemy champion, dealing physical damage and holding all Airborne enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm. For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4bb74e4eced7ff33fff5853da95aa4ae8044e417-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "mobile",
+      "cc_heavy",
+      "shielder",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "yone",
+    "name": "Yone",
+    "roles": [
+      "MID",
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "WAY OF THE HUNTER",
+        "description": "Yone deals magic damage with every second Attack. In addition, his critical strike chance is increased."
+      },
+      {
+        "slot": "1",
+        "name": "MORTAL STEEL",
+        "description": "Thrusts forward, damaging all enemies in a line. On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Mortal Steel causes Yone to dash forward with a gust of wind, knocking enemies Airborne. Mortal Steel is treated as a basic Attack and scales with all the same things."
+      },
+      {
+        "slot": "2",
+        "name": "SPIRIT CLEAVE",
+        "description": "Cleaves forward, damaging all enemies in a cone. Grants a shield to Yone. The shield's value is increased by the number of champions hit. Spirit Cleave's cooldown and cast time scale with Attack Speed."
+      },
+      {
+        "slot": "3",
+        "name": "SOUL UNBOUND",
+        "description": "Yone's spirit leaves his body behind, gaining Move Speed. When this skill ends, Yone's spirit is forced back to his body and he repeats a portion of the damage he dealt as a spirit."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FATE SEALED",
+        "description": "Yone blinks behind the last champion in a line with a slash so powerful it pulls all enemies hit towards him."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2acc4e225bed2896719dc80233f9dec80b490748-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "dmg_ap",
+      "mobile",
+      "shielder",
+      "burst"
+    ]
+  },
+  {
+    "id": "zed",
+    "name": "Zed",
+    "roles": [
+      "MID",
+      "BARON",
+      "JUNGLE"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Contempt for the Weak",
+        "description": "Zed's basic attacks against low health targets deals bonus Magic Damage. This effect can only occur once every few seconds on the same target."
+      },
+      {
+        "slot": "1",
+        "name": "Razor Shuriken",
+        "description": "Zed and his shadows throw their shurikens. Each shuriken deals damage to every enemy hit."
+      },
+      {
+        "slot": "2",
+        "name": "Living Shadow",
+        "description": "Passive: Zed gains energy whenever he and his shadows strike an enemy with the same ability. Energy can only be gained once per cast ability. Active: Zed's shadow dashes forward, remaining in place for a few seconds. Reactivating Living Shadow will cause Zed to switch positions with this shadow."
+      },
+      {
+        "slot": "3",
+        "name": "Shadow Slash",
+        "description": "Zed and his shadows slash, dealing damage to nearby enemies."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Death Mark",
+        "description": "Zed becomes untargetable and dashes to an enemy champion, marking them. After a few seconds the mark triggers, repeating a portion of all the damage Zed dealt to the target while they were marked. Zed leaves a shadow behind and can reactive Death Mark to switch places with this shadow."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/5aec4f6c69c30415dfa03c58c3e7bcee36992649-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
+    "id": "ziggs",
+    "name": "Ziggs",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Short Fuse",
+        "description": "All of Ziggs’s abilities also damage structures. Periodically, his next ability deals bonus magic damage. This cooldown is reduced whenever Ziggs uses an ability."
+      },
+      {
+        "slot": "1",
+        "name": "Bouncing Bomb",
+        "description": "Ziggs throws a bouncing bomb that deals magic damage."
+      },
+      {
+        "slot": "2",
+        "name": "Satchel Charge",
+        "description": "Ziggs flings an explosive charge that detonates after 4 seconds, or when this ability is activated again. The explosion deals magic damage to enemies, knocking them away. Ziggs is also knocked away, but takes no damage. Ziggs can use the Satchel to hexplode vulnerable enemy turrets."
+      },
+      {
+        "slot": "3",
+        "name": "Hexplosive Minefield",
+        "description": "Ziggs scatters proximity mines that detonate on enemy contact, dealing magic damage and slowing. Successive mine detonations on the same target deal reduced damage."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Mega Inferno Bomb",
+        "description": "Ziggs deploys his ultimate creation, the Mega Inferno Bomb, hurling it an enormous distance. Enemies in the primary blast zone take more damage than those farther away. When quick casting, the bomb will target the enemy with the lowest HP."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/12dfd0ae9fa0de33d5c617dc69fab205e5a5733f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "poke"
+    ]
+  },
+  {
+    "id": "zoe",
+    "name": "Zoe",
+    "roles": [
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MORE SPARKLES!",
+        "description": "Zoe's next basic attack after casting a spell deals bonus magic damage."
+      },
+      {
+        "slot": "1",
+        "name": "PADDLE STAR!",
+        "description": "Zoe fires a missile that she can redirect in flight. Deals more damage the longer it flies in a straight line."
+      },
+      {
+        "slot": "2",
+        "name": "SPELL THIEF",
+        "description": "Zoe can pick up the remnants of enemy summoner spell and active item casts and cast them once herself. Whenever she casts a summoner spell, she gains 3 missiles that fire at the nearest target."
+      },
+      {
+        "slot": "3",
+        "name": "SLEEPY TROUBLE BUBBLE",
+        "description": "Causes the target to become drowsy, then fall asleep. The first source of damage that breaks the sleep is doubled, up to a cap."
+      },
+      {
+        "slot": "ultimate",
+        "name": "PORTAL JUMP",
+        "description": "Blink to a nearby position for 1 second. Then blink back."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2d29638a3813e14c520f8de5d7275caea925c934-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "burst",
+      "poke"
+    ]
+  },
+  {
+    "id": "zyra",
+    "name": "Zyra",
+    "roles": [
+      "SUPPORT",
+      "MID"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "GARDEN OF THORNS",
+        "description": "When hitting enemies with Grasping Roots, Zyra spawns Thorn Spitters who fight for her. If it misses, a Thorn Spitter will spawn at the end of the root’s travel path instead. Thorn Spitters automatically attack Zyra’s target, dealing Magic Damage. Deadly Spines or Stranglethorns spawn additional Thorn Spitters for each extra enemy champion, large monster, or epic monster hit."
+      },
+      {
+        "slot": "1",
+        "name": "DEADLY SPINES",
+        "description": "Thick vines spread through the ground and explode into spines, dealing magic damage to enemies within the area. Zyra will also spawn a Thorn Spitter, dealing damage. For each enemy hit the number of Thorn Spitters will increase."
+      },
+      {
+        "slot": "2",
+        "name": "RAMPANT GROWTH",
+        "description": "Zyra enrages all Thorn Spitters near her. Enraged Thorn Spitters’ duration get reset and they gain bonus Health and bonus Attack Damage."
+      },
+      {
+        "slot": "3",
+        "name": "GRASPING ROOTS",
+        "description": "Zyra sends forth vines through the ground to ensnare her target, dealing Magic Damage and rooting enemies they come across. Zyra spawns a Thorn Spitter when the vines hit the first enemy, or after the skill is cast if no enemy is hit."
+      },
+      {
+        "slot": "ultimate",
+        "name": "STRANGLETHORNS",
+        "description": "Zyra summons a massive thicket at a target location, dealing Magic Damage to enemies as it expands and knocking them airborne as it contracts. When enemy champions are hit, a Thorn Spitter will spawn."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/cce39159a887f0405d9ed13750b16f8bccdb417f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "cc_heavy",
+      "poke"
+    ]
+  }
+]

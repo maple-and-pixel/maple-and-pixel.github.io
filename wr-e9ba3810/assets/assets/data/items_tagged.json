@@ -1,0 +1,4050 @@
+[
+  {
+    "id": 2704,
+    "name": "Abyssal Mask",
+    "cost": 2400,
+    "stats": {
+      "ah": 10,
+      "hp": 350,
+      "mr": 45
+    },
+    "passive": "Unmake: Magic damage against enemy champions within 650 units of you is increased by 12%.",
+    "active": null,
+    "builtFrom": [
+      "Kindlegem",
+      "Negatron Cloak"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2105,
+    "name": "Aether Wisp",
+    "cost": 950,
+    "stats": {
+      "ap": 35,
+      "ms": 4
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2104,
+    "name": "Amplifying Tome",
+    "cost": 500,
+    "stats": {
+      "ap": 20
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2362,
+    "name": "Amaranth's Twinguard",
+    "cost": 3200,
+    "stats": {
+      "hp": 300,
+      "armor": 50,
+      "mr": 50
+    },
+    "passive": "Endurance: Gain a stack of endurance for each second in combat with enemy champions, stacking up to 5 times. At maximum stacks, you gain 20% size, 20% tenacity, and 30% bonus armor and magic resist until the end of combat.",
+    "active": null,
+    "builtFrom": [
+      "Giant's Belt",
+      "Negatron Cloak",
+      "Chain Vest"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "anti_cc",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2142,
+    "name": "Archangel's Staff",
+    "cost": 3000,
+    "stats": {
+      "ah": 25,
+      "ap": 60,
+      "mana": 500
+    },
+    "passive": "Awe: Grants bonus ability power equal to 1% maximum mana. Refunds 25% of mana spent.\nMana Charge: Generates a charge every 3.3 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +14 mana, stacking up to 700 mana.\nTransforms into Seraph's Embrace at +700 mana.",
+    "active": null,
+    "builtFrom": [
+      "Tear of the Goddess",
+      "Lost Chapter",
+      "Fiendish Codex"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2352,
+    "name": "Ardent Censer",
+    "cost": 2400,
+    "stats": {
+      "ap": 50,
+      "mp5": 50,
+      "hsp": 8,
+      "ms": 4
+    },
+    "passive": "Censer: when you heal or shield an allied champion other than yourself, for the next 6 seconds, you and the ally gain 30% bonus attack speed and deal 25 bonus magic damage whenever you attack",
+    "active": null,
+    "builtFrom": [
+      "Aether Wisp",
+      "Forbidden Idol"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap",
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2418,
+    "name": "Armorcrusher Boots",
+    "cost": 2200,
+    "stats": {
+      "ap": 20,
+      "msflat": "=>Boots of Dynamism",
+      "armpenflat": 10,
+      "armpen": 6
+    },
+    "passive": "Cloudwalker: Gain 20 bonus movement speed out of combat.",
+    "active": null,
+    "builtFrom": [
+      "Boots of Dynamism"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2414,
+    "name": "Armored Advance",
+    "cost": 2200,
+    "stats": {
+      "hp": "=>Plated Steelcaps",
+      "msflat": "=>Plated Steelcaps",
+      "armor": 35
+    },
+    "passive": "Noxian Endurance: Taking physical damage from champions grants you a shield that absorbs 20–140 (by level) (+ 5% maximum health) physical damage for 5 seconds. (cooldown 12)",
+    "active": null,
+    "builtFrom": [
+      "Plated Steelcaps"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2224,
+    "name": "B. F. Sword",
+    "cost": 1500,
+    "stats": {
+      "ad": 40
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword",
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2307,
+    "name": "Bami's Cinder",
+    "cost": 1200,
+    "stats": {
+      "hp": 250,
+      "ah": 5
+    },
+    "passive": "Immolate: While in combat, deal 10–20 (by level) magic damage per second to nearby enemies, increased to 115% against minions and monsters.",
+    "active": null,
+    "builtFrom": [
+      "Ruby Crystal",
+      "Ring of Revelation"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2189,
+    "name": "Bandleglass Mirror",
+    "cost": 900,
+    "stats": {
+      "ap": 20,
+      "ah": 10,
+      "mp5": 50
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome",
+      "Ring of Revelation"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2162,
+    "name": "Banshee's Veil",
+    "cost": 3000,
+    "stats": {
+      "ap": 105,
+      "mr": 40
+    },
+    "passive": "Annul: Grants a spell shield that blocks the next enemy champion ability. (cooldown 30)",
+    "active": null,
+    "builtFrom": [
+      "Verdant Barrier",
+      "Blasting Wand"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "anti_burst",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": 2403,
+    "name": "Berserker's Greaves",
+    "cost": 1200,
+    "stats": {
+      "as": 35,
+      "msflat": 45
+    },
+    "passive": "Blessed Blade: Basic attacks heal for 10 on-hit.",
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed",
+      "Dagger"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_onhit",
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2289,
+    "name": "Black Cleaver",
+    "cost": 3000,
+    "stats": {
+      "ad": 40,
+      "ah": 20,
+      "hp": 400
+    },
+    "passive": "Sunder: Dealing physical damage to an enemy champion inflicts 6% armor reduction for 6 seconds, refreshing on subsequent hits and stacking up to 5 times for 30% reduction.\nChase: Basic attacks on-hit grant 20 / 10 bonus move speed for 2 seconds. You also gain 40 / 20 bonus move speed toward enemies with maximum stacks of Sunder.",
+    "active": null,
+    "builtFrom": [
+      "Kindlegem",
+      "Long Sword",
+      "Phage"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "anti_tank",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2164,
+    "name": "Black Mist Scythe",
+    "cost": "=>Spectral Sickle",
+    "stats": {
+      "ah": 10
+    },
+    "passive": "Sentry: You deal 2 bonus damage against Warding Totem revealed by Sweeping Lens, Control Ward, or Scryer's Bloom.\nVersatile: Gain 14 bonus attack damage or 28 ability power (Adaptive).\nSoulcast: Generates a stack every 60 seconds, granting 60, 25 bonus health, and 2 bonus attack damage or 4 ability power (Adaptive). This stacks up to 10 times for 750, 250 bonus health, and 20 bonus attack damage or 40 ability power (Adaptive).\nTribute: The ally with the most Tribute stacks is deemed the Perfect Partner. You gain 10% bonus move speed out of combat while facing Perfect Partner, increased to 30% while over 2500-range.",
+    "active": null,
+    "builtFrom": [
+      "Spectral Sickle"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": null,
+    "name": "Black Spear",
+    "cost": null,
+    "stats": {},
+    "passive": null,
+    "active": "Oathsworn Bond: Consumes this item to initiate a 3.5-second cast time and a 3-second channel afterwards from the user and the target allied champion, both becoming bound allies. The target is unable to act for 6 seconds after the channel's duration. Afterwards, the target becomes an Oathsworn.",
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2804,
+    "name": "Blackfire Torch",
+    "cost": 2800,
+    "stats": {
+      "ap": 80,
+      "ah": 20,
+      "mana": 500
+    },
+    "passive": "Baleful Blaze: Dealing ability damage burns enemies, causing them to take 10 (+1% AP) bonus magic damage every 0.5 seconds over 3 seconds. bonus magic damage is increased to 20 against monsters.\nBlackfire: For each champion, and epic monster afflicted with your Baleful Blaze, increase your ability power by 4%.",
+    "active": null,
+    "builtFrom": [
+      "Lost Chapter",
+      "Fated Ashes"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2242,
+    "name": "Blade of the Ruined King",
+    "cost": 3100,
+    "stats": {
+      "ad": 40,
+      "as": 30,
+      "lifesteal": 12
+    },
+    "passive": "Ruined Strikes: Basic attacks deal bonus physical damage on-hit equal to 8% / 6% target's current health, with a minimum of 15 against all units, and a maximum of 100 against monsters.\nDrain: Hitting a champion with 3 basic attacks or abilities within 2 seconds slows the target by 30% for 1.5 seconds. (cooldown 30)",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "Vampiric Scepter",
+      "Recurve Bow"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_tank",
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2125,
+    "name": "Blasting Wand",
+    "cost": 800,
+    "stats": {
+      "ap": 40
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2243,
+    "name": "Bloodthirster",
+    "cost": 3200,
+    "stats": {
+      "ad": 75,
+      "lifesteal": 15
+    },
+    "passive": "Ichorshield: Convert excess healing from your lifesteal to a shield that absorbs up to 165–345 (by level) damage",
+    "active": null,
+    "builtFrom": [
+      "Vampiric Scepter",
+      "B. F. Sword"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2963,
+    "name": "Bloodletter's Curse",
+    "cost": 2900,
+    "stats": {
+      "ap": 65,
+      "hp": 350,
+      "ah": 15
+    },
+    "passive": "Vile Decay: Dealing magic damage to an enemy champion with abilities applies a stack of Vile Decay to them for 6 seconds, stacking up to 4 times and up to once per basic attack or ability per cast instance every 0.3 seconds. Each stack inflicts 7.5% magic resistance reduction, up to 30% at 4 stacks.",
+    "active": null,
+    "builtFrom": [
+      "Haunting Guise",
+      "Fiendish Codex"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2410,
+    "name": "Boots of Dynamism",
+    "cost": 1200,
+    "stats": {
+      "ad": 15,
+      "msflat": 45,
+      "armpenflat": 10
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed"
+    ],
+    "category": "tier1-basic",
+    "tags": [
+      "armor_pen",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2409,
+    "name": "Boots of Mana",
+    "cost": 1200,
+    "stats": {
+      "ap": 25,
+      "mp5": 75,
+      "msflat": 45,
+      "mpenflat": 8
+    },
+    "passive": "Big Bully: Your attacks and abilities deal 18 bonus true damage against minions.\nEquilibrium: Gain +50% base health regeneration if you do not use mana.",
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed",
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2601,
+    "name": "Boots of Speed",
+    "cost": 400,
+    "stats": {
+      "msflat": 25
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_any"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2325,
+    "name": "Bramble Vest",
+    "cost": 1000,
+    "stats": {
+      "armor": 30
+    },
+    "passive": "Thorns: When struck by a basic attack, you deal 4 (+ 6% bonus armor) magic damage to the attacker and, if they are a champion, inflict 40% Grievous Wounds for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Cloth Armor"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ad",
+      "anti_heal",
+      "vs_dps",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": 1051,
+    "name": "Brawler's Gloves",
+    "cost": 500,
+    "stats": {
+      "crit": 10
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2165,
+    "name": "Bulwark of the Mountain",
+    "cost": "=>Relic Shield",
+    "stats": {
+      "ah": 10,
+      "hp": 175
+    },
+    "passive": "Sentry: You deal 2 bonus damage against Warding Totem revealed by Sweeping Lens, Control Ward, or Scryer's Bloom.\nSoulcast: Generates a stack every 60 seconds, granting 60, 25 bonus health, and 2 bonus attack damage or 4 ability power (Adaptive). This stacks up to 10 times for 750, 250 bonus health, and 20 bonus attack damage or 40 ability power (Adaptive).\nTribute: The ally with the most Tribute stacks is deemed the Perfect Partner. You gain 10% bonus move speed out of combat while facing Perfect Partner, increased to 30% while over 2500-range.",
+    "active": null,
+    "builtFrom": [
+      "Relic Shield"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_support",
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2126,
+    "name": "Catalyst of Aeons",
+    "cost": 1100,
+    "stats": {
+      "hp": 200,
+      "mana": 300
+    },
+    "passive": "Eternity: You restore mana equal to 15% of incoming damage taken from champions, and heal for 20% of mana spent, up to 15 health per cast. Toggled abilities can only heal for up to 15 per second.",
+    "active": null,
+    "builtFrom": [
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2207,
+    "name": "Caulfield's Warhammer",
+    "cost": 1200,
+    "stats": {
+      "ad": 25,
+      "ah": 10
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword",
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2305,
+    "name": "Chain Vest",
+    "cost": 900,
+    "stats": {
+      "armor": 40
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Cloth Armor"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ad",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2413,
+    "name": "Chainlaced Crushers",
+    "cost": 2200,
+    "stats": {
+      "hp": "=>Mercury's Treads",
+      "msflat": "=>Mercury's Treads",
+      "mr": 35,
+      "tenacity": "=>Mercury's Treads"
+    },
+    "passive": "Noxian Persistance: Taking magic damage from champions grants you a shield that absorbs 20–140 (by level) (+ 5% maximum health) magic damage for 5 seconds. (cooldown 12)",
+    "active": null,
+    "builtFrom": [
+      "Mercury's Treads"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "anti_cc",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2252,
+    "name": "Chempunk Chainsword",
+    "cost": 2800,
+    "stats": {
+      "ad": 45,
+      "ah": 15,
+      "hp": 400
+    },
+    "passive": "Punishment: Dealing physical damage to enemy champions inflicts 50% Grievous Wounds for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Caulfield's Warhammer",
+      "Executioner's Calling"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_heal",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "healer"
+    ]
+  },
+  {
+    "id": 1029,
+    "name": "Cloth Armor",
+    "cost": 500,
+    "stats": {
+      "armor": 20
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "vs_ad",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": null,
+    "name": "Control Ward",
+    "cost": null,
+    "stats": {},
+    "passive": "After 11:00 elapse, the active cooldown is reduced by 10 seconds.",
+    "active": "Place a visible Control Ward at the target location, which grants sight over the surrounding 900-range and reveals enemy wards, stealthed traps, and camouflaged champions. (cooldown 100)",
+    "builtFrom": [],
+    "category": null,
+    "tags": [
+      "vs_stealth",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "stealth"
+    ]
+  },
+  {
+    "id": 2167,
+    "name": "Cosmic Drive",
+    "cost": 3000,
+    "stats": {
+      "hp": 300,
+      "ap": 70,
+      "ah": 25,
+      "ms": 4
+    },
+    "passive": "Spelldance: Dealing magic or true damage to champions grants 30 bonus move speed for 4 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Aether Wisp",
+      "Fiendish Codex",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2415,
+    "name": "Crimson Lucidity",
+    "cost": 2000,
+    "stats": {
+      "mp5": 75,
+      "msflat": "=>Ionian Boots of Lucidity",
+      "ah": 25
+    },
+    "passive": "Summoned: Reduces spell cooldowns by 20%.\nNoxian Haste: Healing, shielding or buffing an ally, damaging abilities against champions, and using summoner spells grants you 10% / 8% bonus movement speed for 4 seconds. This can be triggered from the same cast instance only once every 4 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Ionian Boots of Lucidity"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_support",
+      "build_any"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2187,
+    "name": "Cryptbloom",
+    "cost": 3000,
+    "stats": {
+      "ah": 20,
+      "ap": 75,
+      "mpen": 30
+    },
+    "passive": "Life from Death: When a champion that you damaged within 3 seconds dies, a nova spread from their corpse that restores 100 (+ 20% AP) health to allies (cooldown 60)",
+    "active": null,
+    "builtFrom": [
+      "Fiendish Codex",
+      "Void Amethyst",
+      "Amplifying Tome"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2188,
+    "name": "Echoes of Helia",
+    "cost": 2400,
+    "stats": {
+      "ap": 40,
+      "hp": 200,
+      "mp5": 50,
+      "ah": 20
+    },
+    "passive": "Soul Siphon: Gain 30% of pre-mitigation damage dealt to champions as Soul Charges, up to 80 to 250. Healing or shielding an allied champion (excluding yourself) consumes all charges to heal them equal to the consumed amount",
+    "active": null,
+    "builtFrom": [
+      "Bandleglass Mirror",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap",
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 1042,
+    "name": "Dagger",
+    "cost": 400,
+    "stats": {
+      "as": 12
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2361,
+    "name": "Dawnshroud",
+    "cost": 2700,
+    "stats": {
+      "armor": 50,
+      "hp": 250,
+      "mr": 30
+    },
+    "passive": "Dawnbringer: If you are within 400 units of an enemy champion when you immobilize an enemy champion or are immobilized by enemy champions, you deal 40 (+ 2.5% bonus health) magic damage to nearby enemy champions and reveal them for 3 seconds. For the same duration, you gain 20% bonus armor and magic resist. (cooldown 3)",
+    "active": null,
+    "builtFrom": [
+      "Spectre's Cowl",
+      "Chain Vest"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "vs_stealth",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap",
+      "stealth"
+    ]
+  },
+  {
+    "id": 2346,
+    "name": "Dead Man's Plate",
+    "cost": 2800,
+    "stats": {
+      "armor": 70,
+      "hp": 350,
+      "ms": 4
+    },
+    "passive": "Momentum: Your movement generates stacks of Momentum, which is all expended by basic attacks and decays while movement is impaired. Each stack grants 0.4 bonus move speed, stacking up to 100 times for 40 bonus move speed.\nCrushing Blow: Your basic attacks deal bonus magic damage equal to expended Momentum. Melee basic attacks that expend maximum Momentum also slow by 75% for 1 second.",
+    "active": null,
+    "builtFrom": [
+      "Chain Vest",
+      "Winged Moonplate",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "build_tank",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2257,
+    "name": "Death's Dance",
+    "cost": 3300,
+    "stats": {
+      "ad": 50,
+      "ah": 15,
+      "armor": 45
+    },
+    "passive": "Cauterize: 30% / 12% of physical and magic damage taken from champions is instead dealt as true damage over 3 seconds, dealing a portion of the stored damage every second.\nDefy: Champion takedowns remove Cauterize's remaining stored damage and heal you for 90% bonus AD over 2 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "Caulfield's Warhammer",
+      "Chain Vest"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "anti_burst",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "burst"
+    ]
+  },
+  {
+    "id": 2119,
+    "name": "Diadem of Songs",
+    "cost": "=>Whispering Circlet",
+    "stats": {
+      "hp": "=>Whispering Circlet",
+      "hsp": "=>Whispering Circlet",
+      "mana": 1200,
+      "mp5": "=>Whispering Circlet"
+    },
+    "passive": "Harmony: Grants heal and shield power equal to 0.25% maximum mana. Refunds 25% of mana spent.\nDiadem: While you or an ally you have Healed or shielded in the last 3 seconds is in combat with enemy champion, each second, heal the nearest and most wounded allied champion within 800 units for 0.8% of your maximum mana.",
+    "active": null,
+    "builtFrom": [
+      "Whispering Circlet"
+    ],
+    "category": null,
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2272,
+    "name": "Divine Sunderer",
+    "cost": 3400,
+    "stats": {
+      "ad": 25,
+      "ah": 25,
+      "hp": 425
+    },
+    "passive": "Spellblade: After using an ability, your next basic attack within 10 seconds deals bonus physical damage on-hit equal to 10% / 7% target's maximum health, with a minimum damage equal to 125% base AD and a maximum damage against monsters equal to 225% base AD. Against champions, you also heal for 6% / 2.5% target's maximum health, with a minimum heal equal to 90% / 50% base AD. The damage is reduced by 50% against structures. (cooldown 1.5 (post-effect))",
+    "active": null,
+    "builtFrom": [
+      "Sheen",
+      "Jaurim's Fist",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_tank",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2185,
+    "name": "Dusk and Dawn",
+    "cost": 3100,
+    "stats": {
+      "ah": 20,
+      "ap": 60,
+      "as": 20,
+      "hp": 300
+    },
+    "passive": "Spellblade: After using an ability, your next basic attack within 10 seconds deals 75% base AD (+ 10% AP) bonus magic damage and heals you for 10% AP (+ 3% bonus health) on-hit, and applies on-hit effects to the target again after a 0.2-second delay, starts after using the empowered attack). The damage is reduced to 50% against structures. (cooldown 1.5 (post-effect))",
+    "active": null,
+    "builtFrom": [
+      "Blasting Wand",
+      "Sheen",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2256,
+    "name": "Duskblade of Draktharr",
+    "cost": 3000,
+    "stats": {
+      "ad": 55,
+      "ah": 10,
+      "armpenflat": 18
+    },
+    "passive": "Nightstalker: Your next basic attack against an enemy champion deals 60–160 (by level) bonus physical damage and slows by 99% for 0.35 seconds. Scoring a champion takedown will ah reset the cooldown. (cooldown 10)",
+    "active": null,
+    "builtFrom": [
+      "Serrated Dirk",
+      "Caulfield's Warhammer"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2286,
+    "name": "Eclipse",
+    "cost": 3000,
+    "stats": {
+      "ad": 60,
+      "ah": 20
+    },
+    "passive": "Ever Rising Moon: Hitting an enemy champion will inflict a stack for 1.8 seconds, up to one per attack or cast per champion. Inflicting 2 stacks will consume them all to deal bonus physical damage equal to 6% / 3% target's maximum health and grant you a shield equal to 140 / 70 (+ 35% / 18% bonus AD) lasting 2 seconds. Hits include damaging basic attacks, abilities, item effects, and spells, as well as inflicting crowd control and damage over time effects. (cooldown 6)",
+    "active": null,
+    "builtFrom": [
+      "Caulfield's Warhammer",
+      "Caulfield's Warhammer"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_tank",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2161,
+    "name": "Edge of Night",
+    "cost": 3000,
+    "stats": {
+      "ad": 50,
+      "hp": 250,
+      "armpenflat": 12
+    },
+    "passive": "Annul: Grants a spell shield that blocks the next enemy ability.",
+    "active": null,
+    "builtFrom": [
+      "Jaurim's Fist",
+      "Long Sword",
+      "Serrated Dirk"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "anti_burst",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "tanky",
+      "burst"
+    ]
+  },
+  {
+    "id": 2267,
+    "name": "Essence Reaver",
+    "cost": 3000,
+    "stats": {
+      "ad": 50,
+      "crit": 25,
+      "ah": 20
+    },
+    "passive": "Spellblade: Using an ability causes your next attack to deal 135% base AD (+ 0 to 80 based on critical strike chance) bonus physical damage and restores mana equal to50% of that amount. (cooldown 1.5)",
+    "active": null,
+    "builtFrom": [
+      "Sheen",
+      "Caulfield's Warhammer",
+      "Brawler's Gloves"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2229,
+    "name": "Executioner's Calling",
+    "cost": 800,
+    "stats": {
+      "ad": 15
+    },
+    "passive": "Crippling Blow: Physical damage inflicts 40% Grievous Wounds on enemy champions for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "anti_heal",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "healer"
+    ]
+  },
+  {
+    "id": 2806,
+    "name": "Experimental Hexplate",
+    "cost": 3000,
+    "stats": {
+      "ad": 35,
+      "as": 20,
+      "hp": 400
+    },
+    "passive": "Hexcharged: +20 ultimate haste.\nOverdrive: Upon casting your ultimate ability, enter Overdrive to gain 40% bonus attack speed and 20% bonus move speed for 8 seconds. (cooldown 30)",
+    "active": null,
+    "builtFrom": [
+      "Dagger",
+      "Jaurim's Fist",
+      "Phage"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2138,
+    "name": "Fated Ashes",
+    "cost": 900,
+    "stats": {
+      "ap": 40
+    },
+    "passive": "Inflame: Dealing ability damage burns enemies, causing them to take 5 magic damage over 3 seconds. Deal an additional 15 magic damage against monsters",
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2239,
+    "name": "Fiendhunter Bolts",
+    "cost": 2650,
+    "stats": {
+      "ms": 4,
+      "as": 45,
+      "crit": 25
+    },
+    "passive": "Night Vigil: +20 ultimate haste.\nOpening Barrage: After casting your ultimate ability, your next 3 basic attacks on-attack within 8 seconds gain 50% bonus attack speed and are empowered to critically strike for 60% bonus damage. If an attack would have already critically struck, it instead critically strikes for 100% bonus damage and deals bonus true damage equal to 15% of the triggering attack's damage pre-mitigation. (cooldown 45)",
+    "active": null,
+    "builtFrom": [
+      "Zeal",
+      "Kircheis Shard"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2108,
+    "name": "Fiendish Codex",
+    "cost": 900,
+    "stats": {
+      "ah": 10,
+      "ap": 25
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2356,
+    "name": "Fimbulwinter",
+    "cost": "=>Winter's Approach",
+    "stats": {
+      "ah": 15,
+      "hp": "=>Winter's Approach",
+      "mana": 1200
+    },
+    "passive": "Awe: Grants bonus health equal to 10% maximum mana. Refunds 15% of mana spent.\nFrozen Colossus: When you Immobilize or slow an enemy champion, gain a shield for ( 120 (+ 4.5% maximum mana) \\ 60 (+ 2.25% maximum mana)) lasting 3 seconds. The shield strength is increased to 180% if 2 or more enemy champions were nearby. (cooldown 8)",
+    "active": null,
+    "builtFrom": [
+      "Winter's Approach"
+    ],
+    "category": null,
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2120,
+    "name": "Forbidden Idol",
+    "cost": 700,
+    "stats": {
+      "hsp": 6,
+      "mp5": 25
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier2-component",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2358,
+    "name": "Force of Nature",
+    "cost": 2750,
+    "stats": {
+      "hp": 400,
+      "mr": 60,
+      "ms": 4
+    },
+    "passive": "Absorb: Taking ability damage will generate a stack of Steadfast lasting 7 seconds, which stacks up to 4 times. Subsequent hits and dealing damage against champions will refresh the stacks. At maximum stacks, you gain 6% bonus move speed and 70 bonus magic resist.",
+    "active": null,
+    "builtFrom": [
+      "Spectre's Cowl",
+      "Winged Moonplate"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2357,
+    "name": "Frozen Heart",
+    "cost": 2550,
+    "stats": {
+      "armor": 80,
+      "mana": 200,
+      "ah": 25
+    },
+    "passive": "Winter's Caress: Reduce attack speed of enemy champions within 650 units by 25%.",
+    "active": null,
+    "builtFrom": [
+      "Warden's Mail",
+      "Glacial Shroud"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_dps",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": 2296,
+    "name": "Galeforce",
+    "cost": 3100,
+    "stats": {
+      "ad": 60,
+      "crit": 25,
+      "ms": 4
+    },
+    "passive": null,
+    "active": "Cloudburst: Dash in the target direction (325-range), firing three missiles to the most wounded enemy, prioritizing enemy champions (600-range). Each missile deals 13.3–41.7 (by level) (+ 35% bonus AD) physical damage, for a total of 40–120 (by level) (+ 35% bonus AD). (cooldown 60)",
+    "builtFrom": [
+      "Pickaxe",
+      "Noonquiver",
+      "Long Sword"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2383,
+    "name": "Gargoyle Stoneplate",
+    "cost": 2900,
+    "stats": {
+      "ah": 10,
+      "armor": 45,
+      "mr": 45,
+      "hp": 200
+    },
+    "passive": null,
+    "active": "Stoneplate: Gain a shield equal to 100 (+9% bonus health) decaying over 2.5 seconds. (cooldown 60)",
+    "builtFrom": [
+      "Chain Vest",
+      "Negatron Cloak",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "anti_burst",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": 2322,
+    "name": "Giant's Belt",
+    "cost": 1000,
+    "stats": {
+      "hp": 300
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2128,
+    "name": "Glacial Shroud",
+    "cost": 1000,
+    "stats": {
+      "ah": 10,
+      "armor": 20,
+      "mana": 150
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Cloth Armor"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ad",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2408,
+    "name": "Gluttonous Greaves",
+    "cost": 1000,
+    "stats": {
+      "msflat": 45
+    },
+    "passive": "Balance of Power: +12 attack damage or +20 ability power.\nConversion: +5% omnivamp. champion takedowns grant 0.5% omnivamp up to 5%.",
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_any"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2293,
+    "name": "Goredrinker",
+    "cost": 3100,
+    "stats": {
+      "hp": 400,
+      "ad": 45,
+      "ah": 15
+    },
+    "passive": "Goredrink: +8% omnivamp.",
+    "active": "Thirsting Slash: Deal 175% base AD physical damage to nearby enemies, healing for 20% AD (+ 10% missing health) for each champion hit. (cooldown 12)",
+    "builtFrom": [
+      "Phage",
+      "Jaurim's Fist",
+      "Ring of Revelation"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2259,
+    "name": "Guardian Angel",
+    "cost": 3200,
+    "stats": {
+      "ad": 45,
+      "armor": 40
+    },
+    "passive": "Resurrect: Upon taking lethal damage, you enter resurrection for 4 seconds, undergoing stasis. Afterwards, you heal for 50% base health and restore 100% maximum mana. (cooldown 180)",
+    "active": null,
+    "builtFrom": [
+      "B. F. Sword",
+      "Chain Vest"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "anti_burst",
+      "build_ad",
+      "build_bruiser",
+      "build_onhit"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "burst"
+    ]
+  },
+  {
+    "id": 2412,
+    "name": "Gunmetal Greaves",
+    "cost": 2200,
+    "stats": {
+      "as": 50,
+      "msflat": "=>Berserker's Greaves",
+      "lifesteal": 5
+    },
+    "passive": "Noxian Gait: Basic attacks against enemy champions grant a decaying 10% / 8% bonus movement speed over 2 seconds.\nBlessed Blade: Basic attacks heal for 12 on-hit.",
+    "active": null,
+    "builtFrom": [
+      "Berserker's Greaves"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_onhit",
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2291,
+    "name": "Guinsoo's Rageblade",
+    "cost": 3000,
+    "stats": {
+      "ad": 35,
+      "ap": 30,
+      "as": 30
+    },
+    "passive": "Wrath: Basic attacks deal 30 bonus magic damage on-hit.\nSeething Strike: Basic attacks grant 8% bonus attack speed for 3 seconds, stacking up to 32%. At maximum stacks, basic attacks on-attack also generate a Phantom stack for 6 seconds, stacking up to 3 times upon which they are consumed on-attack to trigger a Phantom Hit that applies on-hit effects to the target after a 0.15-second delay.",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "Recurve Bow",
+      "Amplifying Tome"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_ap",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2155,
+    "name": "Harmonic Echo",
+    "cost": 2500,
+    "stats": {
+      "ah": 20,
+      "ap": 40,
+      "hp": 200,
+      "mp5": 50
+    },
+    "passive": "Harmonic Echo: Healing or shielding an allied champion chains the effect to the other nearest and most wounded allied champion within 800 units of them (excluding yourself), granting them 30% of the heal or 35% of the shield's initial strength. If no other allied champions are in the radius, grant the same target an additional 30% of the heal or 35% of the shield.",
+    "active": null,
+    "builtFrom": [
+      "Bandleglass Mirror",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap",
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2123,
+    "name": "Haunting Guise",
+    "cost": 1300,
+    "stats": {
+      "ap": 30,
+      "hp": 100
+    },
+    "passive": "Madness: For each second in combat with enemy champions, deal 2% increased damage, stacking up to 3 times for a total of 6%.",
+    "active": null,
+    "builtFrom": [
+      "Ruby Crystal",
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2210,
+    "name": "Hearthbound Axe",
+    "cost": 1200,
+    "stats": {
+      "ad": 20,
+      "as": 15
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword",
+      "Dagger"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2366,
+    "name": "Heartsteel",
+    "cost": 2800,
+    "stats": {
+      "ah": 25,
+      "hp": 700,
+      "hp5": 150
+    },
+    "passive": "Colossal Consumption: Enemy champions within 700 units will generate stacks over 2.5 seconds, stacking up to 6 times. Your next basic attack against a target with maximum stacks will consume them all to deal 140 (+ 3.5% maximum health) bonus physical damage on-hit and grant you permanent bonus health equal to15% amount (20 second cooldown per target).",
+    "active": null,
+    "builtFrom": [
+      "Giant's Belt",
+      "Kindlegem",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2226,
+    "name": "Hexdrinker",
+    "cost": 1200,
+    "stats": {
+      "ad": 20,
+      "mr": 20
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword",
+      "Null-Magic Mantle"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ap",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2160,
+    "name": "Hextech Alternator",
+    "cost": 1100,
+    "stats": {
+      "ap": 45
+    },
+    "passive": "Revved: Your damaging abilities and empowered attacks against champions deal 25–60 (by level) magic damage. (cooldown 20)",
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2385,
+    "name": "Hextech Rocketbelt",
+    "cost": 2650,
+    "stats": {
+      "ah": 20,
+      "ap": 70,
+      "hp": 300
+    },
+    "passive": null,
+    "active": "Protobelt: Dash forward and unleash a cone of missiles that deals 100 (+15% ap) magic damage (1075-range). Subsequent missiles deal 10% damage against the same champion or monster. (cooldown 30)",
+    "builtFrom": [
+      "Hextech Alternator",
+      "Kindlegem",
+      "Amplifying Tome"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2237,
+    "name": "Hexoptics C44",
+    "cost": 2900,
+    "stats": {
+      "ad": 55,
+      "crit": 25
+    },
+    "passive": "Magnification: Deal 0–10 (by level) increased basic damage. The distance is calculated from the edge of your current position to edge of the target's position at the time they are damaged.\nArcane Aim: Scoring a takedown against an enemy champion within 3 seconds of damaging them grants you 100 bonus attack range for 8 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "Noonquiver",
+      "Long Sword"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2183,
+    "name": "Hollow Radiance",
+    "cost": 2800,
+    "stats": {
+      "ah": 15,
+      "hp": 400,
+      "mr": 40
+    },
+    "passive": "Immolate: While in combat, deal 20–30 (by level) (+ 1% bonus health) magic damage every second to nearby enemies, increased to 130% against monsters and 200% against minions.\nDesolate: Killing an enemy will cause them to explode dealing 30 (+ 2% bonus health) magic damage to nearby enemies.",
+    "active": null,
+    "builtFrom": [
+      "Bami's Cinder",
+      "Negatron Cloak"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2172,
+    "name": "Horizon Focus",
+    "cost": 2700,
+    "stats": {
+      "ah": 25,
+      "ap": 80
+    },
+    "passive": "Hypershot: Your ability damage against champions will inflict them with Hypershot if it was cast from at least 600 units away. The target is revealed and you deal 10% increased damage against them for 8 seconds.\nFocus: Inflicting Hypershot will reveal surrounding enemy champions within 1200 units for 3 seconds. (cooldown 12)",
+    "active": null,
+    "builtFrom": [
+      "Fiendish Codex",
+      "Fiendish Codex",
+      "Amplifying Tome"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2375,
+    "name": "Hullbreaker",
+    "cost": 3100,
+    "stats": {
+      "ad": 50,
+      "hp": 400,
+      "ms": 5
+    },
+    "passive": "Skipper: Basic attacks against a certain target will generate a stack up to 4 times, upon which they are all consumed to deal bonus physical damage, reduced to 40% on ranged users. Champions or epic monsters: 160% base AD (+ 5% maximum health).Turrets: 240% base AD (+ 9% maximum health).\nBoarding Party: Nearby allied Blue Siege Minion and Blue Super Minion minions gain AR 20–130 (by level) AR and MR 10–120 (by level) MR, reduced to25% of that amount on ranged users.",
+    "active": null,
+    "builtFrom": [
+      "Jaurim's Fist",
+      "Jaurim's Fist"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2150,
+    "name": "Iceborn Gauntlet",
+    "cost": 3100,
+    "stats": {
+      "ah": 30,
+      "armor": 50,
+      "hp": 250,
+      "mana": 250
+    },
+    "passive": "Spellblade: After using an ability, your next basic attack within 10 seconds deals bonus physical damage on-hit equal to 100% base AD (+ 25% bonus armor), and the same damage to surrounding enemies within 180 range. It also creates a 180 (+ 55% bonus armor) radius frost field under them for 2 seconds, which slows enemies within by 30%. The damage is reduced by 50% against structures. (cooldown 1.5 (post effect))",
+    "active": null,
+    "builtFrom": [
+      "Glacial Shroud",
+      "Kindlegem",
+      "Sheen"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "build_tank",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2279,
+    "name": "Immortal Shieldbow",
+    "cost": 3000,
+    "stats": {
+      "ad": 55,
+      "crit": 25
+    },
+    "passive": "Lifeline: If you take damage that would reduce you below 35% maximum health, you first gain a shield for 350–650 (by level) / 300–550 (by level) lasting 3 seconds. (cooldown 70)",
+    "active": null,
+    "builtFrom": [
+      "Brawler's Gloves",
+      "Long Sword",
+      "Noonquiver"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_burst",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "burst"
+    ]
+  },
+  {
+    "id": 2416,
+    "name": "Immortal Treads",
+    "cost": 2000,
+    "stats": {
+      "msflat": "=>Gluttonous Greaves"
+    },
+    "passive": "Now and Forever: While above 50% of your maximum health, you deal 5% increased damage. While below 50% of your maximum health, you gain 12% increased healing and shielding.",
+    "active": null,
+    "builtFrom": [
+      "Gluttonous Greaves"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_any"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2163,
+    "name": "Imperial Mandate",
+    "cost": 2600,
+    "stats": {
+      "ah": 15,
+      "ap": 60,
+      "mp5": 50
+    },
+    "passive": "Control: your crowd control abilities gain 20 ability haste.\nCommand: Abilities that immobilize an enemy champion mark them for 4 seconds. causing them to take 7% increased damage",
+    "active": null,
+    "builtFrom": [
+      "Bandleglass Mirror",
+      "Blasting Wand"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2245,
+    "name": "Infinity Edge",
+    "cost": 3400,
+    "stats": {
+      "ad": 75,
+      "crit": 25
+    },
+    "passive": "Infinity: +30% critical strike damage.",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "B. F. Sword",
+      "Brawler's Gloves"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2158,
+    "name": "Infinity Orb",
+    "cost": 3100,
+    "stats": {
+      "ap": 110,
+      "mpenflat": 15
+    },
+    "passive": "Inevitable Demise: Abilities and empowered attacks will critically strike for 20% bonus damage against enemies below 40% health.",
+    "active": null,
+    "builtFrom": [
+      "Hextech Alternator",
+      "Needlessly Large Rod"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2407,
+    "name": "Ionian Boots of Lucidity",
+    "cost": 1000,
+    "stats": {
+      "ah": 15,
+      "mp5": 50,
+      "msflat": 45
+    },
+    "passive": "Summoned: Reduces spell cooldowns by 15%.",
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed",
+      "Ring of Revelation"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_any"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2326,
+    "name": "Jaurim's Fist",
+    "cost": 1200,
+    "stats": {
+      "ad": 15,
+      "hp": 200
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword",
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2373,
+    "name": "Kaenic Rookern",
+    "cost": 2800,
+    "stats": {
+      "hp5": 100,
+      "hp": 350,
+      "mr": 75
+    },
+    "passive": "Magebane: After 12 seconds without taking magic damage, you gain a magic damage shield equal to 70–180 (by level) (+ 10% maximum health) lasting until destroyed.",
+    "active": null,
+    "builtFrom": [
+      "Negatron Cloak",
+      "Spectre's Cowl"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "anti_burst",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": 2306,
+    "name": "Kindlegem",
+    "cost": 1000,
+    "stats": {
+      "ah": 10,
+      "hp": 175
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2231,
+    "name": "Kircheis Shard",
+    "cost": 800,
+    "stats": {
+      "as": 20
+    },
+    "passive": "Jolt: deal 40 bonus magic damage to enemy champions. attacks reduce Jolt cooldown by 1 second. (cooldown 25)",
+    "active": null,
+    "builtFrom": [
+      "Dagger"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2379,
+    "name": "Knight's Vow",
+    "cost": 2450,
+    "stats": {
+      "as": 10,
+      "armor": 40,
+      "hp": 200,
+      "hp5": 100
+    },
+    "passive": "Pledge: Upon purchase, you can elect an ally champion deemed Worthy, forming a tether between you and them. Champions can be under one Pledge at a time.\nSacrifice: While the Worthy is tethered to you and you are above 30% health, redirect 12% of the pre-mitigation physical and magic damage they take to you as the respective damage type. Additionally, you heal for 10% of the post-mitigation damage dealt by the Worthy against champions.",
+    "active": null,
+    "builtFrom": [
+      "Chain Vest",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "build_tank",
+      "build_support"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2225,
+    "name": "Last Whisper",
+    "cost": 1200,
+    "stats": {
+      "ad": 15,
+      "armpen": 15
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword"
+    ],
+    "category": "tier1-basic",
+    "tags": [
+      "armor_pen",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2278,
+    "name": "Lord Dominik's Regards",
+    "cost": 3300,
+    "stats": {
+      "ad": 35,
+      "crit": 25,
+      "armpen": 35
+    },
+    "passive": "Giant Slayer: Deal 0–12 (by level) increased damage against enemy champions.",
+    "active": null,
+    "builtFrom": [
+      "Noonquiver",
+      "Last Whisper"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "anti_tank",
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2292,
+    "name": "Kraken Slayer",
+    "cost": 2900,
+    "stats": {
+      "ad": 45,
+      "as": 35,
+      "ms": 4
+    },
+    "passive": "Bring it Down: Basic attacks on-hit grant a stack for 3 seconds, stacking up to 3 times upon which they are consumed to deal 150–210 (by level) / 120–168 (by level) bonus physical damage on-hit, increased by 0 to 75, for up to 150*1.7 to 210*1.7 for 15 / 120*1.7 to 168*1.7 for 15 bonus physical damage.",
+    "active": null,
+    "builtFrom": [
+      "Hearthbound Axe",
+      "Recurve Bow",
+      "Long Sword"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2141,
+    "name": "Liandry's Torment",
+    "cost": 3000,
+    "stats": {
+      "ap": 60,
+      "hp": 300
+    },
+    "passive": "Torment: Ability damage and empowered attacks inflict a burn dealing magic damage equal to 2% of target's maximum health over 3 seconds.\nMadness: Deal 2% more damage for each second in combat against enemy champions, capped at 6% after 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Fated Ashes",
+      "Haunting Guise"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_tank",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2143,
+    "name": "Lich Bane",
+    "cost": 2800,
+    "stats": {
+      "ah": 10,
+      "ap": 100,
+      "ms": 6
+    },
+    "passive": "Spellblade: After using an ability, your next basic attack within 10 seconds deals bonus magic damage on-hit equal to 75% base AD (+ 50% AP). The damage is reduced to 50% against structures. (cooldown 1.5 (post-effect))",
+    "active": null,
+    "builtFrom": [
+      "Aether Wisp",
+      "Amplifying Tome",
+      "Sheen"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2380,
+    "name": "Locket of the Iron Solari",
+    "cost": 2500,
+    "stats": {
+      "ah": 10,
+      "armor": 30,
+      "mr": 30,
+      "hp": 300
+    },
+    "passive": null,
+    "active": "Locket: shield yourself and nearby allied champions for 250–370 (by level) lasting 2.5 seconds (1000-range). This effect is reduced to 50% strength if the target has been affected by another Locket within 20 seconds. (cooldown 60)",
+    "builtFrom": [
+      "Kindlegem",
+      "Cloth Armor",
+      "Null-Magic Mantle"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "anti_burst",
+      "build_tank",
+      "build_support"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": 2201,
+    "name": "Long Sword",
+    "cost": 500,
+    "stats": {
+      "ad": 12
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2127,
+    "name": "Lost Chapter",
+    "cost": 1200,
+    "stats": {
+      "ap": 35,
+      "mana": 200,
+      "ah": 10
+    },
+    "passive": "Enlighten: Leveling up restores 20% max mana over 3 seconds",
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome",
+      "Ring of Revelation"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2148,
+    "name": "Luden's Echo",
+    "cost": 2800,
+    "stats": {
+      "ah": 10,
+      "ap": 100,
+      "mana": 500
+    },
+    "passive": "Echo: your next damaging ability or empowered attacks deal 80 (+ 9% AP) magic damage to the primary target and up to 4 surrounding enemies. For each secondary target fewer than the maximum it hits, deal another 22.2 (+ 1.4% AP) magic damage to the primary target. (cooldown 9)",
+    "active": null,
+    "builtFrom": [
+      "Lost Chapter",
+      "Hextech Alternator"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2180,
+    "name": "Malignance",
+    "cost": 2700,
+    "stats": {
+      "ah": 15,
+      "ap": 90,
+      "mana": 500
+    },
+    "passive": "Scorn: +20 ultimate haste.\nHatefog: Your ultimate ability damage against champions will scorch the ground beneath them for 3 seconds, inflicting a burn to enemies within that deals 180 (+ 15% AP) total magic damage over the duration and reduces their magic resistance by 10. (cooldown 3 (per target, starts on zone creation))",
+    "active": null,
+    "builtFrom": [
+      "Lost Chapter",
+      "Blasting Wand"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2262,
+    "name": "Manamune",
+    "cost": 2700,
+    "stats": {
+      "ad": 40,
+      "ah": 15,
+      "mana": 500
+    },
+    "passive": "Awe: Grants bonus attack damage equal to 1.5% maximum mana. Refunds 15% of mana spent.\nMana Charge: Generates a charge every 3.3 seconds, stacking up to 3 charges. Each basic attack on-hit or mana expenditure consumes a charge and grants +20 mana, stacking up to 700 mana.\nTransforms into Muramana at +700 mana.",
+    "active": null,
+    "builtFrom": [
+      "Tear of the Goddess",
+      "Caulfield's Warhammer"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2363,
+    "name": "Mantle of the Twelfth Hour",
+    "cost": 2550,
+    "stats": {
+      "hp": 600,
+      "ah": 20
+    },
+    "passive": "Lifeline: Upon taking damage that would reduce you below 30% maximum health, you gain base health equal to 200–300 (by level) bonus health over 5 seconds, as well as 20% tenacity and 10% bonus move speed. Over the same duration, restore health equal to 200–400 (by level) (+120% bonus armor) (+120% bonus magic resist) (+15% maximum health). (cooldown 70)",
+    "active": null,
+    "builtFrom": [
+      "Kindlegem",
+      "Giant's Belt"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_cc",
+      "anti_burst",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "cc_heavy",
+      "burst"
+    ]
+  },
+  {
+    "id": 2246,
+    "name": "Maw of Malmortius",
+    "cost": 3000,
+    "stats": {
+      "ad": 55,
+      "ah": 10,
+      "mr": 45
+    },
+    "passive": "Lifeline: If you would take magic damage that would reduce you below 35% health, you first gain a shield that absorbs 220–530 (by level) magic damage for 3 seconds. You also gain 10% omnivamp until the end of combat. (cooldown 70)",
+    "active": null,
+    "builtFrom": [
+      "Hexdrinker",
+      "Hexdrinker"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "anti_burst",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": 2171,
+    "name": "Mejai's Soulstealer",
+    "cost": 1800,
+    "stats": {
+      "ap": 25,
+      "hp": 70
+    },
+    "passive": "Glory: Generate 3 / 4 stacks for each champion kill and 2 stacks for each assist, stacking up to 30. Lose 10 stacks on death.\nFear: For each stack of Glory you gain 5 ability power, up to 150. You also gain 10% bonus move speed while you have at least 10 stacks.",
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2381,
+    "name": "Mikael's Blessing",
+    "cost": 2500,
+    "stats": {
+      "ah": 15,
+      "hp": 300,
+      "mp5": 50,
+      "hsp": 9
+    },
+    "passive": null,
+    "active": "Purify: Remove all crowd control debuffs (except Airborne and Suppression) from the target allied champion and heal the target for 150–250 (by level) (cooldown 75)",
+    "builtFrom": [
+      "Forbidden Idol",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_cc",
+      "build_support"
+    ],
+    "strongAgainst": [
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2297,
+    "name": "Mercurial Scimitar",
+    "cost": 3100,
+    "stats": {
+      "ad": 45,
+      "mr": 30,
+      "lifesteal": 12
+    },
+    "passive": "Perseverance: After Quicksilver ends, gain Tenacity 30% Tenacity and slow resist 30% slow resist for 1.5 seconds.",
+    "active": "Quicksilver: Cleanse all crowd control (except Airborne) effects, and gain Cc-immunity for 0.25 seconds. (cooldown 60)",
+    "builtFrom": [
+      "Quicksilver Sash",
+      "Vampiric Scepter",
+      "Long Sword"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "anti_cc",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2405,
+    "name": "Mercury's Treads",
+    "cost": 1200,
+    "stats": {
+      "hp": 150,
+      "tenacity": 30,
+      "mr": 25,
+      "msflat": 45
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed",
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ap",
+      "anti_cc",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2149,
+    "name": "Morellonomicon",
+    "cost": 2550,
+    "stats": {
+      "ah": 15,
+      "ap": 75,
+      "hp": 300
+    },
+    "passive": "Affliction: Dealing magic damage to enemy champions inflicts 50% Grievous Wounds for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Oblivion Orb",
+      "Kindlegem",
+      "Amplifying Tome"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_heal",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "healer"
+    ]
+  },
+  {
+    "id": 2249,
+    "name": "Mortal Reminder",
+    "cost": 3000,
+    "stats": {
+      "ad": 35,
+      "crit": 25,
+      "armpen": 30
+    },
+    "passive": "Sepsis: Dealing physical damage to enemy champions inflicts 50% Grievous Wounds for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Last Whisper",
+      "Executioner's Calling",
+      "Brawler's Gloves"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "anti_heal",
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": [
+      "tanky",
+      "healer"
+    ]
+  },
+  {
+    "id": 2263,
+    "name": "Muramana",
+    "cost": "=>Manamune",
+    "stats": {
+      "ad": "=>Manamune",
+      "ah": "=>Manamune",
+      "mana": 1200
+    },
+    "passive": "Awe: Grants bonus attack damage equal to 2% maximum mana. Refunds 15% of mana spent.\nShock: Your basic attacks against champions deal bonus physical damage equal to 1.5% of maximum mana and consume the same mana. Your ability damage against champions deal bonus physical damage equal to 3.5% of maximum mana and consume the same mana. This effect occurs once per instance.",
+    "active": null,
+    "builtFrom": [
+      "Manamune"
+    ],
+    "category": null,
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2151,
+    "name": "Nashor's Tooth",
+    "cost": 2900,
+    "stats": {
+      "ah": 15,
+      "as": 50,
+      "ap": 80
+    },
+    "passive": "Gnaw: Basic attacks against champions deal 15 (+ 20% AP) bonus magic damage.",
+    "active": null,
+    "builtFrom": [
+      "Fiendish Codex",
+      "Blasting Wand",
+      "Recurve Bow"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2271,
+    "name": "Navori Quickblades",
+    "cost": 2650,
+    "stats": {
+      "as": 40,
+      "crit": 25,
+      "ms": 4
+    },
+    "passive": "Deft Strikes: Basic attacks on-attack ah reduce the remaining cooldowns your basic abilities by 15%.",
+    "active": null,
+    "builtFrom": [
+      "Dagger",
+      "Dagger",
+      "Zeal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2124,
+    "name": "Needlessly Large Rod",
+    "cost": 1400,
+    "stats": {
+      "ap": 65
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2309,
+    "name": "Negatron Cloak",
+    "cost": 900,
+    "stats": {
+      "mr": 40
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Null-Magic Mantle"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2233,
+    "name": "Noonquiver",
+    "cost": 1300,
+    "stats": {
+      "ad": 25,
+      "crit": 15
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword",
+      "Brawler's Gloves"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 1033,
+    "name": "Null-Magic Mantle",
+    "cost": 500,
+    "stats": {
+      "mr": 20
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2153,
+    "name": "Oblivion Orb",
+    "cost": 900,
+    "stats": {
+      "ap": 35
+    },
+    "passive": "Grievous Wounds: Dealing magic damage to enemy champions inflicts 40% Grievous Wounds for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "anti_heal",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "healer"
+    ]
+  },
+  {
+    "id": 2170,
+    "name": "Oceanid's Trident",
+    "cost": 2600,
+    "stats": {
+      "ap": 80,
+      "hp": 200,
+      "ah": 10
+    },
+    "passive": "Lethal Weapon: Dealing ability damage to an enemy champion afflicts them for 3 seconds, reducing their active shields strength as well as any others they gain. Single-target abilities inflict 40% (+ 5% per 100 AP) reduction, capped at 60%. Area-of-effect abilities inflict 25% (+ 5% per 100 AP) reduction, capped at 45%.",
+    "active": null,
+    "builtFrom": [
+      "Fiendish Codex",
+      "Blasting Wand",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_shield",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "shielder"
+    ]
+  },
+  {
+    "id": 2378,
+    "name": "Overlord's Bloodmail",
+    "cost": 3200,
+    "stats": {
+      "ad": 30,
+      "hp": 450
+    },
+    "passive": "Tyranny: Gain bonus attack damage equal to 2.5% bonus health.\nRetribution: Gain bonus attack damage equal to 0–9 (by level) of your total AD from other sources.",
+    "active": null,
+    "builtFrom": [
+      "Jaurim's Fist",
+      "Jaurim's Fist"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2227,
+    "name": "Phage",
+    "cost": 1000,
+    "stats": {
+      "ad": 15,
+      "hp": 150
+    },
+    "passive": "Rage: Basic attacks on-hit grant +20 / 10 bonus move speed for 2 seconds. Killing a unit grants +60 / 30 bonus move speed. Bonuses do not stack.",
+    "active": null,
+    "builtFrom": [
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2260,
+    "name": "Phantom Dancer",
+    "cost": 2650,
+    "stats": {
+      "as": 40,
+      "crit": 25,
+      "ms": 7
+    },
+    "passive": "Spectral Waltz: Your next basic attack against a champion will grant stack of Spectral Waltz for 6 seconds, up to 5 stacks. For each stack, gain 6% bonus attack speed and 1% bonus move speed, for a total of 30% bonus attack speed and 5% bonus movement speed.",
+    "active": null,
+    "builtFrom": [
+      "Dagger",
+      "Dagger",
+      "Zeal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2235,
+    "name": "Pickaxe",
+    "cost": 800,
+    "stats": {
+      "ad": 20
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2406,
+    "name": "Plated Steelcaps",
+    "cost": 1200,
+    "stats": {
+      "armor": 20,
+      "hp": 150,
+      "hp5": 50,
+      "msflat": 45
+    },
+    "passive": "Block: Reduces damage from champion attacks by 10%",
+    "active": null,
+    "builtFrom": [
+      "Boots of Speed",
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ad",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": 2295,
+    "name": "Quicksilver Sash",
+    "cost": 1100,
+    "stats": {
+      "mr": 30
+    },
+    "passive": "Perseverance: After Quicksilver ends, gain Tenacity 30% Tenacity and slow resist 30% slow resist for 1.5 seconds.",
+    "active": "Quicksilver: Cleanse all crowd control (except Airborne) effects, and gain Cc-immunity for 0.25 seconds. (cooldown 60)",
+    "builtFrom": [
+      "Null-Magic Mantle"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ap",
+      "anti_cc",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2145,
+    "name": "Rabadon's Deathcap",
+    "cost": 3400,
+    "stats": {
+      "ap": 130
+    },
+    "passive": "Overkill: Increases ability power by 30%.",
+    "active": null,
+    "builtFrom": [
+      "Needlessly Large Rod",
+      "Needlessly Large Rod"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2250,
+    "name": "Rapid Firecannon",
+    "cost": 2650,
+    "stats": {
+      "as": 40,
+      "crit": 25,
+      "ms": 4
+    },
+    "passive": "Sharpshooter: Your movement and basic attacks will generate stacks of Energy, stacking up to 100. At maximum stacks,your next basic attack will consume them all to deal 80 bonus magic damage and activate all Energized effects. Energized attacks gain 150 bonus attack range.",
+    "active": null,
+    "builtFrom": [
+      "Kircheis Shard",
+      "Zeal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2377,
+    "name": "Radiant Virtue",
+    "cost": 2650,
+    "stats": {
+      "ah": 10,
+      "armor": 30,
+      "mr": 30,
+      "hp": 300
+    },
+    "passive": "Guiding Light: Upon casting your ultimate, you enter Transcended for 6 seconds, increasing your maximum health by 10%. You also emit an aura that heals nearby allied champions equal to17.5% of your maximum health over the duration. Ranged champions take 50% reduced healing. (cooldown 60)",
+    "active": null,
+    "builtFrom": [
+      "Giant's Belt",
+      "Cloth Armor",
+      "Null-Magic Mantle"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "build_tank",
+      "build_support"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2345,
+    "name": "Randuin's Omen",
+    "cost": 2800,
+    "stats": {
+      "armor": 75,
+      "hp": 400
+    },
+    "passive": "Resilience: Reduce incoming damage from critical strikes by 30%.\nCountercurrent: Being critically struck by physical damage will generate a stack for 5 seconds, refreshing on subsequent hits and stacking up to 4 times. Each stack grants 5% bonus move speed and 5% Slow resist, up to a maximum of 20% bonus move speed and 20% Slow resist",
+    "active": null,
+    "builtFrom": [
+      "Warden's Mail",
+      "Giant's Belt"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_dps",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": 2206,
+    "name": "Recurve Bow",
+    "cost": 900,
+    "stats": {
+      "as": 20
+    },
+    "passive": "Reinforced: Basic attacks deal 15 bonus physical damage on-hit.",
+    "active": null,
+    "builtFrom": [
+      "Dagger"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2611,
+    "name": "Redemption",
+    "cost": 2450,
+    "stats": {
+      "ah": 20,
+      "ap": 40,
+      "mp5": 50,
+      "hsp": 8
+    },
+    "passive": null,
+    "active": "Intervention: Call upon as beam of light to strike upon the target location after 2.5 seconds, granting sight of the area for the duration. Allies within the area are healed for 150–350 (by level), while enemy champions within take 10% of target's maximum health as true damage. Can be cast while dead. (cooldown 60)",
+    "builtFrom": [
+      "Fiendish Codex",
+      "Forbidden Idol"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_support",
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2107,
+    "name": "Relic Shield",
+    "cost": 500,
+    "stats": {
+      "hp": 125
+    },
+    "passive": "Sentry: You deal 1 bonus damage against Warding Totem revealed by Sweeping Lens, Control Ward, or Scryer's Bloom.\nRestraint: You earn 50% reduced gold from killing minions and monsters. Killing minions will also grant 100% kill gold to the nearby ally.\nTribute: Generates a charge every 30 seconds, up to 3 charges. Consuming a charge grants 65 and heals for 20–80 (by level), and grants 1 permanent stack of Tribute to the nearest allied champion. Certain activities near an allied champion will consume charges: Damaging attacks and abilities against enemy champions and turrets.Attacking a minion below 65% health. This also executes them.When a nearby minion is killed while you have 3 charges. This also grants 100% kill gold to the nearby ally.\nQuest: Earn 750 using Quest items to upgrade to Bulwark of the Mountain.",
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2168,
+    "name": "Riftmaker",
+    "cost": 3100,
+    "stats": {
+      "ah": 15,
+      "ap": 80,
+      "hp": 350
+    },
+    "passive": "Void Corruption: For each second in combat with champions, deal 2% increased damage, stacking up to 4 times for a total of 8% increased damage. At maximum stacks, gain 10% / 6% omnivamp.\nVoid Infusion: Gain ability power equal to 2% bonus Health.",
+    "active": null,
+    "builtFrom": [
+      "Haunting Guise",
+      "Fiendish Codex"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2113,
+    "name": "Ring of Revelation",
+    "cost": 300,
+    "stats": {
+      "ah": 5
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2147,
+    "name": "Rod of Ages",
+    "cost": 2600,
+    "stats": {
+      "ap": 50,
+      "hp": 350,
+      "mana": 400
+    },
+    "passive": "Eternity: Restore mana equal to 20% of incoming damage from champions, and heal for an amount equal to 20% of mana spent, up to 25 per cast; toggle abilities can only heal for up to 25 per second.\nVeteran: This item gains 20 bonus health, 40 bonus mana and 4 ability power every 15 seconds, stacking up to 10 times for a maximum of 150 bonus health, 300 bonus mana and 40 ability power.",
+    "active": null,
+    "builtFrom": [
+      "Blasting Wand",
+      "Catalyst of Aeons"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 1028,
+    "name": "Ruby Crystal",
+    "cost": 500,
+    "stats": {
+      "hp": 150
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2251,
+    "name": "Runaan's Hurricane",
+    "cost": 2650,
+    "stats": {
+      "as": 35,
+      "crit": 25,
+      "ms": 4
+    },
+    "passive": "Wind's Fury: Basic attacks on-attack fire additional bolts at up to 2 enemies in front of you (180), each dealing 55% AD physical damage. Bolts apply on-hit effects at 100% effectiveness and are affected by critical strike modifiers.",
+    "active": null,
+    "builtFrom": [
+      "Zeal",
+      "Kircheis Shard"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2146,
+    "name": "Rylai's Crystal Scepter",
+    "cost": 2700,
+    "stats": {
+      "ap": 65,
+      "hp": 350
+    },
+    "passive": "Icy: Your damaging active abilities and empowered attacks slow enemies hit by 30% for 0.75 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Blasting Wand",
+      "Giant's Belt",
+      "Amplifying Tome"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2130,
+    "name": "Seeker's Armguard",
+    "cost": 1400,
+    "stats": {
+      "ap": 35,
+      "armor": 20
+    },
+    "passive": null,
+    "active": "Stasis: Enter stasis for 2.5 seconds. Stasis: pst 2 description (cooldown 150)",
+    "builtFrom": [
+      "Amplifying Tome",
+      "Cloth Armor"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ad",
+      "anti_burst",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "burst"
+    ]
+  },
+  {
+    "id": 2154,
+    "name": "Seraph's Embrace",
+    "cost": "=>Archangel's Staff",
+    "stats": {
+      "ah": 25,
+      "ap": "=>Archangel's Staff",
+      "mana": 1200
+    },
+    "passive": "Awe: Grants ability power equal to 2% maximum mana. Refunds 25% of mana spent.\nLifeline: If you would take damage that would reduce you below 35% maximum health, you first gain a shield equal to (16% current mana) lasting 2 seconds, which consumes 15% current mana. (cooldown 70)",
+    "active": null,
+    "builtFrom": [
+      "Archangel's Staff"
+    ],
+    "category": null,
+    "tags": [
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2274,
+    "name": "Serpent's Fang",
+    "cost": 2800,
+    "stats": {
+      "ah": 10,
+      "ad": 50,
+      "armpenflat": 15
+    },
+    "passive": "Shield Reaver: Dealing damage to an enemy champion afflicts them for 3 seconds, reducing their active shield strength as well as any others they gain. Melee champions inflict 40% (+ 10% per 100 bonus AD) reduction, capped at 60%. Ranged champions inflict 25% (+ 10% per 100 bonus AD) reduction, capped at 45%.",
+    "active": null,
+    "builtFrom": [
+      "Caulfield's Warhammer",
+      "Serrated Dirk"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "anti_shield",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky",
+      "shielder"
+    ]
+  },
+  {
+    "id": 2209,
+    "name": "Serrated Dirk",
+    "cost": 1000,
+    "stats": {
+      "ad": 20,
+      "armpenflat": 10
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "armor_pen",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2269,
+    "name": "Serylda's Grudge",
+    "cost": 3100,
+    "stats": {
+      "ad": 40,
+      "armpen": 35,
+      "ah": 15
+    },
+    "passive": "Icy: Your ability damage and empowered attacks slow affected units below 60% of your maximum health by 30% for 1 second.",
+    "active": null,
+    "builtFrom": [
+      "Caulfield's Warhammer",
+      "Last Whisper"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2122,
+    "name": "Sheen",
+    "cost": 800,
+    "stats": {
+      "ah": 10
+    },
+    "passive": "Spellblade: After using an ability, your next basic attack within 10 seconds deals bonus physical damage on-hit equal to 100% base AD. The damage is reduced to 50% against structures. (cooldown 1.5 (post-effect))",
+    "active": null,
+    "builtFrom": [
+      "Ring of Revelation"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2308,
+    "name": "Shimmering Spark",
+    "cost": 500,
+    "stats": {
+      "hp": 50
+    },
+    "passive": "Burn: While in combat, deal 5–10 (by level) magic damage per second to nearby enemies.",
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2381,
+    "name": "Shurelya's Battlesong",
+    "cost": 2500,
+    "stats": {
+      "ah": 20,
+      "ap": 55,
+      "mp5": 50,
+      "ms": 4
+    },
+    "passive": null,
+    "active": "Inspiring Speech: Grant you and nearby allies within 800 units 30% bonus movement speed for 4 seconds (cooldown 60)",
+    "builtFrom": [
+      "Bandleglass Mirror",
+      "Aether Wisp"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_support",
+      "build_ap"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2281,
+    "name": "Spear of Shojin",
+    "cost": 3100,
+    "stats": {
+      "ad": 40,
+      "hp": 450
+    },
+    "passive": "Dragonforce: +20 basic ability haste.\nFocused Will: Dealing damage against enemy champions or monsters will increase your ability and passive damage by 3% for 6 seconds, stacking up to 12%.",
+    "active": null,
+    "builtFrom": [
+      "Jaurim's Fist",
+      "Jaurim's Fist"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2111,
+    "name": "Spectral Sickle",
+    "cost": 500,
+    "stats": {},
+    "passive": "Sentry: You deal 1 bonus damage against Warding Totem revealed by Sweeping Lens, Control Ward, or Scryer's Bloom.\nVersatile: Gain 10 attack damage or 20 ability power (Adaptive).\nRestraint: You earn 50% reduced gold from killing minions and monsters. Killing minions will also grant 100% kill gold to the nearby ally.\nTribute: Generates a charge every 30 seconds, up to 3 charges. Consuming a charge grants 65 and heals for 20–80 (by level), and grants 1 permanent stack of Tribute to the nearest allied champion. Certain activities near an allied champion will consume charges: Damaging attacks and abilities against enemy champions and turrets.Attacking a minion below 65% health. This also executes them.When a nearby minion is killed while you have 3 charges. This also grants 100% kill gold to the nearby ally.\nQuest: Earn 750 using Quest items to upgrade to Black Mist Scythe.",
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2324,
+    "name": "Spectre's Cowl",
+    "cost": 1100,
+    "stats": {
+      "hp": 175,
+      "mr": 20
+    },
+    "passive": "Spectral Visit: Grants 150% base health regen for 10 seconds after taking damage from an enemy champion.",
+    "active": null,
+    "builtFrom": [
+      "Null-Magic Mantle"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2417,
+    "name": "Spellslinger's Shoes",
+    "cost": 2200,
+    "stats": {
+      "ap": 35,
+      "mp5": 100,
+      "msflat": "=>Boots of Mana",
+      "mpenflat": 18,
+      "mpen": 8
+    },
+    "passive": "Big Bully: Your attacks and abilities deal 18 bonus true damage against minions.\nEquilibrium: Gain +50% base health regeneration if you do not use mana.",
+    "active": null,
+    "builtFrom": [
+      "Boots of Mana"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2160,
+    "name": "Staff of Flowing Waters",
+    "cost": 2400,
+    "stats": {
+      "ah": 10,
+      "ap": 50,
+      "hsp": 8,
+      "mp5": 50
+    },
+    "passive": "Rapids: Healing or shielding another allied champion grants both of you 15 ability haste and 40 ability power for 6 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Fiendish Codex",
+      "Forbidden Idol"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ap",
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2240,
+    "name": "Statikk Shiv",
+    "cost": 2900,
+    "stats": {
+      "as": 30,
+      "ad": 40,
+      "ap": 40,
+      "ms": 4
+    },
+    "passive": "Electroshock: basic attacks grant 7 extra Energized stacks.\nElectrospark: Your movement and basic attacks will generate stacks of Energy, stacking up to 100. At maximum stacks, your next basic attack will consume them all to fire a chain of lightning to 4–7 (by level) targets, dealing 60 bonus magic damage (increased to 90 bonus magic damage against minions and monsters) and applying on-hit effects to secondary bounce targets.",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "Aether Wisp",
+      "Kircheis Shard"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2350,
+    "name": "Sterak's Gage",
+    "cost": 3200,
+    "stats": {
+      "hp": 400,
+      "tenacity": 20
+    },
+    "passive": "Heavy Handed: Gain bonus attack damage equal to 50% base AD.\nLifeline: If you would take damage that would reduce you below 35% maximum health, you first gain a shield equal to 75% bonus health decaying over 5 seconds. (cooldown 70)\nSterak's Fury: Triggering Lifeline will increase size and empowers you for 8 seconds.",
+    "active": null,
+    "builtFrom": [
+      "B. F. Sword",
+      "Jaurim's Fist"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "anti_cc",
+      "anti_burst",
+      "build_bruiser",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "cc_heavy",
+      "burst"
+    ]
+  },
+  {
+    "id": 2288,
+    "name": "Stormrazor",
+    "cost": 3000,
+    "stats": {
+      "ad": 50,
+      "as": 20,
+      "crit": 25
+    },
+    "passive": "Bolt: Your movement and basic attacks will generate stacks of Energy, stacking up to 100. At maximum Energy stacks, your next basic attack will consume them all to deal 120 bonus magic damage and grant you 45 bonus move speed for 1.5 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Kircheis Shard",
+      "B. F. Sword",
+      "Brawler's Gloves"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2701,
+    "name": "Stormsurge",
+    "cost": 2800,
+    "stats": {
+      "ap": 90,
+      "mpenflat": 15,
+      "ms": 5
+    },
+    "passive": "Stormraider: Dealing damage to an enemy champion equal to 25% of their maximum health within 2.5 seconds will inflict them with Squall and grant you 25% bonus move speed for 2.5 seconds. (cooldown 25 (starts on application))\nSquall: After 2 seconds of having applied Squall, strike the target with lightning, dealing 125 (+ 10% AP) magic damage to them. If the target dies before being struck, they emit an electric field instantly that shocks nearby enemy champions, dealing the same damage and granting you 25.",
+    "active": null,
+    "builtFrom": [
+      "Aether Wisp",
+      "Hextech Alternator"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2293,
+    "name": "Stridebreaker",
+    "cost": 3100,
+    "stats": {
+      "hp": 400,
+      "ad": 40,
+      "as": 25
+    },
+    "passive": "Stride: Gain 20 bonus movement speed for 2 seconds when you deal physical damage.",
+    "active": "Breaking Shockwave: Dash in the target direction (200-range), dealing 100% AD physical damage and slowing nearby enemies by 40% for 3 seconds. (cooldown 25)",
+    "builtFrom": [
+      "Phage",
+      "Jaurim's Fist",
+      "Dagger"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_bruiser",
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2287,
+    "name": "Sundered Sky",
+    "cost": 2900,
+    "stats": {
+      "ad": 40,
+      "ah": 15,
+      "hp": 350
+    },
+    "passive": "Lightshield Strike: Your next basic attack against a champion will critically strike for 160% damage and heal you equal to 125% base AD (+ 6% missing health). (cooldown 6 (per target))",
+    "active": null,
+    "builtFrom": [
+      "Caulfield's Warhammer",
+      "Jaurim's Fist"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2341,
+    "name": "Sunfire Aegis",
+    "cost": 2900,
+    "stats": {
+      "ah": 15,
+      "armor": 40,
+      "hp": 350
+    },
+    "passive": "Immolate: While in combat, deal (+ 1.5% bonus health) magic damage per second to nearby enemies, increased to 130% against monsters, and 175–250 (by level) against minions.",
+    "active": null,
+    "builtFrom": [
+      "Bami's Cinder",
+      "Chain Vest"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "build_tank",
+      "build_bruiser"
+    ],
+    "strongAgainst": [
+      "dmg_ad"
+    ]
+  },
+  {
+    "id": null,
+    "name": "Sweeping Lens",
+    "cost": null,
+    "stats": {},
+    "passive": null,
+    "active": "Scan your surroundings for 10 seconds, granting obscured vision of enemy units within that are not visible. Stealthed wards and traps are revealed. Stealthed wards are also disabled, lingering for 2 seconds after no longer being revealed. (cooldown 75)",
+    "builtFrom": [],
+    "category": null,
+    "tags": [
+      "vs_stealth",
+      "build_any"
+    ],
+    "strongAgainst": [
+      "stealth"
+    ]
+  },
+  {
+    "id": 2285,
+    "name": "Terminus",
+    "cost": 3000,
+    "stats": {
+      "ad": 35,
+      "as": 35
+    },
+    "passive": "Shadow: Basic attack deal 30 bonus magic damage on-hit.\nJuxtaposition: Basic attacks on-hit against champions alternate between Light and Dark hits, each granting a bonus for 5 seconds that stacks up to 3 times. Light hits grant 5–8 (by level) bonus armor and bonus magic resist while Dark hits grant 10% armor penetration and magic penetration, for a total of 5*3 to 8*3 for 15 bonus resistances and 30% penetration at maximum stacks of each.",
+    "active": null,
+    "builtFrom": [
+      "Hearthbound Axe",
+      "Recurve Bow"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "magic_pen",
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2280,
+    "name": "The Collector",
+    "cost": 3000,
+    "stats": {
+      "ad": 50,
+      "crit": 25,
+      "armpenflat": 10
+    },
+    "passive": "Death and Taxes: When you deal damage that would reduce a champion below 5% of their maximum health, you execute them. Champion kills grant you an additional 25 and permanently increase the execution threshold by 0.1%.",
+    "active": null,
+    "builtFrom": [
+      "Noonquiver",
+      "Serrated Dirk"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2121,
+    "name": "Tear of the Goddess",
+    "cost": 400,
+    "stats": {
+      "mana": 200
+    },
+    "passive": "Awe: Refunds 10% of mana spent.\nMana Charge: Generates a charge every 3.3 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +16 mana, stacking up to 700 mana.",
+    "active": null,
+    "builtFrom": [],
+    "category": "tier1-basic",
+    "tags": [
+      "build_ap",
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2348,
+    "name": "Thornmail",
+    "cost": 2850,
+    "stats": {
+      "armor": 75,
+      "hp": 200
+    },
+    "passive": "Thorns: When struck by a basic attack on-hit, deal 20 (+ 6% bonus armor) (+ 1% bonus health) magic damage to the attacker.\nEntwine: When struck by an enemy champion's basic attack, or dealing any damage to them, you inflict them with 50% Grievous Wounds for 3 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Bramble Vest",
+      "Chain Vest"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "anti_heal",
+      "vs_dps",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "healer",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": 2367,
+    "name": "Titanic Hydra",
+    "cost": 3000,
+    "stats": {
+      "ad": 40,
+      "hp": 450
+    },
+    "passive": "Cleave: Your next basic attack on-hit will deal bonus physical damage equal to 25 (+ 3% bonus health), and 80 (+ 10% bonus health) physical damage to other enemies in a 550-range cone in the direction of the primary target. Ranged users deal 75% damage. (cooldown 1.75)",
+    "active": null,
+    "builtFrom": [
+      "Pickaxe",
+      "Jaurim's Fist",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_bruiser",
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2244,
+    "name": "Trinity Force",
+    "cost": 3333,
+    "stats": {
+      "ad": 36,
+      "ah": 15,
+      "as": 35,
+      "hp": 333
+    },
+    "passive": "Spellblade: After using an ability, your next basic attack within 10 seconds deals bonus physical damage on-hit equal to 200% base AD. The damage is reduced to 50% against structures. (cooldown 1.5 (post-effect))\nValor: Basic attacks on-hit grant 20 / 10 bonus move speed for 2 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Hearthbound Axe",
+      "Sheen",
+      "Phage"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit",
+      "build_bruiser"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2803,
+    "name": "Unending Despair",
+    "cost": 3000,
+    "stats": {
+      "armor": 45,
+      "hp": 200,
+      "mr": 45
+    },
+    "passive": "Anguish: Every 4 seconds in champion combat, you sap nearby enemy champions, dealing magic damage equal to 3% of your bonus health and healing for 250% of the post-mitigation damage dealt.",
+    "active": null,
+    "builtFrom": [
+      "Chain Vest",
+      "Negatron Cloak",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2221,
+    "name": "Vampiric Scepter",
+    "cost": 1200,
+    "stats": {
+      "ad": 20,
+      "lifesteal": 8
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Long Sword"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2140,
+    "name": "Verdant Barrier",
+    "cost": 1600,
+    "stats": {
+      "ap": 40,
+      "mr": 25
+    },
+    "passive": "Annul: Grants a spell shield that blocks the next enemy champion ability. (cooldown 65)",
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome",
+      "Null-Magic Mantle"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ap",
+      "anti_burst",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "burst"
+    ]
+  },
+  {
+    "id": 2129,
+    "name": "Void Amethyst",
+    "cost": 1000,
+    "stats": {
+      "ap": 20,
+      "mpen": 10
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Amplifying Tome"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "magic_pen",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2144,
+    "name": "Void Staff",
+    "cost": 3000,
+    "stats": {
+      "ap": 95,
+      "mpen": 40
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Needlessly Large Rod",
+      "Void Amethyst"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "magic_pen",
+      "anti_tank",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2323,
+    "name": "Warden's Mail",
+    "cost": 1050,
+    "stats": {
+      "armor": 35
+    },
+    "passive": "Cold Steel: When struck by a basic attack, cripple the attacker's attack speed by 15% for 1.5 seconds.",
+    "active": null,
+    "builtFrom": [
+      "Cloth Armor"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "vs_ad",
+      "vs_dps",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": null,
+    "name": "Warding Totem",
+    "cost": null,
+    "stats": {},
+    "passive": "After 11:00 elapse, the recharge time is reduced by 10 seconds.",
+    "active": "Place an invisible ward that grants sight of its surroundings for 90 seconds. Quick-casting prioritizes placing wards in brush you are within range of or walking towards. (cooldown 1)",
+    "builtFrom": [],
+    "category": null,
+    "tags": [
+      "build_any"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2344,
+    "name": "Warmog's Armor",
+    "cost": 2850,
+    "stats": {
+      "ah": 20,
+      "hp": 700,
+      "hp5": 100
+    },
+    "passive": "Grants Warmog's Heart if you have at least 1250 bonus health.\nWarmog's Heart: After 5 seconds without taking damage, you Health regeneration regenerate 3.5% maximum health every second.\nBlessed: Incoming healing, shielding, health regeneration, and vamp drain effects are increased by 30%.",
+    "active": null,
+    "builtFrom": [
+      "Giant's Belt",
+      "Kindlegem"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2327,
+    "name": "Winged Moonplate",
+    "cost": 900,
+    "stats": {
+      "hp": 150,
+      "ms": 4
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Ruby Crystal"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2355,
+    "name": "Winter's Approach",
+    "cost": 2600,
+    "stats": {
+      "ah": 15,
+      "hp": 500,
+      "mana": 500
+    },
+    "passive": "Awe: Grants bonus health equal to 15% maximum mana. Refunds 15% of mana spent.\nMana Charge: Generates a charge every 3.3 seconds, stacking up to 3 charges. Each basic attack on-hit, mana expenditure, or taking damage from champions, epic monsters, or turrets consumes a charge and grants +30 max mana, stacking up to 700 mana.\nTransforms into Fimbulwinter at +700 mana.",
+    "active": null,
+    "builtFrom": [
+      "Tear of the Goddess",
+      "Kindlegem",
+      "Giant's Belt"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_tank"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2118,
+    "name": "Whispering Circlet",
+    "cost": 2400,
+    "stats": {
+      "hp": 200,
+      "hsp": 8,
+      "mana": 500,
+      "mp5": 50
+    },
+    "passive": "Harmony: Grants heal and shield power equal to 0.25% maximum mana. Refunds 25% of mana spent.\nMana Charge: Generates a charge every 3.3 seconds, up to 3 charges. Each mana expenditure consumes a charge and grants +14 mana, stacking up to 700 mana.\nTransforms into Diadem of Songs at 700 bonus mana.",
+    "active": null,
+    "builtFrom": [
+      "Tear of the Goddess",
+      "Forbidden Idol",
+      "Ruby Crystal"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_support"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2266,
+    "name": "Wit's End",
+    "cost": 2800,
+    "stats": {
+      "as": 50,
+      "mr": 45,
+      "tenacity": 20
+    },
+    "passive": "At Wit's End: Your basic attacks deal 40 bonus magic damage on-hit.",
+    "active": null,
+    "builtFrom": [
+      "Recurve Bow",
+      "Negatron Cloak",
+      "Dagger"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ap",
+      "anti_cc",
+      "build_onhit"
+    ],
+    "strongAgainst": [
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": 2374,
+    "name": "Yordle Trap",
+    "cost": 2400,
+    "stats": {
+      "ah": 15,
+      "armor": 20,
+      "mr": 20,
+      "hp": 200
+    },
+    "passive": "Catcher: Upon slowing or immobilizing an enemy champion, you and a nearby ally gain ms 20 bonus move speed and 30% / 20% attack speed for 8 / 4 seconds. If an enemy champion dies while having Catcher bonuses, you gain 20 bonus gold.",
+    "active": null,
+    "builtFrom": [
+      "Kindlegem",
+      "Cloth Armor",
+      "Null-Magic Mantle"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "build_tank"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2255,
+    "name": "Youmuu's Ghostblade",
+    "cost": 2900,
+    "stats": {
+      "ad": 55,
+      "ah": 15,
+      "armpenflat": 15,
+      "ms": 4
+    },
+    "passive": "Momentum: Gain 30 / 20 movement speed out of combat.",
+    "active": null,
+    "builtFrom": [
+      "Serrated Dirk",
+      "Caulfield's Warhammer"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "armor_pen",
+      "build_ad"
+    ],
+    "strongAgainst": [
+      "tanky"
+    ]
+  },
+  {
+    "id": 2238,
+    "name": "Yun Tal Wildarrows",
+    "cost": 3000,
+    "stats": {
+      "ad": 55,
+      "as": 35,
+      "crit": 0
+    },
+    "passive": "Practice Makes Lethal: Basic attacks on-attack grant 0.4% / 0.2% critical strike chance permanently, stacking up to 63 / 125 times (capped at 25% critical strike chance).\nFlurry: Launching a basic attack against an enemy champion grants you 35% bonus attack speed for 6 seconds (25 second cooldown, reduced by 1 second on-hit and 2 seconds if the attack critically strikes).",
+    "active": null,
+    "builtFrom": [
+      "Kircheis Shard",
+      "B. F. Sword"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2222,
+    "name": "Zeal",
+    "cost": 1400,
+    "stats": {
+      "as": 15,
+      "crit": 15,
+      "ms": 4
+    },
+    "passive": null,
+    "active": null,
+    "builtFrom": [
+      "Brawler's Gloves",
+      "Dagger"
+    ],
+    "category": "tier2-component",
+    "tags": [
+      "build_ad",
+      "build_onhit"
+    ],
+    "strongAgainst": []
+  },
+  {
+    "id": 2372,
+    "name": "Zeke's Convergence",
+    "cost": 2400,
+    "stats": {
+      "ah": 10,
+      "armor": 25,
+      "mr": 25,
+      "hp": 300
+    },
+    "passive": "Converge: +10 Ultimate haste\nFrostfire Tempest: Casting your ultimate ability will create an aura around you that lasts for 5s. if an enemy is within its range of 350 units, the aura will summon a storm that damage nearby enemies within, dealing 150 magic damage every 0.5 seconds over 5 seconds and slowing them by 30%. (cooldown 30 (on-cast))",
+    "active": null,
+    "builtFrom": [
+      "Kindlegem",
+      "Cloth Armor",
+      "Null-Magic Mantle"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "vs_ap",
+      "build_tank",
+      "build_support"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "dmg_ap"
+    ]
+  },
+  {
+    "id": 2386,
+    "name": "Zhonya's Hourglass",
+    "cost": 3300,
+    "stats": {
+      "ap": 110,
+      "armor": 40
+    },
+    "passive": null,
+    "active": "Stasis: Enter stasis for 2.5 seconds. Stasis: pst 2 description (cooldown 90)",
+    "builtFrom": [
+      "Needlessly Large Rod",
+      "Seeker's Armguard"
+    ],
+    "category": "tier3-complete",
+    "tags": [
+      "vs_ad",
+      "anti_burst",
+      "build_ap"
+    ],
+    "strongAgainst": [
+      "dmg_ad",
+      "burst"
+    ]
+  }
+]

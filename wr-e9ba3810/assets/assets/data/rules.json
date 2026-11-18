@@ -1,0 +1,85 @@
+[
+  {
+    "threat": "healer",
+    "min": 2,
+    "boost": [
+      "anti_heal"
+    ],
+    "reason_ar": "في {n} من الأعداء بيعالجوا نفسهم — الآيتم ده بيقلّل علاجهم",
+    "reason_en": "{n} enemies heal — this cuts their healing"
+  },
+  {
+    "threat": "shielder",
+    "min": 2,
+    "boost": [
+      "anti_shield"
+    ],
+    "reason_ar": "في {n} أعداء بيعملوا دروع — الآيتم ده بيضعّفها",
+    "reason_en": "{n} enemies shield — this weakens shields"
+  },
+  {
+    "threat": "dmg_ad",
+    "min": 3,
+    "boost": [
+      "vs_ad"
+    ],
+    "reason_ar": "أغلب ضرر الفريق التاني فيزيائي ({n} من 5)",
+    "reason_en": "Most enemy damage is physical ({n}/5)"
+  },
+  {
+    "threat": "dmg_ap",
+    "min": 3,
+    "boost": [
+      "vs_ap"
+    ],
+    "reason_ar": "أغلب ضرر الفريق التاني سحري ({n} من 5)",
+    "reason_en": "Most enemy damage is magic ({n}/5)"
+  },
+  {
+    "threat": "tanky",
+    "min": 2,
+    "boost": [
+      "armor_pen",
+      "magic_pen",
+      "anti_tank"
+    ],
+    "reason_ar": "في {n} أعداء تقال — محتاج اختراق",
+    "reason_en": "{n} tanky enemies — you need penetration"
+  },
+  {
+    "threat": "cc_heavy",
+    "min": 2,
+    "boost": [
+      "anti_cc"
+    ],
+    "reason_ar": "في {n} أعداء بيوقّفوك (CC)",
+    "reason_en": "{n} enemies have heavy crowd control"
+  },
+  {
+    "threat": "burst",
+    "min": 2,
+    "boost": [
+      "anti_burst"
+    ],
+    "reason_ar": "في {n} أعداء بيقتلوا في كومبو واحد",
+    "reason_en": "{n} enemies can burst you in one combo"
+  },
+  {
+    "threat": "sustained_dps",
+    "min": 2,
+    "boost": [
+      "vs_dps"
+    ],
+    "reason_ar": "في {n} أعداء بيضربوا ضرب متواصل",
+    "reason_en": "{n} enemies deal sustained auto-attack damage"
+  },
+  {
+    "threat": "stealth",
+    "min": 1,
+    "boost": [
+      "vs_stealth"
+    ],
+    "reason_ar": "في عدو بيختفي — خلّي معاك رؤية",
+    "reason_en": "An enemy goes invisible — carry vision"
+  }
+]
