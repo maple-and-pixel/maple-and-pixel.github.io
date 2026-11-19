@@ -213,6 +213,59 @@
     ]
   },
   {
+    "id": "alistar",
+    "name": "Alistar",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Triumphant Roar",
+        "description": "Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself all nearby allied champions.",
+        "icon": "icons/abilities/alistar_passive.png",
+        "description_ar": "يشحن Alistar زئيره عند شلّ أبطال الأعداء أو إزاحتهم أو عند موت الأعداء القريبين. عند الشحن الكامل يعالج نفسه وكل الأبطال الحلفاء القريبين."
+      },
+      {
+        "slot": "1",
+        "name": "Pulverize",
+        "description": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.",
+        "icon": "icons/abilities/alistar_1.png",
+        "description_ar": "يضرب Alistar الأرض، فيسبب ضرر للأعداء القريبين ويقذفهم في الهوا."
+      },
+      {
+        "slot": "2",
+        "name": "Headbutt",
+        "description": "Alistar rams a target with his head, dealing damage and knocking the target back. May also target turrets to deal bonus damage.",
+        "icon": "icons/abilities/alistar_2.png",
+        "description_ar": "ينطح Alistar هدفًا برأسه، فيسبب ضرر ويدفع الهدف للخلف. يمكنه أيضًا استهداف الأبراج لإلحاق ضرر إضافي."
+      },
+      {
+        "slot": "3",
+        "name": "Trample",
+        "description": "Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them.",
+        "icon": "icons/abilities/alistar_3.png",
+        "description_ar": "يدوس Alistar وحدات الأعداء القريبة، متجاهلًا تصادم الوحدات، ويكسب شحنات إذا أصاب بطلًا عدوًا. عند الشحنات الكاملة، هجمة Alistar العادية التالية ضد بطل عدو تسبب ضرر سحري إضافي وتشلّه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Unbreakable Will",
+        "description": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration.",
+        "icon": "icons/abilities/alistar_ultimate.png",
+        "description_ar": "يطلق Alistar زئيرًا جامحًا، فيزيل كل تأثيرات التحكم (CC) عن نفسه ويقلّل الضرر الفيزيائي والسحري الداخل طوال المدة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c886fb547e17fef8514bd27c97411d382fa02655-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy",
+      "healer"
+    ]
+  },
+  {
     "id": "ambessa",
     "name": "Ambessa",
     "roles": [
@@ -373,6 +426,60 @@
     ]
   },
   {
+    "id": "ashe",
+    "name": "Ashe",
+    "roles": [
+      "DRAGON",
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Frost Shot",
+        "description": "Ashe's attacks slow their target, causing her to deal increased damage to these targets. Ashe's critical strikes deal no bonus damage but apply an empowered slow to the target.",
+        "icon": "icons/abilities/ashe_passive.png",
+        "description_ar": "هجمات Ashe تبطّئ أهدافها، فتسبب ضرر أكبر لهذه الأهداف. ضربات Ashe الحرجة لا تسبب ضرر إضافي لكنها تطبّق إبطاءً معزّزًا على الهدف."
+      },
+      {
+        "slot": "1",
+        "name": "Ranger's Focus",
+        "description": "Ashe builds up Focus by attacking. At maximum Focus, Ashe can cast Ranger's Focus to consume all stacks of Focus, temporarily increasing her Attack Speed and transforming her basic attack into a powerful flurry attack for the duration.",
+        "icon": "icons/abilities/ashe_1.png",
+        "description_ar": "تبني Ashe Focus بالهجوم. عند أقصى Focus، تستطيع Ashe استخدام Ranger's Focus لاستهلاك كل شحنات Focus، فتزيد سرعة هجومها مؤقتًا وتحوّل هجمتها العادية إلى وابل هجمات قوي طوال المدة."
+      },
+      {
+        "slot": "2",
+        "name": "Volley",
+        "description": "Ashe fires 9 arrows in a cone for increased damage. Also applies Frost Shot.",
+        "icon": "icons/abilities/ashe_2.png",
+        "description_ar": "تطلق Ashe 9 سهام في مخروط بضرر أكبر. وتطبّق أيضًا Frost Shot."
+      },
+      {
+        "slot": "3",
+        "name": "Hawkshot",
+        "description": "Ashe sends her Hawk Spirit on a scouting mission anywhere on the map.",
+        "icon": "icons/abilities/ashe_3.png",
+        "description_ar": "ترسل Ashe روح الصقر في مهمة استكشاف إلى أي مكان في الخريطة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Enchanted Crystal Arrow",
+        "description": "Ashe fires a missile of ice which she can steer in the air. If the arrow collides with an enemy Champion, it deals damage and stuns the Champion, stunning for longer the farther arrow has traveled. In addition, surrounding enemy units take damage and are slowed.",
+        "icon": "icons/abilities/ashe_ultimate.png",
+        "description_ar": "تطلق Ashe صاروخًا من الجليد تستطيع توجيهه في الهواء. إذا اصطدم السهم ببطل عدو، يسبب ضرر ويشلّ البطل، وتزيد مدة الشلل كلما قطع السهم مسافة أطول. وبالإضافة لذلك، وحدات الأعداء المحيطة تتلقّى ضرر وتتباطأ."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/418813f2226d924771dd24aadaebe0624f39e5fb-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "poke",
+      "cc_heavy"
+    ]
+  },
+  {
     "id": "aurelion-sol",
     "name": "Aurelion Sol",
     "roles": [
@@ -480,6 +587,111 @@
     ]
   },
   {
+    "id": "bard",
+    "name": "Bard",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "TRAVELER’S CALL",
+        "description": "Bard attracts and collects Chimes, granting him XP, Mana, and out-of-combat Move Speed. Every collected Chime buffs Bard’s Meeps. Bard summons Meeps regularly, assisting with his basic attacks and dealing extra magic damage. When Bard has collected enough Chimes, his meeps will also deal damage in an area and slow enemies hit.",
+        "icon": "icons/abilities/bard_passive.png",
+        "description_ar": "يجذب Bard Chimes ويجمعها، فتمنحه خبرة ومانا وسرعة حركة خارج القتال. كل Chime مجمّعة تقوّي Meeps الخاصة بـBard. يستدعي Bard الـMeeps بانتظام، فتساعد في هجماته العادية وتسبب ضرر سحري إضافي. عندما يجمع Bard Chimes كافية، تسبب Meeps أيضًا ضرر في منطقة وتبطّئ الأعداء المصابين."
+      },
+      {
+        "slot": "1",
+        "name": "COSMIC BINDING",
+        "description": "Bard fires a missile which will damage and slow the first enemy struck, and continue onward. If it strikes a wall, it will stun the initial target; if it strikes another enemy, it will stun them both.",
+        "icon": "icons/abilities/bard_1.png",
+        "description_ar": "يطلق Bard قذيفة تسبب ضرر وتبطّئ أول عدو يُصاب، وتواصل طريقها. إذا اصطدمت بحائط، تشلّ الهدف الأول؛ وإذا أصابت عدوًا آخر، تشلّهما معًا."
+      },
+      {
+        "slot": "2",
+        "name": "CARETAKER’S SHRINE",
+        "description": "Bard conjures a Health shrine at a target location, granting the first ally champion to enter Move Speed, AP, and Health. The shrine continues growing for a short while, powering up its healing value.",
+        "icon": "icons/abilities/bard_2.png",
+        "description_ar": "يستحضر Bard مزارًا للصحة في موقع مستهدف، يمنح أول بطل حليف يدخله سرعة حركة وقوة مهارات (AP) وصحة. يواصل المزار النمو لفترة قصيرة، فتزيد قيمة علاجه."
+      },
+      {
+        "slot": "3",
+        "name": "MAGICAL JOURNEY",
+        "description": "Bard opens a portal in nearby terrain. Ally and enemy champions alike can take a one-way trip through that terrain by moving into the portal.",
+        "icon": "icons/abilities/bard_3.png",
+        "description_ar": "يفتح Bard بوابة في التضاريس القريبة. يستطيع الأبطال الحلفاء والأعداء على حد سواء القيام برحلة باتجاه واحد عبر تلك التضاريس بالدخول إلى البوابة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "TEMPERED FATE",
+        "description": "Bard sends spirit energy arcing to a location, putting all champions, minions, monsters, and turrets hit into stasis for a brief time, as well as stunning them. Enemies hit are revealed for the duration.",
+        "icon": "icons/abilities/bard_ultimate.png",
+        "description_ar": "يرسل Bard طاقة روحية في قوس إلى موقع، فتضع كل الأبطال والتوابع والوحوش والأبراج المصابة في جمود (Stasis) لفترة قصيرة، وتشلّها أيضًا. الأعداء المصابون يُكشفون طوال المدة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e72bcd4a5b671afa7c07c60d25757c5397b7ad44-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "cc_heavy",
+      "mobile"
+    ]
+  },
+  {
+    "id": "blitzcrank",
+    "name": "Blitzcrank",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Mana Barrier",
+        "description": "Blitzcrank gains a shield based on his mana when dropping to low health.",
+        "icon": "icons/abilities/blitzcrank_passive.png",
+        "description_ar": "يكسب Blitzcrank درع حماية بحسب مانا عندما تنخفض صحته."
+      },
+      {
+        "slot": "1",
+        "name": "Rocket Grab",
+        "description": "Blitzcrank fires his right hand to grab an opponent on its path, dealing damage and dragging it back to him.",
+        "icon": "icons/abilities/blitzcrank_1.png",
+        "description_ar": "يطلق Blitzcrank يده اليمنى للإمساك بخصم في طريقها، فتسبب ضرر وتسحبه نحوه."
+      },
+      {
+        "slot": "2",
+        "name": "Overdrive",
+        "description": "Blitzcrank super charges himself to get dramatically increased Movement and Attack Speed. He is temporarily slowed after the effect ends.",
+        "icon": "icons/abilities/blitzcrank_2.png",
+        "description_ar": "يشحن Blitzcrank نفسه بشحنة فائقة ليكسب زيادة هائلة في سرعة الحركة وسرعة الهجوم. يتباطأ مؤقتًا بعد انتهاء التأثير."
+      },
+      {
+        "slot": "3",
+        "name": "Power Fist",
+        "description": "Blitzcrank charges up his fist to make his next attack critically strike and pop his target up in the air.",
+        "icon": "icons/abilities/blitzcrank_3.png",
+        "description_ar": "يشحن Blitzcrank قبضته لتصبح هجمته التالية ضربة حرجة وتقذف هدفه في الهوا."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Static Field",
+        "description": "Enemies attacked by Blitzcrank are marked and take lightning damage after 1 second. Additionally, Blitzcrank can activate this ability to damage nearby enemies, and silence them briefly.",
+        "icon": "icons/abilities/blitzcrank_ultimate.png",
+        "description_ar": "الأعداء الذين يهاجمهم Blitzcrank يُوسمون ويتلقّون ضرر برق بعد 1 ث. وبالإضافة لذلك، يستطيع Blitzcrank تفعيل هذه المهارة لإلحاق ضرر بالأعداء القريبين وإسكاتهم لفترة قصيرة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/53aa63cbf9950ad1c45c73c372dc085f5e4167d7-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "cc_heavy",
+      "burst",
+      "tanky"
+    ]
+  },
+  {
     "id": "brand",
     "name": "Brand",
     "roles": [
@@ -529,6 +741,111 @@
       "build_ap",
       "dmg_ap",
       "burst",
+      "poke"
+    ]
+  },
+  {
+    "id": "braum",
+    "name": "Braum",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Concussive Blows",
+        "description": "Braum's basic attacks apply Concussive Blows. Once the first stack is applied, ally basic attacks also stack Concussive Blows. Upon reaching 4 stacks, the target is stunned and takes magic damage. For the next few seconds they cannot receive new stacks, but take bonus magic damage from Braum's attacks.",
+        "icon": "icons/abilities/braum_passive.png",
+        "description_ar": "هجمات Braum العادية تطبّق Concussive Blows. بمجرد تطبيق أول شحنة، تُراكم هجمات الحلفاء العادية أيضًا Concussive Blows. عند بلوغ 4 شحنات، يُشلّ الهدف ويتلقّى ضرر سحري. خلال الثواني التالية لا يستطيع تلقّي شحنات جديدة، لكنه يتلقّى ضرر سحري إضافي من هجمات Braum."
+      },
+      {
+        "slot": "1",
+        "name": "Winter's Bite",
+        "description": "Braum propels freezing ice from his shield, slowing and dealing magic damage. Applies a stack of Concussive Blows.",
+        "icon": "icons/abilities/braum_1.png",
+        "description_ar": "يطلق Braum جليدًا متجمدًا من درعه، فيبطّئ ويسبب ضرر سحري. يطبّق شحنة من Concussive Blows."
+      },
+      {
+        "slot": "2",
+        "name": "Stand Behind Me",
+        "description": "Braum leaps to a target allied champion or minion. On arrival, Braum and the ally gain Armor and Magic Resist for a few seconds.",
+        "icon": "icons/abilities/braum_2.png",
+        "description_ar": "يقفز Braum إلى بطل حليف مستهدف أو تابع. عند الوصول، يكسب Braum والحليف دروعًا (Armor) ومقاومة سحر (MR) لثوانٍ قليلة."
+      },
+      {
+        "slot": "3",
+        "name": "Unbreakable",
+        "description": "Braum raises his shield in a direction for several seconds, intercepting all projectiles causing them to hit him and be destroyed. He negates the damage of the first attack completely and reduces the damage of all subsequent attacks from this direction.",
+        "icon": "icons/abilities/braum_3.png",
+        "description_ar": "يرفع Braum درعه في اتجاه معين لثوانٍ قليلة، فيعترض كل القذائف فتصيبه وتُدمَّر. يلغي ضرر أول هجمة تمامًا ويقلّل ضرر كل الهجمات التالية من هذا الاتجاه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Glacial Fissure",
+        "description": "Braum slams the ground, knocking up enemies nearby and in a line in front of him. A fissure is left along the line that slows enemies.",
+        "icon": "icons/abilities/braum_ultimate.png",
+        "description_ar": "يضرب Braum الأرض، فيُطيح بالأعداء القريبين وفي خط أمامه. يُترك صدع على طول الخط يبطّئ الأعداء."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2a483e1895f43d972a483694cf654d334d05e82f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "caitlyn",
+    "name": "Caitlyn",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "HEADSHOT",
+        "description": "Every few basic attacks, or against a target she has trapped or netted, Caitlyn will fire a headshot dealing bonus damage that scales with her critical strike chance. On trapped or netted targets, Caitlyn's Headshot attack range is doubled.",
+        "icon": "icons/abilities/caitlyn_passive.png",
+        "description_ar": "كل بضع هجمات عادية، أو ضد هدف أوقعته في فخ أو شبكة، تطلق Caitlyn طلقة رأس تسبب ضرر إضافي يتناسب مع فرصة ضربتها الحرجة. على الأهداف العالقة في فخ أو شبكة، يتضاعف مدى هجوم Headshot لدى Caitlyn."
+      },
+      {
+        "slot": "1",
+        "name": "PILTOVER PEACEMAKER",
+        "description": "Caitlyn revs up her rifle for 1 second to unleash a penetrating shot that deals physical damage (deals less damage to subsequent targets).",
+        "icon": "icons/abilities/caitlyn_1.png",
+        "description_ar": "تجهّز Caitlyn بندقيتها لمدة 1 ث لتطلق طلقة نافذة تسبب ضرر فيزيائي (ضرر أقل للأهداف التالية)."
+      },
+      {
+        "slot": "2",
+        "name": "YORDLE SNAP TRAP",
+        "description": "Caitlyn sets a trap to find sneaky yordles. When sprung, the trap reveals and immobilizes the enemy champion for brief period, granting Caitlyn an empowered Headshot.",
+        "icon": "icons/abilities/caitlyn_2.png",
+        "description_ar": "تضع Caitlyn فخًا للعثور على اليوردل المتسللين. عند تفعيله، يكشف الفخ البطل العدو ويشلّ حركته لفترة قصيرة، ويمنح Caitlyn Headshot معزّزة."
+      },
+      {
+        "slot": "3",
+        "name": "90 CALIBER NET",
+        "description": "Caitlyn fires a heavy net to slow her target. The recoil knocks Caitlyn back.",
+        "icon": "icons/abilities/caitlyn_3.png",
+        "description_ar": "تطلق Caitlyn شبكة ثقيلة لإبطاء هدفها. يدفع الارتداد Caitlyn للخلف."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ACE IN THE HOLE",
+        "description": "Caitlyn takes time to line up the perfect shot, dealing massive damage to a single target at a huge range. Enemy champions can intercept the bullet for their ally.",
+        "icon": "icons/abilities/caitlyn_ultimate.png",
+        "description_ar": "تأخذ Caitlyn وقتًا لتصويب الطلقة المثالية، فتسبب ضرر هائل لهدف واحد من مدى ضخم. يستطيع أبطال الأعداء اعتراض الرصاصة بدلًا من حليفهم."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e4d985575acb029e19d8a4f02d0f2fe777b13154-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
       "poke"
     ]
   },
@@ -584,6 +901,58 @@
       "true_damage",
       "shielder",
       "mobile",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "chogath",
+    "name": "Cho'Gath",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "CARNIVORE",
+        "description": "Whenever Cho'Gath kills an enemy unit, it recovers health and mana. The effect is doubled if the enemy is a champion, turret, or epic monster.",
+        "icon": "icons/abilities/chogath_passive.png",
+        "description_ar": "كلما قتل Cho'Gath وحدة عدو، يسترجع صحة ومانا. يتضاعف التأثير إذا كان العدو بطلًا أو برجًا أو وحشًا ملحميًا."
+      },
+      {
+        "slot": "1",
+        "name": "RUPTURE",
+        "description": "Cho’Gath ruptures the ground at target location, knocking enemy units into the air, dealing damage and slowing them.",
+        "icon": "icons/abilities/chogath_1.png",
+        "description_ar": "يشق Cho'Gath الأرض في الموقع المستهدف، فيقذف وحدات الأعداء في الهوا ويسبب ضرر ويبطّئها."
+      },
+      {
+        "slot": "2",
+        "name": "FERAL SCREAM",
+        "description": "Cho'Gath unleashes a terrible scream at enemies in a cone, dealing magic damage and Silencing enemies for a few seconds.",
+        "icon": "icons/abilities/chogath_2.png",
+        "description_ar": "يطلق Cho'Gath صرخة مرعبة على الأعداء في مخروط، فيسبب ضرر سحري ويُسكت الأعداء لثوانٍ قليلة."
+      },
+      {
+        "slot": "3",
+        "name": "VORPAL SPIKES",
+        "description": "Cho'Gath's attacks release deadly spikes, dealing damage and slowing all enemy units in front of it.",
+        "icon": "icons/abilities/chogath_3.png",
+        "description_ar": "هجمات Cho'Gath تطلق أشواكًا قاتلة، فتسبب ضرر وتبطّئ كل وحدات الأعداء أمامه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FEAST",
+        "description": "Cho’Gath devours an enemy unit, dealing a high amount of true damage. If the target is killed, Cho'Gath grows in size, gaining maximum health. This effect stacks with each enemy devoured.",
+        "icon": "icons/abilities/chogath_ultimate.png",
+        "description_ar": "يلتهم Cho'Gath وحدة عدو، فيسبب كمية كبيرة من الضرر الحقيقي. إذا قُتل الهدف، يكبر حجم Cho'Gath ويكسب أقصى صحة. يتراكم هذا التأثير مع كل عدو يلتهمه."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d532b61341e7297740f08996d458d589d5ab4c91-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
       "cc_heavy"
     ]
   },
@@ -804,6 +1173,58 @@
     ]
   },
   {
+    "id": "draven",
+    "name": "Draven",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "LEAGUE OF DRAVEN",
+        "description": "Draven gains his fans' Adoration when he catches a Spinning Axe or kills a minion, monster, or tower. Killing enemy champions grants Draven bonus gold based on how much Adoration he has.",
+        "icon": "icons/abilities/draven_passive.png",
+        "description_ar": "يكسب Draven إعجاب معجبيه (Adoration) عندما يلتقط Spinning Axe أو يقتل تابعًا أو وحشًا أو برجًا. قتل أبطال الأعداء يمنح Draven ذهبًا إضافيًا بحسب مقدار Adoration لديه."
+      },
+      {
+        "slot": "1",
+        "name": "SPINNING AXE",
+        "description": "Draven's next attack will deal bonus physical damage. This axe will ricochet off the target high up into the air. If Draven catches it, he automatically readies another Spinning Axe. Draven can have two Spinning Axes at once.",
+        "icon": "icons/abilities/draven_1.png",
+        "description_ar": "هجمة Draven التالية تسبب ضرر فيزيائي إضافي. يرتد هذا الفأس عن الهدف عاليًا في الهوا. إذا التقطه Draven، يجهّز تلقائيًا Spinning Axe آخر. يستطيع Draven امتلاك فأسين دوّارين في الوقت نفسه."
+      },
+      {
+        "slot": "2",
+        "name": "BLOOD RUSH",
+        "description": "Draven gains increased Movement Speed and Attack Speed. The Movement Speed bonus decreases rapidly over its duration. Catching a Spinning Axe will refresh the cooldown of Blood Rush.",
+        "icon": "icons/abilities/draven_2.png",
+        "description_ar": "يكسب Draven سرعة حركة وسرعة هجوم أكبر. تقل مكافأة سرعة الحركة بسرعة على مدى المدة. التقاط Spinning Axe يجدد وقت تبريد Blood Rush."
+      },
+      {
+        "slot": "3",
+        "name": "STAND ASIDE",
+        "description": "Draven throws his axes, dealing physical damage to targets hit and knocking them aside. Targets hit are slowed.",
+        "icon": "icons/abilities/draven_3.png",
+        "description_ar": "يرمي Draven فأسيه، فيسبب ضرر فيزيائي للأهداف المصابة ويدفعها جانبًا. الأهداف المصابة تتباطأ."
+      },
+      {
+        "slot": "ultimate",
+        "name": "WHIRLING DEATH",
+        "description": "Draven hurls two massive axes to deal physical damage to each unit struck. Whirling Death slowly reverses direction and returns to Draven after striking an enemy champion. Draven may also activate this ability while the axes are in flight to cause it to return early. Deals less damage for each unit hit and resets when the axes reverse direction.",
+        "icon": "icons/abilities/draven_ultimate.png",
+        "description_ar": "يقذف Draven فأسين ضخمين ليسبب ضرر فيزيائي لكل وحدة تُصاب. تعكس Whirling Death اتجاهها ببطء وتعود إلى Draven بعد إصابة بطل عدو. يستطيع Draven أيضًا تفعيل هذه المهارة أثناء طيران الفأسين لإعادتهما مبكرًا. يقل الضرر مع كل وحدة تُصاب ويُعاد ضبطه عندما يعكس الفأسان اتجاههما."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/0b1f50021fca8e0960f226067d3433d533e72a38-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "burst"
+    ]
+  },
+  {
     "id": "ekko",
     "name": "Ekko",
     "roles": [
@@ -912,6 +1333,59 @@
     ]
   },
   {
+    "id": "ezreal",
+    "name": "Ezreal",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Rising Spell Force",
+        "description": "Ezreal gains increasing Attack Speed each time he successfully hits a spell, stacking up to 4 times.",
+        "icon": "icons/abilities/ezreal_passive.png",
+        "description_ar": "يكسب Ezreal سرعة هجوم متزايدة في كل مرة يصيب فيها بمهارة، وتتراكم حتى 4 مرات."
+      },
+      {
+        "slot": "1",
+        "name": "Mystic Shot",
+        "description": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns slightly if it strikes an enemy unit.",
+        "icon": "icons/abilities/ezreal_1.png",
+        "description_ar": "يطلق Ezreal شعاع طاقة يسبب ضرر ويقلّل كل أوقات تبريده قليلًا إذا أصاب وحدة عدو."
+      },
+      {
+        "slot": "2",
+        "name": "Essence Flux",
+        "description": "Ezreal fires an orb that sticks to the first champion or objective hit. If Ezreal hits an enemy with the orb, it detonates and deals damage.",
+        "icon": "icons/abilities/ezreal_2.png",
+        "description_ar": "يطلق Ezreal كرة تلتصق بأول بطل أو هدف يُصاب. إذا أصاب Ezreal عدوًا بالكرة، تنفجر وتسبب ضرر."
+      },
+      {
+        "slot": "3",
+        "name": "Arcane Shift",
+        "description": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit. Prioritizes enemies stuck with Essence Flux.",
+        "icon": "icons/abilities/ezreal_3.png",
+        "description_ar": "ينتقل Ezreal فوريًا إلى موقع قريب مستهدف ويطلق شعاعًا موجّهًا يصيب أقرب وحدة عدو. يعطي أولوية للأعداء المصابين بـEssence Flux."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Trueshot Barrage",
+        "description": "Ezreal winds up before firing a powerful barrage of energy that deals massive damage to each unit it passes through (damage is reduced for minions and non-epic monsters).",
+        "icon": "icons/abilities/ezreal_ultimate.png",
+        "description_ar": "يجهّز Ezreal نفسه قبل إطلاق وابل قوي من الطاقة يسبب ضرر هائل لكل وحدة يمر بها (يقل الضرر على التوابع والوحوش غير الملحمية)."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/d5193795e3f4c81acb122de52c25243e2ab2f76e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "poke",
+      "mobile",
+      "sustained_dps"
+    ]
+  },
+  {
     "id": "fiddlesticks",
     "name": "Fiddlesticks",
     "roles": [
@@ -963,6 +1437,60 @@
       "healer",
       "stealth",
       "burst"
+    ]
+  },
+  {
+    "id": "fiora",
+    "name": "Fiora",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Duelist's Dance",
+        "description": "Fiora challenges nearby enemy Champions to dodge her. She calls out a direction from which she will try to strike. If she can complete her own challenge, she receives a small bonus and calls out a new direction.",
+        "icon": "icons/abilities/fiora_passive.png",
+        "description_ar": "تتحدى Fiora أبطال الأعداء القريبين ليتفادوها. تعلن اتجاهًا ستحاول الضرب منه. إذا استطاعت إتمام تحديها بنفسها، تحصل على مكافأة صغيرة وتعلن اتجاهًا جديدًا."
+      },
+      {
+        "slot": "1",
+        "name": "Lunge",
+        "description": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.",
+        "icon": "icons/abilities/fiora_1.png",
+        "description_ar": "تنقض Fiora في اتجاه معين وتطعن عدوًا قريبًا، فتسبب ضرر فيزيائي وتطبّق تأثيرات on-hit."
+      },
+      {
+        "slot": "2",
+        "name": "Riposte",
+        "description": "Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability.",
+        "icon": "icons/abilities/fiora_2.png",
+        "description_ar": "تصدّ Fiora كل الضرر والتعطيل الداخل لفترة قصيرة، ثم تطعن في اتجاه معين. تبطّئ هذه الطعنة أول بطل عدو يُصاب، أو تشلّه إذا صدّت Fiora تأثير شلّ حركة بهذه المهارة."
+      },
+      {
+        "slot": "3",
+        "name": "Bladework",
+        "description": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike.",
+        "icon": "icons/abilities/fiora_3.png",
+        "description_ar": "تزيد سرعة هجوم Fiora لهجمتيها التاليتين. الهجمة الأولى تبطّئ الهدف، والهجمة الثانية تكون ضربة حرجة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Grand Challenge",
+        "description": "Fiora reveals all four Vitals on an enemy champion and gains movement speed while near them. If Fiora hits all 4 Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.",
+        "icon": "icons/abilities/fiora_ultimate.png",
+        "description_ar": "تكشف Fiora كل نقاط Vitals الأربع على بطل عدو وتكسب سرعة حركة وهي قربه. إذا أصابت Fiora كل نقاط Vitals الـ4 أو مات الهدف بعد إصابتها نقطة واحدة على الأقل، تُعالَج Fiora وحلفاؤها في المنطقة خلال الثواني التالية."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2dafcddd5b1dfdf4e127464abf3f84b690bac5ec-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "true_damage",
+      "mobile",
+      "sustained_dps",
+      "healer"
     ]
   },
   {
@@ -1071,6 +1599,113 @@
       "tanky",
       "cc_heavy",
       "shielder"
+    ]
+  },
+  {
+    "id": "garen",
+    "name": "Garen",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Perseverance",
+        "description": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second.",
+        "icon": "icons/abilities/garen_passive.png",
+        "description_ar": "إذا لم يتعرض Garen مؤخرًا لضرر أو مهارات أعداء، يجدد نسبة من إجمالي صحته كل ثانية."
+      },
+      {
+        "slot": "1",
+        "name": "Decisive Strike",
+        "description": "Garen gains a burst of movement speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them.",
+        "icon": "icons/abilities/garen_1.png",
+        "description_ar": "يكسب Garen دفعة سرعة حركة، ويتحرر من كل الإبطاءات المؤثرة عليه. هجمته التالية تضرب منطقة حيوية في خصمه، فتسبب ضرر إضافي وتُسكته."
+      },
+      {
+        "slot": "2",
+        "name": "Courage",
+        "description": "Garen reduces damage taken for a short time, and gains bonus resistance to crowd control.",
+        "icon": "icons/abilities/garen_2.png",
+        "description_ar": "يقلّل Garen الضرر الذي يتلقّاه لفترة قصيرة، ويكسب مقاومة إضافية للتحكم (CC)."
+      },
+      {
+        "slot": "3",
+        "name": "Judgment",
+        "description": "Garen rapidly spins his sword around his body, dealing physical damage to nearby enemies. Enemies hit by the bladestorm's edge are critically struck.",
+        "icon": "icons/abilities/garen_3.png",
+        "description_ar": "يدور Garen بسيفه بسرعة حول جسده، فيسبب ضرر فيزيائي للأعداء القريبين. الأعداء المصابون بحافة العاصفة يتلقّون ضربة حرجة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Demacian Justice",
+        "description": "Garen calls upon the might of Demacia to attempt to execute an enemy champion, dealing damage in an area around his target.",
+        "icon": "icons/abilities/garen_ultimate.png",
+        "description_ar": "يستدعي Garen قوة Demacia لمحاولة إعدام بطل عدو (إعدام)، ويسبب ضرر في منطقة حول هدفه."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e22e0b14ddfdf70087c47f795ebabfc180055bc7-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "true_damage",
+      "tanky",
+      "sustained_dps",
+      "healer"
+    ]
+  },
+  {
+    "id": "gnar",
+    "name": "Gnar",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "RAGE GENE",
+        "description": "Gnar generates Rage when dealing and receiving damage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased health, armor, magic resistance, and attack. Back in his Mini Gnar form he will still gain move speed and attack speed and range.",
+        "icon": "icons/abilities/gnar_passive.png",
+        "description_ar": "يولّد Gnar غضبًا (Rage) عند إلحاق الضرر وتلقّيه. عند أقصى غضب، مهارته التالية تحوّله إلى Mega Gnar، فيكسب صحة ودروعًا ومقاومة سحر وقوة هجوم أكبر. وفي هيئة Mini Gnar يكسب أيضًا سرعة حركة وسرعة هجوم ومدى."
+      },
+      {
+        "slot": "1",
+        "name": "BOOMERANG THROW / BOULDER TOSS",
+        "description": "Gnar throws a boomerang that damages and slows enemies it hits before returning to him. If he catches the boomerang its cooldown is reduced. Mega Gnar instead throws a boulder that stops on the first unit hit, damaging and slowing everything nearby. It can then be picked up to reduce the cooldown.",
+        "icon": "icons/abilities/gnar_1.png",
+        "description_ar": "يرمي Gnar بوميرانج يسبب ضرر ويبطّئ الأعداء المصابين قبل أن يعود إليه. إذا التقط البوميرانج يقل وقت تبريده. أما Mega Gnar فيرمي صخرة بدلًا من ذلك تتوقف عند أول وحدة تُصاب، فتسبب ضرر وتبطّئ كل ما حولها. يمكن بعد ذلك التقاطها لتقليل وقت التبريد."
+      },
+      {
+        "slot": "2",
+        "name": "HYPER / WALLOP",
+        "description": "Gnar's attacks and spells hype him up, dealing bonus damage and granting him Move Speed. Mega Gnar is too enraged to be hyper and instead can rear up on his hind legs and smash down on the area in front of him, stunning enemies in an area.",
+        "icon": "icons/abilities/gnar_2.png",
+        "description_ar": "هجمات Gnar ومهاراته تحمّسه، فتسبب ضرر إضافي وتمنحه سرعة حركة. يكون Mega Gnar غاضبًا أكثر من أن يتحمّس، وبدلًا من ذلك يستطيع الوقوف على قدميه الخلفيتين والضرب على المنطقة أمامه، فيشلّ الأعداء في منطقة."
+      },
+      {
+        "slot": "3",
+        "name": "HOP / CRUNCH",
+        "description": "Gnar leaps to a location and bounces off the head of any unit he lands on, traveling further. Mega Gnar is too large to bounce and instead lands with earth-shattering force, dealing damage in an area around him.",
+        "icon": "icons/abilities/gnar_3.png",
+        "description_ar": "يقفز Gnar إلى موقع ويرتد عن رأس أي وحدة يهبط عليها، فيقطع مسافة أبعد. Mega Gnar أكبر من أن يرتد، فيهبط بقوة تحطم الأرض، ويسبب ضرر في منطقة حوله."
+      },
+      {
+        "slot": "ultimate",
+        "name": "GNAR!",
+        "description": "Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them. Any enemy that hits a wall is stunned and takes bonus damage.",
+        "icon": "icons/abilities/gnar_ultimate.png",
+        "description_ar": "يرمي Mega Gnar كل ما حوله في اتجاه مختار، فيسبب ضرر ويبطّئهم. أي عدو يصطدم بحائط يُشلّ ويتلقّى ضرر إضافي."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2b74cce5203bed8c192ff5c017b01a5231497430-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy",
+      "poke"
     ]
   },
   {
@@ -1445,6 +2080,58 @@
     ]
   },
   {
+    "id": "janna",
+    "name": "Janna",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Tailwind",
+        "description": "Janna passively gains move speed and gives nearby allied champions the same bonus.",
+        "icon": "icons/abilities/janna_passive.png",
+        "description_ar": "تكسب Janna سرعة حركة كمهارة سلبية وتمنح الأبطال الحلفاء القريبين نفس المكافأة."
+      },
+      {
+        "slot": "1",
+        "name": "Howling Gale",
+        "description": "Janna summons a powerful whirlwind, dealing damage and knocking up enemies in its path.",
+        "icon": "icons/abilities/janna_1.png",
+        "description_ar": "تستدعي Janna إعصارًا قويًا، فيسبب ضرر ويُطيح بالأعداء في طريقه."
+      },
+      {
+        "slot": "2",
+        "name": "Zephyr",
+        "description": "Janna gains move speed. The wind spirit affects the two closest champions in range, granting move speed to allies and damaging enemies.",
+        "icon": "icons/abilities/janna_2.png",
+        "description_ar": "تكسب Janna سرعة حركة. تؤثر روح الرياح على أقرب بطلين في المدى، فتمنح الحلفاء سرعة حركة وتضر الأعداء."
+      },
+      {
+        "slot": "3",
+        "name": "Eye Of The Storm",
+        "description": "Janna conjures a defensive gale that shields herself, an ally, or a turret if one is in range. This shield also grants attack damage.",
+        "icon": "icons/abilities/janna_3.png",
+        "description_ar": "تستحضر Janna عاصفة دفاعية تحمي نفسها أو حليفًا أو برجًا إذا كان في المدى بدرع حماية. يمنح هذا الدرع أيضًا قوة هجوم (AD)."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Monsoon",
+        "description": "Janna calls forth mighty winds of salvation, knocking back surrounding enemies and healing nearby allies.",
+        "icon": "icons/abilities/janna_ultimate.png",
+        "description_ar": "تستدعي Janna رياح الخلاص القوية، فتدفع الأعداء المحيطين للخلف وتعالج الحلفاء القريبين."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/81c7653646f1a6a039675c0765cf541fdf7d5d48-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "shielder",
+      "cc_heavy"
+    ]
+  },
+  {
     "id": "jarvan-iv",
     "name": "Jarvan IV",
     "roles": [
@@ -1602,6 +2289,215 @@
       "dmg_ad",
       "poke",
       "burst"
+    ]
+  },
+  {
+    "id": "jhin",
+    "name": "Jhin",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Whisper",
+        "description": "Jhin's hand cannon, Whisper, is a precise instrument designed to deal superior damage. It fires at a fixed rate and carries only four shots. Jhin imbues the final bullet with dark magics to critically strike and deal bonus execute damage. Whenever Whisper crits, it inspires Jhin with a burst of movement speed.",
+        "icon": "icons/abilities/jhin_passive.png",
+        "description_ar": "مدفع Jhin اليدوي، Whisper، أداة دقيقة صُممت لإلحاق ضرر فائق. يطلق بمعدل ثابت ويحمل أربع طلقات فقط. يمنح Jhin الرصاصة الأخيرة سحرًا مظلمًا لتكون ضربة حرجة وتسبب ضرر إعدام إضافي. كلما سجّل Whisper ضربة حرجة، يمنح Jhin دفعة سرعة حركة."
+      },
+      {
+        "slot": "1",
+        "name": "Dancing Grenade",
+        "description": "Jhin launches a magical cartridge at an enemy. It can hit up to four targets and gains damage each time it kills.",
+        "icon": "icons/abilities/jhin_1.png",
+        "description_ar": "يطلق Jhin خرطوشة سحرية على عدو. يمكنها إصابة حتى أربعة أهداف ويزيد ضررها في كل مرة تقتل."
+      },
+      {
+        "slot": "2",
+        "name": "Deadly Flourish",
+        "description": "Jhin fires a single shot with incredible range. It pierces through minions and monsters, but stops on the first champion hit. If the target was recently struck by Jhin's allies, lotus traps, or damaged by Jhin, they are rooted.",
+        "icon": "icons/abilities/jhin_2.png",
+        "description_ar": "يطلق Jhin طلقة واحدة بمدى مذهل. تخترق التوابع والوحوش، لكنها تتوقف عند أول بطل يُصاب. إذا أصاب حلفاء Jhin الهدف مؤخرًا، أو فخاخ اللوتس، أو ألحق به Jhin ضررًا، يُثبَّت."
+      },
+      {
+        "slot": "3",
+        "name": "Captive Audience",
+        "description": "Jhin places an invisible lotus trap that blooms when walked over. It slows nearby enemies before dealing damage with an explosion of serrated petals. When Jhin kills an enemy champion, a lotus trap will bloom near where they were killed.",
+        "icon": "icons/abilities/jhin_3.png",
+        "description_ar": "يضع Jhin فخ لوتس غير مرئي يتفتح عند المشي فوقه. يبطّئ الأعداء القريبين قبل أن يسبب ضرر بانفجار من بتلات مسنّنة. عندما يقتل Jhin بطلًا عدوًا، يتفتح فخ لوتس قرب مكان قتله."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Curtain Call",
+        "description": "Jhin channels, transforming Whisper into a shoulder-mounted mega-cannon. It is able to fire 4 super shots at extreme range that pierce through minions and monsters, but stop on the first champion impacted. Whisper cripples enemies hit, which slows them and deals execute damage. The 4th shot is perfectly crafted, epically powerful, and guaranteed to critically strike.",
+        "icon": "icons/abilities/jhin_ultimate.png",
+        "description_ar": "يتجهز Jhin، فيحوّل Whisper إلى مدفع ضخم محمول على الكتف. يستطيع إطلاق 4 طلقات فائقة بمدى بعيد جدًا تخترق التوابع والوحوش، لكنها تتوقف عند أول بطل يُصاب. تعيق Whisper الأعداء المصابين، فتبطّئهم وتسبب ضرر إعدام. الطلقة الرابعة مصنوعة بإتقان، قوية بشكل ملحمي، ومضمونة كضربة حرجة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c51637d437c6309d4d0f1e7ecfa4052bf33095f4-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "poke"
+    ]
+  },
+  {
+    "id": "jinx",
+    "name": "Jinx",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Get Excited!",
+        "description": "Jinx receives massively increased Movement Speed and Attack Speed whenever she helps kill or destroy an enemy champions epic jungle monster, or structure.",
+        "icon": "icons/abilities/jinx_passive.png",
+        "description_ar": "تكسب Jinx زيادة هائلة في سرعة الحركة وسرعة الهجوم كلما ساعدت في قتل أو تدمير بطل عدو أو وحش ملحمي في الغابة أو مبنى."
+      },
+      {
+        "slot": "1",
+        "name": "Switcheroo!",
+        "description": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, and drain Mana.",
+        "icon": "icons/abilities/jinx_1.png",
+        "description_ar": "تعدّل Jinx هجماتها العادية بالتبديل بين Pow-Pow، مدفعها الرشاش، وFishbones، قاذف صواريخها. الهجمات بـPow-Pow تمنح سرعة هجوم، بينما الهجمات بـFishbones تسبب ضرر في منطقة وتكسب مدى أكبر وتستهلك المانا."
+      },
+      {
+        "slot": "2",
+        "name": "Zap!",
+        "description": "Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it.",
+        "icon": "icons/abilities/jinx_2.png",
+        "description_ar": "تستخدم Jinx Zapper، مسدسها الصاعق، لإطلاق انفجار يسبب ضرر لأول عدو يُصاب، فيبطّئه ويكشفه."
+      },
+      {
+        "slot": "3",
+        "name": "Flame Chompers!",
+        "description": "Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place.",
+        "icon": "icons/abilities/jinx_3.png",
+        "description_ar": "ترمي Jinx خطًا من قنابل الفخ تنفجر بعد 5 ث، فتشعل النار في الأعداء. Flame Chompers تعضّ أبطال الأعداء الذين يمشون فوقها وتثبّتهم في أماكنهم."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Super Mega Death Rocket!",
+        "description": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health.",
+        "icon": "icons/abilities/jinx_ultimate.png",
+        "description_ar": "تطلق Jinx صاروخًا فائقًا عبر الخريطة يزيد ضرره أثناء سفره. ينفجر الصاروخ عند اصطدامه ببطل عدو، فيسبب ضرر له وللأعداء المحيطين بحسب صحتهم المفقودة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2ba338ed3f34e991bb7c678170c27fc42c25b2a0-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps"
+    ]
+  },
+  {
+    "id": "kaisa",
+    "name": "Kai'Sa",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SECOND SKIN",
+        "description": "Kai'Sa's basic attacks stack Plasma, dealing increasing bonus magic damage. Allies' immobilizing effects help stack Plasma. Additionally, Kai'Sa's item purchases upgrade her basic spells to have more powerful properties.",
+        "icon": "icons/abilities/kaisa_passive.png",
+        "description_ar": "هجمات Kai'Sa العادية تراكم Plasma، فتسبب ضرر سحري إضافي متزايد. تأثيرات شلّ الحركة من الحلفاء تساعد في تراكم Plasma. وبالإضافة لذلك، شراء Kai'Sa للآيتمات يرقّي مهاراتها الأساسية لتصبح بخصائص أقوى."
+      },
+      {
+        "slot": "1",
+        "name": "ICATHIAN RAIN",
+        "description": "Kai'Sa shoots a swarm of missiles that seek out nearby targets. Living Weapon: Icathian Rain is upgraded to shoot more missiles.",
+        "icon": "icons/abilities/kaisa_1.png",
+        "description_ar": "تطلق Kai'Sa سربًا من القذائف يبحث عن الأهداف القريبة. Living Weapon: تُرقّى Icathian Rain لإطلاق قذائف أكثر."
+      },
+      {
+        "slot": "2",
+        "name": "VOID SEEKER",
+        "description": "Kai'Sa shoots a long range missile, revealing and marking enemies with her passive. Living Weapon: Void Seeker is upgraded to apply more Plasma marks and reduce cooldown on champion hit.",
+        "icon": "icons/abilities/kaisa_2.png",
+        "description_ar": "تطلق Kai'Sa قذيفة بعيدة المدى، تكشف الأعداء وتوسمهم بمهارتها السلبية. Living Weapon: تُرقّى Void Seeker لتطبيق علامات Plasma أكثر وتقليل وقت التبريد عند إصابة بطل."
+      },
+      {
+        "slot": "3",
+        "name": "SUPERCHARGE",
+        "description": "Kai'Sa briefly increases her movement speed, then increases her attack speed. Living Weapon: Supercharge is upgraded to briefly grant Invisibility.",
+        "icon": "icons/abilities/kaisa_3.png",
+        "description_ar": "تزيد Kai'Sa سرعة حركتها لفترة قصيرة، ثم تزيد سرعة هجومها. Living Weapon: تُرقّى Supercharge لمنح تخفّي لفترة قصيرة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "KILLER INSTINCT",
+        "description": "Kai'Sa dashes near an enemy champion marked by Plasma and gains a temporary shield.",
+        "icon": "icons/abilities/kaisa_ultimate.png",
+        "description_ar": "تندفع Kai'Sa قرب بطل عدو موسوم بـPlasma وتكسب درع حماية مؤقتًا."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/df1ed639ce9c00d8231f73d22da704227204cf4d-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "dmg_ap",
+      "sustained_dps",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
+    "id": "kalista",
+    "name": "Kalista",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "MARTIAL POISE",
+        "description": "Enter a movement command while winding up Kalista's basic attack or Pierce to lunge a short distance when she launches her attack.",
+        "icon": "icons/abilities/kalista_passive.png",
+        "description_ar": "أدخل أمر حركة أثناء تجهيز هجمة Kalista العادية أو Pierce لتنقض مسافة قصيرة عند إطلاق الهجمة."
+      },
+      {
+        "slot": "1",
+        "name": "PIERCE",
+        "description": "Throw a fast moving spear that passes through enemies it kills.",
+        "icon": "icons/abilities/kalista_1.png",
+        "description_ar": "ارمِ رمحًا سريع الحركة يمر عبر الأعداء الذين يقتلهم."
+      },
+      {
+        "slot": "2",
+        "name": "SENTINEL",
+        "description": "Gain bonus damage when Kalista and her Oathsworn strike the same target. Activate to send a soul to scout out the path, revealing the area in front of it.",
+        "icon": "icons/abilities/kalista_2.png",
+        "description_ar": "اكسب ضرر إضافي عندما تصيب Kalista وOathsworn الهدف نفسه. فعّل المهارة لإرسال روح لاستكشاف الطريق، فتكشف المنطقة أمامها."
+      },
+      {
+        "slot": "3",
+        "name": "REND",
+        "description": "Attacks impale their targets with spears. Activate to rip the spears out, slowing and dealing escalating damage.",
+        "icon": "icons/abilities/kalista_3.png",
+        "description_ar": "الهجمات تغرس الرماح في أهدافها. فعّل المهارة لانتزاع الرماح، فتبطّئ وتسبب ضرر متصاعد."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FATE'S CALL",
+        "description": "Kalista teleports the Oathsworn ally to herself. They gain the ability to dash toward a position, knocking enemy champions back.",
+        "icon": "icons/abilities/kalista_ultimate.png",
+        "description_ar": "تنقل Kalista حليفها Oathsworn فوريًا إليها. يكسب القدرة على الاندفاع نحو موقع، فيدفع أبطال الأعداء للخلف."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3b9790d6e8580e611e6531f431d3dc321abf0ccc-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "sustained_dps",
+      "mobile"
     ]
   },
   {
@@ -2029,6 +2925,112 @@
     ]
   },
   {
+    "id": "kogmaw",
+    "name": "Kog'Maw",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ICATHIAN SURPRISE",
+        "description": "Upon death, Kog’Maw continues moving, gaining Move Speed for a brief time. After a short period Kog’Maw explodes, dealing True Damage to nearby enemies.",
+        "icon": "icons/abilities/kogmaw_passive.png",
+        "description_ar": "عند موته، يواصل Kog'Maw الحركة، فيكسب سرعة حركة لفترة قصيرة. بعد فترة وجيزة ينفجر Kog'Maw، فيسبب ضرر حقيقي للأعداء القريبين."
+      },
+      {
+        "slot": "1",
+        "name": "CAUSTIC SPITTLE",
+        "description": "Kog'Maw launches a corrosive projectile which deals Magic Damage and weakens the target's Armor and Magic Resist for a short time.",
+        "icon": "icons/abilities/kogmaw_1.png",
+        "description_ar": "يطلق Kog'Maw قذيفة أكّالة تسبب ضرر سحري وتضعف دروع (Armor) ومقاومة سحر (MR) الهدف لفترة قصيرة."
+      },
+      {
+        "slot": "2",
+        "name": "BIO-ARCANE BARRAGE",
+        "description": "Kog'Maw's basic attacks gain range and deal a percent of the target's maximum Health as Magic Damage.",
+        "icon": "icons/abilities/kogmaw_2.png",
+        "description_ar": "هجمات Kog'Maw العادية تكسب مدى وتسبب نسبة من أقصى صحة الهدف كضرر سحري."
+      },
+      {
+        "slot": "3",
+        "name": "VOID OOZE",
+        "description": "Kog'Maw launches ooze in target direction damaging all enemies it passes through and leaves a trail slowing enemies.",
+        "icon": "icons/abilities/kogmaw_3.png",
+        "description_ar": "يطلق Kog'Maw مادة لزجة في الاتجاه المستهدف تسبب ضرر لكل الأعداء الذين تمر بهم وتترك أثرًا يبطّئ الأعداء."
+      },
+      {
+        "slot": "ultimate",
+        "name": "LIVING ARTILLERY",
+        "description": "Passive: Kog’Maw gains Attack Speed.\nKog'Maw fires acid in area dealing Magic Damage to and revealing enemies hit. Damage is increased when targeting low Health enemies. Additionally, multiple Living Artilleries in a short period of time cause them to cost additional Mana.",
+        "icon": "icons/abilities/kogmaw_ultimate.png",
+        "description_ar": "مهارة سلبية: يكسب Kog'Maw سرعة هجوم.\nيطلق Kog'Maw حمضًا في منطقة يسبب ضرر سحري ويكشف الأعداء المصابين. يزيد الضرر عند استهداف الأعداء قليلي الصحة. وبالإضافة لذلك، استخدام Living Artillery عدة مرات في فترة قصيرة يجعل تكلفتها مانا إضافية."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4b94917c3fd10e913256106dcb536aae8f3922e7-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ap",
+      "sustained_dps",
+      "poke"
+    ]
+  },
+  {
+    "id": "ksante",
+    "name": "K'Sante",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DAUNTLESS INSTINCT",
+        "description": "K’Sante’s damage dealing abilities mark enemies to take more damage on his next hit.\nWhen All Out, K’Sante’s attacks, abilities, and passive deal more damage.",
+        "icon": "icons/abilities/ksante_passive.png",
+        "description_ar": "مهارات K'Sante المسببة للضرر توسم الأعداء ليتلقّوا ضرر أكبر عند هجمته التالية.\nعند All Out، تسبب هجمات K'Sante ومهاراته ومهارته السلبية ضرر أكبر."
+      },
+      {
+        "slot": "1",
+        "name": "NTOFO STRIKES",
+        "description": "K’sante slams his weapon, dealing physical damage and slowing enemies in a line. On hit, grants a stack of Ntofo Strikes. At 2 stacks, K’Sante instead fires a shockwave that stuns and pulls enemies.\nWhen All Out, the cooldown is reduced.",
+        "icon": "icons/abilities/ksante_1.png",
+        "description_ar": "يضرب K'Sante بسلاحه، فيسبب ضرر فيزيائي ويبطّئ الأعداء في خط. عند الإصابة، يمنح شحنة من Ntofo Strikes. عند 2 شحنات، يطلق K'Sante بدلًا من ذلك موجة صدمة تشلّ الأعداء وتسحبهم.\nعند All Out، يقل وقت التبريد."
+      },
+      {
+        "slot": "2",
+        "name": "PATH MAKER",
+        "description": "K’Sante charges up, gaining displacement immunity and reduced damage. He then dashes forward, dealing damage, knocking back and stunning enemies.\nWhen All Out, cooldown is refreshed, deals additional damage, no longer knocks back or stuns, but also grants increased damage reduction and dash speed.",
+        "icon": "icons/abilities/ksante_2.png",
+        "description_ar": "يشحن K'Sante نفسه، فيكسب مناعة ضد الإزاحة وضرر أقل. ثم يندفع للأمام، فيسبب ضرر ويدفع الأعداء للخلف ويشلّهم.\nعند All Out، يتجدد وقت التبريد ويسبب ضرر إضافي، ولا يدفع للخلف ولا يشلّ، لكنه يمنح تقليلًا أكبر للضرر وسرعة اندفاع أكبر."
+      },
+      {
+        "slot": "3",
+        "name": "FOOTWORK",
+        "description": "K’Sante dashes and gains a shield. If he dashes to an ally, the dash distance is increased and both gain a shield.\nWhen All Out, cooldown is reduced and dash speed is increased.",
+        "icon": "icons/abilities/ksante_3.png",
+        "description_ar": "يندفع K'Sante ويكسب درع حماية. إذا اندفع نحو حليف، تزيد مسافة الاندفاع ويكسب كلاهما درع حماية.\nعند All Out، يقل وقت التبريد وتزيد سرعة الاندفاع."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ALL OUT",
+        "description": "K’Sante becomes unstoppable and splits his ntofos to know back an enemy. If the enemy collides with terrain, they are knocked through, taking additional damage. K’Sante, then dashes behind them and enters All Out. While All Out, K’Sante’s abilities are upgraded. He also gains Attack Speed, Armor Penetration, and Omnivamp, while losing some maximum Health, Armor, and Magic Resist.",
+        "icon": "icons/abilities/ksante_ultimate.png",
+        "description_ar": "يصبح K'Sante لا يمكن إيقافه ويقسم ntofos الخاصة به لدفع عدو للخلف. إذا اصطدم العدو بالتضاريس، يُدفع عبرها ويتلقّى ضرر إضافي. ثم يندفع K'Sante خلفهم ويدخل All Out. أثناء All Out، تُرقّى مهارات K'Sante. كما يكسب سرعة هجوم واختراق دروع وامتصاصًا شاملًا، بينما يخسر بعض أقصى الصحة والدروع (Armor) ومقاومة السحر (MR)."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3a7df03714afd695c4558b8aba7986ec797c6efd-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy",
+      "mobile",
+      "shielder"
+    ]
+  },
+  {
     "id": "lee-sin",
     "name": "Lee Sin",
     "roles": [
@@ -2080,6 +3082,58 @@
       "burst",
       "shielder",
       "healer"
+    ]
+  },
+  {
+    "id": "leona",
+    "name": "Leona",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "SUNLIGHT",
+        "description": "Damaging spells afflict enemies with Sunlight. When allied Champions deal damage to those targets, they consume the Sunlight to deal additional magic damage.",
+        "icon": "icons/abilities/leona_passive.png",
+        "description_ar": "المهارات المسببة للضرر تصيب الأعداء بـSunlight. عندما يسبب الأبطال الحلفاء ضررًا لهذه الأهداف، يستهلكون Sunlight لإلحاق ضرر سحري إضافي."
+      },
+      {
+        "slot": "1",
+        "name": "SHIELD OF DAYBREAK",
+        "description": "Leona uses her shield to perform her next basic attack, dealing bonus magic damage and stunning the target.",
+        "icon": "icons/abilities/leona_1.png",
+        "description_ar": "تستخدم Leona درعها لتنفيذ هجمتها العادية التالية، فتسبب ضرر سحري إضافي وتشلّ الهدف."
+      },
+      {
+        "slot": "2",
+        "name": "ECLIPSE",
+        "description": "Leona raises her shield to gain Armor, and Magic Resist. When the duration first ends, if there are nearby enemies, she will deal magic damage to them and prolong the duration of the effect.",
+        "icon": "icons/abilities/leona_2.png",
+        "description_ar": "ترفع Leona درعها لتكسب دروعًا (Armor) ومقاومة سحر (MR). عندما تنتهي المدة للمرة الأولى، إذا كان هناك أعداء قريبون، تسبب لهم ضرر سحري وتمدد مدة التأثير."
+      },
+      {
+        "slot": "3",
+        "name": "ZENITH BLADE",
+        "description": "Leona projects a solar image of her sword, dealing magic damage to all enemies in a line. When the image fades, the last enemy champion struck will be briefly rooted and Leona will dash to them.",
+        "icon": "icons/abilities/leona_3.png",
+        "description_ar": "تسقط Leona صورة شمسية لسيفها، فتسبب ضرر سحري لكل الأعداء في خط. عندما تتلاشى الصورة، يُثبَّت آخر بطل عدو أُصيب لفترة قصيرة وتندفع Leona إليه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "SOLAR FLARE",
+        "description": "Leona calls down a beam of solar energy, dealing damage to enemies in an area. Enemies in the center of the area are stunned, while enemies on the outside are slowed.",
+        "icon": "icons/abilities/leona_ultimate.png",
+        "description_ar": "تستدعي Leona شعاعًا من الطاقة الشمسية، فتسبب ضرر للأعداء في منطقة. الأعداء في مركز المنطقة يُشلّون، بينما الأعداء في الخارج يتباطؤون."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/8a1915cfa8e5454697c0a5914f15cc71830fbf4f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy"
     ]
   },
   {
@@ -2241,6 +3295,59 @@
       "dmg_ad",
       "sustained_dps",
       "mobile"
+    ]
+  },
+  {
+    "id": "lulu",
+    "name": "Lulu",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "PIX, FAERIE COMPANION",
+        "description": "Pix fires magical bolts of energy whenever the champion he's following attacks another enemy unit. These bolts are homing, but can be intercepted by other units.",
+        "icon": "icons/abilities/lulu_passive.png",
+        "description_ar": "يطلق Pix شعاعات طاقة سحرية كلما هاجم البطل الذي يتبعه وحدة عدو أخرى. هذه الشعاعات موجّهة، لكن يمكن اعتراضها بوحدات أخرى."
+      },
+      {
+        "slot": "1",
+        "name": "GLITTERLANCE",
+        "description": "Pix and Lulu each fire a bolt of magical energy that heavily slows all enemies it hits.",
+        "icon": "icons/abilities/lulu_1.png",
+        "description_ar": "يطلق Pix وLulu شعاعًا من الطاقة السحرية يبطّئ بشدة كل الأعداء الذين يصيبهم."
+      },
+      {
+        "slot": "2",
+        "name": "WHIMSY",
+        "description": "If cast on an ally, grants them Attack Speed and Movement Speed for a short time. If cast on an enemy, turns them into an adorable critter that can't attack or cast spells.",
+        "icon": "icons/abilities/lulu_2.png",
+        "description_ar": "إذا استُخدمت على حليف، تمنحه سرعة هجوم وسرعة حركة لفترة قصيرة. إذا استُخدمت على عدو، تحوّله إلى مخلوق لطيف لا يستطيع الهجوم أو استخدام المهارات."
+      },
+      {
+        "slot": "3",
+        "name": "HELP, PIX!",
+        "description": "If cast on an ally, commands Pix to jump to an ally and shield them. He then follows them and aids their attacks. If cast on an enemy, commands Pix to jump to an enemy and damage them. He then follows them and grants you vision of that enemy.",
+        "icon": "icons/abilities/lulu_3.png",
+        "description_ar": "إذا استُخدمت على حليف، تأمر Pix بالقفز إلى الحليف وحمايته بدرع حماية. ثم يتبعه ويساعد هجماته. إذا استُخدمت على عدو، تأمر Pix بالقفز إلى العدو وإلحاق ضرر به. ثم يتبعه ويمنحك رؤية على ذلك العدو."
+      },
+      {
+        "slot": "ultimate",
+        "name": "WILD GROWTH",
+        "description": "Lulu enlarges an ally (or herself), knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies.",
+        "icon": "icons/abilities/lulu_ultimate.png",
+        "description_ar": "تكبّر Lulu حليفًا (أو نفسها)، فتقذف الأعداء القريبين في الهوا وتمنح الحليف كمية كبيرة من الصحة الإضافية. خلال الثواني التالية، يكسب ذلك الحليف هالة تبطّئ الأعداء القريبين."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/037e014fe9e10822a0cc156561bae2b31a3803a1-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "shielder",
+      "cc_heavy",
+      "poke"
     ]
   },
   {
@@ -2515,6 +3622,111 @@
     ]
   },
   {
+    "id": "milio",
+    "name": "Milio",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "FIRED UP!",
+        "description": "Milio's abilities enchant allies on touch, making their next damage deal a burst of extra damage and burn the target.",
+        "icon": "icons/abilities/milio_passive.png",
+        "description_ar": "مهارات Milio تسحر الحلفاء عند اللمس، فتجعل ضررهم التالي يسبب دفعة ضرر إضافي ويحرق الهدف."
+      },
+      {
+        "slot": "1",
+        "name": "ULTRA MEGA FIRE KICK",
+        "description": "Kick a ball that knocks back an enemy. The ball launches upward on hit and falls toward the enemy, damaging and slowing enemies in the area upon impact.",
+        "icon": "icons/abilities/milio_1.png",
+        "description_ar": "اركل كرة تدفع عدوًا للخلف. تنطلق الكرة للأعلى عند الإصابة وتسقط نحو العدو، فتسبب ضرر وتبطّئ الأعداء في المنطقة عند الاصطدام."
+      },
+      {
+        "slot": "2",
+        "name": "COZY CAMPFIRE",
+        "description": "Create an empowering zone that heals allies and increases attack range to those inside. The zone follows the ally nearest to the cast point.",
+        "icon": "icons/abilities/milio_2.png",
+        "description_ar": "أنشئ منطقة تعزيز تعالج الحلفاء وتزيد مدى الهجوم لمن بداخلها. تتبع المنطقة الحليف الأقرب إلى نقطة الاستخدام."
+      },
+      {
+        "slot": "3",
+        "name": "WARM HUGS",
+        "description": "Milio tosses a shield to an ally, temporarily increasing their movement speed. This ability has 2 charges.",
+        "icon": "icons/abilities/milio_3.png",
+        "description_ar": "يرمي Milio درعًا إلى حليف، فيزيد سرعة حركته مؤقتًا. لهذه المهارة 2 شحنة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "BREATH OF LIFE",
+        "description": "Milio unleashes a wave of soothing flames that heal and remove crowd control effects from allies in range.",
+        "icon": "icons/abilities/milio_ultimate.png",
+        "description_ar": "يطلق Milio موجة من اللهب المهدّئ تعالج الحلفاء في المدى وتزيل عنهم تأثيرات التحكم (CC)."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/49db0ecb0ee7c82470b4c468062b056632c548bd-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "shielder",
+      "healer"
+    ]
+  },
+  {
+    "id": "miss-fortune",
+    "name": "Miss Fortune",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Love Tap",
+        "description": "Miss Fortune deals bonus physical damage whenever she basic attacks a new target.",
+        "icon": "icons/abilities/miss-fortune_passive.png",
+        "description_ar": "تسبب Miss Fortune ضرر فيزيائي إضافي كلما هاجمت هدفًا جديدًا بهجمة عادية."
+      },
+      {
+        "slot": "1",
+        "name": "Double Up",
+        "description": "Miss Fortune fires a bullet, damaging an enemy and critically striking a target behind them. Applies on-hit effects.",
+        "icon": "icons/abilities/miss-fortune_1.png",
+        "description_ar": "تطلق Miss Fortune رصاصة، فتسبب ضرر لعدو وتصيب هدفًا خلفه بضربة حرجة. تطبّق تأثيرات on-hit."
+      },
+      {
+        "slot": "2",
+        "name": "Strut",
+        "description": "Miss Fortune passively gains Movement Speed when not attacked. This ability can be activated to grant bonus Attack Speed for a short duration. While it's on cooldown, Love Taps reduce the remaining cooldown of Strut.",
+        "icon": "icons/abilities/miss-fortune_2.png",
+        "description_ar": "تكسب Miss Fortune سرعة حركة كمهارة سلبية عندما لا تتعرض للهجوم. يمكن تفعيل هذه المهارة لمنح سرعة هجوم إضافية لفترة قصيرة. وبينما هي في وقت التبريد، تقلّل Love Taps وقت التبريد المتبقي لـStrut."
+      },
+      {
+        "slot": "3",
+        "name": "Make It Rain",
+        "description": "Miss Fortune reveals an area with a flurry of bullets, dealing waves of damage to opponents and slowing them.",
+        "icon": "icons/abilities/miss-fortune_3.png",
+        "description_ar": "تكشف Miss Fortune منطقة بوابل من الرصاص، فتسبب موجات ضرر للخصوم وتبطّئهم."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Bullet Time",
+        "description": "Miss Fortune channels a barrage of bullets into a cone in front of her, dealing large amounts of damage to enemies. Each wave of Bullet Time can critically strike",
+        "icon": "icons/abilities/miss-fortune_ultimate.png",
+        "description_ar": "توجّه Miss Fortune وابلًا من الرصاص في مخروط أمامها، فتسبب كميات كبيرة من الضرر للأعداء. كل موجة من Bullet Time يمكن أن تكون ضربة حرجة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ec2feb5bc10ae2fb645d240bf291f62049380856-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "sustained_dps",
+      "poke"
+    ]
+  },
+  {
     "id": "mordekaiser",
     "name": "Mordekaiser",
     "roles": [
@@ -2626,6 +3838,112 @@
     ]
   },
   {
+    "id": "nami",
+    "name": "Nami",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Surging Tides",
+        "description": "When Nami's abilities hit allied champions they gain Movement Speed for a short duration.",
+        "icon": "icons/abilities/nami_passive.png",
+        "description_ar": "عندما تصيب مهارات Nami أبطالًا حلفاء، يكسبون سرعة حركة لفترة قصيرة."
+      },
+      {
+        "slot": "1",
+        "name": "Aqua Prison",
+        "description": "Sends a bubble to a target area, dealing damage and stunning all enemies on impact.",
+        "icon": "icons/abilities/nami_1.png",
+        "description_ar": "ترسل فقاعة إلى منطقة مستهدفة، فتسبب ضرر وتشلّ كل الأعداء عند الاصطدام."
+      },
+      {
+        "slot": "2",
+        "name": "Ebb and Flow",
+        "description": "Unleashes a stream of water that bounces back and forth between allied and enemy champions, healing allies and damaging enemies.",
+        "icon": "icons/abilities/nami_2.png",
+        "description_ar": "تطلق تيارًا من الماء يرتد ذهابًا وإيابًا بين أبطال الحلفاء والأعداء، فيعالج الحلفاء ويضر الأعداء."
+      },
+      {
+        "slot": "3",
+        "name": "Tidecaller's Blessing",
+        "description": "Empowers an allied champion for a short duration. The ally's basic attacks and spells deal bonus magic damage and slow the target.",
+        "icon": "icons/abilities/nami_3.png",
+        "description_ar": "تعزّز بطلًا حليفًا لفترة قصيرة. هجمات الحليف العادية ومهاراته تسبب ضرر سحري إضافي وتبطّئ الهدف."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Tidal Wave",
+        "description": "Summons a massive Tidal Wave that knocks up, slows, and damages enemies. Allies hit gain double the effect of Surging Tides.",
+        "icon": "icons/abilities/nami_ultimate.png",
+        "description_ar": "تستدعي Tidal Wave ضخمة تُطيح بالأعداء وتبطّئهم وتضرهم. الحلفاء المصابون يكسبون ضعف تأثير Surging Tides."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/356d557a4c38e27a001e6498ec6cb58a97814739-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "healer",
+      "cc_heavy",
+      "poke"
+    ]
+  },
+  {
+    "id": "nasus",
+    "name": "Nasus",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Soul Eater",
+        "description": "Gains bonus physical vamp.",
+        "icon": "icons/abilities/nasus_passive.png",
+        "description_ar": "يكسب امتصاصًا فيزيائيًا إضافيًا."
+      },
+      {
+        "slot": "1",
+        "name": "Siphoning Strike",
+        "description": "Nasus strikes his foe, dealing damage and increasing the power of his future Siphoning Strikes if he slays his target.",
+        "icon": "icons/abilities/nasus_1.png",
+        "description_ar": "يضرب Nasus خصمه، فيسبب ضرر ويزيد قوة Siphoning Strikes المستقبلية إذا قتل هدفه."
+      },
+      {
+        "slot": "2",
+        "name": "Wither",
+        "description": "Nasus ages an enemy champion, decelerating their Movement and Attack Speeds over time.",
+        "icon": "icons/abilities/nasus_2.png",
+        "description_ar": "يُشيّخ Nasus بطلًا عدوًا، فيبطّئ سرعة حركته وسرعة هجومه مع الوقت."
+      },
+      {
+        "slot": "3",
+        "name": "Spirit Fire",
+        "description": "Nasus unleashes a spirit flame at a location, dealing damage and reducing the Armor of enemies who stand on it.",
+        "icon": "icons/abilities/nasus_3.png",
+        "description_ar": "يطلق Nasus لهب روح في موقع، فيسبب ضرر ويقلّل دروع (Armor) الأعداء الواقفين عليه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Fury of the Sands",
+        "description": "Nasus unleashes a mighty sandstorm that batters nearby enemies. While the storm rages, he gains increased Health, Attack Range, damages nearby enemies, has a reduced cooldown on Siphoning Strike, and gains bonus Armor and Magic Resistance for the duration.",
+        "icon": "icons/abilities/nasus_ultimate.png",
+        "description_ar": "يطلق Nasus عاصفة رملية قوية تضرب الأعداء القريبين. أثناء احتدام العاصفة، يكسب صحة ومدى هجوم أكبر، ويسبب ضرر للأعداء القريبين، ويقل وقت تبريد Siphoning Strike، ويكسب دروعًا (Armor) ومقاومة سحر (MR) إضافية طوال المدة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/11c5035096b35403af6d6fc19a4c9e474c6ce658-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "tanky",
+      "sustained_dps",
+      "healer"
+    ]
+  },
+  {
     "id": "nautilus",
     "name": "Nautilus",
     "roles": [
@@ -2730,6 +4048,59 @@
       "dmg_ap",
       "poke",
       "burst",
+      "mobile",
+      "healer"
+    ]
+  },
+  {
+    "id": "nilah",
+    "name": "Nilah",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "JOY UNENDING",
+        "description": "Nilah gains increased experience from last-hitting minions along with the ability to enhance and share nearby healing and shielding from her allies.",
+        "icon": "icons/abilities/nilah_passive.png",
+        "description_ar": "تكسب Nilah خبرة أكبر من توجيه الضربة الأخيرة للتوابع، مع القدرة على تعزيز العلاج ودروع الحماية القادمة من حلفائها القريبين ومشاركتها."
+      },
+      {
+        "slot": "1",
+        "name": "FORMLESS BLADE",
+        "description": "With a snap of her whip-blade, Nilah damages any enemies she hits in a straight line in her chosen direction. This action extends her attack range for a short duration.",
+        "icon": "icons/abilities/nilah_1.png",
+        "description_ar": "بفرقعة من سوطها الشفرة، تسبب Nilah ضرر لأي أعداء تصيبهم في خط مستقيم في الاتجاه الذي تختاره. تزيد هذه الحركة مدى هجومها لفترة قصيرة."
+      },
+      {
+        "slot": "2",
+        "name": "JUBILANT VEIL",
+        "description": "Nilah envelops herself in mist, increasing her movement speed and allowing her to gracefully dodge all incoming attacks. Any allies she touches during the mist's duration will also gain this effect.",
+        "icon": "icons/abilities/nilah_2.png",
+        "description_ar": "تلتف Nilah بالضباب، فتزيد سرعة حركتها وتتفادى برشاقة كل الهجمات الداخلة. أي حلفاء تلمسهم خلال مدة الضباب يكسبون هذا التأثير أيضًا."
+      },
+      {
+        "slot": "3",
+        "name": "SLIPSTREAM",
+        "description": "Nilah enthusiastically dashes toward her target, dealing damage to any enemies she passes through on the way.",
+        "icon": "icons/abilities/nilah_3.png",
+        "description_ar": "تندفع Nilah بحماس نحو هدفها، فتسبب ضرر لأي أعداء تمر بهم في الطريق."
+      },
+      {
+        "slot": "ultimate",
+        "name": "APOTHEOSIS",
+        "description": "Twirling her whip-blade in joyful exuberance, Nilah deals damage to enemies around her before pulling them closer with her weapon.",
+        "icon": "icons/abilities/nilah_ultimate.png",
+        "description_ar": "تدور Nilah بسوطها الشفرة بفرح غامر، فتسبب ضرر للأعداء حولها قبل أن تسحبهم أقرب بسلاحها."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ab18652f86c0d9840b79d9e1eeabdf3e780b9db2-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
       "mobile",
       "healer"
     ]
@@ -3000,6 +4371,58 @@
     ]
   },
   {
+    "id": "ornn",
+    "name": "Ornn",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "LIVING FORGE",
+        "description": "Ornn gains additional bonus Armor and Magic Resistance from all sources. Ornn can spend gold to forge non-consumable items anywhere. Additionally, when Ornn reaches a certain level, forging items will grant a nearby ally the ability to buy one item from anywhere on the map. This will trigger every few levels.",
+        "icon": "icons/abilities/ornn_passive.png",
+        "description_ar": "يكسب Ornn دروعًا (Armor) ومقاومة سحر (MR) إضافية من كل المصادر. يستطيع Ornn إنفاق الذهب لصناعة آيتمات غير قابلة للاستهلاك في أي مكان. وبالإضافة لذلك، عندما يصل Ornn إلى مستوى معين، تمنح صناعة الآيتمات حليفًا قريبًا القدرة على شراء آيتم واحد من أي مكان في الخريطة. يتفعّل هذا كل بضعة مستويات."
+      },
+      {
+        "slot": "1",
+        "name": "VOLCANIC RUPTURE",
+        "description": "Ornn slams the ground, sending out a fissure dealing damage and slowing enemies hit. After a small delay, a magma pillar forms at the end location.",
+        "icon": "icons/abilities/ornn_1.png",
+        "description_ar": "يضرب Ornn الأرض، فيرسل صدعًا يسبب ضرر ويبطّئ الأعداء المصابين. بعد تأخير بسيط، يتكوّن عمود حمم في موقع النهاية."
+      },
+      {
+        "slot": "2",
+        "name": "BELLOWS BREATH",
+        "description": "Ornn advances, breathing fire. Enemies hit by the final gout of flame become Brittle.",
+        "icon": "icons/abilities/ornn_2.png",
+        "description_ar": "يتقدم Ornn وهو ينفث النار. الأعداء المصابون بآخر دفقة لهب يصبحون Brittle."
+      },
+      {
+        "slot": "3",
+        "name": "SEARING CHARGE",
+        "description": "Ornn charges, dealing damage to enemies he passes through. If Ornn collides with terrain while charging, the impact creates a shockwave around him which deals damage and knocks up enemies.",
+        "icon": "icons/abilities/ornn_3.png",
+        "description_ar": "ينطلق Ornn، فيسبب ضرر للأعداء الذين يمر بهم. إذا اصطدم Ornn بالتضاريس أثناء الاندفاع، يصنع الاصطدام موجة صدمة حوله تسبب ضرر وتُطيح بالأعداء."
+      },
+      {
+        "slot": "ultimate",
+        "name": "CALL OF THE FORGE GOD",
+        "description": "Ornn summons a massive elemental at a location which travels toward him with increasing speed. Enemies run over by the elemental take damage, are slowed and are made Brittle. Ornn can recast the ability to charge into the elemental, redirecting it in the direction he hits it, causing the elemental to affect any enemies it runs over to be knocked up, dealing the same damage and re-applying Brittle.",
+        "icon": "icons/abilities/ornn_ultimate.png",
+        "description_ar": "يستدعي Ornn كائنًا عنصريًا ضخمًا في موقع يتجه نحوه بسرعة متزايدة. الأعداء الذين يدهسهم الكائن يتلقّون ضرر ويتباطؤون ويصبحون Brittle. يستطيع Ornn إعادة استخدام المهارة للاندفاع نحو الكائن وتوجيهه في الاتجاه الذي يضربه فيه، فيُطيح الكائن بأي أعداء يدهسهم، ويسبب نفس الضرر ويطبّق Brittle مرة أخرى."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/be99d24fc00bc88a562e1fe0c1a0cfc2eb82a57d-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy"
+    ]
+  },
+  {
     "id": "pantheon",
     "name": "Pantheon",
     "roles": [
@@ -3108,6 +4531,113 @@
     ]
   },
   {
+    "id": "pyke",
+    "name": "Pyke",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "GIFT OF THE DROWNED ONES",
+        "description": "When Pyke is hidden from enemies, he regenerates damage that he has recently taken from champions. Pyke also cannot gain extra Maximum Health from any source, and instead gains Bonus AD.",
+        "icon": "icons/abilities/pyke_passive.png",
+        "description_ar": "عندما يكون Pyke مختبئًا عن الأعداء، يجدد الضرر الذي تلقّاه مؤخرًا من الأبطال. كما لا يستطيع Pyke اكتساب أقصى صحة إضافية من أي مصدر، ويكسب بدلًا من ذلك AD إضافيًا."
+      },
+      {
+        "slot": "1",
+        "name": "BONE SKEWER",
+        "description": "Pyke either stabs an enemy in front of him or pulls an enemy towards him.",
+        "icon": "icons/abilities/pyke_1.png",
+        "description_ar": "يطعن Pyke عدوًا أمامه أو يسحب عدوًا نحوه."
+      },
+      {
+        "slot": "2",
+        "name": "GHOSTWATER DIVE",
+        "description": "Pyke enters Camouflage and gains significant movement speed that decays over time.",
+        "icon": "icons/abilities/pyke_2.png",
+        "description_ar": "يدخل Pyke في تمويه ويكسب سرعة حركة كبيرة تتناقص مع الوقت."
+      },
+      {
+        "slot": "3",
+        "name": "PHANTOM UNDERTOW",
+        "description": "Pyke dashes and leaves behind a phantom that will return to him, stunning enemy champions along its path.",
+        "icon": "icons/abilities/pyke_3.png",
+        "description_ar": "يندفع Pyke ويترك خلفه شبحًا يعود إليه، فيشلّ أبطال الأعداء في طريقه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "DEATH FROM BELOW",
+        "description": "Pyke blinks to and executes low health enemies, allowing him to cast this spell again and granting additional gold to an ally who assists.",
+        "icon": "icons/abilities/pyke_ultimate.png",
+        "description_ar": "ينتقل Pyke فوريًا إلى الأعداء قليلي الصحة ويُعدمهم (إعدام)، فيستطيع استخدام هذه المهارة مرة أخرى ويمنح ذهبًا إضافيًا لحليف شارك في القتل."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c3f5603716698795f749be1658cbd8296491f7a8-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "cc_heavy",
+      "mobile",
+      "stealth"
+    ]
+  },
+  {
+    "id": "rakan",
+    "name": "Rakan",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "FEY FEATHERS",
+        "description": "Rakan periodically gains a shield.\n\nLover's Leap: Rakan can join Xayah's recall.",
+        "icon": "icons/abilities/rakan_passive.png",
+        "description_ar": "تكسب Rakan درع حماية بشكل دوري.\n\nLover's Leap: تستطيع Rakan الانضمام إلى العودة للقاعدة (recall) الخاصة بـXayah."
+      },
+      {
+        "slot": "1",
+        "name": "GLEAMING QUILL",
+        "description": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies.",
+        "icon": "icons/abilities/rakan_1.png",
+        "description_ar": "يرمي ريشة سحرية تسبب ضرر سحري. إصابة بطل أو وحش ملحمي تمكّن Rakan من علاج حلفائه."
+      },
+      {
+        "slot": "2",
+        "name": "GRAND ENTRANCE",
+        "description": "Dashes to a location, knocking up nearby enemies on arrival.",
+        "icon": "icons/abilities/rakan_2.png",
+        "description_ar": "يندفع إلى موقع، فيُطيح بالأعداء القريبين عند الوصول."
+      },
+      {
+        "slot": "3",
+        "name": "BATTLE DANCE",
+        "description": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.\n\nWhen cast on Xayah, the shield amount is doubled and the cooldown is reduced.",
+        "icon": "icons/abilities/rakan_3.png",
+        "description_ar": "يطير إلى بطل حليف ويمنحه درع حماية. يمكن إعادة استخدامه مجانًا لفترة قصيرة.\n\nعند استخدامه على Xayah، تتضاعف قيمة الدرع ويقل وقت التبريد."
+      },
+      {
+        "slot": "ultimate",
+        "name": "THE QUICKNESS",
+        "description": "Gains movement speed, charming and dealing magic damage to enemies touched.",
+        "icon": "icons/abilities/rakan_ultimate.png",
+        "description_ar": "يكسب سرعة حركة، ويسحر الأعداء الذين يلمسهم ويسبب لهم ضرر سحري."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/e2505693c2fa65dfa3ac5865f448666683759b5e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "shielder",
+      "cc_heavy",
+      "mobile"
+    ]
+  },
+  {
     "id": "rammus",
     "name": "Rammus",
     "roles": [
@@ -3157,6 +4687,111 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
+    ]
+  },
+  {
+    "id": "rell",
+    "name": "Rell",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "BREAK THE MOLD",
+        "description": "Rell's Basic Attacks and Abilities deal additional Magic Damage and steal Enemy Champion’s Armor and Magic Resist on hit. Refreshes on subsequent hits and stacks up to 5 times. Basic attacks deal Bonus Magic Damage.",
+        "icon": "icons/abilities/rell_passive.png",
+        "description_ar": "هجمات Rell العادية ومهاراتها تسبب ضرر سحري إضافي وتسرق دروع (Armor) ومقاومة سحر (MR) بطل العدو عند الضربة. تتجدد مع الضربات التالية وتتراكم حتى 5 مرات. الهجمات العادية تسبب ضرر سحري إضافي."
+      },
+      {
+        "slot": "1",
+        "name": "SHATTERING STRIKE",
+        "description": "Rell throws her lance, dealing Magic Damage to enemies hit, breaking Enemy Shields and stunning them.",
+        "icon": "icons/abilities/rell_1.png",
+        "description_ar": "ترمي Rell رمحها، فتسبب ضرر سحري للأعداء المصابين، وتكسر دروع حماية الأعداء وتشلّهم."
+      },
+      {
+        "slot": "2",
+        "name": "FERROMANCY: CRASHDOWN",
+        "description": "Mounted\nPassive: Rell gains Move Speed.\nActive: Rell dismounts, leaping towards target location, knocking enemies up and gains a Shield.\n\nDismounted\nPassive: While dismounted, Rell gains Armor, Magic Resist, Attack Speed, and Attack Range, but is slowed.\nActive: Rell forms her Mount, gaining a burst of speed and her next basic attack knocks up enemies hit.",
+        "icon": "icons/abilities/rell_2.png",
+        "description_ar": "على الحصان\nمهارة سلبية: تكسب Rell سرعة حركة.\nالتفعيل: تترجل Rell وتقفز نحو الموقع المستهدف، فتُطيح بالأعداء وتكسب درع حماية.\n\nبدون حصان\nمهارة سلبية: أثناء الترجل، تكسب Rell دروعًا (Armor) ومقاومة سحر (MR) وسرعة هجوم ومدى هجوم، لكنها تتباطأ.\nالتفعيل: تشكّل Rell حصانها، فتكسب دفعة سرعة وتُطيح هجمتها العادية التالية بالأعداء المصابين."
+      },
+      {
+        "slot": "3",
+        "name": "FULL TILT",
+        "description": "Rells grants herself and ally Move Speed, doubled toward enemies and each other. Her next Basic Attack or Shattering Strike explodes, dealing Magic Damage.",
+        "icon": "icons/abilities/rell_3.png",
+        "description_ar": "تمنح Rell نفسها وحليفها سرعة حركة، تتضاعف نحو الأعداء ونحو بعضهما. هجمتها العادية التالية أو Shattering Strike تنفجر وتسبب ضرر سحري."
+      },
+      {
+        "slot": "ultimate",
+        "name": "MAGNET STORM",
+        "description": "Rell explodes in a magnetic fury, pulling nearby enemies toward herself. Rell continues pulling in nearby enemy champions, dealing Magic Damage.",
+        "icon": "icons/abilities/rell_ultimate.png",
+        "description_ar": "تنفجر Rell في غضب مغناطيسي، فتسحب الأعداء القريبين نحوها. تواصل Rell سحب أبطال الأعداء القريبين وتسبب لهم ضرر سحري."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0b00075ef09190e496e780436963b3dcb2d35b68-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "renekton",
+    "name": "Renekton",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "REIGN OF ANGER",
+        "description": "Renekton's attacks generate Fury, increased when he is low on life. This Fury can empower his abilities with bonus effects.",
+        "icon": "icons/abilities/renekton_passive.png",
+        "description_ar": "هجمات Renekton تولّد Fury، تزيد عندما تكون صحته منخفضة. يمكن لهذا الـFury تعزيز مهاراته بتأثيرات إضافية."
+      },
+      {
+        "slot": "1",
+        "name": "CULL THE MEEK",
+        "description": "Renekton swings his blade, dealing moderate physical damage to all targets around him, and heals for a small portion of the damage dealt. If he has more than 50 Fury, his damage and heal are increased.",
+        "icon": "icons/abilities/renekton_1.png",
+        "description_ar": "يلوّح Renekton بشفرته، فيسبب ضرر فيزيائي متوسط لكل الأهداف حوله، ويعالج نفسه بجزء صغير من الضرر المسبَّب. إذا كان لديه أكثر من 50 Fury، يزيد ضرره وعلاجه."
+      },
+      {
+        "slot": "2",
+        "name": "RUTHLESS PREDATOR",
+        "description": "Renekton slashes his target twice, dealing moderate physical damage and a stun. If Renekton has more than 50 Fury, he slashes his target three times, dealing high physical damage, and stunning for longer.",
+        "icon": "icons/abilities/renekton_2.png",
+        "description_ar": "يضرب Renekton هدفه مرتين، فيسبب ضرر فيزيائي متوسط وشللًا. إذا كان لدى Renekton أكثر من 50 Fury، يضرب هدفه ثلاث مرات، فيسبب ضرر فيزيائي عالٍ ويشلّه لمدة أطول."
+      },
+      {
+        "slot": "3",
+        "name": "SLICE AND DICE",
+        "description": "Renekton dashes, dealing damage to units along the way. Empowered, Renekton deals bonus damage and reduces the Armor of units hit.",
+        "icon": "icons/abilities/renekton_3.png",
+        "description_ar": "يندفع Renekton، فيسبب ضرر للوحدات في الطريق. عند التعزيز، يسبب Renekton ضرر إضافي ويقلّل دروع (Armor) الوحدات المصابة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "DOMINUS",
+        "description": "Renekton transforms into the Tyrant form, gaining bonus Health and dealing damage to enemies around him. While in this form, Renekton gains Fury periodically.",
+        "icon": "icons/abilities/renekton_ultimate.png",
+        "description_ar": "يتحول Renekton إلى هيئة Tyrant، فيكسب صحة إضافية ويسبب ضرر للأعداء حوله. أثناء هذه الهيئة، يكسب Renekton Fury بشكل دوري."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/d71da849a00e19983454e03e157ed91b55afb8e2-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "tanky",
+      "healer",
+      "burst"
     ]
   },
   {
@@ -3268,6 +4903,58 @@
     ]
   },
   {
+    "id": "rumble",
+    "name": "Rumble",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "JUNKYARD TITAN",
+        "description": "Every spell Rumble casts grants him Heat. When he reaches 50 Heat he enters the Danger Zone, granting all his basic abilities bonus effects. When he reaches 150 Heat, he starts Overheating, gaining bonus Attack Speed and granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds.",
+        "icon": "icons/abilities/rumble_passive.png",
+        "description_ar": "كل مهارة يستخدمها Rumble تمنحه Heat. عندما يصل إلى 50 Heat يدخل Danger Zone، فتكسب كل مهاراته الأساسية تأثيرات إضافية. وعندما يصل إلى 150 Heat يبدأ في Overheating، فيكسب سرعة هجوم إضافية وتسبب هجماته العادية ضرر إضافي، لكنه لا يستطيع استخدام المهارات لثوانٍ قليلة."
+      },
+      {
+        "slot": "1",
+        "name": "FLAMESPITTER",
+        "description": "Rumble torches opponents in front of him, dealing magic damage in a cone for 3 seconds. While in Danger Zone this damage is increased.",
+        "icon": "icons/abilities/rumble_1.png",
+        "description_ar": "يحرق Rumble الخصوم أمامه، فيسبب ضرر سحري في مخروط لمدة 3 ث. أثناء Danger Zone يزيد هذا الضرر."
+      },
+      {
+        "slot": "2",
+        "name": "SCRAP SHIELD",
+        "description": "Rumble pulls up a shield, protecting him from damage and granting him a quick burst of speed. While in Danger Zone, the shield strength and speed bonus is increased.",
+        "icon": "icons/abilities/rumble_2.png",
+        "description_ar": "يرفع Rumble درعًا يحميه من الضرر ويمنحه دفعة سرعة سريعة. أثناء Danger Zone، تزيد قوة الدرع ومكافأة السرعة."
+      },
+      {
+        "slot": "3",
+        "name": "ELECTRO HARPOON",
+        "description": "Rumble launches a harpoon, electrocuting his target with magic damage, slowing their Move Speed, and reducing their Magic Resist. Rumble can carry 2 harpoons at a time. While in Danger Zone the damage and slow percentage is increased.",
+        "icon": "icons/abilities/rumble_3.png",
+        "description_ar": "يطلق Rumble رمحًا مائيًا، فيصعق هدفه بضرر سحري، ويبطّئ سرعة حركته ويقلّل مقاومة سحره (MR). يستطيع Rumble حمل 2 رمح في وقت واحد. أثناء Danger Zone تزيد نسبة الضرر والإبطاء."
+      },
+      {
+        "slot": "ultimate",
+        "name": "THE EQUALIZER",
+        "description": "Rumble fires off a group of rockets, creating a wall of flames that damages and slows enemies.",
+        "icon": "icons/abilities/rumble_ultimate.png",
+        "description_ar": "يطلق Rumble مجموعة صواريخ، فينشئ جدارًا من اللهب يسبب ضرر ويبطّئ الأعداء."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/82ce17611af10fd53bd213ee25a95938b587a421-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "sustained_dps",
+      "shielder"
+    ]
+  },
+  {
     "id": "ryze",
     "name": "Ryze",
     "roles": [
@@ -3316,6 +5003,114 @@
       "build_ap",
       "dmg_ap",
       "burst"
+    ]
+  },
+  {
+    "id": "samira",
+    "name": "Samira",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DAREDEVIL IMPULSE",
+        "description": "Samira builds a combo by hitting attacks or abilities unique from the previous hit. Samira's attacks in melee range deal additional magic damage. Samira's attacks against enemies affected by Immobilizing effects will dash her to her attack range. If the enemy is Knocked Up, she also keeps them Knocked Up briefly.",
+        "icon": "icons/abilities/samira_passive.png",
+        "description_ar": "تبني Samira كومبو بإصابة هجمات أو مهارات تختلف عن الإصابة السابقة. هجمات Samira في المدى القريب تسبب ضرر سحري إضافي. هجمات Samira ضد الأعداء المتأثرين بشلّ الحركة تجعلها تندفع إلى مدى هجومها. إذا كان العدو مُطاحًا به في الهوا، تُبقيه مُطاحًا به لفترة قصيرة."
+      },
+      {
+        "slot": "1",
+        "name": "FLAIR",
+        "description": "Samira fires a shot or swings her sword, dealing damage. If cast during Wild Rush, strike all enemies in her path upon completion.",
+        "icon": "icons/abilities/samira_1.png",
+        "description_ar": "تطلق Samira طلقة أو تلوّح بسيفها، فتسبب ضرر. إذا استُخدمت أثناء Wild Rush، تضرب كل الأعداء في طريقها عند الانتهاء."
+      },
+      {
+        "slot": "2",
+        "name": "BLADE WHIRL",
+        "description": "Samira slashes around her, damaging enemies and destroying enemy missiles.",
+        "icon": "icons/abilities/samira_2.png",
+        "description_ar": "تضرب Samira حولها، فتسبب ضرر للأعداء وتدمّر قذائف الأعداء."
+      },
+      {
+        "slot": "3",
+        "name": "WILD RUSH",
+        "description": "Samira dashes through an enemy (including structures), slashing enemies she passes through and gaining Attack Speed. Killing an enemy champion refreshes this ability's cooldown.",
+        "icon": "icons/abilities/samira_3.png",
+        "description_ar": "تندفع Samira عبر عدو (بما في ذلك المباني)، فتضرب الأعداء الذين تمر بهم وتكسب سرعة هجوم. قتل بطل عدو يجدد وقت تبريد هذه المهارة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "INFERNO TRIGGER",
+        "description": "Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her.",
+        "icon": "icons/abilities/samira_ultimate.png",
+        "description_ar": "تطلق Samira سيلًا من الطلقات من أسلحتها، فتطلق النار بجنون على كل الأعداء المحيطين بها."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/b9ce1da2229255f5dc81bee1b5cecee3ed39e035-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "burst",
+      "sustained_dps",
+      "mobile",
+      "healer"
+    ]
+  },
+  {
+    "id": "senna",
+    "name": "Senna",
+    "roles": [
+      "DRAGON",
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ABSOLUTION",
+        "description": "When units die near Senna, their souls are periodically trapped by the Black Mist. Senna can attack these souls to free them, absorbing the Mist that held them in death. Mist fuels her Relic Cannon's power with increased Attack Damage, Attack Range, and Critical Strike Chance. Attacks from Senna's Relic Cannon take longer to fire, deals bonus damage, and briefly grant her a portion of her target's Movement Speed.",
+        "icon": "icons/abilities/senna_passive.png",
+        "description_ar": "عندما تموت الوحدات قرب Senna، تُحبس أرواحها بشكل دوري بواسطة Black Mist. تستطيع Senna مهاجمة هذه الأرواح لتحريرها، فتمتص الضباب الذي حبسها عند الموت. يغذّي الضباب قوة Relic Cannon لديها بزيادة في قوة الهجوم (AD) ومدى الهجوم وفرصة الضربة الحرجة. هجمات Relic Cannon الخاصة بـSenna تستغرق وقتًا أطول للإطلاق وتسبب ضرر إضافي وتمنحها لفترة قصيرة جزءًا من سرعة حركة هدفها."
+      },
+      {
+        "slot": "1",
+        "name": "PIERCING DARKNESS",
+        "description": "Piercing Darkness’s cast range matches Senna’s attack range and its cast time is improved with Attack Speed. It can target anything and applies on-hit effects to enemy champions.",
+        "icon": "icons/abilities/senna_1.png",
+        "description_ar": "يتطابق مدى استخدام Piercing Darkness مع مدى هجوم Senna وتتحسن سرعة استخدامه مع سرعة الهجوم. يمكنه استهداف أي شيء ويطبّق تأثيرات on-hit على أبطال الأعداء."
+      },
+      {
+        "slot": "2",
+        "name": "LAST EMBRACE",
+        "description": "Senna sends forth a wave of Black Mist. If it hits an enemy it latches onto them hungrily, rooting them and everything nearby after a brief delay.",
+        "icon": "icons/abilities/senna_2.png",
+        "description_ar": "ترسل Senna موجة من Black Mist. إذا أصابت عدوًا تلتصق به بنهم، فتثبّته وكل ما حوله بعد تأخير قصير."
+      },
+      {
+        "slot": "3",
+        "name": "CURSE OF THE BLACK MIST",
+        "description": "Senna draws the Mist she has stored in her weapon into a storm around her, embracing darkness and becoming a wraith within. Allies who enter the area are camouflaged and also appear as wraiths as the Mist shrouds them. Wraiths gain increased movement speed, are unselectable, and hide their identities.",
+        "icon": "icons/abilities/senna_3.png",
+        "description_ar": "تسحب Senna الضباب المخزّن في سلاحها إلى عاصفة حولها، وتحتضن الظلام وتصبح شبحًا بداخلها. الحلفاء الذين يدخلون المنطقة يتمّوهون ويظهرون أيضًا كأشباح بينما يحجبهم الضباب. الأشباح تكسب سرعة حركة أكبر، ولا يمكن تحديدها، وتخفي هوياتها."
+      },
+      {
+        "slot": "ultimate",
+        "name": "DAWNING SHADOW",
+        "description": "Senna calls upon the relic stones of fallen Sentinels, splitting her relic cannon into a holy array of shadow and light. She then fires a global beam that shields allies from harm, while damaging enemies caught in the center.",
+        "icon": "icons/abilities/senna_ultimate.png",
+        "description_ar": "تستدعي Senna أحجار الآثار الخاصة بالحراس الساقطين، فتقسم مدفع الأثر الخاص بها إلى مصفوفة مقدسة من الظل والنور. ثم تطلق شعاعًا عالميًا يحمي الحلفاء من الأذى بدرع حماية، بينما يسبب ضرر للأعداء في المركز."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/61ec8874d20f8d60a2d2a0021af82bad225d10d1-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "poke",
+      "healer",
+      "sustained_dps"
     ]
   },
   {
@@ -3371,6 +5166,59 @@
       "shielder",
       "cc_heavy",
       "poke"
+    ]
+  },
+  {
+    "id": "sett",
+    "name": "Sett",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "PIT GRIT",
+        "description": "Sett's basic attacks alternate between left and right punch. Right punch is slightly stronger and faster. Sett also hates losing, gaining additional health regeneration based off of his missing health.",
+        "icon": "icons/abilities/sett_passive.png",
+        "description_ar": "هجمات Sett العادية تتبادل بين لكمة يسرى ويمنى. اللكمة اليمنى أقوى وأسرع قليلًا. كما يكره Sett الخسارة، فيكسب تجدد صحة إضافي بحسب صحته المفقودة."
+      },
+      {
+        "slot": "1",
+        "name": "KNUCKLE DOWN",
+        "description": "Sett's next two attacks deal additional damage based off of the target's max health. Sett also gains movement speed while moving towards enemy champions.",
+        "icon": "icons/abilities/sett_1.png",
+        "description_ar": "هجمتا Sett التاليتان تسببان ضرر إضافي بحسب أقصى صحة الهدف. كما يكسب Sett سرعة حركة أثناء التحرك نحو أبطال الأعداء."
+      },
+      {
+        "slot": "2",
+        "name": "HAYMAKER",
+        "description": "Sett passively stores damage he takes as Grit. On cast, Sett expends all stored Grit to gain a shield and punch an area, dealing true damage in the center and physical damage on the sides.",
+        "icon": "icons/abilities/sett_2.png",
+        "description_ar": "يخزّن Sett الضرر الذي يتلقّاه كـGrit كمهارة سلبية. عند الاستخدام، ينفق Sett كل Grit المخزّن ليكسب درع حماية ويلكم منطقة، فيسبب ضرر حقيقي في المركز وضرر فيزيائي على الجوانب."
+      },
+      {
+        "slot": "3",
+        "name": "FACEBREAKER",
+        "description": "Sett pulls in all enemies on opposite sides of him, dealing damage and stunning them. If enemies were only on one side, they are slowed instead of stunned.",
+        "icon": "icons/abilities/sett_3.png",
+        "description_ar": "يسحب Sett كل الأعداء على الجانبين المتقابلين له، فيسبب ضرر ويشلّهم. إذا كان الأعداء على جانب واحد فقط، يتباطؤون بدلًا من أن يُشلّوا."
+      },
+      {
+        "slot": "ultimate",
+        "name": "THE SHOW STOPPER",
+        "description": "Sett carries an enemy champion through the air and slams them into the ground, dealing damage and slowing all enemies near where they land.",
+        "icon": "icons/abilities/sett_ultimate.png",
+        "description_ar": "يحمل Sett بطلًا عدوًا في الهوا ويضرب به الأرض، فيسبب ضرر ويبطّئ كل الأعداء قرب مكان هبوطه."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1a8806fa26c29d3cf363480f91e7af339a59e0f2-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "tanky",
+      "shielder",
+      "cc_heavy"
     ]
   },
   {
@@ -3481,6 +5329,58 @@
     ]
   },
   {
+    "id": "singed",
+    "name": "Singed",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Noxious Slipstream",
+        "description": "Singed drafts off nearby champions, gaining a burst of movement speed when passing them.",
+        "icon": "icons/abilities/singed_passive.png",
+        "description_ar": "يستفيد Singed من تيار الهواء خلف الأبطال القريبين، فيكسب دفعة سرعة حركة عند تجاوزهم."
+      },
+      {
+        "slot": "1",
+        "name": "Poison Trail",
+        "description": "Leaves a trail of poison behind Singed, dealing damage to enemies caught in the path.",
+        "icon": "icons/abilities/singed_1.png",
+        "description_ar": "يترك أثرًا من السم خلف Singed، فيسبب ضرر للأعداء العالقين في الطريق."
+      },
+      {
+        "slot": "2",
+        "name": "Mega Adhesive",
+        "description": "Throws a vial of mega adhesive on the ground, slowing and grounding enemies who walk on it.",
+        "icon": "icons/abilities/singed_2.png",
+        "description_ar": "يرمي قارورة من مادة لاصقة فائقة على الأرض، فتبطّئ الأعداء الذين يمشون عليها وتثبّتهم على الأرض."
+      },
+      {
+        "slot": "3",
+        "name": "Fling",
+        "description": "Damages target enemy unit and flings them into the air behind Singed. If the target Singed flings lands in his Mega Adhesive, they are also rooted.",
+        "icon": "icons/abilities/singed_3.png",
+        "description_ar": "يسبب ضرر لوحدة عدو مستهدفة ويقذفها في الهوا خلف Singed. إذا هبط الهدف الذي يقذفه Singed في Mega Adhesive الخاص به، يُثبَّت أيضًا."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Insanity Potion",
+        "description": "Singed drinks a potent brew of chemicals, granting him increased combat stats.",
+        "icon": "icons/abilities/singed_ultimate.png",
+        "description_ar": "يشرب Singed مزيجًا قويًا من المواد الكيميائية، فتزيد إحصائياته القتالية."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/0acabb2aef28c1cdabcfa1cc97a3c55b946fa5aa-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "tanky",
+      "cc_heavy"
+    ]
+  },
+  {
     "id": "sion",
     "name": "Sion",
     "roles": [
@@ -3531,6 +5431,58 @@
       "dmg_ad",
       "tanky",
       "cc_heavy",
+      "shielder"
+    ]
+  },
+  {
+    "id": "sivir",
+    "name": "Sivir",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "FLEET OF FOOT",
+        "description": "Sivir gains a short burst of Move Speed when she attacks an enemy champion.",
+        "icon": "icons/abilities/sivir_passive.png",
+        "description_ar": "تكسب Sivir دفعة قصيرة من سرعة الحركة عندما تهاجم بطلًا عدوًا."
+      },
+      {
+        "slot": "1",
+        "name": "BOOMERANG BLADE",
+        "description": "Sivir hurls her crossblade like a boomerang, dealing damage each way.",
+        "icon": "icons/abilities/sivir_1.png",
+        "description_ar": "ترمي Sivir شفرتها المتقاطعة كالبوميرانج، فتسبب ضرر في كل اتجاه."
+      },
+      {
+        "slot": "2",
+        "name": "RICOCHET",
+        "description": "Sivir's next few basic attacks gain additional attack speed and bounce to nearby targets, dealing reduced damage while bouncing.",
+        "icon": "icons/abilities/sivir_2.png",
+        "description_ar": "هجمات Sivir العادية القليلة التالية تكسب سرعة هجوم إضافية وترتد إلى الأهداف القريبة، فتسبب ضرر أقل أثناء الارتداد."
+      },
+      {
+        "slot": "3",
+        "name": "SPELL SHIELD",
+        "description": "Creates a magical barrier that blocks a single enemy ability cast on Sivir. She receives health and a burst of movement speed if a spell is blocked.",
+        "icon": "icons/abilities/sivir_3.png",
+        "description_ar": "ينشئ حاجزًا سحريًا يصدّ مهارة عدو واحدة موجّهة إلى Sivir. تكسب صحة ودفعة سرعة حركة إذا صُدّت مهارة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "ON THE HUNT",
+        "description": "Sivir leads her allies in battle, granting them a burst of move speed for a short time. In addition, her ability cooldowns are reduced.\nSivir gains morale when damaging an enemy, granting a buff to allies and refreshing her ultimate at max morale.",
+        "icon": "icons/abilities/sivir_ultimate.png",
+        "description_ar": "تقود Sivir حلفاءها في المعركة، فتمنحهم دفعة سرعة حركة لفترة قصيرة. وبالإضافة لذلك، تقل أوقات تبريد مهاراتها.\nتكسب Sivir معنويات عند إلحاق ضرر بعدو، فتمنح الحلفاء تعزيزًا وتجدد مهارتها النهائية (Ult) عند أقصى معنويات."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/d427ef3a36baeabb16d24e702e0a66a7a89f4db8-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
       "shielder"
     ]
   },
@@ -3586,6 +5538,164 @@
       "tanky",
       "cc_heavy",
       "shielder"
+    ]
+  },
+  {
+    "id": "smolder",
+    "name": "Smolder",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DRAGON PRACTICE",
+        "description": "Hitting champions with abilities and killing enemies with Super Scorcher Breath grants a stack of Dragon Practice. Stacks increase the damage of Smolder’s basic abilities.",
+        "icon": "icons/abilities/smolder_passive.png",
+        "description_ar": "إصابة الأبطال بالمهارات وقتل الأعداء بـSuper Scorcher Breath يمنح شحنة من Dragon Practice. تزيد الشحنات ضرر مهارات Smolder الأساسية."
+      },
+      {
+        "slot": "1",
+        "name": "SUPER SCORCHER BREATH",
+        "description": "Smolder breathes fire on an enemy, dealing both physical and magic damage. If the target is killed Smolder refunds mana. As he gains more stacks, this ability becomes more powerful.\nPassive: Level 1 stacks–ability deals damage to all enemies in the area. Level 2 stacks–ability triggers explosions behind the target. Level 3 stacks–abilitiy burns target for true damage, executing low-health enemy champions.",
+        "icon": "icons/abilities/smolder_1.png",
+        "description_ar": "ينفث Smolder النار على عدو، فيسبب ضرر فيزيائي وسحري معًا. إذا قُتل الهدف يُعيد Smolder المانا. كلما كسب شحنات أكثر، تصبح هذه المهارة أقوى.\nمهارة سلبية: شحنات المستوى 1 – تسبب المهارة ضرر لكل الأعداء في المنطقة. شحنات المستوى 2 – تطلق المهارة انفجارات خلف الهدف. شحنات المستوى 3 – تحرق المهارة الهدف بضرر حقيقي، فتُعدم أبطال الأعداء قليلي الصحة (إعدام)."
+      },
+      {
+        "slot": "2",
+        "name": "ACHOOO!",
+        "description": "Smolder lets out an adorable flaming sneeze that explodes when hitting enemy champions. Subsequent explosions deal smaller amounts of damage.\nPassive: the explosion deals bonus magic damage.",
+        "icon": "icons/abilities/smolder_2.png",
+        "description_ar": "يطلق Smolder عطسة لهب لطيفة تنفجر عند إصابة أبطال الأعداء. الانفجارات التالية تسبب كميات ضرر أصغر.\nمهارة سلبية: الانفجار يسبب ضرر سحري إضافي."
+      },
+      {
+        "slot": "3",
+        "name": "FLAP, FLAP, FLAP",
+        "description": "Smolder takes flight ignoring terrain and bombarding the lowest health enemy. In flight Smolder’s vision range is increased.\nPassive: deal bonus magic damage for each hit and gain extra bolts.",
+        "icon": "icons/abilities/smolder_3.png",
+        "description_ar": "يحلّق Smolder متجاهلًا التضاريس ويقصف العدو الأقل صحة. أثناء الطيران يزيد مدى رؤية Smolder.\nمهارة سلبية: يسبب ضرر سحري إضافي مع كل إصابة ويكسب سهامًا إضافية."
+      },
+      {
+        "slot": "ultimate",
+        "name": "MMOOOMMMM!",
+        "description": "Smolder calls his mom to breathe fire from above, dealing extra damage and slowing enemies in the center of her fire. Getting hit by the fire himself, Smolder gains health.",
+        "icon": "icons/abilities/smolder_ultimate.png",
+        "description_ar": "يستدعي Smolder أمه لتنفث النار من الأعلى، فتسبب ضرر إضافي وتبطّئ الأعداء في مركز نارها. عند إصابته هو بالنار، يكسب Smolder صحة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/471870cc28273c1a64bc9ace981133492225081c-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "dmg_ap",
+      "sustained_dps",
+      "poke"
+    ]
+  },
+  {
+    "id": "sona",
+    "name": "Sona",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Power Chord",
+        "description": "After 3 spell casts, Sona's next attack will deal bonus magic damage and stun the target.",
+        "icon": "icons/abilities/sona_passive.png",
+        "description_ar": "بعد 3 استخدامات للمهارات، هجمة Sona التالية تسبب ضرر سحري إضافي وتشلّ الهدف."
+      },
+      {
+        "slot": "1",
+        "name": "Hymn of Valor",
+        "description": "Sona plays the Hymn of Valor, sends out bolts of sound, dealing magic damage to two nearby enemies, prioritizing champions and monsters. Sona gains a temporary aura that grants allies tagged by the zone bonus damage on their next attack against enemies.",
+        "icon": "icons/abilities/sona_1.png",
+        "description_ar": "تعزف Sona Hymn of Valor، وتطلق شعاعات صوتية تسبب ضرر سحري لعدوين قريبين، مع أولوية للأبطال والوحوش. تكسب Sona هالة مؤقتة تمنح الحلفاء الموسومين بالمنطقة ضرر إضافي في هجمتهم التالية ضد الأعداء."
+      },
+      {
+        "slot": "2",
+        "name": "Aria of Perseverance",
+        "description": "Sona plays the Aria of Perseverance, sending out protective melodies, healing Sona and a nearby wounded ally. Sona gains a temporary aura that grants allies tagged by the zone a temporary shield.",
+        "icon": "icons/abilities/sona_2.png",
+        "description_ar": "تعزف Sona Aria of Perseverance، وتطلق ألحانًا واقية تعالج Sona وحليفًا مصابًا قريبًا. تكسب Sona هالة مؤقتة تمنح الحلفاء الموسومين بالمنطقة درع حماية مؤقتًا."
+      },
+      {
+        "slot": "3",
+        "name": "Song of Celerity",
+        "description": "Sona plays the Song of Celerity, granting nearby allies bonus Movement Speed. Sona gains a temporary aura that grants allied champions tagged by the zone bonus Movement Speed.",
+        "icon": "icons/abilities/sona_3.png",
+        "description_ar": "تعزف Sona Song of Celerity، فتمنح الحلفاء القريبين سرعة حركة إضافية. تكسب Sona هالة مؤقتة تمنح الأبطال الحلفاء الموسومين بالمنطقة سرعة حركة إضافية."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Crescendo",
+        "description": "Passive: Sona’s halo strengthens, providing higher buffs. Sona’s ultimate chord advances slowly to the target point, dealing damage on its way. Every enemy hit for the first time is stunned.",
+        "icon": "icons/abilities/sona_ultimate.png",
+        "description_ar": "مهارة سلبية: تقوى هالة Sona، فتمنح تعزيزات أعلى. تتقدم نغمة Sona النهائية ببطء نحو النقطة المستهدفة، فتسبب ضرر في طريقها. كل عدو يُصاب للمرة الأولى يُشلّ."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/30d7e7b516c26e695678bf138cda3d27aceb8dbd-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "healer",
+      "shielder",
+      "cc_heavy",
+      "poke"
+    ]
+  },
+  {
+    "id": "soraka",
+    "name": "Soraka",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Salvation",
+        "description": "Soraka runs faster towards nearby low health allies.",
+        "icon": "icons/abilities/soraka_passive.png",
+        "description_ar": "تركض Soraka أسرع نحو الحلفاء القريبين قليلي الصحة."
+      },
+      {
+        "slot": "1",
+        "name": "Starcall",
+        "description": "A star falls from the sky at the target location dealing magic damage and slowing enemies. If an enemy champion is hit by Starcall, Soraka is rejuvenated and recovers Health. After healing 3 ally champions, her next Starcall is empowered and deals more damage in a larger area.",
+        "icon": "icons/abilities/soraka_1.png",
+        "description_ar": "يسقط نجم من السماء في الموقع المستهدف، فيسبب ضرر سحري ويبطّئ الأعداء. إذا أصاب Starcall بطلًا عدوًا، تتجدد Soraka وتسترجع الصحة. بعد علاج 3 أبطال حلفاء، يتعزز Starcall التالي ويسبب ضرر أكبر في منطقة أكبر."
+      },
+      {
+        "slot": "2",
+        "name": "Astral Infusion",
+        "description": "Soraka heals a friendly champion. Excess healing is converted into a shield.",
+        "icon": "icons/abilities/soraka_2.png",
+        "description_ar": "تعالج Soraka بطلًا صديقًا. العلاج الزائد يتحول إلى درع حماية."
+      },
+      {
+        "slot": "3",
+        "name": "Equinox",
+        "description": "Creates a zone at a location that damages and silences all enemies inside. When the zone expires, all enemies still inside are rooted.",
+        "icon": "icons/abilities/soraka_3.png",
+        "description_ar": "ينشئ منطقة في موقع تسبب ضرر وتُسكت كل الأعداء بداخلها. عند انتهاء المنطقة، يُثبَّت كل الأعداء الذين ما زالوا بداخلها."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Wish",
+        "description": "Soraka fills her allies with hope, instantly restoring health to herself and all friendly champions.",
+        "icon": "icons/abilities/soraka_ultimate.png",
+        "description_ar": "تملأ Soraka حلفاءها بالأمل، فتسترجع الصحة فورًا لنفسها ولكل الأبطال الأصدقاء."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1cae735dc336de0b27054053760eb5bb69f5296f-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "healer"
     ]
   },
   {
@@ -3909,6 +6019,110 @@
     ]
   },
   {
+    "id": "thresh",
+    "name": "Thresh",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DAMNATION",
+        "description": "Thresh can harvest the souls of enemies that die near him, permanently granting him Armor and Ability Power.",
+        "icon": "icons/abilities/thresh_passive.png",
+        "description_ar": "يستطيع Thresh حصد أرواح الأعداء الذين يموتون قربه، فيكسب بشكل دائم دروعًا (Armor) وقوة مهارات (AP)."
+      },
+      {
+        "slot": "1",
+        "name": "DEATH SENTENCE",
+        "description": "Thresh binds an enemy in chains and pulls them toward him. Activating this ability a second time pulls Thresh to the enemy.",
+        "icon": "icons/abilities/thresh_1.png",
+        "description_ar": "يقيّد Thresh عدوًا بالسلاسل ويسحبه نحوه. تفعيل هذه المهارة مرة ثانية يسحب Thresh إلى العدو."
+      },
+      {
+        "slot": "2",
+        "name": "DARK PASSAGE",
+        "description": "Throws a Lantern to a target location. If an ally collects it Thresh will pull the ally to him.",
+        "icon": "icons/abilities/thresh_2.png",
+        "description_ar": "يرمي فانوسًا إلى موقع مستهدف. إذا جمعه حليف، يسحب Thresh الحليف نحوه."
+      },
+      {
+        "slot": "3",
+        "name": "FLAY",
+        "description": "Thresh's attacks wind up, dealing more damage the longer he waits between attacks. When activated, Thresh sweeps his chain, knocking all enemies hit in the direction of the blow.",
+        "icon": "icons/abilities/thresh_3.png",
+        "description_ar": "هجمات Thresh تتجهز، فتسبب ضرر أكبر كلما انتظر مدة أطول بين الهجمات. عند التفعيل، يجرف Thresh سلسلته، فيدفع كل الأعداء المصابين في اتجاه الضربة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "THE BOX",
+        "description": "A prison of walls that slow and deal damage if broken.",
+        "icon": "icons/abilities/thresh_ultimate.png",
+        "description_ar": "سجن من الجدران يبطّئ ويسبب ضرر إذا كُسر."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/6d56721ba65a6740d8696205c2b0d4b60181330e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_tank",
+      "dmg_ap",
+      "cc_heavy"
+    ]
+  },
+  {
+    "id": "tristana",
+    "name": "Tristana",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Low",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "DRAW A BEAD",
+        "description": "Increases Tristana's range for her attacks, Explosive Charge, and Buster Shot as she levels.",
+        "icon": "icons/abilities/tristana_passive.png",
+        "description_ar": "يزيد مدى هجمات Tristana وExplosive Charge وBuster Shot مع رفع مستواها."
+      },
+      {
+        "slot": "1",
+        "name": "RAPID FIRE",
+        "description": "Tristana increases her Attack Speed for a short time.",
+        "icon": "icons/abilities/tristana_1.png",
+        "description_ar": "تزيد Tristana سرعة هجومها لفترة قصيرة."
+      },
+      {
+        "slot": "2",
+        "name": "ROCKET JUMP",
+        "description": "Tristana fires at the ground to propel her to a distant location, dealing damage and slowing surrounding units for a brief period where she lands. Takedowns and fully stacked Explosive Charge detonations on champions reset Rocket Jump's cooldown.",
+        "icon": "icons/abilities/tristana_2.png",
+        "description_ar": "تطلق Tristana النار على الأرض لتندفع إلى موقع بعيد، فتسبب ضرر وتبطّئ الوحدات المحيطة لفترة قصيرة عند هبوطها. المشاركة في قتل (Takedown) وتفجيرات Explosive Charge كاملة الشحنات على الأبطال تعيد ضبط وقت تبريد Rocket Jump."
+      },
+      {
+        "slot": "3",
+        "name": "EXPLOSIVE CHARGE",
+        "description": "When Tristana kills a unit, her cannonballs burst into shrapnel, dealing damage to surrounding enemies. Can be activated to place a bomb on a target enemy or turret that explodes after a short duration dealing damage to surrounding units.",
+        "icon": "icons/abilities/tristana_3.png",
+        "description_ar": "عندما تقتل Tristana وحدة، تنفجر قذائفها إلى شظايا، فتسبب ضرر للأعداء المحيطين. يمكن تفعيلها لوضع قنبلة على عدو أو برج مستهدف تنفجر بعد مدة قصيرة وتسبب ضرر للوحدات المحيطة."
+      },
+      {
+        "slot": "ultimate",
+        "name": "BUSTER SHOT",
+        "description": "Tristana loads a massive cannonball into her weapon and fires it at an enemy unit. This deals Magic Damage and knocks the target back.",
+        "icon": "icons/abilities/tristana_ultimate.png",
+        "description_ar": "تحمّل Tristana قذيفة مدفع ضخمة في سلاحها وتطلقها على وحدة عدو. تسبب ضرر سحري وتدفع الهدف للخلف."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/17b80232bc951c5feefdfb43eb03abab8f3420fd-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "burst",
+      "mobile"
+    ]
+  },
+  {
     "id": "tryndamere",
     "name": "Tryndamere",
     "roles": [
@@ -4065,6 +6279,167 @@
       "sustained_dps",
       "stealth",
       "true_damage"
+    ]
+  },
+  {
+    "id": "urgot",
+    "name": "Urgot",
+    "roles": [
+      "BARON"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "ECHOING FLAMES",
+        "description": "Urgot's basic attacks and Purge periodically trigger blasts of flame from his legs, dealing physical damage.",
+        "icon": "icons/abilities/urgot_passive.png",
+        "description_ar": "هجمات Urgot العادية وPurge تطلق دوريًا انفجارات لهب من ساقيه، فتسبب ضرر فيزيائي."
+      },
+      {
+        "slot": "1",
+        "name": "CORROSIVE CHARGE",
+        "description": "Fires an explosive charge at the target location, dealing physical damage and slowing enemies caught in the explosion.",
+        "icon": "icons/abilities/urgot_1.png",
+        "description_ar": "يطلق شحنة متفجرة في الموقع المستهدف، فتسبب ضرر فيزيائي وتبطّئ الأعداء العالقين في الانفجار."
+      },
+      {
+        "slot": "2",
+        "name": "PURGE",
+        "description": "Urgot slows himself while he unloads his weapon on nearby enemies. Prioritizes enemy champions Urgot has recently struck with other abilities and triggers Echoing Flames.",
+        "icon": "icons/abilities/urgot_2.png",
+        "description_ar": "يبطّئ Urgot نفسه بينما يفرغ سلاحه على الأعداء القريبين. يعطي أولوية لأبطال الأعداء الذين أصابهم Urgot مؤخرًا بمهارات أخرى ويفعّل Echoing Flames."
+      },
+      {
+        "slot": "3",
+        "name": "DISDAIN",
+        "description": "Urgot charges in a direction, shielding himself and trampling non-champion enemies. If he catches an enemy champion, he will stop and hurl them out of his way.",
+        "icon": "icons/abilities/urgot_3.png",
+        "description_ar": "ينطلق Urgot في اتجاه معين، فيحمي نفسه بدرع حماية ويدهس الأعداء من غير الأبطال. إذا أمسك ببطل عدو، يتوقف ويقذفه بعيدًا عن طريقه."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FEAR BEYOND DEATH",
+        "description": "Urgot fires a chem-drill that impales the first enemy champion hit. If that champion falls below a health threshold, Urgot judges them weak and can execute them.",
+        "icon": "icons/abilities/urgot_ultimate.png",
+        "description_ar": "يطلق Urgot مثقابًا كيميائيًا يخترق أول بطل عدو يُصاب. إذا انخفض ذلك البطل تحت حد صحة معين، يحكم Urgot بضعفه ويستطيع إعدامه (إعدام)."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7b5459e9b96913e08af78bba1323387f02bf712e-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_bruiser",
+      "dmg_ad",
+      "tanky",
+      "cc_heavy",
+      "sustained_dps",
+      "healer"
+    ]
+  },
+  {
+    "id": "varus",
+    "name": "Varus",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Living Vengeance",
+        "description": "On kill or assist, Varus temporarily gains Attack Speed. This bonus is larger if the enemy is a champion.",
+        "icon": "icons/abilities/varus_passive.png",
+        "description_ar": "عند القتل أو المشاركة فيه، يكسب Varus سرعة هجوم مؤقتًا. تكون هذه المكافأة أكبر إذا كان العدو بطلًا."
+      },
+      {
+        "slot": "1",
+        "name": "Piercing Arrow",
+        "description": "Varus readies and then fires a powerful shot that gains extra range and damage the longer he spends preparing to fire.",
+        "icon": "icons/abilities/varus_1.png",
+        "description_ar": "يجهّز Varus ثم يطلق طلقة قوية تكسب مدى وضرر إضافيين كلما قضى وقتًا أطول في التجهيز."
+      },
+      {
+        "slot": "2",
+        "name": "Blighted Quiver",
+        "description": "Passive: Varus' basic attacks deal bonus magic damage and apply Blight. Varus' other abilities detonate Blight, dealing magic damage based on the target's maximum Health. Active: Varus empowers his next Piercing Arrow.",
+        "icon": "icons/abilities/varus_2.png",
+        "description_ar": "مهارة سلبية: هجمات Varus العادية تسبب ضرر سحري إضافي وتطبّق Blight. مهارات Varus الأخرى تفجّر Blight، فتسبب ضرر سحري بحسب أقصى صحة الهدف. التفعيل: يعزّز Varus سهم Piercing Arrow التالي."
+      },
+      {
+        "slot": "3",
+        "name": "Hail of Arrows",
+        "description": "Varus fires a hail of arrows that deal physical damage and desecrate the ground. Desecrated ground slows enemies' Movement Speed and reduces their self healing and regeneration.",
+        "icon": "icons/abilities/varus_3.png",
+        "description_ar": "يطلق Varus وابلًا من السهام يسبب ضرر فيزيائي وينجّس الأرض. الأرض المنجّسة تبطّئ سرعة حركة الأعداء وتقلّل علاجهم الذاتي وتجددهم."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Chain of Corruption",
+        "description": "Varus flings out a damaging tendril of corruption that immobilizes the first enemy champion hit and then spreads towards nearby uninfected champions, immobilizing them too on contact.",
+        "icon": "icons/abilities/varus_ultimate.png",
+        "description_ar": "يرمي Varus مجسّ فساد مسبب للضرر يشلّ حركة أول بطل عدو يُصاب، ثم ينتشر نحو الأبطال القريبين غير المصابين، فيشلّ حركتهم أيضًا عند التلامس."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/306929e43330e836c567b237f622e8372f2b0fb8-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "poke",
+      "cc_heavy",
+      "burst"
+    ]
+  },
+  {
+    "id": "vayne",
+    "name": "Vayne",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Night Hunter",
+        "description": "Vayne ruthlessly hunts evil-doers, gaining 30 Move Speed when moving toward nearby enemy champions.",
+        "icon": "icons/abilities/vayne_passive.png",
+        "description_ar": "تطارد Vayne فاعلي الشر بلا رحمة، فتكسب 30 سرعة حركة عند التحرك نحو أبطال الأعداء القريبين."
+      },
+      {
+        "slot": "1",
+        "name": "Tumble",
+        "description": "Vayne tumbles, maneuvering to carefully place her next shot. Her next attack deals bonus damage.",
+        "icon": "icons/abilities/vayne_1.png",
+        "description_ar": "تتدحرج Vayne، وتناور لتضع طلقتها التالية بعناية. هجمتها التالية تسبب ضرر إضافي."
+      },
+      {
+        "slot": "2",
+        "name": "Silver Bolts",
+        "description": "Vayne tips her bolts with a rare metal, toxic to evil things. The third consecutive attack or ability against the same target deals a percentage of the target's max health as bonus true damage. Activating this ability gives Vayne bonus Attack Speed and she heals for some of Silver Bolts' damage.",
+        "icon": "icons/abilities/vayne_2.png",
+        "description_ar": "تغطي Vayne أسهمها بمعدن نادر سام للكائنات الشريرة. الهجمة أو المهارة الثالثة المتتالية ضد نفس الهدف تسبب نسبة من أقصى صحة الهدف كضرر حقيقي إضافي. تفعيل هذه المهارة يمنح Vayne سرعة هجوم إضافية وتعالج نفسها بجزء من ضرر Silver Bolts."
+      },
+      {
+        "slot": "3",
+        "name": "Condemn",
+        "description": "Vayne draws a heavy crossbow from her back, and fires a huge bolt at her target, knocking them back and dealing damage. If they collide with terrain, they are impaled, dealing bonus damage and stunning them.",
+        "icon": "icons/abilities/vayne_3.png",
+        "description_ar": "تسحب Vayne نشابًا ثقيلًا من ظهرها، وتطلق سهمًا ضخمًا على هدفها، فتدفعه للخلف وتسبب ضرر. إذا اصطدم بالتضاريس، يُخترق، فيسبب ضرر إضافي ويُشلّ."
+      },
+      {
+        "slot": "ultimate",
+        "name": "Final Hour",
+        "description": "Readying herself for an epic confrontation, Vayne gains increased Attack Damage, Invisibility during Tumble, and more bonus Movement Speed from Night Hunter. When an enemy champion damaged by Vayne dies within a few seconds, Final Hour's duration is extended.",
+        "icon": "icons/abilities/vayne_ultimate.png",
+        "description_ar": "تستعد Vayne لمواجهة ملحمية، فتكسب قوة هجوم (AD) أكبر، وتخفّيًا أثناء Tumble، وسرعة حركة إضافية أكبر من Night Hunter. عندما يموت بطل عدو أصابته Vayne خلال ثوانٍ قليلة، تمتد مدة Final Hour."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/9353f647f42e40569934d15dc5b8d3fe77faaa48-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "true_damage",
+      "sustained_dps",
+      "mobile",
+      "stealth"
     ]
   },
   {
@@ -4605,6 +6980,58 @@
     ]
   },
   {
+    "id": "xayah",
+    "name": "Xayah",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "CLEAN CUTS",
+        "description": "After using an ability, Xayah's next basic attacks will hit all targets along their path and leave a Feather.\n\nLover's Leap: Xayah can join Rakan's recall.",
+        "icon": "icons/abilities/xayah_passive.png",
+        "description_ar": "بعد استخدام مهارة، هجمات Xayah العادية التالية تصيب كل الأهداف في طريقها وتترك Feather.\n\nLover's Leap: تستطيع Xayah الانضمام إلى العودة للقاعدة (recall) الخاصة بـRakan."
+      },
+      {
+        "slot": "1",
+        "name": "DOUBLE DAGGERS",
+        "description": "Xayah throws two damaging daggers that also drop Feathers she can recall.",
+        "icon": "icons/abilities/xayah_1.png",
+        "description_ar": "ترمي Xayah خنجرين مسببين للضرر يُسقطان أيضًا Feathers تستطيع استدعاءها."
+      },
+      {
+        "slot": "2",
+        "name": "DEADLY PLUMAGE",
+        "description": "Xayah creates a storm of blades that increase her basic attack speed and damage while granting her movement speed if she attacks a champion.\n\nIf an ally Rakan is nearby, he also gains the effects of this ability.",
+        "icon": "icons/abilities/xayah_2.png",
+        "description_ar": "تنشئ Xayah عاصفة من الشفرات تزيد سرعة هجومها العادي وضرره، وتمنحها سرعة حركة إذا هاجمت بطلًا.\n\nإذا كان الحليف Rakan قريبًا، يكسب أيضًا تأثيرات هذه المهارة."
+      },
+      {
+        "slot": "3",
+        "name": "BLADECALLER",
+        "description": "Xayah calls back all her dropped Feathers dealing damage and rooting enemies if hit with 3 or more.",
+        "icon": "icons/abilities/xayah_3.png",
+        "description_ar": "تستدعي Xayah كل Feathers التي أسقطتها، فتسبب ضرر وتثبّت الأعداء إذا أصابت 3 أو أكثر."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FEATHERSTORM",
+        "description": "Xayah leaps into the air becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall.",
+        "icon": "icons/abilities/xayah_ultimate.png",
+        "description_ar": "تقفز Xayah في الهوا فتصبح لا يمكن استهدافها وترمي مروحة من الخناجر، وتُسقط Feathers تستطيع استدعاءها."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/e215e85898f1f9a52924136d1c6dab0dcf782ed6-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "cc_heavy"
+    ]
+  },
+  {
     "id": "xin-zhao",
     "name": "Xin Zhao",
     "roles": [
@@ -4768,6 +7195,111 @@
     ]
   },
   {
+    "id": "yunara",
+    "name": "Yunara",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "VOW OF THE FIRST LANDS",
+        "description": "Yunara's Critical Strikes deal bonus magic damage.",
+        "icon": "icons/abilities/yunara_passive.png",
+        "description_ar": "ضربات Yunara الحرجة تسبب ضرر سحري إضافي."
+      },
+      {
+        "slot": "1",
+        "name": "CULTIVATION OF SPIRIT",
+        "description": "Yunara gains Attack Speed, bonus damage On-Hit, and her Attacks spread to nearby enemies.",
+        "icon": "icons/abilities/yunara_1.png",
+        "description_ar": "تكسب Yunara سرعة هجوم وضرر إضافي عند الضربة (On-Hit)، وتنتشر هجماتها إلى الأعداء القريبين."
+      },
+      {
+        "slot": "2",
+        "name": "ARC OF JUDGMENT | ARC OF RUIN",
+        "description": "Yunara fires a spinning prayer bead that deals damage and slows enemies. While in her Transcendent State she instead fires off a laser that deals damage and slows enemies.",
+        "icon": "icons/abilities/yunara_2.png",
+        "description_ar": "تطلق Yunara حبة صلاة دوّارة تسبب ضرر وتبطّئ الأعداء. أثناء Transcendent State تطلق بدلًا من ذلك ليزرًا يسبب ضرر ويبطّئ الأعداء."
+      },
+      {
+        "slot": "3",
+        "name": "KANMEI'S STEPS | UNTOUCHABLE SHADOW",
+        "description": "Yunara gains Move Speed and becomes Ghosted. While in her Transcendent State she instead dashes in a direction.",
+        "icon": "icons/abilities/yunara_3.png",
+        "description_ar": "تكسب Yunara سرعة حركة وتصبح Ghosted. أثناء Transcendent State تندفع بدلًا من ذلك في اتجاه معين."
+      },
+      {
+        "slot": "ultimate",
+        "name": "TRANSCEND ONE'S SELF",
+        "description": "Yunara enters a Transcendent State that upgrades her basic Abilities.",
+        "icon": "icons/abilities/yunara_ultimate.png",
+        "description_ar": "تدخل Yunara في Transcendent State يرقّي مهاراتها الأساسية."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/50157a1e1a9597825b3bcfac15b87c0cbac94450-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_onhit",
+      "dmg_ad",
+      "dmg_ap",
+      "sustained_dps",
+      "mobile"
+    ]
+  },
+  {
+    "id": "yuumi",
+    "name": "Yuumi",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "High",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "Feline Friendship",
+        "description": "Periodically, Yuumi’s Basic Attacks and Abilities will Shield Yuumi. If Yuumi is Attached to an ally or attaches within a few seconds they are Shielded for the same amount. While Attached to an ally, Yuumi grants them Friendship stacks when they kill enemy champions or minions. The ally with the highest Friendship stack becomes Yuumi’s Best Friend, which empowers her abilities towards them.",
+        "icon": "icons/abilities/yuumi_passive.png",
+        "description_ar": "بشكل دوري، هجمات Yuumi العادية ومهاراتها تحمي Yuumi بدرع حماية. إذا كانت Yuumi ملتصقة بحليف أو التصقت خلال ثوانٍ قليلة، يُحمى بنفس المقدار. أثناء الالتصاق بحليف، تمنحه Yuumi شحنات Friendship عندما يقتل أبطال أعداء أو توابع. الحليف صاحب أعلى شحنات Friendship يصبح Best Friend لـYuumi، فتتعزز مهاراتها تجاهه."
+      },
+      {
+        "slot": "1",
+        "name": "PROWLING PROJECTILE",
+        "description": "Yuumi fires a missile, dealing Magic Damage to the first target hit. It deals bonus damage and Slows if it takes at least 1 second to get to its target. While Attached, the missile can be controlled with your cursor. Best Friend Bonus: Applies Slow on hit, and when hitting an enemy champion, Yuumi’s Attached ally gains bonus Magic Damage toward them.",
+        "icon": "icons/abilities/yuumi_1.png",
+        "description_ar": "تطلق Yuumi قذيفة تسبب ضرر سحري لأول هدف يُصاب. تسبب ضرر إضافي وتبطّئ إذا استغرقت 1 ث على الأقل للوصول إلى هدفها. أثناء الالتصاق، يمكن التحكم بالقذيفة بمؤشر الماوس. مكافأة Best Friend: تطبّق إبطاءً عند الإصابة، وعند إصابة بطل عدو يكسب حليف Yuumi الملتصق ضرر سحري إضافي ضده."
+      },
+      {
+        "slot": "2",
+        "name": "YOU AND ME!",
+        "description": "Passive: While Yuumi is Attached to her Best Friend, She gains bonus Healing and Shielding, and her Best Friend also receives additional Healing effects. Active: Yuumi dashes to a target ally, becoming untargetable from everything except turrets.",
+        "icon": "icons/abilities/yuumi_2.png",
+        "description_ar": "مهارة سلبية: أثناء التصاق Yuumi بـBest Friend، تكسب علاجًا ودروع حماية إضافية، ويتلقّى Best Friend أيضًا تأثيرات علاج إضافية. التفعيل: تندفع Yuumi إلى حليف مستهدف، فتصبح لا يمكن استهدافها من أي شيء ما عدا الأبراج."
+      },
+      {
+        "slot": "3",
+        "name": "ZOOMIES",
+        "description": "Yuumi grants herself a Shield and gains Attack Speed. She also gains Move Speed while the Shield is active. If Yuumi is Attached, Zoomies affect her ally.",
+        "icon": "icons/abilities/yuumi_3.png",
+        "description_ar": "تمنح Yuumi نفسها درع حماية وتكسب سرعة هجوم. وتكسب أيضًا سرعة حركة طالما الدرع نشط. إذا كانت Yuumi ملتصقة، يؤثر Zoomies على حليفها."
+      },
+      {
+        "slot": "ultimate",
+        "name": "FINAL CHAPTER",
+        "description": "Yuumi launches five waves in the target direction. While Attached Yuumi can steer the direction of the waves. Detaching stops this bonus effect. Allied champions hit by the waves are Healed, with increased Healing for the Best Friend. Excess Healing converts into a Shield. Enemies struck by the waves take Magic Damage and are Slowed. The Slow stacks and refreshes on each hit.",
+        "icon": "icons/abilities/yuumi_ultimate.png",
+        "description_ar": "تطلق Yuumi خمس موجات في الاتجاه المستهدف. أثناء الالتصاق تستطيع Yuumi توجيه اتجاه الموجات. الانفصال يوقف هذا التأثير الإضافي. الأبطال الحلفاء المصابون بالموجات يُعالَجون، مع علاج أكبر لـBest Friend. العلاج الزائد يتحول إلى درع حماية. الأعداء المصابون بالموجات يتلقّون ضرر سحري ويتباطؤون. يتراكم الإبطاء ويتجدد مع كل إصابة."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/97c4e293f961cade702300981a4f2f80e8a844af-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_support",
+      "dmg_ap",
+      "healer",
+      "shielder"
+    ]
+  },
+  {
     "id": "zed",
     "name": "Zed",
     "roles": [
@@ -4822,6 +7354,59 @@
     ]
   },
   {
+    "id": "zeri",
+    "name": "Zeri",
+    "roles": [
+      "DRAGON"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "LIVING BATTERY",
+        "description": "Zeri gains Move Speed whenever she receives a shield. When she damages an enemy shield she absorbs its energy, shielding herself.",
+        "icon": "icons/abilities/zeri_passive.png",
+        "description_ar": "تكسب Zeri سرعة حركة كلما تلقّت درع حماية. عندما تضر درع عدو، تمتص طاقته وتحمي نفسها بدرع حماية."
+      },
+      {
+        "slot": "1",
+        "name": "BURST FIRE",
+        "description": "Zeri fires a burst of rounds that deals physical damage to the first enemy hit. There is a cap on the Attack Speed and bonus Attack Speed will be converted into Attack Damage; when actively cast, a lightning bolt will be fired, dealing magic damage and a slow.",
+        "icon": "icons/abilities/zeri_1.png",
+        "description_ar": "تطلق Zeri دفعة من الطلقات تسبب ضرر فيزيائي لأول عدو يُصاب. هناك حد أقصى لسرعة الهجوم وتتحول سرعة الهجوم الإضافية إلى قوة هجوم (AD)؛ عند الاستخدام الفعلي، يُطلق شعاع برق يسبب ضرر سحري وإبطاءً."
+      },
+      {
+        "slot": "2",
+        "name": "ULTRASHOCK LASER",
+        "description": "Zeri fires an electric pulse that slows and damages the first enemy hit. If the pulse hits a wall it expands into a long range laser.",
+        "icon": "icons/abilities/zeri_2.png",
+        "description_ar": "تطلق Zeri نبضة كهربائية تبطّئ وتضر أول عدو يُصاب. إذا أصابت النبضة حائطًا، تتوسع إلى ليزر بعيد المدى."
+      },
+      {
+        "slot": "3",
+        "name": "SPARK SURGE",
+        "description": "Zeri dashes a short distance and energizes her next 3 shots of Burst Fire, causing them to pierce through enemies. She will vault and grind over any terrain she touches.",
+        "icon": "icons/abilities/zeri_3.png",
+        "description_ar": "تندفع Zeri مسافة قصيرة وتشحن آخر 3 طلقات من Burst Fire، فتخترق الأعداء. ستقفز وتنزلق على أي تضاريس تلمسها."
+      },
+      {
+        "slot": "ultimate",
+        "name": "LIGHTNING CRASH",
+        "description": "Zeri discharges a nova of electricity and overcharges herself, gaining increased damage and stacking Move Speed that refreshes and gets stronger every time she hits an enemy champion. While overcharged, Burst fire becomes a faster triple shot that chains lightning between enemies.",
+        "icon": "icons/abilities/zeri_ultimate.png",
+        "description_ar": "تفرغ Zeri انفجارًا من الكهرباء وتشحن نفسها بشحنة زائدة، فتكسب ضرر أكبر وسرعة حركة متراكمة تتجدد وتقوى في كل مرة تصيب فيها بطلًا عدوًا. أثناء الشحنة الزائدة، يصبح Burst Fire طلقة ثلاثية أسرع تنقل البرق بين الأعداء."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ded1acb06a88316f32c54be24083209440fa19c2-285x323.jpg?accountingTag=WR",
+    "tags": [
+      "build_ad",
+      "dmg_ad",
+      "sustained_dps",
+      "mobile",
+      "poke"
+    ]
+  },
+  {
     "id": "ziggs",
     "name": "Ziggs",
     "roles": [
@@ -4870,6 +7455,58 @@
       "build_ap",
       "dmg_ap",
       "poke"
+    ]
+  },
+  {
+    "id": "zilean",
+    "name": "Zilean",
+    "roles": [
+      "SUPPORT"
+    ],
+    "difficulty": "Medium",
+    "abilities": [
+      {
+        "slot": "passive",
+        "name": "TIME IN A BOTTLE",
+        "description": "Zilean stores time as Experience and can grant it to his allies. Zilean can impart this Experience on the nearest allied champion when he has enough to complete their next level up. Zilean receives as much Experience as he gives.",
+        "icon": "icons/abilities/zilean_passive.png",
+        "description_ar": "يخزّن Zilean الوقت كخبرة ويستطيع منحها لحلفائه. يستطيع Zilean منح هذه الخبرة لأقرب بطل حليف عندما يملك ما يكفي لإكمال مستواه التالي. يتلقّى Zilean من الخبرة بقدر ما يعطي."
+      },
+      {
+        "slot": "1",
+        "name": "TIME BOMB",
+        "description": "Tosses a bomb to target area that sticks to units that come near it, prioritizing champions and units already carrying a bomb. When it detonates it deals magic damage to the target and nearby enemies. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies. The Time Bomb can be recharged 2 times.",
+        "icon": "icons/abilities/zilean_1.png",
+        "description_ar": "يرمي قنبلة إلى منطقة مستهدفة تلتصق بالوحدات التي تقترب منها، مع أولوية للأبطال والوحدات التي تحمل قنبلة بالفعل. عند انفجارها تسبب ضرر سحري للهدف والأعداء القريبين. إذا انفجرت Time Bomb مبكرًا بسبب Time Bomb أخرى، فإنها تشلّ الأعداء أيضًا. يمكن إعادة شحن Time Bomb 2 مرات."
+      },
+      {
+        "slot": "2",
+        "name": "TWISTED TIMEFLOW",
+        "description": "Makes time flow faster for himself, applying Fleeting Time to himself and gaining a damage absorbing shield. Zilean also grants Fleeting Time and identical shield to his nearest ally champion. Fleeting Time increases projectile speeds and grants move speed. Fleeting Time also increases Zilean’s ability haste.",
+        "icon": "icons/abilities/zilean_2.png",
+        "description_ar": "يجعل الوقت يتدفق أسرع لنفسه، فيطبّق Fleeting Time على نفسه ويكسب درع حماية يمتص الضرر. يمنح Zilean أيضًا Fleeting Time ودرع حماية مماثلًا لأقرب بطل حليف. يزيد Fleeting Time سرعة القذائف ويمنح سرعة حركة. كما يزيد Fleeting Time تسريع مهارات Zilean."
+      },
+      {
+        "slot": "3",
+        "name": "TEMPORAL MIRAGE",
+        "description": "Creates a time-bending force field at target location. Within the force field enemy champions and projectiles are slowed.",
+        "icon": "icons/abilities/zilean_3.png",
+        "description_ar": "ينشئ مجال قوة يلوي الزمن في موقع مستهدف. داخل مجال القوة، يتباطأ أبطال الأعداء والقذائف."
+      },
+      {
+        "slot": "ultimate",
+        "name": "CHRONOSHIFT",
+        "description": "Places a protective time rune on Zilean or an allied champion. If the rune bearer takes lethal damage during this time, they teleport back in time and become untargetable before they are revived and healed. If the rune bearer does not trigger the rune's revival effect, a part of Chronoshift's cooldown will be refunded.",
+        "icon": "icons/abilities/zilean_ultimate.png",
+        "description_ar": "يضع رمزًا زمنيًا واقيًا على Zilean أو بطل حليف. إذا تلقّى حامل الرمز ضررًا قاتلًا خلال هذه المدة، ينتقل عبر الزمن إلى الخلف ويصبح لا يمكن استهدافه قبل أن يُحيا ويُعالَج. إذا لم يفعّل حامل الرمز تأثير الإحياء الخاص به، يُرجَع جزء من وقت تبريد Chronoshift."
+      }
+    ],
+    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/968798e27ba225183db6ca6edfaa92def0acd74e-285x328.jpg?accountingTag=WR",
+    "tags": [
+      "build_ap",
+      "dmg_ap",
+      "shielder",
+      "cc_heavy"
     ]
   },
   {
