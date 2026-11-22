@@ -52,7 +52,17 @@
       "cc_heavy",
       "healer_heavy"
     ],
-    "slug": "aatrox"
+    "slug": "aatrox",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "ahri",
@@ -105,7 +115,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "ahri"
+    "slug": "ahri",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 85,
+      "true": 15
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "akali",
@@ -160,7 +180,17 @@
       "mobile",
       "stealth"
     ],
-    "slug": "akali"
+    "slug": "akali",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "akshan",
@@ -215,7 +245,17 @@
       "stealth",
       "poke"
     ],
-    "slug": "akshan"
+    "slug": "akshan",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "alistar",
@@ -269,7 +309,17 @@
       "cc_heavy",
       "healer"
     ],
-    "slug": "alistar"
+    "slug": "alistar",
+    "dmg_split": {
+      "ad": 25,
+      "ap": 75,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "ambessa",
@@ -323,7 +373,17 @@
       "mobile",
       "sustained_dps"
     ],
-    "slug": "ambessa"
+    "slug": "ambessa",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "amumu",
@@ -378,7 +438,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "amumu"
+    "slug": "amumu",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "annie",
@@ -432,7 +502,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "annie"
+    "slug": "annie",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "ashe",
@@ -487,7 +567,17 @@
       "poke",
       "cc_heavy"
     ],
-    "slug": "ashe"
+    "slug": "ashe",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "aurelion-sol",
@@ -540,7 +630,17 @@
       "poke",
       "cc_heavy"
     ],
-    "slug": "aurelion-sol"
+    "slug": "aurelion-sol",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "aurora",
@@ -596,7 +696,17 @@
       "stealth",
       "cc_heavy"
     ],
-    "slug": "aurora"
+    "slug": "aurora",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "bard",
@@ -649,7 +759,17 @@
       "cc_heavy",
       "mobile"
     ],
-    "slug": "bard"
+    "slug": "bard",
+    "dmg_split": {
+      "ad": 30,
+      "ap": 70,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "blitzcrank",
@@ -703,7 +823,17 @@
       "burst",
       "tanky"
     ],
-    "slug": "blitzcrank"
+    "slug": "blitzcrank",
+    "dmg_split": {
+      "ad": 20,
+      "ap": 80,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 1
+    }
   },
   {
     "id": "brand",
@@ -757,7 +887,17 @@
       "burst",
       "poke"
     ],
-    "slug": "brand"
+    "slug": "brand",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "braum",
@@ -811,7 +951,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "braum"
+    "slug": "braum",
+    "dmg_split": {
+      "ad": 30,
+      "ap": 70,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "caitlyn",
@@ -864,7 +1014,17 @@
       "sustained_dps",
       "poke"
     ],
-    "slug": "caitlyn"
+    "slug": "caitlyn",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 1,
+      "late": 3
+    }
   },
   {
     "id": "camille",
@@ -920,7 +1080,17 @@
       "mobile",
       "cc_heavy"
     ],
-    "slug": "camille"
+    "slug": "camille",
+    "dmg_split": {
+      "ad": 80,
+      "ap": 0,
+      "true": 20
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "chogath",
@@ -973,7 +1143,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "chogath"
+    "slug": "chogath",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 75,
+      "true": 25
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "corki",
@@ -1028,7 +1208,17 @@
       "true_damage",
       "poke"
     ],
-    "slug": "corki"
+    "slug": "corki",
+    "dmg_split": {
+      "ad": 50,
+      "ap": 50,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "darius",
@@ -1083,7 +1273,17 @@
       "healer",
       "sustained_dps"
     ],
-    "slug": "darius"
+    "slug": "darius",
+    "dmg_split": {
+      "ad": 85,
+      "ap": 0,
+      "true": 15
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "diana",
@@ -1138,7 +1338,17 @@
       "burst",
       "shielder"
     ],
-    "slug": "diana"
+    "slug": "diana",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "dr-mundo",
@@ -1194,7 +1404,17 @@
       "sustained_dps",
       "healer_heavy"
     ],
-    "slug": "dr-mundo"
+    "slug": "dr-mundo",
+    "dmg_split": {
+      "ad": 60,
+      "ap": 40,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "draven",
@@ -1247,7 +1467,17 @@
       "sustained_dps",
       "burst"
     ],
-    "slug": "draven"
+    "slug": "draven",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "ekko",
@@ -1304,7 +1534,17 @@
       "shielder",
       "healer"
     ],
-    "slug": "ekko"
+    "slug": "ekko",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "evelynn",
@@ -1357,7 +1597,17 @@
       "stealth",
       "burst"
     ],
-    "slug": "evelynn"
+    "slug": "evelynn",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "ezreal",
@@ -1411,7 +1661,17 @@
       "mobile",
       "sustained_dps"
     ],
-    "slug": "ezreal"
+    "slug": "ezreal",
+    "dmg_split": {
+      "ad": 75,
+      "ap": 25,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "fiddlesticks",
@@ -1466,7 +1726,17 @@
       "stealth",
       "burst"
     ],
-    "slug": "fiddlesticks"
+    "slug": "fiddlesticks",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "fiora",
@@ -1522,7 +1792,17 @@
       "healer",
       "healer_heavy"
     ],
-    "slug": "fiora"
+    "slug": "fiora",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 0,
+      "true": 30
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "fizz",
@@ -1577,7 +1857,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "fizz"
+    "slug": "fizz",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "galio",
@@ -1632,7 +1922,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "galio"
+    "slug": "galio",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "garen",
@@ -1687,7 +1987,17 @@
       "sustained_dps",
       "healer"
     ],
-    "slug": "garen"
+    "slug": "garen",
+    "dmg_split": {
+      "ad": 80,
+      "ap": 0,
+      "true": 20
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "gnar",
@@ -1741,7 +2051,17 @@
       "cc_heavy",
       "poke"
     ],
-    "slug": "gnar"
+    "slug": "gnar",
+    "dmg_split": {
+      "ad": 75,
+      "ap": 25,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "gragas",
@@ -1796,7 +2116,17 @@
       "cc_heavy",
       "healer"
     ],
-    "slug": "gragas"
+    "slug": "gragas",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "graves",
@@ -1850,7 +2180,17 @@
       "burst",
       "sustained_dps"
     ],
-    "slug": "graves"
+    "slug": "graves",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "gwen",
@@ -1906,7 +2246,17 @@
       "sustained_dps",
       "healer_heavy"
     ],
-    "slug": "gwen"
+    "slug": "gwen",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 80,
+      "true": 20
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "hecarim",
@@ -1959,7 +2309,17 @@
       "mobile",
       "cc_heavy"
     ],
-    "slug": "hecarim"
+    "slug": "hecarim",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "heimerdinger",
@@ -2011,7 +2371,17 @@
       "dmg_ap",
       "poke"
     ],
-    "slug": "heimerdinger"
+    "slug": "heimerdinger",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "hwei",
@@ -2065,7 +2435,17 @@
       "poke",
       "cc_heavy"
     ],
-    "slug": "hwei"
+    "slug": "hwei",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "irelia",
@@ -2120,7 +2500,17 @@
       "sustained_dps",
       "healer"
     ],
-    "slug": "irelia"
+    "slug": "irelia",
+    "dmg_split": {
+      "ad": 85,
+      "ap": 15,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "janna",
@@ -2173,7 +2563,17 @@
       "shielder",
       "cc_heavy"
     ],
-    "slug": "janna"
+    "slug": "janna",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "jarvan-iv",
@@ -2228,7 +2628,17 @@
       "shielder",
       "mobile"
     ],
-    "slug": "jarvan-iv"
+    "slug": "jarvan-iv",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "jax",
@@ -2282,7 +2692,17 @@
       "dmg_ap",
       "sustained_dps"
     ],
-    "slug": "jax"
+    "slug": "jax",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 30,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "jayce",
@@ -2336,7 +2756,17 @@
       "poke",
       "burst"
     ],
-    "slug": "jayce"
+    "slug": "jayce",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "jhin",
@@ -2389,7 +2819,17 @@
       "burst",
       "poke"
     ],
-    "slug": "jhin"
+    "slug": "jhin",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "jinx",
@@ -2441,7 +2881,17 @@
       "dmg_ad",
       "sustained_dps"
     ],
-    "slug": "jinx"
+    "slug": "jinx",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "kaisa",
@@ -2496,7 +2946,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "kaisa"
+    "slug": "kaisa",
+    "dmg_split": {
+      "ad": 60,
+      "ap": 40,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "kalista",
@@ -2549,7 +3009,17 @@
       "sustained_dps",
       "mobile"
     ],
-    "slug": "kalista"
+    "slug": "kalista",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "karma",
@@ -2603,7 +3073,17 @@
       "shielder",
       "poke"
     ],
-    "slug": "karma"
+    "slug": "karma",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "kassadin",
@@ -2658,7 +3138,17 @@
       "mobile",
       "shielder"
     ],
-    "slug": "kassadin"
+    "slug": "kassadin",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "katarina",
@@ -2711,7 +3201,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "katarina"
+    "slug": "katarina",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "kayle",
@@ -2766,7 +3266,17 @@
       "sustained_dps",
       "healer"
     ],
-    "slug": "kayle"
+    "slug": "kayle",
+    "dmg_split": {
+      "ad": 50,
+      "ap": 50,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "kayn",
@@ -2820,7 +3330,17 @@
       "healer",
       "healer_heavy"
     ],
-    "slug": "kayn"
+    "slug": "kayn",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "kennen",
@@ -2874,7 +3394,17 @@
       "poke",
       "cc_heavy"
     ],
-    "slug": "kennen"
+    "slug": "kennen",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "khazix",
@@ -2928,7 +3458,17 @@
       "stealth",
       "mobile"
     ],
-    "slug": "khazix"
+    "slug": "khazix",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "kindred",
@@ -2982,7 +3522,17 @@
       "mobile",
       "healer"
     ],
-    "slug": "kindred"
+    "slug": "kindred",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "kogmaw",
@@ -3035,7 +3585,17 @@
       "sustained_dps",
       "poke"
     ],
-    "slug": "kogmaw"
+    "slug": "kogmaw",
+    "dmg_split": {
+      "ad": 55,
+      "ap": 45,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "ksante",
@@ -3090,7 +3650,17 @@
       "mobile",
       "shielder"
     ],
-    "slug": "ksante"
+    "slug": "ksante",
+    "dmg_split": {
+      "ad": 85,
+      "ap": 0,
+      "true": 15
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "lee-sin",
@@ -3145,7 +3715,17 @@
       "shielder",
       "healer"
     ],
-    "slug": "lee-sin"
+    "slug": "lee-sin",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 1
+    }
   },
   {
     "id": "leona",
@@ -3198,7 +3778,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "leona"
+    "slug": "leona",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "lillia",
@@ -3254,7 +3844,17 @@
       "cc_heavy",
       "sustained_dps"
     ],
-    "slug": "lillia"
+    "slug": "lillia",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 85,
+      "true": 15
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "lissandra",
@@ -3308,7 +3908,17 @@
       "poke",
       "burst"
     ],
-    "slug": "lissandra"
+    "slug": "lissandra",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "lucian",
@@ -3362,7 +3972,17 @@
       "sustained_dps",
       "mobile"
     ],
-    "slug": "lucian"
+    "slug": "lucian",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "lulu",
@@ -3416,7 +4036,17 @@
       "cc_heavy",
       "poke"
     ],
-    "slug": "lulu"
+    "slug": "lulu",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "lux",
@@ -3471,7 +4101,17 @@
       "burst",
       "shielder"
     ],
-    "slug": "lux"
+    "slug": "lux",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "malphite",
@@ -3527,7 +4167,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "malphite"
+    "slug": "malphite",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "maokai",
@@ -3583,7 +4233,17 @@
       "cc_heavy",
       "healer"
     ],
-    "slug": "maokai"
+    "slug": "maokai",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "master-yi",
@@ -3638,7 +4298,17 @@
       "true_damage",
       "mobile"
     ],
-    "slug": "master-yi"
+    "slug": "master-yi",
+    "dmg_split": {
+      "ad": 90,
+      "ap": 0,
+      "true": 10
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "mel",
@@ -3692,7 +4362,17 @@
       "poke",
       "burst"
     ],
-    "slug": "mel"
+    "slug": "mel",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "milio",
@@ -3746,7 +4426,17 @@
       "healer",
       "healer_heavy"
     ],
-    "slug": "milio"
+    "slug": "milio",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "miss-fortune",
@@ -3800,7 +4490,17 @@
       "sustained_dps",
       "poke"
     ],
-    "slug": "miss-fortune"
+    "slug": "miss-fortune",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "mordekaiser",
@@ -3856,7 +4556,17 @@
       "cc_heavy",
       "sustained_dps"
     ],
-    "slug": "mordekaiser"
+    "slug": "mordekaiser",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "morgana",
@@ -3913,7 +4623,17 @@
       "healer",
       "poke"
     ],
-    "slug": "morgana"
+    "slug": "morgana",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "nami",
@@ -3967,7 +4687,17 @@
       "cc_heavy",
       "poke"
     ],
-    "slug": "nami"
+    "slug": "nami",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "nasus",
@@ -4021,7 +4751,17 @@
       "sustained_dps",
       "healer"
     ],
-    "slug": "nasus"
+    "slug": "nasus",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 30,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "nautilus",
@@ -4077,7 +4817,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "nautilus"
+    "slug": "nautilus",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "nidalee",
@@ -4132,7 +4882,17 @@
       "mobile",
       "healer"
     ],
-    "slug": "nidalee"
+    "slug": "nidalee",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "nilah",
@@ -4186,7 +4946,17 @@
       "mobile",
       "healer"
     ],
-    "slug": "nilah"
+    "slug": "nilah",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "nocturne",
@@ -4242,7 +5012,17 @@
       "shielder",
       "mobile"
     ],
-    "slug": "nocturne"
+    "slug": "nocturne",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "norra",
@@ -4294,7 +5074,17 @@
       "dmg_ap",
       "poke"
     ],
-    "slug": "norra"
+    "slug": "norra",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "nunu-and-willump",
@@ -4348,7 +5138,17 @@
       "cc_heavy",
       "healer"
     ],
-    "slug": "nunu-and-willump"
+    "slug": "nunu-and-willump",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 1
+    }
   },
   {
     "id": "olaf",
@@ -4404,7 +5204,17 @@
       "sustained_dps",
       "healer_heavy"
     ],
-    "slug": "olaf"
+    "slug": "olaf",
+    "dmg_split": {
+      "ad": 80,
+      "ap": 0,
+      "true": 20
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "orianna",
@@ -4457,7 +5267,17 @@
       "poke",
       "shielder"
     ],
-    "slug": "orianna"
+    "slug": "orianna",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "ornn",
@@ -4510,7 +5330,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "ornn"
+    "slug": "ornn",
+    "dmg_split": {
+      "ad": 40,
+      "ap": 60,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "pantheon",
@@ -4565,7 +5395,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "pantheon"
+    "slug": "pantheon",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 1
+    }
   },
   {
     "id": "poppy",
@@ -4620,7 +5460,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "poppy"
+    "slug": "poppy",
+    "dmg_split": {
+      "ad": 90,
+      "ap": 10,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "pyke",
@@ -4675,7 +5525,17 @@
       "mobile",
       "stealth"
     ],
-    "slug": "pyke"
+    "slug": "pyke",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "rakan",
@@ -4729,7 +5589,17 @@
       "cc_heavy",
       "mobile"
     ],
-    "slug": "rakan"
+    "slug": "rakan",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "rammus",
@@ -4782,7 +5652,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "rammus"
+    "slug": "rammus",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "rell",
@@ -4835,7 +5715,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "rell"
+    "slug": "rell",
+    "dmg_split": {
+      "ad": 30,
+      "ap": 70,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "renekton",
@@ -4889,7 +5779,17 @@
       "healer",
       "burst"
     ],
-    "slug": "renekton"
+    "slug": "renekton",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 2,
+      "late": 1
+    }
   },
   {
     "id": "rengar",
@@ -4943,7 +5843,17 @@
       "stealth",
       "mobile"
     ],
-    "slug": "rengar"
+    "slug": "rengar",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "riven",
@@ -4999,7 +5909,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "riven"
+    "slug": "riven",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "rumble",
@@ -5052,7 +5972,17 @@
       "sustained_dps",
       "shielder"
     ],
-    "slug": "rumble"
+    "slug": "rumble",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "ryze",
@@ -5104,7 +6034,17 @@
       "dmg_ap",
       "burst"
     ],
-    "slug": "ryze"
+    "slug": "ryze",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "samira",
@@ -5159,7 +6099,17 @@
       "mobile",
       "healer"
     ],
-    "slug": "samira"
+    "slug": "samira",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "senna",
@@ -5214,7 +6164,17 @@
       "healer",
       "sustained_dps"
     ],
-    "slug": "senna"
+    "slug": "senna",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "seraphine",
@@ -5270,7 +6230,17 @@
       "cc_heavy",
       "poke"
     ],
-    "slug": "seraphine"
+    "slug": "seraphine",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "sett",
@@ -5324,7 +6294,17 @@
       "shielder",
       "cc_heavy"
     ],
-    "slug": "sett"
+    "slug": "sett",
+    "dmg_split": {
+      "ad": 80,
+      "ap": 0,
+      "true": 20
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "shen",
@@ -5379,7 +6359,17 @@
       "shielder",
       "mobile"
     ],
-    "slug": "shen"
+    "slug": "shen",
+    "dmg_split": {
+      "ad": 60,
+      "ap": 40,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "shyvana",
@@ -5433,7 +6423,17 @@
       "sustained_dps",
       "mobile"
     ],
-    "slug": "shyvana"
+    "slug": "shyvana",
+    "dmg_split": {
+      "ad": 55,
+      "ap": 45,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "singed",
@@ -5486,7 +6486,17 @@
       "tanky",
       "cc_heavy"
     ],
-    "slug": "singed"
+    "slug": "singed",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "sion",
@@ -5541,7 +6551,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "sion"
+    "slug": "sion",
+    "dmg_split": {
+      "ad": 75,
+      "ap": 25,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "sivir",
@@ -5594,7 +6614,17 @@
       "sustained_dps",
       "shielder"
     ],
-    "slug": "sivir"
+    "slug": "sivir",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "skarner",
@@ -5649,7 +6679,17 @@
       "cc_heavy",
       "shielder"
     ],
-    "slug": "skarner"
+    "slug": "skarner",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 30,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "smolder",
@@ -5703,7 +6743,17 @@
       "sustained_dps",
       "poke"
     ],
-    "slug": "smolder"
+    "slug": "smolder",
+    "dmg_split": {
+      "ad": 65,
+      "ap": 20,
+      "true": 15
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "sona",
@@ -5758,7 +6808,17 @@
       "cc_heavy",
       "poke"
     ],
-    "slug": "sona"
+    "slug": "sona",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "soraka",
@@ -5811,7 +6871,17 @@
       "healer",
       "healer_heavy"
     ],
-    "slug": "soraka"
+    "slug": "soraka",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "swain",
@@ -5867,7 +6937,17 @@
       "cc_heavy",
       "healer_heavy"
     ],
-    "slug": "swain"
+    "slug": "swain",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "sylas",
@@ -5922,7 +7002,17 @@
       "healer",
       "healer_heavy"
     ],
-    "slug": "sylas"
+    "slug": "sylas",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "syndra",
@@ -5975,7 +7065,17 @@
       "burst",
       "poke"
     ],
-    "slug": "syndra"
+    "slug": "syndra",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "taliyah",
@@ -6030,7 +7130,17 @@
       "cc_heavy",
       "mobile"
     ],
-    "slug": "taliyah"
+    "slug": "taliyah",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "talon",
@@ -6085,7 +7195,17 @@
       "mobile",
       "stealth"
     ],
-    "slug": "talon"
+    "slug": "talon",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "teemo",
@@ -6139,7 +7259,17 @@
       "poke",
       "stealth"
     ],
-    "slug": "teemo"
+    "slug": "teemo",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "thresh",
@@ -6191,7 +7321,17 @@
       "dmg_ap",
       "cc_heavy"
     ],
-    "slug": "thresh"
+    "slug": "thresh",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "tristana",
@@ -6245,7 +7385,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "tristana"
+    "slug": "tristana",
+    "dmg_split": {
+      "ad": 85,
+      "ap": 15,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "tryndamere",
@@ -6300,7 +7450,17 @@
       "healer",
       "mobile"
     ],
-    "slug": "tryndamere"
+    "slug": "tryndamere",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "twisted-fate",
@@ -6352,7 +7512,17 @@
       "dmg_ap",
       "poke"
     ],
-    "slug": "twisted-fate"
+    "slug": "twisted-fate",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "twitch",
@@ -6407,7 +7577,17 @@
       "stealth",
       "true_damage"
     ],
-    "slug": "twitch"
+    "slug": "twitch",
+    "dmg_split": {
+      "ad": 85,
+      "ap": 0,
+      "true": 15
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "urgot",
@@ -6462,7 +7642,17 @@
       "sustained_dps",
       "healer"
     ],
-    "slug": "urgot"
+    "slug": "urgot",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "varus",
@@ -6516,7 +7706,17 @@
       "cc_heavy",
       "burst"
     ],
-    "slug": "varus"
+    "slug": "varus",
+    "dmg_split": {
+      "ad": 75,
+      "ap": 25,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "vayne",
@@ -6571,7 +7771,17 @@
       "mobile",
       "stealth"
     ],
-    "slug": "vayne"
+    "slug": "vayne",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 0,
+      "true": 30
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "veigar",
@@ -6625,7 +7835,17 @@
       "burst",
       "poke"
     ],
-    "slug": "veigar"
+    "slug": "veigar",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "velkoz",
@@ -6679,7 +7899,17 @@
       "poke",
       "true_damage"
     ],
-    "slug": "velkoz"
+    "slug": "velkoz",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 80,
+      "true": 20
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "vex",
@@ -6733,7 +7963,17 @@
       "shielder",
       "mobile"
     ],
-    "slug": "vex"
+    "slug": "vex",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "vi",
@@ -6787,7 +8027,17 @@
       "mobile",
       "shielder"
     ],
-    "slug": "vi"
+    "slug": "vi",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "viego",
@@ -6844,7 +8094,17 @@
       "sustained_dps",
       "healer_heavy"
     ],
-    "slug": "viego"
+    "slug": "viego",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "viktor",
@@ -6897,7 +8157,17 @@
       "poke",
       "shielder"
     ],
-    "slug": "viktor"
+    "slug": "viktor",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "vladimir",
@@ -6953,7 +8223,17 @@
       "burst",
       "healer_heavy"
     ],
-    "slug": "vladimir"
+    "slug": "vladimir",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "volibear",
@@ -7010,7 +8290,17 @@
       "healer",
       "sustained_dps"
     ],
-    "slug": "volibear"
+    "slug": "volibear",
+    "dmg_split": {
+      "ad": 60,
+      "ap": 40,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "warwick",
@@ -7066,7 +8356,17 @@
       "sustained_dps",
       "healer_heavy"
     ],
-    "slug": "warwick"
+    "slug": "warwick",
+    "dmg_split": {
+      "ad": 40,
+      "ap": 60,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "wukong",
@@ -7121,7 +8421,17 @@
       "mobile",
       "cc_heavy"
     ],
-    "slug": "wukong"
+    "slug": "wukong",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "xayah",
@@ -7174,7 +8484,17 @@
       "sustained_dps",
       "cc_heavy"
     ],
-    "slug": "xayah"
+    "slug": "xayah",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "xin-zhao",
@@ -7228,7 +8548,17 @@
       "healer",
       "sustained_dps"
     ],
-    "slug": "xin-zhao"
+    "slug": "xin-zhao",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 3,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "yasuo",
@@ -7284,7 +8614,17 @@
       "shielder",
       "sustained_dps"
     ],
-    "slug": "yasuo"
+    "slug": "yasuo",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "yone",
@@ -7340,7 +8680,17 @@
       "shielder",
       "burst"
     ],
-    "slug": "yone"
+    "slug": "yone",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 20,
+      "true": 10
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 3
+    }
   },
   {
     "id": "yunara",
@@ -7394,7 +8744,17 @@
       "sustained_dps",
       "mobile"
     ],
-    "slug": "yunara"
+    "slug": "yunara",
+    "dmg_split": {
+      "ad": 70,
+      "ap": 30,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "yuumi",
@@ -7448,7 +8808,17 @@
       "shielder",
       "healer_heavy"
     ],
-    "slug": "yuumi"
+    "slug": "yuumi",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "zed",
@@ -7503,7 +8873,17 @@
       "burst",
       "mobile"
     ],
-    "slug": "zed"
+    "slug": "zed",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "zeri",
@@ -7557,7 +8937,17 @@
       "mobile",
       "poke"
     ],
-    "slug": "zeri"
+    "slug": "zeri",
+    "dmg_split": {
+      "ad": 100,
+      "ap": 0,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 1,
+      "mid": 2,
+      "late": 3
+    }
   },
   {
     "id": "ziggs",
@@ -7609,7 +8999,17 @@
       "dmg_ap",
       "poke"
     ],
-    "slug": "ziggs"
+    "slug": "ziggs",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "zilean",
@@ -7662,7 +9062,17 @@
       "shielder",
       "cc_heavy"
     ],
-    "slug": "zilean"
+    "slug": "zilean",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 2,
+      "late": 2
+    }
   },
   {
     "id": "zoe",
@@ -7715,7 +9125,17 @@
       "burst",
       "poke"
     ],
-    "slug": "zoe"
+    "slug": "zoe",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   },
   {
     "id": "zyra",
@@ -7769,6 +9189,16 @@
       "cc_heavy",
       "poke"
     ],
-    "slug": "zyra"
+    "slug": "zyra",
+    "dmg_split": {
+      "ad": 0,
+      "ap": 100,
+      "true": 0
+    },
+    "power_curve": {
+      "early": 2,
+      "mid": 3,
+      "late": 2
+    }
   }
 ]
