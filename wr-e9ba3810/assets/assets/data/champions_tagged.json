@@ -1237,6 +1237,14 @@
       "mid": 2,
       "late": 3
     },
+    "flex_damage": true,
+    "main_style": "ap",
+    "alt_style": "ad",
+    "alt_dmg_split": {
+      "ad": 85,
+      "ap": 15,
+      "true": 0
+    },
     "cc_count": 1
   },
   {
@@ -1696,6 +1704,14 @@
       "early": 2,
       "mid": 2,
       "late": 3
+    },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 20,
+      "ap": 80,
+      "true": 0
     },
     "cc_count": 0
   },
@@ -3002,6 +3018,14 @@
       "mid": 3,
       "late": 3
     },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 20,
+      "ap": 80,
+      "true": 0
+    },
     "cc_count": 1
   },
   {
@@ -3318,14 +3342,22 @@
     ],
     "slug": "kayle",
     "dmg_split": {
-      "ad": 50,
-      "ap": 50,
+      "ad": 10,
+      "ap": 90,
       "true": 0
     },
     "power_curve": {
       "early": 1,
       "mid": 2,
       "late": 3
+    },
+    "flex_damage": true,
+    "main_style": "ap",
+    "alt_style": "ad",
+    "alt_dmg_split": {
+      "ad": 70,
+      "ap": 30,
+      "true": 0
     },
     "cc_count": 0
   },
@@ -3650,6 +3682,14 @@
       "early": 1,
       "mid": 2,
       "late": 3
+    },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 10,
+      "ap": 90,
+      "true": 0
     },
     "cc_count": 0
   },
@@ -4569,6 +4609,14 @@
       "early": 3,
       "mid": 2,
       "late": 2
+    },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 20,
+      "ap": 80,
+      "true": 0
     },
     "cc_count": 0
   },
@@ -6533,6 +6581,14 @@
       "mid": 3,
       "late": 2
     },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 20,
+      "ap": 80,
+      "true": 0
+    },
     "cc_count": 1
   },
   {
@@ -7639,6 +7695,14 @@
       "mid": 3,
       "late": 2
     },
+    "flex_damage": true,
+    "main_style": "ap",
+    "alt_style": "ad",
+    "alt_dmg_split": {
+      "ad": 65,
+      "ap": 35,
+      "true": 0
+    },
     "cc_count": 1
   },
   {
@@ -7704,6 +7768,14 @@
       "early": 1,
       "mid": 2,
       "late": 3
+    },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 15,
+      "ap": 45,
+      "true": 40
     },
     "cc_count": 0
   },
@@ -7835,6 +7907,14 @@
       "early": 2,
       "mid": 3,
       "late": 2
+    },
+    "flex_damage": true,
+    "main_style": "ad",
+    "alt_style": "ap",
+    "alt_dmg_split": {
+      "ad": 15,
+      "ap": 85,
+      "true": 0
     },
     "cc_count": 1
   },
