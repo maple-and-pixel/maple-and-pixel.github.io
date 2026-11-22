@@ -1,0 +1,5556 @@
+[
+ {
+  "champion": "Aatrox",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "عند الاشتباك مع بطل واحد في المدى",
+    "when_en": "Trading with one champion in range",
+    "tip_ar": "اسحب الهدف بـ W ثم اضرب Q حتى تصيب الضربة الثالثة",
+    "tip_en": "Pull with W so the Q sweet spots land; Q3 knocks up",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "3",
+     "2",
+     "1",
+     "1"
+    ],
+    "when_ar": "عند بدء معركة جماعية قريبة",
+    "when_en": "Starting a close teamfight",
+    "tip_ar": "فعّل Ult أولا للعلاج وسرعة الحركة ثم اجعل Q الثالثة في آخر الكومبو",
+    "tip_en": "Pop the ult first for heal and speed; end on Q3",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Ahri",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "ultimate",
+     "aa"
+    ],
+    "when_ar": "عند اصطياد هدف واحد داخل المدى",
+    "when_en": "Picking off a lone target in range",
+    "tip_ar": "أصِب Charm أولا وإلا ستضيع بقية المهارات",
+    "tip_en": "Land Charm first or the rest misses",
+    "difficulty": 2
+   },
+   {
+    "id": "chase",
+    "title_ar": "كومبو المطاردة",
+    "title_en": "Chase",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "2"
+    ],
+    "when_ar": "عندما يهرب الهدف بصحة قليلة",
+    "when_en": "Target fleeing at low health",
+    "tip_ar": "استخدم Spirit Rush للاقتراب ثم Charm ثم Orb وهو يعود نحوك",
+    "tip_en": "Spirit Rush closes the gap, then Charm; Orb deals true damage on return",
+    "difficulty": 2
+   },
+   {
+    "id": "flash-charm",
+    "title_ar": "كومبو Flash و Charm",
+    "title_en": "Flash Charm",
+    "steps": [
+     "flash",
+     "3",
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لاصطياد هدف بعيد خلف خط المقدمة",
+    "when_en": "Catching a target behind the front line",
+    "tip_ar": "استخدم Flash أولا ثم Charm مباشرة قبل أن يتحرك الهدف",
+    "tip_en": "Flash first, then Charm before they can react",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Akali",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "burst",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Assassinate",
+    "steps": [
+     "ultimate",
+     "1",
+     "3",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "عند اغتيال هدف هش بصحة منخفضة",
+    "when_en": "Killing a squishy target",
+    "tip_ar": "اجعل R الثانية في النهاية لتعدم الهدف الضعيف",
+    "tip_en": "Save the second R to execute a low-health target",
+    "difficulty": 3
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "3"
+    ],
+    "when_ar": "للتبادل في الخط مع بطل من نفس المدى",
+    "when_en": "Trading in lane",
+    "tip_ar": "اضرب E ثم أعد تفعيلها لتصل إلى العلامة وتفعّل هجمتك المعزّزة",
+    "tip_en": "Hit E, recast to dash to the mark, then take the empowered attack",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Akshan",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "aa",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "الهجمة الثالثة تفعّل المهارة السلبية فاحسب ضرباتك قبل الدخول",
+    "tip_en": "Every third hit procs the passive, so count your hits",
+    "difficulty": 1
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لدخول معركة أو مطاردة بطل",
+    "when_en": "Diving a fight or chasing",
+    "tip_ar": "تأرجح بـ E داخل المعركة ثم ثبّت Ult على أخطر بطل",
+    "tip_en": "Swing in with E, then lock the ult on the biggest threat",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Alistar",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "عند الاشتباك مع بطل في المدى",
+    "when_en": "Locking onto a champion in range",
+    "tip_ar": "اندفع بـ W ثم اضرب Q فورا لإطاحة الهدف",
+    "tip_en": "Headbutt first, then Pulverize so the knock up lands",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "عند الدخول في وسط الأعداء",
+    "when_en": "Diving into the enemy team",
+    "tip_ar": "Ult يزيل التحكم ويقلل الضرر فاستخدمه قبل الدخول مباشرة",
+    "tip_en": "The ult clears CC and cuts damage, so use it right before diving",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Ambessa",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "1",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للتبادل والاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "Q الثانية تتحول إلى ضربة أقوى فاستخدمها بعد إصابة العدو بالأولى",
+    "tip_en": "The second Q transforms into the stronger slam after a hit",
+    "difficulty": 2
+   },
+   {
+    "id": "dive",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Pick off",
+    "steps": [
+     "2",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاصطياد أبعد بطل في الخط",
+    "when_en": "Catching the farthest champion in a line",
+    "tip_ar": "اختر اتجاه Ult نحو الهدف الأهم ليتم إخضاعه",
+    "tip_en": "Aim the ult through your main target to suppress them",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Amumu",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa"
+    ],
+    "when_ar": "لبدء الاشتباك على هدف واحد",
+    "when_en": "Starting a fight on one target",
+    "tip_ar": "Bandage Toss يشلّ الهدف فاضرب بعده بـ Tantrum والهجمة العادية",
+    "tip_en": "Bandage Toss stuns, so follow with Tantrum and attacks",
+    "difficulty": 1
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "1",
+     "ultimate",
+     "2",
+     "3"
+    ],
+    "when_ar": "عند اجتماع عدة أعداء قرب بعضهم",
+    "when_en": "Several enemies grouped together",
+    "tip_ar": "انتظر حتى يقترب أكبر عدد من الأعداء ثم فعّل Ult وبعدها Despair",
+    "tip_en": "Wait until the most enemies are close, then Ult and Despair",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Annie",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "ultimate",
+     "aa"
+    ],
+    "when_ar": "عند الاشتباك مع هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "احتفظ بالشلل من المهارة السلبية لأهم ضربة في الكومبو",
+    "tip_en": "Keep the passive stun ready for your most important hit",
+    "difficulty": 2
+   },
+   {
+    "id": "flash-tibbers",
+    "title_ar": "كومبو Flash و Tibbers",
+    "title_en": "Flash Tibbers",
+    "steps": [
+     "flash",
+     "ultimate",
+     "2",
+     "1"
+    ],
+    "when_ar": "لشل عدة أعداء في معركة جماعية",
+    "when_en": "Stunning several enemies in a teamfight",
+    "tip_ar": "اقفز بـ Flash وبالمهارة السلبية جاهزة ثم أنزل Tibbers عليهم",
+    "tip_en": "Flash in with the passive stun ready, then drop Tibbers",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Ashe",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للتبادل وإبطاء الأعداء",
+    "when_en": "Poking and slowing enemies",
+    "tip_ar": "اطلق Volley ثم فعّل Ranger's Focus وهدفك مبطّأ",
+    "tip_en": "Volley first, then Ranger's Focus on a slowed target",
+    "difficulty": 1
+   },
+   {
+    "id": "pick",
+    "title_ar": "كومبو الاصطياد",
+    "title_en": "Pick",
+    "steps": [
+     "ultimate",
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاصطياد بطل بعيد أو بدء معركة",
+    "when_en": "Catching a distant champion or starting a fight",
+    "tip_ar": "كلما قطع سهم Ult مسافة أطول زاد الشلل فاطلقه من بعيد",
+    "tip_en": "The farther the arrow flies, the longer the stun",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Aurelion Sol",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "2"
+    ],
+    "when_ar": "عند بدء معركة على أعداء متقاربين",
+    "when_en": "Starting a fight on grouped enemies",
+    "tip_ar": "ثبّت الأعداء بـ Ult ثم اجذبهم بـ Singularity وأكمل بـ Breath of Light",
+    "tip_en": "Stun with the ult, pull with Singularity, finish with Breath of Light",
+    "difficulty": 3
+   },
+   {
+    "id": "kite",
+    "title_ar": "كومبو الإزعاج",
+    "title_en": "Kite",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للضغط على الأعداء من مدى بعيد",
+    "when_en": "Pressuring from range",
+    "tip_ar": "استخدم Astral Flight للتحرك أثناء إطلاق Breath of Light دون وقت تبريد",
+    "tip_en": "Astral Flight lets you keep casting Breath of Light while moving",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Aurora",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للتبادل والضغط على العدو",
+    "when_en": "Trading and poking",
+    "tip_ar": "أعد تفعيل Q لجذب اللعنات نحوك فتتلقى الضرر الإضافي",
+    "tip_en": "Recast Q to pull the curses back through the target",
+    "difficulty": 2
+   },
+   {
+    "id": "escape",
+    "title_ar": "كومبو الهروب",
+    "title_en": "Escape",
+    "steps": [
+     "3",
+     "2"
+    ],
+    "when_ar": "عند الهروب من هدف قريب",
+    "when_en": "Escaping a close threat",
+    "tip_ar": "اقفز للخلف بـ E ثم استخدم W لتختفي وتبتعد",
+    "tip_en": "Hop back with E, then W to turn invisible and leave",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Bard",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاصطياد بطل قرب جدار",
+    "when_en": "Catching a champion near a wall",
+    "tip_ar": "اضرب Q بحيث يصطدم الهدف بالجدار أو بعدو آخر ليتم شله",
+    "tip_en": "Aim Q so it hits a wall or a second enemy to stun",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "1",
+     "2"
+    ],
+    "when_ar": "لمعركة جماعية حاسمة",
+    "when_en": "A decisive teamfight",
+    "tip_ar": "Ult يوقف الجميع أيضا فاحذر أن تصيب حلفاءك معهم",
+    "tip_en": "The ult freezes allies too, so mind where you throw it",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Blitzcrank",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "عند سحب هدف إلى فريقك",
+    "when_en": "After pulling a target into your team",
+    "tip_ar": "بعد Rocket Grab اضرب Power Fist مباشرة للإطاحة بالهدف",
+    "tip_en": "Follow Rocket Grab with Power Fist for the knock up",
+    "difficulty": 2
+   },
+   {
+    "id": "chase",
+    "title_ar": "كومبو الملاحقة",
+    "title_en": "Chase",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "3"
+    ],
+    "when_ar": "لملاحقة هدف بعد السحب",
+    "when_en": "Chasing a pulled target",
+    "tip_ar": "استخدم Overdrive للاقتراب وإنهاء الهدف قبل أن يهرب",
+    "tip_en": "Overdrive to close in and finish before they flee",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Brand",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "ابدأ بـ Conflagration ثم Sear ليشل الهدف وهو مشتعل",
+    "tip_en": "Conflagration first so Sear stuns the ablaze target",
+    "difficulty": 2,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "2",
+     "1"
+    ],
+    "when_ar": "للضغط على الخط مع الحليف",
+    "when_en": "Poking the lane",
+    "tip_ar": "اضرب Pillar of Flame على مكان وقوف العدو ثم Sear ليتفاعل",
+    "tip_en": "Pillar of Flame onto their path, then Sear",
+    "difficulty": 1,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Braum",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "aa"
+    ],
+    "when_ar": "للتبادل مع حليف في الخط",
+    "when_en": "Trading with an ally in lane",
+    "tip_ar": "تبادل أنت وحليفك الضربات لتصل إلى 4 شحنات فيتم شل الهدف",
+    "tip_en": "Alternate hits with your ally to reach 4 stacks and stun",
+    "difficulty": 1
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "2",
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "اندفع نحو حليفك بـ W ثم أطح الأعداء بـ Glacial Fissure",
+    "tip_en": "Leap to an ally with W, then knock up with Glacial Fissure",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Caitlyn",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "aa",
+     "1"
+    ],
+    "when_ar": "لاصطياد هدف داخل المدى",
+    "when_en": "Catching a target in range",
+    "tip_ar": "ضع الفخ أولا ثم Net ثم Q وهو عالق ليصيبه Headshot",
+    "tip_en": "Trap first, then net and Q so the trapped target eats the Headshot",
+    "difficulty": 2
+   },
+   {
+    "id": "finish",
+    "title_ar": "كومبو الإنهاء",
+    "title_en": "Finisher",
+    "steps": [
+     "2",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء بطل بصحة قليلة",
+    "when_en": "Finishing a low-health champion",
+    "tip_ar": "الأعداء يستطيعون اعتراض رصاصة Ult فاحرص أن لا يقف أحد أمام الهدف",
+    "tip_en": "Enemies can block the ult bullet, so check the line first",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Camille",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Assassinate",
+    "steps": [
+     "3",
+     "ultimate",
+     "2",
+     "1",
+     "aa",
+     "1"
+    ],
+    "when_ar": "لاصطياد هدف منعزل",
+    "when_en": "Isolating one target",
+    "tip_ar": "اقفز بـ E ثم Ult لتثبيت الهدف ثم أكمل الضرب بـ W و Q",
+    "tip_en": "Hookshot in, ult to lock them in the area, then W and Q",
+    "difficulty": 3,
+    "styles": [
+     "build_bruiser"
+    ]
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "3",
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لبدء معركة وإطاحة عدة أعداء",
+    "when_en": "Starting a fight and knocking up enemies",
+    "tip_ar": "اقفز على جدار بـ E لتطيح الأعداء ثم ثبّت أخطر بطل بـ Ult",
+    "tip_en": "Hookshot off a wall for the knock up, then ult their carry",
+    "difficulty": 3,
+    "styles": [
+     "build_tank"
+    ]
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "1",
+     "aa",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "أخّر Q الثانية قليلا لتسبب ضررا أكبر",
+    "tip_en": "Delay the second Q a moment for much more damage",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Cho'Gath",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإطاحة هدف وإنهائه",
+    "when_en": "Knocking up and killing a target",
+    "tip_ar": "أطح الهدف بـ Rupture ثم اسكته بـ Feral Scream قبل أن يهرب",
+    "tip_en": "Knock up with Rupture, then silence with Feral Scream",
+    "difficulty": 2
+   },
+   {
+    "id": "execute",
+    "title_ar": "كومبو الإعدام",
+    "title_en": "Execute",
+    "steps": [
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف بصحة قليلة",
+    "when_en": "Finishing a low-health target",
+    "tip_ar": "Feast يسبب ضررا حقيقيا فاستخدمه عندما يقتل الهدف لتكبر",
+    "tip_en": "Feast deals true damage, so use it on kills to grow",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Corki",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "للضغط ثم الاشتباك مع هدف",
+    "when_en": "Bursting a target",
+    "tip_ar": "اضرب Phosphorus Bomb للكشف ثم Gatling Gun لخفض الدروع",
+    "tip_en": "Bomb to reveal, then Gatling Gun to shred resists",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ],
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "onhit",
+    "title_ar": "كومبو الهجمات",
+    "title_en": "On-hit trade",
+    "steps": [
+     "3",
+     "aa",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للتبادل وإبقاء الضرب المستمر",
+    "when_en": "Trading with sustained hits",
+    "tip_ar": "استخدم Gatling Gun ثم اضرب بالهجمات العادية لأن ضررها سحري جزئيا",
+    "tip_en": "Gatling Gun, then basic attacks that deal part magic damage",
+    "difficulty": 2,
+    "styles": [
+     "build_onhit"
+    ],
+    "lanes": [
+     "DRAGON"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Darius",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "aa",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "عند الاشتباك مع بطل قريب",
+    "when_en": "Fighting a champion up close",
+    "tip_ar": "اسحب الهدف بـ E ثم Q وحافة الفأس على الهدف وانهِ بـ Ult",
+    "tip_en": "Pull with E, hit with the blade edge, then ult",
+    "difficulty": 2
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "2",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "W يبطئ الهدف فاضرب Q بعده لتبقى على حافة الفأس",
+    "tip_en": "W slows, so the Q lands on the blade edge",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Diana",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "ضع Moonlight بـ Q ثم اندفع بـ E دون وقت تبريد",
+    "tip_en": "Apply Moonlight with Q, then E has no cooldown",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "3",
+     "2"
+    ],
+    "when_ar": "عند وجود عدة أعداء متجمعين",
+    "when_en": "Several enemies grouped",
+    "tip_ar": "اجذب الأعداء بـ Moonfall ثم اندفع بـ E مرتين على أهداف Moonlight",
+    "tip_en": "Pull with Moonfall, then chain E on Moonlight targets",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Dr. Mundo",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "3",
+     "2"
+    ],
+    "when_ar": "للتبادل والضغط على هدف",
+    "when_en": "Trading and pressuring",
+    "tip_ar": "اضرب Infected Bonesaw ثم E و W لزيادة الضرر",
+    "tip_en": "Bonesaw, then Blunt Force Trauma and Heart Zapper for burst",
+    "difficulty": 1
+   },
+   {
+    "id": "allin",
+    "title_ar": "كومبو الاشتباك الكامل",
+    "title_en": "All-in",
+    "steps": [
+     "ultimate",
+     "2",
+     "1",
+     "3"
+    ],
+    "when_ar": "للاشتباك الطويل مع بطل",
+    "when_en": "A long all-in fight",
+    "tip_ar": "فعّل Ult مبكرا ليعالجك ويزيد ضررك ثم أكمل",
+    "tip_en": "Pop the ult early for healing and bonus damage",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Draven",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "2",
+     "aa",
+     "3"
+    ],
+    "when_ar": "للتبادل مع بطل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "التقط الفأس العائدة لتجدد Q و W",
+    "tip_en": "Catch the returning axe to keep Q and W refreshed",
+    "difficulty": 3
+   },
+   {
+    "id": "finish",
+    "title_ar": "كومبو الإنهاء",
+    "title_en": "Finisher",
+    "steps": [
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء أهداف تهرب",
+    "when_en": "Finishing fleeing targets",
+    "tip_ar": "ارم Ult بعد إبطاء الهدف بـ Stand Aside",
+    "tip_en": "Throw the ult after slowing with Stand Aside",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Ekko",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "aa",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "للانفجار على هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "ضع W أولا لأنها تتأخر ثم أكمل ليشل الهدف",
+    "tip_en": "Cast W first, since the field takes a moment to stun",
+    "difficulty": 3
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "1",
+     "aa",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للتبادل بالهجمة الثالثة",
+    "when_en": "Trading with the third hit",
+    "tip_ar": "الهجمة الثالثة على نفس الهدف تسبب ضررا إضافيا وسرعة",
+    "tip_en": "Every third hit on the same target adds damage and speed",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Evelynn",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Assassinate",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاغتيال هدف بعد الخروج من التخفي",
+    "when_en": "Assassinating a target out of stealth",
+    "tip_ar": "اربط الهدف بـ W أولا ثم اندفع بـ E وأنهِ بـ Ult",
+    "tip_en": "Curse first with W, dash with E, finish with the ult",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Ezreal",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "3",
+     "1"
+    ],
+    "when_ar": "للضغط على هدف في المدى",
+    "when_en": "Poking a target in range",
+    "tip_ar": "اضرب Essence Flux أولا ثم Mystic Shot ليفجرها",
+    "tip_en": "Hit Essence Flux first, then Mystic Shot to detonate it",
+    "difficulty": 2
+   },
+   {
+    "id": "onhit",
+    "title_ar": "كومبو الهجمات",
+    "title_en": "On-hit trade",
+    "steps": [
+     "1",
+     "aa",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للتبادل والهجمات المتواصلة",
+    "when_en": "Sustained trades",
+    "tip_ar": "اجعل كل Q تصيب لتكسب سرعة هجوم من Rising Spell Force",
+    "tip_en": "Land every Q to stack attack speed",
+    "difficulty": 2,
+    "styles": [
+     "build_onhit"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Fiddlesticks",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لمفاجأة الأعداء من التخفي",
+    "when_en": "Ambushing from stealth",
+    "tip_ar": "ابدأ بـ Terrify وأنت مختبئ ليرعب الهدف ثم أكمل",
+    "tip_en": "Open with Terrify from stealth to fear the target",
+    "difficulty": 3
+   },
+   {
+    "id": "flash-crowstorm",
+    "title_ar": "كومبو Flash و Crowstorm",
+    "title_en": "Flash Crowstorm",
+    "steps": [
+     "flash",
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لمفاجأة فريق العدو",
+    "when_en": "Surprising the enemy team",
+    "tip_ar": "اقفز وسط الأعداء ثم فعّل Crowstorm وبعدها Reap",
+    "tip_en": "Flash into the group, ult, then Reap",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Fiora",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "ultimate",
+     "1",
+     "3",
+     "aa",
+     "aa"
+    ],
+    "when_ar": "لاصطياد بطل واحد",
+    "when_en": "Dueling one champion",
+    "tip_ar": "ضع Ult لكشف 4 نقاط ثم اضرب Q على النقطة المكشوفة",
+    "tip_en": "Ult reveals all four Vitals, then Lunge onto one",
+    "difficulty": 3
+   },
+   {
+    "id": "parry",
+    "title_ar": "كومبو الصد",
+    "title_en": "Parry",
+    "steps": [
+     "2",
+     "1",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للرد على مهارة تحكم من العدو",
+    "when_en": "Countering an enemy CC ability",
+    "tip_ar": "اصد التحكم بـ Riposte لتشل الهدف ثم اندفع نحوه",
+    "tip_en": "Parry the CC with Riposte to stun the target, then dash in",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Fizz",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "burst",
+    "title_ar": "كومبو الانفجار",
+    "title_en": "Burst",
+    "steps": [
+     "ultimate",
+     "1",
+     "2",
+     "aa",
+     "3"
+    ],
+    "when_ar": "لاغتيال هدف هش",
+    "when_en": "Assassinating a squishy target",
+    "tip_ar": "ارم Chum the Waters ثم أكمل واترك Trickster للهروب",
+    "tip_en": "Throw the shark first, and keep Trickster to escape",
+    "difficulty": 3
+   },
+   {
+    "id": "escape",
+    "title_ar": "كومبو الهروب",
+    "title_en": "Escape",
+    "steps": [
+     "3",
+     "1"
+    ],
+    "when_ar": "للهروب بعد الضرب",
+    "when_en": "Escaping after a trade",
+    "tip_ar": "اقفز بـ E لتتجنب الضرر ثم اندفع بـ Q عبر تابع",
+    "tip_en": "Hop with E to dodge, then Q through a minion",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Galio",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "3",
+     "2",
+     "1"
+    ],
+    "when_ar": "لبدء معركة وحماية الفريق",
+    "when_en": "Starting a fight and shielding allies",
+    "tip_ar": "اختر حليفا بعيدا بـ Ult ليحصل الجميع على درع قبل أن تهبط",
+    "tip_en": "Target a far ally with the ult so allies get a shield first",
+    "difficulty": 3,
+    "styles": [
+     "build_tank"
+    ]
+   },
+   {
+    "id": "burst",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Burst",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "ابدأ بـ Winds of War ثم أطح الهدف بـ Justice Punch",
+    "tip_en": "Winds of War first, then knock up with Justice Punch",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ],
+    "lanes": [
+     "MID"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Garen",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "عند الاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اسكت الهدف بـ Q ثم دُر بـ Judgment وأنهِ بـ Ult عندما تقل صحته",
+    "tip_en": "Silence with Q, spin with Judgment, execute with the ult at low health",
+    "difficulty": 1
+   },
+   {
+    "id": "chase",
+    "title_ar": "كومبو المطاردة",
+    "title_en": "Chase",
+    "steps": [
+     "1",
+     "aa",
+     "3"
+    ],
+    "when_ar": "لملاحقة هدف يهرب",
+    "when_en": "Chasing a fleeing target",
+    "tip_ar": "Decisive Strike يمنحك سرعة ويزيل الإبطاء فابدأ به عند المطاردة",
+    "tip_en": "Decisive Strike gives speed and clears slows, so open with it",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Gnar",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو Mini Gnar",
+    "title_en": "Mini Gnar",
+    "steps": [
+     "1",
+     "aa",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للتبادل وبناء الغضب",
+    "when_en": "Trading to build Rage",
+    "tip_ar": "التقط Boomerang العائد لتقلل وقت تبريده",
+    "tip_en": "Catch the boomerang to lower its cooldown",
+    "difficulty": 2
+   },
+   {
+    "id": "mega",
+    "title_ar": "كومبو Mega Gnar",
+    "title_en": "Mega Gnar",
+    "steps": [
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لمعركة جماعية بعد التحول",
+    "when_en": "Teamfight once transformed",
+    "tip_ar": "ادفع الأعداء نحو جدار بـ Ult ليتم شلهم",
+    "tip_en": "Push enemies into a wall with the ult to stun them",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Gragas",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "aa"
+    ],
+    "when_ar": "لاشتباك مع بطل في المدى",
+    "when_en": "Fighting a champion in range",
+    "tip_ar": "ارم Barrel Roll ثم شل الهدف بـ Body Slam",
+    "tip_en": "Roll the barrel, then stun with Body Slam",
+    "difficulty": 2
+   },
+   {
+    "id": "displace",
+    "title_ar": "كومبو الإزاحة",
+    "title_en": "Displace",
+    "steps": [
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لإبعاد أو سحب هدف",
+    "when_en": "Moving a target away",
+    "tip_ar": "شل الهدف ثم ادفعه بـ Ult نحو فريقك أو بعيدا عن فريقه",
+    "tip_en": "Stun, then knock them toward your team or away from theirs",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Graves",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "aa",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لاصطياد هدف قريب",
+    "when_en": "Bursting a close target",
+    "tip_ar": "اندفع بـ E ليعاد ملء الذخيرة ثم أطلق الطلقات من مسافة قريبة",
+    "tip_en": "Dash with E to reload, then shoot from close range",
+    "difficulty": 2
+   },
+   {
+    "id": "disengage",
+    "title_ar": "كومبو الانسحاب",
+    "title_en": "Disengage",
+    "steps": [
+     "2",
+     "3"
+    ],
+    "when_ar": "للهروب من هدف يلاحقك",
+    "when_en": "Escaping a chaser",
+    "tip_ar": "أطلق Smoke Screen ليبطئ الهدف ثم اندفع بعيدا",
+    "tip_en": "Smoke to slow them, then dash away",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Gwen",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "ultimate",
+     "3",
+     "aa",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "Needlework يبطئ ويطبق الضرر السلبي ثم Q في المركز لضرر حقيقي",
+    "tip_en": "The ult slows and applies her passive; hit with the Q center for true damage",
+    "difficulty": 2
+   },
+   {
+    "id": "defend",
+    "title_ar": "كومبو الدفاع",
+    "title_en": "Defend",
+    "steps": [
+     "2",
+     "1"
+    ],
+    "when_ar": "لمواجهة هجوم قوي عليك",
+    "when_en": "Surviving a strong attack",
+    "tip_ar": "ابق داخل Hallowed Mist فلا يستهدفك إلا من دخل",
+    "tip_en": "Stay in Hallowed Mist so only those who enter can target you",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Hecarim",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "aa",
+     "1"
+    ],
+    "when_ar": "لاقتحام الاشتباك",
+    "when_en": "Charging into a fight",
+    "tip_ar": "الشحن لمسافة أطول يعطي ضررا أكبر عند الضربة المعزّزة",
+    "tip_en": "A longer charge means more damage on the empowered hit",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "1",
+     "2"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "اشحن بـ Ult وسط الأعداء ثم اضرب Q و W بعد الموجة",
+    "tip_en": "Charge in with the ult, then Q and W after the shockwave",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Heimerdinger",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1"
+    ],
+    "when_ar": "لاصطياد هدف في المدى",
+    "when_en": "Catching a target in range",
+    "tip_ar": "استخدم Grenade لشل الهدف ثم Rockets وأخيرا Turret",
+    "tip_en": "Use the grenade to stun, then rockets, then the turret",
+    "difficulty": 2
+   },
+   {
+    "id": "upgrade",
+    "title_ar": "كومبو التحسين",
+    "title_en": "Upgraded burst",
+    "steps": [
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لإنهاء هدف أو لمعركة",
+    "when_en": "Finishing a target or a fight",
+    "tip_ar": "فعّل UPGRADE!!! أولا لتحصل على أقوى تأثير للمهارة التالية",
+    "tip_en": "Cast UPGRADE!!! first for the strongest next spell",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Hwei",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "للانفجار على هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "ابدأ بمهارة التحكم ثم أكمل بمهارات Disaster",
+    "tip_en": "Open with a control power, then follow with Disaster powers",
+    "difficulty": 3,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support",
+    "steps": [
+     "3",
+     "2",
+     "1"
+    ],
+    "when_ar": "لحماية الفريق وإعاقة الأعداء",
+    "when_en": "Peeling and controlling",
+    "tip_ar": "اجمع بين Torment للتحكم و Serenity لدعم حليفك",
+    "tip_en": "Pair Torment for control with Serenity to support allies",
+    "difficulty": 3,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Irelia",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "ultimate",
+     "1",
+     "2"
+    ],
+    "when_ar": "للدخول والاشتباك مع بطل",
+    "when_en": "Diving a champion",
+    "tip_ar": "اشل الهدف بـ E ليحمل علامة فتتجدد Q ثم أكمل بـ Ult",
+    "tip_en": "Stun with E to Mark them so Q refreshes, then ult",
+    "difficulty": 3
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "1",
+     "aa",
+     "1",
+     "2"
+    ],
+    "when_ar": "للتبادل مع بطل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "استخدم Q على تابع للوصول إلى الهدف ثم اشحن W",
+    "tip_en": "Q through a minion to reach the target, then charge W",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Janna",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "peel",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Peel",
+    "steps": [
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لإبعاد من يهاجم حلفاءك",
+    "when_en": "Pushing away an attacker",
+    "tip_ar": "أطح بـ Howling Gale ثم ادفع بـ Monsoon",
+    "tip_en": "Knock up with Howling Gale, then push with Monsoon",
+    "difficulty": 2
+   },
+   {
+    "id": "protect",
+    "title_ar": "كومبو الدعم",
+    "title_en": "Protect",
+    "steps": [
+     "3",
+     "2"
+    ],
+    "when_ar": "لتقوية حليف في معركة",
+    "when_en": "Boosting an ally in a fight",
+    "tip_ar": "اجعل Eye Of The Storm على حليفك ثم Zephyr لزيادة السرعة",
+    "tip_en": "Shield your ally, then Zephyr for speed",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Jarvan IV",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "ultimate",
+     "aa"
+    ],
+    "when_ar": "للدخول والإطاحة بهدف",
+    "when_en": "Diving and knocking up a target",
+    "tip_ar": "ضع الراية ثم Q لتنجذب نحوها وتطيح الأعداء",
+    "tip_en": "Drop the flag, then Q to pull yourself and knock enemies up",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "3",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لبدء معركة وحصر الهدف",
+    "when_en": "Starting a fight and trapping a target",
+    "tip_ar": "Cataclysm يصنع ساحة تمنع الهروب فاستخدمه بعد الإطاحة",
+    "tip_en": "Cataclysm arena blocks escapes, so use it after the knock up",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Jax",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اقفز بـ Q ثم فعّل W وأطلق E قبل أن يضرب العدو",
+    "tip_en": "Leap in with Q, W, then E before the big hit lands",
+    "difficulty": 2,
+    "styles": [
+     "build_bruiser"
+    ]
+   },
+   {
+    "id": "tank",
+    "title_ar": "كومبو الصمود",
+    "title_en": "Tanky engage",
+    "steps": [
+     "ultimate",
+     "1",
+     "3",
+     "2"
+    ],
+    "when_ar": "لبدء معركة بأمان",
+    "when_en": "Starting a fight safely",
+    "tip_ar": "فعّل Ult لزيادة الدروع ثم Counter Strike لشل الأعداء القريبين",
+    "tip_en": "Ult for resistances, then Counter Strike to stun the nearby enemies",
+    "difficulty": 2,
+    "styles": [
+     "build_tank"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Jayce",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "ultimate",
+     "1",
+     "3"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "أطلق Q عبر Acceleration Gate لمدى وسرعة أكبر ثم بدّل الشكل",
+    "tip_en": "Fire Q through the Acceleration Gate, then swap form",
+    "difficulty": 3,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "allin",
+    "title_ar": "كومبو الاشتباك",
+    "title_en": "All-in",
+    "steps": [
+     "1",
+     "2",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "للاشتباك مع بطل في الخط",
+    "when_en": "All-in on a champion in lane",
+    "tip_ar": "اقفز بـ Hammer Q ثم ادفع الهدف بـ Thundering Blow",
+    "tip_en": "Leap in with Hammer Q, then knock back with Thundering Blow",
+    "difficulty": 2,
+    "lanes": [
+     "BARON"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Jhin",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "2"
+    ],
+    "when_ar": "لاصطياد هدف في المدى",
+    "when_en": "Picking a target in range",
+    "tip_ar": "ضع الفخ ليبطئ الهدف ثم اضرب والرصاصة الرابعة تسبب ضررا أكبر",
+    "tip_en": "Trap to slow, then shoot; the fourth shot deals more damage",
+    "difficulty": 2
+   },
+   {
+    "id": "ult",
+    "title_ar": "كومبو Ult",
+    "title_en": "Ult snipe",
+    "steps": [
+     "3",
+     "ultimate",
+     "ultimate",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء أعداء في معركة بعيدة",
+    "when_en": "Sniping in a distant fight",
+    "tip_ar": "Ult يتوقف عند أول بطل يصيبه فاختر زاوية جيدة",
+    "tip_en": "The shots stop on the first champion, so pick a good angle",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Jinx",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاصطياد هدف قريب",
+    "when_en": "Catching a close target",
+    "tip_ar": "ثبّت الهدف بـ Flame Chompers ثم Zap لتبطئه وتكشفه",
+    "tip_en": "Root with Flame Chompers, then Zap to slow and reveal",
+    "difficulty": 2
+   },
+   {
+    "id": "finish",
+    "title_ar": "كومبو الإنهاء",
+    "title_en": "Finisher",
+    "steps": [
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء بطل بصحة قليلة",
+    "when_en": "Finishing a low-health champion",
+    "tip_ar": "Super Mega Death Rocket يقوى بالمسافة فأبطئ الهدف بـ Zap أولا",
+    "tip_en": "The rocket scales with distance, so Zap first to slow",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "K'Sante",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "1",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع بطل قريب",
+    "when_en": "Fighting a close champion",
+    "tip_ar": "اضرب Ntofo Strikes مرتين ليشل الهدف ثم اندفع بـ Path Maker",
+    "tip_en": "Two Ntofo Strikes stun, then Path Maker knocks back",
+    "difficulty": 2
+   },
+   {
+    "id": "allout",
+    "title_ar": "كومبو All Out",
+    "title_en": "All Out",
+    "steps": [
+     "ultimate",
+     "2",
+     "1",
+     "3"
+    ],
+    "when_ar": "لبدء معركة وإبعاد هدف نحو جدار",
+    "when_en": "Starting a fight, pushing a target into a wall",
+    "tip_ar": "ادفع الهدف نحو جدار بـ Ult ليخترقه ويتلقى ضررا إضافيا",
+    "tip_en": "Knock the target into terrain with the ult for bonus damage",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Kai'Sa",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الهجمات",
+    "title_en": "On-hit trade",
+    "steps": [
+     "3",
+     "aa",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للاشتباك الطويل بالهجمات العادية",
+    "when_en": "Sustained basic attack fights",
+    "tip_ar": "كل هجمة تضيف Plasma فاجعلها تنفجر بإصابة Void Seeker",
+    "tip_en": "Each hit stacks Plasma, so pop it with Void Seeker",
+    "difficulty": 2,
+    "styles": [
+     "build_onhit"
+    ]
+   },
+   {
+    "id": "dive",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Dive",
+    "steps": [
+     "2",
+     "ultimate",
+     "aa",
+     "1"
+    ],
+    "when_ar": "لاقتحام هدف عليه علامة Plasma",
+    "when_en": "Diving a Plasma-marked target",
+    "tip_ar": "اعلّم الهدف بـ Void Seeker لتتمكن من القفز عليه بـ Ult",
+    "tip_en": "Mark with Void Seeker so the ult can dash to them",
+    "difficulty": 3
+   },
+   {
+    "id": "burst",
+    "title_ar": "كومبو الانفجار",
+    "title_en": "Burst",
+    "steps": [
+     "2",
+     "1",
+     "ultimate",
+     "aa"
+    ],
+    "when_ar": "لإنهاء هدف بسرعة",
+    "when_en": "Bursting a target",
+    "tip_ar": "تكفي بضع مهارات لتفعيل Plasma فاستخدم Ult للدخول وأكمل",
+    "tip_en": "A few spells trigger Plasma, so ult in and keep casting",
+    "difficulty": 3,
+    "styles": [
+     "build_ap"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Kalista",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "aa",
+     "3"
+    ],
+    "when_ar": "لإنهاء هدف قريب",
+    "when_en": "Finishing a close target",
+    "tip_ar": "ضع الرماح بالهجمات ثم Rend لتخرجها وتسبب ضررا متصاعدا",
+    "tip_en": "Stack spears with attacks, then Rend rips them out",
+    "difficulty": 2
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "2",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للضغط مع حليف Oathsworn",
+    "when_en": "Poking with your Oathsworn",
+    "tip_ar": "اضرب نفس الهدف مع حليفك لتحصل على ضرر إضافي من Sentinel",
+    "tip_en": "Hit the same target as your Oathsworn for bonus damage",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Karma",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "support-ult",
+    "title_ar": "كومبو السرعة للفريق",
+    "title_en": "Team speed",
+    "steps": [
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "لدخول أو هروب الفريق معا",
+    "when_en": "Engaging or disengaging as a team",
+    "tip_ar": "اجعل الدرع المعزّز بعد Ult ليشمل الحلفاء القريبين بالسرعة",
+    "tip_en": "Empowered shield after the ult hits nearby allies with speed",
+    "difficulty": 2,
+    "styles": [
+     "build_support"
+    ],
+    "lanes": [
+     "SUPPORT"
+    ]
+   },
+   {
+    "id": "support-root",
+    "title_ar": "كومبو التثبيت",
+    "title_en": "Root",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لتثبيت عدو أمام فريقك",
+    "when_en": "Rooting an enemy for your team",
+    "tip_ar": "ابق على الرابط حتى يكتمل التثبيت ثم أكمل بـ Inner Flame",
+    "tip_en": "Keep the tether until it roots, then follow with Inner Flame",
+    "difficulty": 2,
+    "styles": [
+     "build_support"
+    ],
+    "lanes": [
+     "SUPPORT"
+    ]
+   },
+   {
+    "id": "mid-poke",
+    "title_ar": "كومبو الضغط في الميد",
+    "title_en": "Mid poke",
+    "steps": [
+     "ultimate",
+     "1",
+     "2"
+    ],
+    "when_ar": "للضغط على العدو من بعيد",
+    "when_en": "Poking from range",
+    "tip_ar": "بعد Ult تصبح Inner Flame معزّزة وتسبب انفجارا ثانيا",
+    "tip_en": "After the ult, Inner Flame is empowered and explodes twice",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ],
+    "lanes": [
+     "MID"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Kassadin",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "3",
+     "ultimate",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل في المدى",
+    "when_en": "Fighting a champion in range",
+    "tip_ar": "اسكت الهدف بـ Null Sphere ثم Riftwalk وأكمل",
+    "tip_en": "Silence with Null Sphere, then Riftwalk in",
+    "difficulty": 2
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "Nether Blade تستعيد المانا فاضرب بها في كل تبادل",
+    "tip_en": "Nether Blade restores mana, so use it in every trade",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Katarina",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Assassinate",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لاغتيال هدف هش",
+    "when_en": "Assassinating a squishy target",
+    "tip_ar": "أسقط خنجرا بـ W ثم اندفع إليه بـ Shunpo قبل Ult",
+    "tip_en": "Drop a Dagger with W and Shunpo to it before the ult",
+    "difficulty": 3
+   },
+   {
+    "id": "reset",
+    "title_ar": "كومبو إعادة التعيين",
+    "title_en": "Reset chain",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "3"
+    ],
+    "when_ar": "بعد قتل بطل لإكمال القتال",
+    "when_en": "After a kill to keep fighting",
+    "tip_ar": "القتل يخفض وقت تبريد المهارات فتابع للهدف التالي فورا",
+    "tip_en": "A kill cuts cooldowns, so chain straight to the next target",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Kayle",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "onhit",
+    "title_ar": "كومبو الهجمات",
+    "title_en": "On-hit combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للاشتباك الطويل بالهجمات العادية",
+    "when_en": "Sustained basic attack fights",
+    "tip_ar": "أبطئ الهدف بـ Radiant Blast ثم اضرب بالهجمات بعد Starfire Spellblade",
+    "tip_en": "Slow with Radiant Blast, then attack after Starfire Spellblade",
+    "difficulty": 2,
+    "styles": [
+     "build_onhit"
+    ]
+   },
+   {
+    "id": "ap",
+    "title_ar": "كومبو السحر",
+    "title_en": "AP burst",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للضغط والانفجار بالسحر",
+    "when_en": "AP poke and burst",
+    "tip_ar": "Radiant Blast تخفض المقاومة فتزيد ضرر الباقي",
+    "tip_en": "Radiant Blast cuts resistances, boosting the rest",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ]
+   },
+   {
+    "id": "save",
+    "title_ar": "كومبو الإنقاذ",
+    "title_en": "Save",
+    "steps": [
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لإنقاذ حليف أو بدء معركة",
+    "when_en": "Saving an ally or starting a fight",
+    "tip_ar": "Ult يمنع الموت لفترة قصيرة فاستخدمه قبل ضرر قاتل",
+    "tip_en": "The ult stops damage for a moment, so use it before lethal damage",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Kayn",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اندفع بـ Q ثم أبطئ بـ W وأنهِ بـ Umbral Trespass",
+    "tip_en": "Dash with Q, slow with W, finish with Umbral Trespass",
+    "difficulty": 2
+   },
+   {
+    "id": "gank",
+    "title_ar": "كومبو الكمين",
+    "title_en": "Gank",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "aa"
+    ],
+    "when_ar": "لمفاجأة هدف عبر الجدران",
+    "when_en": "Surprising a target through walls",
+    "tip_ar": "اعبر الجدار بـ Shadow Step لتظهر من مكان غير متوقع",
+    "tip_en": "Walk through a wall with Shadow Step for an unexpected angle",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Kennen",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لشل هدف في المدى",
+    "when_en": "Stunning a target in range",
+    "tip_ar": "ثلاث ضربات من المهارات تشل الهدف فاحسب العلامات",
+    "tip_en": "Three ability hits stun the target, so count your marks",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "3",
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "ادخل بـ Lightning Rush ثم Ult وسط الأعداء",
+    "tip_en": "Enter with Lightning Rush, then ult in the middle",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Kha'Zix",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "aa",
+     "1"
+    ],
+    "when_ar": "لاغتيال هدف منعزل",
+    "when_en": "Killing an isolated target",
+    "tip_ar": "Taste Their Fear يسبب ضررا أكبر لهدف منعزل فاعزله أولا",
+    "tip_en": "Taste Their Fear hits harder on an isolated target",
+    "difficulty": 2
+   },
+   {
+    "id": "escape",
+    "title_ar": "كومبو الهروب",
+    "title_en": "Escape",
+    "steps": [
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "للهروب بعد القتال",
+    "when_en": "Escaping after a fight",
+    "tip_ar": "اختف بـ Ult ثم اقفز بـ Leap بعيدا",
+    "tip_en": "Turn invisible with the ult, then Leap away",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Kindred",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "aa",
+     "1",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "الهجمة الثالثة بعد Mounting Dread تجعل الذئب يقفز على الهدف",
+    "tip_en": "The third attack after Mounting Dread sends Wolf to pounce",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "2",
+     "3"
+    ],
+    "when_ar": "لحماية الفريق في معركة",
+    "when_en": "Protecting your team in a fight",
+    "tip_ar": "Lamb's Respite تمنع الموت فاستخدمه عندما يقترب الحلفاء من الموت",
+    "tip_en": "Lamb's Respite stops deaths, so use it when allies are about to die",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Kog'Maw",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Burning down a target",
+    "tip_ar": "أضعف الدروع بـ Caustic Spittle ثم فعّل W واضرب",
+    "tip_en": "Shred armor with Caustic Spittle, then W and attack",
+    "difficulty": 2
+   },
+   {
+    "id": "peel",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Peel",
+    "steps": [
+     "3",
+     "2",
+     "aa"
+    ],
+    "when_ar": "لإبطاء هدف يقترب منك",
+    "when_en": "Slowing a target that dives you",
+    "tip_ar": "ارم Void Ooze لإبطاء الهدف ثم اضرب بالهجمات المعزّزة",
+    "tip_en": "Ooze to slow, then attack with empowered hits",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Lee Sin",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الاشتباك",
+    "title_en": "Brawl",
+    "steps": [
+     "1",
+     "1",
+     "3",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Brawling a champion",
+    "tip_ar": "اضرب Q ثم Q الثانية لتصل إليه ثم Tempest وبعدها هجماتك السريعة",
+    "tip_en": "Q, recast Q to dash in, Tempest, then the fast attacks",
+    "difficulty": 3
+   },
+   {
+    "id": "insec",
+    "title_ar": "كومبو Insec",
+    "title_en": "Insec",
+    "steps": [
+     "1",
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لركل الهدف نحو فريقك",
+    "when_en": "Kicking the target into your team",
+    "tip_ar": "اقفز بـ W إلى حليف أو Ward خلف الهدف ثم اركله نحو فريقك",
+    "tip_en": "Safeguard to an ally or ward behind the target, then kick toward your team",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Leona",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لشل هدف في المدى",
+    "when_en": "Locking down a target in range",
+    "tip_ar": "ثبّت الهدف بـ Zenith Blade ثم شله بـ Shield of Daybreak",
+    "tip_en": "Zenith Blade to pin, then Shield of Daybreak to stun",
+    "difficulty": 2
+   },
+   {
+    "id": "flash",
+    "title_ar": "كومبو Flash",
+    "title_en": "Flash engage",
+    "steps": [
+     "flash",
+     "3",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لمفاجأة هدف خلف خط المقدمة",
+    "when_en": "Surprising a backline target",
+    "tip_ar": "استخدم Flash عند الدخول لتحصل على شل مفاجئ",
+    "tip_en": "Flash in for a surprise lockdown",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Lillia",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لاشتباك مع هدف في المدى",
+    "when_en": "Fighting a champion in range",
+    "tip_ar": "أبطئ الهدف بـ Swirlseed ثم ضعه تحت Dream Dust قبل Ult",
+    "tip_en": "Slow with Swirlseed and apply Dream Dust before the ult",
+    "difficulty": 2
+   },
+   {
+    "id": "chase",
+    "title_ar": "كومبو المطاردة",
+    "title_en": "Chase",
+    "steps": [
+     "3",
+     "1"
+    ],
+    "when_ar": "لمطاردة هدف يهرب",
+    "when_en": "Chasing a fleeing target",
+    "tip_ar": "كل مهارة تصيب تزيد سرعة حركتك عبر Blooming Blows",
+    "tip_en": "Each spell hit adds move speed through Blooming Blows",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Lissandra",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لتجميد هدف في المدى",
+    "when_en": "Freezing a target in range",
+    "tip_ar": "أبطئ الهدف بـ Ice Shard ثم اندفع بـ Glacial Path وثبّته بـ Ring of Frost",
+    "tip_en": "Slow with Ice Shard, dash with Glacial Path, root with Ring of Frost",
+    "difficulty": 3
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "3",
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "اندفع إلى الأعداء ثم ثبّتهم وجمّد أخطر بطل",
+    "tip_en": "Dash in, root them, then freeze the biggest threat",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Lucian",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "1",
+     "aa",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للتبادل والضرر السريع",
+    "when_en": "Fast trades and burst",
+    "tip_ar": "اتبع كل مهارة بهجمة عادية لتصبح ضربة مزدوجة",
+    "tip_en": "Follow every ability with a basic attack for the double shot",
+    "difficulty": 3
+   },
+   {
+    "id": "ult",
+    "title_ar": "كومبو Ult",
+    "title_en": "Ultimate",
+    "steps": [
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف داخل المدى",
+    "when_en": "Finishing a target in range",
+    "tip_ar": "استخدم Relentless Pursuit للتحرك وأطلق Ult باتجاه الهدف",
+    "tip_en": "Dash with Relentless Pursuit, then fire the ult at the target",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Lulu",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لحماية الحليف الحامل في معركة",
+    "when_en": "Protecting your carry in a fight",
+    "tip_ar": "ضع الدرع ثم السرعة ثم ضخّم الحليف بـ Wild Growth",
+    "tip_en": "Shield, speed, then enlarge your ally with Wild Growth",
+    "difficulty": 2
+   },
+   {
+    "id": "pick",
+    "title_ar": "كومبو الإيقاف",
+    "title_en": "Disable",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لإيقاف أخطر عدو",
+    "when_en": "Shutting down the top threat",
+    "tip_ar": "حوّل العدو بـ Whimsy ثم أبطئه بـ Glitterlance",
+    "tip_en": "Polymorph with Whimsy, then slow with Glitterlance",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Lux",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "mid",
+    "title_ar": "كومبو الميد",
+    "title_en": "Mid burst",
+    "steps": [
+     "1",
+     "3",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "اضرب Light Binding ثم فجّر Lucent Singularity وأشعل Illumination",
+    "tip_en": "Land Light Binding, detonate Singularity, then pop Illumination",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ],
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support pick",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاصطياد عدو في المدى",
+    "when_en": "Catching an enemy in range",
+    "tip_ar": "أبطئ بـ Lucent Singularity قبل Light Binding ليصعب الهروب",
+    "tip_en": "Slow with Singularity first so Light Binding is hard to dodge",
+    "difficulty": 2,
+    "lanes": [
+     "SUPPORT"
+    ]
+   },
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "2",
+     "3"
+    ],
+    "when_ar": "لحماية الحليف",
+    "when_en": "Shielding an ally",
+    "tip_ar": "ارم Prismatic Barrier على الحليف ثم أبطئ من يلاحقه",
+    "tip_en": "Barrier your ally, then slow the chaser",
+    "difficulty": 1,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Malphite",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لبدء معركة وإطاحة عدة أعداء",
+    "when_en": "Starting a fight with a knock up",
+    "tip_ar": "اضرب Unstoppable Force على أكبر عدد من الأعداء قبل أي مهارة أخرى",
+    "tip_en": "Aim the ult at the most enemies before anything else",
+    "difficulty": 2,
+    "styles": [
+     "build_tank"
+    ]
+   },
+   {
+    "id": "burst",
+    "title_ar": "كومبو الميد",
+    "title_en": "Mid burst",
+    "steps": [
+     "1",
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لإنهاء هدف بالسحر",
+    "when_en": "Bursting a target with AP",
+    "tip_ar": "اسرق السرعة بـ Seismic Shard ثم أطح بـ Ult وأكمل",
+    "tip_en": "Steal speed with Seismic Shard, then ult and follow",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ],
+    "lanes": [
+     "MID"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Maokai",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لتثبيت هدف وإبعاده",
+    "when_en": "Rooting and pushing a target",
+    "tip_ar": "اندفع بـ Twisted Advance لتثبيت الهدف ثم Bramble Smash",
+    "tip_en": "Twisted Advance roots, then Bramble Smash",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "2",
+     "1"
+    ],
+    "when_ar": "لقطع تقدم العدو",
+    "when_en": "Stopping the enemy advance",
+    "tip_ar": "ادفع جدار Nature's Grasp نحو الأعداء ليثبّتهم",
+    "tip_en": "Push the Nature's Grasp wall into the enemy to root them",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Master Yi",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "ultimate",
+     "aa",
+     "aa",
+     "2"
+    ],
+    "when_ar": "لاغتيال هدف أو الدخول لمعركة",
+    "when_en": "Assassinating or diving",
+    "tip_ar": "اقفز بـ Alpha Strike ثم Highlander وأبقِ Meditate للنجاة",
+    "tip_en": "Alpha Strike in, Highlander on, keep Meditate to survive",
+    "difficulty": 2
+   },
+   {
+    "id": "reset",
+    "title_ar": "كومبو التجديد",
+    "title_en": "Reset",
+    "steps": [
+     "1",
+     "aa",
+     "1"
+    ],
+    "when_ar": "بعد القتل لمتابعة القتال",
+    "when_en": "After a kill",
+    "tip_ar": "القتل يجدد Alpha Strike فاقفز مباشرة إلى الهدف التالي",
+    "tip_en": "A kill resets Alpha Strike, so jump to the next target",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Mel",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "burst",
+    "title_ar": "كومبو الميد",
+    "title_en": "Mid burst",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "ثبّت الهدف في مركز Solar Snare ثم Radiant Volley",
+    "tip_en": "Root at the center of Solar Snare, then Radiant Volley",
+    "difficulty": 2,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support poke",
+    "steps": [
+     "1",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للضغط على الخط",
+    "when_en": "Poking the lane",
+    "tip_ar": "كل مهارة تعطيك مقذوفات إضافية في هجمتك التالية",
+    "tip_en": "Each ability gives extra projectiles on your next attack",
+    "difficulty": 1,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Milio",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لحماية الفريق في معركة",
+    "when_en": "Protecting the team in a fight",
+    "tip_ar": "أرسل الدرع ثم ضع Campfire وأطلق Ult لإزالة التحكم",
+    "tip_en": "Shield, Campfire, then ult to cleanse crowd control",
+    "difficulty": 2
+   },
+   {
+    "id": "disengage",
+    "title_ar": "كومبو الإبعاد",
+    "title_en": "Disengage",
+    "steps": [
+     "1",
+     "3"
+    ],
+    "when_ar": "لإبعاد عدو يقترب من حليفك",
+    "when_en": "Pushing an enemy off your ally",
+    "tip_ar": "اركل الكرة ليبتعد العدو ثم أعط حليفك Warm Hugs",
+    "tip_en": "Kick to knock the enemy back, then Warm Hugs on your ally",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Miss Fortune",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "aa",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "اضرب هدفا جديدا لتفعيل Love Tap ثم Double Up",
+    "tip_en": "Hit a new target for Love Tap, then Double Up",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لمعركة جماعية والأعداء مجتمعون",
+    "when_en": "Teamfight with enemies grouped",
+    "tip_ar": "أبطئهم بـ Make It Rain ثم أطلق Bullet Time عليهم",
+    "tip_en": "Slow them with Make It Rain, then channel Bullet Time",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Mordekaiser",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اسحب الأعداء بـ Death's Grasp ثم Obliterate على هدف واحد لضرر أكبر",
+    "tip_en": "Pull with Death's Grasp, then Obliterate a single target for more damage",
+    "difficulty": 2
+   },
+   {
+    "id": "isolate",
+    "title_ar": "كومبو العزل",
+    "title_en": "Isolate",
+    "steps": [
+     "ultimate",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لعزل بطل بعيدا عن فريقه",
+    "when_en": "Isolating a champion",
+    "tip_ar": "Realm of Death تأخذ الهدف إلى ساحة منفردة فاستخدمها على أخطر بطل",
+    "tip_en": "The ult drags one champion into a duel; pick the biggest threat",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Morgana",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لتثبيت هدف وإنهائه",
+    "when_en": "Rooting and finishing a target",
+    "tip_ar": "اصب Dark Binding أولا ثم ضع Tormented Shadow وأكمل بـ Soul Shackles",
+    "tip_en": "Land Dark Binding, drop Tormented Shadow, then Soul Shackles",
+    "difficulty": 2
+   },
+   {
+    "id": "shield",
+    "title_ar": "كومبو الدرع",
+    "title_en": "Shield",
+    "steps": [
+     "3",
+     "1"
+    ],
+    "when_ar": "لحماية حليف ضد التحكم",
+    "when_en": "Protecting an ally against CC",
+    "tip_ar": "ضع Black Shield قبل وصول مهارة تحكم ثم قيّد العدو",
+    "tip_en": "Shield before the CC lands, then bind the attacker",
+    "difficulty": 2,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Nami",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "3",
+     "aa"
+    ],
+    "when_ar": "لشل هدف في المدى",
+    "when_en": "Stunning a target in range",
+    "tip_ar": "اضرب Aqua Prison أولا ثم Ebb and Flow ثم قوّ حليفك",
+    "tip_en": "Land Aqua Prison, Ebb and Flow, then empower your ally",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "1",
+     "2"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "أطح بـ Tidal Wave ثم اشلل بـ Aqua Prison",
+    "tip_en": "Knock up with Tidal Wave, then Aqua Prison",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Nasus",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اضعف الهدف بـ Wither وخفض دروعه بـ Spirit Fire ثم Siphoning Strike",
+    "tip_en": "Wither, shred armor with Spirit Fire, then Siphoning Strike",
+    "difficulty": 1
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "2",
+     "1"
+    ],
+    "when_ar": "للدخول في معركة جماعية",
+    "when_en": "Entering a teamfight",
+    "tip_ar": "فعّل Fury of the Sands عند الدخول لتزداد صحتك ومداك",
+    "tip_en": "Ult on entry for extra health and range",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Nautilus",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "3",
+     "2"
+    ],
+    "when_ar": "لسحب هدف وإنهاء الاشتباك",
+    "when_en": "Hooking a target and fighting",
+    "tip_ar": "اسحب بـ Dredge Line ثم الهجمة الأولى تثبّت الهدف",
+    "tip_en": "Hook, and the first attack roots the target",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "1",
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "Depth Charge تلاحق العدو وتطيح من في طريقها فاستخدمها بعد السحب",
+    "tip_en": "Depth Charge chases and knocks up those it passes, so use it after the hook",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Nidalee",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "ultimate",
+     "2",
+     "1",
+     "3"
+    ],
+    "when_ar": "لإنهاء هدف بعد إصابته بالرمح",
+    "when_en": "Finishing a target after a javelin hit",
+    "tip_ar": "اضرب Javelin Toss في شكل الإنسان ثم تحول إلى الفهد واقفز وأكمل",
+    "tip_en": "Hit Javelin Toss in human form, shift to cougar, then pounce and follow up",
+    "difficulty": 3
+   },
+   {
+    "id": "trap",
+    "title_ar": "كومبو الفخ",
+    "title_en": "Trap",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاصطياد هدف يمر فوق الفخ",
+    "when_en": "Catching a target on the trap",
+    "tip_ar": "ضع Bushwhack في الأعشاب ثم Javelin Toss على الهدف المكشوف",
+    "tip_en": "Lay Bushwhack in brush, then Javelin the revealed target",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Nilah",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اضرب Formless Blade ثم اندفع بـ Slipstream وأنهِ بـ Apotheosis",
+    "tip_en": "Formless Blade, Slipstream in, then Apotheosis",
+    "difficulty": 2
+   },
+   {
+    "id": "dodge",
+    "title_ar": "كومبو التفادي",
+    "title_en": "Dodge",
+    "steps": [
+     "2",
+     "3"
+    ],
+    "when_ar": "للاقتراب بأمان من هدف",
+    "when_en": "Closing in safely",
+    "tip_ar": "Jubilant Veil يتفادى الضرر فاندفع به نحو الهدف",
+    "tip_en": "Jubilant Veil dodges damage, so dash in during it",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Nocturne",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاصطياد هدف من الظل",
+    "when_en": "Catching a target from the dark",
+    "tip_ar": "ثبّت الهدف بـ Unspeakable Horror ثم اقفز عليه بـ Paranoia",
+    "tip_en": "Fear with Unspeakable Horror, then launch with Paranoia",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لدخول معركة بدون رؤية العدو",
+    "when_en": "Entering a fight with enemy vision cut",
+    "tip_ar": "Paranoia تقلل رؤية الأعداء فادخل بها قبل بقية المهارات",
+    "tip_en": "Paranoia cuts enemy vision, so open with it",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Norra",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل في المدى",
+    "when_en": "Fighting a champion in range",
+    "tip_ar": "اترك Trinkets بمهارتك الأولى لتتفعل عند اقتراب العدو",
+    "tip_en": "Your first ability leaves Trinkets that trigger on enemy touch",
+    "difficulty": 3
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "2",
+     "3"
+    ],
+    "when_ar": "لمعركة جماعية في منطقة ضيقة",
+    "when_en": "Teamfight in a tight area",
+    "tip_ar": "ضع الـ Portal على الأعداء المتجمعين ثم أكمل بـ Journey To Nowhere",
+    "tip_en": "Place the portal over grouped enemies, then Journey To Nowhere",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Nunu & Willump",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاصطياد هدف وإنهاء القتال",
+    "when_en": "Catching a target and fighting",
+    "tip_ar": "أطح بكرة الثلج ثم ثبّت الهدف بـ Snowball Barrage",
+    "tip_en": "Roll the snowball to knock up, then root with Snowball Barrage",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "2",
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "ابدأ بكرة الثلج ثم ضع Absolute Zero على الأعداء المحاصرين",
+    "tip_en": "Snowball first, then Absolute Zero on the trapped enemies",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Olaf",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "التقط الفأس بعد Undertow ليعيد تبريدها",
+    "tip_en": "Pick the axe up after Undertow to refund the cooldown",
+    "difficulty": 2
+   },
+   {
+    "id": "allin",
+    "title_ar": "كومبو الاشتباك الكامل",
+    "title_en": "All-in",
+    "steps": [
+     "ultimate",
+     "3",
+     "2",
+     "aa"
+    ],
+    "when_ar": "لاشتباك طويل ضد عدة أعداء",
+    "when_en": "A long fight against several enemies",
+    "tip_ar": "Ragnarok يمنع التحكم فاستخدمه قبل الدخول",
+    "tip_en": "Ragnarok blocks CC, so use it before diving",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Orianna",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لسحب الأعداء وإنهائهم",
+    "when_en": "Pulling enemies together",
+    "tip_ar": "ضع الكرة تحت الأعداء ثم Shockwave لسحبهم نحوها",
+    "tip_en": "Place the ball among enemies, then Shockwave to pull them in",
+    "difficulty": 3
+   },
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "3",
+     "2"
+    ],
+    "when_ar": "لدعم حليف أثناء القتال",
+    "when_en": "Supporting an ally in a fight",
+    "tip_ar": "اربط الكرة بحليفك ليحصل على درع ثم أضف السرعة بـ Dissonance",
+    "tip_en": "Attach the ball to an ally for a shield, then Dissonance for speed",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Ornn",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "للاشتباك مع عدة أعداء",
+    "when_en": "Fighting several enemies",
+    "tip_ar": "اشحن نحو عمود الحمم ليصطدم بالأعداء ثم اجعلهم هشين بـ Bellows Breath",
+    "tip_en": "Charge into the magma pillar, then make them Brittle with Bellows Breath",
+    "difficulty": 3
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "استخدم Call of the Forge God بحيث يمر المخلوق بالأعداء",
+    "tip_en": "Aim the elemental so it runs through the enemy team",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Pantheon",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "aa",
+     "1",
+     "3"
+    ],
+    "when_ar": "لاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اشل الهدف بـ Shield Vault ثم Comet Spear المعزّزة",
+    "tip_en": "Stun with Shield Vault, then the empowered Comet Spear",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "2",
+     "1"
+    ],
+    "when_ar": "لبدء معركة بعيدة",
+    "when_en": "Starting a fight from far away",
+    "tip_ar": "اهبط بـ Grand Starfall على الأعداء ثم اشل أقربهم",
+    "tip_en": "Land Grand Starfall on enemies, then stun the closest",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Poppy",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للدخول والاشتباك",
+    "when_en": "Diving in",
+    "tip_ar": "ادفع الهدف نحو جدار بـ Heroic Charge ليتم شله",
+    "tip_en": "Push the target into a wall with Heroic Charge to stun it",
+    "difficulty": 2
+   },
+   {
+    "id": "peel",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Peel",
+    "steps": [
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإبعاد عدو خطير عن فريقك",
+    "when_en": "Removing a dangerous enemy",
+    "tip_ar": "Keeper's Verdict يرمي الأعداء بعيدا فاستخدمه على من يقتحم فريقك",
+    "tip_en": "The ult knocks enemies far away, so use it on a diver",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Pyke",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لقتل هدف بعد سحبه",
+    "when_en": "Killing a target after a pull",
+    "tip_ar": "اسحب بـ Bone Skewer ثم اشل بـ Phantom Undertow وأعدم بـ Ult",
+    "tip_en": "Hook, stun with Phantom Undertow, execute with the ult",
+    "difficulty": 3
+   },
+   {
+    "id": "ambush",
+    "title_ar": "كومبو الكمين",
+    "title_en": "Ambush",
+    "steps": [
+     "2",
+     "1",
+     "3"
+    ],
+    "when_ar": "لمفاجأة هدف من التخفي",
+    "when_en": "Ambushing from camouflage",
+    "tip_ar": "اقترب متخفيا بـ Ghostwater Dive ثم اسحب الهدف",
+    "tip_en": "Approach camouflaged with Ghostwater Dive, then hook",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Rakan",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "2",
+     "3"
+    ],
+    "when_ar": "لبدء معركة مع حليف",
+    "when_en": "Starting a fight with an ally",
+    "tip_ar": "فعّل Ult للسحر ثم اقفز بـ Grand Entrance للإطاحة",
+    "tip_en": "Ult to charm, then Grand Entrance to knock up",
+    "difficulty": 3
+   },
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "1",
+     "3"
+    ],
+    "when_ar": "لعلاج وحماية حليف",
+    "when_en": "Healing and shielding an ally",
+    "tip_ar": "اضرب بالريشة لتعالج حلفاءك ثم أعطِ حليفك درعا",
+    "tip_en": "Hit with the feather to heal allies, then shield your ally",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Rammus",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للدخول والاشتباك",
+    "when_en": "Diving in",
+    "tip_ar": "ادخل بـ Powerball ثم استفز الهدف وفعّل Defensive Ball Curl",
+    "tip_en": "Powerball in, taunt, then Defensive Ball Curl",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لمعركة جماعية",
+    "when_en": "Teamfight",
+    "tip_ar": "ابدأ بـ Soaring Slam لتبطئ الأعداء ثم استفز أخطرهم",
+    "tip_en": "Soaring Slam to slow, then taunt their carry",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Rell",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "2",
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "اقفز بـ Crashdown للإطاحة ثم اسحب الأعداء بـ Magnet Storm",
+    "tip_en": "Crashdown to knock up, then pull with Magnet Storm",
+    "difficulty": 3
+   },
+   {
+    "id": "pick",
+    "title_ar": "كومبو الاصطياد",
+    "title_en": "Pick",
+    "steps": [
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاصطياد هدف مع حليف",
+    "when_en": "Catching a target with an ally",
+    "tip_ar": "Shattering Strike يكسر الدرع ويشل الهدف فاستخدمه بعد Full Tilt",
+    "tip_en": "Shattering Strike breaks shields and stuns, so use it after Full Tilt",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Renekton",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "2",
+     "1",
+     "3"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اجمع أكثر من 50 Fury قبل W لتصبح ثلاث ضربات",
+    "tip_en": "Build over 50 Fury before W for a triple strike",
+    "difficulty": 2
+   },
+   {
+    "id": "allin",
+    "title_ar": "كومبو الاشتباك الكامل",
+    "title_en": "All-in",
+    "steps": [
+     "ultimate",
+     "3",
+     "2",
+     "1"
+    ],
+    "when_ar": "لاشتباك طويل",
+    "when_en": "A long fight",
+    "tip_ar": "فعّل Dominus أولا لصحة إضافية وضرر حول الجسد",
+    "tip_en": "Dominus first for bonus health and area damage",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Rengar",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الكمين",
+    "title_en": "Ambush",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "aa",
+     "2"
+    ],
+    "when_ar": "لمفاجأة هدف من الأعشاب أو التخفي",
+    "when_en": "Ambushing from brush or stealth",
+    "tip_ar": "اقفز من الأعشاب ثم ثبّت الهدف بـ Bola Strike وأكمل بالضربة الحرجة",
+    "tip_en": "Leap from brush, slow with Bola Strike, then follow with the crit",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Riven",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "burst",
+    "title_ar": "كومبو الانفجار",
+    "title_en": "Burst",
+    "steps": [
+     "3",
+     "ultimate",
+     "2",
+     "1",
+     "1",
+     "1"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "اشل بـ Ki Burst ثم أكمل ثلاث ضربات Q والثالثة تدفع الهدف",
+    "tip_en": "Ki Burst to stun, then three Q strikes; the third knocks back",
+    "difficulty": 3
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "1",
+     "aa",
+     "1",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للتبادل السريع في الخط",
+    "when_en": "Quick trades in lane",
+    "tip_ar": "اضرب الهجمة العادية بين كل Q لتستخدم شحنات السلاح",
+    "tip_en": "Attack between each Q to spend blade charges",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Rumble",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "3",
+     "1",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "ارم رمحين لتخفض المقاومة ثم استخدم Flamespitter وأنت في Danger Zone",
+    "tip_en": "Fire both harpoons to cut resistance, then Flamespitter in the Danger Zone",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "3",
+     "1"
+    ],
+    "when_ar": "لعرقلة أعداء مجتمعين",
+    "when_en": "Cutting off grouped enemies",
+    "tip_ar": "ضع جدار The Equalizer أمام الأعداء ثم أكمل بالمهارات",
+    "tip_en": "Lay The Equalizer wall across the enemies, then follow up",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Ryze",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "1"
+    ],
+    "when_ar": "للاشتباك مع هدف في المدى",
+    "when_en": "Fighting a target in range",
+    "tip_ar": "ضع Flux بـ Spell Flux ثم Rune Prison لتثبيت الهدف",
+    "tip_en": "Apply Flux with Spell Flux, then Rune Prison to root",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "3",
+     "2",
+     "1"
+    ],
+    "when_ar": "لمعركة جماعية",
+    "when_en": "Teamfight",
+    "tip_ar": "افتح Realm Warp لينتقل الفريق ثم أكمل بالمهارات",
+    "tip_en": "Open Realm Warp to move the team, then follow with spells",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Samira",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "1",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "استخدم مهارات مختلفة لرفع رتبة الأسلوب ولا تكرر المهارة نفسها",
+    "tip_en": "Use different abilities to raise your style rank",
+    "difficulty": 3
+   },
+   {
+    "id": "ult",
+    "title_ar": "كومبو Ult",
+    "title_en": "Ultimate",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "للأعداء المحيطين بك",
+    "when_en": "Enemies surrounding you",
+    "tip_ar": "اندفع وسط الأعداء ثم فعّل Inferno Trigger",
+    "tip_en": "Dash into the middle, then Inferno Trigger",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Senna",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لتثبيت هدف وضربه",
+    "when_en": "Rooting and hitting a target",
+    "tip_ar": "ثبّت العدو بـ Last Embrace ثم اضرب بـ Piercing Darkness",
+    "tip_en": "Root with Last Embrace, then hit with Piercing Darkness",
+    "difficulty": 2
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support",
+    "steps": [
+     "3",
+     "2"
+    ],
+    "when_ar": "لحماية الحلفاء وتثبيت الأعداء",
+    "when_en": "Protecting allies and rooting enemies",
+    "tip_ar": "ادخل Curse of the Black Mist مع حلفائك للتخفي ثم ثبّت الهدف",
+    "tip_en": "Enter the Mist with allies to hide, then root the target",
+    "difficulty": 2,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Seraphine",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "mid",
+    "title_ar": "كومبو الميد",
+    "title_en": "Mid burst",
+    "steps": [
+     "3",
+     "1",
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "Beat Drop يبطئ ثم يثبّت ثم يشل إذا كان العدو متأثرا من قبل",
+    "tip_en": "Beat Drop slows, then roots, then stuns an already affected enemy",
+    "difficulty": 3,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support",
+    "steps": [
+     "2",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لدعم الفريق في معركة",
+    "when_en": "Supporting the team in a fight",
+    "tip_ar": "درع Surround Sound ثم أبطئ الأعداء وأنهِ بـ Encore",
+    "tip_en": "Surround Sound shield, slow the enemies, then Encore",
+    "difficulty": 2,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Sett",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "3",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اجمع Grit قبل Haymaker لتحصل على درع وضرر حقيقي",
+    "tip_en": "Build Grit before Haymaker for a shield and true damage",
+    "difficulty": 2
+   },
+   {
+    "id": "pick",
+    "title_ar": "كومبو الاصطياد",
+    "title_en": "Pick",
+    "steps": [
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "لحمل هدف وإسقاطه وسط فريقك",
+    "when_en": "Carrying a target into your team",
+    "tip_ar": "ارفع العدو بـ Show Stopper ثم اسقطه عند حلفائك",
+    "tip_en": "Lift the enemy with Show Stopper and drop it by your allies",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Shen",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للدخول والاشتباك",
+    "when_en": "Diving in",
+    "tip_ar": "استفز الأعداء بـ Shadow Dash ثم اضرب بنصل الروح",
+    "tip_en": "Taunt with Shadow Dash, then strike with the spirit blade",
+    "difficulty": 2
+   },
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإنقاذ حليف بعيد",
+    "when_en": "Saving a far ally",
+    "tip_ar": "ضع Spirit's Refuge ثم انتقل بـ Stand United إلى الحليف",
+    "tip_en": "Place Spirit's Refuge, then teleport with Stand United",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Shyvana",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اشتعل بـ Burnout ثم Twin Bite وأطلق الكرة النارية وأنهِ بـ Ult",
+    "tip_en": "Burnout, Twin Bite, fireball, then the ult",
+    "difficulty": 2
+   },
+   {
+    "id": "dragon",
+    "title_ar": "كومبو شكل التنين",
+    "title_en": "Dragon form",
+    "steps": [
+     "ultimate",
+     "3",
+     "1"
+    ],
+    "when_ar": "بعد التحول لشكل التنين",
+    "when_en": "Once in dragon form",
+    "tip_ar": "Twin Bite في شكل التنين تضرب كل من أمامك",
+    "tip_en": "Dragon form Twin Bite hits everything in front",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Singed",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لتثبيت هدف ومطاردته",
+    "when_en": "Rooting and chasing a target",
+    "tip_ar": "ارم Fling فوق Mega Adhesive ليتثبّت الهدف",
+    "tip_en": "Fling the target into Mega Adhesive to root it",
+    "difficulty": 2
+   },
+   {
+    "id": "chase",
+    "title_ar": "كومبو المطاردة",
+    "title_en": "Chase",
+    "steps": [
+     "ultimate",
+     "2",
+     "3"
+    ],
+    "when_ar": "لاقتحام فريق العدو",
+    "when_en": "Running into the enemy team",
+    "tip_ar": "استخدم Insanity Potion أولا لزيادة قوتك",
+    "tip_en": "Drink Insanity Potion first for combat stats",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Sion",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "أبطئ بـ Roar of the Slayer ثم اشحن Decimating Smash وأطلقه",
+    "tip_en": "Slow with Roar of the Slayer, then charge Decimating Smash",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "1",
+     "3"
+    ],
+    "when_ar": "لاقتحام معركة جماعية",
+    "when_en": "Charging into a teamfight",
+    "tip_ar": "وجّه Unstoppable Onslaught نحو الأعداء ثم اضرب بالمهارات",
+    "tip_en": "Steer the charge at the enemies, then follow with abilities",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Sivir",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "aa"
+    ],
+    "when_ar": "للتبادل والضغط",
+    "when_en": "Trading and pressure",
+    "tip_ar": "ارم Boomerang Blade ثم فعّل Ricochet والهجمات ترتد",
+    "tip_en": "Boomerang Blade, then Ricochet so attacks bounce",
+    "difficulty": 1
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "2",
+     "aa"
+    ],
+    "when_ar": "لمعركة جماعية",
+    "when_en": "Teamfight",
+    "tip_ar": "On The Hunt تسرّع الفريق وتخفض وقت التبريد فاستخدمه عند الدخول",
+    "tip_en": "On The Hunt speeds your team and cuts cooldowns, so use it on entry",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Skarner",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "ultimate",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لإخضاع هدف وسحبه",
+    "when_en": "Suppressing and dragging a target",
+    "tip_ar": "اشحن بـ Ixtal's Impact ثم أخضع الهدف بـ Impale",
+    "tip_en": "Charge with Ixtal's Impact, then suppress with Impale",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للتبادل مع بطل",
+    "when_en": "Trading with a champion",
+    "tip_ar": "اضرب بالهجمة المعزّزة ثم ارم الصخرة",
+    "tip_en": "Attack with the empowered hit, then throw the boulder",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Smolder",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للضغط على هدف في المدى",
+    "when_en": "Poking a target in range",
+    "tip_ar": "اضرب Achooo ثم Super Scorcher Breath لتجمع الشحنات",
+    "tip_en": "Achooo, then Super Scorcher Breath to stack Dragon Practice",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "ultimate",
+     "3",
+     "2"
+    ],
+    "when_ar": "لمعركة جماعية",
+    "when_en": "Teamfight",
+    "tip_ar": "اطلب أمك أولا لتبطئ الأعداء ثم حلّق واقصف الأضعف",
+    "tip_en": "Call mom first to slow, then fly and hit the weakest",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Sona",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "3",
+     "aa"
+    ],
+    "when_ar": "لشل هدف بالهجمة المعزّزة",
+    "when_en": "Stunning a target with Power Chord",
+    "tip_ar": "استخدم ثلاث مهارات ثم هجمة عادية لتشل الهدف بـ Power Chord",
+    "tip_en": "Three spells then a basic attack for the Power Chord stun",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لبدء معركة جماعية",
+    "when_en": "Starting a teamfight",
+    "tip_ar": "شل الأعداء المجتمعين بـ Crescendo ثم أكمل بالمهارات",
+    "tip_en": "Stun grouped enemies with Crescendo, then follow with spells",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Soraka",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "zone",
+    "title_ar": "كومبو المنطقة",
+    "title_en": "Zone control",
+    "steps": [
+     "3",
+     "1"
+    ],
+    "when_ar": "لمنع الأعداء من الاقتراب",
+    "when_en": "Keeping enemies back",
+    "tip_ar": "ضع Equinox ليسكت الأعداء ثم Starcall ليبطئهم",
+    "tip_en": "Place Equinox to silence, then Starcall to slow",
+    "difficulty": 2
+   },
+   {
+    "id": "heal",
+    "title_ar": "كومبو العلاج",
+    "title_en": "Heal",
+    "steps": [
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإنقاذ الفريق في معركة",
+    "when_en": "Saving the team in a fight",
+    "tip_ar": "استخدم Astral Infusion على حليف ثم Wish عندما يقل صحة الجميع",
+    "tip_en": "Astral Infusion on an ally, then Wish when everyone is low",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Swain",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "ثبّت الهدف بـ Nevermove ثم اسحبه وأكمل بالمهارات",
+    "tip_en": "Root with Nevermove, pull the target, then follow up",
+    "difficulty": 2
+   },
+   {
+    "id": "tank",
+    "title_ar": "كومبو المقاتل",
+    "title_en": "Tank-mage engage",
+    "steps": [
+     "ultimate",
+     "3",
+     "1"
+    ],
+    "when_ar": "لبدء معركة والاستنزاف",
+    "when_en": "Starting a fight and draining",
+    "tip_ar": "فعّل Demonic Ascension للاستنزاف ثم ثبّت الأعداء",
+    "tip_en": "Pop Demonic Ascension to drain, then root the enemies",
+    "difficulty": 2,
+    "styles": [
+     "build_tank"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Sylas",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "3",
+     "1",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اندفع وأعد E لتسحب نفسك نحو الهدف ثم Q و W",
+    "tip_en": "Dash, recast E to pull yourself in, then Q and W",
+    "difficulty": 3
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "1",
+     "aa",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "كل مهارة تخزّن شحنة فاتبعها بهجمة عادية",
+    "tip_en": "Every ability stores a charge, so follow with a basic attack",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Syndra",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Killing a target in range",
+    "tip_ar": "ضع Dark Sphere ثم Scatter the Weak لتشل الهدف ثم Ult",
+    "tip_en": "Place a Dark Sphere, Scatter the Weak to stun, then ult",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "2"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Poking in lane",
+    "tip_ar": "ارم الكرة القريبة بـ Force of Will لتبطئ الأعداء",
+    "tip_en": "Throw the nearest sphere with Force of Will to slow enemies",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Taliyah",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "ضع حقل الألغام ثم ارم الهدف فوقه بـ Seismic Shove",
+    "tip_en": "Lay the minefield, then shove the target over it",
+    "difficulty": 3
+   },
+   {
+    "id": "wall",
+    "title_ar": "كومبو الجدار",
+    "title_en": "Wall play",
+    "steps": [
+     "ultimate",
+     "2",
+     "1"
+    ],
+    "when_ar": "لحصر الأعداء أو الهروب",
+    "when_en": "Trapping enemies or escaping",
+    "tip_ar": "استخدم Weaver's Wall لقطع طريق العدو أو لركوبه",
+    "tip_en": "Use Weaver's Wall to cut off the enemy or surf it",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Talon",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Assassinate",
+    "steps": [
+     "2",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لاغتيال هدف هش",
+    "when_en": "Assassinating a squishy target",
+    "tip_ar": "طبّق ثلاث جروح بالمهارات ثم هجمة عادية لينزف الهدف",
+    "tip_en": "Apply three Wounds with spells, then attack to bleed them",
+    "difficulty": 3
+   },
+   {
+    "id": "jump",
+    "title_ar": "كومبو القفز",
+    "title_en": "Wall jump",
+    "steps": [
+     "3",
+     "1"
+    ],
+    "when_ar": "للدخول عبر الجدران",
+    "when_en": "Entering through walls",
+    "tip_ar": "اقفز فوق الجدار بـ Assassin's Path ثم اطعن الهدف",
+    "tip_en": "Vault over the wall, then stab the target",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Teemo",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للتبادل المزعج",
+    "when_en": "Annoying trades",
+    "tip_ar": "أعمِ الهدف بـ Blinding Dart فلا تسبب هجماته ضررا",
+    "tip_en": "Blind the target so their attacks deal no damage",
+    "difficulty": 1
+   },
+   {
+    "id": "ambush",
+    "title_ar": "كومبو الكمين",
+    "title_en": "Ambush",
+    "steps": [
+     "3",
+     "aa",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "للكمين من التخفي",
+    "when_en": "Ambushing from stealth",
+    "tip_ar": "اختف بـ Guerilla Warfare ثم اضرب بسرعة هجوم إضافية",
+    "tip_en": "Hide with Guerilla Warfare, then hit with bonus attack speed",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Thresh",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "1",
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لسحب هدف وحصره",
+    "when_en": "Pulling and trapping a target",
+    "tip_ar": "اسحب بـ Death Sentence ثم اندفع إليه واحبسه بـ The Box",
+    "tip_en": "Pull with Death Sentence, dash in, then The Box",
+    "difficulty": 3
+   },
+   {
+    "id": "protect",
+    "title_ar": "كومبو الحماية",
+    "title_en": "Protect",
+    "steps": [
+     "2",
+     "3"
+    ],
+    "when_ar": "لإنقاذ حليف من هدف",
+    "when_en": "Saving an ally from a threat",
+    "tip_ar": "اسحب الحليف بالفانوس ثم Flay لإبعاد المهاجم",
+    "tip_en": "Pull your ally with the lantern, then Flay the attacker away",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Tristana",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "aa"
+    ],
+    "when_ar": "للتبادل والاشتباك",
+    "when_en": "Trading and fighting",
+    "tip_ar": "ضع القنبلة بـ Explosive Charge ثم Rapid Fire وأكمل بالهجمات",
+    "tip_en": "Place the bomb, activate Rapid Fire, then attack",
+    "difficulty": 2
+   },
+   {
+    "id": "peel",
+    "title_ar": "كومبو الدفاع",
+    "title_en": "Peel",
+    "steps": [
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "للهروب من هدف قريب",
+    "when_en": "Escaping a close threat",
+    "tip_ar": "اقفز بعيدا بـ Rocket Jump ثم ادفع المهاجم بـ Buster Shot",
+    "tip_en": "Jump away with Rocket Jump, then Buster Shot the diver",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Tryndamere",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "2",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اقطع المسافة بـ Spinning Slash ثم Mocking Shout وأنهِ بـ Bloodlust",
+    "tip_en": "Close in with Spinning Slash, Mocking Shout, then Bloodlust",
+    "difficulty": 2
+   },
+   {
+    "id": "survive",
+    "title_ar": "كومبو النجاة",
+    "title_en": "Survive",
+    "steps": [
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "للبقاء حيا في قتال خطر",
+    "when_en": "Staying alive in a fight",
+    "tip_ar": "Undying Rage يمنع الموت فاستخدمه ثم أعد الصحة بـ Bloodlust",
+    "tip_en": "Undying Rage stops death, then heal with Bloodlust",
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "champion": "Twisted Fate",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "aa",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "اختر البطاقة الذهبية لتشل الهدف ثم ارم Wild Cards",
+    "tip_en": "Pick the gold card to stun, then throw Wild Cards",
+    "difficulty": 2,
+    "styles": [
+     "build_ap"
+    ]
+   },
+   {
+    "id": "onhit",
+    "title_ar": "كومبو الهجمات",
+    "title_en": "On-hit combo",
+    "steps": [
+     "3",
+     "aa",
+     "2",
+     "aa"
+    ],
+    "when_ar": "للاشتباك الطويل بالهجمات",
+    "when_en": "Sustained attack fights",
+    "tip_ar": "فعّل Stacked Deck لسرعة الهجوم ثم اضرب بالبطاقة",
+    "tip_en": "Stacked Deck for attack speed, then attack with the card",
+    "difficulty": 2,
+    "styles": [
+     "build_onhit"
+    ]
+   },
+   {
+    "id": "gate",
+    "title_ar": "كومبو Gate",
+    "title_en": "Gate",
+    "steps": [
+     "ultimate",
+     "2",
+     "aa"
+    ],
+    "when_ar": "لمباغتة هدف من مكان بعيد",
+    "when_en": "Surprising a distant target",
+    "tip_ar": "انتقل بـ Gate ثم اختر البطاقة فورا لشل الهدف",
+    "tip_en": "Gate in, then pick the card right away to stun",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Twitch",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "aa",
+     "aa",
+     "3"
+    ],
+    "when_ar": "لإنهاء هدف مسموم",
+    "when_en": "Finishing a poisoned target",
+    "tip_ar": "ضع السم بـ Venom Cask وأكمل بالهجمات ثم Contaminate",
+    "tip_en": "Apply venom with Venom Cask, attack, then Contaminate",
+    "difficulty": 2
+   },
+   {
+    "id": "ambush",
+    "title_ar": "كومبو الكمين",
+    "title_en": "Ambush",
+    "steps": [
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "للمباغتة من التخفي",
+    "when_en": "Ambushing from stealth",
+    "tip_ar": "اخرج من التخفي لسرعة الهجوم ثم Spray and Pray",
+    "tip_en": "Leave stealth for attack speed, then Spray and Pray",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Urgot",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "أبطئ الهدف بـ Corrosive Charge ثم Purge وأعدمه بـ Ult عند ضعفه",
+    "tip_en": "Slow with Corrosive Charge, Purge, then ult when they are weak",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "3",
+     "2"
+    ],
+    "when_ar": "للدخول على بطل",
+    "when_en": "Diving a champion",
+    "tip_ar": "اندفع بـ Disdain لترمي الهدف ثم أطلق Purge",
+    "tip_en": "Dash with Disdain to hurl the target, then Purge",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Varus",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "aa",
+     "aa",
+     "1"
+    ],
+    "when_ar": "للتبادل والضغط",
+    "when_en": "Trading and pressure",
+    "tip_ar": "ضع Blight بالهجمات ثم فجّره بـ Piercing Arrow",
+    "tip_en": "Stack Blight with attacks, then detonate with Piercing Arrow",
+    "difficulty": 2
+   },
+   {
+    "id": "pick",
+    "title_ar": "كومبو الاصطياد",
+    "title_en": "Pick",
+    "steps": [
+     "ultimate",
+     "3",
+     "1"
+    ],
+    "when_ar": "لاصطياد هدف وتثبيته",
+    "when_en": "Catching and rooting a target",
+    "tip_ar": "Chain of Corruption يثبّت الهدف ويصيب القريبين منه",
+    "tip_en": "Chain of Corruption immobilizes and spreads to nearby enemies",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Vayne",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "aa",
+     "aa"
+    ],
+    "when_ar": "للتبادل وتفعيل Silver Bolts",
+    "when_en": "Trading and proccing Silver Bolts",
+    "tip_ar": "الضربة الثالثة على نفس الهدف تسبب ضررا بنسبة من صحته",
+    "tip_en": "The third hit on the same target deals percent health damage",
+    "difficulty": 3
+   },
+   {
+    "id": "wall",
+    "title_ar": "كومبو الدفع",
+    "title_en": "Wall stun",
+    "steps": [
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لدفع هدف نحو جدار",
+    "when_en": "Pushing a target into a wall",
+    "tip_ar": "ادفع الهدف بـ Condemn نحو جدار ليتم شله ثم أكمل",
+    "tip_en": "Condemn the target into a wall to stun, then follow up",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Veigar",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Killing a target in range",
+    "tip_ar": "ضع القفص ثم Dark Matter فوق الهدف الذي لا يستطيع الهرب",
+    "tip_en": "Cage first, then Dark Matter on the trapped target",
+    "difficulty": 2,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support poke",
+    "steps": [
+     "1",
+     "2"
+    ],
+    "when_ar": "للضغط على الخط",
+    "when_en": "Poking the lane",
+    "tip_ar": "اضرب Baleful Strike لتجمع الشحنات ثم Dark Matter",
+    "tip_en": "Baleful Strike to stack, then Dark Matter",
+    "difficulty": 1,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Vel'Koz",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "2",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Killing a target in range",
+    "tip_ar": "طبّق ثلاث مهارات لتفعيل الضرر الحقيقي ثم أنهِ بالشعاع",
+    "tip_en": "Hit with three abilities for the true damage burst, then the ray",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "1",
+     "2"
+    ],
+    "when_ar": "للضغط من مدى بعيد",
+    "when_en": "Poking from long range",
+    "tip_ar": "أعد تفعيل Plasma Fission ليتفرع الشعاع وأصب من الجانب",
+    "tip_en": "Recast Plasma Fission so it splits and hits from the side",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Vex",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "ultimate",
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لاصطياد هدف في المدى",
+    "when_en": "Catching a target in range",
+    "tip_ar": "علّم الهدف بـ Shadow Surge ثم أعد الضغط لتندفع إليه",
+    "tip_en": "Mark with Shadow Surge, then recast to dash to the target",
+    "difficulty": 3
+   },
+   {
+    "id": "fear",
+    "title_ar": "كومبو الرعب",
+    "title_en": "Fear",
+    "steps": [
+     "2",
+     "1"
+    ],
+    "when_ar": "لإخافة هدف يندفع نحوك",
+    "when_en": "Scaring a diving target",
+    "tip_ar": "الهجمة الأولى بعد التعزيز ترعب الهدف فاستخدم مهارة أساسية",
+    "tip_en": "Your first basic ability when empowered fears the target",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Vi",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "aa",
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لاصطياد هدف منفرد",
+    "when_en": "Catching an isolated target",
+    "tip_ar": "ادفع الهدف بـ Vault Breaker ثم Relentless Force وأنهِ بـ Ult",
+    "tip_en": "Vault Breaker, Relentless Force, then Cease and Desist",
+    "difficulty": 2
+   },
+   {
+    "id": "chase",
+    "title_ar": "كومبو المطاردة",
+    "title_en": "Chase",
+    "steps": [
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "لملاحقة هدف يهرب",
+    "when_en": "Chasing a fleeing target",
+    "tip_ar": "Cease and Desist تلاحق الهدف حتى لو ابتعد",
+    "tip_en": "Cease and Desist runs down the target even at range",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Viego",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "aa",
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "لاصطياد هدف بصحة قليلة",
+    "when_en": "Killing a low-health target",
+    "tip_ar": "اشل الهدف بـ Spectral Maw ثم أعدمه بـ Heartbreaker",
+    "tip_en": "Stun with Spectral Maw, then execute with Heartbreaker",
+    "difficulty": 3
+   },
+   {
+    "id": "mist",
+    "title_ar": "كومبو الضباب",
+    "title_en": "Mist play",
+    "steps": [
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "للكمين داخل الضباب",
+    "when_en": "Ambushing from the Mist",
+    "tip_ar": "اختف في الضباب لسرعة وتمويه ثم اضرب بـ Blade",
+    "tip_en": "Hide in the Mist for speed and camouflage, then strike",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Viktor",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "للاشتباك مع هدف في المدى",
+    "when_en": "Fighting a target in range",
+    "tip_ar": "أبطئ ثم اشل الهدف بـ Gravity Field ثم Hextech Ray",
+    "tip_en": "Slow and stun with Gravity Field, then Hextech Ray",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "aa",
+     "3"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "Siphon Power تعطيك درعا وهجمة معزّزة فاتبعها بـ Hextech Ray",
+    "tip_en": "Siphon Power gives a shield and empowered attack; follow with the ray",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Vladimir",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "ultimate",
+     "1",
+     "3",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع هدف في المدى",
+    "when_en": "Fighting a target in range",
+    "tip_ar": "فعّل Hemoplague أولا فتزيد الأضرار ثم أكمل بالمهارات",
+    "tip_en": "Hemoplague first so all damage is amplified, then abilities",
+    "difficulty": 2
+   },
+   {
+    "id": "trade",
+    "title_ar": "كومبو التبادل",
+    "title_en": "Trade",
+    "steps": [
+     "1",
+     "3"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "اشحن Tides of Blood قبل أن تطلقها لضرر أكبر",
+    "tip_en": "Charge Tides of Blood before releasing it for more damage",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Volibear",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "aa",
+     "2",
+     "3"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اشل بـ Thundering Smash ثم Frenzied Maul مرتين لضرر إضافي",
+    "tip_en": "Stun with Thundering Smash, then Frenzied Maul twice",
+    "difficulty": 2
+   },
+   {
+    "id": "engage",
+    "title_ar": "كومبو الدخول",
+    "title_en": "Engage",
+    "steps": [
+     "ultimate",
+     "1",
+     "2"
+    ],
+    "when_ar": "لبدء معركة وتحصين الأبراج",
+    "when_en": "Starting a fight",
+    "tip_ar": "اقفز بـ Stormbringer على الأعداء ثم اشل أقربهم",
+    "tip_en": "Leap with Stormbringer, then stun the closest enemy",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Warwick",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "ultimate",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لإخضاع هدف بصحة منخفضة",
+    "when_en": "Suppressing a low-health target",
+    "tip_ar": "اقفز بـ Infinite Duress نحو هدف نزفه ثم عضّه بـ Q",
+    "tip_en": "Leap with Infinite Duress at a bleeding target, then bite",
+    "difficulty": 2
+   },
+   {
+    "id": "fear",
+    "title_ar": "كومبو الرعب",
+    "title_en": "Fear",
+    "steps": [
+     "3",
+     "aa"
+    ],
+    "when_ar": "لإخافة الأعداء وإبعادهم",
+    "when_en": "Scaring enemies away",
+    "tip_ar": "استخدم Primal Howl لتقليل الضرر ثم لتخويف من حولك",
+    "tip_en": "Primal Howl cuts damage then scares those around you",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Wukong",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "للدخول والإطاحة",
+    "when_en": "Diving and knocking up",
+    "tip_ar": "اندفع بـ Nimbus Strike ثم Golden Staff وأطح الأعداء بـ Cyclone",
+    "tip_en": "Nimbus Strike in, Golden Staff, then Cyclone to knock up",
+    "difficulty": 2
+   },
+   {
+    "id": "trick",
+    "title_ar": "كومبو الخدعة",
+    "title_en": "Trick",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لمفاجأة هدف",
+    "when_en": "Surprising a target",
+    "tip_ar": "اختف بـ Warrior Trickster واترك نسخة ثم اندفع نحو الهدف",
+    "tip_en": "Turn invisible with Warrior Trickster, leave a clone, then dash in",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Xayah",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "1",
+     "aa",
+     "3"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "ارم الخناجر لتترك ريشا ثم استدعها بـ Bladecaller لتثبيت الهدف",
+    "tip_en": "Throw daggers to drop Feathers, then recall them to root",
+    "difficulty": 3
+   },
+   {
+    "id": "ult",
+    "title_ar": "كومبو Ult",
+    "title_en": "Ultimate",
+    "steps": [
+     "ultimate",
+     "3"
+    ],
+    "when_ar": "لتثبيت أعداء مجتمعين",
+    "when_en": "Rooting grouped enemies",
+    "tip_ar": "اقفز بـ Featherstorm لتترك ريشا ثم استدعها فورا",
+    "tip_en": "Leap with Featherstorm to drop Feathers, then recall them",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Xin Zhao",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa",
+     "aa",
+     "aa",
+     "2"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "اندفع بـ Audacious Charge ثم الهجمة الثالثة تطيح الهدف",
+    "tip_en": "Charge in, and the third attack knocks the target up",
+    "difficulty": 2
+   },
+   {
+    "id": "duel",
+    "title_ar": "كومبو المبارزة",
+    "title_en": "Duel",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لعزل بطل ومبارزته",
+    "when_en": "Isolating a champion",
+    "tip_ar": "Crescent Guard تحميك من ضرر الأعداء خارج المبارزة",
+    "tip_en": "Crescent Guard shields you from non-challenged enemies",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Yasuo",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "3",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لإطاحة هدف وإنهائه",
+    "when_en": "Knocking up and finishing a target",
+    "tip_ar": "اجمع ضربتي Q ثم أطلق الإعصار وأنهِ بـ Last Breath",
+    "tip_en": "Stack two Qs, fire the tornado, then Last Breath",
+    "difficulty": 3
+   },
+   {
+    "id": "windwall",
+    "title_ar": "كومبو الدفاع",
+    "title_en": "Defend",
+    "steps": [
+     "2",
+     "1"
+    ],
+    "when_ar": "لصد المقذوفات والرد",
+    "when_en": "Blocking projectiles and answering",
+    "tip_ar": "Wind Wall يحجب كل المقذوفات فاستخدمه ثم رد بالـ Q",
+    "tip_en": "Wind Wall blocks every projectile, then reply with Q",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Yone",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "mid",
+    "title_ar": "كومبو الميد",
+    "title_en": "Mid burst",
+    "steps": [
+     "1",
+     "1",
+     "3",
+     "aa",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Bursting a target in range",
+    "tip_ar": "اجمع Q مرتين للإطاحة ثم Fate Sealed على كل الأعداء",
+    "tip_en": "Two Qs for the knock up, then Fate Sealed on the enemies",
+    "difficulty": 3,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "baron",
+    "title_ar": "كومبو البارون",
+    "title_en": "Baron brawl",
+    "steps": [
+     "2",
+     "1",
+     "aa",
+     "3"
+    ],
+    "when_ar": "للاشتباك مع بطل في الخط",
+    "when_en": "Brawling in the lane",
+    "tip_ar": "احصل على درع من Spirit Cleave ثم Soul Unbound للدخول",
+    "tip_en": "Gain a shield with Spirit Cleave, then Soul Unbound to dive",
+    "difficulty": 2,
+    "lanes": [
+     "BARON"
+    ]
+   }
+  ]
+ },
+ {
+  "champion": "Yunara",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "2",
+     "aa",
+     "aa"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "فعّل Cultivation of Spirit لسرعة الهجوم ثم أبطئ الهدف",
+    "tip_en": "Activate Cultivation of Spirit for attack speed, then slow the target",
+    "difficulty": 2
+   },
+   {
+    "id": "transcend",
+    "title_ar": "كومبو التحول",
+    "title_en": "Transcend",
+    "steps": [
+     "ultimate",
+     "2",
+     "3",
+     "aa"
+    ],
+    "when_ar": "بعد التحول للحالة المتسامية",
+    "when_en": "After transforming",
+    "tip_ar": "تتغير مهاراتك في الحالة المتسامية فاستخدمها ضد المجموعة",
+    "tip_en": "Your abilities change in the Transcendent State, so use them on the group",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Yuumi",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "3",
+     "aa"
+    ],
+    "when_ar": "للضغط مع حليفك",
+    "when_en": "Poking with your ally",
+    "tip_ar": "اجعل Prowling Projectile تطير ثانية لتبطئ الهدف ثم Zoomies",
+    "tip_en": "Let Prowling Projectile fly a full second to slow, then Zoomies",
+    "difficulty": 2
+   },
+   {
+    "id": "teamfight",
+    "title_ar": "كومبو المعركة الجماعية",
+    "title_en": "Teamfight",
+    "steps": [
+     "3",
+     "ultimate"
+    ],
+    "when_ar": "لدعم حليف في معركة",
+    "when_en": "Supporting an ally in a fight",
+    "tip_ar": "عندما تكون ملتصقا يستفيد حليفك من Zoomies فأطلق Final Chapter بعدها",
+    "tip_en": "While attached your ally gets Zoomies, then fire Final Chapter",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Zed",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "burst",
+    "title_ar": "كومبو الاغتيال",
+    "title_en": "Assassinate",
+    "steps": [
+     "ultimate",
+     "2",
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لاغتيال هدف هش",
+    "when_en": "Assassinating a squishy target",
+    "tip_ar": "ضع Death Mark ثم Living Shadow والضرب بسرعة قبل أن تنفجر العلامة",
+    "tip_en": "Death Mark, Living Shadow, then burst before the mark pops",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "2",
+     "1",
+     "3"
+    ],
+    "when_ar": "للتبادل في الخط",
+    "when_en": "Trading in lane",
+    "tip_ar": "اجعل الظل يضرب نفس الهدف لتحصل على طاقة",
+    "tip_en": "Make your shadow hit the same target for energy",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Zeri",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "1"
+    ],
+    "when_ar": "للاشتباك مع بطل",
+    "when_en": "Fighting a champion",
+    "tip_ar": "أبطئ بـ Ultrashock Laser ثم Spark Surge لتخترق الطلقات",
+    "tip_en": "Slow with Ultrashock Laser, then Spark Surge for piercing shots",
+    "difficulty": 3
+   },
+   {
+    "id": "ult",
+    "title_ar": "كومبو Ult",
+    "title_en": "Ultimate",
+    "steps": [
+     "ultimate",
+     "3",
+     "1",
+     "1"
+    ],
+    "when_ar": "لمعركة جماعية",
+    "when_en": "Teamfight",
+    "tip_ar": "Lightning Crash تزيد سرعة حركتك وضررك فاستخدمها قبل القتال",
+    "tip_en": "Lightning Crash adds speed and damage, so use it before the fight",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Ziggs",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "2",
+     "3",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Killing a target in range",
+    "tip_ar": "ضع Satchel Charge ثم الألغام وأكمل بالقنبلة وأنهِ بـ Ult",
+    "tip_en": "Satchel Charge, mines, the bomb, then the ult",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط",
+    "title_en": "Poke",
+    "steps": [
+     "1",
+     "1",
+     "2"
+    ],
+    "when_ar": "للضغط على الأبراج والخط",
+    "when_en": "Poking lane and turrets",
+    "tip_ar": "ألقِ القنبلة المرتدة ثم Satchel Charge لدفعك للخلف",
+    "tip_en": "Throw the bouncing bomb, then Satchel Charge to hop back",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Zilean",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "1",
+     "3",
+     "1",
+     "2"
+    ],
+    "when_ar": "للضغط على الهدف",
+    "when_en": "Pressuring a target",
+    "tip_ar": "ألصق القنبلة بالهدف ثم أبطئه بـ Temporal Mirage واعد القنبلة",
+    "tip_en": "Stick the bomb, slow with Temporal Mirage, then bomb again",
+    "difficulty": 2
+   },
+   {
+    "id": "save",
+    "title_ar": "كومبو الإنقاذ",
+    "title_en": "Save",
+    "steps": [
+     "ultimate",
+     "2"
+    ],
+    "when_ar": "لإنقاذ حليف من الموت",
+    "when_en": "Saving an ally from death",
+    "tip_ar": "ضع Chronoshift على الحليف قبل الضرر القاتل ثم Twisted Timeflow",
+    "tip_en": "Chronoshift on the ally before lethal damage, then Twisted Timeflow",
+    "difficulty": 2
+   }
+  ]
+ },
+ {
+  "champion": "Zoe",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "main",
+    "title_ar": "الكومبو الأساسي",
+    "title_en": "Main combo",
+    "steps": [
+     "3",
+     "1",
+     "aa"
+    ],
+    "when_ar": "لإنهاء هدف نائم",
+    "when_en": "Killing a sleeping target",
+    "tip_ar": "الضرر الأول الذي يوقظ الهدف يتضاعف فاجعله الأقوى",
+    "tip_en": "The first damage that wakes the target is doubled, so make it your biggest",
+    "difficulty": 3
+   },
+   {
+    "id": "poke",
+    "title_ar": "كومبو الضغط والتراجع",
+    "title_en": "Poke and retreat",
+    "steps": [
+     "ultimate",
+     "1",
+     "ultimate"
+    ],
+    "when_ar": "للضغط ثم العودة بأمان",
+    "when_en": "Poking then returning safely",
+    "tip_ar": "اقفز بـ Portal Jump ثم Paddle Star ثم عد إلى مكانك",
+    "tip_en": "Portal Jump out, Paddle Star, then blink back",
+    "difficulty": 3
+   }
+  ]
+ },
+ {
+  "champion": "Zyra",
+  "reviewed": false,
+  "combos": [
+   {
+    "id": "mid",
+    "title_ar": "كومبو الميد",
+    "title_en": "Mid burst",
+    "steps": [
+     "3",
+     "1",
+     "2",
+     "ultimate"
+    ],
+    "when_ar": "لإنهاء هدف في المدى",
+    "when_en": "Killing a target in range",
+    "tip_ar": "ثبّت بـ Grasping Roots ثم Deadly Spines والنباتات تهاجم معك",
+    "tip_en": "Root with Grasping Roots, then Deadly Spines as your plants attack",
+    "difficulty": 2,
+    "lanes": [
+     "MID"
+    ]
+   },
+   {
+    "id": "support",
+    "title_ar": "كومبو السابورت",
+    "title_en": "Support",
+    "steps": [
+     "3",
+     "ultimate",
+     "1"
+    ],
+    "when_ar": "لتثبيت أعداء وإطاحتهم",
+    "when_en": "Rooting and knocking up enemies",
+    "tip_ar": "ثبّت الأعداء ثم ضع Stranglethorns فوقهم ليتم رميهم",
+    "tip_en": "Root the enemies, then drop Stranglethorns on them",
+    "difficulty": 2,
+    "lanes": [
+     "SUPPORT"
+    ]
+   }
+  ]
+ }
+]

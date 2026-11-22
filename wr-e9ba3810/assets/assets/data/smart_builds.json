@@ -4,8 +4,8 @@
   "builds": [
    {
     "id": "juggernaut",
-    "title_ar": "توليفة الصمود والعلاج",
-    "title_en": "Sustain bruiser",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Trinity Force",
      "Black Cleaver",
@@ -33,7 +33,12 @@
       "en": "Three Q hits build Eclipse fast and give him a shield."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -71,7 +76,11 @@
       "en": "+30% AP, and every Ahri ability scales strongly with it."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "safe",
@@ -104,7 +113,11 @@
       "en": "Stasis lets her dodge the enemy combo once Spirit Rush is down."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -113,8 +126,8 @@
   "builds": [
    {
     "id": "assassin",
-    "title_ar": "توليفة القاتل",
-    "title_en": "Assassin",
+    "title_ar": "توليفة الميد والبارون",
+    "title_en": "Mid & Baron",
     "core": [
      "Hextech Rocketbelt",
      "Lich Bane",
@@ -142,7 +155,12 @@
       "en": "Her abilities crit for 20% bonus damage with magic penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -180,7 +198,11 @@
       "en": "Armor penetration keeps his DPS high on tanks once COMEUPPANCE ends."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "lethality",
@@ -213,7 +235,11 @@
       "en": "Executes low-health targets after Avengerang."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -252,7 +278,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -261,8 +291,8 @@
   "builds": [
    {
     "id": "assassin_bruiser",
-    "title_ar": "توليفة الضربات المتتالية",
-    "title_en": "Chain striker",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Trinity Force",
      "Eclipse",
@@ -290,7 +320,12 @@
       "en": "Softens incoming damage while she fights inside the pack."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -299,8 +334,8 @@
   "builds": [
    {
     "id": "frontline",
-    "title_ar": "توليفة الخط الأول",
-    "title_en": "Frontline tank",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Sunfire Aegis",
      "Heartsteel",
@@ -328,12 +363,16 @@
       "en": "Reduces nearby enemy attack speed by 25%, weakening AD carries."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    },
    {
     "id": "vs_magic",
-    "title_ar": "توليفة ضد السحر",
-    "title_en": "Anti-magic tank",
+    "title_ar": "توليفة الجانجل",
+    "title_en": "Jungle",
     "core": [
      "Abyssal Mask",
      "Kaenic Rookern",
@@ -362,7 +401,49 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_tank"
+   },
+   {
+    "id": "support_tank",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank",
+    "core": [
+     "Locket of the Iron Solari",
+     "Zeke's Convergence",
+     "Knight's Vow"
+    ],
+    "boots": "Armored Advance",
+    "flex": [
+     "Frozen Heart",
+     "Thornmail",
+     "Radiant Virtue"
+    ],
+    "why_ar": "Curse of the Sad Mummy تشل الفريق التاني كله، فيكون Locket درعاً لحلفائه لحظة الاشتباك. Zeke's Convergence يرفع ضرر الفريق على من أصابهم Curse، وKnight's Vow يربطه بحليف يحميه بعد Bandage Toss.",
+    "why_en": "Curse of the Sad Mummy locks down the enemy team, so Locket shields his allies the moment the fight starts. Zeke's Convergence raises team damage on cursed enemies and Knight's Vow ties him to an ally he protects after Bandage Toss.",
+    "item_notes": {
+     "Locket of the Iron Solari": {
+      "ar": "درع للفريق عند الاقتحام مع Bandage Toss.",
+      "en": "A team shield on the engage with Bandage Toss."
+     },
+     "Zeke's Convergence": {
+      "ar": "يرفع ضرر الفريق بعد الـ ult.",
+      "en": "Raises team damage after the ult."
+     },
+     "Knight's Vow": {
+      "ar": "يتقاسم الضرر مع الحليف ويعالجه.",
+      "en": "Shares damage with an ally and heals him."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Bulwark of the Mountain"
    }
   ]
  },
@@ -400,7 +481,11 @@
       "en": "A dash that puts her in combo range."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -409,8 +494,8 @@
   "builds": [
    {
     "id": "frost_crit",
-    "title_ar": "توليفة الصقيع والحرجة",
-    "title_en": "Frost crit",
+    "title_ar": "توليفة الدراجون",
+    "title_en": "Dragon",
     "core": [
      "Runaan's Hurricane",
      "Rapid Firecannon",
@@ -438,7 +523,49 @@
       "en": "Higher crit damage on slowed targets."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
+   },
+   {
+    "id": "support",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ad",
+    "core": [
+     "Stormrazor",
+     "Hexoptics C44",
+     "Mortal Reminder"
+    ],
+    "boots": "Immortal Treads",
+    "flex": [
+     "Lord Dominik's Regards",
+     "Guardian Angel",
+     "Navori Quickblades"
+    ],
+    "why_ar": "Ashe في السابورت تبطّئ الأعداء بـ Frost Shot وتضرب بـ Volley من خلف الفريق، فـ Hexoptics C44 يزيد الضرر على الأبعد. Stormrazor يبطّئ ويعطيها ضرراً سريعاً، وMortal Reminder يقلل علاج الأعداء.",
+    "why_en": "In support Ashe slows enemies with Frost Shot and fires Volley from behind the team, so Hexoptics C44 raises damage at range. Stormrazor adds a slow and quick damage and Mortal Reminder cuts enemy healing.",
+    "item_notes": {
+     "Stormrazor": {
+      "ar": "شحنة تبطّئ الهدف وتعطيها ضرراً سريعاً.",
+      "en": "A charge slows the target and adds quick damage."
+     },
+     "Hexoptics C44": {
+      "ar": "ضرر أكبر مع بعد الهدف عن Ashe.",
+      "en": "More damage the farther the target is from Ashe."
+     },
+     "Mortal Reminder": {
+      "ar": "جروح عميقة بعد الضرر واختراق للدروع.",
+      "en": "Grievous Wounds after damage plus armor penetration."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -476,7 +603,11 @@
       "en": "A slow on every hit keeps the target in the channel."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -485,8 +616,8 @@
   "builds": [
    {
     "id": "spirit_assassin",
-    "title_ar": "توليفة الروح القاتلة",
-    "title_en": "Spirit assassin",
+    "title_ar": "توليفة الميد والبارون",
+    "title_en": "Mid & Baron",
     "core": [
      "Luden's Echo",
      "Cosmic Drive",
@@ -514,7 +645,12 @@
       "en": "Ability crits for 20% bonus damage with penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -558,7 +694,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -597,7 +737,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -606,8 +750,8 @@
   "builds": [
    {
     "id": "burn_mage",
-    "title_ar": "توليفة الحرق",
-    "title_en": "Burn mage",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Liandry's Torment",
      "Malignance",
@@ -635,7 +779,49 @@
       "en": "An extra burn after every ability stacking with BLAZE."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Blackfire Torch",
+     "Rylai's Crystal Scepter",
+     "Liandry's Torment"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Void Staff",
+     "Banshee's Veil"
+    ],
+    "why_ar": "BLAZE يحرق ويتراكم من أي مهارة، فـ Blackfire Torch وLiandry's Torment يضيفان حرقاً من مسافة آمنة. Rylai's يبطّئ الهدف بعد SEAR وPILLAR OF FLAME فيقع في كومبو Pyroclasm.",
+    "why_en": "BLAZE burns and stacks from any ability, so Blackfire Torch and Liandry's Torment add burn from a safe distance. Rylai's slows the target after SEAR and PILLAR OF FLAME so they fall into the Pyroclasm combo.",
+    "item_notes": {
+     "Blackfire Torch": {
+      "ar": "حرق إضافي بعد كل مهارة يتراكم مع BLAZE.",
+      "en": "An extra burn after every ability stacking with BLAZE."
+     },
+     "Rylai's Crystal Scepter": {
+      "ar": "إبطاء يبقي الهدف داخل PILLAR OF FLAME.",
+      "en": "A slow keeps the target inside PILLAR OF FLAME."
+     },
+     "Liandry's Torment": {
+      "ar": "حرق % من الصحة على الأهداف المثبّتة.",
+      "en": "A percent-health burn on pinned targets."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -674,7 +860,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -712,7 +902,11 @@
       "en": "Armor penetration offsets her low ability damage against tanks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "sniper",
@@ -745,7 +939,11 @@
       "en": "Higher crit damage on fragile targets."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -754,8 +952,8 @@
   "builds": [
    {
     "id": "duelist",
-    "title_ar": "توليفة المبارز",
-    "title_en": "Duelist",
+    "title_ar": "توليفة البارون والجانجل — مقاتل",
+    "title_en": "Baron & Jungle — Bruiser",
     "core": [
      "Trinity Force",
      "Sundered Sky",
@@ -783,12 +981,17 @@
       "en": "A shield when low and bonus AD while she's locked in a 1v1 by her ult."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    },
    {
     "id": "tank_shred",
-    "title_ar": "توليفة محطّمة التانك",
-    "title_en": "Tank shredder",
+    "title_ar": "توليفة البارون والجانجل — تانك",
+    "title_en": "Baron & Jungle — Tank",
     "core": [
      "Sunfire Aegis",
      "Sterak's Gage",
@@ -796,9 +999,9 @@
     ],
     "boots": "Armored Advance",
     "flex": [
-     "Death's Dance",
+     "Randuin's Omen",
      "Dead Man's Plate",
-     "Guardian Angel"
+     "Kaenic Rookern"
     ],
     "why_ar": "Adaptive Defenses تعطيها درعاً بحسب الضرر الذي يقع عليها، وكلما زادت صحتها كبر الدرع، فآيتمات الصحة تقويها. Sunfire Aegis يحرق الأعداء أثناء Hextech Ultimatum المحبوس. Black Cleaver يخفّض دروع التانك لتقتله.",
     "why_en": "Adaptive Defenses shields her by the damage type she takes and more health makes it bigger, so health items strengthen her. Sunfire Aegis burns enemies while The Hextech Ultimatum traps the target. Black Cleaver lowers tank armor so she can kill them.",
@@ -813,10 +1016,16 @@
      },
      "Black Cleaver": {
       "ar": "يقتل التانك في الحصر، وتخفيض دروعه يتراكم.",
-      "en": "Kills tanks inside the lock as armor reduction stacks."
+      "en": "Kills tanks inside the lock as armor reduction stacks.",
+      "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -854,7 +1063,11 @@
       "en": "Stacking health that feeds FEAST."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -863,8 +1076,8 @@
   "builds": [
    {
     "id": "ap_poke",
-    "title_ar": "توليفة الرمي من بعيد",
-    "title_en": "AP poke",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Luden's Echo",
      "Horizon Focus",
@@ -892,12 +1105,16 @@
       "en": "More AP amplifies stored missiles and HEXTECH MUNITIONS."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "hybrid_dps",
-    "title_ar": "توليفة الضرب المتواصل",
-    "title_en": "Auto-attack hybrid",
+    "title_ar": "توليفة الدراجون",
+    "title_en": "Dragon",
     "core": [
      "Nashor's Tooth",
      "Guinsoo's Rageblade",
@@ -905,9 +1122,9 @@
     ],
     "boots": "Immortal Treads",
     "flex": [
-     "Rabadon's Deathcap",
-     "Banshee's Veil",
-     "Zhonya's Hourglass"
+     "Wit's End",
+     "Terminus",
+     "Blade of the Ruined King"
     ],
     "why_ar": "HEXTECH MUNITIONS يحوّل جزء من هجمات Corki إلى ضرر سحري، فآيتمات on-hit مع AP مثل Nashor's Tooth وGuinsoo's تعمل ضرراً كبيراً. Essence Reaver يضيف ضرراً بعد كل مهارة ويعيد المانا، وهجمات Corki تتحول جزئياً إلى سحر مع HEXTECH MUNITIONS. Immortal Treads يعطيه سرعة حركة وضرراً إضافياً وهو فوق 50% صحة، فيناسب الكايتنغ بين الهجمات.",
     "why_en": "HEXTECH MUNITIONS converts part of his attacks into magic damage, so AP on-hit items like Nashor's Tooth and Guinsoo's deal big damage. Essence Reaver adds damage after every ability and returns mana, and Corki's attacks partly convert to magic with HEXTECH MUNITIONS. Immortal Treads gives movement speed and extra damage above 50% health, suiting kiting between attacks.",
@@ -926,7 +1143,11 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    }
   ]
  },
@@ -935,8 +1156,8 @@
   "builds": [
    {
     "id": "juggernaut",
-    "title_ar": "توليفة الجاغرنوت",
-    "title_en": "Juggernaut",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Black Cleaver",
      "Sterak's Gage",
@@ -964,6 +1185,47 @@
       "en": "Momentum speeds him into DECIMATE range, and the armor stands up to AD enemies."
      }
     },
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
+   },
+   {
+    "id": "jungle",
+    "title_ar": "توليفة الجانجل",
+    "title_en": "Jungle",
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser",
+    "core": [
+     "Trinity Force",
+     "Sterak's Gage",
+     "Death's Dance"
+    ],
+    "boots": "Armored Advance",
+    "flex": [
+     "Black Cleaver",
+     "Guardian Angel",
+     "Edge of Night"
+    ],
+    "why_ar": "في الجانجل يحتاج Darius إلى اندفاع سريع بين المعسكرات والخطوط، فـ Trinity Force يفعّل Spellblade بعد DECIMATE ويعطيه سرعة هجوم. Sterak's Gage يحميه عند الاشتباك مع الأعداء، وDeath's Dance يعوّض ضرر الجانجل.",
+    "why_en": "In the jungle Darius needs quick pace between camps and lanes, so Trinity Force triggers Spellblade after DECIMATE and adds attack speed. Sterak's Gage protects him in fights and Death's Dance offsets jungle damage.",
+    "item_notes": {
+     "Trinity Force": {
+      "ar": "بعد DECIMATE هجمة معزّزة، وسرعة تسرّع التنظيف.",
+      "en": "An empowered hit after DECIMATE with speed that speeds up clearing."
+     },
+     "Sterak's Gage": {
+      "ar": "درع وAD إضافي في اشتباكات الجانجل.",
+      "en": "A shield and bonus AD in jungle skirmishes."
+     },
+     "Death's Dance": {
+      "ar": "يؤجّل الضرر ويعوّض ضرر المعسكرات والأعداء.",
+      "en": "Delays damage and offsets camp and enemy damage."
+     }
+    },
     "reviewed": false
    }
   ]
@@ -973,8 +1235,8 @@
   "builds": [
    {
     "id": "moon_bruiser",
-    "title_ar": "توليفة القمر",
-    "title_en": "Moon bruiser",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Riftmaker",
      "Lich Bane",
@@ -1002,12 +1264,16 @@
       "en": "Stasis after MOONFALL dodges the reply, with extra armor on top of AP."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "burst",
-    "title_ar": "توليفة الانفجار",
-    "title_en": "Moon burst",
+    "title_ar": "توليفة الميد والجانجل",
+    "title_en": "Mid & Jungle",
     "core": [
      "Hextech Rocketbelt",
      "Lich Bane",
@@ -1035,7 +1301,12 @@
       "en": "Her abilities crit for bonus damage with penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1044,8 +1315,8 @@
   "builds": [
    {
     "id": "unkillable",
-    "title_ar": "توليفة لا تموت",
-    "title_en": "Unkillable",
+    "title_ar": "توليفة البارون والجانجل — تانك",
+    "title_en": "Baron & Jungle — Tank",
     "core": [
      "Warmog's Armor",
      "Sunfire Aegis",
@@ -1073,12 +1344,17 @@
       "en": "Cuts crit damage by 30% and slows enemies who hit him."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    },
    {
     "id": "bruiser",
-    "title_ar": "توليفة المقاتل",
-    "title_en": "Brawler",
+    "title_ar": "توليفة البارون والجانجل — مقاتل",
+    "title_en": "Baron & Jungle — Bruiser",
     "core": [
      "Sterak's Gage",
      "Titanic Hydra",
@@ -1086,9 +1362,9 @@
     ],
     "boots": "Armored Advance",
     "flex": [
-     "Warmog's Armor",
      "Sunfire Aegis",
-     "Thornmail"
+     "Goredrinker",
+     "Death's Dance"
     ],
     "why_ar": "BLUNT FORCE TRAUMA يعطيه AD يزيد مع الصحة المفقودة، فـ Titanic Hydra يضرب حول الهدف بضرر يكبر مع صحته. Sterak's Gage يعطيه درعاً وAD إضافي عند الخطر. Heartsteel يضيف صحة تكبر وتغذي HEART ZAPPER.",
     "why_en": "BLUNT FORCE TRAUMA gives him AD that rises with missing health, so Titanic Hydra cleaves with damage that scales with his health. Sterak's Gage adds a shield and bonus AD at low health. Heartsteel adds growing health that feeds HEART ZAPPER.",
@@ -1104,10 +1380,16 @@
      },
      "Heartsteel": {
       "ar": "صحة تتراكم تغذي HEART ZAPPER وتجعله أصعب في القتل.",
-      "en": "Stacking health feeds HEART ZAPPER and makes him harder to kill."
+      "en": "Stacking health feeds HEART ZAPPER and makes him harder to kill.",
+      "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -1145,7 +1427,11 @@
       "en": "Executes low-health targets after WHIRLING DEATH."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -1154,11 +1440,11 @@
   "builds": [
    {
     "id": "time_assassin",
-    "title_ar": "توليفة قاتل الزمن",
-    "title_en": "Time assassin",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Stormsurge",
-     "Lich Bane",
+     "Dusk and Dawn",
      "Rabadon's Deathcap"
     ],
     "boots": "Spellslinger's Shoes",
@@ -1167,28 +1453,32 @@
      "Void Staff",
      "Banshee's Veil"
     ],
-    "why_ar": "Z-DRIVE RESONANCE يعطي ضرر كل ضربة ثالثة، وLich Bane يضيف هجمة معزّزة بعد PHASE DIVE. Stormsurge يزيد ضرر الاغتيال السريع ويمنحه سرعة بعد القتل. CHRONOBREAK يعطيه حماية، فالـ flex يركز على الاختراق.",
-    "why_en": "Z-DRIVE RESONANCE adds damage every third hit and Lich Bane adds an empowered attack after PHASE DIVE. Stormsurge amplifies quick assassinations and speeds him up on the kill. CHRONOBREAK already protects him, so flex slots lean on penetration.",
+    "why_ar": "Z-DRIVE RESONANCE يعطي ضرر كل ضربة ثالثة، وDusk and Dawn يضيف هجمة معزّزة بعد PHASE DIVE. Stormsurge يزيد ضرر الاغتيال السريع ويمنحه سرعة بعد القتل. CHRONOBREAK يعطيه حماية، فالـ flex يركز على الاختراق.",
+    "why_en": "Z-DRIVE RESONANCE adds damage every third hit and Dusk and Dawn adds an empowered attack after PHASE DIVE. Stormsurge amplifies quick assassinations and speeds him up on the kill. CHRONOBREAK already protects him, so flex slots lean on penetration.",
     "item_notes": {
      "Stormsurge": {
       "ar": "ضرر مفاجئ كبير عند إتمام الاغتيال مع اختراق وسرعة.",
       "en": "A burst of bonus damage on the kill with penetration and speed."
      },
-     "Lich Bane": {
-      "ar": "PHASE DIVE ثم الهجمة المعزّزة تعمل ضرر سحري كبير.",
-      "en": "PHASE DIVE into the empowered hit deals big magic damage."
+     "Dusk and Dawn": {
+      "ar": "بعد PHASE DIVE هجمة تضرب مرتين وتعالجه.",
+      "en": "A double-strike after PHASE DIVE that heals him."
      },
      "Rabadon's Deathcap": {
       "ar": "AP مضاعف يزيد ضرر TIMEWINDER وPARALLEL CONVERGENCE.",
       "en": "Boosted AP amplifies TIMEWINDER and PARALLEL CONVERGENCE."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "brawler_mage",
-    "title_ar": "توليفة المقاتل الماجي",
-    "title_en": "Bruiser mage",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Riftmaker",
      "Dusk and Dawn",
@@ -1216,7 +1506,12 @@
       "en": "Gives extra stasis once CHRONOBREAK is on cooldown."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1254,7 +1549,11 @@
       "en": "Raises HATE SPIKE and ALLURE damage across the combo."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1292,7 +1591,11 @@
       "en": "A slow after a cast helps keep enemies away."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "crit_poke",
@@ -1323,6 +1626,47 @@
      "Trinity Force": {
       "ar": "بعد كل Mystic Shot هجمة معزّزة، وسرعة هجوم وصحة.",
       "en": "An empowered hit after each Mystic Shot, plus attack speed and health."
+     }
+    },
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
+   },
+   {
+    "id": "onhit",
+    "title_ar": "توليفة الدراجون — ضرب متواصل",
+    "title_en": "Dragon — On-hit",
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit",
+    "core": [
+     "Guinsoo's Rageblade",
+     "Kraken Slayer",
+     "Terminus"
+    ],
+    "boots": "Gunmetal Greaves",
+    "flex": [
+     "Blade of the Ruined King",
+     "Guardian Angel",
+     "Phantom Dancer"
+    ],
+    "why_ar": "Mystic Shot يطبّق تأثيرات on-hit على الهدف، لذلك يستفيد Ezreal من آيتمات الضرب المتواصل بينما يرمي Q بسرعة. Guinsoo's يضيف سرعة هجوم وضرراً سحرياً، وKraken Slayer يضرب ضرراً إضافياً كل ثالث ضربة، وTerminus يضيف ضرراً سحرياً واختراقاً.",
+    "why_en": "Mystic Shot applies on-hit effects so Ezreal benefits from on-hit items while firing Q quickly. Guinsoo's adds attack speed and magic damage, Kraken Slayer adds extra damage every third hit and Terminus adds magic damage and penetration.",
+    "item_notes": {
+     "Guinsoo's Rageblade": {
+      "ar": "سرعة هجوم وضرر سحري على كل Mystic Shot.",
+      "en": "Attack speed and magic damage on every Mystic Shot."
+     },
+     "Kraken Slayer": {
+      "ar": "كل ثالث ضربة تضرب ضرراً إضافياً كبيراً.",
+      "en": "Every third hit deals big extra damage."
+     },
+     "Terminus": {
+      "ar": "ضرر سحري إضافي واختراق مع كل ضربة.",
+      "en": "Extra magic damage and penetration on every hit."
      }
     },
     "reviewed": false
@@ -1363,7 +1707,11 @@
       "en": "Ultimate haste and MR shred on everyone in the storm."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1401,7 +1749,11 @@
       "en": "A shield and bonus AD at low health in a duel."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -1410,8 +1762,8 @@
   "builds": [
    {
     "id": "trickster",
-    "title_ar": "توليفة المخادع",
-    "title_en": "Trickster",
+    "title_ar": "توليفة الميد والبارون والجانجل",
+    "title_en": "Mid & Baron & Jungle",
     "core": [
      "Luden's Echo",
      "Lich Bane",
@@ -1439,7 +1791,13 @@
       "en": "Boosted AP raises every short ability."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1448,8 +1806,8 @@
   "builds": [
    {
     "id": "shield_tank",
-    "title_ar": "توليفة الدرع الجماعي",
-    "title_en": "Team shield tank",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
     "core": [
      "Abyssal Mask",
      "Locket of the Iron Solari",
@@ -1475,6 +1833,85 @@
      "Hollow Radiance": {
       "ar": "ضرر مستمر حول Galio يتزايد مع الصحة بعد التحدّي.",
       "en": "Constant damage around Galio that scales with his health."
+     }
+    },
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank",
+    "support_item": "Bulwark of the Mountain"
+   },
+   {
+    "id": "mid_tank",
+    "title_ar": "توليفة الميد — تانك",
+    "title_en": "Mid — Tank",
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_tank",
+    "core": [
+     "Hollow Radiance",
+     "Thornmail",
+     "Unending Despair"
+    ],
+    "boots": "Chainlaced Crushers",
+    "flex": [
+     "Abyssal Mask",
+     "Kaenic Rookern",
+     "Warmog's Armor"
+    ],
+    "why_ar": "في الميد يقاتل Galio الماجات بـ WINDS OF WAR وSHIELD OF DURAND، فـ Hollow Radiance وUnending Despair يضربان من حوله ويعطيانه مقاومة سحر. Thornmail يرد الضرر على المقاتلين الذين يدخلون عليه.",
+    "why_en": "In mid Galio fights mages with WINDS OF WAR and SHIELD OF DURAND, so Hollow Radiance and Unending Despair hit around him and give magic resistance. Thornmail reflects damage on fighters who dive him.",
+    "item_notes": {
+     "Hollow Radiance": {
+      "ar": "ضرر سحري مستمر حوله بينما يحمل SHIELD OF DURAND.",
+      "en": "Constant magic damage around him while holding SHIELD OF DURAND."
+     },
+     "Thornmail": {
+      "ar": "يرد الضرر ويقلل العلاج على المقاتلين.",
+      "en": "Reflects damage and cuts healing on fighters."
+     },
+     "Unending Despair": {
+      "ar": "يمتص صحة الأعداء القريبين ويعطيه مقاومة مزدوجة.",
+      "en": "Drains nearby enemies and gives dual resistances."
+     }
+    },
+    "reviewed": false
+   },
+   {
+    "id": "mid_ap",
+    "title_ar": "توليفة الميد — ساحر",
+    "title_en": "Mid — AP mage",
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Rod of Ages",
+     "Infinity Orb",
+     "Rabadon's Deathcap"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Lich Bane",
+     "Zhonya's Hourglass",
+     "Banshee's Veil"
+    ],
+    "why_ar": "Galio يرمي WINDS OF WAR مرات كثيرة ويقتحم بـ JUSTICE PUNCH، فـ Rod of Ages يعطيه صحة ومانا وعلاجاً. Infinity Orb يجعل مهاراته تضرب حرجة، وRabadon's يضخّم ضرر الإعصار والـ ult.",
+    "why_en": "Galio casts WINDS OF WAR repeatedly and engages with JUSTICE PUNCH, so Rod of Ages gives health, mana and healing. Infinity Orb makes his abilities crit and Rabadon's amplifies the tornado and ult damage.",
+    "item_notes": {
+     "Rod of Ages": {
+      "ar": "صحة ومانا وعلاج أثناء إطلاق الإعصار المتكرر.",
+      "en": "Health, mana and healing while spamming the tornado."
+     },
+     "Infinity Orb": {
+      "ar": "مهاراته تضرب حرجة بضرر إضافي.",
+      "en": "His abilities crit for bonus damage."
+     },
+     "Rabadon's Deathcap": {
+      "ar": "AP مضاعف يرفع كل مهاراته.",
+      "en": "Boosted AP raises all his abilities."
      }
     },
     "reviewed": false
@@ -1515,7 +1952,11 @@
       "en": "A shield and bonus AD while spinning at low health."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    },
    {
     "id": "tanky",
@@ -1529,8 +1970,8 @@
     "boots": "Armored Advance",
     "flex": [
      "Sterak's Gage",
-     "Death's Dance",
-     "Guardian Angel"
+     "Randuin's Omen",
+     "Kaenic Rookern"
     ],
     "why_ar": "Courage يعطيه دروعاً ومقاومة، وJudgment يضرب كل من حوله، فـ Sunfire Aegis يضيف حرقاً مع الدوران. Dead Man's Plate يسرّع وصوله، وIceborn Gauntlet يضيف حقلاً يبطّئ الأعداء بعد Decisive Strike.",
     "why_en": "Courage gives him armor and MR and Judgment hits everyone around, so Sunfire Aegis adds burn while he spins. Dead Man's Plate speeds his approach and Iceborn Gauntlet adds a slowing field after Decisive Strike.",
@@ -1548,7 +1989,11 @@
       "en": "A field slows enemies and keeps them in Judgment."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -1586,7 +2031,11 @@
       "en": "A shield and bonus AD at low health in Mega form."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -1595,8 +2044,8 @@
   "builds": [
    {
     "id": "brawler_mage",
-    "title_ar": "توليفة المتحمّل",
-    "title_en": "Durable mage",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Rod of Ages",
      "Rylai's Crystal Scepter",
@@ -1624,12 +2073,17 @@
       "en": "A big empowered magic hit after Drunken Rage."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "burn_brawler",
-    "title_ar": "توليفة الحارق",
-    "title_en": "Burn bruiser",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Liandry's Torment",
      "Riftmaker",
@@ -1657,7 +2111,11 @@
       "en": "Ability crits for bonus damage with penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1666,8 +2124,8 @@
   "builds": [
    {
     "id": "ambusher",
-    "title_ar": "توليفة القنّاص السريع",
-    "title_en": "Quick-draw jungler",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Duskblade of Draktharr",
      "Eclipse",
@@ -1695,7 +2153,12 @@
       "en": "Executes low-health targets after the pellets."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -1704,8 +2167,8 @@
   "builds": [
    {
     "id": "seamstress",
-    "title_ar": "توليفة الخياطة",
-    "title_en": "Seamstress duelist",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Nashor's Tooth",
      "Dusk and Dawn",
@@ -1733,7 +2196,12 @@
       "en": "Damage grows over a long fight, with health to stay in melee."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1771,7 +2239,11 @@
       "en": "A shield and bonus damage when enemies get close to killing him."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -1809,7 +2281,11 @@
       "en": "More AP amplifies UPGRADE!!!, which empowers his next spell."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -1818,8 +2294,8 @@
   "builds": [
    {
     "id": "visionary",
-    "title_ar": "توليفة الرؤى",
-    "title_en": "Visionary poke",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Archangel's Staff",
      "Malignance",
@@ -1847,6 +2323,47 @@
       "en": "More damage at long range, which suits his poke style."
      }
     },
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Blackfire Torch",
+     "Infinity Orb",
+     "Liandry's Torment"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Archangel's Staff",
+     "Zhonya's Hourglass",
+     "Void Staff"
+    ],
+    "why_ar": "Hwei يرمي مهارات كثيرة بعد تبديل SUBJECT، فـ Blackfire Torch يحرق مع كل مهارة، وLiandry's Torment يزيد الحرق على من تصيبه Devastating Fire. Infinity Orb يجعل Severing Bolt تضرب حرجة من بعيد.",
+    "why_en": "Hwei casts many spells after SUBJECT swaps, so Blackfire Torch burns with every cast and Liandry's Torment adds burn on whoever Devastating Fire hits. Infinity Orb makes Severing Bolt crit from range.",
+    "item_notes": {
+     "Blackfire Torch": {
+      "ar": "حرق إضافي مع كل مهارة بعد تبديل SUBJECT.",
+      "en": "An extra burn with every cast after a SUBJECT swap."
+     },
+     "Infinity Orb": {
+      "ar": "حرجة على Severing Bolt وSPIRALING DESPAIR.",
+      "en": "Crits on Severing Bolt and SPIRALING DESPAIR."
+     },
+     "Liandry's Torment": {
+      "ar": "حرق % من الصحة على الهدف المحصور.",
+      "en": "A percent-health burn on the trapped target."
+     }
+    },
     "reviewed": false
    }
   ]
@@ -1856,8 +2373,8 @@
   "builds": [
    {
     "id": "blade_dancer",
-    "title_ar": "توليفة الراقصة بالسيوف",
-    "title_en": "Blade dancer",
+    "title_ar": "توليفة الميد والبارون",
+    "title_en": "Mid & Baron",
     "core": [
      "Trinity Force",
      "Hullbreaker",
@@ -1886,7 +2403,12 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -1925,7 +2447,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -1934,8 +2460,8 @@
   "builds": [
    {
     "id": "vanguard",
-    "title_ar": "توليفة الطليعة",
-    "title_en": "Vanguard",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Trinity Force",
      "Black Cleaver",
@@ -1963,7 +2489,12 @@
       "en": "A shield at low health while he's locked in with the enemy."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -1972,8 +2503,8 @@
   "builds": [
    {
     "id": "grandmaster",
-    "title_ar": "توليفة الأستاذ الأكبر",
-    "title_en": "Grandmaster duelist",
+    "title_ar": "توليفة الجانجل والبارون — مقاتل",
+    "title_en": "Jungle & Baron — Bruiser",
     "core": [
      "Trinity Force",
      "Hullbreaker",
@@ -2001,12 +2532,17 @@
       "en": "Delays incoming damage so he can finish the fight after Counter Strike."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    },
    {
     "id": "anti_tank",
-    "title_ar": "توليفة كاسر الدروع",
-    "title_en": "Armor-breaker",
+    "title_ar": "توليفة الجانجل والبارون — تانك",
+    "title_en": "Jungle & Baron — Tank",
     "core": [
      "Black Cleaver",
      "Sterak's Gage",
@@ -2014,16 +2550,17 @@
     ],
     "boots": "Armored Advance",
     "flex": [
-     "Death's Dance",
-     "Guardian Angel",
-     "Titanic Hydra"
+     "Randuin's Omen",
+     "Thornmail",
+     "Kaenic Rookern"
     ],
     "why_ar": "Jax يضرب بهجمات متتالية ويكسب سرعة، فـ Black Cleaver يخفّض دروع الهدف مع كل هجمة. Sunfire Aegis يحرق من حوله أثناء Counter Strike الذي يشل الجميع. Sterak's Gage يعطيه درعاً عندما يقترب من الموت داخل المعركة.",
     "why_en": "Jax chains attacks and gains speed, so Black Cleaver shreds the target's armor with each hit. Sunfire Aegis burns everyone around while Counter Strike stuns the group. Sterak's Gage gives a shield when he's about to die inside the fight.",
     "item_notes": {
      "Black Cleaver": {
       "ar": "تخفيض الدروع يتراكم مع سرعة الهجوم العالية.",
-      "en": "Armor shred stacks quickly with his high attack speed."
+      "en": "Armor shred stacks quickly with his high attack speed.",
+      "exception": true
      },
      "Sterak's Gage": {
       "ar": "درع وضرر عند الانخفاض يطيل مدة القتال.",
@@ -2034,7 +2571,12 @@
       "en": "Constant burn around him after Counter Strike and Leap Strike."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -2043,8 +2585,8 @@
   "builds": [
    {
     "id": "shock_cannon",
-    "title_ar": "توليفة المدفع والمطرقة",
-    "title_en": "Cannon and hammer",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Essence Reaver",
      "Youmuu's Ghostblade",
@@ -2072,12 +2614,16 @@
       "en": "35% armor penetration and extra champion damage in cannon form."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "hammer_bruiser",
-    "title_ar": "توليفة المطرقة",
-    "title_en": "Hammer fighter",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Trinity Force",
      "Black Cleaver",
@@ -2087,7 +2633,7 @@
     "flex": [
      "Guardian Angel",
      "Edge of Night",
-     "Serpent's Fang"
+     "Death's Dance"
     ],
     "why_ar": "في وضع Hammer يضرب Jayce بـ TO THE SKIES! وTHUNDERING BLOW، فكل مهارة تفعّل Spellblade في Trinity Force. Black Cleaver يكسر الدروع ويعطيه صحة في القتال القريب. Maw of Malmortius يحميه من الماجات التي تضربه وهو داخل الاشتباك.",
     "why_en": "In Hammer stance Jayce fights with TO THE SKIES! and THUNDERING BLOW, so each cast triggers Trinity Force's Spellblade. Black Cleaver shreds armor and adds health up close. Maw of Malmortius protects him from mages who hit him inside the brawl.",
@@ -2105,7 +2651,11 @@
       "en": "A magic shield at low health and AD against mages."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -2143,7 +2693,11 @@
       "en": "Executes low-health targets after Deadly Flourish."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -2181,7 +2735,11 @@
       "en": "Attack and movement speed help her kite."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "anti_tank",
@@ -2214,7 +2772,11 @@
       "en": "A shield and healing to survive a dive."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -2252,7 +2814,11 @@
       "en": "Damage and dual resistances with healing in close fights."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -2290,7 +2856,11 @@
       "en": "Attack speed and magic damage that stack over time."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    },
    {
     "id": "onhit_crit",
@@ -2321,6 +2891,47 @@
      "Terminus": {
       "ar": "ضرر سحري إضافي لكل هجمة مع اختراق.",
       "en": "Extra magic damage per hit with penetration."
+     }
+    },
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
+   },
+   {
+    "id": "ap",
+    "title_ar": "توليفة الدراجون — ساحرة",
+    "title_en": "Dragon — AP",
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Lich Bane",
+     "Rabadon's Deathcap",
+     "Infinity Orb"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Void Staff",
+     "Nashor's Tooth"
+    ],
+    "why_ar": "Plasma يضرب ضرراً سحرياً يزداد مع الهجمات، وICATHIAN RAIN وVOID SEEKER يتبعان AP، فتلعب Kai'Sa بـ AP. Lich Bane يعطيها هجمة سحرية بعد كل مهارة، وInfinity Orb وRabadon's يضخّمان ضرر المهارات.",
+    "why_en": "Plasma deals magic damage that grows with attacks and ICATHIAN RAIN and VOID SEEKER scale with AP, so Kai'Sa can build AP. Lich Bane gives a magic hit after every ability and Infinity Orb and Rabadon's amplify ability damage.",
+    "item_notes": {
+     "Lich Bane": {
+      "ar": "بعد ICATHIAN RAIN هجمة سحرية معزّزة تضيف شحنة Plasma.",
+      "en": "A boosted magic hit after ICATHIAN RAIN that adds a Plasma stack."
+     },
+     "Rabadon's Deathcap": {
+      "ar": "AP مضاعف يرفع Plasma والمهارات.",
+      "en": "Boosted AP raises Plasma and abilities."
+     },
+     "Infinity Orb": {
+      "ar": "مهاراتها تضرب حرجة بضرر إضافي واختراق.",
+      "en": "Her abilities crit for bonus damage with penetration."
      }
     },
     "reviewed": false
@@ -2361,7 +2972,11 @@
       "en": "Extra bolts plant spears on second targets."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    }
   ]
  },
@@ -2370,8 +2985,8 @@
   "builds": [
    {
     "id": "mage",
-    "title_ar": "توليفة الماجي",
-    "title_en": "Poke mage",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Archangel's Staff",
      "Horizon Focus",
@@ -2399,12 +3014,16 @@
       "en": "Stasis saves her when someone dives her in mid."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "enchanter",
-    "title_ar": "توليفة الداعمة",
-    "title_en": "Enchanter",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
     "core": [
      "Ardent Censer",
      "Harmonic Echo",
@@ -2414,7 +3033,7 @@
     "flex": [
      "Redemption",
      "Staff of Flowing Waters",
-     "Zhonya's Hourglass"
+     "Mikael's Blessing"
     ],
     "why_ar": "INSPIRE يعطي الحليف درع وسرعة، فـ Ardent Censer يزيد سرعة هجوم الحلفاء المحميين. Harmonic Echo ينقل الدرع للحلفاء القريبين. Shurelya's Battlesong يعطي الفريق سرعة عند الدخول أو الهروب.",
     "why_en": "INSPIRE shields an ally and speeds them up, so Ardent Censer boosts the shielded ally's attack speed. Harmonic Echo chains the shield to nearby allies. Shurelya's Battlesong gives the team speed to engage or disengage.",
@@ -2432,7 +3051,12 @@
       "en": "Its active gives the team movement speed after a MANTRA cast."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support",
+    "support_item": "Bulwark of the Mountain"
    }
   ]
  },
@@ -2441,8 +3065,8 @@
   "builds": [
    {
     "id": "riftwalker",
-    "title_ar": "توليفة السائر عبر الشق",
-    "title_en": "Riftwalker",
+    "title_ar": "توليفة الميد والبارون",
+    "title_en": "Mid & Baron",
     "core": [
      "Rod of Ages",
      "Lich Bane",
@@ -2470,7 +3094,12 @@
       "en": "Boosted AP raises NULL SPHERE and Riftwalk damage."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -2508,7 +3137,11 @@
       "en": "Its dash deals damage even when SHUNPO is on cooldown."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -2517,8 +3150,8 @@
   "builds": [
    {
     "id": "ascended",
-    "title_ar": "توليفة الصعود",
-    "title_en": "Ascended on-hit",
+    "title_ar": "توليفة البارون والميد — ضرب متواصل",
+    "title_en": "Baron & Mid — On-hit",
     "core": [
      "Nashor's Tooth",
      "Guinsoo's Rageblade",
@@ -2549,6 +3182,49 @@
       "ar": "Kayle تتوسع بـ AP مع STARFIRE SPELLBLADE، فأحذية AP تعطيها ضرراً واختراقاً للسحر.",
       "en": "Kayle scales with AP through STARFIRE SPELLBLADE so AP boots add damage and magic penetration.",
       "exception": true
+     }
+    },
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "MID"
+    ],
+    "style": "build_onhit"
+   },
+   {
+    "id": "ap",
+    "title_ar": "توليفة البارون والميد — ساحر",
+    "title_en": "Baron & Mid — AP",
+    "lanes": [
+     "BARON",
+     "MID"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Rabadon's Deathcap",
+     "Lich Bane",
+     "Liandry's Torment"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Void Staff",
+     "Banshee's Veil"
+    ],
+    "why_ar": "بعد اكتمال DIVINE ASCENT يضرب RADIANT BLAST وDIVINE JUDGMENT ضرراً كبيراً بـ AP، فتلعب Kayle ساحرة بمهارات قوية. Rabadon's يضخّم AP، وLich Bane يعطيها هجمة سحرية بعد RADIANT BLAST، وLiandry's يحرق الأعداء الثقال.",
+    "why_en": "Once DIVINE ASCENT completes RADIANT BLAST and DIVINE JUDGMENT hit hard with AP, so Kayle can play as a mage with strong abilities. Rabadon's amplifies AP, Lich Bane gives a magic hit after RADIANT BLAST and Liandry's burns heavy enemies.",
+    "item_notes": {
+     "Rabadon's Deathcap": {
+      "ar": "AP مضاعف يرفع الصواريخ السماوية وسيف Virtue.",
+      "en": "Boosted AP lifts the celestial blasts and Virtue's damage."
+     },
+     "Lich Bane": {
+      "ar": "بعد RADIANT BLAST هجمة سحرية معزّزة.",
+      "en": "A boosted magic hit after RADIANT BLAST."
+     },
+     "Liandry's Torment": {
+      "ar": "حرق % من الصحة على التانك.",
+      "en": "A percent-health burn on tanks."
      }
     },
     "reviewed": false
@@ -2590,7 +3266,11 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "rhaast",
@@ -2623,7 +3303,11 @@
       "en": "Damage becomes a delayed bleed that Rhaast's healing softens."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -2632,8 +3316,8 @@
   "builds": [
    {
     "id": "storm_mage",
-    "title_ar": "توليفة العاصفة",
-    "title_en": "Storm mage",
+    "title_ar": "توليفة البارون والميد",
+    "title_en": "Baron & Mid",
     "core": [
      "Imperial Mandate",
      "Liandry's Torment",
@@ -2661,7 +3345,12 @@
       "en": "A dash that puts him in SLICING MAELSTROM range."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -2699,7 +3388,11 @@
       "en": "Reduces shields and pierces armor."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -2737,7 +3430,11 @@
       "en": "Extra bolts at nearby enemies in teamfights."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_onhit"
    },
    {
     "id": "crit_marksman",
@@ -2770,7 +3467,11 @@
       "en": "35% armor penetration kills tanks during LAMB'S RESPITE."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -2808,7 +3509,11 @@
       "en": "Extra bolts add percent-health damage."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    }
   ]
  },
@@ -2847,7 +3552,11 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "bruiser_tank",
@@ -2860,9 +3569,9 @@
     ],
     "boots": "Armored Advance",
     "flex": [
-     "Death's Dance",
-     "Guardian Angel",
-     "Black Cleaver"
+     "Randuin's Omen",
+     "Thornmail",
+     "Kaenic Rookern"
     ],
     "why_ar": "Safeguard وIron Will يعطيانه درعاً وعلاجاً، وTempest يضرب ضرر سحري حوله، فـ Sunfire Aegis يضيف حرقاً مستمراً. Sterak's Gage يعطيه صحة ودرعاً عند الخطر. Dead Man's Plate يسرّع دخوله وهو متين ضد الـ AD.",
     "why_en": "Safeguard and Iron Will give him shields and healing while Tempest deals area magic damage, so Sunfire Aegis adds constant burn. Sterak's Gage adds health and a shield at low health. Dead Man's Plate speeds his entry and keeps him tough against AD.",
@@ -2880,7 +3589,11 @@
       "en": "Armor and health with speed for engaging and leaving."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -2919,7 +3632,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -2957,7 +3674,11 @@
       "en": "Damage ramping over time with health for the brawl."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -2995,7 +3716,11 @@
       "en": "Ultimate haste and MR shred on frozen enemies."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -3004,8 +3729,8 @@
   "builds": [
    {
     "id": "double_shot",
-    "title_ar": "توليفة الطلقتين",
-    "title_en": "Double-shot carry",
+    "title_ar": "توليفة الدراجون والميد",
+    "title_en": "Dragon & Mid",
     "core": [
      "Essence Reaver",
      "Navori Quickblades",
@@ -3033,7 +3758,12 @@
       "en": "Extra crit damage on every double-shot."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON",
+     "MID"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -3072,7 +3802,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -3081,8 +3815,8 @@
   "builds": [
    {
     "id": "mage",
-    "title_ar": "توليفة الماجي",
-    "title_en": "Burst mage",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Luden's Echo",
      "Horizon Focus",
@@ -3110,12 +3844,16 @@
       "en": "Final Spark crits for bonus damage with penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "support",
-    "title_ar": "توليفة الدعم",
-    "title_en": "Support Lux",
+    "title_ar": "توليفة السابورت — داعم",
+    "title_en": "Support — Enchanter",
     "core": [
      "Echoes of Helia",
      "Staff of Flowing Waters",
@@ -3124,7 +3862,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Ardent Censer",
-     "Zhonya's Hourglass",
+     "Mikael's Blessing",
      "Shurelya's Battlesong"
     ],
     "why_ar": "Prismatic Barrier تدرع حليفين في الذهاب والعودة، فـ Staff of Flowing Waters يعطيهما تسريع وAP. Echoes of Helia يخزّن علاجاً من ضرر Lux لتفرغه على الحلفاء. Redemption يعالج الفريق من مسافة بعيدة بعد Final Spark.",
@@ -3143,7 +3881,50 @@
       "en": "Its active heals distant allies and fits Lux's range."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support",
+    "support_item": "Diadem of Songs"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Luden's Echo",
+     "Infinity Orb",
+     "Void Staff"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Shurelya's Battlesong",
+     "Zhonya's Hourglass",
+     "Banshee's Veil"
+    ],
+    "why_ar": "في السابورت تضرب Lux من خلف الفريق بـ Light Binding وFinal Spark، فتحتاج إلى ضرر المهارات لا إلى العلاج. Luden's Echo ينفجر على أول Light Binding، وInfinity Orb يجعل Final Spark تضرب حرجة. Void Staff يخترق MR الأعداء الذين يبتعدون عن Prismatic Barrier.",
+    "why_en": "In support Lux fires Light Binding and Final Spark from behind the team, so she wants ability damage rather than healing. Luden's Echo detonates on the first Light Binding and Infinity Orb makes Final Spark crit. Void Staff pierces the MR of enemies who stay away from Prismatic Barrier.",
+    "item_notes": {
+     "Luden's Echo": {
+      "ar": "أول Light Binding يفجّر الإيكو على الصف الأمامي.",
+      "en": "The first Light Binding triggers the echo on the front line."
+     },
+     "Infinity Orb": {
+      "ar": "Final Spark تضرب حرجة بضرر إضافي 20% مع اختراق.",
+      "en": "Final Spark crits for 20% bonus damage with penetration."
+     },
+     "Void Staff": {
+      "ar": "اختراق 40% للسحر ضد الأعداء الذين يتجمعون MR.",
+      "en": "40% magic penetration against MR-stacking enemies."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -3152,8 +3933,8 @@
   "builds": [
    {
     "id": "armor_tank",
-    "title_ar": "توليفة الدروع",
-    "title_en": "Armor stacker",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Sunfire Aegis",
      "Iceborn Gauntlet",
@@ -3181,12 +3962,16 @@
       "en": "Big armor raising Ground Slam damage and cutting enemy healing."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    },
    {
     "id": "ap_mid",
-    "title_ar": "توليفة ماجي المنتصف",
-    "title_en": "Mid AP Malphite",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Rod of Ages",
      "Zhonya's Hourglass",
@@ -3194,9 +3979,9 @@
     ],
     "boots": "Crimson Lucidity",
     "flex": [
-     "Abyssal Mask",
-     "Frozen Heart",
-     "Sunfire Aegis"
+     "Void Staff",
+     "Banshee's Veil",
+     "Rabadon's Deathcap"
     ],
     "why_ar": "Seismic Shard وUnstoppable Force يعتمدان على AP في ضرر المنتصف، وGround Slam يعتمد على الدروع، فـ Zhonya's يعطيه AP ودروع في آيتم واحد. Rod of Ages يعيد المانا ويعالجه أثناء الدخول. Liandry's Torment يحرق الأعداء المطاحين بعد Unstoppable Force.",
     "why_en": "Seismic Shard and Unstoppable Force scale with AP for the mid-lane version while Ground Slam scales with armor, so Zhonya's gives both AP and armor in one item. Rod of Ages refunds mana and heals him on the dive. Liandry's Torment burns enemies knocked up by Unstoppable Force.",
@@ -3217,7 +4002,49 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_tank",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank",
+    "core": [
+     "Iceborn Gauntlet",
+     "Zeke's Convergence",
+     "Dead Man's Plate"
+    ],
+    "boots": "Armored Advance",
+    "flex": [
+     "Locket of the Iron Solari",
+     "Thornmail",
+     "Frozen Heart"
+    ],
+    "why_ar": "Unstoppable Force يطيح عدة أعداء ويقتحم للفريق، فـ Zeke's Convergence يرفع ضرر الحلفاء بعد الـ ult. Iceborn Gauntlet يبطّئ الأعداء بعد Thunderclap، وDead Man's Plate يعطيه دروعاً يعتمد عليها Ground Slam.",
+    "why_en": "Unstoppable Force knocks up several enemies and engages for the team, so Zeke's Convergence raises allied damage after the ult. Iceborn Gauntlet slows enemies after Thunderclap and Dead Man's Plate gives the armor Ground Slam scales with.",
+    "item_notes": {
+     "Iceborn Gauntlet": {
+      "ar": "حقل جليد بعد Thunderclap يبطّئ الأعداء.",
+      "en": "A frost field after Thunderclap slows enemies."
+     },
+     "Zeke's Convergence": {
+      "ar": "يرفع ضرر الحلفاء بعد الـ ult.",
+      "en": "Raises allied damage after the ult."
+     },
+     "Dead Man's Plate": {
+      "ar": "دروع كبيرة ترفع ضرر Ground Slam وسرعة الدخول.",
+      "en": "Big armor raising Ground Slam damage and engage speed."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Bulwark of the Mountain"
    }
   ]
  },
@@ -3226,8 +4053,8 @@
   "builds": [
    {
     "id": "sap_tank",
-    "title_ar": "توليفة الجذور",
-    "title_en": "Sap tank",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Winter's Approach",
      "Sunfire Aegis",
@@ -3255,7 +4082,50 @@
       "en": "Magic resistance and speed give him room to enter from behind."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_tank"
+   },
+   {
+    "id": "support_tank",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank",
+    "core": [
+     "Radiant Virtue",
+     "Locket of the Iron Solari",
+     "Knight's Vow"
+    ],
+    "boots": "Armored Advance",
+    "flex": [
+     "Thornmail",
+     "Frozen Heart",
+     "Force of Nature"
+    ],
+    "why_ar": "Maokai يثبّت بـ TWISTED ADVANCE ويحجز بـ NATURE'S GRASP، فـ Radiant Virtue يعطي الفريق تسريعاً ومقاومة بعد الـ ult. Locket يدرع الفريق، وKnight's Vow يجعله يحمي حليفاً وهو يتقدم.",
+    "why_en": "Maokai roots with TWISTED ADVANCE and zones with NATURE'S GRASP, so Radiant Virtue gives the team haste and resistances after the ult. Locket shields the team and Knight's Vow lets him protect an ally while he advances.",
+    "item_notes": {
+     "Radiant Virtue": {
+      "ar": "مقاومة وتسريع للفريق بعد الـ ult.",
+      "en": "Resistances and haste for the team after the ult."
+     },
+     "Locket of the Iron Solari": {
+      "ar": "درع للفريق عند بدء الاشتباك.",
+      "en": "A team shield at the start of the fight."
+     },
+     "Knight's Vow": {
+      "ar": "يتقاسم الضرر مع حليف يحميه.",
+      "en": "Shares damage with an ally he protects."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Bulwark of the Mountain"
    }
   ]
  },
@@ -3293,7 +4163,11 @@
       "en": "Percent health damage kills tanks without slowing him."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_onhit"
    }
   ]
  },
@@ -3302,8 +4176,8 @@
   "builds": [
    {
     "id": "barrage_mage",
-    "title_ar": "توليفة الوابل",
-    "title_en": "Barrage mage",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Malignance",
      "Horizon Focus",
@@ -3331,7 +4205,49 @@
       "en": "Bonus crit damage on the volley and ult."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Luden's Echo",
+     "Infinity Orb",
+     "Malignance"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Void Staff",
+     "Banshee's Veil"
+    ],
+    "why_ar": "RADIANT VOLLEY وSOLAR SNARE مهارات بعيدة، وكل مهارة تضيف مقذوفات لهجمتها، فـ Luden's Echo وInfinity Orb يرفعان ضرر الوابل. Malignance يسرّع GOLDEN ECLIPSE الذي يضرب كل موسوم من بعيد.",
+    "why_en": "RADIANT VOLLEY and SOLAR SNARE are ranged abilities and each cast adds projectiles to her attack, so Luden's Echo and Infinity Orb raise the volley damage. Malignance speeds up GOLDEN ECLIPSE which hits every marked enemy from afar.",
+    "item_notes": {
+     "Luden's Echo": {
+      "ar": "أول RADIANT VOLLEY يفجّر الإيكو.",
+      "en": "The first RADIANT VOLLEY triggers the echo."
+     },
+     "Infinity Orb": {
+      "ar": "حرجة على الوابل والـ ult بضرر إضافي.",
+      "en": "Crits on the volley and ult for bonus damage."
+     },
+     "Malignance": {
+      "ar": "تسريع الـ ult وخفض MR للموسومين.",
+      "en": "Ultimate haste and MR shred on marked enemies."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -3370,7 +4286,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -3408,7 +4328,11 @@
       "en": "Executes targets after Bullet Time."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -3417,8 +4341,8 @@
   "builds": [
    {
     "id": "realm_bruiser",
-    "title_ar": "توليفة العالم الآخر",
-    "title_en": "Realm bruiser",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Riftmaker",
      "Rylai's Crystal Scepter",
@@ -3446,7 +4370,12 @@
       "en": "Blocks the ability that would interrupt the ult at its start."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -3455,8 +4384,8 @@
   "builds": [
    {
     "id": "mage",
-    "title_ar": "توليفة الماجي",
-    "title_en": "Mid mage",
+    "title_ar": "توليفة الميد والجانجل",
+    "title_en": "Mid & Jungle",
     "core": [
      "Liandry's Torment",
      "Blackfire Torch",
@@ -3484,12 +4413,17 @@
       "en": "Stasis after she chains the enemies."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "support",
-    "title_ar": "توليفة الدعم",
-    "title_en": "Support",
+    "title_ar": "توليفة السابورت — داعم",
+    "title_en": "Support — Enchanter",
     "core": [
      "Imperial Mandate",
      "Staff of Flowing Waters",
@@ -3498,15 +4432,16 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Redemption",
-     "Zhonya's Hourglass",
-     "Banshee's Veil"
+     "Mikael's Blessing",
+     "Ardent Censer"
     ],
     "why_ar": "DARK BINDING يشل الهدف، وImperial Mandate يعطي مهارات الشلل تسريعاً ويرفع الضرر على الموسوم. BLACK SHIELD يحمي حليفاً، فـ Staff of Flowing Waters يعطيهما تسريعاً. Echoes of Helia يحوّل ضررها إلى علاج للحلفاء.",
     "why_en": "DARK BINDING roots the target and Imperial Mandate gives CC abilities haste and extra damage on the marked enemy. BLACK SHIELD protects an ally, so Staff of Flowing Waters gives both of you haste. Echoes of Helia turns her damage into healing for allies.",
     "item_notes": {
      "Imperial Mandate": {
       "ar": "تسريع على الشلل ووسم يضيف ضرراً من الفريق كله.",
-      "en": "Haste on CC plus a mark that adds team damage."
+      "en": "Haste on CC plus a mark that adds team damage.",
+      "exception": true
      },
      "Staff of Flowing Waters": {
       "ar": "حماية الحليف بـ BLACK SHIELD تعطيهما سرعة تبريد.",
@@ -3517,7 +4452,50 @@
       "en": "Converts Morgana's damage into healing charges for the team."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support",
+    "support_item": "Diadem of Songs"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Liandry's Torment",
+     "Blackfire Torch",
+     "Rylai's Crystal Scepter"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Banshee's Veil",
+     "Void Staff"
+    ],
+    "why_ar": "TORMENTED SHADOW وDARK BINDING يضعان الأعداء تحت ضرر متواصل، فتحتاج Morgana في السابورت إلى حرق متراكم. Liandry's Torment وBlackfire Torch يحرقان كل من يقف في الظل، وRylai's يبطّئه فيبقى داخله.",
+    "why_en": "TORMENTED SHADOW and DARK BINDING keep enemies under steady damage, so Morgana in support wants stacking burn. Liandry's Torment and Blackfire Torch burn everyone standing in the shadow and Rylai's slows them to stay inside.",
+    "item_notes": {
+     "Liandry's Torment": {
+      "ar": "حرق بنسبة من الصحة على كل من يقف في TORMENTED SHADOW.",
+      "en": "A percent-health burn on everyone in TORMENTED SHADOW."
+     },
+     "Blackfire Torch": {
+      "ar": "حرق إضافي بعد كل مهارة يتراكم مع Liandry's.",
+      "en": "An extra burn after every ability stacking with Liandry's."
+     },
+     "Rylai's Crystal Scepter": {
+      "ar": "إبطاء بعد كل مهارة يبقي الأعداء داخل الظل.",
+      "en": "A slow after each ability keeps enemies in the shadow."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -3556,7 +4534,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -3594,7 +4576,11 @@
       "en": "A shield and bonus AD in long fights."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -3603,8 +4589,8 @@
   "builds": [
    {
     "id": "jungle_tank",
-    "title_ar": "توليفة الجانجل الصلب",
-    "title_en": "Jungle tank",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Heartsteel",
      "Sunfire Aegis",
@@ -3632,12 +4618,17 @@
       "en": "Speed to dive after DREDGE LINE with armor vs AD."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    },
    {
     "id": "engage_support",
-    "title_ar": "توليفة الدعم الصلب",
-    "title_en": "Engage support",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
     "core": [
      "Locket of the Iron Solari",
      "Zeke's Convergence",
@@ -3665,7 +4656,11 @@
       "en": "Shares damage with the chosen ally, protecting them during the dive."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -3703,7 +4698,11 @@
       "en": "More AP lifts Javelin, Pounce and Swipe."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -3741,7 +4740,11 @@
       "en": "More crit damage on chained attacks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -3780,7 +4783,11 @@
       "en": "Armor shred hits the team after PARANOIA, with health to survive."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -3818,7 +4825,11 @@
       "en": "Boosted AP lifts every projectile."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -3856,7 +4867,11 @@
       "en": "Cuts enemy attack speed by 25% and adds mana and haste."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -3865,8 +4880,8 @@
   "builds": [
    {
     "id": "berserker",
-    "title_ar": "توليفة الهائج",
-    "title_en": "Berserker",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Goredrinker",
      "Black Cleaver",
@@ -3894,7 +4909,12 @@
       "en": "Softens incoming damage while Berserker Rage ramps."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -3932,7 +4952,11 @@
       "en": "A burn after every Command that hits enemies."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -3970,7 +4994,11 @@
       "en": "Constant burn where he charges in."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -3979,8 +5007,8 @@
   "builds": [
    {
     "id": "spear_diver",
-    "title_ar": "توليفة الحربة",
-    "title_en": "Spear diver",
+    "title_ar": "توليفة البارون والجانجل والميد",
+    "title_en": "Baron & Jungle & Mid",
     "core": [
      "Eclipse",
      "Sundered Sky",
@@ -4008,7 +5036,13 @@
       "en": "Armor shred and health, best right after GRAND STARFALL lands."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE",
+     "MID"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -4017,8 +5051,8 @@
   "builds": [
    {
     "id": "keeper",
-    "title_ar": "توليفة الحارس",
-    "title_en": "Keeper tank",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Sunfire Aegis",
      "Thornmail",
@@ -4046,7 +5080,12 @@
       "en": "Stacking health that feeds her health-based armor."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4085,7 +5124,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -4124,7 +5167,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -4162,7 +5209,11 @@
       "en": "Momentum speeds POWERBALL and armor feeds Spiked Shells."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4201,7 +5252,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4239,7 +5294,11 @@
       "en": "Delays damage and complements his Fury healing."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -4277,7 +5336,11 @@
       "en": "A big empowered hit after SAVAGERY and BOLA STRIKE."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -4286,8 +5349,8 @@
   "builds": [
    {
     "id": "exile",
-    "title_ar": "توليفة المنفية",
-    "title_en": "Exile bruiser",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Divine Sunderer",
      "Eclipse",
@@ -4313,6 +5376,47 @@
      "Sundered Sky": {
       "ar": "أول هجمة بعد المهارة تضرب حرجة وتعالجها.",
       "en": "The first hit after an ability crits and heals her."
+     }
+    },
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
+   },
+   {
+    "id": "jungle",
+    "title_ar": "توليفة الجانجل",
+    "title_en": "Jungle",
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser",
+    "core": [
+     "Trinity Force",
+     "Eclipse",
+     "Death's Dance"
+    ],
+    "boots": "Immortal Treads",
+    "flex": [
+     "Sterak's Gage",
+     "Black Cleaver",
+     "Guardian Angel"
+    ],
+    "why_ar": "في الجانجل تنظّف Riven المعسكرات بمهارات متتالية، وكل مهارة تشحن RUNIC BLADE، فـ Trinity Force يضرب بقوة بعد BROKEN WINGS. Eclipse يبني درعاً من الضربات السريعة، وDeath's Dance يخفف الضرر أثناء الدخول على الأعداء.",
+    "why_en": "In the jungle Riven clears with chained abilities and each cast charges RUNIC BLADE, so Trinity Force hits hard after BROKEN WINGS. Eclipse builds a shield from quick hits and Death's Dance softens damage while she dives.",
+    "item_notes": {
+     "Trinity Force": {
+      "ar": "بعد BROKEN WINGS هجمة معزّزة وسرعة هجوم.",
+      "en": "An empowered hit after BROKEN WINGS with attack speed."
+     },
+     "Eclipse": {
+      "ar": "ضربات سريعة تبني درعاً وضرراً.",
+      "en": "Quick hits build a shield and damage."
+     },
+     "Death's Dance": {
+      "ar": "يخفف الضرر أثناء الدخول بعد VALOR.",
+      "en": "Softens damage on the dive after VALOR."
      }
     },
     "reviewed": false
@@ -4353,7 +5457,11 @@
       "en": "MR shred stacking with FLAMESPITTER's burn."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -4391,7 +5499,11 @@
       "en": "Extra mana, health and healing from champion damage."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -4429,7 +5541,11 @@
       "en": "Executes after INFERNO TRIGGER with extra lethality."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -4438,8 +5554,8 @@
   "builds": [
    {
     "id": "long_range",
-    "title_ar": "توليفة المدى الطويل",
-    "title_en": "Long-range carry",
+    "title_ar": "توليفة الدراجون",
+    "title_en": "Dragon",
     "core": [
      "Hexoptics C44",
      "Infinity Edge",
@@ -4467,7 +5583,49 @@
       "en": "Armor penetration from behind the team."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
+   },
+   {
+    "id": "support",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ad",
+    "core": [
+     "Statikk Shiv",
+     "Hexoptics C44",
+     "Mortal Reminder"
+    ],
+    "boots": "Armorcrusher Boots",
+    "flex": [
+     "Essence Reaver",
+     "Serpent's Fang",
+     "Edge of Night"
+    ],
+    "why_ar": "Senna في السابورت تضرب من خلف الفريق بـ PIERCING DARKNESS وتجمع الأرواح لتزيد مداها، فـ Hexoptics C44 يرفع الضرر مع البعد. Statikk Shiv يصعق عدة أهداف مع الهجمات السريعة، وMortal Reminder يقلل علاج الأعداء.",
+    "why_en": "In support Senna shoots from behind the team with PIERCING DARKNESS and gathers souls to extend range, so Hexoptics C44 raises damage with distance. Statikk Shiv chains lightning to several targets on quick attacks and Mortal Reminder cuts enemy healing.",
+    "item_notes": {
+     "Statikk Shiv": {
+      "ar": "صعقة على عدة أهداف مع الهجمات السريعة.",
+      "en": "Chain lightning on several targets with quick attacks."
+     },
+     "Hexoptics C44": {
+      "ar": "ضرر أكبر مع كل زيادة في مدى الهجوم.",
+      "en": "More damage with each bit of attack range."
+     },
+     "Mortal Reminder": {
+      "ar": "جروح عميقة واختراق دروع للأهداف التي تعالج.",
+      "en": "Grievous Wounds and penetration on healing targets."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -4476,8 +5634,8 @@
   "builds": [
    {
     "id": "mage",
-    "title_ar": "توليفة الماجي",
-    "title_en": "Mid mage",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Luden's Echo",
      "Imperial Mandate",
@@ -4505,12 +5663,16 @@
       "en": "Stasis after ENCORE stops enemies diving her."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "enchanter",
-    "title_ar": "توليفة الداعمة",
-    "title_en": "Enchanter",
+    "title_ar": "توليفة السابورت",
+    "title_en": "Support",
     "core": [
      "Ardent Censer",
      "Echoes of Helia",
@@ -4520,7 +5682,7 @@
     "flex": [
      "Staff of Flowing Waters",
      "Shurelya's Battlesong",
-     "Banshee's Veil"
+     "Mikael's Blessing"
     ],
     "why_ar": "SURROUND SOUND يدرع كل الحلفاء القريبين، فـ Ardent Censer يزيد سرعة هجومهم. Echoes of Helia يخزّن شحنات من ضرر Seraphine ثم يعالج بها الفريق. Redemption يعالج الفريق من بعيد بعد ENCORE.",
     "why_en": "SURROUND SOUND shields every nearby ally, so Ardent Censer boosts their attack speed. Echoes of Helia stores charges from Seraphine's damage and heals the team with them. Redemption heals the team from afar after ENCORE.",
@@ -4538,7 +5700,12 @@
       "en": "Its active heals the team over a long range and swings fights."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support",
+    "support_item": "Diadem of Songs"
    }
   ]
  },
@@ -4576,7 +5743,11 @@
       "en": "AD from bonus health and more damage when low."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -4585,8 +5756,8 @@
   "builds": [
    {
     "id": "warden",
-    "title_ar": "توليفة الحارس",
-    "title_en": "Warden tank",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Warmog's Armor",
      "Heartsteel",
@@ -4614,7 +5785,12 @@
       "en": "Burn on the enemies he taunts."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4653,7 +5829,11 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -4698,7 +5878,11 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4707,8 +5891,8 @@
   "builds": [
    {
     "id": "undead_tank",
-    "title_ar": "توليفة الأموات",
-    "title_en": "Undead tank",
+    "title_ar": "توليفة البارون والجانجل",
+    "title_en": "Baron & Jungle",
     "core": [
      "Heartsteel",
      "Unending Despair",
@@ -4736,7 +5920,12 @@
       "en": "Constant burn on everyone around him."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4774,7 +5963,11 @@
       "en": "More crit damage on bounces."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -4783,8 +5976,8 @@
   "builds": [
    {
     "id": "quake_tank",
-    "title_ar": "توليفة الزلزال",
-    "title_en": "Quake tank",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Hollow Radiance",
      "Warmog's Armor",
@@ -4812,7 +6005,12 @@
       "en": "Protects him from magic while he drags a target with IMPALE."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -4850,7 +6048,11 @@
       "en": "Armor penetration for heavy targets late in the game."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -4889,7 +6091,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -4928,7 +6134,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -4937,8 +6147,8 @@
   "builds": [
    {
     "id": "demon_mage",
-    "title_ar": "توليفة الشيطان",
-    "title_en": "Demon mage",
+    "title_ar": "توليفة الميد — ساحر",
+    "title_en": "Mid — AP mage",
     "core": [
      "Liandry's Torment",
      "Rod of Ages",
@@ -4964,6 +6174,85 @@
      "Rylai's Crystal Scepter": {
       "ar": "إبطاء على كل مهارة يبقي الأعداء في نطاقه.",
       "en": "A slow on every spell keeps enemies in range."
+     }
+    },
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Rylai's Crystal Scepter",
+     "Liandry's Torment",
+     "Riftmaker"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Banshee's Veil",
+     "Morellonomicon"
+    ],
+    "why_ar": "Nevermove يثبّت الهدف ويسحبه، وDeath's Hand يضرب أكثر كلما تكرر على نفس الهدف، فـ Rylai's يبطّئ ويبقيه في المدى. Liandry's Torment وRiftmaker يزيدان الحرق والضرر المتصاعد مع طول الاشتباك.",
+    "why_en": "Nevermove roots and pulls the target and Death's Hand hits harder as it repeats on the same target, so Rylai's slows and keeps it in range. Liandry's Torment and Riftmaker add burn and escalating damage over a long fight.",
+    "item_notes": {
+     "Rylai's Crystal Scepter": {
+      "ar": "إبطاء مع كل مهارة يبقي الهدف في Death's Hand.",
+      "en": "A slow with every spell keeps the target inside Death's Hand."
+     },
+     "Liandry's Torment": {
+      "ar": "حرق % من الصحة أثناء Demonic Ascension.",
+      "en": "A percent-health burn during Demonic Ascension."
+     },
+     "Riftmaker": {
+      "ar": "ضرر يتصاعد مع الوقت وصحة تدعم Ravenous Flock.",
+      "en": "Damage ramping over time with health supporting Ravenous Flock."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Bulwark of the Mountain"
+   },
+   {
+    "id": "tank_mage",
+    "title_ar": "توليفة الميد — تانك",
+    "title_en": "Mid — Tank mage",
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_tank",
+    "core": [
+     "Warmog's Armor",
+     "Hollow Radiance",
+     "Force of Nature"
+    ],
+    "boots": "Chainlaced Crushers",
+    "flex": [
+     "Abyssal Mask",
+     "Thornmail",
+     "Kaenic Rookern"
+    ],
+    "why_ar": "Ravenous Flock يزيد صحة Swain الدائمة، وDemonic Ascension يستنزف من حوله، فآيتمات الصحة تعطيه ضرراً وبقاءً. Warmog's يضخّم الصحة التي يعتمد عليها Hollow Radiance، وForce of Nature يعطيه مقاومة سحر أمام الماجات في الميد.",
+    "why_en": "Ravenous Flock permanently grows Swain's health and Demonic Ascension drains around him, so health items give both damage and survivability. Warmog's inflates the health Hollow Radiance scales with and Force of Nature adds magic resistance against mid mages.",
+    "item_notes": {
+     "Warmog's Armor": {
+      "ar": "صحة ضخمة تتجدد مع Soul Fragments.",
+      "en": "Huge health that regenerates with Soul Fragments."
+     },
+     "Hollow Radiance": {
+      "ar": "ضرر سحري مستمر حوله يتزايد مع الصحة.",
+      "en": "Constant magic damage around him scaling with health."
+     },
+     "Force of Nature": {
+      "ar": "مقاومة سحر وسرعة وهو يقاتل الماجات.",
+      "en": "Magic resistance and speed while fighting mages."
      }
     },
     "reviewed": false
@@ -5004,7 +6293,11 @@
       "en": "Grievous Wounds after ability damage, with health and AP supporting KINGSLAYER."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "brawler_mage",
@@ -5037,7 +6330,11 @@
       "en": "An extra slow keeps the target inside his chains."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5075,7 +6372,11 @@
       "en": "More AP amplifies every sphere in UNLEASHED POWER."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5084,8 +6385,8 @@
   "builds": [
    {
     "id": "earth_mage",
-    "title_ar": "توليفة الأرض",
-    "title_en": "Earth mage",
+    "title_ar": "توليفة الجانجل والميد",
+    "title_en": "Jungle & Mid",
     "core": [
      "Luden's Echo",
      "Cosmic Drive",
@@ -5113,7 +6414,12 @@
       "en": "Crits on every rock volley."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5122,8 +6428,8 @@
   "builds": [
    {
     "id": "blade_assassin",
-    "title_ar": "توليفة قاتل الظل",
-    "title_en": "Shadow blade",
+    "title_ar": "توليفة الميد والجانجل",
+    "title_en": "Mid & Jungle",
     "core": [
      "Serpent's Fang",
      "Duskblade of Draktharr",
@@ -5151,7 +6457,12 @@
       "en": "Lethality and out-of-combat speed that suit wall-hopping."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -5160,8 +6471,8 @@
   "builds": [
    {
     "id": "toxic",
-    "title_ar": "توليفة السم",
-    "title_en": "Toxic on-hit mage",
+    "title_ar": "توليفة البارون والميد — ضرب متواصل",
+    "title_en": "Baron & Mid — On-hit",
     "core": [
      "Nashor's Tooth",
      "Liandry's Torment",
@@ -5169,9 +6480,9 @@
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
-     "Rabadon's Deathcap",
-     "Zhonya's Hourglass",
-     "Void Staff"
+     "Guinsoo's Rageblade",
+     "Wit's End",
+     "Dusk and Dawn"
     ],
     "why_ar": "TOXIC SHOT يضع سماً سحرياً مع كل هجمة، فـ Nashor's Tooth يضيف ضرر on-hit وسرعة هجوم. Liandry's يحرق كل من ينتشر عليه السم والفطر. Morellonomicon يقلل علاجهم ويعطيه صحة تتحمّل الأعداء الذين يحاولون الوصول إليه.",
     "why_en": "TOXIC SHOT poisons with every attack, so Nashor's Tooth adds on-hit damage and attack speed. Liandry's burns everyone poisoned by shots and mushrooms. Morellonomicon cuts their healing and gives him health to survive those who reach him.",
@@ -5182,19 +6493,31 @@
      },
      "Liandry's Torment": {
       "ar": "حرق إضافي على كل من يتأثر بالسم والفطر.",
-      "en": "Extra burn on anyone hit by poison and mushrooms."
+      "en": "Extra burn on anyone hit by poison and mushrooms.",
+      "exception": true
      },
      "Morellonomicon": {
       "ar": "جروح عميقة بعد الضرر، وصحة تمنعه من الموت بسرعة.",
-      "en": "Grievous Wounds after damage, plus health to stay alive."
+      "en": "Grievous Wounds after damage, plus health to stay alive.",
+      "exception": true
+     },
+     "Spellslinger's Shoes": {
+      "ar": "سم Teemo يتبع AP، فأحذية AP تضيف اختراق السحر لضرر الهجمات العادية والفطر.",
+      "en": "Teemo's poison scales with AP so AP boots add magic penetration to his attacks and mushrooms.",
+      "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "MID"
+    ],
+    "style": "build_onhit"
    },
    {
     "id": "mushroom",
-    "title_ar": "توليفة الفطر",
-    "title_en": "Mushroom burner",
+    "title_ar": "توليفة البارون والميد — ساحر",
+    "title_en": "Baron & Mid — AP mage",
     "core": [
      "Blackfire Torch",
      "Rylai's Crystal Scepter",
@@ -5222,7 +6545,12 @@
       "en": "Stasis, AP and armor if someone dives him."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5261,7 +6589,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -5299,7 +6631,11 @@
       "en": "Armor penetration for tanks in late fights."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -5308,8 +6644,8 @@
   "builds": [
    {
     "id": "crit_slayer",
-    "title_ar": "توليفة الحرجة",
-    "title_en": "Crit slayer",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Infinity Edge",
      "Phantom Dancer",
@@ -5337,7 +6673,12 @@
       "en": "Percent-health damage and 12% lifesteal."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -5375,6 +6716,47 @@
       "en": "Stasis after Gate guards against a dive."
      }
     },
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "onhit",
+    "title_ar": "توليفة الميد — ضرب متواصل",
+    "title_en": "Mid — On-hit",
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_onhit",
+    "core": [
+     "Guinsoo's Rageblade",
+     "Nashor's Tooth",
+     "Dusk and Dawn"
+    ],
+    "boots": "Gunmetal Greaves",
+    "flex": [
+     "Wit's End",
+     "Blade of the Ruined King",
+     "Guardian Angel"
+    ],
+    "why_ar": "Pick a Card وStacked Deck يضيفان ضرراً للهجمات العادية، فيلعب Twisted Fate بسرعة هجوم عالية. Guinsoo's وNashor's يرفعان ضرر الهجمة وسرعتها، وDusk and Dawn يعطيه هجمة معزّزة بعد Wild Cards ويعالجه.",
+    "why_en": "Pick a Card and Stacked Deck add damage to basic attacks so Twisted Fate can play with high attack speed. Guinsoo's and Nashor's raise attack damage and speed and Dusk and Dawn gives an empowered hit after Wild Cards and heals him.",
+    "item_notes": {
+     "Guinsoo's Rageblade": {
+      "ar": "سرعة هجوم وضرر سحري يتراكمان مع Stacked Deck.",
+      "en": "Attack speed and magic damage stacking with Stacked Deck."
+     },
+     "Nashor's Tooth": {
+      "ar": "ضرر on-hit وسرعة هجوم تفعّل Stacked Deck بسرعة.",
+      "en": "On-hit damage and speed trigger Stacked Deck quickly."
+     },
+     "Dusk and Dawn": {
+      "ar": "بعد Wild Cards هجمة تضرب مرتين وتعالجه.",
+      "en": "A double-strike after Wild Cards that heals him."
+     }
+    },
     "reviewed": false
    }
   ]
@@ -5384,8 +6766,8 @@
   "builds": [
    {
     "id": "venom",
-    "title_ar": "توليفة السم",
-    "title_en": "Venom on-hit",
+    "title_ar": "توليفة الدراجون والجانجل — ضرب متواصل",
+    "title_en": "Dragon & Jungle — On-hit",
     "core": [
      "Guinsoo's Rageblade",
      "Terminus",
@@ -5413,12 +6795,17 @@
       "en": "Percent health damage and lifesteal after CONTAMINATE."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON",
+     "JUNGLE"
+    ],
+    "style": "build_onhit"
    },
    {
     "id": "crit_sniper",
-    "title_ar": "توليفة القنّاص",
-    "title_en": "Crit sniper",
+    "title_ar": "توليفة الدراجون والجانجل — ضرر فيزيائي",
+    "title_en": "Dragon & Jungle — AD",
     "core": [
      "Runaan's Hurricane",
      "Rapid Firecannon",
@@ -5447,7 +6834,12 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON",
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -5485,7 +6877,11 @@
       "en": "Momentum keeps him near the target for DISDAIN."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -5523,7 +6919,11 @@
       "en": "Bonus on-hit magic damage with penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "ability_burst",
@@ -5556,7 +6956,11 @@
       "en": "35% armor penetration against tanks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -5594,7 +6998,11 @@
       "en": "Attack speed brings Silver Bolts procs closer together."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    },
    {
     "id": "crit_kiter",
@@ -5627,7 +7035,11 @@
       "en": "35% armor penetration on tanks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -5636,8 +7048,8 @@
   "builds": [
    {
     "id": "evil_burst",
-    "title_ar": "توليفة الشر",
-    "title_en": "Evil burst",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Luden's Echo",
      "Rabadon's Deathcap",
@@ -5665,7 +7077,49 @@
       "en": "MR penetration makes PRIMORDIAL BURST kill quickly."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Luden's Echo",
+     "Shurelya's Battlesong",
+     "Rabadon's Deathcap"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Zhonya's Hourglass",
+     "Banshee's Veil",
+     "Void Staff"
+    ],
+    "why_ar": "EVENT HORIZON يثبّت الأعداء في قفص، وBALEFUL STRIKE وDARK MATTER يضربان من بعيد، فـ Luden's Echo ينفجر مبكراً. Shurelya's Battlesong يعطي الفريق سرعة عند الاقتحام، وRabadon's يضخّم PRIMORDIAL BURST.",
+    "why_en": "EVENT HORIZON cages enemies and BALEFUL STRIKE and DARK MATTER hit from range, so Luden's Echo goes off early. Shurelya's Battlesong gives the team speed to engage and Rabadon's amplifies PRIMORDIAL BURST.",
+    "item_notes": {
+     "Luden's Echo": {
+      "ar": "أول BALEFUL STRIKE يفجّر الإيكو.",
+      "en": "The first BALEFUL STRIKE triggers the echo."
+     },
+     "Shurelya's Battlesong": {
+      "ar": "تفعيله يعطي الفريق سرعة حركة عند الاقتحام بعد القفص.",
+      "en": "Its active gives the team speed to engage after the cage."
+     },
+     "Rabadon's Deathcap": {
+      "ar": "AP مضاعف يرفع PRIMORDIAL BURST الذي يعدم الهدف.",
+      "en": "Boosted AP raises PRIMORDIAL BURST which executes the target."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -5674,8 +7128,8 @@
   "builds": [
    {
     "id": "void_poke",
-    "title_ar": "توليفة الفراغ",
-    "title_en": "Void poke",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Archangel's Staff",
      "Infinity Orb",
@@ -5703,7 +7157,49 @@
       "en": "40% magic penetration raises damage on every stack."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Horizon Focus",
+     "Infinity Orb",
+     "Rabadon's Deathcap"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Luden's Echo",
+     "Zhonya's Hourglass",
+     "Void Staff"
+    ],
+    "why_ar": "Vel'Koz يضرب من بعيد جداً بـ PLASMA FISSION وVOID RIFT، فـ Horizon Focus يرفع ضرر المهارات على الأهداف البعيدة. Infinity Orb يجعل LIFE FORM DISINTEGRATION RAY تضرب حرجة، وRabadon's يضخّم كل شحنة ORGANIC DECONSTRUCTION.",
+    "why_en": "Vel'Koz fires from extreme range with PLASMA FISSION and VOID RIFT, so Horizon Focus raises ability damage on far targets. Infinity Orb makes LIFE FORM DISINTEGRATION RAY crit and Rabadon's amplifies every ORGANIC DECONSTRUCTION burst.",
+    "item_notes": {
+     "Horizon Focus": {
+      "ar": "ضرر أعلى على الأهداف البعيدة.",
+      "en": "More damage on far targets."
+     },
+     "Infinity Orb": {
+      "ar": "الـ ult تضرب حرجة بضرر إضافي واختراق.",
+      "en": "The ult crits for bonus damage with penetration."
+     },
+     "Rabadon's Deathcap": {
+      "ar": "AP مضاعف يرفع انفجار ORGANIC DECONSTRUCTION.",
+      "en": "Boosted AP raises the ORGANIC DECONSTRUCTION burst."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  },
@@ -5741,7 +7237,11 @@
       "en": "Blocks the ability that would catch her mid-dive."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5779,7 +7279,11 @@
       "en": "The first hit on a champion crits and heals her."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -5788,8 +7292,8 @@
   "builds": [
    {
     "id": "ruined_king",
-    "title_ar": "توليفة الملك المنهار",
-    "title_en": "Ruined king",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Sundered Sky",
      "Titanic Hydra",
@@ -5817,7 +7321,12 @@
       "en": "Delays damage and buys time during possession."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -5855,7 +7364,11 @@
       "en": "Stasis protects him after dropping the ult among enemies."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5864,8 +7377,8 @@
   "builds": [
    {
     "id": "sustain",
-    "title_ar": "توليفة المعالج",
-    "title_en": "Sanguine sustain",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Rod of Ages",
      "Bloodletter's Curse",
@@ -5893,12 +7406,16 @@
       "en": "A slow on every spell and big health that feeds CRIMSON PACT."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "burst",
-    "title_ar": "توليفة الانفجار",
-    "title_en": "Burst",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Hextech Rocketbelt",
      "Infinity Orb",
@@ -5926,7 +7443,11 @@
       "en": "Boosted AP lifts all his abilities and TRANSFUSION healing."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -5935,8 +7456,8 @@
   "builds": [
    {
     "id": "storm_ad",
-    "title_ar": "توليفة العاصفة",
-    "title_en": "Storm fighter",
+    "title_ar": "توليفة البارون والجانجل — مقاتل",
+    "title_en": "Baron & Jungle — Bruiser",
     "core": [
      "Trinity Force",
      "Titanic Hydra",
@@ -5964,12 +7485,17 @@
       "en": "Delays damage and complements his big hits."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    },
    {
     "id": "tanky",
-    "title_ar": "توليفة الصمود",
-    "title_en": "Tank diver",
+    "title_ar": "توليفة البارون والجانجل — تانك",
+    "title_en": "Baron & Jungle — Tank",
     "core": [
      "Sunfire Aegis",
      "Heartsteel",
@@ -5977,9 +7503,9 @@
     ],
     "boots": "Armored Advance",
     "flex": [
-     "Death's Dance",
+     "Randuin's Omen",
      "Iceborn Gauntlet",
-     "Guardian Angel"
+     "Kaenic Rookern"
     ],
     "why_ar": "THE RELENTLESS STORM يضيف ضرر سحري حوله، وSunfire Aegis يضيف حرقاً من صحته، فيبقى الأعداء تحت ضرر مستمر. Heartsteel يضيف صحة تتراكم مع كل اشتباك، وSTORMBRINGER يضيف له صحة إضافية. Sterak's يحميه عندما يقاتل داخل STORMBRINGER.",
     "why_en": "THE RELENTLESS STORM adds magic damage around him and Sunfire Aegis adds a health-scaling burn, keeping enemies under constant damage. Heartsteel adds health that stacks with each fight and STORMBRINGER adds even more. Sterak's protects him while he fights inside STORMBRINGER.",
@@ -5998,7 +7524,12 @@
       "en": "A low-health shield while he brawls near a tower."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -6007,8 +7538,8 @@
   "builds": [
    {
     "id": "hunter",
-    "title_ar": "توليفة الصياد",
-    "title_en": "Blood hunter",
+    "title_ar": "توليفة الجانجل والبارون — مقاتل",
+    "title_en": "Jungle & Baron — Bruiser",
     "core": [
      "Stridebreaker",
      "Blade of the Ruined King",
@@ -6042,12 +7573,17 @@
       "exception": true
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    },
    {
     "id": "tanky",
-    "title_ar": "توليفة الصامد",
-    "title_en": "Durable hunter",
+    "title_ar": "توليفة الجانجل والبارون — تانك",
+    "title_en": "Jungle & Baron — Tank",
     "core": [
      "Sunfire Aegis",
      "Dead Man's Plate",
@@ -6055,9 +7591,9 @@
     ],
     "boots": "Armored Advance",
     "flex": [
-     "Death's Dance",
-     "Guardian Angel",
-     "Black Cleaver"
+     "Randuin's Omen",
+     "Thornmail",
+     "Kaenic Rookern"
     ],
     "why_ar": "ETERNAL HUNGER يضيف ضرراً سحرياً لكل هجمة ويعالجه تحت 50% صحة، فـ Sunfire Aegis يضيف حرقاً حوله بينما يلتصق بالهدف. Dead Man's Plate يعطيه سرعة تحسّن قفزة INFINITE DURESS. Sterak's Gage يحميه من الأعداء الذين يجتمعون عليه.",
     "why_en": "ETERNAL HUNGER adds magic damage to every attack and heals him under 50% health, so Sunfire Aegis adds burn around him while he sticks to a target. Dead Man's Plate gives speed that improves INFINITE DURESS. Sterak's Gage protects him from enemies who collapse on him.",
@@ -6075,7 +7611,12 @@
       "en": "A shield and damage near death, complementing ETERNAL HUNGER healing."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_tank"
    }
   ]
  },
@@ -6084,8 +7625,8 @@
   "builds": [
    {
     "id": "monkey_king",
-    "title_ar": "توليفة ملك القرود",
-    "title_en": "Monkey king",
+    "title_ar": "توليفة الجانجل والبارون",
+    "title_en": "Jungle & Baron",
     "core": [
      "Eclipse",
      "Sundered Sky",
@@ -6113,7 +7654,12 @@
       "en": "Armor shred on tanks while spinning."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE",
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -6151,7 +7697,11 @@
       "en": "More crit damage with FEATHERSTORM."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -6189,7 +7739,11 @@
       "en": "A low-health shield keeps him in the middle of the fight."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "JUNGLE"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -6198,8 +7752,8 @@
   "builds": [
    {
     "id": "windwalker",
-    "title_ar": "توليفة الرياح",
-    "title_en": "Windwalker crit",
+    "title_ar": "توليفة الميد والبارون",
+    "title_en": "Mid & Baron",
     "core": [
      "Navori Quickblades",
      "Infinity Edge",
@@ -6227,7 +7781,12 @@
       "en": "Percent-health damage and lifesteal."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -6236,8 +7795,8 @@
   "builds": [
    {
     "id": "crit_burst",
-    "title_ar": "توليفة الحرجة والانفجار",
-    "title_en": "Crit burst",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Essence Reaver",
      "Blade of the Ruined King",
@@ -6265,12 +7824,16 @@
       "en": "Higher damage on his boosted crits."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "fighter",
-    "title_ar": "توليفة المقاتل",
-    "title_en": "Fighter",
+    "title_ar": "توليفة البارون",
+    "title_en": "Baron",
     "core": [
      "Trinity Force",
      "Black Cleaver",
@@ -6298,7 +7861,11 @@
       "en": "Delays incoming damage and buys time inside the brawl."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "BARON"
+    ],
+    "style": "build_bruiser"
    }
   ]
  },
@@ -6336,7 +7903,11 @@
       "en": "Magic damage and attack speed stacking with attacks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    }
   ]
  },
@@ -6375,7 +7946,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support"
    }
   ]
  },
@@ -6384,8 +7959,8 @@
   "builds": [
    {
     "id": "shadow_ninja",
-    "title_ar": "توليفة النينجا",
-    "title_en": "Shadow ninja",
+    "title_ar": "توليفة الميد والبارون والجانجل",
+    "title_en": "Mid & Baron & Jungle",
     "core": [
      "Youmuu's Ghostblade",
      "Eclipse",
@@ -6413,7 +7988,13 @@
       "en": "A slow and armor penetration after every ability."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID",
+     "BARON",
+     "JUNGLE"
+    ],
+    "style": "build_ad"
    }
   ]
  },
@@ -6451,7 +8032,11 @@
       "en": "More crit damage on every round."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_ad"
    },
    {
     "id": "hybrid",
@@ -6477,14 +8062,19 @@
      },
      "Essence Reaver": {
       "ar": "بعد كل مهارة هجمة معزّزة تضرب بسرعة.",
-      "en": "An empowered hit after every ability that hits quickly."
+      "en": "An empowered hit after every ability that hits quickly.",
+      "exception": true
      },
      "Lord Dominik's Regards": {
       "ar": "اختراق دروع للتانك.",
       "en": "Armor penetration against tanks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "DRAGON"
+    ],
+    "style": "build_onhit"
    }
   ]
  },
@@ -6522,7 +8112,11 @@
       "en": "Boosted AP raises every bomb."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -6561,7 +8155,11 @@
      }
     },
     "reviewed": false,
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -6599,7 +8197,11 @@
       "en": "Boosted AP raises all her abilities."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    }
   ]
  },
@@ -6608,8 +8210,8 @@
   "builds": [
    {
     "id": "garden_mage",
-    "title_ar": "توليفة الحديقة",
-    "title_en": "Garden mage",
+    "title_ar": "توليفة الميد",
+    "title_en": "Mid",
     "core": [
      "Liandry's Torment",
      "Imperial Mandate",
@@ -6637,22 +8239,26 @@
       "en": "A slow on every ability that complements the roots."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "MID"
+    ],
+    "style": "build_ap"
    },
    {
     "id": "support",
-    "title_ar": "توليفة الدعم",
-    "title_en": "Poke support",
+    "title_ar": "توليفة السابورت — داعم",
+    "title_en": "Support — Enchanter",
     "core": [
      "Echoes of Helia",
      "Redemption",
      "Shurelya's Battlesong"
     ],
-    "boots": "Spellslinger's Shoes",
+    "boots": "Crimson Lucidity",
     "flex": [
      "Staff of Flowing Waters",
-     "Zhonya's Hourglass",
-     "Banshee's Veil"
+     "Mikael's Blessing",
+     "Ardent Censer"
     ],
     "why_ar": "Zyra تضرب بالأشواك وتثبّت الأعداء، وEchoes of Helia يحوّل ضررها إلى علاج للفريق. Redemption يعالج الفريق من بعيد. Shurelya's Battlesong يعطي الحلفاء سرعة وقت الاشتباك.",
     "why_en": "Zyra damages with thorns and roots enemies, and Echoes of Helia converts that damage into team healing. Redemption heals the team from range. Shurelya's Battlesong gives allies speed at the start of a fight.",
@@ -6670,7 +8276,50 @@
       "en": "Gives the team speed to engage after her roots land."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_support",
+    "support_item": "Diadem of Songs"
+   },
+   {
+    "id": "support_ap",
+    "title_ar": "توليفة السابورت — ساحر",
+    "title_en": "Support — AP mage",
+    "lanes": [
+     "SUPPORT"
+    ],
+    "style": "build_ap",
+    "core": [
+     "Liandry's Torment",
+     "Rylai's Crystal Scepter",
+     "Blackfire Torch"
+    ],
+    "boots": "Spellslinger's Shoes",
+    "flex": [
+     "Rabadon's Deathcap",
+     "Zhonya's Hourglass",
+     "Void Staff"
+    ],
+    "why_ar": "Zyra تزرع Thorn Spitters التي تضرب مع مهاراتها، وGRASPING ROOTS يثبّت الهدف داخلها. Liandry's Torment وBlackfire Torch يحرقان المثبّتين، وRylai's يبطّئ من يهرب من الجذور.",
+    "why_en": "Zyra plants Thorn Spitters that hit alongside her abilities and GRASPING ROOTS pins the target inside them. Liandry's Torment and Blackfire Torch burn the rooted enemies and Rylai's slows anyone escaping the vines.",
+    "item_notes": {
+     "Liandry's Torment": {
+      "ar": "حرق % من الصحة على الهدف المثبّت بالجذور.",
+      "en": "A percent-health burn on the rooted target."
+     },
+     "Rylai's Crystal Scepter": {
+      "ar": "إبطاء لمن يخرج من DEADLY SPINES وSTRANGLETHORNS.",
+      "en": "A slow on anyone leaving DEADLY SPINES or STRANGLETHORNS."
+     },
+     "Blackfire Torch": {
+      "ar": "حرق على كل مهارة وعلى Thorn Spitters.",
+      "en": "A burn on every ability including the Thorn Spitters."
+     }
+    },
+    "reviewed": false,
+    "support_item": "Black Mist Scythe"
    }
   ]
  }
