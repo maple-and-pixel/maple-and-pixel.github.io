@@ -44,7 +44,10 @@
       ],
       "weight": 2.0,
       "reason_ar": "أغلب ضرر العدو فيزيائي ({n} من 5) — هذا الآيتم يعطيك دروعاً",
-      "reason_en": "Most enemy damage is physical ({n}/5)"
+      "reason_en": "Most enemy damage is physical ({n}/5)",
+      "few_below": 3,
+      "reason_few_ar": "يوجد {n} أعداء بضرر فيزيائي — هذا الآيتم يعطيك دروعاً",
+      "reason_few_en": "{n} enemies deal physical damage"
     },
     {
       "id": "dmg_ap",
@@ -55,7 +58,10 @@
       ],
       "weight": 2.0,
       "reason_ar": "أغلب ضرر العدو سحري ({n} من 5) — هذا الآيتم يعطيك مقاومة سحر",
-      "reason_en": "Most enemy damage is magic ({n}/5)"
+      "reason_en": "Most enemy damage is magic ({n}/5)",
+      "few_below": 3,
+      "reason_few_ar": "يوجد {n} أعداء بضرر سحري — هذا الآيتم يعطيك مقاومة سحر",
+      "reason_few_en": "{n} enemies deal magic damage"
     },
     {
       "id": "tanky",
