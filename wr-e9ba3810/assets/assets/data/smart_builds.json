@@ -43,7 +43,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -90,6 +105,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -132,6 +156,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -180,6 +213,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -227,6 +269,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -269,6 +320,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -317,6 +377,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -365,7 +434,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -412,6 +496,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -455,6 +548,15 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    },
    {
@@ -498,6 +600,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -545,6 +656,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -592,6 +712,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -640,6 +769,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -687,6 +825,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -735,6 +882,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -794,6 +950,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -842,6 +1007,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -889,6 +1063,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -932,6 +1115,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -980,6 +1172,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "exhaust"
     ]
    }
   ]
@@ -1027,6 +1228,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -1069,6 +1279,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -1117,7 +1336,22 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "tank_shred",
@@ -1161,7 +1395,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -1208,6 +1457,15 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -1255,6 +1513,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -1298,6 +1565,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -1345,6 +1621,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ghost"
     ]
    },
    {
@@ -1387,6 +1672,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -1434,6 +1728,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -1477,7 +1780,22 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "MID": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -1525,7 +1843,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "bruiser",
@@ -1570,7 +1903,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -1617,6 +1965,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -1664,6 +2021,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -1707,7 +2073,22 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -1754,6 +2135,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -1801,6 +2191,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -1843,6 +2242,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -1885,6 +2293,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -1932,6 +2349,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -1979,6 +2405,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2028,7 +2463,26 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
-    ]
+    ],
+    "skill_order": [
+     "3",
+     "2",
+     "1"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "MID": [
+      "flash",
+      "ignite"
+     ],
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -2076,6 +2530,15 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -2118,6 +2581,15 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -2160,6 +2632,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2207,6 +2688,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -2249,6 +2739,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2296,6 +2795,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2344,7 +2852,22 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "burn_brawler",
@@ -2386,6 +2909,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2434,7 +2966,22 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -2482,7 +3029,22 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -2529,6 +3091,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "ghost"
     ]
    }
   ]
@@ -2576,6 +3147,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2623,6 +3203,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -2665,6 +3254,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2714,6 +3312,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -2761,6 +3368,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "exhaust"
     ]
    }
   ]
@@ -2809,7 +3425,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -2857,7 +3488,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "anti_tank",
@@ -2901,7 +3547,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -2948,6 +3609,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -2990,6 +3660,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -3037,6 +3716,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -3084,6 +3772,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -3126,6 +3823,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -3173,6 +3879,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -3220,6 +3935,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -3262,6 +3986,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -3304,6 +4037,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -3351,6 +4093,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -3398,6 +4149,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -3446,6 +4206,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -3494,6 +4263,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -3541,6 +4319,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -3594,6 +4381,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -3637,6 +4433,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -3685,6 +4490,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    },
    {
@@ -3727,6 +4541,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -3775,6 +4598,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -3822,6 +4654,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -3869,6 +4710,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    },
    {
@@ -3916,6 +4766,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -3963,6 +4822,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -4011,6 +4879,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    },
    {
@@ -4053,6 +4930,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -4101,6 +4987,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -4148,6 +5043,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -4195,6 +5099,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -4243,6 +5156,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -4290,6 +5212,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "exhaust"
     ]
    }
   ]
@@ -4337,6 +5268,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    },
    {
@@ -4390,6 +5330,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -4433,6 +5382,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -4480,6 +5438,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -4525,6 +5492,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -4568,6 +5544,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -4616,7 +5601,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "support_tank",
@@ -4659,6 +5659,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -4706,6 +5715,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -4753,6 +5771,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -4796,6 +5823,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -4843,6 +5879,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "3",
+     "2",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -4890,6 +5935,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -4938,7 +5992,22 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -4986,7 +6055,22 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "MID": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "support",
@@ -5035,6 +6119,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -5078,6 +6171,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -5131,6 +6233,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -5178,6 +6289,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ghost"
     ]
    }
   ]
@@ -5226,7 +6346,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "engage_support",
@@ -5268,6 +6403,15 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -5315,6 +6459,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -5362,6 +6515,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -5410,6 +6572,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -5457,6 +6628,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -5504,6 +6684,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -5552,7 +6741,22 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ghost"
+     ]
+    }
    }
   ]
  },
@@ -5599,6 +6803,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    }
   ]
@@ -5646,6 +6859,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -5695,7 +6917,26 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ],
+     "MID": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -5743,7 +6984,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -5791,6 +7047,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -5839,6 +7104,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -5886,6 +7160,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -5934,6 +7217,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -5981,6 +7273,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -6028,6 +7329,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -6075,6 +7385,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -6117,6 +7436,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -6164,6 +7492,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -6211,6 +7548,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -6258,6 +7604,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -6305,6 +7660,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -6348,6 +7712,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -6395,6 +7768,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    },
    {
@@ -6443,6 +7825,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -6490,6 +7881,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -6538,7 +7938,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -6586,6 +8001,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -6640,6 +8064,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ghost"
     ]
    }
   ]
@@ -6688,7 +8121,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -6735,6 +8183,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -6783,7 +8240,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -6830,6 +8302,15 @@
     "boots_path": [
      "gluttonous-greaves",
      "immortal-treads"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -6877,6 +8358,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -6924,6 +8414,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -6971,6 +8470,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -7014,6 +8522,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -7056,6 +8573,15 @@
     "boots_path": [
      "mercurys-treads",
      "chainlaced-crushers"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -7103,6 +8629,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -7145,6 +8680,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -7192,6 +8736,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    }
   ]
@@ -7240,7 +8793,22 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "MID": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -7288,7 +8856,22 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
-    ]
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "MID": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -7343,6 +8926,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -7386,6 +8978,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -7434,6 +9035,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -7481,6 +9091,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -7529,7 +9148,22 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ghost"
+     ]
+    }
    }
   ]
  },
@@ -7576,6 +9210,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -7618,6 +9261,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -7666,7 +9318,22 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
-    ]
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "DRAGON": [
+      "flash",
+      "heal"
+     ]
+    }
    },
    {
     "id": "crit_sniper",
@@ -7710,7 +9377,22 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
-    ]
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "DRAGON": [
+      "flash",
+      "heal"
+     ]
+    }
    }
   ]
  },
@@ -7757,6 +9439,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "2",
+     "3",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -7804,6 +9495,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -7846,6 +9546,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -7893,6 +9602,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -7935,6 +9653,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -7982,6 +9709,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -8025,6 +9761,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -8072,6 +9817,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    },
    {
@@ -8115,6 +9869,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -8162,6 +9925,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -8209,6 +9981,15 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -8257,7 +10038,22 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -8304,6 +10100,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    }
   ]
@@ -8351,6 +10156,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ghost"
     ]
    },
    {
@@ -8393,6 +10207,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ghost"
     ]
    }
   ]
@@ -8441,7 +10264,22 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
-    ]
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "tanky",
@@ -8485,7 +10323,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "2",
+     "1",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -8539,7 +10392,22 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    },
    {
     "id": "tanky",
@@ -8582,7 +10450,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -8630,7 +10513,22 @@
     "boots_path": [
      "plated-steelcaps",
      "armored-advance"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -8677,6 +10575,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "3",
+     "2",
+     "1"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -8724,6 +10631,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
     ]
    }
   ]
@@ -8772,6 +10688,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -8819,6 +10744,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -8861,6 +10795,15 @@
     "boots_path": [
      "boots-of-dynamism",
      "armorcrusher-boots"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -8908,6 +10851,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -8955,6 +10907,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "exhaust"
     ]
    }
   ]
@@ -9004,7 +10965,26 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
-    ]
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "smite",
+     "flash"
+    ],
+    "spells_by_lane": {
+     "MID": [
+      "flash",
+      "ignite"
+     ],
+     "BARON": [
+      "flash",
+      "ignite"
+     ]
+    }
    }
   ]
  },
@@ -9051,6 +11031,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -9094,6 +11083,15 @@
     "boots_path": [
      "berserkers-greaves",
      "gunmetal-greaves"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    }
   ]
@@ -9141,6 +11139,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "2",
+     "3"
+    ],
+    "spells": [
+     "flash",
+     "barrier"
     ]
    }
   ]
@@ -9189,6 +11196,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -9236,6 +11252,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "1",
+     "3",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]
@@ -9283,6 +11308,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    },
    {
@@ -9332,6 +11366,15 @@
     "boots_path": [
      "ionian-boots-of-lucidity",
      "crimson-lucidity"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "heal"
     ]
    },
    {
@@ -9375,6 +11418,15 @@
     "boots_path": [
      "boots-of-mana",
      "spellslingers-shoes"
+    ],
+    "skill_order": [
+     "3",
+     "1",
+     "2"
+    ],
+    "spells": [
+     "flash",
+     "ignite"
     ]
    }
   ]

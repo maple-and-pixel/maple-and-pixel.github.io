@@ -1,0 +1,134 @@
+{
+ "version": 1,
+ "_note": "situational spell swaps for the counter screen. Never replace smite; never replace flash unless the build says so. 'build_types' limits a rule to builds of those fine types. 'build_overrides' = fixed spells per champion ('*' = all builds) or 'Champion|build id'. 'Champion|build id|LANE' overrides the spells_by_lane entry of a shared JUNGLE+other-lane build; the build's own `spells` stays the JUNGLE entry (smite).",
+ "never_replace": [
+  "smite",
+  "flash"
+ ],
+ "rules": [
+  {
+   "id": "healer_heavy",
+   "threat": "healer_heavy",
+   "min": 1,
+   "spell": "ignite",
+   "weight": 3.0,
+   "reason_ar": "يعتمد {n} من الأعداء على العلاج — Ignite يقلّل علاجهم",
+   "reason_en": "{n} enemies rely on healing — Ignite cuts their healing"
+  },
+  {
+   "id": "burst",
+   "threat": "burst",
+   "min": 2,
+   "spell": "exhaust",
+   "weight": 2.5,
+   "reason_ar": "يستطيع {n} من الأعداء قتلك بكومبو واحد — Exhaust يضعف ضرر أحدهم",
+   "reason_en": "{n} enemies can burst you — Exhaust weakens one of them"
+  },
+  {
+   "id": "cc_heavy",
+   "threat": "cc_heavy",
+   "min": 2,
+   "spell": "cleanse",
+   "weight": 2.0,
+   "build_types": [
+    "ad_crit",
+    "ad_onhit",
+    "ap_burst"
+   ],
+   "reason_ar": "يملك {n} من الأعداء تحكماً (CC) كثيراً — Cleanse يزيل التحكم عنك",
+   "reason_en": "{n} enemies have heavy crowd control — Cleanse removes it"
+  },
+  {
+   "id": "sustained_dps",
+   "threat": "sustained_dps",
+   "min": 2,
+   "spell": "exhaust",
+   "weight": 1.5,
+   "reason_ar": "يضرب {n} من الأعداء ضرباً متواصلاً — Exhaust يقلّل ضرر أخطرهم",
+   "reason_en": "{n} enemies deal sustained damage — Exhaust cuts the worst one"
+  },
+  {
+   "id": "dmg_ad",
+   "threat": "dmg_ad",
+   "min": 3,
+   "spell": "barrier",
+   "weight": 1.0,
+   "reason_ar": "أغلب ضرر العدو فيزيائي ({n} من 5) — Barrier يمتص جزءاً من الضرر",
+   "reason_en": "Most enemy damage is physical ({n}/5) — Barrier absorbs some of it"
+  }
+ ],
+ "build_overrides": {
+  "Hecarim|*": [
+   "smite",
+   "ghost"
+  ],
+  "Darius|juggernaut": [
+   "flash",
+   "ghost"
+  ],
+  "Singed|*": [
+   "flash",
+   "ghost"
+  ],
+  "Nasus|*": [
+   "flash",
+   "ghost"
+  ],
+  "Vladimir|*": [
+   "flash",
+   "ghost"
+  ],
+  "Lux|mage": [
+   "flash",
+   "barrier"
+  ],
+  "Orianna|*": [
+   "flash",
+   "barrier"
+  ],
+  "Syndra|*": [
+   "flash",
+   "barrier"
+  ],
+  "Viktor|*": [
+   "flash",
+   "barrier"
+  ],
+  "Ziggs|*": [
+   "flash",
+   "barrier"
+  ],
+  "Vel'Koz|void_poke": [
+   "flash",
+   "barrier"
+  ],
+  "Seraphine|mage": [
+   "flash",
+   "barrier"
+  ],
+  "Janna|*": [
+   "flash",
+   "exhaust"
+  ],
+  "Lulu|*": [
+   "flash",
+   "exhaust"
+  ],
+  "Yuumi|*": [
+   "flash",
+   "exhaust"
+  ],
+  "Braum|*": [
+   "flash",
+   "exhaust"
+  ],
+  "Olaf|berserker|BARON": [
+   "flash",
+   "ghost"
+  ],
+  "Tryndamere|crit_slayer|BARON": [
+   "flash",
+   "ghost"
+  ]
+ }
+}
