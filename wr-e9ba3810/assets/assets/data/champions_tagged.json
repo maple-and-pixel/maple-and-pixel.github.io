@@ -62,7 +62,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "ahri",
@@ -125,7 +126,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "akali",
@@ -190,7 +192,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "akshan",
@@ -255,7 +258,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "alistar",
@@ -319,7 +323,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 4
   },
   {
     "id": "ambessa",
@@ -383,7 +388,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "amumu",
@@ -448,7 +454,8 @@
       "early": 1,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "annie",
@@ -512,7 +519,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "ashe",
@@ -577,7 +585,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "aurelion-sol",
@@ -640,7 +649,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "aurora",
@@ -706,7 +716,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "bard",
@@ -769,7 +780,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "blitzcrank",
@@ -833,7 +845,8 @@
       "early": 3,
       "mid": 2,
       "late": 1
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "brand",
@@ -897,7 +910,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "braum",
@@ -961,7 +975,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "caitlyn",
@@ -1024,7 +1039,8 @@
       "early": 3,
       "mid": 1,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "camille",
@@ -1090,7 +1106,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "chogath",
@@ -1153,7 +1170,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "corki",
@@ -1218,7 +1236,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "darius",
@@ -1283,7 +1302,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "diana",
@@ -1348,7 +1368,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "dr-mundo",
@@ -1414,7 +1435,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "draven",
@@ -1477,7 +1499,8 @@
       "early": 3,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "ekko",
@@ -1544,7 +1567,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "evelynn",
@@ -1607,7 +1631,8 @@
       "early": 1,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "ezreal",
@@ -1671,7 +1696,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "fiddlesticks",
@@ -1736,7 +1762,8 @@
       "early": 1,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "fiora",
@@ -1802,7 +1829,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "fizz",
@@ -1867,7 +1895,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "galio",
@@ -1932,7 +1961,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 3
   },
   {
     "id": "garen",
@@ -1997,7 +2027,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "gnar",
@@ -2061,7 +2092,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "gragas",
@@ -2126,7 +2158,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "graves",
@@ -2190,7 +2223,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "gwen",
@@ -2256,7 +2290,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "hecarim",
@@ -2319,7 +2354,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "heimerdinger",
@@ -2381,7 +2417,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "hwei",
@@ -2445,7 +2482,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "irelia",
@@ -2510,7 +2548,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "janna",
@@ -2573,7 +2612,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "jarvan-iv",
@@ -2638,7 +2678,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "jax",
@@ -2702,7 +2743,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "jayce",
@@ -2766,7 +2808,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "jhin",
@@ -2829,7 +2872,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "jinx",
@@ -2891,7 +2935,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "kaisa",
@@ -2956,7 +3001,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "kalista",
@@ -3019,7 +3065,8 @@
       "early": 3,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "karma",
@@ -3083,7 +3130,8 @@
       "early": 3,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "kassadin",
@@ -3148,7 +3196,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "katarina",
@@ -3211,7 +3260,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "kayle",
@@ -3276,7 +3326,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "kayn",
@@ -3340,7 +3391,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "kennen",
@@ -3404,7 +3456,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "khazix",
@@ -3468,7 +3521,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "kindred",
@@ -3532,7 +3586,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "kogmaw",
@@ -3595,7 +3650,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "ksante",
@@ -3660,7 +3716,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "lee-sin",
@@ -3725,7 +3782,8 @@
       "early": 3,
       "mid": 2,
       "late": 1
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "leona",
@@ -3788,7 +3846,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 3
   },
   {
     "id": "lillia",
@@ -3854,7 +3913,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "lissandra",
@@ -3918,7 +3978,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "lucian",
@@ -3982,7 +4043,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "lulu",
@@ -4046,7 +4108,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "lux",
@@ -4111,7 +4174,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "malphite",
@@ -4177,7 +4241,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "maokai",
@@ -4243,7 +4308,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 3
   },
   {
     "id": "master-yi",
@@ -4308,7 +4374,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "mel",
@@ -4372,7 +4439,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "milio",
@@ -4436,7 +4504,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "miss-fortune",
@@ -4500,7 +4569,8 @@
       "early": 3,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "mordekaiser",
@@ -4566,7 +4636,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "morgana",
@@ -4633,7 +4704,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "nami",
@@ -4697,7 +4769,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "nasus",
@@ -4761,7 +4834,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "nautilus",
@@ -4827,7 +4901,8 @@
       "early": 3,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 3
   },
   {
     "id": "nidalee",
@@ -4892,7 +4967,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "nilah",
@@ -4956,7 +5032,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "nocturne",
@@ -5022,7 +5099,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "norra",
@@ -5084,7 +5162,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "nunu-and-willump",
@@ -5148,7 +5227,8 @@
       "early": 3,
       "mid": 2,
       "late": 1
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "olaf",
@@ -5214,7 +5294,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "orianna",
@@ -5277,7 +5358,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "ornn",
@@ -5340,7 +5422,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "pantheon",
@@ -5405,7 +5488,8 @@
       "early": 3,
       "mid": 2,
       "late": 1
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "poppy",
@@ -5470,7 +5554,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "pyke",
@@ -5535,7 +5620,8 @@
       "early": 3,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "rakan",
@@ -5599,7 +5685,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "rammus",
@@ -5662,7 +5749,8 @@
       "early": 1,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "rell",
@@ -5725,7 +5813,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "renekton",
@@ -5789,7 +5878,8 @@
       "early": 3,
       "mid": 2,
       "late": 1
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "rengar",
@@ -5853,7 +5943,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "riven",
@@ -5919,7 +6010,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "rumble",
@@ -5982,7 +6074,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "ryze",
@@ -6044,7 +6137,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "samira",
@@ -6109,7 +6203,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "senna",
@@ -6174,7 +6269,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "seraphine",
@@ -6240,7 +6336,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "sett",
@@ -6304,7 +6401,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "shen",
@@ -6369,7 +6467,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "shyvana",
@@ -6433,7 +6532,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "singed",
@@ -6496,7 +6596,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "sion",
@@ -6561,7 +6662,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 3
   },
   {
     "id": "sivir",
@@ -6624,7 +6726,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "skarner",
@@ -6689,7 +6792,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "smolder",
@@ -6753,7 +6857,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "sona",
@@ -6818,7 +6923,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "soraka",
@@ -6881,7 +6987,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "swain",
@@ -6947,7 +7054,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "sylas",
@@ -7012,7 +7120,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "syndra",
@@ -7075,7 +7184,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "taliyah",
@@ -7140,7 +7250,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "talon",
@@ -7205,7 +7316,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "teemo",
@@ -7269,7 +7381,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "thresh",
@@ -7331,7 +7444,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "tristana",
@@ -7395,7 +7509,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "tryndamere",
@@ -7460,7 +7575,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "twisted-fate",
@@ -7522,7 +7638,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "twitch",
@@ -7587,7 +7704,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "urgot",
@@ -7652,7 +7770,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "varus",
@@ -7716,7 +7835,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "vayne",
@@ -7781,7 +7901,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "veigar",
@@ -7845,7 +7966,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "velkoz",
@@ -7909,7 +8031,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "vex",
@@ -7973,7 +8096,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "vi",
@@ -8037,7 +8161,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "viego",
@@ -8104,7 +8229,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "viktor",
@@ -8167,7 +8293,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "vladimir",
@@ -8233,7 +8360,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "volibear",
@@ -8300,7 +8428,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "warwick",
@@ -8366,7 +8495,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "wukong",
@@ -8431,7 +8561,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "xayah",
@@ -8494,7 +8625,8 @@
       "early": 2,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "xin-zhao",
@@ -8558,7 +8690,8 @@
       "early": 3,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "yasuo",
@@ -8624,7 +8757,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "yone",
@@ -8690,7 +8824,8 @@
       "early": 2,
       "mid": 3,
       "late": 3
-    }
+    },
+    "cc_count": 2
   },
   {
     "id": "yunara",
@@ -8754,7 +8889,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "yuumi",
@@ -8818,7 +8954,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "zed",
@@ -8883,7 +9020,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "zeri",
@@ -8947,7 +9085,8 @@
       "early": 1,
       "mid": 2,
       "late": 3
-    }
+    },
+    "cc_count": 0
   },
   {
     "id": "ziggs",
@@ -9009,7 +9148,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "zilean",
@@ -9072,7 +9212,8 @@
       "early": 2,
       "mid": 2,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "zoe",
@@ -9135,7 +9276,8 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 1
   },
   {
     "id": "zyra",
@@ -9199,6 +9341,7 @@
       "early": 2,
       "mid": 3,
       "late": 2
-    }
+    },
+    "cc_count": 3
   }
 ]
