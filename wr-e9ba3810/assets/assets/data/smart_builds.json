@@ -38,7 +38,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -80,7 +85,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "safe",
@@ -117,7 +127,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -129,7 +144,7 @@
     "title_ar": "توليفة الميد والبارون",
     "title_en": "Mid & Baron",
     "core": [
-     "Hextech Rocketbelt",
+     "Riftmaker",
      "Lich Bane",
      "Infinity Orb"
     ],
@@ -142,10 +157,6 @@
     "why_ar": "Hextech Rocketbelt يمنحها اندفاعة تدخل بها على الهدف، ثم يكمل FIVE POINT STRIKE وSHURIKEN FLIP الضرر. Lich Bane يفعّل بعد أي مهارة ويقوّي ASSASSIN'S MARK. Infinity Orb يجعل FIVE POINT STRIKE وPERFECT EXECUTION تضربان حرجة بضرر إضافي واختراق للسحر.",
     "why_en": "Hextech Rocketbelt gives her an extra gap-closer, then FIVE POINT STRIKE and SHURIKEN FLIP carry the damage. Lich Bane triggers after any cast and pairs with her ASSASSIN'S MARK empowered attack. Infinity Orb makes FIVE POINT STRIKE and PERFECT EXECUTION crit for bonus damage with magic penetration.",
     "item_notes": {
-     "Hextech Rocketbelt": {
-      "ar": "تفعيله يندفع نحو الهدف ويسبب ضرراً، فتستطيع الدخول حتى لو TWILIGHT SHROUD في وقت التبريد.",
-      "en": "Its active dash lets her engage even when TWILIGHT SHROUD is on cooldown."
-     },
      "Lich Bane": {
       "ar": "بعد أي مهارة تضرب هجمة معزّزة، وتزيد معها هجمة ASSASSIN'S MARK المعزّزة الضرر.",
       "en": "After any ability a boosted attack lands, stacking with her ASSASSIN'S MARK attack."
@@ -153,6 +164,10 @@
      "Infinity Orb": {
       "ar": "مهاراتها تضرب حرجة بضرر إضافي 20% مع اختراق السحر.",
       "en": "Her abilities crit for 20% bonus damage with magic penetration."
+     },
+     "Riftmaker": {
+      "ar": "الامتصاص الشامل في Riftmaker يُبقي Akali حيّة داخل الاشتباك بعد اغتيالها.",
+      "en": "Riftmaker's omnivamp keeps Akali alive in the fight after her kill."
      }
     },
     "reviewed": false,
@@ -160,7 +175,12 @@
      "MID",
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -179,7 +199,7 @@
     "boots": "Immortal Treads",
     "flex": [
      "Guardian Angel",
-     "Mortal Reminder",
+     "Immortal Shieldbow",
      "Bloodthirster"
     ],
     "why_ar": "DIRTY FIGHTING يضيف ضرر كل ثالث ضربة أو مهارة، فالمهارات القصيرة التبريد تعطي ضربات حرجة وضرر إضافي. Galeforce يعطيه اندفاعة تكمّل HEROIC SWING وتساعده على الملاحقة في COMEUPPANCE. Lord Dominik's يخترق الدروع في الأهداف الثقيلة.",
@@ -202,7 +222,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    },
    {
     "id": "lethality",
@@ -239,7 +264,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -282,7 +312,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -325,7 +360,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -367,7 +407,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "vs_magic",
@@ -405,7 +450,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    },
    {
     "id": "support_tank",
@@ -443,7 +493,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -462,7 +517,7 @@
     "boots": "Spellslinger's Shoes",
     "flex": [
      "Void Staff",
-     "Zhonya's Hourglass",
+     "Horizon Focus",
      "Rabadon's Deathcap"
     ],
     "why_ar": "Pyromania يشلّ الهدف بعد 4 مهارات، وبعدها Summon: Tibbers يضرب مباشرة. Luden's Echo يتفعّل مع Disintegrate قبل الشلل، فيرتفع الضرر قبل نزول Tibbers. Hextech Rocketbelt يعطيها اندفاعة تدخل بها على الهدف وتضعه في مدى Incinerate وTibbers.",
@@ -485,7 +540,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -503,7 +563,7 @@
     ],
     "boots": "Gunmetal Greaves",
     "flex": [
-     "Lord Dominik's Regards",
+     "Stormrazor",
      "Guardian Angel",
      "Mortal Reminder"
     ],
@@ -527,7 +587,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "support",
@@ -544,7 +609,7 @@
     ],
     "boots": "Immortal Treads",
     "flex": [
-     "Lord Dominik's Regards",
+     "Imperial Mandate",
      "Guardian Angel",
      "Navori Quickblades"
     ],
@@ -562,10 +627,20 @@
      "Mortal Reminder": {
       "ar": "جروح عميقة بعد الضرر واختراق للدروع.",
       "en": "Grievous Wounds after damage plus armor penetration."
+     },
+     "Imperial Mandate": {
+      "exception": true,
+      "ar": "Imperial Mandate: عنصر AP مقصود لأن إبطاء Ashe يفعّل علامته ويفتح الهجوم لفريقها.",
+      "en": "Imperial Mandate: a deliberate AP pick since Ashe's slows trigger its mark and open the follow-up for her team."
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -607,7 +682,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -650,7 +730,12 @@
      "MID",
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -664,13 +749,13 @@
     "core": [
      "Shurelya's Battlesong",
      "Staff of Flowing Waters",
-     "Redemption"
+     "Dead Man's Plate"
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
      "Knight's Vow",
-     "Mikael's Blessing",
-     "Locket of the Iron Solari"
+     "Frozen Heart",
+     "Harmonic Echo"
     ],
     "why_ar": "Bard يتنقل بـ MAGICAL JOURNEY ويجمع Chimes، فـ Shurelya's Battlesong يعطي الفريق سرعة عند الانتقال. Staff of Flowing Waters يعطيه وللحليف تسريعاً بعد CARETAKER'S SHRINE، وRedemption يعالج الفريق في المعارك بعد TEMPERED FATE.",
     "why_en": "Bard roams with MAGICAL JOURNEY and collects Chimes, so Shurelya's Battlesong gives the team speed as they move through. Staff of Flowing Waters gives him and his ally haste after CARETAKER'S SHRINE and Redemption heals the team in fights after TEMPERED FATE.",
@@ -683,14 +768,20 @@
       "ar": "يمنحه وللحليف تسريعاً عند العلاج أو الدرع.",
       "en": "Gives him and the ally haste when healing or shielding."
      },
-     "Redemption": {
-      "ar": "علاج من بعيد للفريق في المعارك.",
-      "en": "Long-range team healing in fights."
-     },
      "Spellslinger's Shoes": {
       "ar": "Bard يعتمد على AP في ضرره المتجوّل، فأحذية AP تعطيه اختراقاً وAP.",
       "en": "Bard relies on AP for his roaming damage so AP boots add penetration and AP.",
       "exception": true
+     },
+     "Dead Man's Plate": {
+      "ar": "يمنح Bard سرعة حركة وصحة ودروعاً للتنقل بين الخطوط والنجاة في الاشتباك.",
+      "en": "Gives Bard movement speed, health and armor to roam between lanes and survive the fight.",
+      "exception": true
+     },
+     "Frozen Heart": {
+      "exception": true,
+      "ar": "Frozen Heart: دروع وتسريع مهارات وتقليل سرعة هجوم الأعداء حول Bard أثناء تنقله بين الخطوط.",
+      "en": "Frozen Heart: armor, ability haste and an attack-speed cut on enemies around Bard as he roams."
      }
     },
     "reviewed": false,
@@ -698,7 +789,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -741,7 +837,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -783,7 +884,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support_ap",
@@ -821,7 +927,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -864,7 +975,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -906,7 +1022,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "sniper",
@@ -943,7 +1064,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -986,7 +1112,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    },
    {
     "id": "tank_shred",
@@ -1025,7 +1156,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -1067,7 +1203,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    }
   ]
  },
@@ -1109,7 +1250,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "hybrid_dps",
@@ -1147,7 +1293,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -1189,7 +1340,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "jungle",
@@ -1226,7 +1382,12 @@
       "en": "Delays damage and offsets camp and enemy damage."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -1268,14 +1429,19 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "burst",
     "title_ar": "توليفة الميد والجانجل",
     "title_en": "Mid & Jungle",
     "core": [
-     "Hextech Rocketbelt",
+     "Riftmaker",
      "Lich Bane",
      "Infinity Orb"
     ],
@@ -1288,10 +1454,6 @@
     "why_ar": "LUNAR RUSH بلا تبريد على الأعداء الموسومين، فتتنقل Diana بين الأهداف وتفعّل Lich Bane كل مرة. Hextech Rocketbelt يعطيها اندفاعة إضافية لتصل لأهداف بعيدة. Infinity Orb يجعل CRESCENT STRIKE وPALE CASCADE تضربان حرجة بضرر إضافي.",
     "why_en": "LUNAR RUSH has no cooldown on Moonlight-marked enemies, so Diana hops between targets and triggers Lich Bane each time. Hextech Rocketbelt gives an extra dash to reach far targets. Infinity Orb makes CRESCENT STRIKE and PALE CASCADE crit for bonus damage.",
     "item_notes": {
-     "Hextech Rocketbelt": {
-      "ar": "اندفاعة إضافية بعد MOONFALL للوصول للأهداف البعيدة.",
-      "en": "An extra dash after MOONFALL to reach far targets."
-     },
      "Lich Bane": {
       "ar": "كل LUNAR RUSH جديد يفعّل هجمة معزّزة.",
       "en": "Every fresh LUNAR RUSH triggers an empowered hit."
@@ -1299,6 +1461,10 @@
      "Infinity Orb": {
       "ar": "مهاراتها تضرب حرجة بضرر إضافي واختراق.",
       "en": "Her abilities crit for bonus damage with penetration."
+     },
+     "Riftmaker": {
+      "ar": "الامتصاص الشامل في Riftmaker يُبقي Diana حيّة داخل الاشتباك بعد انقضاضها.",
+      "en": "Riftmaker's omnivamp keeps Diana alive in the fight after she dives."
      }
     },
     "reviewed": false,
@@ -1306,7 +1472,12 @@
      "MID",
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -1349,7 +1520,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "bruiser",
@@ -1389,7 +1565,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -1431,7 +1612,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -1473,7 +1659,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "brawler_mage",
@@ -1511,7 +1702,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -1553,7 +1749,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -1595,7 +1796,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    },
    {
     "id": "crit_poke",
@@ -1632,7 +1838,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    },
    {
     "id": "onhit",
@@ -1669,7 +1880,12 @@
       "en": "Extra magic damage and penetration on every hit."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -1711,7 +1927,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -1753,7 +1974,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -1797,7 +2023,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -1840,7 +2071,12 @@
      "SUPPORT"
     ],
     "style": "build_tank",
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "type": "tank",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    },
    {
     "id": "mid_tank",
@@ -1877,7 +2113,12 @@
       "en": "Drains nearby enemies and gives dual resistances."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "tank",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    },
    {
     "id": "mid_ap",
@@ -1914,7 +2155,12 @@
       "en": "Boosted AP raises all his abilities."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -1956,7 +2202,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    },
    {
     "id": "tanky",
@@ -1993,7 +2244,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -2035,7 +2291,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -2078,7 +2339,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "burn_brawler",
@@ -2115,7 +2381,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -2158,7 +2429,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -2201,7 +2477,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -2243,7 +2524,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -2285,7 +2571,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -2327,7 +2618,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "support_ap",
@@ -2364,7 +2660,12 @@
       "en": "A percent-health burn on the trapped target."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -2408,7 +2709,12 @@
      "MID",
      "BARON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -2427,8 +2733,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Staff of Flowing Waters",
-     "Shurelya's Battlesong",
-     "Zeke's Convergence"
+     "Echoes of Helia"
     ],
     "why_ar": "Eye Of The Storm يدرع الحليف ويزيد ضرره، فـ Ardent Censer يرفع سرعة هجومه ويقوّي علاجه. Harmonic Echo ينقل درع Eye Of The Storm وعلاج Monsoon إلى حلفاء إضافيين. Mikael's Blessing يزيل التحكم عن حليف يقع تحت الشل.",
     "why_en": "Eye Of The Storm shields an ally and raises their damage, so Ardent Censer boosts their attack speed and strengthens healing. Harmonic Echo chains Eye Of The Storm's shield and Monsoon's healing to extra allies. Mikael's Blessing removes crowd control from an ally who gets locked down.",
@@ -2451,7 +2756,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -2494,7 +2804,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -2537,7 +2852,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "anti_tank",
@@ -2576,7 +2896,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -2618,7 +2943,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    },
    {
     "id": "hammer_bruiser",
@@ -2655,7 +2985,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -2697,7 +3032,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -2739,7 +3079,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "anti_tank",
@@ -2752,7 +3097,7 @@
     ],
     "boots": "Gunmetal Greaves",
     "flex": [
-     "Mortal Reminder",
+     "Runaan's Hurricane",
      "Guardian Angel",
      "Infinity Edge"
     ],
@@ -2776,7 +3121,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -2818,7 +3168,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -2860,7 +3215,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "onhit_crit",
@@ -2897,7 +3257,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "ap",
@@ -2934,7 +3299,12 @@
       "en": "Her abilities crit for bonus damage with penetration."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -2953,7 +3323,7 @@
     "boots": "Gunmetal Greaves",
     "flex": [
      "Guardian Angel",
-     "Lord Dominik's Regards",
+     "Wit's End",
      "Mortal Reminder"
     ],
     "why_ar": "MARTIAL POISE يجعلها تتحرك بين الهجمات، وكل هجمة تغرس رمحاً يفجّره REND. Runaan's Hurricane يرسل سهاماً إضافية فتغرس رماحاً أكثر قبل REND.",
@@ -2976,7 +3346,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -3018,7 +3393,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "enchanter",
@@ -3031,9 +3411,9 @@
     ],
     "boots": "Crimson Lucidity",
     "flex": [
-     "Redemption",
+     "Echoes of Helia",
      "Staff of Flowing Waters",
-     "Mikael's Blessing"
+     "Imperial Mandate"
     ],
     "why_ar": "INSPIRE يعطي الحليف درع وسرعة، فـ Ardent Censer يزيد سرعة هجوم الحلفاء المحميين. Harmonic Echo ينقل الدرع للحلفاء القريبين. Shurelya's Battlesong يعطي الفريق سرعة عند الدخول أو الهروب.",
     "why_en": "INSPIRE shields an ally and speeds them up, so Ardent Censer boosts the shielded ally's attack speed. Harmonic Echo chains the shield to nearby allies. Shurelya's Battlesong gives the team speed to engage or disengage.",
@@ -3049,6 +3429,11 @@
      "Shurelya's Battlesong": {
       "ar": "تفعيله يعطي الفريق سرعة حركة بعد MANTRA.",
       "en": "Its active gives the team movement speed after a MANTRA cast."
+     },
+     "Imperial Mandate": {
+      "exception": true,
+      "ar": "Imperial Mandate: علامة الإبطاء تفتح التبادل لحلفائها وتناسب دعماً يعتمد على AP.",
+      "en": "Imperial Mandate: its slow mark opens trades for her allies and suits an AP-based support."
      }
     },
     "reviewed": false,
@@ -3056,7 +3441,12 @@
      "SUPPORT"
     ],
     "style": "build_support",
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -3099,7 +3489,12 @@
      "MID",
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3113,7 +3508,7 @@
     "core": [
      "Infinity Orb",
      "Cryptbloom",
-     "Hextech Rocketbelt"
+     "Nashor's Tooth"
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
@@ -3132,16 +3527,21 @@
       "ar": "اختراق نسبي للسحر، وأقتال أسرع تعني VORACITY تعيد تبريد المهارات.",
       "en": "Percent penetration; faster kills mean VORACITY resets her cooldowns."
      },
-     "Hextech Rocketbelt": {
-      "ar": "تفعيله يندفع ويعمل ضرر حتى لو SHUNPO في وقت التبريد.",
-      "en": "Its dash deals damage even when SHUNPO is on cooldown."
+     "Nashor's Tooth": {
+      "ar": "سرعة الهجوم وضرر سحري عند الضربة يناسبان هجمات Katarina العادية بين الخناجر.",
+      "en": "Attack speed and on-hit magic damage suit Katarina's basic attacks between daggers."
      }
     },
     "reviewed": false,
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3189,7 +3589,12 @@
      "BARON",
      "MID"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "ap",
@@ -3227,7 +3632,12 @@
       "en": "A percent-health burn on tanks."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3270,7 +3680,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    },
    {
     "id": "rhaast",
@@ -3307,7 +3722,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -3321,7 +3741,7 @@
     "core": [
      "Imperial Mandate",
      "Liandry's Torment",
-     "Hextech Rocketbelt"
+     "Malignance"
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
@@ -3340,9 +3760,9 @@
       "ar": "حرق يستمر طوال العاصفة على الأعداء المتجمعين.",
       "en": "Burn lasts through the storm on grouped enemies."
      },
-     "Hextech Rocketbelt": {
-      "ar": "اندفاعة تضعه في مدى SLICING MAELSTROM.",
-      "en": "A dash that puts him in SLICING MAELSTROM range."
+     "Malignance": {
+      "ar": "تسريع المهارات يعيد المهارة النهائية بسرعة ويقلّل مقاومة سحر الأعداء داخل العاصفة.",
+      "en": "Ability haste brings his ultimate back sooner and Scorn lowers enemy magic resist inside the storm."
      }
     },
     "reviewed": false,
@@ -3350,7 +3770,12 @@
      "BARON",
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3392,7 +3817,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -3411,8 +3841,8 @@
     "boots": "Gunmetal Greaves",
     "flex": [
      "Guardian Angel",
-     "Terminus",
-     "Mortal Reminder"
+     "Mortal Reminder",
+     "Statikk Shiv"
     ],
     "why_ar": "هجمات Kindred سريعة وتتحرك بين DANCE OF ARROWS، فـ Kraken Slayer يضيف ضرر قوي في الهجمة الثالثة. Blade of the Ruined King يخصم من صحة الهدف ويعالجها. Runaan's Hurricane يطلق سهاماً على الأعداء القريبين أثناء LAMB'S RESPITE.",
     "why_en": "Kindred attacks fast between DANCE OF ARROWS casts, so Kraken Slayer's third-hit damage lands often. Blade of the Ruined King takes a percent of the target's health and heals her. Runaan's Hurricane fires extra bolts at nearby enemies during LAMB'S RESPITE.",
@@ -3434,7 +3864,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "crit_marksman",
@@ -3449,7 +3884,7 @@
     "flex": [
      "Phantom Dancer",
      "Guardian Angel",
-     "Mortal Reminder"
+     "Wit's End"
     ],
     "why_ar": "DANCE OF ARROWS وMOUNTING DREAD مهارات أساسية تتكرر، فـ Navori Quickblades يخفّض تبريدها مع كل هجمة. Rapid Firecannon يعطيها مدى أكبر لضرب الأهداف من بعيد في Hunt. Lord Dominik's يخترق الدروع.",
     "why_en": "DANCE OF ARROWS and MOUNTING DREAD are basic abilities she repeats, so Navori Quickblades cuts their cooldowns with every attack. Rapid Firecannon gives longer range to hit targets from afar during a Hunt. Lord Dominik's pierces armor.",
@@ -3465,13 +3900,23 @@
      "Lord Dominik's Regards": {
       "ar": "اختراق دروع 35% يقتل التانك أثناء LAMB'S RESPITE.",
       "en": "35% armor penetration kills tanks during LAMB'S RESPITE."
+     },
+     "Wit's End": {
+      "exception": true,
+      "ar": "Wit's End: سرعة هجوم ومقاومة سحر تناسب هجمات Kindred العادية رغم تصنيف البناء كضربات حرجة.",
+      "en": "Wit's End: attack speed and magic resist that suit Kindred's basic attacks, even in a crit-labelled build."
      }
     },
     "reviewed": false,
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -3513,7 +3958,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -3556,7 +4006,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    },
    {
     "id": "bruiser_tank",
@@ -3593,7 +4048,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -3636,7 +4096,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -3678,7 +4143,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3720,7 +4190,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3763,7 +4238,12 @@
      "DRAGON",
      "MID"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -3782,8 +4262,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Echoes of Helia",
-     "Redemption",
-     "Mikael's Blessing"
+     "Harmonic Echo"
     ],
     "why_ar": "WHIMSY يحوّل العدو أو يحمي الحليف، وPix يضرب مع Lulu، فـ Staff of Flowing Waters يعطي الحليف المحمي تسريعاً. Shurelya's Battlesong يعطي الفريق سرعة عند Wild Growth. Ardent Censer يرفع سرعة هجوم الحليف المحمي بـ WHIMSY ويقوّي علاجه.",
     "why_en": "WHIMSY polymorphs an enemy or protects an ally and Pix strikes with Lulu, so Staff of Flowing Waters hastes the protected ally. Shurelya's Battlesong gives the team speed around Wild Growth. Ardent Censer boosts the attack speed of an ally protected by WHIMSY and strengthens healing.",
@@ -3806,7 +4285,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -3848,7 +4332,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support",
@@ -3862,8 +4351,8 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Ardent Censer",
-     "Mikael's Blessing",
-     "Shurelya's Battlesong"
+     "Horizon Focus",
+     "Imperial Mandate"
     ],
     "why_ar": "Prismatic Barrier تدرع حليفين في الذهاب والعودة، فـ Staff of Flowing Waters يعطيهما تسريع وAP. Echoes of Helia يخزّن علاجاً من ضرر Lux لتفرغه على الحلفاء. Redemption يعالج الفريق من مسافة بعيدة بعد Final Spark.",
     "why_en": "Prismatic Barrier shields allies out and back, so Staff of Flowing Waters gives both of you haste and AP. Echoes of Helia stores healing from Lux's damage and releases it on allies. Redemption heals the team from long range after Final Spark.",
@@ -3879,6 +4368,16 @@
      "Redemption": {
       "ar": "تفعيله يعالج حلفاء بعيدين ويناسب مدى Lux.",
       "en": "Its active heals distant allies and fits Lux's range."
+     },
+     "Imperial Mandate": {
+      "exception": true,
+      "ar": "Imperial Mandate: علامة الإبطاء تفتح التبادل لحلفاء Lux وتناسب دعماً يعتمد على AP.",
+      "en": "Imperial Mandate: its slow mark opens trades for Lux's allies and suits an AP-based support."
+     },
+     "Horizon Focus": {
+      "exception": true,
+      "ar": "Horizon Focus: ضرر إضافي ضد الأهداف التي تعلّقت بتقييد Lux من مسافة بعيدة.",
+      "en": "Horizon Focus: bonus damage on targets caught by Lux's binding from long range."
      }
     },
     "reviewed": false,
@@ -3886,7 +4385,12 @@
      "SUPPORT"
     ],
     "style": "build_support",
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "support_ap",
@@ -3903,7 +4407,7 @@
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
-     "Shurelya's Battlesong",
+     "Rabadon's Deathcap",
      "Zhonya's Hourglass",
      "Banshee's Veil"
     ],
@@ -3924,7 +4428,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -3966,7 +4475,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "ap_mid",
@@ -4006,7 +4520,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "support_tank",
@@ -4044,7 +4563,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -4087,7 +4611,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "support_tank",
@@ -4125,7 +4654,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -4167,7 +4701,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -4209,7 +4748,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support_ap",
@@ -4247,7 +4791,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -4265,9 +4814,8 @@
     ],
     "boots": "Crimson Lucidity",
     "flex": [
-     "Mikael's Blessing",
-     "Staff of Flowing Waters",
-     "Zeke's Convergence"
+     "Echoes of Helia",
+     "Staff of Flowing Waters"
     ],
     "why_ar": "COZY CAMPFIRE يدرع الحليف ويزيد سرعته، وWARM HUGS يعالج، فـ Harmonic Echo ينقل العلاج والدرع إلى الحلفاء الآخرين. Ardent Censer يرفع سرعة هجوم الحليف المحمي. Redemption يعالج الفريق بعد BREATH OF LIFE.",
     "why_en": "COZY CAMPFIRE shields an ally and speeds them up and WARM HUGS heals, so Harmonic Echo chains healing and shields to other allies. Ardent Censer boosts the protected ally's attack speed. Redemption heals the team after BREATH OF LIFE.",
@@ -4290,7 +4838,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -4332,7 +4885,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -4375,7 +4933,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    }
   ]
  },
@@ -4418,7 +4981,12 @@
      "MID",
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support",
@@ -4432,7 +5000,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Redemption",
-     "Mikael's Blessing",
+     "Rylai's Crystal Scepter",
      "Ardent Censer"
     ],
     "why_ar": "DARK BINDING يشل الهدف، وImperial Mandate يعطي مهارات الشلل تسريعاً ويرفع الضرر على الموسوم. BLACK SHIELD يحمي حليفاً، فـ Staff of Flowing Waters يعطيهما تسريعاً. Echoes of Helia يحوّل ضررها إلى علاج للحلفاء.",
@@ -4450,6 +5018,11 @@
      "Echoes of Helia": {
       "ar": "تحوّل ضرر Morgana إلى شحنات علاج للفريق.",
       "en": "Converts Morgana's damage into healing charges for the team."
+     },
+     "Rylai's Crystal Scepter": {
+      "exception": true,
+      "ar": "Rylai's Crystal Scepter: إبطاء مهارات Morgana يبقي الهدف داخل قيدها.",
+      "en": "Rylai's Crystal Scepter: slows from Morgana's abilities keep the target inside her binding."
      }
     },
     "reviewed": false,
@@ -4457,7 +5030,12 @@
      "SUPPORT"
     ],
     "style": "build_support",
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "support_ap",
@@ -4495,7 +5073,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -4514,8 +5097,8 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Ardent Censer",
-     "Shurelya's Battlesong",
-     "Mikael's Blessing"
+     "Harmonic Echo",
+     "Imperial Mandate"
     ],
     "why_ar": "Ebb and Flow يضرب ويعالج بالتناوب، وTidecaller's Blessing يقوّي هجمات الحليف، فـ Echoes of Helia يخزّن ضرر Nami ويعيده كعلاج. Staff of Flowing Waters يمنحها وللحليف تسريعاً. Redemption يعالج الفريق بعد Tidal Wave.",
     "why_en": "Ebb and Flow alternates damage and healing and Tidecaller's Blessing empowers an ally's attacks, so Echoes of Helia stores Nami's damage and returns it as healing. Staff of Flowing Waters gives her and the ally haste. Redemption heals the team after Tidal Wave.",
@@ -4531,6 +5114,11 @@
      "Redemption": {
       "ar": "علاج بعيد للفريق في المعارك.",
       "en": "Long-range team healing in fights."
+     },
+     "Imperial Mandate": {
+      "exception": true,
+      "ar": "Imperial Mandate: علامة الإبطاء تفتح التبادل لحلفائها وتناسب دعماً يعتمد على AP.",
+      "en": "Imperial Mandate: its slow mark opens trades for her allies and suits an AP-based support."
      }
     },
     "reviewed": false,
@@ -4538,7 +5126,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -4580,7 +5173,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -4623,7 +5221,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "engage_support",
@@ -4660,7 +5263,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    }
   ]
  },
@@ -4702,7 +5310,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -4744,7 +5357,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -4787,7 +5405,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -4829,7 +5452,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -4871,7 +5499,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -4914,7 +5547,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -4956,7 +5594,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -4998,7 +5641,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5042,7 +5690,12 @@
      "JUNGLE",
      "MID"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -5085,7 +5738,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5128,7 +5786,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -5141,14 +5804,14 @@
     "title_en": "Engage enchanter",
     "core": [
      "Shurelya's Battlesong",
-     "Locket of the Iron Solari",
+     "Knight's Vow",
      "Zeke's Convergence"
     ],
     "boots": "Crimson Lucidity",
     "flex": [
-     "Knight's Vow",
-     "Redemption",
-     "Mikael's Blessing"
+     "Staff of Flowing Waters",
+     "Ardent Censer",
+     "Harmonic Echo"
     ],
     "why_ar": "GRAND ENTRANCE يندفع به Rakan إلى الأعداء، وBATTLE DANCE ينقله لحليفه، فـ Shurelya's Battlesong يعطي الفريق سرعة عند الاقتحام. Locket of the Iron Solari يدرع الفريق بعد THE QUICKNESS. Zeke's Convergence يرفع ضرر الحلفاء بعد الـ ult.",
     "why_en": "GRAND ENTRANCE launches Rakan into enemies and BATTLE DANCE moves him to an ally, so Shurelya's Battlesong gives the team speed to engage. Locket of the Iron Solari shields the team after THE QUICKNESS. Zeke's Convergence raises ally damage after the ult.",
@@ -5157,13 +5820,13 @@
       "ar": "سرعة للفريق عند الاقتحام مع GRAND ENTRANCE.",
       "en": "Team speed for engaging with GRAND ENTRANCE."
      },
-     "Locket of the Iron Solari": {
-      "ar": "درع للفريق بعد الاقتحام مباشرة.",
-      "en": "A team shield right after the engage."
-     },
      "Zeke's Convergence": {
       "ar": "ضرر إضافي للحلفاء بعد THE QUICKNESS.",
       "en": "Bonus ally damage after THE QUICKNESS."
+     },
+     "Knight's Vow": {
+      "ar": "يربط Rakan بحليفه عبر Pledge فيمتص جزءاً من ضرره بعد اندفاعه إليه.",
+      "en": "Pledge ties Rakan to his ally, absorbing part of their damage after he dashes in."
      }
     },
     "reviewed": false,
@@ -5171,7 +5834,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -5213,7 +5881,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5256,7 +5929,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5298,7 +5976,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5340,7 +6023,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -5382,7 +6070,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    },
    {
     "id": "jungle",
@@ -5419,7 +6112,12 @@
       "en": "Softens damage on the dive after VALOR."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ad_bruiser",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -5461,7 +6159,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -5473,9 +6176,9 @@
     "title_ar": "توليفة المانا",
     "title_en": "Mana engine",
     "core": [
+     "Rod of Ages",
      "Archangel's Staff",
-     "Rabadon's Deathcap",
-     "Rod of Ages"
+     "Rabadon's Deathcap"
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
@@ -5503,7 +6206,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -5545,7 +6253,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -5587,7 +6300,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    },
    {
     "id": "support",
@@ -5625,7 +6343,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ad_crit",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -5667,7 +6390,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "enchanter",
@@ -5681,8 +6409,8 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Staff of Flowing Waters",
-     "Shurelya's Battlesong",
-     "Mikael's Blessing"
+     "Harmonic Echo",
+     "Imperial Mandate"
     ],
     "why_ar": "SURROUND SOUND يدرع كل الحلفاء القريبين، فـ Ardent Censer يزيد سرعة هجومهم. Echoes of Helia يخزّن شحنات من ضرر Seraphine ثم يعالج بها الفريق. Redemption يعالج الفريق من بعيد بعد ENCORE.",
     "why_en": "SURROUND SOUND shields every nearby ally, so Ardent Censer boosts their attack speed. Echoes of Helia stores charges from Seraphine's damage and heals the team with them. Redemption heals the team from afar after ENCORE.",
@@ -5698,6 +6426,11 @@
      "Redemption": {
       "ar": "تفعيله يعالج الفريق في مدى كبير ويبدّل النتيجة.",
       "en": "Its active heals the team over a long range and swings fights."
+     },
+     "Imperial Mandate": {
+      "exception": true,
+      "ar": "Imperial Mandate: علامة الإبطاء تفتح التبادل لحلفائها وتناسب دعماً يعتمد على AP.",
+      "en": "Imperial Mandate: its slow mark opens trades for her allies and suits an AP-based support."
      }
     },
     "reviewed": false,
@@ -5705,7 +6438,12 @@
      "SUPPORT"
     ],
     "style": "build_support",
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -5747,7 +6485,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5790,7 +6533,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5833,7 +6581,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -5882,7 +6635,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -5925,7 +6683,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -5943,7 +6706,7 @@
     ],
     "boots": "Immortal Treads",
     "flex": [
-     "Lord Dominik's Regards",
+     "Galeforce",
      "Guardian Angel",
      "Mortal Reminder"
     ],
@@ -5967,7 +6730,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -6010,7 +6778,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -6052,7 +6825,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "gluttonous-greaves",
+     "immortal-treads"
+    ]
    }
   ]
  },
@@ -6071,8 +6849,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Redemption",
-     "Shurelya's Battlesong",
-     "Mikael's Blessing"
+     "Echoes of Helia"
     ],
     "why_ar": "Hymn of Valor وAria of Perseverance وSong of Celerity تحتاج إلى تسريع المهارات وقوة العلاج، فـ Staff of Flowing Waters يعطيها وللحليف تسريعاً. Harmonic Echo ينقل علاج Aria إلى حليف إضافي، وArdent Censer يرفع سرعة هجومهم. Power Chord يضرب بقوة ويكمّل الضغط.",
     "why_en": "Hymn of Valor, Aria of Perseverance and Song of Celerity need ability haste and heal power, so Staff of Flowing Waters gives her and an ally haste. Harmonic Echo chains Aria's healing to another ally and Ardent Censer boosts their attack speed. Power Chord adds poke pressure.",
@@ -6095,7 +6872,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -6114,8 +6896,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Staff of Flowing Waters",
-     "Mikael's Blessing",
-     "Locket of the Iron Solari"
+     "Echoes of Helia"
     ],
     "why_ar": "Astral Infusion وWish تعالجان من بعيد، فـ Redemption يضيف علاجاً وضرراً في المنطقة. Ardent Censer يرفع سرعة هجوم الحليف الذي تعالجه بـ Astral Infusion ويقوّي علاجها. Equinox يشلّ الأعداء الذين يركضون على الفريق.",
     "why_en": "Astral Infusion and Wish heal from range, so Redemption adds area healing and damage. Ardent Censer boosts the attack speed of the ally she heals with Astral Infusion and strengthens healing. Equinox silences enemies who rush the team.",
@@ -6138,7 +6919,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -6150,8 +6936,8 @@
     "title_ar": "توليفة الميد — ساحر",
     "title_en": "Mid — AP mage",
     "core": [
-     "Liandry's Torment",
      "Rod of Ages",
+     "Liandry's Torment",
      "Rylai's Crystal Scepter"
     ],
     "boots": "Spellslinger's Shoes",
@@ -6180,7 +6966,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support_ap",
@@ -6218,7 +7009,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Bulwark of the Mountain"
+    "support_item": "Bulwark of the Mountain",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "tank_mage",
@@ -6255,7 +7051,12 @@
       "en": "Magic resistance and speed while fighting mages."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "tank",
+    "boots_path": [
+     "mercurys-treads",
+     "chainlaced-crushers"
+    ]
    }
   ]
  },
@@ -6268,7 +7069,7 @@
     "title_en": "Hijacker",
     "core": [
      "Lich Bane",
-     "Hextech Rocketbelt",
+     "Riftmaker",
      "Morellonomicon"
     ],
     "boots": "Spellslinger's Shoes",
@@ -6284,20 +7085,25 @@
       "ar": "بعد أي مهارة تضرب هجمة معزّزة بضرر سحري كبير فوق Petricite.",
       "en": "A big magic hit after any ability on top of Petricite."
      },
-     "Hextech Rocketbelt": {
-      "ar": "اندفاعة يدخل بها حتى لو ABDUCT في وقت التبريد.",
-      "en": "A dash to engage even when ABDUCT is on cooldown."
-     },
      "Morellonomicon": {
       "ar": "جروح عميقة بعد ضرر المهارة، وصحة وAP تدعم KINGSLAYER.",
       "en": "Grievous Wounds after ability damage, with health and AP supporting KINGSLAYER."
+     },
+     "Riftmaker": {
+      "ar": "ضرر إضافي كلما طال القتال مع امتصاص شامل يناسب تبادل Sylas الطويل للمهارات.",
+      "en": "Extra damage the longer the fight lasts, with omnivamp that suits Sylas' long trades."
      }
     },
     "reviewed": false,
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "brawler_mage",
@@ -6334,7 +7140,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -6376,7 +7187,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -6419,7 +7235,12 @@
      "JUNGLE",
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -6462,7 +7283,12 @@
      "MID",
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -6512,7 +7338,12 @@
      "BARON",
      "MID"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "mushroom",
@@ -6550,7 +7381,12 @@
      "BARON",
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -6593,7 +7429,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -6635,7 +7476,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -6678,7 +7524,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -6720,7 +7571,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "onhit",
@@ -6757,7 +7613,12 @@
       "en": "A double-strike after Wild Cards that heals him."
      }
     },
-    "reviewed": false
+    "reviewed": false,
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -6800,7 +7661,12 @@
      "DRAGON",
      "JUNGLE"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "crit_sniper",
@@ -6839,7 +7705,12 @@
      "DRAGON",
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -6881,7 +7752,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -6899,7 +7775,7 @@
     ],
     "boots": "Gunmetal Greaves",
     "flex": [
-     "Lord Dominik's Regards",
+     "Kraken Slayer",
      "Guardian Angel",
      "Galeforce"
     ],
@@ -6923,7 +7799,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "ability_burst",
@@ -6960,7 +7841,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -7002,7 +7888,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "crit_kiter",
@@ -7016,8 +7907,8 @@
     "boots": "Gunmetal Greaves",
     "flex": [
      "Guardian Angel",
-     "Mortal Reminder",
-     "Terminus"
+     "Kraken Slayer",
+     "Statikk Shiv"
     ],
     "why_ar": "Vayne تبقى متحركة بـ Tumble، وPhantom Dancer يعطيها سرعة وحركة بعد الهجمات. Runaan's Hurricane يرسل سهاماً على أهداف ثانية، وLord Dominik's يخترق الدروع. Condemn يدفع من يقترب منها.",
     "why_en": "Vayne stays mobile with Tumble and Phantom Dancer gives speed and movement after attacks. Runaan's Hurricane sends bolts at second targets and Lord Dominik's pierces armor. Condemn pushes back anyone who reaches her.",
@@ -7039,7 +7930,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -7081,7 +7977,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support_ap",
@@ -7093,7 +7994,7 @@
     "style": "build_ap",
     "core": [
      "Luden's Echo",
-     "Shurelya's Battlesong",
+     "Horizon Focus",
      "Rabadon's Deathcap"
     ],
     "boots": "Spellslinger's Shoes",
@@ -7109,17 +8010,22 @@
       "ar": "أول BALEFUL STRIKE يفجّر الإيكو.",
       "en": "The first BALEFUL STRIKE triggers the echo."
      },
-     "Shurelya's Battlesong": {
-      "ar": "تفعيله يعطي الفريق سرعة حركة عند الاقتحام بعد القفص.",
-      "en": "Its active gives the team speed to engage after the cage."
-     },
      "Rabadon's Deathcap": {
       "ar": "AP مضاعف يرفع PRIMORDIAL BURST الذي يعدم الهدف.",
       "en": "Boosted AP raises PRIMORDIAL BURST which executes the target."
+     },
+     "Horizon Focus": {
+      "ar": "ضرر إضافي ضد الأهداف البعيدة يناسب قفص Veigar وضرباته من مسافة.",
+      "en": "Bonus damage at range suits Veigar's cage and long-range pokes."
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -7161,7 +8067,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support_ap",
@@ -7199,7 +8110,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -7241,7 +8157,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -7283,7 +8204,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -7326,7 +8252,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -7368,7 +8299,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -7410,7 +8346,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "burst",
@@ -7423,7 +8364,7 @@
     ],
     "boots": "Spellslinger's Shoes",
     "flex": [
-     "Zhonya's Hourglass",
+     "Horizon Focus",
      "Void Staff",
      "Banshee's Veil"
     ],
@@ -7447,7 +8388,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -7490,7 +8436,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    },
    {
     "id": "tanky",
@@ -7529,7 +8480,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -7578,7 +8534,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "tanky",
@@ -7616,7 +8577,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_tank"
+    "style": "build_tank",
+    "type": "tank",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -7659,7 +8625,12 @@
      "JUNGLE",
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "plated-steelcaps",
+     "armored-advance"
+    ]
    }
   ]
  },
@@ -7701,7 +8672,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -7743,7 +8719,12 @@
     "lanes": [
      "JUNGLE"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -7786,7 +8767,12 @@
      "MID",
      "BARON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -7828,7 +8814,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "fighter",
@@ -7865,7 +8856,12 @@
     "lanes": [
      "BARON"
     ],
-    "style": "build_bruiser"
+    "style": "build_bruiser",
+    "type": "ad_bruiser",
+    "boots_path": [
+     "boots-of-dynamism",
+     "armorcrusher-boots"
+    ]
    }
   ]
  },
@@ -7907,7 +8903,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -7926,8 +8927,7 @@
     "boots": "Crimson Lucidity",
     "flex": [
      "Redemption",
-     "Echoes of Helia",
-     "Mikael's Blessing"
+     "Echoes of Helia"
     ],
     "why_ar": "Yuumi تلتصق بحليفها عبر YOU AND ME!، فأي علاج أو درع منها يصيب الحليف ويصيبها. Ardent Censer يرفع سرعة هجوم الحليف الذي تلتصق به، وStaff of Flowing Waters يعطيهما تسريعاً. Harmonic Echo ينقل علاج YOU AND ME! ودرعها إلى حلفاء إضافيين.",
     "why_en": "Yuumi attaches to an ally through YOU AND ME!, so her healing and shields land on the ally and herself. Ardent Censer boosts the attached ally's attack speed and Staff of Flowing Waters gives them both haste. Harmonic Echo chains the healing and shields from YOU AND ME! to extra allies.",
@@ -7950,7 +8950,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_support"
+    "style": "build_support",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -7994,7 +8999,12 @@
      "BARON",
      "JUNGLE"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_lethality",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -8036,7 +9046,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_ad"
+    "style": "build_ad",
+    "type": "ad_crit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    },
    {
     "id": "hybrid",
@@ -8050,8 +9065,8 @@
     "boots": "Gunmetal Greaves",
     "flex": [
      "Guardian Angel",
-     "Terminus",
-     "Mortal Reminder"
+     "Navori Quickblades",
+     "Statikk Shiv"
     ],
     "why_ar": "Zeri تطلق BURST FIRE بسرعة، لذلك Kraken Slayer يعطي ضرراً مضاعفاً في كل هجمة ثالثة. Essence Reaver يضيف هجمة معزّزة بعد كل BURST FIRE ويعيد المانا. Lord Dominik's يخترق الدروع.",
     "why_en": "Zeri fires BURST FIRE rapidly, so Kraken Slayer adds extra damage on every third hit. Essence Reaver adds an empowered hit after every BURST FIRE and refunds mana. Lord Dominik's pierces armor.",
@@ -8074,7 +9089,12 @@
     "lanes": [
      "DRAGON"
     ],
-    "style": "build_onhit"
+    "style": "build_onhit",
+    "type": "ad_onhit",
+    "boots_path": [
+     "berserkers-greaves",
+     "gunmetal-greaves"
+    ]
    }
   ]
  },
@@ -8116,7 +9136,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -8134,7 +9159,7 @@
     ],
     "boots": "Crimson Lucidity",
     "flex": [
-     "Redemption",
+     "Cosmic Drive",
      "Ardent Censer",
      "Banshee's Veil"
     ],
@@ -8159,7 +9184,12 @@
     "lanes": [
      "SUPPORT"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    }
   ]
  },
@@ -8201,7 +9231,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  },
@@ -8243,7 +9278,12 @@
     "lanes": [
      "MID"
     ],
-    "style": "build_ap"
+    "style": "build_ap",
+    "type": "ap_bruiser",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    },
    {
     "id": "support",
@@ -8252,12 +9292,12 @@
     "core": [
      "Echoes of Helia",
      "Redemption",
-     "Shurelya's Battlesong"
+     "Liandry's Torment"
     ],
     "boots": "Crimson Lucidity",
     "flex": [
      "Staff of Flowing Waters",
-     "Mikael's Blessing",
+     "Rylai's Crystal Scepter",
      "Ardent Censer"
     ],
     "why_ar": "Zyra تضرب بالأشواك وتثبّت الأعداء، وEchoes of Helia يحوّل ضررها إلى علاج للفريق. Redemption يعالج الفريق من بعيد. Shurelya's Battlesong يعطي الحلفاء سرعة وقت الاشتباك.",
@@ -8271,9 +9311,15 @@
       "ar": "تفعيله يعالج الفريق في معارك الفرق من بعيد.",
       "en": "Its active heals the team from range in teamfights."
      },
-     "Shurelya's Battlesong": {
-      "ar": "يعطي الفريق سرعة عند الدخول بعد تثبيت الجذور.",
-      "en": "Gives the team speed to engage after her roots land."
+     "Liandry's Torment": {
+      "ar": "نباتات Zyra تضرب باستمرار، فيضيف Liandry's حرقاً يعتمد على صحة الهدف.",
+      "en": "Zyra's plants keep hitting, so Liandry's adds a burn based on the target's health.",
+      "exception": true
+     },
+     "Rylai's Crystal Scepter": {
+      "exception": true,
+      "ar": "Rylai's Crystal Scepter: إبطاء كل مهارات Zyra ونباتاتها يثبّت الهدف داخل منطقتها.",
+      "en": "Rylai's Crystal Scepter: slows from every Zyra ability and plant pin targets inside her zone."
      }
     },
     "reviewed": false,
@@ -8281,7 +9327,12 @@
      "SUPPORT"
     ],
     "style": "build_support",
-    "support_item": "Diadem of Songs"
+    "support_item": "Diadem of Songs",
+    "type": "enchanter",
+    "boots_path": [
+     "ionian-boots-of-lucidity",
+     "crimson-lucidity"
+    ]
    },
    {
     "id": "support_ap",
@@ -8319,7 +9370,12 @@
      }
     },
     "reviewed": false,
-    "support_item": "Black Mist Scythe"
+    "support_item": "Black Mist Scythe",
+    "type": "ap_burst",
+    "boots_path": [
+     "boots-of-mana",
+     "spellslingers-shoes"
+    ]
    }
   ]
  }

@@ -24,7 +24,26 @@
     ],
     "icon": "icons/items/abyssal-mask.png",
     "passive_ar": "Unmake: ضرر السحر ضد أبطال الأعداء في نطاق 650 وحدة منك يزيد بنسبة 12%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "abyssal-mask",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "early",
+    "early_component": "null-magic-mantle",
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2105,
@@ -46,7 +65,13 @@
     "strongAgainst": [],
     "icon": "icons/items/aether-wisp.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "aether-wisp",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2104,
@@ -65,7 +90,13 @@
     "strongAgainst": [],
     "icon": "icons/items/amplifying-tome.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "amplifying-tome",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2362,
@@ -97,7 +128,25 @@
     ],
     "icon": "icons/items/amaranth-s-twinguard.png",
     "passive_ar": "Endurance: تكسب شحنة صمود عن كل ثانية قتال مع أبطال الأعداء، وتتراكم حتى 5 مرات. عند أقصى شحنات يكبر حجمك 20%، وتكسب 20% صمود (Tenacity)، و30% دروع (Armor) ومقاومة سحر (MR) إضافية حتى نهاية القتال.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "amaranths-twinguard",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "volibear",
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "yasuo",
+      "thresh",
+      "aatrox",
+      "ksante",
+      "seraphine"
+    ]
   },
   {
     "id": 2142,
@@ -122,7 +171,17 @@
     "strongAgainst": [],
     "icon": "icons/items/archangel-s-staff.png",
     "passive_ar": "Awe: يمنحك قوة مهارات (AP) إضافية تساوي 1% من أقصى مانا. يُعيد 25% من المانا المصروفة.\nMana Charge: يولّد شحنة كل 3.3 ث، حتى 3 شحنات. كل صرف للمانا يستهلك شحنة ويمنح +14 مانا، وتتراكم حتى 700 مانا.\nيتحوّل إلى Seraph's Embrace عند +700 مانا.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "archangels-staff",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2352,
@@ -148,7 +207,16 @@
     "strongAgainst": [],
     "icon": "icons/items/ardent-censer.png",
     "passive_ar": "Censer: عندما تعالج أو تحمي بدرع بطلًا حليفًا غيرك، خلال الـ6 ث التالية تكسب أنت والحليف 30% سرعة هجوم إضافية، وتسببان 25 ضرر سحري إضافي مع كل هجمة.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "ardent-censer",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "enchanter"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2418,
@@ -176,7 +244,31 @@
     ],
     "icon": "icons/items/armorcrusher-boots.png",
     "passive_ar": "Cloudwalker: تكسب 20 سرعة حركة إضافية خارج القتال.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "armorcrusher-boots",
+    "boots_tier": 3,
+    "upgrades_from": "boots-of-dynamism",
+    "fits": [
+      "ad_lethality",
+      "ad_crit",
+      "ad_bruiser"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2414,
@@ -202,7 +294,29 @@
     ],
     "icon": "icons/items/armored-advance.png",
     "passive_ar": "Noxian Endurance: عندما تأخذ ضرر فيزيائي من الأبطال تكسب درع حماية يمتص 20–140 (حسب المستوى) (+ 5% أقصى صحة) ضرر فيزيائي لمدة 5 ث. (وقت التبريد 12 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "armored-advance",
+    "boots_tier": 3,
+    "upgrades_from": "plated-steelcaps",
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2224,
@@ -224,7 +338,14 @@
     "strongAgainst": [],
     "icon": "icons/items/b-f-sword.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "b-f-sword",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2307,
@@ -247,7 +368,15 @@
     "strongAgainst": [],
     "icon": "icons/items/bami-s-cinder.png",
     "passive_ar": "Immolate: أثناء القتال تسبب 10–20 (حسب المستوى) ضرر سحري كل ثانية للأعداء القريبين، ويزيد إلى 115% ضد التوابع والوحوش.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "bamis-cinder",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "immolate"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2189,
@@ -271,7 +400,13 @@
     "strongAgainst": [],
     "icon": "icons/items/bandleglass-mirror.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "bandleglass-mirror",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2162,
@@ -299,7 +434,28 @@
     ],
     "icon": "icons/items/banshee-s-veil.png",
     "passive_ar": "Annul: يمنحك درعًا ضد المهارات يصدّ مهارة البطل العدو التالية. (وقت التبريد 30 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "banshees-veil",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "spell_shield"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "sylas",
+      "lux",
+      "veigar",
+      "brand",
+      "mel",
+      "blitzcrank",
+      "kaisa",
+      "yone",
+      "fizz",
+      "akali"
+    ]
   },
   {
     "id": 2403,
@@ -323,7 +479,16 @@
     "strongAgainst": [],
     "icon": "icons/items/berserker-s-greaves.png",
     "passive_ar": "Blessed Blade: الهجمات العادية تعالجك بمقدار 10 عند الضربة (on-hit).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "berserkers-greaves",
+    "boots_tier": 2,
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2289,
@@ -353,7 +518,29 @@
     ],
     "icon": "icons/items/black-cleaver.png",
     "passive_ar": "Sunder: إلحاق ضرر فيزيائي ببطل عدو يقلّل دروعه بنسبة 6% لمدة 6 ث، ويتجدد مع الضربات التالية ويتراكم حتى 5 مرات ليصل التقليل إلى 30%.\nChase: الهجمات العادية عند الضربة (on-hit) تمنحك 20 / 10 سرعة حركة إضافية لمدة 2 ث. وتكسب كذلك 40 / 20 سرعة حركة إضافية في اتجاه الأعداء الذين لديهم أقصى شحنات من Sunder.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "black-cleaver",
+    "fits": [
+      "ad_bruiser",
+      "ad_lethality",
+      "tank"
+    ],
+    "groups": [
+      "armor_shred_tb"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2164,
@@ -367,14 +554,20 @@
     "builtFrom": [
       "Spectral Sickle"
     ],
-    "category": "tier3-complete",
+    "category": "support-quest",
     "tags": [
       "build_support"
     ],
     "strongAgainst": [],
     "icon": "icons/items/black-mist-scythe.png",
     "passive_ar": "Sentry: تسبب 2 ضرر إضافي ضد Warding Totem التي كشفها Sweeping Lens أو Control Ward أو Scryer's Bloom.\nVersatile: تكسب 14 قوة هجوم (AD) أو 28 قوة مهارات (AP) (تكيّفي).\nSoulcast: يولّد شحنة كل 60 ث، تمنحك 60 ذهب، 25 صحة إضافية، و2 قوة هجوم (AD) إضافية أو 4 قوة مهارات (AP) (تكيّفي). تتراكم حتى 10 مرات لتصل إلى 750 ذهب، 250 صحة إضافية، و20 قوة هجوم (AD) إضافية أو 40 قوة مهارات (AP) (تكيّفي).\nTribute: الحليف صاحب أكبر عدد من شحنات Tribute يُعتبر Perfect Partner. تكسب 10% سرعة حركة إضافية خارج القتال وأنت متجه نحو Perfect Partner، وتزيد إلى 30% عندما يكون على مدى أكبر من 2500.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "black-mist-scythe",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": null,
@@ -384,14 +577,20 @@
     "passive": null,
     "active": "Oathsworn Bond: Consumes this item to initiate a 3.5-second cast time and a 3-second channel afterwards from the user and the target allied champion, both becoming bound allies. The target is unable to act for 6 seconds after the channel's duration. Afterwards, the target becomes an Oathsworn.",
     "builtFrom": [],
-    "category": "tier1-basic",
+    "category": "support-quest",
     "tags": [
       "build_support"
     ],
     "strongAgainst": [],
     "icon": "icons/items/black-spear.png",
     "passive_ar": null,
-    "active_ar": "Oathsworn Bond: يستهلك هذا الآيتم لبدء وقت تجهيز 3.5 ث ثم قناة مدتها 3 ث من المستخدم والبطل الحليف المستهدف، فيصيران حليفين مرتبطين. المستهدف لا يستطيع التصرف لمدة 6 ث بعد انتهاء مدة القناة. بعدها يصبح المستهدف Oathsworn."
+    "active_ar": "Oathsworn Bond: يستهلك هذا الآيتم لبدء وقت تجهيز 3.5 ث ثم قناة مدتها 3 ث من المستخدم والبطل الحليف المستهدف، فيصيران حليفين مرتبطين. المستهدف لا يستطيع التصرف لمدة 6 ث بعد انتهاء مدة القناة. بعدها يصبح المستهدف Oathsworn.",
+    "slug": "black-spear",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2804,
@@ -415,7 +614,15 @@
     "strongAgainst": [],
     "icon": "icons/items/blackfire-torch.png",
     "passive_ar": "Baleful Blaze: إلحاق ضرر بالمهارات يحرق الأعداء، فيتلقّون 10 (+1% AP) ضرر سحري إضافي كل 0.5 ث على مدى 3 ث. الضرر السحري الإضافي يزيد إلى 20 ضد الوحوش.\nBlackfire: عن كل بطل ووحش ملحمي عليه Baleful Blaze منك، تزيد قوة مهاراتك (AP) بنسبة 4%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "blackfire-torch",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2242,
@@ -444,7 +651,27 @@
     ],
     "icon": "icons/items/blade-of-the-ruined-king.png",
     "passive_ar": "Ruined Strikes: الهجمات العادية تسبب ضرر فيزيائي إضافي عند الضربة (on-hit) يساوي 8% / 6% من الصحة الحالية للهدف، بحد أدنى 15 ضد كل الأهداف، وحد أقصى 100 ضد الوحوش.\nDrain: ضرب بطل بـ3 هجمات عادية أو مهارات خلال 2 ث يبطّئ الهدف 30% لمدة 1.5 ث. (وقت التبريد 30 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "blade-of-the-ruined-king",
+    "fits": [
+      "ad_bruiser",
+      "ad_onhit",
+      "ad_crit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2125,
@@ -465,7 +692,13 @@
     "strongAgainst": [],
     "icon": "icons/items/blasting-wand.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "blasting-wand",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2243,
@@ -488,7 +721,16 @@
     "strongAgainst": [],
     "icon": "icons/items/bloodthirster.png",
     "passive_ar": "Ichorshield: يحوّل العلاج الزائد من سرقة الحياة إلى درع حماية يمتص حتى 165–345 (حسب المستوى) ضرر.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "bloodthirster",
+    "fits": [
+      "ad_crit",
+      "ad_bruiser",
+      "ad_lethality"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2963,
@@ -515,7 +757,26 @@
     ],
     "icon": "icons/items/bloodletter-s-curse.png",
     "passive_ar": "Vile Decay: إلحاق ضرر سحري ببطل عدو بالمهارات يضيف عليه شحنة من Vile Decay لمدة 6 ث، وتتراكم حتى 4 مرات، ومرة واحدة كحد أقصى لكل هجمة عادية أو مهارة في كل تفعيل كل 0.3 ث. كل شحنة تقلّل مقاومة السحر 7.5%، حتى 30% عند 4 شحنات.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "bloodletters-curse",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2410,
@@ -541,7 +802,27 @@
     ],
     "icon": "icons/items/boots-of-dynamism.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "boots-of-dynamism",
+    "boots_tier": 2,
+    "fits": [
+      "ad_lethality"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2409,
@@ -569,7 +850,28 @@
     ],
     "icon": "icons/items/boots-of-mana.png",
     "passive_ar": "Big Bully: هجماتك ومهاراتك تسبب 18 ضرر حقيقي إضافي ضد التوابع.\nEquilibrium: تكسب +50% تجدد صحة أساسي إذا لم تستخدم المانا.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "boots-of-mana",
+    "boots_tier": 2,
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2601,
@@ -588,7 +890,15 @@
     "strongAgainst": [],
     "icon": "icons/items/boots-of-speed.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "boots-of-speed",
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2325,
@@ -616,7 +926,26 @@
     ],
     "icon": "icons/items/bramble-vest.png",
     "passive_ar": "Thorns: عندما تتعرض لهجمة عادية، تسبب 4 (+ 6% دروع إضافية) ضرر سحري للمهاجم، وإذا كان بطلًا تفرض عليه 40% جروح عميقة (Grievous Wounds) لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "bramble-vest",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "grievous_wounds"
+    ],
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "darius",
+      "nocturne",
+      "volibear",
+      "samira",
+      "viego",
+      "xin-zhao",
+      "garen",
+      "nasus"
+    ]
   },
   {
     "id": 1051,
@@ -635,7 +964,13 @@
     "strongAgainst": [],
     "icon": "icons/items/brawler-s-gloves.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "brawlers-gloves",
+    "fits": [
+      "ad_crit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2165,
@@ -650,7 +985,7 @@
     "builtFrom": [
       "Relic Shield"
     ],
-    "category": "tier3-complete",
+    "category": "support-quest",
     "tags": [
       "build_support",
       "build_tank"
@@ -658,7 +993,14 @@
     "strongAgainst": [],
     "icon": "icons/items/bulwark-of-the-mountain.png",
     "passive_ar": "Sentry: تسبب 2 ضرر إضافي ضد Warding Totem التي كشفها Sweeping Lens أو Control Ward أو Scryer's Bloom.\nSoulcast: يولّد شحنة كل 60 ث، تمنحك 60 ذهب، 25 صحة إضافية، و2 قوة هجوم (AD) إضافية أو 4 قوة مهارات (AP) (تكيّفي). تتراكم حتى 10 مرات لتصل إلى 750 ذهب، 250 صحة إضافية، و20 قوة هجوم (AD) إضافية أو 40 قوة مهارات (AP) (تكيّفي).\nTribute: الحليف صاحب أكبر عدد من شحنات Tribute يُعتبر Perfect Partner. تكسب 10% سرعة حركة إضافية خارج القتال وأنت متجه نحو Perfect Partner، وتزيد إلى 30% عندما يكون على مدى أكبر من 2500.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "bulwark-of-the-mountain",
+    "fits": [
+      "tank",
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2126,
@@ -680,7 +1022,13 @@
     "strongAgainst": [],
     "icon": "icons/items/catalyst-of-aeons.png",
     "passive_ar": "Eternity: تُعيد مانا تساوي 15% من الضرر الداخل من الأبطال، وتعالج 20% من المانا المصروفة، بحد أقصى 15 صحة لكل مهارة. المهارات المتفعّلة بالتبديل تعالج حتى 15 فقط في الثانية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "catalyst-of-aeons",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2207,
@@ -703,7 +1051,14 @@
     "strongAgainst": [],
     "icon": "icons/items/caulfield-s-warhammer.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "caulfields-warhammer",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2305,
@@ -727,7 +1082,24 @@
     ],
     "icon": "icons/items/chain-vest.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "chain-vest",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2413,
@@ -756,7 +1128,29 @@
     ],
     "icon": "icons/items/chainlaced-crushers.png",
     "passive_ar": "Noxian Persistance: عندما تأخذ ضرر سحري من الأبطال تكسب درع حماية يمتص 20–140 (حسب المستوى) (+ 5% أقصى صحة) ضرر سحري لمدة 5 ث. (وقت التبريد 12 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "chainlaced-crushers",
+    "boots_tier": 3,
+    "upgrades_from": "mercurys-treads",
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "thresh",
+      "seraphine",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank"
+    ]
   },
   {
     "id": 2252,
@@ -784,7 +1178,28 @@
     ],
     "icon": "icons/items/chempunk-chainsword.png",
     "passive_ar": "Punishment: إلحاق ضرر فيزيائي بأبطال الأعداء يفرض 50% جروح عميقة (Grievous Wounds) لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "chempunk-chainsword",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [
+      "grievous_wounds"
+    ],
+    "timing": "early",
+    "early_component": "executioners-calling",
+    "strong_vs_champs": [
+      "sylas",
+      "master-yi",
+      "mordekaiser",
+      "tryndamere",
+      "yuumi",
+      "morgana",
+      "darius",
+      "aatrox",
+      "lee-sin",
+      "nocturne"
+    ]
   },
   {
     "id": 1029,
@@ -806,7 +1221,24 @@
     ],
     "icon": "icons/items/cloth-armor.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "cloth-armor",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": null,
@@ -816,7 +1248,7 @@
     "passive": "After 11:00 elapse, the active cooldown is reduced by 10 seconds.",
     "active": "Place a visible Control Ward at the target location, which grants sight over the surrounding 900-range and reveals enemy wards, stealthed traps, and camouflaged champions. (cooldown 100)",
     "builtFrom": [],
-    "category": null,
+    "category": "consumable",
     "tags": [
       "vs_stealth",
       "build_any"
@@ -826,7 +1258,24 @@
     ],
     "icon": "icons/items/control-ward.png",
     "passive_ar": "بعد مرور 11:00، يقل وقت تبريد التفعيل 10 ث.",
-    "active_ar": "ضع Control Ward ظاهرًا في المكان المستهدف، يمنح رؤية على نطاق 900 حوله ويكشف وارد (Ward) الأعداء، والفخاخ المتخفية، والأبطال المموّهين. (وقت التبريد 100 ث)"
+    "active_ar": "ضع Control Ward ظاهرًا في المكان المستهدف، يمنح رؤية على نطاق 900 حوله ويكشف وارد (Ward) الأعداء، والفخاخ المتخفية، والأبطال المموّهين. (وقت التبريد 100 ث)",
+    "slug": "control-ward",
+    "fits": [
+      "any"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "teemo",
+      "vayne",
+      "viego",
+      "akali",
+      "pyke",
+      "khazix",
+      "aurora",
+      "twitch",
+      "rengar",
+      "wukong"
+    ]
   },
   {
     "id": 2167,
@@ -852,7 +1301,15 @@
     "strongAgainst": [],
     "icon": "icons/items/cosmic-drive.png",
     "passive_ar": "Spelldance: إلحاق ضرر سحري أو حقيقي بالأبطال يمنحك 30 سرعة حركة إضافية لمدة 4 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "cosmic-drive",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2415,
@@ -876,7 +1333,18 @@
     "strongAgainst": [],
     "icon": "icons/items/crimson-lucidity.png",
     "passive_ar": "Summoned: يقلّل أوقات تبريد المهارات 20%.\nNoxian Haste: علاج حليف أو حمايته بدرع أو تقويته، وإلحاق ضرر بالمهارات ضد الأبطال، واستخدام تعويذات المستدعي يمنحك 10% / 8% سرعة حركة إضافية لمدة 4 ث. يمكن تفعيل هذا من نفس التفعيل مرة واحدة فقط كل 4 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "crimson-lucidity",
+    "boots_tier": 3,
+    "upgrades_from": "ionian-boots-of-lucidity",
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2187,
@@ -904,7 +1372,26 @@
     ],
     "icon": "icons/items/cryptbloom.png",
     "passive_ar": "Life from Death: عندما يموت بطل سببت له ضرر خلال آخر 3 ث، ينتشر من جثته انفجار يعالج الحلفاء بمقدار 100 (+ 20% AP) صحة. (وقت التبريد 60 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "cryptbloom",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2188,
@@ -930,7 +1417,16 @@
     "strongAgainst": [],
     "icon": "icons/items/echoes-of-helia.png",
     "passive_ar": "Soul Siphon: تكسب 30% من الضرر (قبل التخفيف) الذي تسببه للأبطال على شكل Soul Charges، حتى 80 إلى 250. علاج بطل حليف (غيرك) أو حمايته بدرع يستهلك كل الشحنات لعلاجه بمقدار ما تم استهلاكه.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "echoes-of-helia",
+    "fits": [
+      "enchanter",
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 1042,
@@ -949,7 +1445,13 @@
     "strongAgainst": [],
     "icon": "icons/items/dagger.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "dagger",
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2361,
@@ -980,7 +1482,25 @@
     ],
     "icon": "icons/items/dawnshroud.png",
     "passive_ar": "Dawnbringer: إذا كنت داخل 400 وحدة من بطل عدو عندما تشلّ حركة بطل عدو أو يشلّ أبطال الأعداء حركتك، تسبب 40 (+ 2.5% صحة إضافية) ضرر سحري لأبطال الأعداء القريبين وتكشفهم لمدة 3 ث. وخلال نفس المدة تكسب 20% دروع (Armor) ومقاومة سحر (MR) إضافية. (وقت التبريد 3 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "dawnshroud",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "teemo",
+      "yunara",
+      "volibear",
+      "kaisa",
+      "vayne",
+      "smolder",
+      "yone",
+      "viego",
+      "akali",
+      "pyke"
+    ]
   },
   {
     "id": 2346,
@@ -1009,7 +1529,26 @@
     ],
     "icon": "icons/items/dead-man-s-plate.png",
     "passive_ar": "Momentum: حركتك تولّد شحنات Momentum، وتُستهلك كلها بالهجمات العادية وتتناقص أثناء إعاقة الحركة. كل شحنة تمنح 0.4 سرعة حركة إضافية، وتتراكم حتى 100 مرة لتصل إلى 40 سرعة حركة إضافية.\nCrushing Blow: هجماتك العادية تسبب ضرر سحري إضافي يساوي Momentum المستهلك. الهجمات العادية القريبة المدى التي تستهلك أقصى Momentum تبطّئ الهدف 75% لمدة 1 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "dead-mans-plate",
+    "fits": [
+      "ad_bruiser",
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2257,
@@ -1040,7 +1579,26 @@
     ],
     "icon": "icons/items/death-s-dance.png",
     "passive_ar": "Cauterize: 30% / 12% من الضرر الفيزيائي والسحري الداخل من الأبطال يتحوّل إلى ضرر حقيقي على مدى 3 ث، ويُسبَّب جزء من الضرر المخزّن كل ثانية.\nDefy: المشاركة في قتل (Takedown) بطل تزيل ما تبقى من الضرر المخزّن في Cauterize وتعالجك بمقدار 90% AD إضافي على مدى 2 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "deaths-dance",
+    "fits": [
+      "ad_bruiser",
+      "ad_lethality"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "lee-sin",
+      "nocturne",
+      "draven",
+      "kaisa",
+      "samira",
+      "yone",
+      "graves",
+      "miss-fortune",
+      "jhin",
+      "pyke"
+    ]
   },
   {
     "id": 2119,
@@ -1057,14 +1615,22 @@
     "builtFrom": [
       "Whispering Circlet"
     ],
-    "category": null,
+    "category": "support-quest",
     "tags": [
       "build_support"
     ],
     "strongAgainst": [],
     "icon": "icons/items/diadem-of-songs.png",
     "passive_ar": "Harmony: يمنحك قوة علاج ودرع حماية تساوي 0.25% من أقصى مانا. يُعيد 25% من المانا المصروفة.\nDiadem: بينما أنت أو حليف عالجته أو حميته بدرع خلال آخر 3 ث في قتال مع بطل عدو، كل ثانية تعالج أقرب بطل حليف وأكثرهم إصابة ضمن 800 وحدة بمقدار 0.8% من أقصى مانا لديك.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "diadem-of-songs",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2272,
@@ -1093,7 +1659,27 @@
     ],
     "icon": "icons/items/divine-sunderer.png",
     "passive_ar": "Spellblade: بعد استخدام مهارة، هجمتك العادية التالية خلال 10 ث تسبب ضرر فيزيائي إضافي عند الضربة (on-hit) يساوي 10% / 7% من أقصى صحة الهدف، بحد أدنى يساوي 125% AD أساسي، وحد أقصى ضد الوحوش يساوي 225% AD أساسي. ضد الأبطال تعالج نفسك أيضًا بمقدار 6% / 2.5% من أقصى صحة الهدف، بحد أدنى للعلاج يساوي 90% / 50% AD أساسي. الضرر يقل 50% ضد المباني. (وقت التبريد 1.5 ث (بعد التأثير))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "divine-sunderer",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2185,
@@ -1120,7 +1706,18 @@
     "strongAgainst": [],
     "icon": "icons/items/dusk-and-dawn.png",
     "passive_ar": "Spellblade: بعد استخدام مهارة، هجمتك العادية التالية خلال 10 ث تسبب 75% AD أساسي (+ 10% AP) ضرر سحري إضافي وتعالجك بمقدار 10% AP (+ 3% صحة إضافية) عند الضربة (on-hit)، وتطبّق تأثيرات on-hit على الهدف مرة ثانية بعد تأخير 0.2 ث، ويبدأ بعد استخدام الهجمة المعزّزة). الضرر يقل إلى 50% ضد المباني. (وقت التبريد 1.5 ث (بعد التأثير))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "dusk-and-dawn",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2256,
@@ -1147,7 +1744,26 @@
     ],
     "icon": "icons/items/duskblade-of-draktharr.png",
     "passive_ar": "Nightstalker: هجمتك العادية التالية ضد بطل عدو تسبب 60–160 (حسب المستوى) ضرر فيزيائي إضافي وتبطّئ 99% لمدة 0.35 ث. تسجيل مشاركة في قتل (Takedown) بطل يعيد ضبط وقت التبريد فورًا. (وقت التبريد 10 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "duskblade-of-draktharr",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2286,
@@ -1174,7 +1790,26 @@
     ],
     "icon": "icons/items/eclipse.png",
     "passive_ar": "Ever Rising Moon: ضرب بطل عدو يضع عليه شحنة لمدة 1.8 ث، بحد أقصى واحدة لكل هجمة أو مهارة لكل بطل. وضع شحنتين يستهلكهما معًا لتسبيب ضرر فيزيائي إضافي يساوي 6% / 3% من أقصى صحة الهدف ومنحك درع حماية يساوي 140 / 70 (+ 35% / 18% AD إضافي) لمدة 2 ث. تشمل الضربات: الهجمات العادية المسببة للضرر، والمهارات، وتأثيرات الآيتم، والتعويذات، وكذلك فرض التحكم (CC) وتأثيرات الضرر على مدى الزمن. (وقت التبريد 6 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "eclipse",
+    "fits": [
+      "ad_bruiser",
+      "ad_lethality"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2161,
@@ -1205,7 +1840,29 @@
     ],
     "icon": "icons/items/edge-of-night.png",
     "passive_ar": "Annul: يمنحك درعًا ضد المهارات يصدّ مهارة العدو التالية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "edge-of-night",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser",
+      "ad_crit"
+    ],
+    "groups": [
+      "spell_shield"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "blitzcrank",
+      "renekton",
+      "sylas",
+      "malphite",
+      "lux",
+      "veigar",
+      "lee-sin",
+      "nocturne",
+      "brand",
+      "ksante"
+    ]
   },
   {
     "id": 2267,
@@ -1230,7 +1887,19 @@
     "strongAgainst": [],
     "icon": "icons/items/essence-reaver.png",
     "passive_ar": "Spellblade: استخدام مهارة يجعل هجمتك التالية تسبب 135% AD أساسي (+ 0 إلى 80 حسب فرصة الضربة الحرجة) ضرر فيزيائي إضافي وتُعيد مانا تساوي 50% من هذا المقدار. (وقت التبريد 1.5 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "essence-reaver",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2229,
@@ -1254,7 +1923,27 @@
     ],
     "icon": "icons/items/executioner-s-calling.png",
     "passive_ar": "Crippling Blow: الضرر الفيزيائي يفرض 40% جروح عميقة (Grievous Wounds) على أبطال الأعداء لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "executioners-calling",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [
+      "grievous_wounds"
+    ],
+    "strong_vs_champs": [
+      "sylas",
+      "master-yi",
+      "mordekaiser",
+      "tryndamere",
+      "yuumi",
+      "morgana",
+      "darius",
+      "aatrox",
+      "lee-sin",
+      "nocturne"
+    ]
   },
   {
     "id": 2806,
@@ -1281,7 +1970,15 @@
     "strongAgainst": [],
     "icon": "icons/items/experimental-hexplate.png",
     "passive_ar": "Hexcharged: +20 تسريع للمهارة النهائية (Ult).\nOverdrive: عند استخدام المهارة النهائية (Ult) تدخل في Overdrive وتكسب 40% سرعة هجوم إضافية و20% سرعة حركة إضافية لمدة 8 ث. (وقت التبريد 30 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "experimental-hexplate",
+    "fits": [
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2138,
@@ -1302,7 +1999,13 @@
     "strongAgainst": [],
     "icon": "icons/items/fated-ashes.png",
     "passive_ar": "Inflame: إلحاق ضرر بالمهارات يحرق الأعداء، فيتلقّون 5 ضرر سحري على مدى 3 ث. تسبب 15 ضرر سحري إضافي ضد الوحوش.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "fated-ashes",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2239,
@@ -1327,7 +2030,15 @@
     "strongAgainst": [],
     "icon": "icons/items/fiendhunter-bolts.png",
     "passive_ar": "Night Vigil: +20 تسريع للمهارة النهائية (Ult).\nOpening Barrage: بعد استخدام المهارة النهائية (Ult)، أول 3 هجمات عادية خلال 8 ث تكسب 50% سرعة هجوم إضافية وتصبح معزّزة لتسبب ضربة حرجة بـ60% ضرر إضافي. وإذا كانت الهجمة أصلًا ستكون ضربة حرجة، فإنها تسبب ضربة حرجة بـ100% ضرر إضافي وتسبب ضرر حقيقي إضافي يساوي 15% من ضرر الهجمة المفعِّلة قبل التخفيف. (وقت التبريد 45 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "fiendhunter-bolts",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2108,
@@ -1349,7 +2060,13 @@
     "strongAgainst": [],
     "icon": "icons/items/fiendish-codex.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "fiendish-codex",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2356,
@@ -1365,14 +2082,24 @@
     "builtFrom": [
       "Winter's Approach"
     ],
-    "category": null,
+    "category": "tier3-complete",
     "tags": [
       "build_tank"
     ],
     "strongAgainst": [],
     "icon": "icons/items/fimbulwinter.png",
     "passive_ar": "Awe: يمنحك صحة إضافية تساوي 10% من أقصى مانا. يُعيد 15% من المانا المصروفة.\nFrozen Colossus: عندما تشلّ حركة بطل عدو أو تبطّئه، تكسب درع حماية بقيمة ( 120 (+ 4.5% أقصى مانا) \\ 60 (+ 2.25% أقصى مانا)) لمدة 3 ث. قوة الدرع تزيد إلى 180% إذا كان 2 أو أكثر من أبطال الأعداء قريبين. (وقت التبريد 8 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "fimbulwinter",
+    "transforms_from": "winters-approach",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2120,
@@ -1392,7 +2119,13 @@
     "strongAgainst": [],
     "icon": "icons/items/forbidden-idol.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "forbidden-idol",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2358,
@@ -1419,7 +2152,26 @@
     ],
     "icon": "icons/items/force-of-nature.png",
     "passive_ar": "Absorb: تلقّي ضرر المهارات يولّد شحنة من Steadfast لمدة 7 ث، وتتراكم حتى 4 مرات. الضربات التالية وتسبيب الضرر للأبطال يجدّدان الشحنات. عند أقصى شحنات تكسب 6% سرعة حركة إضافية و70 مقاومة سحر (MR) إضافية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "force-of-nature",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "early",
+    "early_component": "null-magic-mantle",
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2357,
@@ -1448,7 +2200,25 @@
     ],
     "icon": "icons/items/frozen-heart.png",
     "passive_ar": "Winter's Caress: يقلّل سرعة هجوم أبطال الأعداء ضمن 650 وحدة بنسبة 25%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "frozen-heart",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "caitlyn",
+      "nocturne",
+      "draven",
+      "yunara",
+      "volibear"
+    ]
   },
   {
     "id": 2296,
@@ -1473,7 +2243,17 @@
     "strongAgainst": [],
     "icon": "icons/items/galeforce.png",
     "passive_ar": null,
-    "active_ar": "Cloudburst: اندفاع في الاتجاه المستهدف (مدى 325)، وإطلاق ثلاثة صواريخ على أكثر عدو مصابًا، مع أولوية لأبطال الأعداء (مدى 600). كل صاروخ يسبب 13.3–41.7 (حسب المستوى) (+ 35% AD إضافي) ضرر فيزيائي، بإجمالي 40–120 (حسب المستوى) (+ 35% AD إضافي). (وقت التبريد 60 ث)"
+    "active_ar": "Cloudburst: اندفاع في الاتجاه المستهدف (مدى 325)، وإطلاق ثلاثة صواريخ على أكثر عدو مصابًا، مع أولوية لأبطال الأعداء (مدى 600). كل صاروخ يسبب 13.3–41.7 (حسب المستوى) (+ 35% AD إضافي) ضرر فيزيائي، بإجمالي 40–120 (حسب المستوى) (+ 35% AD إضافي). (وقت التبريد 60 ث)",
+    "slug": "galeforce",
+    "fits": [
+      "ad_crit",
+      "ad_lethality"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2383,
@@ -1506,7 +2286,27 @@
     ],
     "icon": "icons/items/gargoyle-stoneplate.png",
     "passive_ar": null,
-    "active_ar": "Stoneplate: تكسب درع حماية يساوي 100 (+9% صحة إضافية) يتناقص على مدى 2.5 ث. (وقت التبريد 60 ث)"
+    "active_ar": "Stoneplate: تكسب درع حماية يساوي 100 (+9% صحة إضافية) يتناقص على مدى 2.5 ث. (وقت التبريد 60 ث)",
+    "slug": "gargoyle-stoneplate",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "kaisa",
+      "yone",
+      "sylas",
+      "lux",
+      "veigar",
+      "lee-sin",
+      "nocturne",
+      "brand",
+      "draven",
+      "mel"
+    ]
   },
   {
     "id": 2322,
@@ -1527,7 +2327,13 @@
     "strongAgainst": [],
     "icon": "icons/items/giant-s-belt.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "giants-belt",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2128,
@@ -1553,7 +2359,24 @@
     ],
     "icon": "icons/items/glacial-shroud.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "glacial-shroud",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2408,
@@ -1574,7 +2397,16 @@
     "strongAgainst": [],
     "icon": "icons/items/gluttonous-greaves.png",
     "passive_ar": "Balance of Power: +12 قوة هجوم (AD) أو +20 قوة مهارات (AP).\nConversion: +5% امتصاص شامل. المشاركة في قتل (Takedown) الأبطال تمنح 0.5% امتصاص شامل حتى 5%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "gluttonous-greaves",
+    "boots_tier": 2,
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2293,
@@ -1600,7 +2432,16 @@
     "strongAgainst": [],
     "icon": "icons/items/goredrinker.png",
     "passive_ar": "Goredrink: +8% امتصاص شامل.",
-    "active_ar": "Thirsting Slash: تسبب 175% AD أساسي ضرر فيزيائي للأعداء القريبين، وتعالجك بمقدار 20% AD (+ 10% من الصحة المفقودة) عن كل بطل يُصاب. (وقت التبريد 12 ث)"
+    "active_ar": "Thirsting Slash: تسبب 175% AD أساسي ضرر فيزيائي للأعداء القريبين، وتعالجك بمقدار 20% AD (+ 10% من الصحة المفقودة) عن كل بطل يُصاب. (وقت التبريد 12 ث)",
+    "slug": "goredrinker",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2259,
@@ -1630,7 +2471,30 @@
     ],
     "icon": "icons/items/guardian-angel.png",
     "passive_ar": "Resurrect: عند تلقّي ضرر قاتل، تدخل في حالة إحياء لمدة 4 ث وأنت في جمود (Stasis). بعدها تعالج 50% من الصحة الأساسية وتُعيد 100% من أقصى مانا. (وقت التبريد 180 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "guardian-angel",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "stasis"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "lee-sin",
+      "nocturne",
+      "draven",
+      "kaisa",
+      "samira",
+      "yone",
+      "graves",
+      "miss-fortune",
+      "jhin",
+      "pyke"
+    ]
   },
   {
     "id": 2412,
@@ -1654,7 +2518,21 @@
     "strongAgainst": [],
     "icon": "icons/items/gunmetal-greaves.png",
     "passive_ar": "Noxian Gait: الهجمات العادية ضد أبطال الأعداء تمنحك 10% / 8% سرعة حركة إضافية تتناقص على مدى 2 ث.\nBlessed Blade: الهجمات العادية تعالجك بمقدار 12 عند الضربة (on-hit).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "gunmetal-greaves",
+    "boots_tier": 3,
+    "upgrades_from": "berserkers-greaves",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2291,
@@ -1681,7 +2559,17 @@
     "strongAgainst": [],
     "icon": "icons/items/guinsoo-s-rageblade.png",
     "passive_ar": "Wrath: الهجمات العادية تسبب 30 ضرر سحري إضافي عند الضربة (on-hit).\nSeething Strike: الهجمات العادية تمنحك 8% سرعة هجوم إضافية لمدة 3 ث، وتتراكم حتى 32%. عند أقصى شحنات، الهجمات العادية تولّد أيضًا شحنة Phantom لمدة 6 ث، وتتراكم حتى 3 مرات فتُستهلك عند الهجمة لتفعيل Phantom Hit الذي يطبّق تأثيرات on-hit على الهدف بعد تأخير 0.15 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "guinsoos-rageblade",
+    "fits": [
+      "ad_onhit",
+      "ap_burst",
+      "ap_bruiser",
+      "ad_crit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2155,
@@ -1707,7 +2595,16 @@
     "strongAgainst": [],
     "icon": "icons/items/harmonic-echo.png",
     "passive_ar": "Harmonic Echo: علاج بطل حليف أو حمايته بدرع ينتقل التأثير إلى أقرب بطل حليف آخر وأكثرهم إصابة ضمن 800 وحدة منه (غيرك)، فيمنحه 30% من العلاج أو 35% من قوة الدرع الأصلية. إذا لم يوجد حلفاء آخرون في النطاق، يُمنح نفس الهدف 30% إضافية من العلاج أو 35% إضافية من الدرع.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "harmonic-echo",
+    "fits": [
+      "enchanter",
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2123,
@@ -1730,7 +2627,13 @@
     "strongAgainst": [],
     "icon": "icons/items/haunting-guise.png",
     "passive_ar": "Madness: عن كل ثانية قتال مع أبطال الأعداء، تسبب ضرر أكبر بنسبة 2%، وتتراكم حتى 3 مرات بإجمالي 6%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "haunting-guise",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2210,
@@ -1754,7 +2657,13 @@
     "strongAgainst": [],
     "icon": "icons/items/hearthbound-axe.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "hearthbound-axe",
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2366,
@@ -1779,7 +2688,15 @@
     "strongAgainst": [],
     "icon": "icons/items/heartsteel.png",
     "passive_ar": "Colossal Consumption: أبطال الأعداء ضمن 700 وحدة يولّدون شحنات على مدى 2.5 ث، وتتراكم حتى 6 مرات. هجمتك العادية التالية ضد هدف عليه أقصى شحنات تستهلكها كلها لتسبب 140 (+ 3.5% أقصى صحة) ضرر فيزيائي إضافي عند الضربة (on-hit) وتمنحك صحة إضافية دائمة تساوي 15% من هذا المقدار (وقت التبريد 20 ث لكل هدف).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "heartsteel",
+    "fits": [
+      "tank",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2226,
@@ -1805,7 +2722,25 @@
     ],
     "icon": "icons/items/hexdrinker.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "hexdrinker",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2160,
@@ -1826,7 +2761,13 @@
     "strongAgainst": [],
     "icon": "icons/items/hextech-alternator.png",
     "passive_ar": "Revved: مهاراتك المسببة للضرر وهجماتك المعزّزة ضد الأبطال تسبب 25–60 (حسب المستوى) ضرر سحري. (وقت التبريد 20 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "hextech-alternator",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2385,
@@ -1851,7 +2792,17 @@
     "strongAgainst": [],
     "icon": "icons/items/hextech-rocketbelt.png",
     "passive_ar": null,
-    "active_ar": "Protobelt: اندفاع للأمام وإطلاق مخروط من الصواريخ يسبب 100 (+15% AP) ضرر سحري (مدى 1075). الصواريخ التالية تسبب 10% ضرر ضد نفس البطل أو الوحش. (وقت التبريد 30 ث)"
+    "active_ar": "Protobelt: اندفاع للأمام وإطلاق مخروط من الصواريخ يسبب 100 (+15% AP) ضرر سحري (مدى 1075). الصواريخ التالية تسبب 10% ضرر ضد نفس البطل أو الوحش. (وقت التبريد 30 ث)",
+    "slug": "hextech-rocketbelt",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2237,
@@ -1875,7 +2826,15 @@
     "strongAgainst": [],
     "icon": "icons/items/hexoptics-c44.png",
     "passive_ar": "Magnification: تسبب 0–10 (حسب المستوى) ضرر أكبر في الهجمات العادية. تُحسب المسافة من حافة موقعك الحالي إلى حافة موقع الهدف وقت إصابته.\nArcane Aim: تسجيل مشاركة في قتل (Takedown) بطل عدو خلال 3 ث من إصابته يمنحك 100 مدى هجوم إضافي لمدة 8 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "hexoptics-c44",
+    "fits": [
+      "ad_crit",
+      "ad_lethality"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2183,
@@ -1902,7 +2861,28 @@
     ],
     "icon": "icons/items/hollow-radiance.png",
     "passive_ar": "Immolate: أثناء القتال تسبب 20–30 (حسب المستوى) (+ 1% صحة إضافية) ضرر سحري كل ثانية للأعداء القريبين، ويزيد إلى 130% ضد الوحوش و200% ضد التوابع.\nDesolate: قتل عدو يجعله ينفجر ويسبب 30 (+ 2% صحة إضافية) ضرر سحري للأعداء القريبين.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "hollow-radiance",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "immolate"
+    ],
+    "timing": "early",
+    "early_component": "null-magic-mantle",
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2172,
@@ -1926,7 +2906,15 @@
     "strongAgainst": [],
     "icon": "icons/items/horizon-focus.png",
     "passive_ar": "Hypershot: ضرر مهاراتك ضد الأبطال يضع عليهم Hypershot إذا أُطلقت المهارة من مسافة 600 وحدة على الأقل. يتم كشف الهدف وتسبب له ضرر أكبر بنسبة 10% لمدة 8 ث.\nFocus: وضع Hypershot يكشف أبطال الأعداء المحيطين ضمن 1200 وحدة لمدة 3 ث. (وقت التبريد 12 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "horizon-focus",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2375,
@@ -1951,7 +2939,14 @@
     "strongAgainst": [],
     "icon": "icons/items/hullbreaker.png",
     "passive_ar": "Skipper: الهجمات العادية ضد هدف معين تولّد شحنة حتى 4 مرات، وعندها تُستهلك كلها لتسبب ضرر فيزيائي إضافي، يقل إلى 40% عند المستخدمين بعيدي المدى. الأبطال أو الوحوش الملحمية: 160% AD أساسي (+ 5% أقصى صحة). الأبراج: 240% AD أساسي (+ 9% أقصى صحة).\nBoarding Party: توابع Blue Siege Minion وBlue Super Minion الحليفة القريبة تكسب 20–130 (حسب المستوى) دروع (Armor) و10–120 (حسب المستوى) مقاومة سحر (MR)، وتقل إلى 25% من هذا المقدار عند المستخدمين بعيدي المدى.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "hullbreaker",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2150,
@@ -1981,7 +2976,28 @@
     ],
     "icon": "icons/items/iceborn-gauntlet.png",
     "passive_ar": "Spellblade: بعد استخدام مهارة، هجمتك العادية التالية خلال 10 ث تسبب ضرر فيزيائي إضافي عند الضربة (on-hit) يساوي 100% AD أساسي (+ 25% دروع إضافية)، ونفس الضرر للأعداء المحيطين ضمن مدى 180. كما تنشئ تحتهم مجال جليد بنصف قطر 180 (+ 55% دروع إضافية) لمدة 2 ث، يبطّئ الأعداء بداخله 30%. الضرر يقل 50% ضد المباني. (وقت التبريد 1.5 ث (بعد التأثير))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "iceborn-gauntlet",
+    "fits": [
+      "ad_bruiser",
+      "tank"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2279,
@@ -2008,7 +3024,28 @@
     ],
     "icon": "icons/items/immortal-shieldbow.png",
     "passive_ar": "Lifeline: إذا تلقّيت ضررًا سيُنزل صحتك تحت 35% من أقصى صحة، تكسب أولًا درع حماية بقيمة 350–650 (حسب المستوى) / 300–550 (حسب المستوى) لمدة 3 ث. (وقت التبريد 70 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "immortal-shieldbow",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [
+      "lifeline"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "sylas",
+      "lux",
+      "veigar",
+      "lee-sin",
+      "nocturne",
+      "brand",
+      "draven",
+      "mel",
+      "blitzcrank",
+      "kaisa"
+    ]
   },
   {
     "id": 2416,
@@ -2029,7 +3066,18 @@
     "strongAgainst": [],
     "icon": "icons/items/immortal-treads.png",
     "passive_ar": "Now and Forever: طالما صحتك فوق 50% من أقصى صحة، تسبب ضرر أكبر بنسبة 5%. وطالما صحتك تحت 50% من أقصى صحة، تكسب علاج ودروع حماية أكبر بنسبة 12%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "immortal-treads",
+    "boots_tier": 3,
+    "upgrades_from": "gluttonous-greaves",
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2163,
@@ -2053,7 +3101,15 @@
     "strongAgainst": [],
     "icon": "icons/items/imperial-mandate.png",
     "passive_ar": "Control: مهاراتك التي فيها تحكم (CC) تكسب 20 تسريع مهارات.\nCommand: المهارات التي تشلّ حركة بطل عدو تضع عليه علامة لمدة 4 ث، فيتلقّى ضرر أكبر بنسبة 7%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "imperial-mandate",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2245,
@@ -2077,7 +3133,14 @@
     "strongAgainst": [],
     "icon": "icons/items/infinity-edge.png",
     "passive_ar": "Infinity: +30% ضرر الضربة الحرجة.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "infinity-edge",
+    "fits": [
+      "ad_crit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2158,
@@ -2103,7 +3166,26 @@
     ],
     "icon": "icons/items/infinity-orb.png",
     "passive_ar": "Inevitable Demise: المهارات والهجمات المعزّزة تسبب ضربة حرجة بـ20% ضرر إضافي ضد الأعداء تحت 40% صحة.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "infinity-orb",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2407,
@@ -2127,7 +3209,16 @@
     "strongAgainst": [],
     "icon": "icons/items/ionian-boots-of-lucidity.png",
     "passive_ar": "Summoned: يقلّل أوقات تبريد المهارات 15%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "ionian-boots-of-lucidity",
+    "boots_tier": 2,
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2326,
@@ -2150,7 +3241,13 @@
     "strongAgainst": [],
     "icon": "icons/items/jaurim-s-fist.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "jaurims-fist",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2373,
@@ -2179,7 +3276,25 @@
     ],
     "icon": "icons/items/kaenic-rookern.png",
     "passive_ar": "Magebane: بعد 12 ث بدون تلقّي ضرر سحري، تكسب درع حماية ضد الضرر السحري بقيمة 70–180 (حسب المستوى) (+ 10% أقصى صحة) يبقى حتى يتحطم.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "kaenic-rookern",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "sylas",
+      "lux",
+      "veigar",
+      "brand",
+      "mel",
+      "blitzcrank",
+      "kaisa",
+      "yone",
+      "fizz",
+      "akali"
+    ]
   },
   {
     "id": 2306,
@@ -2201,7 +3316,13 @@
     "strongAgainst": [],
     "icon": "icons/items/kindlegem.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "kindlegem",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2231,
@@ -2222,7 +3343,13 @@
     "strongAgainst": [],
     "icon": "icons/items/kircheis-shard.png",
     "passive_ar": "Jolt: تسبب 40 ضرر سحري إضافي لأبطال الأعداء. الهجمات تقلّل وقت تبريد Jolt بمقدار 1 ث. (وقت التبريد 25 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "kircheis-shard",
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2379,
@@ -2251,7 +3378,25 @@
     ],
     "icon": "icons/items/knight-s-vow.png",
     "passive_ar": "Pledge: عند الشراء، تستطيع أن تختار بطلًا حليفًا يُعتبر Worthy، فيتكوّن رابط بينك وبينه. يمكن أن يكون البطل تحت Pledge واحد فقط في الوقت الواحد.\nSacrifice: طالما الـWorthy مرتبط بك وصحتك فوق 30%، يتم تحويل 12% من الضرر الفيزيائي والسحري (قبل التخفيف) الذي يتلقّاه إليك بنفس نوع الضرر. وبالإضافة لذلك تعالج نفسك بمقدار 10% من الضرر (بعد التخفيف) الذي يسببه الـWorthy للأبطال.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "knights-vow",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2225,
@@ -2276,7 +3421,26 @@
     ],
     "icon": "icons/items/last-whisper.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "last-whisper",
+    "fits": [
+      "ad_crit"
+    ],
+    "groups": [
+      "last_whisper"
+    ],
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2278,
@@ -2305,7 +3469,29 @@
     ],
     "icon": "icons/items/lord-dominik-s-regards.png",
     "passive_ar": "Giant Slayer: تسبب 0–12 (حسب المستوى) ضرر أكبر ضد أبطال الأعداء.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "lord-dominiks-regards",
+    "fits": [
+      "ad_crit",
+      "ad_onhit",
+      "ad_lethality"
+    ],
+    "groups": [
+      "last_whisper"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2292,
@@ -2331,7 +3517,15 @@
     "strongAgainst": [],
     "icon": "icons/items/kraken-slayer.png",
     "passive_ar": "Bring it Down: الهجمات العادية عند الضربة (on-hit) تمنحك شحنة لمدة 3 ث، وتتراكم حتى 3 مرات فتُستهلك لتسبب 150–210 (حسب المستوى) / 120–168 (حسب المستوى) ضرر فيزيائي إضافي عند الضربة (on-hit)، ويزيد بمقدار 0 إلى 75، حتى 255–357 (حسب المستوى) / 204–285.6 (حسب المستوى) ضرر فيزيائي إضافي.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "kraken-slayer",
+    "fits": [
+      "ad_onhit",
+      "ad_crit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2141,
@@ -2357,7 +3551,27 @@
     ],
     "icon": "icons/items/liandry-s-torment.png",
     "passive_ar": "Torment: ضرر المهارات والهجمات المعزّزة يحرق الهدف فيسبب ضرر سحري يساوي 2% من أقصى صحته على مدى 3 ث.\nMadness: تسبب ضرر أكبر بنسبة 2% عن كل ثانية قتال ضد أبطال الأعداء، بحد أقصى 6% بعد 3 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "liandrys-torment",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2143,
@@ -2382,7 +3596,17 @@
     "strongAgainst": [],
     "icon": "icons/items/lich-bane.png",
     "passive_ar": "Spellblade: بعد استخدام مهارة، هجمتك العادية التالية خلال 10 ث تسبب ضرر سحري إضافي عند الضربة (on-hit) يساوي 75% AD أساسي (+ 50% AP). الضرر يقل إلى 50% ضد المباني. (وقت التبريد 1.5 ث (بعد التأثير))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "lich-bane",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2380,
@@ -2416,7 +3640,28 @@
     ],
     "icon": "icons/items/locket-of-the-iron-solari.png",
     "passive_ar": null,
-    "active_ar": "Locket: تحمي نفسك والأبطال الحلفاء القريبين بدرع حماية بقيمة 250–370 (حسب المستوى) لمدة 2.5 ث (مدى 1000). يقل التأثير إلى 50% من قوته إذا تأثر الهدف بـLocket آخر خلال 20 ث. (وقت التبريد 60 ث)"
+    "active_ar": "Locket: تحمي نفسك والأبطال الحلفاء القريبين بدرع حماية بقيمة 250–370 (حسب المستوى) لمدة 2.5 ث (مدى 1000). يقل التأثير إلى 50% من قوته إذا تأثر الهدف بـLocket آخر خلال 20 ث. (وقت التبريد 60 ث)",
+    "slug": "locket-of-the-iron-solari",
+    "fits": [
+      "tank",
+      "enchanter"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "kaisa",
+      "yone",
+      "sylas",
+      "lux",
+      "veigar",
+      "lee-sin",
+      "nocturne",
+      "brand",
+      "draven",
+      "mel"
+    ]
   },
   {
     "id": 2201,
@@ -2435,7 +3680,14 @@
     "strongAgainst": [],
     "icon": "icons/items/long-sword.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "long-sword",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2127,
@@ -2459,7 +3711,13 @@
     "strongAgainst": [],
     "icon": "icons/items/lost-chapter.png",
     "passive_ar": "Enlighten: رفع المستوى يُعيد 20% من أقصى مانا على مدى 3 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "lost-chapter",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2148,
@@ -2483,7 +3741,15 @@
     "strongAgainst": [],
     "icon": "icons/items/luden-s-echo.png",
     "passive_ar": "Echo: مهارتك التالية المسببة للضرر أو هجماتك المعزّزة تسبب 80 (+ 9% AP) ضرر سحري للهدف الأساسي وحتى 4 أعداء محيطين. عن كل هدف ثانوي ناقص عن الحد الأقصى، تسبب 22.2 (+ 1.4% AP) ضرر سحري إضافي للهدف الأساسي. (وقت التبريد 9 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "ludens-echo",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2180,
@@ -2510,7 +3776,26 @@
     ],
     "icon": "icons/items/malignance.png",
     "passive_ar": "Scorn: +20 تسريع للمهارة النهائية (Ult).\nHatefog: ضرر مهارتك النهائية (Ult) ضد الأبطال يحرق الأرض تحتهم لمدة 3 ث، فيحرق الأعداء بداخلها بإجمالي 180 (+ 15% AP) ضرر سحري خلال المدة ويقلّل مقاومتهم للسحر 10. (وقت التبريد 3 ث (لكل هدف، يبدأ عند إنشاء المنطقة))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "malignance",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2262,
@@ -2534,7 +3819,19 @@
     "strongAgainst": [],
     "icon": "icons/items/manamune.png",
     "passive_ar": "Awe: يمنحك قوة هجوم (AD) إضافية تساوي 1.5% من أقصى مانا. يُعيد 15% من المانا المصروفة.\nMana Charge: يولّد شحنة كل 3.3 ث، وتتراكم حتى 3 شحنات. كل هجمة عادية عند الضربة (on-hit) أو صرف للمانا يستهلك شحنة ويمنح +20 مانا، وتتراكم حتى 700 مانا.\nيتحوّل إلى Muramana عند +700 مانا.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "manamune",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2363,
@@ -2562,7 +3859,27 @@
     ],
     "icon": "icons/items/mantle-of-the-twelfth-hour.png",
     "passive_ar": "Lifeline: عند تلقّي ضرر سيُنزل صحتك تحت 30% من أقصى صحة، تكسب صحة أساسية بمقدار 200–300 (حسب المستوى) كصحة إضافية على مدى 5 ث، وكذلك 20% صمود (Tenacity) و10% سرعة حركة إضافية. وخلال نفس المدة تعالج صحة بمقدار 200–400 (حسب المستوى) (+120% دروع إضافية) (+120% مقاومة سحر إضافية) (+15% أقصى صحة). (وقت التبريد 70 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "mantle-of-the-twelfth-hour",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "lifeline"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "blitzcrank",
+      "pyke",
+      "aurora",
+      "varus",
+      "lissandra",
+      "riven",
+      "annie",
+      "fiddlesticks",
+      "sylas",
+      "malphite"
+    ]
   },
   {
     "id": 2246,
@@ -2592,7 +3909,28 @@
     ],
     "icon": "icons/items/maw-of-malmortius.png",
     "passive_ar": "Lifeline: إذا كنت ستتلقى ضررًا سحريًا سيُنزل صحتك تحت 35%، تكسب أولًا درع حماية يمتص 220–530 (حسب المستوى) ضرر سحري لمدة 3 ث. وتكسب أيضًا 10% امتصاص شامل حتى نهاية القتال. (وقت التبريد 70 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "maw-of-malmortius",
+    "fits": [
+      "ad_bruiser",
+      "ad_lethality"
+    ],
+    "groups": [
+      "lifeline"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "sylas",
+      "lux",
+      "veigar",
+      "brand",
+      "mel",
+      "blitzcrank",
+      "kaisa",
+      "yone",
+      "fizz",
+      "akali"
+    ]
   },
   {
     "id": 2171,
@@ -2614,7 +3952,13 @@
     "strongAgainst": [],
     "icon": "icons/items/mejai-s-soulstealer.png",
     "passive_ar": "Glory: يولّد 3 / 4 شحنات عن كل قتل لبطل و2 شحنات عن كل مساعدة، وتتراكم حتى 30. تخسر 10 شحنات عند الموت.\nFear: عن كل شحنة من Glory تكسب 5 قوة مهارات (AP)، حتى 150. وتكسب أيضًا 10% سرعة حركة إضافية طالما لديك 10 شحنات على الأقل.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "mejais-soulstealer",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2381,
@@ -2642,7 +3986,27 @@
     ],
     "icon": "icons/items/mikael-s-blessing.png",
     "passive_ar": null,
-    "active_ar": "Purify: يزيل كل تأثيرات التحكم (CC) السلبية (ما عدا الإطاحة في الهوا والإخضاع) عن البطل الحليف المستهدف ويعالجه بمقدار 150–250 (حسب المستوى). (وقت التبريد 75 ث)"
+    "active_ar": "Purify: يزيل كل تأثيرات التحكم (CC) السلبية (ما عدا الإطاحة في الهوا والإخضاع) عن البطل الحليف المستهدف ويعالجه بمقدار 150–250 (حسب المستوى). (وقت التبريد 75 ث)",
+    "slug": "mikaels-blessing",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "yasuo",
+      "thresh",
+      "aatrox",
+      "ksante",
+      "seraphine",
+      "nautilus"
+    ]
   },
   {
     "id": 2297,
@@ -2673,7 +4037,27 @@
     ],
     "icon": "icons/items/mercurial-scimitar.png",
     "passive_ar": "Perseverance: بعد انتهاء Quicksilver، تكسب 30% صمود (Tenacity) و30% مقاومة الإبطاء لمدة 1.5 ث.",
-    "active_ar": "Quicksilver: يزيل كل تأثيرات التحكم (CC) (ما عدا الإطاحة في الهوا)، وتكسب مناعة ضد التحكم (CC) لمدة 0.25 ث. (وقت التبريد 60 ث)"
+    "active_ar": "Quicksilver: يزيل كل تأثيرات التحكم (CC) (ما عدا الإطاحة في الهوا)، وتكسب مناعة ضد التحكم (CC) لمدة 0.25 ث. (وقت التبريد 60 ث)",
+    "slug": "mercurial-scimitar",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "thresh",
+      "seraphine",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank"
+    ]
   },
   {
     "id": 2405,
@@ -2703,7 +4087,27 @@
     ],
     "icon": "icons/items/mercury-s-treads.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "mercurys-treads",
+    "boots_tier": 2,
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "thresh",
+      "seraphine",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank"
+    ]
   },
   {
     "id": 2149,
@@ -2731,7 +4135,29 @@
     ],
     "icon": "icons/items/morellonomicon.png",
     "passive_ar": "Affliction: إلحاق ضرر سحري بأبطال الأعداء يفرض 50% جروح عميقة (Grievous Wounds) لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "morellonomicon",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "grievous_wounds"
+    ],
+    "timing": "early",
+    "early_component": "oblivion-orb",
+    "strong_vs_champs": [
+      "sylas",
+      "master-yi",
+      "mordekaiser",
+      "tryndamere",
+      "yuumi",
+      "morgana",
+      "darius",
+      "aatrox",
+      "lee-sin",
+      "nocturne"
+    ]
   },
   {
     "id": 2249,
@@ -2762,7 +4188,31 @@
     ],
     "icon": "icons/items/mortal-reminder.png",
     "passive_ar": "Sepsis: إلحاق ضرر فيزيائي بأبطال الأعداء يفرض 50% جروح عميقة (Grievous Wounds) لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "mortal-reminder",
+    "fits": [
+      "ad_crit",
+      "ad_onhit",
+      "ad_lethality"
+    ],
+    "groups": [
+      "grievous_wounds",
+      "last_whisper"
+    ],
+    "timing": "early",
+    "early_component": "executioners-calling",
+    "strong_vs_champs": [
+      "volibear",
+      "garen",
+      "nasus",
+      "dr-mundo",
+      "renekton",
+      "alistar",
+      "urgot",
+      "maokai",
+      "nunu-and-willump",
+      "sylas"
+    ]
   },
   {
     "id": 2263,
@@ -2778,14 +4228,27 @@
     "builtFrom": [
       "Manamune"
     ],
-    "category": null,
+    "category": "tier3-complete",
     "tags": [
       "build_ad"
     ],
     "strongAgainst": [],
     "icon": "icons/items/muramana.png",
     "passive_ar": "Awe: يمنحك قوة هجوم (AD) إضافية تساوي 2% من أقصى مانا. يُعيد 15% من المانا المصروفة.\nShock: هجماتك العادية ضد الأبطال تسبب ضرر فيزيائي إضافي يساوي 1.5% من أقصى مانا وتستهلك نفس المقدار من المانا. ضرر مهاراتك ضد الأبطال يسبب ضرر فيزيائي إضافي يساوي 3.5% من أقصى مانا ويستهلك نفس المقدار من المانا. يحدث هذا التأثير مرة واحدة لكل تفعيل.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "muramana",
+    "transforms_from": "manamune",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2151,
@@ -2811,7 +4274,16 @@
     "strongAgainst": [],
     "icon": "icons/items/nashor-s-tooth.png",
     "passive_ar": "Gnaw: الهجمات العادية ضد الأبطال تسبب 15 (+ 20% AP) ضرر سحري إضافي.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "nashors-tooth",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2271,
@@ -2837,7 +4309,15 @@
     "strongAgainst": [],
     "icon": "icons/items/navori-quickblades.png",
     "passive_ar": "Deft Strikes: الهجمات العادية تقلّل أوقات التبريد المتبقية لمهاراتك الأساسية بنسبة 15%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "navori-quickblades",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2124,
@@ -2858,7 +4338,13 @@
     "strongAgainst": [],
     "icon": "icons/items/needlessly-large-rod.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "needlessly-large-rod",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2309,
@@ -2882,7 +4368,24 @@
     ],
     "icon": "icons/items/negatron-cloak.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "negatron-cloak",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2233,
@@ -2905,7 +4408,13 @@
     "strongAgainst": [],
     "icon": "icons/items/noonquiver.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "noonquiver",
+    "fits": [
+      "ad_crit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 1033,
@@ -2927,7 +4436,24 @@
     ],
     "icon": "icons/items/null-magic-mantle.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "null-magic-mantle",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2153,
@@ -2951,7 +4477,26 @@
     ],
     "icon": "icons/items/oblivion-orb.png",
     "passive_ar": "Grievous Wounds: إلحاق ضرر سحري بأبطال الأعداء يفرض 40% جروح عميقة (Grievous Wounds) لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "oblivion-orb",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [
+      "grievous_wounds"
+    ],
+    "strong_vs_champs": [
+      "sylas",
+      "master-yi",
+      "mordekaiser",
+      "tryndamere",
+      "yuumi",
+      "morgana",
+      "darius",
+      "aatrox",
+      "lee-sin",
+      "nocturne"
+    ]
   },
   {
     "id": 2170,
@@ -2979,7 +4524,26 @@
     ],
     "icon": "icons/items/oceanid-s-trident.png",
     "passive_ar": "Lethal Weapon: إلحاق ضرر بالمهارات ببطل عدو يصيبه لمدة 3 ث، فتقل قوة دروع الحماية النشطة عليه وأي دروع يكسبها لاحقًا. المهارات ذات الهدف الواحد تقلّل 40% (+ 5% لكل 100 AP)، بحد أقصى 60%. مهارات المنطقة تقلّل 25% (+ 5% لكل 100 AP)، بحد أقصى 45%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "oceanids-trident",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "yasuo",
+      "lee-sin",
+      "nocturne",
+      "ksante",
+      "seraphine"
+    ]
   },
   {
     "id": 2378,
@@ -3003,7 +4567,14 @@
     "strongAgainst": [],
     "icon": "icons/items/overlord-s-bloodmail.png",
     "passive_ar": "Tyranny: تكسب قوة هجوم (AD) إضافية تساوي 2.5% من الصحة الإضافية.\nRetribution: تكسب قوة هجوم (AD) إضافية تساوي 0–9 (حسب المستوى) من إجمالي AD لديك من المصادر الأخرى.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "overlords-bloodmail",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2227,
@@ -3026,7 +4597,14 @@
     "strongAgainst": [],
     "icon": "icons/items/phage.png",
     "passive_ar": "Rage: الهجمات العادية عند الضربة (on-hit) تمنحك +20 / 10 سرعة حركة إضافية لمدة 2 ث. قتل وحدة يمنحك +60 / 30 سرعة حركة إضافية. المكافآت لا تتراكم.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "phage",
+    "fits": [
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2260,
@@ -3052,7 +4630,15 @@
     "strongAgainst": [],
     "icon": "icons/items/phantom-dancer.png",
     "passive_ar": "Spectral Waltz: هجمتك العادية التالية ضد بطل تمنحك شحنة من Spectral Waltz لمدة 6 ث، حتى 5 شحنات. عن كل شحنة تكسب 6% سرعة هجوم إضافية و1% سرعة حركة إضافية، بإجمالي 30% سرعة هجوم إضافية و5% سرعة حركة إضافية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "phantom-dancer",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2235,
@@ -3073,7 +4659,14 @@
     "strongAgainst": [],
     "icon": "icons/items/pickaxe.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "pickaxe",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2406,
@@ -3101,7 +4694,27 @@
     ],
     "icon": "icons/items/plated-steelcaps.png",
     "passive_ar": "Block: يقلّل الضرر الداخل من هجمات الأبطال بنسبة 10%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "plated-steelcaps",
+    "boots_tier": 2,
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": 2295,
@@ -3127,7 +4740,26 @@
     ],
     "icon": "icons/items/quicksilver-sash.png",
     "passive_ar": "Perseverance: بعد انتهاء Quicksilver، تكسب 30% صمود (Tenacity) و30% مقاومة الإبطاء لمدة 1.5 ث.",
-    "active_ar": "Quicksilver: يزيل كل تأثيرات التحكم (CC) (ما عدا الإطاحة في الهوا)، وتكسب مناعة ضد التحكم (CC) لمدة 0.25 ث. (وقت التبريد 60 ث)"
+    "active_ar": "Quicksilver: يزيل كل تأثيرات التحكم (CC) (ما عدا الإطاحة في الهوا)، وتكسب مناعة ضد التحكم (CC) لمدة 0.25 ث. (وقت التبريد 60 ث)",
+    "slug": "quicksilver-sash",
+    "fits": [
+      "any"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "thresh",
+      "seraphine",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank"
+    ]
   },
   {
     "id": 2145,
@@ -3149,7 +4781,15 @@
     "strongAgainst": [],
     "icon": "icons/items/rabadon-s-deathcap.png",
     "passive_ar": "Overkill: يزيد قوة المهارات (AP) بنسبة 30%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "rabadons-deathcap",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2250,
@@ -3174,7 +4814,15 @@
     "strongAgainst": [],
     "icon": "icons/items/rapid-firecannon.png",
     "passive_ar": "Sharpshooter: حركتك وهجماتك العادية تولّد شحنات من Energy، وتتراكم حتى 100. عند أقصى شحنات، هجمتك العادية التالية تستهلكها كلها لتسبب 80 ضرر سحري إضافي وتفعّل كل تأثيرات Energized. الهجمات المشحونة تكسب 150 مدى هجوم إضافي.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "rapid-firecannon",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2377,
@@ -3206,7 +4854,25 @@
     ],
     "icon": "icons/items/radiant-virtue.png",
     "passive_ar": "Guiding Light: عند استخدام المهارة النهائية (Ult)، تدخل في Transcended لمدة 6 ث، فيزيد أقصى صحتك 10%. كما تُطلق هالة تعالج الأبطال الحلفاء القريبين بمقدار 17.5% من أقصى صحتك على مدى المدة. الأبطال بعيدو المدى يتلقّون علاجًا أقل بنسبة 50%. (وقت التبريد 60 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "radiant-virtue",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "yunara",
+      "volibear",
+      "kaisa",
+      "smolder",
+      "yone",
+      "shyvana",
+      "jax",
+      "kayle",
+      "warwick",
+      "corki"
+    ]
   },
   {
     "id": 2345,
@@ -3234,7 +4900,25 @@
     ],
     "icon": "icons/items/randuin-s-omen.png",
     "passive_ar": "Resilience: يقلّل الضرر الداخل من الضربات الحرجة بنسبة 30%.\nCountercurrent: التعرض لضربة حرجة بضرر فيزيائي يولّد شحنة لمدة 5 ث، وتتجدد مع الضربات التالية وتتراكم حتى 4 مرات. كل شحنة تمنح 5% سرعة حركة إضافية و5% مقاومة الإبطاء، حتى أقصى 20% سرعة حركة إضافية و20% مقاومة الإبطاء.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "randuins-omen",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "caitlyn",
+      "nocturne",
+      "draven",
+      "yunara",
+      "volibear"
+    ]
   },
   {
     "id": 2206,
@@ -3255,7 +4939,13 @@
     "strongAgainst": [],
     "icon": "icons/items/recurve-bow.png",
     "passive_ar": "Reinforced: الهجمات العادية تسبب 15 ضرر فيزيائي إضافي عند الضربة (on-hit).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "recurve-bow",
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2611,
@@ -3281,7 +4971,18 @@
     "strongAgainst": [],
     "icon": "icons/items/redemption.png",
     "passive_ar": null,
-    "active_ar": "Intervention: استدعِ شعاع ضوء يضرب المكان المستهدف بعد 2.5 ث، ويمنح رؤية على المنطقة طوال المدة. الحلفاء داخل المنطقة يُعالَجون بمقدار 150–350 (حسب المستوى)، بينما أبطال الأعداء بداخلها يتلقّون 10% من أقصى صحة الهدف كضرر حقيقي. يمكن استخدامه وأنت ميت. (وقت التبريد 60 ث)"
+    "active_ar": "Intervention: استدعِ شعاع ضوء يضرب المكان المستهدف بعد 2.5 ث، ويمنح رؤية على المنطقة طوال المدة. الحلفاء داخل المنطقة يُعالَجون بمقدار 150–350 (حسب المستوى)، بينما أبطال الأعداء بداخلها يتلقّون 10% من أقصى صحة الهدف كضرر حقيقي. يمكن استخدامه وأنت ميت. (وقت التبريد 60 ث)",
+    "slug": "redemption",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "enchanter"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2107,
@@ -3293,14 +4994,20 @@
     "passive": "Sentry: You deal 1 bonus damage against Warding Totem revealed by Sweeping Lens, Control Ward, or Scryer's Bloom.\nRestraint: You earn 50% reduced gold from killing minions and monsters. Killing minions will also grant 100% kill gold to the nearby ally.\nTribute: Generates a charge every 30 seconds, up to 3 charges. Consuming a charge grants 65 gold and heals for 20–80 (by level), and grants 1 permanent stack of Tribute to the nearest allied champion. Certain activities near an allied champion will consume charges: Damaging attacks and abilities against enemy champions and turrets. Attacking a minion below 65% health. This also executes them. When a nearby minion is killed while you have 3 charges. This also grants 100% kill gold to the nearby ally.\nQuest: Earn 750 gold using Quest items to upgrade to Bulwark of the Mountain.",
     "active": null,
     "builtFrom": [],
-    "category": "tier1-basic",
+    "category": "support-quest",
     "tags": [
       "build_support"
     ],
     "strongAgainst": [],
     "icon": "icons/items/relic-shield.png",
     "passive_ar": "Sentry: تسبب 1 ضرر إضافي ضد Warding Totem التي كشفها Sweeping Lens أو Control Ward أو Scryer's Bloom.\nRestraint: تكسب ذهبًا أقل بنسبة 50% من قتل التوابع والوحوش. وقتل التوابع يمنح الحليف القريب 100% من ذهب القتل.\nTribute: يولّد شحنة كل 30 ث، حتى 3 شحنات. استهلاك شحنة يمنحك 65 ذهب ويعالجك بمقدار 20–80 (حسب المستوى)، ويمنح أقرب بطل حليف شحنة دائمة واحدة من Tribute. أنشطة معينة قرب بطل حليف تستهلك الشحنات: الهجمات والمهارات المسببة للضرر ضد أبطال الأعداء والأبراج. مهاجمة تابع تحت 65% صحة، وهذا يُعدمه أيضًا (إعدام). عند قتل تابع قريب وأنت معك 3 شحنات، وهذا يمنح الحليف القريب 100% من ذهب القتل أيضًا.\nQuest: اكسب 750 ذهب باستخدام آيتمات Quest لترقيتها إلى Bulwark of the Mountain.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "relic-shield",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2168,
@@ -3324,7 +5031,15 @@
     "strongAgainst": [],
     "icon": "icons/items/riftmaker.png",
     "passive_ar": "Void Corruption: عن كل ثانية قتال مع الأبطال، تسبب ضرر أكبر بنسبة 2%، وتتراكم حتى 4 مرات بإجمالي 8% ضرر أكبر. عند أقصى شحنات تكسب 10% / 6% امتصاص شامل.\nVoid Infusion: تكسب قوة مهارات (AP) تساوي 2% من الصحة الإضافية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "riftmaker",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2113,
@@ -3343,7 +5058,13 @@
     "strongAgainst": [],
     "icon": "icons/items/ring-of-revelation.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "ring-of-revelation",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2147,
@@ -3367,7 +5088,15 @@
     "strongAgainst": [],
     "icon": "icons/items/rod-of-ages.png",
     "passive_ar": "Eternity: تُعيد مانا تساوي 20% من الضرر الداخل من الأبطال، وتعالج بمقدار 20% من المانا المصروفة، بحد أقصى 25 لكل مهارة؛ المهارات المتفعّلة بالتبديل تعالج حتى 25 فقط في الثانية.\nVeteran: هذا الآيتم يكسب 20 صحة إضافية و40 مانا إضافية و4 قوة مهارات (AP) كل 15 ث، وتتراكم حتى 10 مرات لتصل إلى 150 صحة إضافية و300 مانا إضافية و40 قوة مهارات (AP).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "rod-of-ages",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 1028,
@@ -3386,7 +5115,13 @@
     "strongAgainst": [],
     "icon": "icons/items/ruby-crystal.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "ruby-crystal",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2251,
@@ -3411,7 +5146,15 @@
     "strongAgainst": [],
     "icon": "icons/items/runaan-s-hurricane.png",
     "passive_ar": "Wind's Fury: الهجمات العادية تطلق سهامًا إضافية على حتى 2 من الأعداء أمامك (180)، كل سهم يسبب 55% AD ضرر فيزيائي. السهام تطبّق تأثيرات on-hit بفاعلية 100% وتتأثر بمعدّلات الضربة الحرجة.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "runaans-hurricane",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2146,
@@ -3435,7 +5178,16 @@
     "strongAgainst": [],
     "icon": "icons/items/rylai-s-crystal-scepter.png",
     "passive_ar": "Icy: مهاراتك المسببة للضرر المتفعّلة وهجماتك المعزّزة تبطّئ الأعداء المصابين 30% لمدة 0.75 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "rylais-crystal-scepter",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2130,
@@ -3463,7 +5215,27 @@
     ],
     "icon": "icons/items/seeker-s-armguard.png",
     "passive_ar": null,
-    "active_ar": "Stasis: تدخل في جمود (Stasis) لمدة 2.5 ث. (وقت التبريد 150 ث)"
+    "active_ar": "Stasis: تدخل في جمود (Stasis) لمدة 2.5 ث. (وقت التبريد 150 ث)",
+    "slug": "seekers-armguard",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "stasis"
+    ],
+    "strong_vs_champs": [
+      "lee-sin",
+      "nocturne",
+      "draven",
+      "kaisa",
+      "samira",
+      "yone",
+      "graves",
+      "miss-fortune",
+      "jhin",
+      "pyke"
+    ]
   },
   {
     "id": 2154,
@@ -3479,14 +5251,26 @@
     "builtFrom": [
       "Archangel's Staff"
     ],
-    "category": null,
+    "category": "tier3-complete",
     "tags": [
       "build_ap"
     ],
     "strongAgainst": [],
     "icon": "icons/items/seraph-s-embrace.png",
     "passive_ar": "Awe: يمنحك قوة مهارات (AP) تساوي 2% من أقصى مانا. يُعيد 25% من المانا المصروفة.\nLifeline: إذا كنت ستتلقى ضررًا سيُنزل صحتك تحت 35% من أقصى صحة، تكسب أولًا درع حماية يساوي (16% من المانا الحالية) لمدة 2 ث، ويستهلك 15% من المانا الحالية. (وقت التبريد 70 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "seraphs-embrace",
+    "transforms_from": "archangels-staff",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "lifeline",
+      "mana_charge"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2274,
@@ -3515,7 +5299,26 @@
     ],
     "icon": "icons/items/serpent-s-fang.png",
     "passive_ar": "Shield Reaver: إلحاق ضرر ببطل عدو يصيبه لمدة 3 ث، فتقل قوة دروع الحماية النشطة عليه وأي دروع يكسبها لاحقًا. الأبطال قريبو المدى يقلّلون 40% (+ 10% لكل 100 AD إضافي)، بحد أقصى 60%. الأبطال بعيدو المدى يقلّلون 25% (+ 10% لكل 100 AD إضافي)، بحد أقصى 45%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "serpents-fang",
+    "fits": [
+      "ad_lethality",
+      "ad_crit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "galio",
+      "sett",
+      "braum",
+      "sion",
+      "shen",
+      "poppy",
+      "skarner"
+    ]
   },
   {
     "id": 2209,
@@ -3540,7 +5343,24 @@
     ],
     "icon": "icons/items/serrated-dirk.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "serrated-dirk",
+    "fits": [
+      "ad_lethality"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2269,
@@ -3568,7 +5388,29 @@
     ],
     "icon": "icons/items/serylda-s-grudge.png",
     "passive_ar": "Icy: ضرر مهاراتك وهجماتك المعزّزة تبطّئ الوحدات المصابة التي صحتها تحت 60% من أقصى صحتك بنسبة 30% لمدة 1 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "seryldas-grudge",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [
+      "last_whisper"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2122,
@@ -3589,7 +5431,15 @@
     "strongAgainst": [],
     "icon": "icons/items/sheen.png",
     "passive_ar": "Spellblade: بعد استخدام مهارة، هجمتك العادية التالية خلال 10 ث تسبب ضرر فيزيائي إضافي عند الضربة (on-hit) يساوي 100% AD أساسي. الضرر يقل إلى 50% ضد المباني. (وقت التبريد 1.5 ث (بعد التأثير))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "sheen",
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2308,
@@ -3601,14 +5451,20 @@
     "passive": "Burn: While in combat, deal 5–10 (by level) magic damage per second to nearby enemies.",
     "active": null,
     "builtFrom": [],
-    "category": "tier1-basic",
+    "category": "support-quest",
     "tags": [
       "build_tank"
     ],
     "strongAgainst": [],
     "icon": "icons/items/shimmering-spark.png",
     "passive_ar": "Burn: أثناء القتال تسبب 5–10 (حسب المستوى) ضرر سحري كل ثانية للأعداء القريبين.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "shimmering-spark",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2381,
@@ -3634,7 +5490,18 @@
     "strongAgainst": [],
     "icon": "icons/items/shurelya-s-battlesong.png",
     "passive_ar": null,
-    "active_ar": "Inspiring Speech: يمنحك ويمنح الحلفاء ضمن 800 وحدة 30% سرعة حركة إضافية لمدة 4 ث. (وقت التبريد 60 ث)"
+    "active_ar": "Inspiring Speech: يمنحك ويمنح الحلفاء ضمن 800 وحدة 30% سرعة حركة إضافية لمدة 4 ث. (وقت التبريد 60 ث)",
+    "slug": "shurelyas-battlesong",
+    "fits": [
+      "enchanter",
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2281,
@@ -3658,7 +5525,14 @@
     "strongAgainst": [],
     "icon": "icons/items/spear-of-shojin.png",
     "passive_ar": "Dragonforce: +20 تسريع للمهارات الأساسية.\nFocused Will: إلحاق ضرر بأبطال الأعداء أو الوحوش يزيد ضرر مهاراتك والمهارة السلبية بنسبة 3% لمدة 6 ث، وتتراكم حتى 12%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "spear-of-shojin",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2111,
@@ -3668,14 +5542,20 @@
     "passive": "Sentry: You deal 1 bonus damage against Warding Totem revealed by Sweeping Lens, Control Ward, or Scryer's Bloom.\nVersatile: Gain 10 attack damage or 20 ability power (Adaptive).\nRestraint: You earn 50% reduced gold from killing minions and monsters. Killing minions will also grant 100% kill gold to the nearby ally.\nTribute: Generates a charge every 30 seconds, up to 3 charges. Consuming a charge grants 65 gold and heals for 20–80 (by level), and grants 1 permanent stack of Tribute to the nearest allied champion. Certain activities near an allied champion will consume charges: Damaging attacks and abilities against enemy champions and turrets. Attacking a minion below 65% health. This also executes them. When a nearby minion is killed while you have 3 charges. This also grants 100% kill gold to the nearby ally.\nQuest: Earn 750 gold using Quest items to upgrade to Black Mist Scythe.",
     "active": null,
     "builtFrom": [],
-    "category": "tier1-basic",
+    "category": "support-quest",
     "tags": [
       "build_support"
     ],
     "strongAgainst": [],
     "icon": "icons/items/spectral-sickle.png",
     "passive_ar": "Sentry: تسبب 1 ضرر إضافي ضد Warding Totem التي كشفها Sweeping Lens أو Control Ward أو Scryer's Bloom.\nVersatile: تكسب 10 قوة هجوم (AD) أو 20 قوة مهارات (AP) (تكيّفي).\nRestraint: تكسب ذهبًا أقل بنسبة 50% من قتل التوابع والوحوش. وقتل التوابع يمنح الحليف القريب 100% من ذهب القتل.\nTribute: يولّد شحنة كل 30 ث، حتى 3 شحنات. استهلاك شحنة يمنحك 65 ذهب ويعالجك بمقدار 20–80 (حسب المستوى)، ويمنح أقرب بطل حليف شحنة دائمة واحدة من Tribute. أنشطة معينة قرب بطل حليف تستهلك الشحنات: الهجمات والمهارات المسببة للضرر ضد أبطال الأعداء والأبراج. مهاجمة تابع تحت 65% صحة، وهذا يُعدمه أيضًا (إعدام). عند قتل تابع قريب وأنت معك 3 شحنات، وهذا يمنح الحليف القريب 100% من ذهب القتل أيضًا.\nQuest: اكسب 750 ذهب باستخدام آيتمات Quest لترقيتها إلى Black Mist Scythe.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "spectral-sickle",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2324,
@@ -3700,7 +5580,24 @@
     ],
     "icon": "icons/items/spectre-s-cowl.png",
     "passive_ar": "Spectral Visit: يمنح 150% تجدد صحة أساسي لمدة 10 ث بعد تلقّي ضرر من بطل عدو.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "spectres-cowl",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "sylas",
+      "malphite",
+      "mordekaiser",
+      "lux",
+      "yuumi",
+      "morgana",
+      "zyra",
+      "veigar",
+      "thresh",
+      "teemo"
+    ]
   },
   {
     "id": 2417,
@@ -3728,7 +5625,32 @@
     ],
     "icon": "icons/items/spellslinger-s-shoes.png",
     "passive_ar": "Big Bully: هجماتك ومهاراتك تسبب 18 ضرر حقيقي إضافي ضد التوابع.\nEquilibrium: تكسب +50% تجدد صحة أساسي إذا لم تستخدم المانا.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "spellslingers-shoes",
+    "boots_tier": 3,
+    "upgrades_from": "boots-of-mana",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "enchanter",
+      "ad_onhit"
+    ],
+    "groups": [
+      "boots"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2160,
@@ -3754,7 +5676,16 @@
     "strongAgainst": [],
     "icon": "icons/items/staff-of-flowing-waters.png",
     "passive_ar": "Rapids: علاج بطل حليف آخر أو حمايته بدرع يمنحكما 15 تسريع مهارات و40 قوة مهارات (AP) لمدة 6 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "staff-of-flowing-waters",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser",
+      "enchanter"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2240,
@@ -3781,7 +5712,15 @@
     "strongAgainst": [],
     "icon": "icons/items/statikk-shiv.png",
     "passive_ar": "Electroshock: الهجمات العادية تمنح 7 شحنات Energized إضافية.\nElectrospark: حركتك وهجماتك العادية تولّد شحنات من Energy، وتتراكم حتى 100. عند أقصى شحنات، هجمتك العادية التالية تستهلكها كلها لإطلاق سلسلة برق على 4–7 (حسب المستوى) أهداف، تسبب 60 ضرر سحري إضافي (يزيد إلى 90 ضرر سحري إضافي ضد التوابع والوحوش) وتطبّق تأثيرات on-hit على أهداف الارتداد الثانوية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "statikk-shiv",
+    "fits": [
+      "ad_onhit",
+      "ad_crit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2350,
@@ -3810,7 +5749,28 @@
     ],
     "icon": "icons/items/sterak-s-gage.png",
     "passive_ar": "Heavy Handed: تكسب قوة هجوم (AD) إضافية تساوي 50% من AD أساسي.\nLifeline: إذا كنت ستتلقى ضررًا سيُنزل صحتك تحت 35% من أقصى صحة، تكسب أولًا درع حماية يساوي 75% من الصحة الإضافية يتناقص على مدى 5 ث. (وقت التبريد 70 ث)\nSterak's Fury: تفعيل Lifeline يكبّر حجمك ويعزّزك لمدة 8 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "steraks-gage",
+    "fits": [
+      "ad_bruiser",
+      "tank"
+    ],
+    "groups": [
+      "lifeline"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "blitzcrank",
+      "pyke",
+      "aurora",
+      "varus",
+      "lissandra",
+      "riven",
+      "annie",
+      "fiddlesticks",
+      "sylas",
+      "malphite"
+    ]
   },
   {
     "id": 2288,
@@ -3836,7 +5796,15 @@
     "strongAgainst": [],
     "icon": "icons/items/stormrazor.png",
     "passive_ar": "Bolt: حركتك وهجماتك العادية تولّد شحنات من Energy، وتتراكم حتى 100. عند أقصى شحنات Energy، هجمتك العادية التالية تستهلكها كلها لتسبب 120 ضرر سحري إضافي وتمنحك 45 سرعة حركة إضافية لمدة 1.5 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "stormrazor",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2701,
@@ -3863,7 +5831,26 @@
     ],
     "icon": "icons/items/stormsurge.png",
     "passive_ar": "Stormraider: تسبيب ضرر لبطل عدو يساوي 25% من أقصى صحته خلال 2.5 ث يضع عليه Squall ويمنحك 25% سرعة حركة إضافية لمدة 2.5 ث. (وقت التبريد 25 ث (يبدأ عند التطبيق))\nSquall: بعد 2 ث من وضع Squall، يضرب الهدف ببرق ويسبب له 125 (+ 10% AP) ضرر سحري. إذا مات الهدف قبل أن يُضرب، ينبعث منه فورًا مجال كهربائي يصعق أبطال الأعداء القريبين ويسبب نفس الضرر ويمنحك 25 ذهب.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "stormsurge",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2293,
@@ -3889,7 +5876,17 @@
     "strongAgainst": [],
     "icon": "icons/items/stridebreaker.png",
     "passive_ar": "Stride: تكسب 20 سرعة حركة إضافية لمدة 2 ث عند تسبيب ضرر فيزيائي.",
-    "active_ar": "Breaking Shockwave: اندفاع في الاتجاه المستهدف (مدى 200)، يسبب 100% AD ضرر فيزيائي ويبطّئ الأعداء القريبين 40% لمدة 3 ث. (وقت التبريد 25 ث)"
+    "active_ar": "Breaking Shockwave: اندفاع في الاتجاه المستهدف (مدى 200)، يسبب 100% AD ضرر فيزيائي ويبطّئ الأعداء القريبين 40% لمدة 3 ث. (وقت التبريد 25 ث)",
+    "slug": "stridebreaker",
+    "fits": [
+      "ad_bruiser",
+      "ad_onhit"
+    ],
+    "groups": [
+      "active_item"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2287,
@@ -3914,7 +5911,14 @@
     "strongAgainst": [],
     "icon": "icons/items/sundered-sky.png",
     "passive_ar": "Lightshield Strike: هجمتك العادية التالية ضد بطل تكون ضربة حرجة بـ160% ضرر وتعالجك بمقدار 125% AD أساسي (+ 6% من الصحة المفقودة). (وقت التبريد 6 ث (لكل هدف))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "sundered-sky",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2341,
@@ -3942,7 +5946,28 @@
     ],
     "icon": "icons/items/sunfire-aegis.png",
     "passive_ar": "Immolate: أثناء القتال تسبب (+ 1.5% صحة إضافية) ضرر سحري كل ثانية للأعداء القريبين، ويزيد إلى 130% ضد الوحوش، و175–250 (حسب المستوى) ضد التوابع.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "sunfire-aegis",
+    "fits": [
+      "ad_bruiser",
+      "tank"
+    ],
+    "groups": [
+      "immolate"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "aatrox",
+      "lee-sin",
+      "caitlyn",
+      "nocturne",
+      "ksante"
+    ]
   },
   {
     "id": null,
@@ -3952,7 +5977,7 @@
     "passive": null,
     "active": "Scan your surroundings for 10 seconds, granting obscured vision of enemy units within that are not visible. Stealthed wards and traps are revealed. Stealthed wards are also disabled, lingering for 2 seconds after no longer being revealed. (cooldown 75)",
     "builtFrom": [],
-    "category": null,
+    "category": "trinket",
     "tags": [
       "vs_stealth",
       "build_any"
@@ -3962,7 +5987,24 @@
     ],
     "icon": "icons/items/sweeping-lens.png",
     "passive_ar": null,
-    "active_ar": "امسح محيطك لمدة 10 ث، فتمنحك رؤية مموّهة لوحدات الأعداء داخل النطاق غير الظاهرة. وارد (Ward) الأعداء المتخفية والفخاخ تنكشف. كما تتعطل وارد (Ward) المتخفية، وتبقى 2 ث بعد أن لا تعود مكشوفة. (وقت التبريد 75 ث)"
+    "active_ar": "امسح محيطك لمدة 10 ث، فتمنحك رؤية مموّهة لوحدات الأعداء داخل النطاق غير الظاهرة. وارد (Ward) الأعداء المتخفية والفخاخ تنكشف. كما تتعطل وارد (Ward) المتخفية، وتبقى 2 ث بعد أن لا تعود مكشوفة. (وقت التبريد 75 ث)",
+    "slug": "sweeping-lens",
+    "fits": [
+      "any"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "teemo",
+      "vayne",
+      "viego",
+      "akali",
+      "pyke",
+      "khazix",
+      "aurora",
+      "twitch",
+      "rengar",
+      "wukong"
+    ]
   },
   {
     "id": 2285,
@@ -3990,7 +6032,29 @@
     ],
     "icon": "icons/items/terminus.png",
     "passive_ar": "Shadow: الهجمات العادية تسبب 30 ضرر سحري إضافي عند الضربة (on-hit).\nJuxtaposition: الهجمات العادية عند الضربة (on-hit) ضد الأبطال تتبادل بين ضربات Light وDark، كل واحدة تمنح مكافأة لمدة 5 ث وتتراكم حتى 3 مرات. ضربات Light تمنح 5–8 (حسب المستوى) دروع (Armor) ومقاومة سحر (MR) إضافية، بينما ضربات Dark تمنح 10% اختراق الدروع واختراق السحر، بإجمالي 15–24 (حسب المستوى) مقاومة إضافية و30% اختراق عند أقصى شحنات من كل نوع.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "terminus",
+    "fits": [
+      "ad_onhit",
+      "ad_crit"
+    ],
+    "groups": [
+      "armor_shred_tb",
+      "last_whisper"
+    ],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2280,
@@ -4017,7 +6081,27 @@
     ],
     "icon": "icons/items/the-collector.png",
     "passive_ar": "Death and Taxes: عندما تسبب ضررًا كان سينزل صحة بطل تحت 5% من أقصى صحته، تُعدمه (إعدام). قتل الأبطال يمنحك 25 ذهب إضافية ويرفع حد الإعدام بشكل دائم بمقدار 0.1%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "the-collector",
+    "fits": [
+      "ad_crit",
+      "ad_lethality",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2121,
@@ -4037,7 +6121,17 @@
     "strongAgainst": [],
     "icon": "icons/items/tear-of-the-goddess.png",
     "passive_ar": "Awe: يُعيد 10% من المانا المصروفة.\nMana Charge: يولّد شحنة كل 3.3 ث، حتى 3 شحنات. كل صرف للمانا يستهلك شحنة ويمنح +16 مانا، وتتراكم حتى 700 مانا.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "tear-of-the-goddess",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser",
+      "ap_burst"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2348,
@@ -4067,7 +6161,28 @@
     ],
     "icon": "icons/items/thornmail.png",
     "passive_ar": "Thorns: عندما تتعرض لهجمة عادية، تسبب 20 (+ 6% دروع إضافية) (+ 1% صحة إضافية) ضرر سحري للمهاجم.\nEntwine: عندما تتعرض لهجمة عادية من بطل عدو، أو تسبب له أي ضرر، تفرض عليه 50% جروح عميقة (Grievous Wounds) لمدة 3 ث، تقلّل العلاج.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "thornmail",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "grievous_wounds"
+    ],
+    "timing": "early",
+    "early_component": "bramble-vest",
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "darius",
+      "nocturne",
+      "volibear",
+      "samira",
+      "viego",
+      "xin-zhao",
+      "garen",
+      "nasus"
+    ]
   },
   {
     "id": 2367,
@@ -4092,7 +6207,16 @@
     "strongAgainst": [],
     "icon": "icons/items/titanic-hydra.png",
     "passive_ar": "Cleave: هجمتك العادية التالية عند الضربة (on-hit) تسبب ضرر فيزيائي إضافي يساوي 25 (+ 3% صحة إضافية)، و80 (+ 10% صحة إضافية) ضرر فيزيائي للأعداء الآخرين في مخروط مدى 550 باتجاه الهدف الأساسي. المستخدمون بعيدو المدى يسببون 75% من الضرر. (وقت التبريد 1.75 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "titanic-hydra",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [
+      "hydra"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2244,
@@ -4120,7 +6244,18 @@
     "strongAgainst": [],
     "icon": "icons/items/trinity-force.png",
     "passive_ar": "Spellblade: بعد استخدام مهارة، هجمتك العادية التالية خلال 10 ث تسبب ضرر فيزيائي إضافي عند الضربة (on-hit) يساوي 200% AD أساسي. الضرر يقل إلى 50% ضد المباني. (وقت التبريد 1.5 ث (بعد التأثير))\nValor: الهجمات العادية عند الضربة (on-hit) تمنحك 20 / 10 سرعة حركة إضافية لمدة 2 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "trinity-force",
+    "fits": [
+      "ad_bruiser",
+      "ad_onhit",
+      "ad_crit"
+    ],
+    "groups": [
+      "spellblade"
+    ],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2803,
@@ -4150,7 +6285,25 @@
     ],
     "icon": "icons/items/unending-despair.png",
     "passive_ar": "Anguish: كل 4 ث من القتال مع الأبطال، تمتص من أبطال الأعداء القريبين، فتسبب ضرر سحري يساوي 3% من صحتك الإضافية وتعالج نفسك بمقدار 250% من الضرر (بعد التخفيف) المسبَّب.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "unending-despair",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "yunara",
+      "volibear",
+      "kaisa",
+      "smolder",
+      "yone",
+      "shyvana",
+      "jax",
+      "kayle",
+      "warwick",
+      "corki"
+    ]
   },
   {
     "id": 2221,
@@ -4172,7 +6325,13 @@
     "strongAgainst": [],
     "icon": "icons/items/vampiric-scepter.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "vampiric-scepter",
+    "fits": [
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2140,
@@ -4200,7 +6359,27 @@
     ],
     "icon": "icons/items/verdant-barrier.png",
     "passive_ar": "Annul: يمنحك درعًا ضد المهارات يصدّ مهارة البطل العدو التالية. (وقت التبريد 65 ث)",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "verdant-barrier",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "spell_shield"
+    ],
+    "strong_vs_champs": [
+      "sylas",
+      "lux",
+      "veigar",
+      "brand",
+      "mel",
+      "blitzcrank",
+      "kaisa",
+      "yone",
+      "fizz",
+      "akali"
+    ]
   },
   {
     "id": 2129,
@@ -4225,7 +6404,24 @@
     ],
     "icon": "icons/items/void-amethyst.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "void-amethyst",
+    "fits": [
+      "ap_burst"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2144,
@@ -4252,7 +6448,26 @@
     ],
     "icon": "icons/items/void-staff.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "void-staff",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2323,
@@ -4278,7 +6493,24 @@
     ],
     "icon": "icons/items/warden-s-mail.png",
     "passive_ar": "Cold Steel: عندما تتعرض لهجمة عادية، تقلّل سرعة هجوم المهاجم بنسبة 15% لمدة 1.5 ث.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "wardens-mail",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": [
+      "master-yi",
+      "tryndamere",
+      "yasuo",
+      "darius",
+      "kalista",
+      "caitlyn",
+      "nocturne",
+      "draven",
+      "yunara",
+      "volibear"
+    ]
   },
   {
     "id": null,
@@ -4288,14 +6520,20 @@
     "passive": "After 11:00 elapse, the recharge time is reduced by 10 seconds.",
     "active": "Place an invisible ward that grants sight of its surroundings for 90 seconds. Quick-casting prioritizes placing wards in brush you are within range of or walking towards. (cooldown 1)",
     "builtFrom": [],
-    "category": null,
+    "category": "trinket",
     "tags": [
       "build_any"
     ],
     "strongAgainst": [],
     "icon": "icons/items/warding-totem.png",
     "passive_ar": "بعد مرور 11:00، يقل وقت إعادة الشحن 10 ث.",
-    "active_ar": "ضع وارد (Ward) غير مرئي يمنح رؤية على محيطه لمدة 90 ث. الاستخدام السريع يعطي أولوية لوضع الوارد (Ward) في الأدغال الواقعة ضمن مداك أو التي تسير نحوها. (وقت التبريد 1 ث)"
+    "active_ar": "ضع وارد (Ward) غير مرئي يمنح رؤية على محيطه لمدة 90 ث. الاستخدام السريع يعطي أولوية لوضع الوارد (Ward) في الأدغال الواقعة ضمن مداك أو التي تسير نحوها. (وقت التبريد 1 ث)",
+    "slug": "warding-totem",
+    "fits": [
+      "any"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2344,
@@ -4319,7 +6557,14 @@
     "strongAgainst": [],
     "icon": "icons/items/warmog-s-armor.png",
     "passive_ar": "يمنحك Warmog's Heart إذا كان لديك 1250 صحة إضافية على الأقل.\nWarmog's Heart: بعد 5 ث بدون تلقّي ضرر، تتجدد 3.5% من أقصى صحتك كل ثانية.\nBlessed: العلاج الداخل ودروع الحماية وتجدد الصحة وتأثيرات الامتصاص تزيد بنسبة 30%.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "warmogs-armor",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2327,
@@ -4341,7 +6586,13 @@
     "strongAgainst": [],
     "icon": "icons/items/winged-moonplate.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "winged-moonplate",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2355,
@@ -4366,7 +6617,16 @@
     "strongAgainst": [],
     "icon": "icons/items/winter-s-approach.png",
     "passive_ar": "Awe: يمنحك صحة إضافية تساوي 15% من أقصى مانا. يُعيد 15% من المانا المصروفة.\nMana Charge: يولّد شحنة كل 3.3 ث، وتتراكم حتى 3 شحنات. كل هجمة عادية عند الضربة (on-hit) أو صرف للمانا أو تلقّي ضرر من الأبطال أو الوحوش الملحمية أو الأبراج يستهلك شحنة ويمنح +30 أقصى مانا، وتتراكم حتى 700 مانا.\nيتحوّل إلى Fimbulwinter عند +700 مانا.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "winters-approach",
+    "fits": [
+      "tank"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "timing": "mid",
+    "strong_vs_champs": []
   },
   {
     "id": 2118,
@@ -4385,14 +6645,22 @@
       "Forbidden Idol",
       "Ruby Crystal"
     ],
-    "category": "tier3-complete",
+    "category": "support-quest",
     "tags": [
       "build_support"
     ],
     "strongAgainst": [],
     "icon": "icons/items/whispering-circlet.png",
     "passive_ar": "Harmony: يمنحك قوة علاج ودرع حماية تساوي 0.25% من أقصى مانا. يُعيد 25% من المانا المصروفة.\nMana Charge: يولّد شحنة كل 3.3 ث، حتى 3 شحنات. كل صرف للمانا يستهلك شحنة ويمنح +14 مانا، وتتراكم حتى 700 مانا.\nيتحوّل إلى Diadem of Songs عند 700 مانا إضافية.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "whispering-circlet",
+    "fits": [
+      "enchanter"
+    ],
+    "groups": [
+      "mana_charge"
+    ],
+    "strong_vs_champs": []
   },
   {
     "id": 2266,
@@ -4422,7 +6690,25 @@
     ],
     "icon": "icons/items/wit-s-end.png",
     "passive_ar": "At Wit's End: هجماتك العادية تسبب 40 ضرر سحري إضافي عند الضربة (on-hit).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "wits-end",
+    "fits": [
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "mordekaiser",
+      "morgana",
+      "zyra",
+      "thresh",
+      "seraphine",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank"
+    ]
   },
   {
     "id": 2374,
@@ -4453,7 +6739,25 @@
     ],
     "icon": "icons/items/yordle-trap.png",
     "passive_ar": "Catcher: عند إبطاء بطل عدو أو شلّ حركته، تكسب أنت وحليف قريب 20 سرعة حركة إضافية و30% / 20% سرعة هجوم لمدة 8 / 4 ث. إذا مات بطل عدو وعليه مكافآت Catcher، تكسب 20 ذهب إضافي.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "yordle-trap",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "yunara",
+      "volibear",
+      "kaisa",
+      "smolder",
+      "yone",
+      "shyvana",
+      "jax",
+      "kayle",
+      "warwick",
+      "corki"
+    ]
   },
   {
     "id": 2255,
@@ -4481,7 +6785,26 @@
     ],
     "icon": "icons/items/youmuu-s-ghostblade.png",
     "passive_ar": "Momentum: تكسب 30 / 20 سرعة حركة خارج القتال.",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "youmuus-ghostblade",
+    "fits": [
+      "ad_lethality",
+      "ad_bruiser"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": [
+      "malphite",
+      "ksante",
+      "nautilus",
+      "leona",
+      "volibear",
+      "blitzcrank",
+      "galio",
+      "chogath",
+      "garen",
+      "sett"
+    ]
   },
   {
     "id": 2238,
@@ -4506,7 +6829,15 @@
     "strongAgainst": [],
     "icon": "icons/items/yun-tal-wildarrows.png",
     "passive_ar": "Practice Makes Lethal: الهجمات العادية تمنحك 0.4% / 0.2% فرصة ضربة حرجة بشكل دائم، وتتراكم حتى 63 / 125 مرة (بحد أقصى 25% فرصة ضربة حرجة).\nFlurry: توجيه هجمة عادية ضد بطل عدو يمنحك 35% سرعة هجوم إضافية لمدة 6 ث (وقت التبريد 25 ث، ويقل بمقدار 1 ث عند الضربة (on-hit) وبمقدار 2 ث إذا كانت الهجمة ضربة حرجة).",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "yun-tal-wildarrows",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "timing": "late",
+    "strong_vs_champs": []
   },
   {
     "id": 2222,
@@ -4531,7 +6862,14 @@
     "strongAgainst": [],
     "icon": "icons/items/zeal.png",
     "passive_ar": null,
-    "active_ar": null
+    "active_ar": null,
+    "slug": "zeal",
+    "fits": [
+      "ad_crit",
+      "ad_onhit"
+    ],
+    "groups": [],
+    "strong_vs_champs": []
   },
   {
     "id": 2372,
@@ -4563,7 +6901,25 @@
     ],
     "icon": "icons/items/zeke-s-convergence.png",
     "passive_ar": "Converge: +10 تسريع للمهارة النهائية (Ult).\nFrostfire Tempest: استخدام المهارة النهائية (Ult) ينشئ هالة حولك تدوم 5 ث. إذا كان عدو داخل مداها البالغ 350 وحدة، تستدعي الهالة عاصفة تضر الأعداء القريبين بداخلها، فتسبب 150 ضرر سحري كل 0.5 ث على مدى 5 ث وتبطّئهم 30%. (وقت التبريد 30 ث (عند الاستخدام))",
-    "active_ar": null
+    "active_ar": null,
+    "slug": "zekes-convergence",
+    "fits": [
+      "tank"
+    ],
+    "groups": [],
+    "timing": "mid",
+    "strong_vs_champs": [
+      "yunara",
+      "volibear",
+      "kaisa",
+      "smolder",
+      "yone",
+      "shyvana",
+      "jax",
+      "kayle",
+      "warwick",
+      "corki"
+    ]
   },
   {
     "id": 2386,
@@ -4591,6 +6947,29 @@
     ],
     "icon": "icons/items/zhonya-s-hourglass.png",
     "passive_ar": null,
-    "active_ar": "Stasis: تدخل في جمود (Stasis) لمدة 2.5 ث. (وقت التبريد 90 ث)"
+    "active_ar": "Stasis: تدخل في جمود (Stasis) لمدة 2.5 ث. (وقت التبريد 90 ث)",
+    "slug": "zhonyas-hourglass",
+    "fits": [
+      "ap_burst",
+      "ap_bruiser"
+    ],
+    "groups": [
+      "active_item",
+      "stasis"
+    ],
+    "timing": "late",
+    "early_component": "seekers-armguard",
+    "strong_vs_champs": [
+      "lee-sin",
+      "nocturne",
+      "draven",
+      "kaisa",
+      "samira",
+      "yone",
+      "graves",
+      "miss-fortune",
+      "jhin",
+      "pyke"
+    ]
   }
 ]

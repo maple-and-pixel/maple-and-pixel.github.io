@@ -49,8 +49,10 @@
       "build_bruiser",
       "dmg_ad",
       "healer",
-      "cc_heavy"
-    ]
+      "cc_heavy",
+      "healer_heavy"
+    ],
+    "slug": "aatrox"
   },
   {
     "id": "ahri",
@@ -102,7 +104,8 @@
       "dmg_ap",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "ahri"
   },
   {
     "id": "akali",
@@ -156,7 +159,8 @@
       "burst",
       "mobile",
       "stealth"
-    ]
+    ],
+    "slug": "akali"
   },
   {
     "id": "akshan",
@@ -210,7 +214,8 @@
       "mobile",
       "stealth",
       "poke"
-    ]
+    ],
+    "slug": "akshan"
   },
   {
     "id": "alistar",
@@ -263,7 +268,8 @@
       "tanky",
       "cc_heavy",
       "healer"
-    ]
+    ],
+    "slug": "alistar"
   },
   {
     "id": "ambessa",
@@ -316,7 +322,8 @@
       "dmg_ad",
       "mobile",
       "sustained_dps"
-    ]
+    ],
+    "slug": "ambessa"
   },
   {
     "id": "amumu",
@@ -370,7 +377,8 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "amumu"
   },
   {
     "id": "annie",
@@ -423,7 +431,8 @@
       "burst",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "annie"
   },
   {
     "id": "ashe",
@@ -477,7 +486,8 @@
       "sustained_dps",
       "poke",
       "cc_heavy"
-    ]
+    ],
+    "slug": "ashe"
   },
   {
     "id": "aurelion-sol",
@@ -529,7 +539,8 @@
       "dmg_ap",
       "poke",
       "cc_heavy"
-    ]
+    ],
+    "slug": "aurelion-sol"
   },
   {
     "id": "aurora",
@@ -584,7 +595,8 @@
       "mobile",
       "stealth",
       "cc_heavy"
-    ]
+    ],
+    "slug": "aurora"
   },
   {
     "id": "bard",
@@ -636,7 +648,8 @@
       "dmg_ap",
       "cc_heavy",
       "mobile"
-    ]
+    ],
+    "slug": "bard"
   },
   {
     "id": "blitzcrank",
@@ -689,7 +702,8 @@
       "cc_heavy",
       "burst",
       "tanky"
-    ]
+    ],
+    "slug": "blitzcrank"
   },
   {
     "id": "brand",
@@ -742,7 +756,8 @@
       "dmg_ap",
       "burst",
       "poke"
-    ]
+    ],
+    "slug": "brand"
   },
   {
     "id": "braum",
@@ -795,7 +810,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "braum"
   },
   {
     "id": "caitlyn",
@@ -847,7 +863,8 @@
       "dmg_ad",
       "sustained_dps",
       "poke"
-    ]
+    ],
+    "slug": "caitlyn"
   },
   {
     "id": "camille",
@@ -902,7 +919,8 @@
       "shielder",
       "mobile",
       "cc_heavy"
-    ]
+    ],
+    "slug": "camille"
   },
   {
     "id": "chogath",
@@ -954,7 +972,8 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "chogath"
   },
   {
     "id": "corki",
@@ -1008,7 +1027,8 @@
       "dmg_ad",
       "true_damage",
       "poke"
-    ]
+    ],
+    "slug": "corki"
   },
   {
     "id": "darius",
@@ -1062,7 +1082,8 @@
       "true_damage",
       "healer",
       "sustained_dps"
-    ]
+    ],
+    "slug": "darius"
   },
   {
     "id": "diana",
@@ -1116,7 +1137,8 @@
       "dmg_ap",
       "burst",
       "shielder"
-    ]
+    ],
+    "slug": "diana"
   },
   {
     "id": "dr-mundo",
@@ -1169,8 +1191,10 @@
       "dmg_ap",
       "tanky",
       "healer",
-      "sustained_dps"
-    ]
+      "sustained_dps",
+      "healer_heavy"
+    ],
+    "slug": "dr-mundo"
   },
   {
     "id": "draven",
@@ -1222,7 +1246,8 @@
       "dmg_ad",
       "sustained_dps",
       "burst"
-    ]
+    ],
+    "slug": "draven"
   },
   {
     "id": "ekko",
@@ -1278,7 +1303,8 @@
       "mobile",
       "shielder",
       "healer"
-    ]
+    ],
+    "slug": "ekko"
   },
   {
     "id": "evelynn",
@@ -1330,7 +1356,8 @@
       "dmg_ap",
       "stealth",
       "burst"
-    ]
+    ],
+    "slug": "evelynn"
   },
   {
     "id": "ezreal",
@@ -1383,7 +1410,8 @@
       "poke",
       "mobile",
       "sustained_dps"
-    ]
+    ],
+    "slug": "ezreal"
   },
   {
     "id": "fiddlesticks",
@@ -1437,7 +1465,8 @@
       "healer",
       "stealth",
       "burst"
-    ]
+    ],
+    "slug": "fiddlesticks"
   },
   {
     "id": "fiora",
@@ -1490,8 +1519,10 @@
       "true_damage",
       "mobile",
       "sustained_dps",
-      "healer"
-    ]
+      "healer",
+      "healer_heavy"
+    ],
+    "slug": "fiora"
   },
   {
     "id": "fizz",
@@ -1545,7 +1576,8 @@
       "dmg_ap",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "fizz"
   },
   {
     "id": "galio",
@@ -1599,7 +1631,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "galio"
   },
   {
     "id": "garen",
@@ -1653,7 +1686,8 @@
       "tanky",
       "sustained_dps",
       "healer"
-    ]
+    ],
+    "slug": "garen"
   },
   {
     "id": "gnar",
@@ -1706,7 +1740,8 @@
       "tanky",
       "cc_heavy",
       "poke"
-    ]
+    ],
+    "slug": "gnar"
   },
   {
     "id": "gragas",
@@ -1760,7 +1795,8 @@
       "dmg_ap",
       "cc_heavy",
       "healer"
-    ]
+    ],
+    "slug": "gragas"
   },
   {
     "id": "graves",
@@ -1813,7 +1849,8 @@
       "dmg_ad",
       "burst",
       "sustained_dps"
-    ]
+    ],
+    "slug": "graves"
   },
   {
     "id": "gwen",
@@ -1866,8 +1903,10 @@
       "dmg_ap",
       "true_damage",
       "healer",
-      "sustained_dps"
-    ]
+      "sustained_dps",
+      "healer_heavy"
+    ],
+    "slug": "gwen"
   },
   {
     "id": "hecarim",
@@ -1919,7 +1958,8 @@
       "dmg_ad",
       "mobile",
       "cc_heavy"
-    ]
+    ],
+    "slug": "hecarim"
   },
   {
     "id": "heimerdinger",
@@ -1970,7 +2010,8 @@
       "build_ap",
       "dmg_ap",
       "poke"
-    ]
+    ],
+    "slug": "heimerdinger"
   },
   {
     "id": "hwei",
@@ -2023,7 +2064,8 @@
       "dmg_ap",
       "poke",
       "cc_heavy"
-    ]
+    ],
+    "slug": "hwei"
   },
   {
     "id": "irelia",
@@ -2077,7 +2119,8 @@
       "mobile",
       "sustained_dps",
       "healer"
-    ]
+    ],
+    "slug": "irelia"
   },
   {
     "id": "janna",
@@ -2129,7 +2172,8 @@
       "dmg_ap",
       "shielder",
       "cc_heavy"
-    ]
+    ],
+    "slug": "janna"
   },
   {
     "id": "jarvan-iv",
@@ -2183,7 +2227,8 @@
       "cc_heavy",
       "shielder",
       "mobile"
-    ]
+    ],
+    "slug": "jarvan-iv"
   },
   {
     "id": "jax",
@@ -2236,7 +2281,8 @@
       "dmg_ad",
       "dmg_ap",
       "sustained_dps"
-    ]
+    ],
+    "slug": "jax"
   },
   {
     "id": "jayce",
@@ -2289,7 +2335,8 @@
       "dmg_ad",
       "poke",
       "burst"
-    ]
+    ],
+    "slug": "jayce"
   },
   {
     "id": "jhin",
@@ -2341,7 +2388,8 @@
       "dmg_ad",
       "burst",
       "poke"
-    ]
+    ],
+    "slug": "jhin"
   },
   {
     "id": "jinx",
@@ -2392,7 +2440,8 @@
       "build_ad",
       "dmg_ad",
       "sustained_dps"
-    ]
+    ],
+    "slug": "jinx"
   },
   {
     "id": "kaisa",
@@ -2446,7 +2495,8 @@
       "sustained_dps",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "kaisa"
   },
   {
     "id": "kalista",
@@ -2498,7 +2548,8 @@
       "dmg_ad",
       "sustained_dps",
       "mobile"
-    ]
+    ],
+    "slug": "kalista"
   },
   {
     "id": "karma",
@@ -2551,7 +2602,8 @@
       "dmg_ap",
       "shielder",
       "poke"
-    ]
+    ],
+    "slug": "karma"
   },
   {
     "id": "kassadin",
@@ -2605,7 +2657,8 @@
       "burst",
       "mobile",
       "shielder"
-    ]
+    ],
+    "slug": "kassadin"
   },
   {
     "id": "katarina",
@@ -2657,7 +2710,8 @@
       "dmg_ap",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "katarina"
   },
   {
     "id": "kayle",
@@ -2711,7 +2765,8 @@
       "dmg_ad",
       "sustained_dps",
       "healer"
-    ]
+    ],
+    "slug": "kayle"
   },
   {
     "id": "kayn",
@@ -2762,8 +2817,10 @@
       "build_bruiser",
       "dmg_ad",
       "mobile",
-      "healer"
-    ]
+      "healer",
+      "healer_heavy"
+    ],
+    "slug": "kayn"
   },
   {
     "id": "kennen",
@@ -2816,7 +2873,8 @@
       "dmg_ap",
       "poke",
       "cc_heavy"
-    ]
+    ],
+    "slug": "kennen"
   },
   {
     "id": "khazix",
@@ -2869,7 +2927,8 @@
       "burst",
       "stealth",
       "mobile"
-    ]
+    ],
+    "slug": "khazix"
   },
   {
     "id": "kindred",
@@ -2922,7 +2981,8 @@
       "sustained_dps",
       "mobile",
       "healer"
-    ]
+    ],
+    "slug": "kindred"
   },
   {
     "id": "kogmaw",
@@ -2974,7 +3034,8 @@
       "dmg_ap",
       "sustained_dps",
       "poke"
-    ]
+    ],
+    "slug": "kogmaw"
   },
   {
     "id": "ksante",
@@ -3028,7 +3089,8 @@
       "cc_heavy",
       "mobile",
       "shielder"
-    ]
+    ],
+    "slug": "ksante"
   },
   {
     "id": "lee-sin",
@@ -3082,7 +3144,8 @@
       "burst",
       "shielder",
       "healer"
-    ]
+    ],
+    "slug": "lee-sin"
   },
   {
     "id": "leona",
@@ -3134,7 +3197,8 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "leona"
   },
   {
     "id": "lillia",
@@ -3189,7 +3253,8 @@
       "mobile",
       "cc_heavy",
       "sustained_dps"
-    ]
+    ],
+    "slug": "lillia"
   },
   {
     "id": "lissandra",
@@ -3242,7 +3307,8 @@
       "cc_heavy",
       "poke",
       "burst"
-    ]
+    ],
+    "slug": "lissandra"
   },
   {
     "id": "lucian",
@@ -3295,7 +3361,8 @@
       "dmg_ad",
       "sustained_dps",
       "mobile"
-    ]
+    ],
+    "slug": "lucian"
   },
   {
     "id": "lulu",
@@ -3348,7 +3415,8 @@
       "shielder",
       "cc_heavy",
       "poke"
-    ]
+    ],
+    "slug": "lulu"
   },
   {
     "id": "lux",
@@ -3402,7 +3470,8 @@
       "poke",
       "burst",
       "shielder"
-    ]
+    ],
+    "slug": "lux"
   },
   {
     "id": "malphite",
@@ -3457,7 +3526,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "malphite"
   },
   {
     "id": "maokai",
@@ -3512,7 +3582,8 @@
       "tanky",
       "cc_heavy",
       "healer"
-    ]
+    ],
+    "slug": "maokai"
   },
   {
     "id": "master-yi",
@@ -3566,7 +3637,8 @@
       "healer",
       "true_damage",
       "mobile"
-    ]
+    ],
+    "slug": "master-yi"
   },
   {
     "id": "mel",
@@ -3619,7 +3691,8 @@
       "dmg_ap",
       "poke",
       "burst"
-    ]
+    ],
+    "slug": "mel"
   },
   {
     "id": "milio",
@@ -3670,8 +3743,10 @@
       "build_support",
       "dmg_ap",
       "shielder",
-      "healer"
-    ]
+      "healer",
+      "healer_heavy"
+    ],
+    "slug": "milio"
   },
   {
     "id": "miss-fortune",
@@ -3724,7 +3799,8 @@
       "burst",
       "sustained_dps",
       "poke"
-    ]
+    ],
+    "slug": "miss-fortune"
   },
   {
     "id": "mordekaiser",
@@ -3779,7 +3855,8 @@
       "healer",
       "cc_heavy",
       "sustained_dps"
-    ]
+    ],
+    "slug": "mordekaiser"
   },
   {
     "id": "morgana",
@@ -3835,7 +3912,8 @@
       "shielder",
       "healer",
       "poke"
-    ]
+    ],
+    "slug": "morgana"
   },
   {
     "id": "nami",
@@ -3888,7 +3966,8 @@
       "healer",
       "cc_heavy",
       "poke"
-    ]
+    ],
+    "slug": "nami"
   },
   {
     "id": "nasus",
@@ -3941,7 +4020,8 @@
       "tanky",
       "sustained_dps",
       "healer"
-    ]
+    ],
+    "slug": "nasus"
   },
   {
     "id": "nautilus",
@@ -3996,7 +4076,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "nautilus"
   },
   {
     "id": "nidalee",
@@ -4050,7 +4131,8 @@
       "burst",
       "mobile",
       "healer"
-    ]
+    ],
+    "slug": "nidalee"
   },
   {
     "id": "nilah",
@@ -4103,7 +4185,8 @@
       "sustained_dps",
       "mobile",
       "healer"
-    ]
+    ],
+    "slug": "nilah"
   },
   {
     "id": "nocturne",
@@ -4158,7 +4241,8 @@
       "healer",
       "shielder",
       "mobile"
-    ]
+    ],
+    "slug": "nocturne"
   },
   {
     "id": "norra",
@@ -4209,7 +4293,8 @@
       "build_ap",
       "dmg_ap",
       "poke"
-    ]
+    ],
+    "slug": "norra"
   },
   {
     "id": "nunu-and-willump",
@@ -4262,7 +4347,8 @@
       "tanky",
       "cc_heavy",
       "healer"
-    ]
+    ],
+    "slug": "nunu-and-willump"
   },
   {
     "id": "olaf",
@@ -4315,8 +4401,10 @@
       "dmg_ad",
       "true_damage",
       "healer",
-      "sustained_dps"
-    ]
+      "sustained_dps",
+      "healer_heavy"
+    ],
+    "slug": "olaf"
   },
   {
     "id": "orianna",
@@ -4368,7 +4456,8 @@
       "dmg_ap",
       "poke",
       "shielder"
-    ]
+    ],
+    "slug": "orianna"
   },
   {
     "id": "ornn",
@@ -4420,7 +4509,8 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "ornn"
   },
   {
     "id": "pantheon",
@@ -4474,7 +4564,8 @@
       "dmg_ad",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "pantheon"
   },
   {
     "id": "poppy",
@@ -4528,7 +4619,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "poppy"
   },
   {
     "id": "pyke",
@@ -4582,7 +4674,8 @@
       "cc_heavy",
       "mobile",
       "stealth"
-    ]
+    ],
+    "slug": "pyke"
   },
   {
     "id": "rakan",
@@ -4635,7 +4728,8 @@
       "shielder",
       "cc_heavy",
       "mobile"
-    ]
+    ],
+    "slug": "rakan"
   },
   {
     "id": "rammus",
@@ -4687,7 +4781,8 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "rammus"
   },
   {
     "id": "rell",
@@ -4739,7 +4834,8 @@
       "dmg_ad",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "rell"
   },
   {
     "id": "renekton",
@@ -4792,7 +4888,8 @@
       "tanky",
       "healer",
       "burst"
-    ]
+    ],
+    "slug": "renekton"
   },
   {
     "id": "rengar",
@@ -4845,7 +4942,8 @@
       "burst",
       "stealth",
       "mobile"
-    ]
+    ],
+    "slug": "rengar"
   },
   {
     "id": "riven",
@@ -4900,7 +4998,8 @@
       "mobile",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "riven"
   },
   {
     "id": "rumble",
@@ -4952,7 +5051,8 @@
       "dmg_ap",
       "sustained_dps",
       "shielder"
-    ]
+    ],
+    "slug": "rumble"
   },
   {
     "id": "ryze",
@@ -5003,7 +5103,8 @@
       "build_ap",
       "dmg_ap",
       "burst"
-    ]
+    ],
+    "slug": "ryze"
   },
   {
     "id": "samira",
@@ -5057,7 +5158,8 @@
       "sustained_dps",
       "mobile",
       "healer"
-    ]
+    ],
+    "slug": "samira"
   },
   {
     "id": "senna",
@@ -5111,7 +5213,8 @@
       "poke",
       "healer",
       "sustained_dps"
-    ]
+    ],
+    "slug": "senna"
   },
   {
     "id": "seraphine",
@@ -5166,7 +5269,8 @@
       "shielder",
       "cc_heavy",
       "poke"
-    ]
+    ],
+    "slug": "seraphine"
   },
   {
     "id": "sett",
@@ -5219,7 +5323,8 @@
       "tanky",
       "shielder",
       "cc_heavy"
-    ]
+    ],
+    "slug": "sett"
   },
   {
     "id": "shen",
@@ -5273,7 +5378,8 @@
       "tanky",
       "shielder",
       "mobile"
-    ]
+    ],
+    "slug": "shen"
   },
   {
     "id": "shyvana",
@@ -5326,7 +5432,8 @@
       "dmg_ap",
       "sustained_dps",
       "mobile"
-    ]
+    ],
+    "slug": "shyvana"
   },
   {
     "id": "singed",
@@ -5378,7 +5485,8 @@
       "dmg_ap",
       "tanky",
       "cc_heavy"
-    ]
+    ],
+    "slug": "singed"
   },
   {
     "id": "sion",
@@ -5432,7 +5540,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "sion"
   },
   {
     "id": "sivir",
@@ -5484,7 +5593,8 @@
       "dmg_ad",
       "sustained_dps",
       "shielder"
-    ]
+    ],
+    "slug": "sivir"
   },
   {
     "id": "skarner",
@@ -5538,7 +5648,8 @@
       "tanky",
       "cc_heavy",
       "shielder"
-    ]
+    ],
+    "slug": "skarner"
   },
   {
     "id": "smolder",
@@ -5591,7 +5702,8 @@
       "dmg_ap",
       "sustained_dps",
       "poke"
-    ]
+    ],
+    "slug": "smolder"
   },
   {
     "id": "sona",
@@ -5645,7 +5757,8 @@
       "shielder",
       "cc_heavy",
       "poke"
-    ]
+    ],
+    "slug": "sona"
   },
   {
     "id": "soraka",
@@ -5695,8 +5808,10 @@
     "tags": [
       "build_support",
       "dmg_ap",
-      "healer"
-    ]
+      "healer",
+      "healer_heavy"
+    ],
+    "slug": "soraka"
   },
   {
     "id": "swain",
@@ -5749,8 +5864,10 @@
       "dmg_ap",
       "healer",
       "sustained_dps",
-      "cc_heavy"
-    ]
+      "cc_heavy",
+      "healer_heavy"
+    ],
+    "slug": "swain"
   },
   {
     "id": "sylas",
@@ -5802,8 +5919,10 @@
       "dmg_ap",
       "burst",
       "mobile",
-      "healer"
-    ]
+      "healer",
+      "healer_heavy"
+    ],
+    "slug": "sylas"
   },
   {
     "id": "syndra",
@@ -5855,7 +5974,8 @@
       "dmg_ap",
       "burst",
       "poke"
-    ]
+    ],
+    "slug": "syndra"
   },
   {
     "id": "taliyah",
@@ -5909,7 +6029,8 @@
       "poke",
       "cc_heavy",
       "mobile"
-    ]
+    ],
+    "slug": "taliyah"
   },
   {
     "id": "talon",
@@ -5963,7 +6084,8 @@
       "burst",
       "mobile",
       "stealth"
-    ]
+    ],
+    "slug": "talon"
   },
   {
     "id": "teemo",
@@ -6016,7 +6138,8 @@
       "dmg_ap",
       "poke",
       "stealth"
-    ]
+    ],
+    "slug": "teemo"
   },
   {
     "id": "thresh",
@@ -6067,7 +6190,8 @@
       "build_tank",
       "dmg_ap",
       "cc_heavy"
-    ]
+    ],
+    "slug": "thresh"
   },
   {
     "id": "tristana",
@@ -6120,7 +6244,8 @@
       "sustained_dps",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "tristana"
   },
   {
     "id": "tryndamere",
@@ -6174,7 +6299,8 @@
       "sustained_dps",
       "healer",
       "mobile"
-    ]
+    ],
+    "slug": "tryndamere"
   },
   {
     "id": "twisted-fate",
@@ -6225,7 +6351,8 @@
       "build_ap",
       "dmg_ap",
       "poke"
-    ]
+    ],
+    "slug": "twisted-fate"
   },
   {
     "id": "twitch",
@@ -6279,7 +6406,8 @@
       "sustained_dps",
       "stealth",
       "true_damage"
-    ]
+    ],
+    "slug": "twitch"
   },
   {
     "id": "urgot",
@@ -6333,7 +6461,8 @@
       "cc_heavy",
       "sustained_dps",
       "healer"
-    ]
+    ],
+    "slug": "urgot"
   },
   {
     "id": "varus",
@@ -6386,7 +6515,8 @@
       "poke",
       "cc_heavy",
       "burst"
-    ]
+    ],
+    "slug": "varus"
   },
   {
     "id": "vayne",
@@ -6440,7 +6570,8 @@
       "sustained_dps",
       "mobile",
       "stealth"
-    ]
+    ],
+    "slug": "vayne"
   },
   {
     "id": "veigar",
@@ -6493,7 +6624,8 @@
       "dmg_ap",
       "burst",
       "poke"
-    ]
+    ],
+    "slug": "veigar"
   },
   {
     "id": "velkoz",
@@ -6546,7 +6678,8 @@
       "dmg_ap",
       "poke",
       "true_damage"
-    ]
+    ],
+    "slug": "velkoz"
   },
   {
     "id": "vex",
@@ -6599,7 +6732,8 @@
       "burst",
       "shielder",
       "mobile"
-    ]
+    ],
+    "slug": "vex"
   },
   {
     "id": "vi",
@@ -6652,7 +6786,8 @@
       "cc_heavy",
       "mobile",
       "shielder"
-    ]
+    ],
+    "slug": "vi"
   },
   {
     "id": "viego",
@@ -6706,8 +6841,10 @@
       "mobile",
       "stealth",
       "healer",
-      "sustained_dps"
-    ]
+      "sustained_dps",
+      "healer_heavy"
+    ],
+    "slug": "viego"
   },
   {
     "id": "viktor",
@@ -6759,7 +6896,8 @@
       "dmg_ap",
       "poke",
       "shielder"
-    ]
+    ],
+    "slug": "viktor"
   },
   {
     "id": "vladimir",
@@ -6812,8 +6950,10 @@
       "dmg_ap",
       "healer",
       "sustained_dps",
-      "burst"
-    ]
+      "burst",
+      "healer_heavy"
+    ],
+    "slug": "vladimir"
   },
   {
     "id": "volibear",
@@ -6869,7 +7009,8 @@
       "cc_heavy",
       "healer",
       "sustained_dps"
-    ]
+    ],
+    "slug": "volibear"
   },
   {
     "id": "warwick",
@@ -6922,8 +7063,10 @@
       "dmg_ad",
       "dmg_ap",
       "healer",
-      "sustained_dps"
-    ]
+      "sustained_dps",
+      "healer_heavy"
+    ],
+    "slug": "warwick"
   },
   {
     "id": "wukong",
@@ -6977,7 +7120,8 @@
       "stealth",
       "mobile",
       "cc_heavy"
-    ]
+    ],
+    "slug": "wukong"
   },
   {
     "id": "xayah",
@@ -7029,7 +7173,8 @@
       "dmg_ad",
       "sustained_dps",
       "cc_heavy"
-    ]
+    ],
+    "slug": "xayah"
   },
   {
     "id": "xin-zhao",
@@ -7082,7 +7227,8 @@
       "cc_heavy",
       "healer",
       "sustained_dps"
-    ]
+    ],
+    "slug": "xin-zhao"
   },
   {
     "id": "yasuo",
@@ -7137,7 +7283,8 @@
       "cc_heavy",
       "shielder",
       "sustained_dps"
-    ]
+    ],
+    "slug": "yasuo"
   },
   {
     "id": "yone",
@@ -7192,7 +7339,8 @@
       "mobile",
       "shielder",
       "burst"
-    ]
+    ],
+    "slug": "yone"
   },
   {
     "id": "yunara",
@@ -7245,7 +7393,8 @@
       "dmg_ap",
       "sustained_dps",
       "mobile"
-    ]
+    ],
+    "slug": "yunara"
   },
   {
     "id": "yuumi",
@@ -7296,8 +7445,10 @@
       "build_support",
       "dmg_ap",
       "healer",
-      "shielder"
-    ]
+      "shielder",
+      "healer_heavy"
+    ],
+    "slug": "yuumi"
   },
   {
     "id": "zed",
@@ -7351,7 +7502,8 @@
       "dmg_ad",
       "burst",
       "mobile"
-    ]
+    ],
+    "slug": "zed"
   },
   {
     "id": "zeri",
@@ -7404,7 +7556,8 @@
       "sustained_dps",
       "mobile",
       "poke"
-    ]
+    ],
+    "slug": "zeri"
   },
   {
     "id": "ziggs",
@@ -7455,7 +7608,8 @@
       "build_ap",
       "dmg_ap",
       "poke"
-    ]
+    ],
+    "slug": "ziggs"
   },
   {
     "id": "zilean",
@@ -7507,7 +7661,8 @@
       "dmg_ap",
       "shielder",
       "cc_heavy"
-    ]
+    ],
+    "slug": "zilean"
   },
   {
     "id": "zoe",
@@ -7559,7 +7714,8 @@
       "dmg_ap",
       "burst",
       "poke"
-    ]
+    ],
+    "slug": "zoe"
   },
   {
     "id": "zyra",
@@ -7612,6 +7768,7 @@
       "dmg_ap",
       "cc_heavy",
       "poke"
-    ]
+    ],
+    "slug": "zyra"
   }
 ]
