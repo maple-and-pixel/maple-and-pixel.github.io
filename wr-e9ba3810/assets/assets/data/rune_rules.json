@@ -1,39 +1,111 @@
 {
- "version": 1,
- "_note": "counter-screen rune swaps. mode 'in_tree_else_secondary': if the build's primary or secondary tree is the rune's tree, swap it into that tree's last slot; otherwise suggest it as the secondary rune. Giant Slayer is not in the list, so not used.",
- "rules": [
+ "version": 2,
+ "lane_weight": 1.75,
+ "_note": "v2 counter-screen rune swaps. team score = sum over enemies having the threat; the star lane opponent counts lane_weight instead of 1; rule fires when score >= min, or (lane_trigger) when the lane opponent alone has the threat (blocked if he has any lane_exclude tag). When 2 fired rules want the same tree+row slot, highest score*weight wins. Resolve row 2 is contested by Second Wind (poke 3.0) > Nullifying Orb (ap_heavy 2.75) > Bone Plating (burst 2.5): poke wins because it is a sustained, lane-long drain, then mass-AP, then burst; this ordering applies only when two rules fire at once. Rows follow rune_assign.json rows. ap_heavy = enemy with dmg_split.ap >= ap_heavy_min_ap (fallback: has dmg_ap and not dmg_ad). Keystone rules apply only when a lane opponent is set; {lane} = his name.",
+ "ap_heavy_min_ap": 60,
+ "minor_rules": [
   {
    "id": "tanky",
-   "threat": "tanky",
-   "min": 2,
-   "rune": "Cut Down",
+   "rune": "cut-down",
    "tree": "Precision",
+   "row": 1,
+   "threat": "tanky",
+   "min": 2.0,
+   "lane_trigger": false,
    "weight": 2.0,
-   "mode": "in_tree_else_secondary",
    "reason_ar": "يوجد {n} من الأعداء الأقوياء في التحمّل — Cut Down يزيد ضررك على الأهداف ذات الصحة العالية",
    "reason_en": "{n} tanky enemies — Cut Down adds damage against high-health targets"
   },
   {
-   "id": "burst",
-   "threat": "burst",
-   "min": 2,
-   "rune": "Bone Plating",
+   "id": "poke",
+   "rune": "second-wind",
    "tree": "Resolve",
+   "row": 1,
+   "threat": "poke",
+   "min": 2.0,
+   "lane_trigger": true,
+   "weight": 3.0,
+   "reason_ar": "يضغط عليك {n} من الأعداء بضرر بعيد متكرر — Second Wind يعوّض صحتك بعد كل ضربة",
+   "reason_en": "{n} enemies poke you down — Second Wind regenerates health after taking damage"
+  },
+  {
+   "id": "ap_heavy",
+   "rune": "nullifying-orb",
+   "tree": "Resolve",
+   "row": 1,
+   "threat": "ap_heavy",
+   "min": 3.0,
+   "lane_trigger": false,
+   "weight": 2.75,
+   "reason_ar": "أغلب الأعداء ({n}) ضررهم سحري — Nullifying Orb يحميك بدرع عند تلقّي ضرر سحري",
+   "reason_en": "{n} enemies deal mostly magic damage — Nullifying Orb shields you from it"
+  },
+  {
+   "id": "burst",
+   "rune": "bone-plating",
+   "tree": "Resolve",
+   "row": 1,
+   "threat": "burst",
+   "min": 2.0,
+   "lane_trigger": true,
+   "lane_exclude": [
+    "poke"
+   ],
    "weight": 2.5,
-   "mode": "in_tree_else_secondary",
    "reason_ar": "يستطيع {n} من الأعداء قتلك بكومبو واحد — Bone Plating يقلّل الضربات الأولى عليك",
    "reason_en": "{n} enemies can burst you — Bone Plating blunts the opening hits"
   },
   {
    "id": "cc_heavy",
-   "threat": "cc_heavy",
-   "min": 2,
-   "rune": "Perseverance",
+   "rune": "perseverance",
    "tree": "Resolve",
+   "row": 2,
+   "threat": "cc_heavy",
+   "min": 2.0,
+   "lane_trigger": false,
    "weight": 1.5,
-   "mode": "in_tree_else_secondary",
    "reason_ar": "يملك {n} من الأعداء تحكماً (CC) كثيراً — Perseverance يرفع دفاعك عند الإبطاء والشلل",
    "reason_en": "{n} enemies have heavy crowd control — Perseverance raises your defenses when slowed or stunned"
+  }
+ ],
+ "keystone_rules": [
+  {
+   "id": "kite_melee",
+   "from": [
+    "conqueror"
+   ],
+   "to": "fleet-footwork",
+   "self_range": "melee",
+   "self_tags_any": [
+    "build_bruiser"
+   ],
+   "lane_range": "ranged",
+   "lane_tags_any": [
+    "poke"
+   ],
+   "reason_ar": "خصمك {lane} يضغط عليك من بعيد — Fleet Footwork يعطيك علاجاً وسرعة للاقتراب منه",
+   "reason_en": "{lane} pokes you from range — Fleet Footwork gives sustain and speed to close in"
+  },
+  {
+   "id": "tank_shred",
+   "from": [
+    "conqueror",
+    "ice-overlord"
+   ],
+   "to": "grasp-of-the-undying",
+   "self_range": "melee",
+   "self_tags_any": [
+    "build_tank",
+    "build_bruiser"
+   ],
+   "self_lanes": [
+    "BARON"
+   ],
+   "lane_tags_any": [
+    "tanky"
+   ],
+   "reason_ar": "خصمك {lane} قوي في التحمّل — Grasp of the Undying يمنحك صحة وضرراً في المواجهات الطويلة",
+   "reason_en": "{lane} is tanky — Grasp of the Undying wins the long trades"
   }
  ]
 }

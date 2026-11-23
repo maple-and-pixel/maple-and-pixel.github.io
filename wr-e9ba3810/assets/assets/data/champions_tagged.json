@@ -65,7 +65,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a055c66a60d9803790101d08643def3935544c64-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0A0506"
+    "splash_color": "#0A0506",
+    "range": "melee"
   },
   {
     "id": "ahri",
@@ -131,7 +132,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d0784aa64d30b4e407f89b1c8262e773faa72523-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#111122"
+    "splash_color": "#111122",
+    "range": "ranged"
   },
   {
     "id": "akali",
@@ -199,7 +201,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/46cbabe56dffafbf29009c23fcf72c8b7e95cf46-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#201013"
+    "splash_color": "#201013",
+    "range": "melee"
   },
   {
     "id": "akshan",
@@ -267,7 +270,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bca891067216b3eadc663ce5135ad4cc9243abd0-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#4D3E27"
+    "splash_color": "#4D3E27",
+    "range": "ranged"
   },
   {
     "id": "alistar",
@@ -334,7 +338,8 @@
     },
     "cc_count": 4,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/521babcfd1fa207714f97b8de598968ea7cb6b74-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1E150F"
+    "splash_color": "#1E150F",
+    "range": "melee"
   },
   {
     "id": "ambessa",
@@ -401,7 +406,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/58a4e2d29b9d4077e07de00bb9f42d4aee778c57-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1D120E"
+    "splash_color": "#1D120E",
+    "range": "melee"
   },
   {
     "id": "amumu",
@@ -469,7 +475,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6f8bd0e7450c89235ab6ae05c79b09e2bbc8d253-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2E1C17"
+    "splash_color": "#2E1C17",
+    "range": "melee"
   },
   {
     "id": "annie",
@@ -536,7 +543,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/bd1cfff9afdca2b8a5077ffd1148d3880cac1d56-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2A1A15"
+    "splash_color": "#2A1A15",
+    "range": "ranged"
   },
   {
     "id": "ashe",
@@ -604,7 +612,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6f8c4f1b77a743a1632674574077a302d205bbc1-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#27334E"
+    "splash_color": "#27334E",
+    "range": "ranged"
   },
   {
     "id": "aurelion-sol",
@@ -670,7 +679,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/ad17baa616627ca28ad981eb47a1393d724e5c54-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#161B2D"
+    "splash_color": "#161B2D",
+    "range": "ranged"
   },
   {
     "id": "aurora",
@@ -739,7 +749,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0ffbd912e751c8b4864c2f3d04bcfd8ed53be5e4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#272F4D"
+    "splash_color": "#272F4D",
+    "range": "ranged"
   },
   {
     "id": "bard",
@@ -805,7 +816,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ccf78615a6611507e8df412fe890f3f4bd4f8d30-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#130B09"
+    "splash_color": "#130B09",
+    "range": "ranged"
   },
   {
     "id": "blitzcrank",
@@ -872,7 +884,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6488133b65b49ab922dbb32c5c31fbaac0d7133a-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#301C39"
+    "splash_color": "#301C39",
+    "range": "melee"
   },
   {
     "id": "brand",
@@ -939,7 +952,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/efa24fb71e244d1e1b0bd443306026dc1a84cd17-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#513929"
+    "splash_color": "#513929",
+    "range": "ranged"
   },
   {
     "id": "braum",
@@ -1006,7 +1020,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/badd74425385b53d847f4f1a962acc39d956321b-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#111822"
+    "splash_color": "#111822",
+    "range": "melee"
   },
   {
     "id": "caitlyn",
@@ -1072,7 +1087,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9c80cfbaab7aff651b98068d7ae5f091045bb248-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0F1C1F"
+    "splash_color": "#0F1C1F",
+    "range": "ranged"
   },
   {
     "id": "camille",
@@ -1141,7 +1157,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/08eeae3af22909d8816ebfc7077f581bb866ece7-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0A0E07"
+    "splash_color": "#0A0E07",
+    "range": "melee"
   },
   {
     "id": "chogath",
@@ -1207,7 +1224,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/27faedfd16949212752436d4ab4e19cd71343732-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0F0A15"
+    "splash_color": "#0F0A15",
+    "range": "melee"
   },
   {
     "id": "corki",
@@ -1283,7 +1301,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/21c531273a7398b7227e8b2e71b26591d73a16a8-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2F2018"
+    "splash_color": "#2F2018",
+    "range": "ranged"
   },
   {
     "id": "darius",
@@ -1351,7 +1370,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6e1e2d37f7d72073fc5f5b4aee805f64787e5e0e-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#291814"
+    "splash_color": "#291814",
+    "range": "melee"
   },
   {
     "id": "diana",
@@ -1419,7 +1439,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f0dff3f11bab0913cae4baf809702697a2de568c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#131224"
+    "splash_color": "#131224",
+    "range": "melee"
   },
   {
     "id": "dr-mundo",
@@ -1488,7 +1509,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/cdef9b3460aa5e671701e056c330ce2e6cd35be3-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#080811"
+    "splash_color": "#080811",
+    "range": "melee"
   },
   {
     "id": "draven",
@@ -1554,7 +1576,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b266a9278eb4853be59cd70a88a0143ee2454ae7-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#100C19"
+    "splash_color": "#100C19",
+    "range": "ranged"
   },
   {
     "id": "ekko",
@@ -1624,7 +1647,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6d36fd24d685ada709ac5079ae787620ad6e056f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#040205"
+    "splash_color": "#040205",
+    "range": "melee"
   },
   {
     "id": "evelynn",
@@ -1690,7 +1714,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/56ba72ae0efc8cd85cad20ccb594518ed43434a4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0F0F1E"
+    "splash_color": "#0F0F1E",
+    "range": "melee"
   },
   {
     "id": "ezreal",
@@ -1765,7 +1790,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6d338ad08b163fe8e280fe563e45c2a88870479c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2B162D"
+    "splash_color": "#2B162D",
+    "range": "ranged"
   },
   {
     "id": "fiddlesticks",
@@ -1833,7 +1859,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3fcd880462760394311c5c89ecff355f6b9a2a74-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#170B11"
+    "splash_color": "#170B11",
+    "range": "ranged"
   },
   {
     "id": "fiora",
@@ -1902,7 +1929,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/cb2cb92c68dd465fb3547cac187c548f013b3df4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#19162B"
+    "splash_color": "#19162B",
+    "range": "melee"
   },
   {
     "id": "fizz",
@@ -1970,7 +1998,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/0402313411904f8c32165ce9566c21eee932190a-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#211A34"
+    "splash_color": "#211A34",
+    "range": "melee"
   },
   {
     "id": "galio",
@@ -2038,7 +2067,8 @@
     },
     "cc_count": 3,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f70e6075653847cd26f1ce49019f975f08653f0e-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1E1E3C"
+    "splash_color": "#1E1E3C",
+    "range": "melee"
   },
   {
     "id": "garen",
@@ -2106,7 +2136,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/103a1f0f978cfec945126b28e312ef73b4c7a416-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#583A2C"
+    "splash_color": "#583A2C",
+    "range": "melee"
   },
   {
     "id": "gnar",
@@ -2173,7 +2204,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ff1b88267ea1ffcc8758d844a3f2ae5b7c59ae60-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1E130F"
+    "splash_color": "#1E130F",
+    "range": "ranged"
   },
   {
     "id": "gragas",
@@ -2241,7 +2273,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/56557ab3b7ee814590d623c572b02f86f23c1394-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#10080C"
+    "splash_color": "#10080C",
+    "range": "melee"
   },
   {
     "id": "graves",
@@ -2308,7 +2341,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3c8ffdb9fef5090341a73da16f06cd6574fc517b-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#150E0A"
+    "splash_color": "#150E0A",
+    "range": "ranged"
   },
   {
     "id": "gwen",
@@ -2377,7 +2411,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b66d5f718f37a94229555741f8cadeecfffa431d-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#111A23"
+    "splash_color": "#111A23",
+    "range": "melee"
   },
   {
     "id": "hecarim",
@@ -2443,7 +2478,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/e8876300c8b884ea6cfc652aa7329c9737f6d640-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0F1B1F"
+    "splash_color": "#0F1B1F",
+    "range": "melee"
   },
   {
     "id": "heimerdinger",
@@ -2508,7 +2544,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/bd5c5abb7cab74b2adfeccd3f5fc28f186647233-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#28141C"
+    "splash_color": "#28141C",
+    "range": "ranged"
   },
   {
     "id": "hwei",
@@ -2575,7 +2612,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/077b56fa778708eec457d8c4d2f2ea73c1e477ec-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0D0B17"
+    "splash_color": "#0D0B17",
+    "range": "ranged"
   },
   {
     "id": "irelia",
@@ -2643,7 +2681,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a0bb8a92cdea1e7eac98704be600924c6c89dafe-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#512949"
+    "splash_color": "#512949",
+    "range": "melee"
   },
   {
     "id": "janna",
@@ -2709,7 +2748,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/441662804065fad895d22dd866562aac54cf6a02-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2A4854"
+    "splash_color": "#2A4854",
+    "range": "ranged"
   },
   {
     "id": "jarvan-iv",
@@ -2777,7 +2817,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9142639ce67e65a94f42a778a7c7ed638573f4e5-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#261913"
+    "splash_color": "#261913",
+    "range": "melee"
   },
   {
     "id": "jax",
@@ -2844,7 +2885,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3ffcf2d1528cb88e1c31c14482bf1ba35a4cc7b8-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0F070C"
+    "splash_color": "#0F070C",
+    "range": "melee"
   },
   {
     "id": "jayce",
@@ -2911,7 +2953,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f6d6396a20783f376781599aae6003c3d70ee417-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#301D18"
+    "splash_color": "#301D18",
+    "range": "ranged"
   },
   {
     "id": "jhin",
@@ -2977,7 +3020,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8e49e3ec43df83b14dc7dbc326da1586093bbde2-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#000000"
+    "splash_color": "#000000",
+    "range": "ranged"
   },
   {
     "id": "jinx",
@@ -3042,7 +3086,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/58a1d5def09d35ea722ca402db31700f9c2b3580-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0A060C"
+    "splash_color": "#0A060C",
+    "range": "ranged"
   },
   {
     "id": "kaisa",
@@ -3118,7 +3163,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/edb207643f6a08c181a3582ce3296a7694f96c31-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#151224"
+    "splash_color": "#151224",
+    "range": "ranged"
   },
   {
     "id": "kalista",
@@ -3184,7 +3230,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/917040cf785b56a8d6c39e7e4d883ee60873056d-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#05090B"
+    "splash_color": "#05090B",
+    "range": "ranged"
   },
   {
     "id": "karma",
@@ -3251,7 +3298,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a230d76e8f687b58eb8138f57daeb7e21e077c17-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#202F3F"
+    "splash_color": "#202F3F",
+    "range": "ranged"
   },
   {
     "id": "kassadin",
@@ -3319,7 +3367,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/95c919558152a310eda41455ea2b03a6e38188be-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#150F1E"
+    "splash_color": "#150F1E",
+    "range": "melee"
   },
   {
     "id": "katarina",
@@ -3385,7 +3434,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/3bc39237edf50d4cfef1886e97f3bdf17a756612-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#160B14"
+    "splash_color": "#160B14",
+    "range": "melee"
   },
   {
     "id": "kayle",
@@ -3461,7 +3511,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a4c286f313fb275c51e903494a955fa1dd9bd65f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1C1020"
+    "splash_color": "#1C1020",
+    "range": "melee"
   },
   {
     "id": "kayn",
@@ -3528,7 +3579,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/80b2240795bcabb45e48d1b7f97bd8465d5a951f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#040408"
+    "splash_color": "#040408",
+    "range": "melee"
   },
   {
     "id": "kennen",
@@ -3595,7 +3647,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/be68dda79d0a329b9592234cc321c643ab0e154c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#222843"
+    "splash_color": "#222843",
+    "range": "ranged"
   },
   {
     "id": "khazix",
@@ -3662,7 +3715,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2fde750363a485aa460ccb77a82e85eea56c2709-1920x1134.jpg?accountingTag=WR",
-    "splash_color": "#000000"
+    "splash_color": "#000000",
+    "range": "melee"
   },
   {
     "id": "kindred",
@@ -3729,7 +3783,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/58971359312ebd83ad6e952b5d7f77d4d225930c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#050402"
+    "splash_color": "#050402",
+    "range": "ranged"
   },
   {
     "id": "kogmaw",
@@ -3803,7 +3858,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b9a7f67a4ec4498b9b3106c18e3fe87890e5c118-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#020101"
+    "splash_color": "#020101",
+    "range": "ranged"
   },
   {
     "id": "ksante",
@@ -3871,7 +3927,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d6986393dcbfc9af99b4759c79bf2ffafe1af967-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#442B22"
+    "splash_color": "#442B22",
+    "range": "melee"
   },
   {
     "id": "lee-sin",
@@ -3939,7 +3996,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/63bbd417587cfa1dc9dc2e8d04c31f68c4ba1d57-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#331A1D"
+    "splash_color": "#331A1D",
+    "range": "melee"
   },
   {
     "id": "leona",
@@ -4005,7 +4063,8 @@
     },
     "cc_count": 3,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/35facc3a554d7b0401eb2c59a50db0f440de3b4a-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#503828"
+    "splash_color": "#503828",
+    "range": "melee"
   },
   {
     "id": "lillia",
@@ -4074,7 +4133,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/073feacb6bcc5adb6e06b700a1a59315b6ce9589-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1F1326"
+    "splash_color": "#1F1326",
+    "range": "melee"
   },
   {
     "id": "lissandra",
@@ -4141,7 +4201,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/4d37288efc3db29335dcee8863077c7a2d92f933-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0D151B"
+    "splash_color": "#0D151B",
+    "range": "ranged"
   },
   {
     "id": "lucian",
@@ -4208,7 +4269,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/746e3c40ac077e00a69b62d6f0b6fcc44dbe20a7-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#040306"
+    "splash_color": "#040306",
+    "range": "ranged"
   },
   {
     "id": "lulu",
@@ -4275,7 +4337,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/e9f882cff2563e8f04a3f5e3e055d4b77f391a5c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1A120D"
+    "splash_color": "#1A120D",
+    "range": "ranged"
   },
   {
     "id": "lux",
@@ -4343,7 +4406,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/e900839292adf3b36bcf5d57164198b8026b08c4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#603043"
+    "splash_color": "#603043",
+    "range": "ranged"
   },
   {
     "id": "malphite",
@@ -4412,7 +4476,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f82ce98f43caa4dd73e996313ad40eeda380a442-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1B0D10"
+    "splash_color": "#1B0D10",
+    "range": "melee"
   },
   {
     "id": "maokai",
@@ -4481,7 +4546,8 @@
     },
     "cc_count": 3,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/0067f5bcafdb71002a5a91b9b89307dac5ff7421-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0A1014"
+    "splash_color": "#0A1014",
+    "range": "melee"
   },
   {
     "id": "master-yi",
@@ -4549,7 +4615,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5ecce92aed12bc5e064df03df07ba14fb40f1d1f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2D4623"
+    "splash_color": "#2D4623",
+    "range": "melee"
   },
   {
     "id": "mel",
@@ -4616,7 +4683,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/842e42d448b78d058804fc50ff7dbe424aaf90fa-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2F1818"
+    "splash_color": "#2F1818",
+    "range": "ranged"
   },
   {
     "id": "milio",
@@ -4683,7 +4751,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8968529ae2162047fa4261fb6cd00762fc28fc2c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#393E1F"
+    "splash_color": "#393E1F",
+    "range": "ranged"
   },
   {
     "id": "miss-fortune",
@@ -4758,7 +4827,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d9d0afe8e123076f47896ac0adb8aee0a885e016-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#16292D"
+    "splash_color": "#16292D",
+    "range": "ranged"
   },
   {
     "id": "mordekaiser",
@@ -4827,7 +4897,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/75b39626855a79e77ce04b89944c27e33336d2e6-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#070C0F"
+    "splash_color": "#070C0F",
+    "range": "melee"
   },
   {
     "id": "morgana",
@@ -4897,7 +4968,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b4813d06004a1364fc45c95675032ad716fb0bbb-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1C101F"
+    "splash_color": "#1C101F",
+    "range": "ranged"
   },
   {
     "id": "nami",
@@ -4964,7 +5036,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/86570c1aecc707893bcf004dcf39977a1d136ba9-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#243E47"
+    "splash_color": "#243E47",
+    "range": "ranged"
   },
   {
     "id": "nasus",
@@ -5031,7 +5104,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/77a9a4a560ac5f8276ec2664e6cdd4fd06e9c345-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#243448"
+    "splash_color": "#243448",
+    "range": "melee"
   },
   {
     "id": "nautilus",
@@ -5100,7 +5174,8 @@
     },
     "cc_count": 3,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/717732b6371024b0d8aed42ba1910a714bb5cb4f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#16282C"
+    "splash_color": "#16282C",
+    "range": "melee"
   },
   {
     "id": "nidalee",
@@ -5168,7 +5243,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/4627c25711128d96e58839fa96556a96223b3e8b-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#070E0C"
+    "splash_color": "#070E0C",
+    "range": "ranged"
   },
   {
     "id": "nilah",
@@ -5235,7 +5311,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8c1f0aac3cdff66a3cbf5c30844ddea7ff25f280-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#253449"
+    "splash_color": "#253449",
+    "range": "melee"
   },
   {
     "id": "nocturne",
@@ -5304,7 +5381,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3e09eefe784ae25e9d48bbf731787d499101c20a-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#040408"
+    "splash_color": "#040408",
+    "range": "melee"
   },
   {
     "id": "norra",
@@ -5369,7 +5447,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/d8d9c469381457eaf7387d10a79451bfd6b7a143-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#542A2E"
+    "splash_color": "#542A2E",
+    "range": "ranged"
   },
   {
     "id": "nunu-and-willump",
@@ -5436,7 +5515,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b11bb5a198fb69ec6a5e9c30a695762eb028ef98-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1C2739"
+    "splash_color": "#1C2739",
+    "range": "melee"
   },
   {
     "id": "olaf",
@@ -5505,7 +5585,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/57d0ebe92191dce4c206861d5715283b66c78e02-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#122025"
+    "splash_color": "#122025",
+    "range": "melee"
   },
   {
     "id": "orianna",
@@ -5571,7 +5652,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5b00ce44b4e6d3533279e05f2a19e1103e1091c8-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#231119"
+    "splash_color": "#231119",
+    "range": "ranged"
   },
   {
     "id": "ornn",
@@ -5637,7 +5719,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/99cce5dcc8aad57f8eef8d58c1000448e0261db4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1A0D12"
+    "splash_color": "#1A0D12",
+    "range": "melee"
   },
   {
     "id": "pantheon",
@@ -5705,7 +5788,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7f540fc2cd8f5daf7059d38c4c999221e7a32d95-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2C1F16"
+    "splash_color": "#2C1F16",
+    "range": "melee"
   },
   {
     "id": "poppy",
@@ -5773,7 +5857,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/db5496c28988157211e88262757e483415d63e60-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#24121E"
+    "splash_color": "#24121E",
+    "range": "melee"
   },
   {
     "id": "pyke",
@@ -5841,7 +5926,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f02797c9649a6b56fa87197ed2a68ea143822974-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#091211"
+    "splash_color": "#091211",
+    "range": "melee"
   },
   {
     "id": "rakan",
@@ -5908,7 +5994,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9fb454b2e46e6a1d7f5a969da8a121ee1b490279-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#30181C"
+    "splash_color": "#30181C",
+    "range": "melee"
   },
   {
     "id": "rammus",
@@ -5974,7 +6061,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/1ed884fe7366bd78eed61ec99ba1fec24c2bd06d-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#3B301E"
+    "splash_color": "#3B301E",
+    "range": "melee"
   },
   {
     "id": "rell",
@@ -6040,7 +6128,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3a522bdecd6a70bdceeb8c5ed9f188064430da25-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#251412"
+    "splash_color": "#251412",
+    "range": "melee"
   },
   {
     "id": "renekton",
@@ -6107,7 +6196,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/fed3a0a74de3a0da364300657aac77c300d9250b-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2E2217"
+    "splash_color": "#2E2217",
+    "range": "melee"
   },
   {
     "id": "rengar",
@@ -6174,7 +6264,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/7d8064aa6c6bf90e29b0fe39877733c396a7734e-6000x3541.jpg?accountingTag=WR",
-    "splash_color": "#040907"
+    "splash_color": "#040907",
+    "range": "melee"
   },
   {
     "id": "riven",
@@ -6243,7 +6334,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/da5b159255cb81cafeeb5487a7543f5017154e8f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#352C1A"
+    "splash_color": "#352C1A",
+    "range": "melee"
   },
   {
     "id": "rumble",
@@ -6309,7 +6401,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/92989c47f54b2c47e5e78f2c66a2916694c847ff-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#624631"
+    "splash_color": "#624631",
+    "range": "melee"
   },
   {
     "id": "ryze",
@@ -6374,7 +6467,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/81bc030fb4479a72316348b6a39433c2bf01c543-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1C1E37"
+    "splash_color": "#1C1E37",
+    "range": "ranged"
   },
   {
     "id": "samira",
@@ -6442,7 +6536,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/39c2cfca71fe90ea1d74c175d60fc84385020470-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1E0F12"
+    "splash_color": "#1E0F12",
+    "range": "ranged"
   },
   {
     "id": "senna",
@@ -6510,7 +6605,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/bbd2761ce2906dc88e61d0fe4d18fd93d1d072b8-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0A1214"
+    "splash_color": "#0A1214",
+    "range": "ranged"
   },
   {
     "id": "seraphine",
@@ -6579,7 +6675,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ca6a54fa8593a284f1031bd53c6d08091a16b918-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#B88CA2"
+    "splash_color": "#B88CA2",
+    "range": "ranged"
   },
   {
     "id": "sett",
@@ -6646,7 +6743,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c26cc1e86f8fa3fd0ad334e6cecb16fca4c20756-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#080405"
+    "splash_color": "#080405",
+    "range": "melee"
   },
   {
     "id": "shen",
@@ -6714,7 +6812,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/173b6da6ac6e02215f5be30a56c7af4313e2a0b3-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#040408"
+    "splash_color": "#040408",
+    "range": "melee"
   },
   {
     "id": "shyvana",
@@ -6789,7 +6888,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6e508fd3d7add5f7350ef3c0a823ee251ed37f5e-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#130B09"
+    "splash_color": "#130B09",
+    "range": "melee"
   },
   {
     "id": "singed",
@@ -6855,7 +6955,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/7b5094bc72e20464617898cbadac1cdb9d89838f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0B1711"
+    "splash_color": "#0B1711",
+    "range": "melee"
   },
   {
     "id": "sion",
@@ -6923,7 +7024,8 @@
     },
     "cc_count": 3,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c2f1ffd51a3bb6057487104a416bd79aa90ccda9-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#050203"
+    "splash_color": "#050203",
+    "range": "melee"
   },
   {
     "id": "sivir",
@@ -6989,7 +7091,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c366f0dc9ca8255f9362d68a39d4d429961d2bb9-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2D2016"
+    "splash_color": "#2D2016",
+    "range": "ranged"
   },
   {
     "id": "skarner",
@@ -7057,7 +7160,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/61f4115753723996fdaeb73b311536f6d45c824a-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#121E24"
+    "splash_color": "#121E24",
+    "range": "melee"
   },
   {
     "id": "smolder",
@@ -7124,7 +7228,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/304f1cef735ff015e10a45b4b1e3cdc3e60648b3-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#4B2633"
+    "splash_color": "#4B2633",
+    "range": "ranged"
   },
   {
     "id": "sona",
@@ -7192,7 +7297,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6560d1f55adc0269afc48d436b71ce487dc8f566-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#502847"
+    "splash_color": "#502847",
+    "range": "ranged"
   },
   {
     "id": "soraka",
@@ -7258,7 +7364,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/b7b139bc86dbd964f0e6039a31b9d1d6e8904b5b-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1B0E12"
+    "splash_color": "#1B0E12",
+    "range": "ranged"
   },
   {
     "id": "swain",
@@ -7327,7 +7434,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8f59b70e18293af5556606441ba6f8092eec9a61-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0E0807"
+    "splash_color": "#0E0807",
+    "range": "ranged"
   },
   {
     "id": "sylas",
@@ -7395,7 +7503,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/26c49e2f1a79c0c835db8273dffb640fd02e960d-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1C152A"
+    "splash_color": "#1C152A",
+    "range": "melee"
   },
   {
     "id": "syndra",
@@ -7461,7 +7570,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ea0284d333d8d12f1f62753c007af1819c836e48-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#251E3B"
+    "splash_color": "#251E3B",
+    "range": "ranged"
   },
   {
     "id": "taliyah",
@@ -7529,7 +7639,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3324323d1711b361aea335dd89e945070a86041c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#593B2D"
+    "splash_color": "#593B2D",
+    "range": "ranged"
   },
   {
     "id": "talon",
@@ -7597,7 +7708,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/061dccae83a5209dcce77909e9b6a3d70fd6f9f9-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0F111F"
+    "splash_color": "#0F111F",
+    "range": "melee"
   },
   {
     "id": "teemo",
@@ -7664,7 +7776,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/1dec87dd6e583aa7031db63150d8b86611e2f177-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1E180F"
+    "splash_color": "#1E180F",
+    "range": "ranged"
   },
   {
     "id": "thresh",
@@ -7729,7 +7842,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a53657aa31000780bb307e5e973749ea51b2e5a4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#060C0B"
+    "splash_color": "#060C0B",
+    "range": "ranged"
   },
   {
     "id": "tristana",
@@ -7796,7 +7910,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/804c980cf5c025aec176d4e3d16debf2817a068d-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#160B0E"
+    "splash_color": "#160B0E",
+    "range": "ranged"
   },
   {
     "id": "tryndamere",
@@ -7864,7 +7979,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/f339c6908041e52abf1b3611d92fcd0dd20d1210-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#283F50"
+    "splash_color": "#283F50",
+    "range": "melee"
   },
   {
     "id": "twisted-fate",
@@ -7937,7 +8053,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9198a6a05725a8a85da9423f48c0bc2802b8a424-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#090408"
+    "splash_color": "#090408",
+    "range": "ranged"
   },
   {
     "id": "twitch",
@@ -8013,7 +8130,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/5caabf42760c89590067d7c340ceb00013f0477f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0D1A15"
+    "splash_color": "#0D1A15",
+    "range": "ranged"
   },
   {
     "id": "urgot",
@@ -8081,7 +8199,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/5fea00bed10d24becc8cd2bae09f3e7a24bbd91e-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#000000"
+    "splash_color": "#000000",
+    "range": "ranged"
   },
   {
     "id": "varus",
@@ -8156,7 +8275,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/22bf56e9304b84bc47735cea2ea6a5ed0ea22c93-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0A0D14"
+    "splash_color": "#0A0D14",
+    "range": "ranged"
   },
   {
     "id": "vayne",
@@ -8224,7 +8344,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a605527886d58f1de2abb5cdcef040f3b14014db-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1A2035"
+    "splash_color": "#1A2035",
+    "range": "ranged"
   },
   {
     "id": "veigar",
@@ -8291,7 +8412,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/8a01db68eac31c09b1debd75ae286c7e840bf410-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#130D1A"
+    "splash_color": "#130D1A",
+    "range": "ranged"
   },
   {
     "id": "velkoz",
@@ -8358,7 +8480,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/2bfbb1a40029008242e6df6332a962cdc0159cca-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#131123"
+    "splash_color": "#131123",
+    "range": "ranged"
   },
   {
     "id": "vex",
@@ -8425,7 +8548,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/11ac3557535a7765b423302663ecca5e5f22ae00-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#141C29"
+    "splash_color": "#141C29",
+    "range": "ranged"
   },
   {
     "id": "vi",
@@ -8492,7 +8616,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/46420c9c094ce3ce968c9463ba193c186fd67b44-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2C1A16"
+    "splash_color": "#2C1A16",
+    "range": "melee"
   },
   {
     "id": "viego",
@@ -8562,7 +8687,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9ffb1f3b4e65a9e755b3cd7d4678bdcecab5f7fb-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1C2D37"
+    "splash_color": "#1C2D37",
+    "range": "melee"
   },
   {
     "id": "viktor",
@@ -8628,7 +8754,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/7c7371e6aadda3392320e9770d971d1cd6f9a2e9-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1A2B34"
+    "splash_color": "#1A2B34",
+    "range": "ranged"
   },
   {
     "id": "vladimir",
@@ -8697,7 +8824,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/aa10b117ebb8ecb836d32f98dd05e2b14c3e08e8-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#1D0E10"
+    "splash_color": "#1D0E10",
+    "range": "ranged"
   },
   {
     "id": "volibear",
@@ -8767,7 +8895,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/110f74e55da06ea17c683ea17ed23c68dca48ae4-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#212E41"
+    "splash_color": "#212E41",
+    "range": "melee"
   },
   {
     "id": "warwick",
@@ -8836,7 +8965,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/81447e35a890b4f46c051bd30dffb073cfbc54fc-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#080B05"
+    "splash_color": "#080B05",
+    "range": "melee"
   },
   {
     "id": "wukong",
@@ -8904,7 +9034,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d26b3a21371a80598e96592afca8ff1ee490682c-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#31181F"
+    "splash_color": "#31181F",
+    "range": "melee"
   },
   {
     "id": "xayah",
@@ -8970,7 +9101,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9fb454b2e46e6a1d7f5a969da8a121ee1b490279-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#30181C"
+    "splash_color": "#30181C",
+    "range": "ranged"
   },
   {
     "id": "xin-zhao",
@@ -9037,7 +9169,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/6a7fd40b8411dd3fd3329ecdddcd020d45ce3b1b-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#4F3C27"
+    "splash_color": "#4F3C27",
+    "range": "melee"
   },
   {
     "id": "yasuo",
@@ -9106,7 +9239,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/1f90294b1452c84d02407ca7af638a6b20e0c48f-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#242112"
+    "splash_color": "#242112",
+    "range": "melee"
   },
   {
     "id": "yone",
@@ -9175,7 +9309,8 @@
     },
     "cc_count": 2,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/996d4d732c68f8059de5e82ad974fab1026f48a7-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0C1018"
+    "splash_color": "#0C1018",
+    "range": "melee"
   },
   {
     "id": "yunara",
@@ -9242,7 +9377,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/45d0485370dad7d7654b3b4a2e63033a47d63000-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#33274F"
+    "splash_color": "#33274F",
+    "range": "ranged"
   },
   {
     "id": "yuumi",
@@ -9309,7 +9445,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/a6eed827d86fe3137ba4a574ec7aa50d2920444a-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#321B19"
+    "splash_color": "#321B19",
+    "range": "ranged"
   },
   {
     "id": "zed",
@@ -9377,7 +9514,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8f3ed8a6035c324664d0e917126ceb04ad0c8cbf-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#141B0D"
+    "splash_color": "#141B0D",
+    "range": "melee"
   },
   {
     "id": "zeri",
@@ -9444,7 +9582,8 @@
     },
     "cc_count": 0,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/f796f3c8e05ec1bde0806c091ca2a5b5cd71acc5-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#0D1A16"
+    "splash_color": "#0D1A16",
+    "range": "ranged"
   },
   {
     "id": "ziggs",
@@ -9509,7 +9648,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/d9950b3db477cb0e72a27d478116babb896f9a02-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#221511"
+    "splash_color": "#221511",
+    "range": "ranged"
   },
   {
     "id": "zilean",
@@ -9575,7 +9715,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/6d03fe0d01e652168421908fa8cbca5a5e2c020d-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#2E4523"
+    "splash_color": "#2E4523",
+    "range": "ranged"
   },
   {
     "id": "zoe",
@@ -9641,7 +9782,8 @@
     },
     "cc_count": 1,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c65aa213c567724405dff30e16dc9ce336999c62-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#542D59"
+    "splash_color": "#542D59",
+    "range": "ranged"
   },
   {
     "id": "zyra",
@@ -9708,6 +9850,7 @@
     },
     "cc_count": 3,
     "splash": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/a8024c119c807782f62205c90b8aec7f19ef8ad0-1280x720.jpg?accountingTag=WR",
-    "splash_color": "#29141A"
+    "splash_color": "#29141A",
+    "range": "ranged"
   }
 ]
