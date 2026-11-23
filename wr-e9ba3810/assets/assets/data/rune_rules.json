@@ -1,0 +1,39 @@
+{
+ "version": 1,
+ "_note": "counter-screen rune swaps. mode 'in_tree_else_secondary': if the build's primary or secondary tree is the rune's tree, swap it into that tree's last slot; otherwise suggest it as the secondary rune. Giant Slayer is not in the list, so not used.",
+ "rules": [
+  {
+   "id": "tanky",
+   "threat": "tanky",
+   "min": 2,
+   "rune": "Cut Down",
+   "tree": "Precision",
+   "weight": 2.0,
+   "mode": "in_tree_else_secondary",
+   "reason_ar": "يوجد {n} من الأعداء الأقوياء في التحمّل — Cut Down يزيد ضررك على الأهداف ذات الصحة العالية",
+   "reason_en": "{n} tanky enemies — Cut Down adds damage against high-health targets"
+  },
+  {
+   "id": "burst",
+   "threat": "burst",
+   "min": 2,
+   "rune": "Bone Plating",
+   "tree": "Resolve",
+   "weight": 2.5,
+   "mode": "in_tree_else_secondary",
+   "reason_ar": "يستطيع {n} من الأعداء قتلك بكومبو واحد — Bone Plating يقلّل الضربات الأولى عليك",
+   "reason_en": "{n} enemies can burst you — Bone Plating blunts the opening hits"
+  },
+  {
+   "id": "cc_heavy",
+   "threat": "cc_heavy",
+   "min": 2,
+   "rune": "Perseverance",
+   "tree": "Resolve",
+   "weight": 1.5,
+   "mode": "in_tree_else_secondary",
+   "reason_ar": "يملك {n} من الأعداء تحكماً (CC) كثيراً — Perseverance يرفع دفاعك عند الإبطاء والشلل",
+   "reason_en": "{n} enemies have heavy crowd control — Perseverance raises your defenses when slowed or stunned"
+  }
+ ]
+}

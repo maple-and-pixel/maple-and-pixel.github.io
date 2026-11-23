@@ -53,6 +53,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -114,7 +127,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "safe",
@@ -165,7 +191,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -222,7 +261,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -278,7 +330,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    },
    {
     "id": "lethality",
@@ -329,7 +394,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -386,7 +464,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -444,6 +535,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -505,7 +609,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "ice-overlord",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "triumph"
+     ]
+    }
    },
    {
     "id": "vs_magic",
@@ -557,7 +674,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "ice-overlord",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "triumph"
+     ]
+    }
    },
    {
     "id": "support_tank",
@@ -609,7 +739,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "ice-overlord",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "triumph"
+     ]
+    }
    }
   ]
  },
@@ -665,7 +808,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -721,7 +877,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    },
    {
     "id": "support",
@@ -778,7 +947,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -834,7 +1016,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -891,7 +1086,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -959,7 +1167,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "revitalize"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -1016,7 +1237,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -1072,7 +1306,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -1124,7 +1371,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -1181,7 +1441,20 @@
     "spells": [
      "flash",
      "exhaust"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -1237,7 +1510,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "first-strike",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    },
    {
     "id": "sniper",
@@ -1288,7 +1574,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "first-strike",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    }
   ]
  },
@@ -1346,6 +1645,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -1405,6 +1717,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -1466,7 +1791,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -1522,7 +1860,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "hybrid_dps",
@@ -1574,7 +1925,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -1630,7 +1994,20 @@
     "spells": [
      "flash",
      "ghost"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    },
    {
     "id": "jungle",
@@ -1681,7 +2058,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -1737,7 +2127,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "burst",
@@ -1790,6 +2193,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "MID": [
       "flash",
@@ -1853,6 +2269,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -1913,6 +2342,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -1974,7 +2416,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -2030,7 +2485,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "brawler_mage",
@@ -2083,6 +2551,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -2144,7 +2625,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -2200,7 +2694,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    },
    {
     "id": "crit_poke",
@@ -2251,7 +2758,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "fleet-footwork",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    },
    {
     "id": "onhit",
@@ -2302,7 +2822,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -2358,7 +2891,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -2414,7 +2960,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -2473,6 +3032,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "MID": [
       "flash",
@@ -2539,7 +3111,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    },
    {
     "id": "mid_tank",
@@ -2590,7 +3175,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    },
    {
     "id": "mid_ap",
@@ -2641,7 +3239,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -2697,7 +3308,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    },
    {
     "id": "tanky",
@@ -2748,7 +3372,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -2804,7 +3441,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -2862,6 +3512,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -2918,7 +3581,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -2976,6 +3652,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -3039,6 +3728,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -3100,7 +3802,20 @@
     "spells": [
      "smite",
      "ghost"
-    ]
+    ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -3156,7 +3871,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -3212,7 +3940,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -3263,7 +4004,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -3321,7 +4075,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -3377,7 +4144,20 @@
     "spells": [
      "flash",
      "exhaust"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -3435,6 +4215,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -3498,6 +4291,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -3557,6 +4363,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -3618,7 +4437,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    },
    {
     "id": "hammer_bruiser",
@@ -3669,7 +4501,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -3725,7 +4570,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "first-strike",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    }
   ]
  },
@@ -3781,7 +4639,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    },
    {
     "id": "anti_tank",
@@ -3832,7 +4703,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -3888,7 +4772,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -3944,7 +4841,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "onhit_crit",
@@ -3995,7 +4905,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "ap",
@@ -4046,7 +4969,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -4102,7 +5038,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -4158,7 +5107,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "enchanter",
@@ -4215,7 +5177,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -4272,7 +5247,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -4328,7 +5316,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -4390,7 +5391,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "empowerment",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    },
    {
     "id": "ap",
@@ -4442,7 +5456,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -4499,7 +5526,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    },
    {
     "id": "rhaast",
@@ -4550,7 +5590,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -4607,7 +5660,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -4663,7 +5729,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -4719,7 +5798,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "crit_marksman",
@@ -4775,7 +5867,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -4831,7 +5936,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -4888,7 +6006,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    },
    {
     "id": "bruiser_tank",
@@ -4939,7 +6070,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -4996,7 +6140,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -5052,7 +6209,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -5108,7 +6278,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -5165,7 +6348,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -5221,7 +6417,20 @@
     "spells": [
      "flash",
      "exhaust"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -5277,7 +6486,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support",
@@ -5339,7 +6561,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -5391,7 +6626,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -5447,7 +6695,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    },
    {
     "id": "ap_mid",
@@ -5501,7 +6762,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support_tank",
@@ -5553,7 +6827,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -5611,6 +6898,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -5668,7 +6968,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -5724,7 +7037,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "empowerment",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -5780,7 +7106,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -5832,7 +7171,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -5888,7 +7240,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -5944,7 +7309,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "fleet-footwork",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    }
   ]
  },
@@ -6002,6 +7380,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -6065,6 +7456,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "MID": [
       "flash",
@@ -6128,7 +7532,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -6180,7 +7597,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -6242,7 +7672,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -6298,7 +7741,20 @@
     "spells": [
      "flash",
      "ghost"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -6356,6 +7812,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -6412,7 +7881,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -6468,7 +7950,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -6524,7 +8019,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -6581,7 +8089,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -6637,7 +8158,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -6693,7 +8227,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -6751,6 +8298,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -6812,7 +8372,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -6868,7 +8441,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -6927,6 +8513,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -6994,6 +8593,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -7056,7 +8668,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "dark-harvest",
+     "primary_tree": "Domination",
+     "primary": [
+      "cheap-shot",
+      "eyeball-collection",
+      "hubris"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "gathering-storm"
+     ]
+    }
    }
   ]
  },
@@ -7113,7 +8738,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "revitalize"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -7169,7 +8807,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -7226,7 +8877,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -7282,7 +8946,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -7338,7 +9015,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -7394,7 +9084,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    },
    {
     "id": "jungle",
@@ -7445,7 +9148,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -7501,7 +9217,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "phase-rush",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -7557,7 +9286,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -7613,7 +9355,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -7669,7 +9424,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "fleet-footwork",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    },
    {
     "id": "support",
@@ -7721,7 +9489,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "fleet-footwork",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "tyrant"
+     ]
+    }
    }
   ]
  },
@@ -7777,7 +9558,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "enchanter",
@@ -7834,7 +9628,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -7890,7 +9697,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -7948,6 +9768,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -8010,7 +9843,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -8073,7 +9919,20 @@
     "spells": [
      "flash",
      "ghost"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -8131,6 +9990,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -8192,7 +10064,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -8250,6 +10135,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -8311,7 +10209,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -8367,7 +10278,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -8423,7 +10347,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -8479,7 +10416,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -8531,7 +10481,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "tank_mage",
@@ -8582,7 +10545,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -8638,7 +10614,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "brawler_mage",
@@ -8689,7 +10678,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -8745,7 +10747,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -8803,6 +10818,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    },
     "spells_by_lane": {
      "MID": [
       "flash",
@@ -8866,6 +10894,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "dark-harvest",
+     "primary_tree": "Domination",
+     "primary": [
+      "cheap-shot",
+      "eyeball-collection",
+      "hubris"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "gathering-storm"
+     ]
+    },
     "spells_by_lane": {
      "MID": [
       "flash",
@@ -8935,7 +10976,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "mushroom",
@@ -8987,7 +11041,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -9044,7 +11111,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "guardian",
+     "primary_tree": "Resolve",
+     "primary": [
+      "font-of-life",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "transcendence"
+     ]
+    }
    }
   ]
  },
@@ -9100,7 +11180,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -9158,6 +11251,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "empowerment",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -9219,7 +11325,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "onhit",
@@ -9270,7 +11389,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -9328,6 +11460,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    },
     "spells_by_lane": {
      "DRAGON": [
       "flash",
@@ -9387,6 +11532,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    },
     "spells_by_lane": {
      "DRAGON": [
       "flash",
@@ -9448,7 +11606,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -9504,7 +11675,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    },
    {
     "id": "ability_burst",
@@ -9555,7 +11739,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    }
    }
   ]
  },
@@ -9611,7 +11808,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "crit_kiter",
@@ -9662,7 +11872,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -9718,7 +11941,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "dark-harvest",
+     "primary_tree": "Domination",
+     "primary": [
+      "cheap-shot",
+      "eyeball-collection",
+      "hubris"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "gathering-storm"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -9770,7 +12006,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "dark-harvest",
+     "primary_tree": "Domination",
+     "primary": [
+      "cheap-shot",
+      "eyeball-collection",
+      "hubris"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "gathering-storm"
+     ]
+    }
    }
   ]
  },
@@ -9826,7 +12075,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -9878,7 +12140,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -9934,7 +12209,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -9990,7 +12278,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -10048,6 +12349,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -10109,7 +12423,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -10165,7 +12492,20 @@
     "spells": [
      "flash",
      "ghost"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    },
    {
     "id": "burst",
@@ -10216,7 +12556,20 @@
     "spells": [
      "flash",
      "ghost"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -10274,6 +12627,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -10333,6 +12699,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "demolish",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -10402,6 +12781,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -10460,6 +12852,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "grasp-of-the-undying",
+     "primary_tree": "Resolve",
+     "primary": [
+      "courage-of-the-colossus",
+      "bone-plating",
+      "overgrowth"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -10523,6 +12928,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    },
     "spells_by_lane": {
      "BARON": [
       "flash",
@@ -10584,7 +13002,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -10640,7 +13071,20 @@
     "spells": [
      "smite",
      "flash"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -10697,7 +13141,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    }
   ]
  },
@@ -10753,7 +13210,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    },
    {
     "id": "fighter",
@@ -10804,7 +13274,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "conqueror",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-haste",
+      "triumph",
+      "last-stand"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "second-wind"
+     ]
+    }
    }
   ]
  },
@@ -10860,7 +13343,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -10916,7 +13412,20 @@
     "spells": [
      "flash",
      "exhaust"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    }
   ]
  },
@@ -10975,6 +13484,19 @@
      "smite",
      "flash"
     ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Precision",
+     "secondary": [
+      "legend-haste"
+     ]
+    },
     "spells_by_lane": {
      "MID": [
       "flash",
@@ -11040,7 +13562,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "coup-de-grace"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "relentless-hunter"
+     ]
+    }
    },
    {
     "id": "hybrid",
@@ -11092,7 +13627,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "lethal-tempo",
+     "primary_tree": "Precision",
+     "primary": [
+      "legend-alacrity",
+      "triumph",
+      "cut-down"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -11148,7 +13696,20 @@
     "spells": [
      "flash",
      "barrier"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    }
   ]
  },
@@ -11205,7 +13766,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -11261,7 +13835,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  },
@@ -11317,7 +13904,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "arcane-comet",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Domination",
+     "secondary": [
+      "eyeball-collection"
+     ]
+    }
    },
    {
     "id": "support",
@@ -11375,7 +13975,20 @@
     "spells": [
      "flash",
      "heal"
-    ]
+    ],
+    "runes": {
+     "keystone": "aery",
+     "primary_tree": "Sorcery",
+     "primary": [
+      "manaflow-band",
+      "transcendence",
+      "gathering-storm"
+     ],
+     "secondary_tree": "Resolve",
+     "secondary": [
+      "font-of-life"
+     ]
+    }
    },
    {
     "id": "support_ap",
@@ -11427,7 +14040,20 @@
     "spells": [
      "flash",
      "ignite"
-    ]
+    ],
+    "runes": {
+     "keystone": "electrocute",
+     "primary_tree": "Domination",
+     "primary": [
+      "sudden-impact",
+      "hubris",
+      "eyeball-collection"
+     ],
+     "secondary_tree": "Sorcery",
+     "secondary": [
+      "absolute-focus"
+     ]
+    }
    }
   ]
  }

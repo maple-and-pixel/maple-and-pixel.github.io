@@ -6,63 +6,72 @@
    "name": "Flash",
    "name_ar": "فلاش",
    "effect_en": "Short-range blink in the target direction.",
-   "effect_ar": "انتقال فوري قصير المدى في اتجاه محدد."
+   "effect_ar": "انتقال فوري قصير المدى في اتجاه محدد.",
+   "icon": "icons/spells/flash.png"
   },
   {
    "id": "ignite",
    "name": "Ignite",
    "name_ar": "إغناي",
    "effect_en": "Burns an enemy champion with true damage over time and reduces its healing.",
-   "effect_ar": "يحرق بطلاً عدواً بضرر حقيقي مع الوقت ويقلّل علاجه."
+   "effect_ar": "يحرق بطلاً عدواً بضرر حقيقي مع الوقت ويقلّل علاجه.",
+   "icon": "icons/spells/ignite.png"
   },
   {
    "id": "heal",
    "name": "Heal",
    "name_ar": "هيل",
    "effect_en": "Restores health to you and a nearby ally and gives bonus movement speed.",
-   "effect_ar": "يستعيد صحتك وصحة حليف قريب ويمنح سرعة حركة إضافية."
+   "effect_ar": "يستعيد صحتك وصحة حليف قريب ويمنح سرعة حركة إضافية.",
+   "icon": "icons/spells/heal.png"
   },
   {
    "id": "barrier",
    "name": "Barrier",
    "name_ar": "باريير",
    "effect_en": "Shields you from damage for a short time.",
-   "effect_ar": "يمنحك درع حماية يمتص الضرر لمدة قصيرة."
+   "effect_ar": "يمنحك درع حماية يمتص الضرر لمدة قصيرة.",
+   "icon": "icons/spells/barrier.png"
   },
   {
    "id": "smite",
    "name": "Smite",
    "name_ar": "سمايت",
    "effect_en": "Deals true damage to a monster or minion; the jungle spell (Chilling and Challenging upgrades come from jungle items).",
-   "effect_ar": "يوجّه ضرراً حقيقياً لوحش أو تابع، وهو تعويذة الجانجل."
+   "effect_ar": "يوجّه ضرراً حقيقياً لوحش أو تابع، وهو تعويذة الجانجل.",
+   "icon": "icons/spells/smite.png"
   },
   {
    "id": "exhaust",
    "name": "Exhaust",
    "name_ar": "إكزوست",
    "effect_en": "Slows an enemy champion and reduces its damage for a short time.",
-   "effect_ar": "يبطّئ بطلاً عدواً ويقلّل ضرره لمدة قصيرة."
+   "effect_ar": "يبطّئ بطلاً عدواً ويقلّل ضرره لمدة قصيرة.",
+   "icon": "icons/spells/exhaust.png"
   },
   {
    "id": "ghost",
    "name": "Ghost",
    "name_ar": "غوست",
    "effect_en": "Greatly increases your movement speed for a short time.",
-   "effect_ar": "يزيد سرعة حركتك بشكل كبير لمدة قصيرة."
+   "effect_ar": "يزيد سرعة حركتك بشكل كبير لمدة قصيرة.",
+   "icon": "icons/spells/ghost.png"
   },
   {
    "id": "teleport",
    "name": "Teleport",
    "name_ar": "تيليبورت",
    "effect_en": "Channel to teleport to an allied structure, minion or ward.",
-   "effect_ar": "انتقال بعد فترة تحضير إلى مبنى أو تابع أو وارد حليف."
+   "effect_ar": "انتقال بعد فترة تحضير إلى مبنى أو تابع أو وارد حليف.",
+   "icon": "icons/spells/teleport.png"
   },
   {
    "id": "cleanse",
    "name": "Cleanse",
    "name_ar": "كلينز",
    "effect_en": "Removes crowd control effects and reduces the duration of new ones for a short time.",
-   "effect_ar": "يزيل تأثيرات التحكم (CC) ويقلّل مدة التأثيرات الجديدة لوقت قصير."
+   "effect_ar": "يزيل تأثيرات التحكم (CC) ويقلّل مدة التأثيرات الجديدة لوقت قصير.",
+   "icon": "icons/spells/cleanse.png"
   }
  ]
 }

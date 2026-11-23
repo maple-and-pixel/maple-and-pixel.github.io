@@ -1,0 +1,487 @@
+{
+ "_note": "Wild Rift runes: names from research_runes/runes_found.json (13 keystones + 39 minors); descriptions are our own words; verify:true = text not confirmed. Keystones have no tree in WR 7.x.",
+ "runes": [
+  {
+   "id": "aery",
+   "name": "Aery",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "هجماتك ومهاراتك ترسل Aery لتصيب عدواً بالضرر أو تحمي حليفاً بدرع.",
+   "desc_en": "Your attacks and abilities send Aery to hurt an enemy or shield an ally.",
+   "icon": "icons/runes/aery.png"
+  },
+  {
+   "id": "arcane-comet",
+   "name": "Arcane Comet",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "إصابة بطل بمهارة تُسقط عليه مذنباً يسبب ضرراً سحرياً.",
+   "desc_en": "Landing an ability on a champion drops a comet on them for magic damage.",
+   "icon": "icons/runes/arcane-comet.png"
+  },
+  {
+   "id": "conqueror",
+   "name": "Conqueror",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "القتال ضد الأبطال يراكم قوة هجوم (AD) وقوة مهارات (AP) إضافية.",
+   "desc_en": "Fighting champions stacks bonus attack damage and ability power.",
+   "icon": "icons/runes/conqueror.png"
+  },
+  {
+   "id": "dark-harvest",
+   "name": "Dark Harvest",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "إصابة بطل تحت نصف صحته تحصد روحه وتزيد ضرر الرونة بشكل دائم.",
+   "desc_en": "Hitting a champion under half health harvests a soul and permanently grows the rune's damage.",
+   "icon": "icons/runes/dark-harvest.png"
+  },
+  {
+   "id": "electrocute",
+   "name": "Electrocute",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "ثلاث إصابات منفصلة لبطل خلال وقت قصير تطلق ضرراً انفجارياً.",
+   "desc_en": "Three separate hits on a champion in a short time unleash a burst of damage.",
+   "icon": "icons/runes/electrocute.png"
+  },
+  {
+   "id": "empowerment",
+   "name": "Empowerment",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "ثلاث هجمات متتالية على بطل عدو تسبب ضرراً إضافياً وتزيد ضررك طوال القتال.",
+   "desc_en": "Three attacks in a row on an enemy champion deal bonus damage and boost your damage while the fight lasts.",
+   "icon": "icons/runes/empowerment.png"
+  },
+  {
+   "id": "first-strike",
+   "name": "First Strike",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "بدء القتال ضد بطل أولاً يسبب ضرراً إضافياً ويمنحك ذهباً إضافياً.",
+   "desc_en": "Starting a fight against a champion first deals bonus damage and gives extra gold.",
+   "icon": "icons/runes/first-strike.png",
+   "verify": true
+  },
+  {
+   "id": "fleet-footwork",
+   "name": "Fleet Footwork",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "التحرك والهجوم يبنيان طاقة تعالجك وتزيد سرعتك.",
+   "desc_en": "Moving and attacking builds energy that heals you and speeds you up.",
+   "icon": "icons/runes/fleet-footwork.png"
+  },
+  {
+   "id": "grasp-of-the-undying",
+   "name": "Grasp of the Undying",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "القتال ضد بطل يسبب ضرراً إضافياً بين وقت وآخر ويرفع صحتك بشكل دائم.",
+   "desc_en": "Fighting a champion periodically deals bonus damage and permanently raises your health.",
+   "icon": "icons/runes/grasp-of-the-undying.png"
+  },
+  {
+   "id": "guardian",
+   "name": "Guardian",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "تحرس حليفاً قريباً، وعندما يتلقى ضربة قوية تحصلان معاً على درع.",
+   "desc_en": "Guards a nearby ally; when they take a big hit you both gain a shield.",
+   "icon": "icons/runes/guardian.png"
+  },
+  {
+   "id": "ice-overlord",
+   "name": "Ice Overlord",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "شلّ حركة بطل عدو يخلق جليداً تحته يبطّئ الأعداء ويمنحك دروعاً ومقاومة سحر.",
+   "desc_en": "Immobilizing an enemy champion creates ice under them that slows enemies and gives you armor and magic resist.",
+   "icon": "icons/runes/ice-overlord.png"
+  },
+  {
+   "id": "lethal-tempo",
+   "name": "Lethal Tempo",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "مهاجمة الأبطال تراكم سرعة الهجوم، مع طلقة إضافية عند اكتمال الشحنات.",
+   "desc_en": "Attacking champions stacks attack speed, with a bonus bullet at full stacks.",
+   "icon": "icons/runes/lethal-tempo.png"
+  },
+  {
+   "id": "phase-rush",
+   "name": "Phase Rush",
+   "slot": "keystone",
+   "tree": null,
+   "desc_ar": "إصابة بطل تمنحك دفعة قصيرة من سرعة الحركة.",
+   "desc_en": "Hitting a champion gives a burst of movement speed.",
+   "icon": "icons/runes/phase-rush.png"
+  },
+  {
+   "id": "battle-zeal",
+   "name": "Battle Zeal",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "البقاء في قتال مع بطل يرفع ضرر مهاراتك عليه تدريجياً.",
+   "desc_en": "Staying in combat with a champion steadily raises your ability damage against them.",
+   "icon": "icons/runes/battle-zeal.png"
+  },
+  {
+   "id": "brutal",
+   "name": "Brutal",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "الهجمات تسبب ضرراً تكيفياً إضافياً للأبطال الأعداء.",
+   "desc_en": "Attacks deal bonus adaptive damage to enemy champions.",
+   "icon": "icons/runes/brutal.png"
+  },
+  {
+   "id": "triumph",
+   "name": "Triumph",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "المشاركة في القتل تعيد جزءاً من الصحة والمصادر وتمنح سرعة حركة قصيرة.",
+   "desc_en": "Takedowns restore health, resources and give a short movement speed boost.",
+   "icon": "icons/runes/triumph.png"
+  },
+  {
+   "id": "coup-de-grace",
+   "name": "Coup de Grace",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "يسبب ضرراً إضافياً للأبطال ذوي الصحة المنخفضة.",
+   "desc_en": "Deals extra damage to champions who are low on health.",
+   "icon": "icons/runes/coup-de-grace.png",
+   "verify": true
+  },
+  {
+   "id": "cut-down",
+   "name": "Cut Down",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "يسبب ضرراً تكيفياً إضافياً للأبطال الأعداء الذين تزيد صحتهم عن 60%.",
+   "desc_en": "Deals extra adaptive damage to enemy champions with more than 60% health.",
+   "icon": "icons/runes/cut-down.png"
+  },
+  {
+   "id": "last-stand",
+   "name": "Last Stand",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "يمنحك ضرراً إضافياً عندما تنخفض صحتك.",
+   "desc_en": "Gives extra damage when your own health is low.",
+   "icon": "icons/runes/last-stand.png",
+   "verify": true
+  },
+  {
+   "id": "legend-alacrity",
+   "name": "Legend: Alacrity",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "المشاركة في القتل وقتل التوابع تراكم سرعة الهجوم.",
+   "desc_en": "Takedowns and kills stack attack speed.",
+   "icon": "icons/runes/legend-alacrity.png"
+  },
+  {
+   "id": "legend-bloodline",
+   "name": "Legend: Bloodline",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "المشاركة في القتل وقتل التوابع تراكم سرقة الحياة.",
+   "desc_en": "Takedowns and kills stack life steal.",
+   "icon": "icons/runes/legend-bloodline.png",
+   "verify": true
+  },
+  {
+   "id": "legend-haste",
+   "name": "Legend: Haste",
+   "slot": "minor",
+   "tree": "Precision",
+   "desc_ar": "المشاركة في القتل وقتل التوابع تراكم تسريع المهارات.",
+   "desc_en": "Takedowns and kills stack ability haste.",
+   "icon": "icons/runes/legend-haste.png"
+  },
+  {
+   "id": "cheap-shot",
+   "name": "Cheap Shot",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "إصابة بطل مقيَّد الحركة تسبب ضرراً إضافياً مع وقت تبريد قصير.",
+   "desc_en": "Hitting a champion with impaired movement deals bonus damage, on a short cooldown.",
+   "icon": "icons/runes/cheap-shot.png"
+  },
+  {
+   "id": "empowered-attack",
+   "name": "Empowered Attack",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "هجمتك التالية بعد استخدام مهارة تسبب ضرراً إضافياً.",
+   "desc_en": "Your next attack after using an ability deals bonus damage.",
+   "icon": "icons/runes/empowered-attack.png",
+   "verify": true
+  },
+  {
+   "id": "sudden-impact",
+   "name": "Sudden Impact",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "الاندفاع أو الانتقال الفوري يمنحك اختراقاً وضرراً إضافياً لوقت قصير.",
+   "desc_en": "Dashing or blinking gives a burst of penetration and bonus damage.",
+   "icon": "icons/runes/sudden-impact.png",
+   "verify": true
+  },
+  {
+   "id": "chain-assault",
+   "name": "Chain Assault",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "مهارة تصيب بطلاً تضع عليه علامة، وهجمتاك التاليتان عليه تسببان ضرراً إضافياً.",
+   "desc_en": "An ability that hits a champion marks them; your next two hits on them deal bonus damage.",
+   "icon": "icons/runes/chain-assault.png"
+  },
+  {
+   "id": "hubris",
+   "name": "Hubris",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "المشاركة في قتل بطل بعد إصابته بوقت قصير تمنح قوة تكيفية إضافية لفترة.",
+   "desc_en": "A takedown shortly after damaging a champion gives lasting bonus adaptive force.",
+   "icon": "icons/runes/hubris.png"
+  },
+  {
+   "id": "tyrant",
+   "name": "Tyrant",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "إصابة الأبطال تحت نصف صحتهم تسبب ضرراً تكيفياً إضافياً.",
+   "desc_en": "Damaging champions below half health deals extra adaptive damage.",
+   "icon": "icons/runes/tyrant.png"
+  },
+  {
+   "id": "eyeball-collection",
+   "name": "Eyeball Collection",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "المشاركة في قتل الأبطال والوحوش الملحمية تراكم قوة تكيفية إضافية.",
+   "desc_en": "Takedowns of champions and epic monsters stack bonus adaptive force.",
+   "icon": "icons/runes/eyeball-collection.png"
+  },
+  {
+   "id": "relentless-hunter",
+   "name": "Relentless Hunter",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "سرعة حركة خارج القتال تزداد مع كل مشاركة في قتل.",
+   "desc_en": "Out-of-combat movement speed that grows with every takedown.",
+   "icon": "icons/runes/relentless-hunter.png"
+  },
+  {
+   "id": "zombie-ward",
+   "name": "Zombie Ward",
+   "slot": "minor",
+   "tree": "Domination",
+   "desc_ar": "تدمير وارد العدو يصنع لك وارداً ويراكم قوة إضافية.",
+   "desc_en": "Destroying enemy wards spawns your own ward and stacks bonus force.",
+   "icon": "icons/runes/zombie-ward.png"
+  },
+  {
+   "id": "courage-of-the-colossus",
+   "name": "Courage of the Colossus",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "شلّ حركة بطل عدو (صعق أو تثبيت أو رفع في الهواء وما شابه) يمنحك درعاً يزداد مع صحتك.",
+   "desc_en": "Immobilizing an enemy champion (stun, root, knock-up and similar) gives you a shield that grows with your health.",
+   "icon": "icons/runes/courage-of-the-colossus.png",
+   "verify": true
+  },
+  {
+   "id": "demolish",
+   "name": "Demolish",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "شحن الهجمات على البرج يسبب ضرراً كبيراً له.",
+   "desc_en": "Charging up on a turret deals a large burst of damage to it.",
+   "icon": "icons/runes/demolish.png"
+  },
+  {
+   "id": "font-of-life",
+   "name": "Font of Life",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "إصابة بطل تعالجك وتعالج أضعف حليف قريب.",
+   "desc_en": "Hitting a champion heals you and your most wounded nearby ally.",
+   "icon": "icons/runes/font-of-life.png"
+  },
+  {
+   "id": "unshakeable",
+   "name": "Unshakeable",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "دروع ومقاومة سحر إضافية تزداد مع كل بطل عدو قريب.",
+   "desc_en": "Bonus armor and magic resist that grow with each nearby enemy champion.",
+   "icon": "icons/runes/unshakeable.png"
+  },
+  {
+   "id": "bone-plating",
+   "name": "Bone Plating",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "بعد تلقي ضرر من بطل، تتقلص الضربات التالية الموجهة إليك.",
+   "desc_en": "After taking damage from a champion, the next hits against you are reduced.",
+   "icon": "icons/runes/bone-plating.png"
+  },
+  {
+   "id": "nullifying-orb",
+   "name": "Nullifying Orb",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "يمنحك درعاً عند تلقي ضرر سحري من بطل وأنت منخفض الصحة.",
+   "desc_en": "Gives a shield when you take magic damage from a champion while low on health.",
+   "icon": "icons/runes/nullifying-orb.png",
+   "verify": true
+  },
+  {
+   "id": "second-wind",
+   "name": "Second Wind",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "تلقي الضرر من الأبطال يعيد لك الصحة تدريجياً.",
+   "desc_en": "Taking damage from champions gradually heals you back.",
+   "icon": "icons/runes/second-wind.png"
+  },
+  {
+   "id": "overgrowth",
+   "name": "Overgrowth",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "موت التوابع والوحوش القريبة يزيد صحتك بشكل دائم.",
+   "desc_en": "Nearby minions and monsters dying permanently grows your health.",
+   "icon": "icons/runes/overgrowth.png"
+  },
+  {
+   "id": "perseverance",
+   "name": "Perseverance",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "دروع ومقاومة سحر إضافية تزداد عند التعرض للإبطاء أو الشلل.",
+   "desc_en": "Bonus armor and magic resist that grow when you are slowed or stunned.",
+   "icon": "icons/runes/perseverance.png",
+   "verify": true
+  },
+  {
+   "id": "revitalize",
+   "name": "Revitalize",
+   "slot": "minor",
+   "tree": "Resolve",
+   "desc_ar": "يرفع علاجك ودروعك، وبشكل أكبر على الحلفاء منخفضي الصحة.",
+   "desc_en": "Boosts your healing and shielding, more so on low-health allies.",
+   "icon": "icons/runes/revitalize.png",
+   "verify": true
+  },
+  {
+   "id": "nimbus-cloak",
+   "name": "Nimbus Cloak",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "استخدام تعويذة استدعاء يمنحك دفعة من سرعة الحركة.",
+   "desc_en": "Casting a summoner spell gives a burst of movement speed.",
+   "icon": "icons/runes/nimbus-cloak.png",
+   "verify": true
+  },
+  {
+   "id": "axiom-arcanist",
+   "name": "Axiom Arcanist",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "يرفع ضرر مهارتك النهائية وعلاجها ودرعها ويقلّل وقت تبريدها عند المشاركة في القتل.",
+   "desc_en": "Boosts your ultimate's damage, healing and shielding and cuts its cooldown on takedowns.",
+   "icon": "icons/runes/axiom-arcanist.png"
+  },
+  {
+   "id": "botanist",
+   "name": "Botanist",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "تدمير النباتات يمنح ذهباً ويقوّي تأثيراتها.",
+   "desc_en": "Destroying plants gives gold and stronger plant effects.",
+   "icon": "icons/runes/botanist.png"
+  },
+  {
+   "id": "hexflash",
+   "name": "Hexflash",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "انتقال فوري قصير المدى بوقت تبريد طويل، ويدخل وقت تبريد قصير عند بدء القتال.",
+   "desc_en": "A short-range blink on a long cooldown that goes on a brief cooldown when you enter combat.",
+   "icon": "icons/runes/hexflash.png"
+  },
+  {
+   "id": "manaflow-band",
+   "name": "Manaflow Band",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "إصابة الأبطال بالمهارات ترفع أقصى مانا لديك.",
+   "desc_en": "Hitting champions with abilities raises your maximum mana.",
+   "icon": "icons/runes/manaflow-band.png",
+   "verify": true
+  },
+  {
+   "id": "absolute-focus",
+   "name": "Absolute Focus",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "تكسب قوة تكيفية ما دامت صحتك مرتفعة.",
+   "desc_en": "Gain adaptive force while your health is high.",
+   "icon": "icons/runes/absolute-focus.png"
+  },
+  {
+   "id": "celerity",
+   "name": "Celerity",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "يعزز كل زيادات سرعة الحركة التي تحصل عليها.",
+   "desc_en": "Boosts all movement speed bonuses you gain.",
+   "icon": "icons/runes/celerity.png"
+  },
+  {
+   "id": "transcendence",
+   "name": "Transcendence",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "يمنحك تسريع المهارات ويعيد جزءاً من وقت التبريد عند الإصابة.",
+   "desc_en": "Gives ability haste and refunds cooldown when you hit.",
+   "icon": "icons/runes/transcendence.png"
+  },
+  {
+   "id": "gathering-storm",
+   "name": "Gathering Storm",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "تكسب قوة تكيفية أكبر كل بضع دقائق مع تقدم المباراة.",
+   "desc_en": "Gain more adaptive force every few minutes as the game goes on.",
+   "icon": "icons/runes/gathering-storm.png"
+  },
+  {
+   "id": "ixtali-seedjar",
+   "name": "Ixtali Seedjar",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "النباتات التي تصيبها أنت أو حلفاؤك تُسقط بذوراً تستبدل أداة الرؤية بتأثير مفيد لفترة.",
+   "desc_en": "Plants you or allies hit drop seeds that replace your trinket with a useful effect for a while.",
+   "icon": "icons/runes/ixtali-seedjar.png",
+   "verify": true
+  },
+  {
+   "id": "scorch",
+   "name": "Scorch",
+   "slot": "minor",
+   "tree": "Sorcery",
+   "desc_ar": "مهاراتك تحرق الهدف وتسبب ضرراً إضافياً.",
+   "desc_en": "Your abilities set the target on fire for extra damage.",
+   "icon": "icons/runes/scorch.png",
+   "verify": true
+  }
+ ]
+}
